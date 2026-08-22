@@ -1,0 +1,127 @@
+// ReTrace database schema
+// Full 7-model architecture, per the locked pipeline.
+// Only ResearchSpace, Source, Collection get real writes at Checkpoint A.
+// Artifact / ArtifactVersion / Relationship / ResearchSignal come online at Checkpoint B+.
+//
+// NOTE: SQLite has no native enum support in Prisma, so the fields that would
+// naturally be enums are plain String columns instead, with the allowed values
+// documented above each field. Validate against these lists at the application
+// layer (e.g. in the ingestion/classifier and api/ modules) — the database won't
+// reject an unexpected value the way a real enum column would.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model ResearchSpace {
+  id          String   @id @default(cuid())
+  name        String
+  topic       String
+  description String?
+  createdAt   DateTime @default(now())
+
+  sources   Source[]
+  artifacts Artifact[]
+  signals   ResearchSignal[]
+}
+
+model Source {
+  id              String    @id @default(cuid())
+  researchSpaceId String
+  name            String // "arxiv" | "github" | ...
+  baseUrl         String
+  collectorId     String // Bright Data c_xxxx
+  // status: "HEALTHY" | "DRIFTING" | "EXTRACTION_FAILED" | "HEALING"
+  status          String    @default("HEALTHY")
+  artifactTypes   String // comma-separated: PAPER, IMPLEMENTATION, DATASET, BENCHMARK, PROJECT, RESOURCE
+  queryTemplate   String    @default("{topic}")
+  lastRun         DateTime?
+  lastSuccessAt   DateTime?
+
+  researchSpace ResearchSpace @relation(fields: [researchSpaceId], references: [id])
+  collections   Collection[]
+}
+
+model Collection {
+  id           String    @id @default(cuid())
+  sourceId     String
+  startedAt    DateTime  @default(now())
+  completedAt  DateTime?
+  // status: "PENDING" | "RUNNING" | "SUCCESS" | "FAILED"
+  status       String    @default("PENDING")
+  recordCount  Int       @default(0)
+  rawFilePath  String? // path under backend/raw/ where the untouched response is stored
+  errorMessage String?
+
+  source           Source            @relation(fields: [sourceId], references: [id])
+  artifactVersions ArtifactVersion[]
+}
+
+model Artifact {
+  id              String    @id @default(cuid())
+  researchSpaceId String
+  // type: "PAPER" | "IMPLEMENTATION" | "DATASET" | "BENCHMARK" | "PROJECT" | "RESOURCE"
+  type            String
+  title           String
+  description     String?
+  url             String
+  source          String
+  publishedAt     DateTime?
+  updatedAt       DateTime?
+  firstSeen       DateTime  @default(now())
+  lastSeen        DateTime  @default(now())
+  metadata        String // JSON-encoded type-specific fields (authors, repo owner, license, etc.)
+
+  researchSpace     ResearchSpace     @relation(fields: [researchSpaceId], references: [id])
+  versions          ArtifactVersion[]
+  relationshipsFrom Relationship[]    @relation("SourceArtifact")
+  relationshipsTo   Relationship[]    @relation("TargetArtifact")
+
+  @@index([researchSpaceId, type])
+  @@index([url])
+}
+
+model ArtifactVersion {
+  id           String   @id @default(cuid())
+  artifactId   String
+  collectionId String
+  contentHash  String
+  metadata     String // JSON snapshot at this point in time
+  observedAt   DateTime @default(now())
+
+  artifact   Artifact   @relation(fields: [artifactId], references: [id])
+  collection Collection @relation(fields: [collectionId], references: [id])
+}
+
+model Relationship {
+  id               String   @id @default(cuid())
+  sourceArtifactId String
+  targetArtifactId String
+  // relationshipType: "IMPLEMENTED_BY" | "USES" | "EVALUATED_ON" | "PRODUCED_BY" | "REFERENCES" | "BENCHMARKED_BY"
+  relationshipType String
+  confidence       Float
+  evidence         String // JSON-encoded array of reasons, e.g. ["title similarity", "keyword overlap: OTFS"]
+  createdAt        DateTime @default(now())
+
+  sourceArtifact Artifact @relation("SourceArtifact", fields: [sourceArtifactId], references: [id])
+  targetArtifact Artifact @relation("TargetArtifact", fields: [targetArtifactId], references: [id])
+}
+
+model ResearchSignal {
+  id              String   @id @default(cuid())
+  researchSpaceId String
+  type            String // "trend" | "reproducibility" | "concentration" | ...
+  title           String
+  description     String
+  // severity: "info" | "low" | "medium" | "high"
+  severity        String
+  createdAt       DateTime @default(now())
+  evidence        String // JSON-encoded supporting data
+
+  researchSpace ResearchSpace @relation(fields: [researchSpaceId], references: [id])
+}

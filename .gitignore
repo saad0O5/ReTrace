@@ -41,3 +41,5 @@ coverage/
 # Secrets
 *.pem
 *.key
+# Raw scraper output (local only)
+backend/raw/
