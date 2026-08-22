@@ -1,0 +1,11 @@
+{
+  "name": "ReTrace",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Research intelligence and literature landscape platform powered by resilient web data collection",
+  "scripts": {
+    "dev": "npm run dev --prefix backend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend"
+  }
+}
