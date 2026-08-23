@@ -46,4 +46,56 @@ function normalizeArxivRecord(raw) {
   };
 }
 
-module.exports = { normalizeArxivRecord, parseArxivId };
+// Converts a raw GitHub record from Bright Data into the common Artifact shape
+// (type: "IMPLEMENTATION").
+//
+// Built against REAL observed output from collector c_mt5yn9lvrgrgdp5vm
+// (backend/raw/manual-github-1787499165338.json, 10 records) — the first GitHub
+// collector (c_mt4p886y15pmyqfts) had a stale ".search-title" selector after a
+// GitHub search-page redesign; it was diagnosed via DevTools inspection, and a
+// fresh AI-generated scraper (`bdata scraper create`) was built against the
+// current live page instead of hand-patching the old one.
+//
+// Confirmed quirks in the real output, not assumed:
+//   - `description` is absent (no key at all) on 2 of 10 observed records.
+//   - `url` is present on only 1 of 10 observed records. GitHub repo URLs follow
+//     a deterministic /{owner}/{repo_name} pattern, confirmed against the one
+//     record that DID include `url` — reconstructed for the rest rather than
+//     left null.
+//   - `language` and `last_updated` were requested in the scraper's extraction
+//     prompt but never appeared in ANY observed record — treated as reliably
+//     absent from this collector's output, not per-record missing data.
+//   - `input.url` is the shared search query URL, identical across every record
+//     in a run — not a per-repo identifier, discarded.
+//   - Only 10 records returned (GitHub's default search page size). This
+//     collector does not paginate past page 1 — documented limitation, not a bug.
+function normalizeGithubRecord(raw) {
+  if (!raw.repo_name || !raw.owner) {
+    throw new Error(
+      `normalizeGithubRecord: missing required field(s) on record: ${JSON.stringify(raw)}`
+    );
+  }
+
+  const url = raw.url || `https://github.com/${raw.owner}/${raw.repo_name}`;
+
+  return {
+    type: "IMPLEMENTATION",
+    title: raw.repo_name,
+    description: raw.description || null,
+    url,
+    source: "github",
+    // Neither field is returned by this collector — see header note. Left null
+    // deliberately rather than guessed, same discipline as arXiv's publishedAt.
+    publishedAt: null,
+    updatedAt: null,
+    metadata: JSON.stringify({
+      owner: raw.owner,
+      repository: url,
+      language: null,
+      stars: typeof raw.stars === "number" ? raw.stars : null,
+      lastUpdated: null,
+    }),
+  };
+}
+
+module.exports = { normalizeArxivRecord, normalizeGithubRecord, parseArxivId };

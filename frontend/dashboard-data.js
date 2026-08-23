@@ -1,5 +1,5 @@
 window.RETRACE_DATA = {
-  "generatedAt": "2026-08-23T14:55:21.634Z",
+  "generatedAt": "2026-08-23T17:08:40.829Z",
   "researchSpace": {
     "name": "OTFS Channel Estimation",
     "topic": "OTFS channel estimation"
@@ -14,16 +14,256 @@ window.RETRACE_DATA = {
     },
     {
       "name": "github",
-      "collectorId": "c_mt4p886y15pmyqfts",
+      "collectorId": "c_mt5yn9lvrgrgdp5vm",
+      "status": "HEALTHY",
+      "lastRun": "2026-08-23T17:08:14.604Z",
+      "lastSuccessAt": "2026-08-23T17:08:14.604Z"
+    },
+    {
+      "name": "fixture",
+      "collectorId": "c_mt5c4xao29ue6pvc89",
       "status": "HEALTHY",
       "lastRun": null,
       "lastSuccessAt": null
     }
   ],
   "overview": {
-    "PAPER": 164
+    "PAPER": 164,
+    "IMPLEMENTATION": 10
   },
-  "totalArtifacts": 164,
+  "totalArtifacts": 174,
+  "relationships": [
+    {
+      "paperTitle": "Channel Estimation and Equalization for CP-OFDM-based OTFS in Fractional Doppler Channels",
+      "paperUrl": "https://arxiv.org/abs/2010.15396",
+      "repoTitle": "otfs-chan-est-and-eq",
+      "repoUrl": "https://github.com/hassiweb/otfs-chan-est-and-eq",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.335,
+      "evidence": [
+        "Paper title terms appear in repo description: equalization, ofdm, fractional, doppler, channels",
+        "Shared terms between paper abstract and repo description: doppler, channels, fractional, equalization, simulation, ofdm"
+      ]
+    },
+    {
+      "paperTitle": "Embedded Pilot-Aided Channel Estimation for OTFS in Delay-Doppler Channels",
+      "paperUrl": "https://arxiv.org/abs/1808.08360",
+      "repoTitle": "EP_Channel_Estimation_OTFS",
+      "repoUrl": "https://github.com/CanZheng0331/EP_Channel_Estimation_OTFS",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.202,
+      "evidence": [
+        "Paper title terms appear in repo description: embedded, pilot, aided",
+        "Shared terms between paper abstract and repo description: embedded, pilot, aided, threshold"
+      ]
+    },
+    {
+      "paperTitle": "Compressed Sensing Channel Estimation for OTFS Modulation in Non-Integer Delay-Doppler Domain",
+      "paperUrl": "https://arxiv.org/abs/2111.12382",
+      "repoTitle": "Compressed_Sensing_OTFS_Channel_Estimation",
+      "repoUrl": "https://github.com/CanZheng0331/Compressed_Sensing_OTFS_Channel_Estimation",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.175,
+      "evidence": [
+        "Paper title and repo title share: compressed, sensing",
+        "Paper title terms appear in repo description: compressed, sensing",
+        "Shared terms between paper abstract and repo description: compressed, sensing"
+      ]
+    },
+    {
+      "paperTitle": "Joint Sparsity Pattern Learning Based Channel Estimation for Massive MIMO-OTFS Systems",
+      "paperUrl": "https://arxiv.org/abs/2403.03771",
+      "repoTitle": "DeepMIMO-OTFS-ChannelEstimation",
+      "repoUrl": "https://github.com/helomelo1/DeepMIMO-OTFS-ChannelEstimation",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.147,
+      "evidence": [
+        "Paper title terms appear in repo description: learning, massive, mimo, systems",
+        "Shared terms between paper abstract and repo description: learning, massive, mimo, systems"
+      ]
+    },
+    {
+      "paperTitle": "Cross Domain Iterative Detection for Orthogonal Time Frequency Space Modulation",
+      "paperUrl": "https://arxiv.org/abs/2101.03822",
+      "repoTitle": "OTFS_CE",
+      "repoUrl": "https://github.com/anafreis/OTFS_CE",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.146,
+      "evidence": [
+        "Paper title terms appear in repo description: domain, time, frequency, modulation",
+        "Shared terms between paper abstract and repo description: time, frequency, modulation, domain"
+      ]
+    },
+    {
+      "paperTitle": "Sensing Aided OTFS Channel Estimation for Massive MIMO Systems",
+      "paperUrl": "https://arxiv.org/abs/2209.11321",
+      "repoTitle": "sensing_aided_OTFS_channel_estimation_",
+      "repoUrl": "https://github.com/acyiobs/sensing_aided_OTFS_channel_estimation_",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.14,
+      "evidence": [
+        "Paper title and repo title share: sensing, aided"
+      ]
+    },
+    {
+      "paperTitle": "Pilot-Aided Joint Time Synchronization and Channel Estimation for OTFS",
+      "paperUrl": "https://arxiv.org/abs/2408.04192",
+      "repoTitle": "EP_Channel_Estimation_OTFS",
+      "repoUrl": "https://github.com/CanZheng0331/EP_Channel_Estimation_OTFS",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.135,
+      "evidence": [
+        "Paper title terms appear in repo description: pilot, aided",
+        "Shared terms between paper abstract and repo description: pilot, aided"
+      ]
+    },
+    {
+      "paperTitle": "Integrated Sensing and Communications with MIMO-OTFS",
+      "paperUrl": "https://arxiv.org/abs/2306.06361",
+      "repoTitle": "Compressed_Sensing_OTFS_Channel_Estimation",
+      "repoUrl": "https://github.com/CanZheng0331/Compressed_Sensing_OTFS_Channel_Estimation",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.128,
+      "evidence": [
+        "Paper title and repo title share: sensing",
+        "Paper title terms appear in repo description: sensing",
+        "Shared terms between paper abstract and repo description: sensing"
+      ]
+    },
+    {
+      "paperTitle": "Superimposed Channel Estimation in OTFS Modulation Using Compressive Sensing",
+      "paperUrl": "https://arxiv.org/abs/2212.09280",
+      "repoTitle": "Compressed_Sensing_OTFS_Channel_Estimation",
+      "repoUrl": "https://github.com/CanZheng0331/Compressed_Sensing_OTFS_Channel_Estimation",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.126,
+      "evidence": [
+        "Paper title and repo title share: sensing",
+        "Paper title terms appear in repo description: sensing"
+      ]
+    },
+    {
+      "paperTitle": "Sensing Aided OTFS Channel Estimation for Massive MIMO Systems",
+      "paperUrl": "https://arxiv.org/abs/2209.11321",
+      "repoTitle": "DeepMIMO-OTFS-ChannelEstimation",
+      "repoUrl": "https://github.com/helomelo1/DeepMIMO-OTFS-ChannelEstimation",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.122,
+      "evidence": [
+        "Paper title terms appear in repo description: massive, mimo, systems",
+        "Shared terms between paper abstract and repo description: communications, systems, massive, mimo, communication"
+      ]
+    },
+    {
+      "paperTitle": "Orthogonal Time Frequency Space Modulation -- Part II: Transceiver Designs",
+      "paperUrl": "https://arxiv.org/abs/2209.05012",
+      "repoTitle": "OTFS_CE",
+      "repoUrl": "https://github.com/anafreis/OTFS_CE",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.114,
+      "evidence": [
+        "Paper title terms appear in repo description: time, frequency, modulation",
+        "Shared terms between paper abstract and repo description: time, frequency, modulation"
+      ]
+    },
+    {
+      "paperTitle": "Sensing Aided OTFS Channel Estimation for Massive MIMO Systems",
+      "paperUrl": "https://arxiv.org/abs/2209.11321",
+      "repoTitle": "Compressed_Sensing_OTFS_Channel_Estimation",
+      "repoUrl": "https://github.com/CanZheng0331/Compressed_Sensing_OTFS_Channel_Estimation",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.11,
+      "evidence": [
+        "Paper title and repo title share: sensing",
+        "Paper title terms appear in repo description: sensing",
+        "Shared terms between paper abstract and repo description: sensing"
+      ]
+    },
+    {
+      "paperTitle": "Joint Communication and Sensing in OTFS-based UAV Networks",
+      "paperUrl": "https://arxiv.org/abs/2311.17742",
+      "repoTitle": "Compressed_Sensing_OTFS_Channel_Estimation",
+      "repoUrl": "https://github.com/CanZheng0331/Compressed_Sensing_OTFS_Channel_Estimation",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.108,
+      "evidence": [
+        "Paper title and repo title share: sensing",
+        "Paper title terms appear in repo description: sensing"
+      ]
+    },
+    {
+      "paperTitle": "Low-Complexity Pilot-Aided Doppler Ambiguity Estimation for OTFS Parametric Channel Estimation",
+      "paperUrl": "https://arxiv.org/abs/2601.20827",
+      "repoTitle": "EP_Channel_Estimation_OTFS",
+      "repoUrl": "https://github.com/CanZheng0331/EP_Channel_Estimation_OTFS",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.104,
+      "evidence": [
+        "Paper title terms appear in repo description: pilot, aided",
+        "Shared terms between paper abstract and repo description: pilot, aided, embedded"
+      ]
+    },
+    {
+      "paperTitle": "Transmitter and Receiver Window Designs for Orthogonal Time Frequency Space Modulation",
+      "paperUrl": "https://arxiv.org/abs/2010.13005",
+      "repoTitle": "OTFS_CE",
+      "repoUrl": "https://github.com/anafreis/OTFS_CE",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.104,
+      "evidence": [
+        "Paper title terms appear in repo description: time, frequency, modulation",
+        "Shared terms between paper abstract and repo description: time, frequency, modulation, domain"
+      ]
+    },
+    {
+      "paperTitle": "Random Access with Massive MIMO-OTFS in LEO Satellite Communications",
+      "paperUrl": "https://arxiv.org/abs/2202.13058",
+      "repoTitle": "DeepMIMO-OTFS-ChannelEstimation",
+      "repoUrl": "https://github.com/helomelo1/DeepMIMO-OTFS-ChannelEstimation",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.104,
+      "evidence": [
+        "Paper title terms appear in repo description: massive, mimo, communications",
+        "Shared terms between paper abstract and repo description: systems, massive, mimo, learning"
+      ]
+    },
+    {
+      "paperTitle": "Fast Burst-Sparsity Learning Approach for Massive MIMO-OTFS Channel Estimation",
+      "paperUrl": "https://arxiv.org/abs/2408.12239",
+      "repoTitle": "DeepMIMO-OTFS-ChannelEstimation",
+      "repoUrl": "https://github.com/helomelo1/DeepMIMO-OTFS-ChannelEstimation",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.104,
+      "evidence": [
+        "Paper title terms appear in repo description: learning, massive, mimo",
+        "Shared terms between paper abstract and repo description: systems, massive, mimo"
+      ]
+    },
+    {
+      "paperTitle": "Time Frequency Localized Pulse for Delay Doppler Domain Data Transmission",
+      "paperUrl": "https://arxiv.org/abs/2501.18286",
+      "repoTitle": "OTFS_CE",
+      "repoUrl": "https://github.com/anafreis/OTFS_CE",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.104,
+      "evidence": [
+        "Paper title terms appear in repo description: time, frequency, domain",
+        "Shared terms between paper abstract and repo description: time, frequency, domain"
+      ]
+    },
+    {
+      "paperTitle": "Message Passing Based Structured Sparse Signal Recovery for Estimation of OTFS Channels with Fractional Doppler Shifts",
+      "paperUrl": "https://arxiv.org/abs/2011.14757",
+      "repoTitle": "otfs-chan-est-and-eq",
+      "repoUrl": "https://github.com/hassiweb/otfs-chan-est-and-eq",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.103,
+      "evidence": [
+        "Paper title terms appear in repo description: channels, fractional, doppler",
+        "Shared terms between paper abstract and repo description: doppler, channels, fractional"
+      ]
+    }
+  ],
   "artifacts": [
     {
       "title": "Synchronization and Channel Estimation of OTFS with RF Impairments",
@@ -2045,6 +2285,76 @@ window.RETRACE_DATA = {
         "J. Andrew Zhang",
         "Tony Q. S. Quek"
       ]
+    },
+    {
+      "title": "DeepMIMO-OTFS-ChannelEstimation",
+      "type": "IMPLEMENTATION",
+      "url": "https://github.com/helomelo1/DeepMIMO-OTFS-ChannelEstimation",
+      "publishedAt": null,
+      "authors": []
+    },
+    {
+      "title": "OTFS_CE",
+      "type": "IMPLEMENTATION",
+      "url": "https://github.com/anafreis/OTFS_CE",
+      "publishedAt": null,
+      "authors": []
+    },
+    {
+      "title": "JCEE_OTFS",
+      "type": "IMPLEMENTATION",
+      "url": "https://github.com/lfong000/JCEE_OTFS",
+      "publishedAt": null,
+      "authors": []
+    },
+    {
+      "title": "OTFS-channel-estimation",
+      "type": "IMPLEMENTATION",
+      "url": "https://github.com/gyL-communication/OTFS-channel-estimation",
+      "publishedAt": null,
+      "authors": []
+    },
+    {
+      "title": "otfs-chan-est-and-eq",
+      "type": "IMPLEMENTATION",
+      "url": "https://github.com/hassiweb/otfs-chan-est-and-eq",
+      "publishedAt": null,
+      "authors": []
+    },
+    {
+      "title": "Optimizing-Channel-Estimation-Overhead-for-OTFS-with-Prior-Channel-Statistics",
+      "type": "IMPLEMENTATION",
+      "url": "https://github.com/RunnanLIUSJTU/Optimizing-Channel-Estimation-Overhead-for-OTFS-with-Prior-Channel-Statistics",
+      "publishedAt": null,
+      "authors": []
+    },
+    {
+      "title": "EP_Channel_Estimation_OTFS",
+      "type": "IMPLEMENTATION",
+      "url": "https://github.com/CanZheng0331/EP_Channel_Estimation_OTFS",
+      "publishedAt": null,
+      "authors": []
+    },
+    {
+      "title": "OTFS_channel_estimation",
+      "type": "IMPLEMENTATION",
+      "url": "https://github.com/Joe5992/OTFS_channel_estimation",
+      "publishedAt": null,
+      "authors": []
+    },
+    {
+      "title": "sensing_aided_OTFS_channel_estimation_",
+      "type": "IMPLEMENTATION",
+      "url": "https://github.com/acyiobs/sensing_aided_OTFS_channel_estimation_",
+      "publishedAt": null,
+      "authors": []
+    },
+    {
+      "title": "Compressed_Sensing_OTFS_Channel_Estimation",
+      "type": "IMPLEMENTATION",
+      "url": "https://github.com/CanZheng0331/Compressed_Sensing_OTFS_Channel_Estimation",
+      "publishedAt": null,
+      "authors": []
     }
   ]
 };

@@ -2,128 +2,465 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>ReTrace</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ReTrace — Research Landscape</title>
 <style>
-  :root { --bg: #0b0d12; --card: #12151c; --border: #232838; --text: #e7e9ee; --muted: #8b93a7; --accent: #6ea8ff; --good: #3ecf8e; --warn: #f5a524; }
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+  :root {
+    --bg: #080c12;
+    --panel: #0f151e;
+    --panel-2: #121b26;
+    --border: #202c3a;
+    --border-soft: #18222e;
+    --text: #e6edf5;
+    --muted: #8290a3;
+    --faint: #536174;
+    --accent: #f0b429;
+    --accent-soft: rgba(240,180,41,.12);
+    --green: #46d18a;
+    --green-soft: rgba(70,209,138,.10);
+    --red: #f06b6b;
+    --red-soft: rgba(240,107,107,.10);
+    --blue: #74a9ff;
+    --shadow: 0 16px 50px rgba(0,0,0,.24);
+  }
+
   * { box-sizing: border-box; }
-  body { margin: 0; font-family: -apple-system, Segoe UI, Roboto, sans-serif; background: var(--bg); color: var(--text); }
-  header { padding: 28px 32px 16px; border-bottom: 1px solid var(--border); }
-  header h1 { margin: 0 0 4px; font-size: 22px; }
-  header p { margin: 0; color: var(--muted); font-size: 14px; }
-  main { padding: 24px 32px; max-width: 1100px; margin: 0 auto; }
-  section { margin-bottom: 32px; }
-  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 12px; }
-  .cards { display: flex; gap: 16px; flex-wrap: wrap; }
-  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; min-width: 140px; }
-  .card .num { font-size: 28px; font-weight: 600; }
-  .card .label { font-size: 13px; color: var(--muted); margin-top: 2px; }
-  .source-row { display: flex; align-items: center; gap: 12px; background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; margin-bottom: 8px; }
-  .dot { width: 8px; height: 8px; border-radius: 50%; }
-  .dot.healthy { background: var(--good); }
-  .dot.other { background: var(--warn); }
-  .source-name { font-weight: 600; text-transform: capitalize; min-width: 90px; }
-  .source-meta { color: var(--muted); font-size: 13px; }
-  table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  th { text-align: left; color: var(--muted); font-weight: 500; padding: 8px 10px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: var(--bg); }
-  td { padding: 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
-  td.title { max-width: 420px; }
-  td a { color: var(--accent); text-decoration: none; }
-  td a:hover { text-decoration: underline; }
-  .table-wrap { max-height: 520px; overflow-y: auto; border: 1px solid var(--border); border-radius: 8px; }
-  input#search { width: 100%; padding: 10px 12px; margin-bottom: 10px; background: var(--card); border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-size: 14px; }
-  .note { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 6px; padding: 14px 16px; font-size: 13px; color: var(--muted); line-height: 1.5; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(circle at 75% -10%, rgba(240,180,41,.07), transparent 30%),
+      var(--bg);
+    color: var(--text);
+    font-family: Inter, system-ui, sans-serif;
+    line-height: 1.5;
+  }
+  a { color: inherit; }
+  button, input { font: inherit; }
+
+  .shell { display: grid; grid-template-columns: 240px minmax(0, 1fr); min-height: 100vh; }
+  .sidebar {
+    position: sticky; top: 0; height: 100vh;
+    border-right: 1px solid var(--border-soft);
+    background: rgba(8,12,18,.92);
+    padding: 26px 18px;
+  }
+  .brand { padding: 4px 12px 28px; }
+  .brand-mark { color: var(--accent); font: 600 12px 'JetBrains Mono', monospace; letter-spacing: .14em; }
+  .brand h1 { margin: 6px 0 2px; font-size: 24px; letter-spacing: -.04em; }
+  .brand p { margin: 0; color: var(--muted); font-size: 11px; }
+  .nav { display: grid; gap: 5px; }
+  .nav a {
+    padding: 10px 12px; border-radius: 8px; text-decoration: none; color: var(--muted); font-size: 13px;
+  }
+  .nav a:hover { color: var(--text); background: var(--panel); }
+  .side-note {
+    position: absolute; bottom: 22px; left: 30px; right: 22px;
+    color: var(--faint); font-size: 10px; line-height: 1.6;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  main { min-width: 0; }
+  .topbar {
+    padding: 22px 42px 20px;
+    border-bottom: 1px solid var(--border-soft);
+    display: flex; justify-content: space-between; gap: 24px; align-items: center;
+  }
+  .eyebrow { color: var(--accent); font: 500 11px 'JetBrains Mono', monospace; letter-spacing: .12em; text-transform: uppercase; }
+  .topbar h2 { margin: 5px 0 0; font-size: 16px; font-weight: 600; }
+  .generated { color: var(--muted); font-size: 11px; font-family: 'JetBrains Mono', monospace; text-align: right; }
+
+  .content { max-width: 1420px; margin: 0 auto; padding: 34px 42px 70px; }
+  section { scroll-margin-top: 20px; margin-bottom: 42px; }
+  .hero {
+    display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(260px, .8fr); gap: 22px;
+    margin-bottom: 30px;
+  }
+  .hero-card, .panel {
+    background: linear-gradient(145deg, rgba(18,27,38,.96), rgba(13,19,28,.96));
+    border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow);
+  }
+  .hero-card { padding: 30px; min-height: 260px; position: relative; overflow: hidden; }
+  .hero-card::after {
+    content: ''; position: absolute; width: 240px; height: 240px; right: -90px; top: -110px;
+    border: 1px solid rgba(240,180,41,.15); border-radius: 50%; box-shadow: 0 0 0 24px rgba(240,180,41,.025), 0 0 0 48px rgba(240,180,41,.015);
+  }
+  .hero h1 { margin: 10px 0 12px; font-size: clamp(30px, 4vw, 48px); letter-spacing: -.055em; line-height: 1.02; max-width: 780px; }
+  .hero .lead { color: #aab6c6; max-width: 700px; font-size: 15px; }
+  .topic-chip {
+    display: inline-flex; align-items: center; gap: 8px; margin-top: 20px; padding: 7px 10px;
+    border: 1px solid rgba(240,180,41,.28); border-radius: 999px; background: var(--accent-soft);
+    color: #f4c95e; font: 500 11px 'JetBrains Mono', monospace;
+  }
+  .hero-side { padding: 24px; }
+  .hero-side h3 { margin: 0 0 18px; font-size: 13px; }
+  .flow { display: grid; gap: 0; }
+  .flow-step { display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: center; min-height: 43px; }
+  .flow-step .num {
+    width: 24px; height: 24px; border: 1px solid var(--border); border-radius: 50%; display: grid; place-items: center;
+    color: var(--accent); font: 500 10px 'JetBrains Mono', monospace;
+  }
+  .flow-step:not(:last-child) .num { position: relative; }
+  .flow-step:not(:last-child) .num::after { content: ''; position: absolute; top: 24px; height: 19px; width: 1px; background: var(--border); }
+  .flow-step span:last-child { color: #aab6c6; font-size: 12px; }
+
+  .section-head { display: flex; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 14px; }
+  .section-head h2 { margin: 0; font-size: 19px; letter-spacing: -.025em; }
+  .section-head p { margin: 4px 0 0; color: var(--muted); font-size: 12px; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+  .stat { padding: 18px; border: 1px solid var(--border); border-radius: 11px; background: var(--panel); }
+  .stat .value { font: 600 27px 'JetBrains Mono', monospace; letter-spacing: -.04em; }
+  .stat .label { color: var(--muted); font-size: 11px; margin-top: 5px; }
+  .stat .sub { color: var(--faint); font-size: 10px; margin-top: 8px; }
+
+  .source-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
+  .source-card { padding: 17px; border: 1px solid var(--border); border-radius: 11px; background: var(--panel); }
+  .source-top { display: flex; justify-content: space-between; align-items: center; }
+  .source-name { font-weight: 600; text-transform: capitalize; }
+  .status { display: inline-flex; align-items: center; gap: 6px; color: var(--green); font: 500 10px 'JetBrains Mono', monospace; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 10px rgba(70,209,138,.45); }
+  .dot.warn { background: var(--accent); box-shadow: 0 0 10px rgba(240,180,41,.4); }
+  .collector { margin-top: 14px; padding: 9px 10px; background: #0a1017; border: 1px solid var(--border-soft); border-radius: 7px; color: #93a2b5; font: 10px 'JetBrains Mono', monospace; overflow: auto; white-space: nowrap; }
+  .source-foot { margin-top: 10px; color: var(--faint); font-size: 10px; }
+
+  .split { display: grid; grid-template-columns: minmax(0,1.25fr) minmax(300px,.75fr); gap: 14px; }
+  .panel { padding: 20px; box-shadow: none; }
+  .panel-title { display: flex; justify-content: space-between; gap: 10px; align-items: center; margin-bottom: 14px; }
+  .panel-title h3 { margin: 0; font-size: 13px; }
+  .panel-title span { color: var(--faint); font: 10px 'JetBrains Mono', monospace; }
+
+  .relationship-list { display: grid; gap: 10px; }
+  .relationship {
+    padding: 13px; border: 1px solid var(--border-soft); border-radius: 9px; background: rgba(8,12,18,.42);
+  }
+  .relation-line { display: grid; grid-template-columns: minmax(0,1fr) 28px minmax(0,1fr); gap: 8px; align-items: center; }
+  .artifact-box { min-width: 0; }
+  .artifact-type { color: var(--accent); font: 500 9px 'JetBrains Mono', monospace; letter-spacing: .08em; }
+  .artifact-title { margin-top: 3px; font-size: 12px; line-height: 1.35; }
+  .artifact-title a { text-decoration: none; }
+  .artifact-title a:hover { color: var(--accent); }
+  .trace { color: var(--accent); text-align: center; font: 12px 'JetBrains Mono', monospace; }
+  .relation-meta { display: flex; justify-content: space-between; gap: 10px; margin-top: 10px; color: var(--muted); font-size: 10px; }
+  .confidence { color: #d5dee9; font-family: 'JetBrains Mono', monospace; }
+  .evidence { color: var(--faint); margin-top: 5px; font-size: 10px; }
+
+  .insight { border-left: 2px solid var(--accent); padding: 13px 15px; background: var(--accent-soft); border-radius: 0 8px 8px 0; margin-bottom: 10px; }
+  .insight strong { display: block; font-size: 11px; margin-bottom: 4px; }
+  .insight p { margin: 0; color: #aeb9c7; font-size: 11px; }
+  .method-bar { margin-top: 14px; }
+  .bar-row { display: grid; grid-template-columns: 80px 1fr 42px; gap: 8px; align-items: center; margin: 9px 0; font-size: 10px; color: var(--muted); }
+  .bar { height: 6px; background: #17212d; border-radius: 99px; overflow: hidden; }
+  .bar i { display: block; height: 100%; background: var(--accent); border-radius: inherit; }
+
+  .heal {
+    border: 1px solid rgba(240,180,41,.28); background: linear-gradient(135deg, rgba(240,180,41,.07), rgba(15,21,30,.96));
+    padding: 22px; border-radius: 12px;
+  }
+  .heal-head { display: flex; justify-content: space-between; gap: 20px; align-items: start; }
+  .heal h3 { margin: 0 0 5px; font-size: 14px; }
+  .heal p { margin: 0; color: var(--muted); font-size: 11px; max-width: 850px; }
+  .heal-badge { color: #f4c95e; font: 500 10px 'JetBrains Mono', monospace; border: 1px solid rgba(240,180,41,.25); padding: 7px 9px; border-radius: 7px; white-space: nowrap; }
+  .timeline { display: grid; grid-template-columns: repeat(5, 1fr); margin-top: 20px; border-top: 1px solid var(--border); }
+  .timeline-step { padding: 13px 10px 0; position: relative; }
+  .timeline-step::before { content:''; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); position: absolute; top: -4px; left: 10px; }
+  .timeline-step strong { display: block; font-size: 10px; }
+  .timeline-step span { display: block; color: var(--muted); font-size: 9px; margin-top: 4px; }
+  .heal-limit { margin-top: 16px; padding-top: 13px; border-top: 1px solid var(--border); color: #9ba8b8; font-size: 10px; }
+  .heal-limit b { color: var(--red); font-weight: 500; }
+
+  .toolbar { display: flex; gap: 8px; margin-bottom: 10px; }
+  input#search { flex: 1; min-width: 0; padding: 11px 12px; color: var(--text); background: var(--panel); border: 1px solid var(--border); border-radius: 8px; outline: none; }
+  input#search:focus { border-color: rgba(240,180,41,.45); }
+  .count-pill { padding: 10px 11px; border: 1px solid var(--border); border-radius: 8px; color: var(--muted); font: 10px 'JetBrains Mono', monospace; white-space: nowrap; }
+  .table-wrap { max-height: 560px; overflow: auto; border: 1px solid var(--border); border-radius: 10px; background: var(--panel); }
+  table { width: 100%; border-collapse: collapse; font-size: 11px; }
+  th { text-align: left; position: sticky; top: 0; z-index: 1; padding: 11px 12px; color: var(--muted); background: #0c121a; border-bottom: 1px solid var(--border); font-weight: 500; }
+  td { padding: 11px 12px; border-bottom: 1px solid var(--border-soft); vertical-align: top; }
+  tr:hover td { background: rgba(240,180,41,.025); }
+  td.title { min-width: 360px; max-width: 600px; }
+  td a { color: #b8c9dc; text-decoration: none; }
+  td a:hover { color: var(--accent); }
+  .tag { display: inline-block; padding: 3px 6px; border: 1px solid var(--border); border-radius: 5px; color: var(--muted); font: 9px 'JetBrains Mono', monospace; }
+  .empty { padding: 30px; text-align: center; color: var(--muted); }
+
+  footer { color: var(--faint); text-align: center; padding: 20px 0 0; font: 9px 'JetBrains Mono', monospace; }
+
+  @media (max-width: 1000px) {
+    .shell { grid-template-columns: 1fr; }
+    .sidebar { position: relative; height: auto; border-right: 0; border-bottom: 1px solid var(--border-soft); padding: 15px; }
+    .brand { padding: 0 10px 12px; }
+    .nav { display: flex; overflow-x: auto; }
+    .side-note { display: none; }
+    .topbar { padding: 18px 20px; }
+    .content { padding: 24px 20px 50px; }
+    .hero, .split { grid-template-columns: 1fr; }
+    .cards { grid-template-columns: repeat(2, 1fr); }
+    .source-grid { grid-template-columns: 1fr; }
+    .timeline { grid-template-columns: 1fr; border-top: 0; border-left: 1px solid var(--border); margin-left: 5px; }
+    .timeline-step { padding-left: 15px; padding-top: 12px; }
+    .timeline-step::before { left: -4px; top: 15px; }
+  }
+  @media (max-width: 600px) {
+    .cards { grid-template-columns: 1fr 1fr; }
+    .relation-line { grid-template-columns: 1fr; }
+    .trace { display: none; }
+    td.title { min-width: 260px; }
+  }
 </style>
 </head>
 <body>
-<header>
-  <h1>ReTrace</h1>
-  <p id="subtitle">Loading...</p>
-</header>
-<main>
-  <section>
-    <h2>Sources</h2>
-    <div id="sources"></div>
-  </section>
-
-  <section>
-    <h2>Overview</h2>
-    <div class="cards" id="overview"></div>
-  </section>
-
-  <section>
-    <h2>Self-Healing</h2>
-    <div class="note">
-      Validated via a controlled fixture page (github.com/saad0O5/ReTrace-Fixture): forced a real structural break,
-      confirmed extraction failed cleanly, then triggered Bright Data's Self-Healing. The dashboard correctly diagnosed
-      the change and generated accurate new selectors, verified against a live preview with real extracted data.
-      The final publish step hit a transient platform error ("Could not connect to preview server") during our
-      testing window — the fix-generation mechanism itself is confirmed working end to end.
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">RESEARCH / TRACE</div>
+      <h1>ReTrace</h1>
+      <p id="side-topic">Research landscape</p>
     </div>
-  </section>
+    <nav class="nav">
+      <a href="#overview">Overview</a>
+      <a href="#sources">Sources</a>
+      <a href="#connections">Connections</a>
+      <a href="#landscape">Landscape</a>
+      <a href="#self-healing">Self-Healing</a>
+      <a href="#matrix">Literature Matrix</a>
+    </nav>
+    <div class="side-note">PUBLIC WEB EVIDENCE<br>COLLECT → CONNECT → UNDERSTAND</div>
+  </aside>
 
-  <section>
-    <h2>Literature Matrix — <span id="topic-label"></span></h2>
-    <input id="search" type="text" placeholder="Filter by title or author..." />
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Title</th><th>Authors</th><th>Published</th><th>Link</th></tr></thead>
-        <tbody id="matrix-body"></tbody>
-      </table>
+  <main>
+    <div class="topbar">
+      <div>
+        <div class="eyebrow">Research Space</div>
+        <h2 id="top-topic">Loading topic...</h2>
+      </div>
+      <div class="generated" id="generated">snapshot: —</div>
     </div>
-  </section>
-</main>
+
+    <div class="content">
+      <section class="hero" id="overview">
+        <div class="hero-card">
+          <div class="eyebrow">Research intelligence</div>
+          <h1>Trace the field.<br>Don't just search it.</h1>
+          <p class="lead">ReTrace collects fragmented public research artifacts, connects related work, and turns the result into a navigable research landscape.</p>
+          <div class="topic-chip">● <span id="hero-topic">OTFS channel estimation</span></div>
+        </div>
+        <div class="panel hero-side">
+          <h3>How ReTrace works</h3>
+          <div class="flow">
+            <div class="flow-step"><span class="num">01</span><span>Collect public source data</span></div>
+            <div class="flow-step"><span class="num">02</span><span>Normalize into research artifacts</span></div>
+            <div class="flow-step"><span class="num">03</span><span>Trace relationships with evidence</span></div>
+            <div class="flow-step"><span class="num">04</span><span>Surface the research landscape</span></div>
+            <div class="flow-step"><span class="num">05</span><span>Monitor source resilience</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <div><h2>Research inventory</h2><p>What ReTrace has observed in this research space.</p></div>
+        </div>
+        <div class="cards" id="overview-cards"></div>
+      </section>
+
+      <section id="sources">
+        <div class="section-head">
+          <div><h2>Source health</h2><p>Bright Data Collector IDs are the collection boundary for each source.</p></div>
+        </div>
+        <div class="source-grid" id="sources-grid"></div>
+      </section>
+
+      <section id="connections">
+        <div class="section-head">
+          <div><h2>Research connections</h2><p>Candidate paper → repository relationships discovered from real collected data.</p></div>
+          <div class="mono" id="relationship-count">0 relationships</div>
+        </div>
+        <div class="split">
+          <div class="panel">
+            <div class="panel-title"><h3>Traced implementations</h3><span>IMPLEMENTED_BY</span></div>
+            <div class="relationship-list" id="relationships"></div>
+          </div>
+          <div class="panel" id="landscape">
+            <div class="panel-title"><h3>Landscape signals</h3><span>OBSERVED DATA</span></div>
+            <div id="insights"></div>
+            <div class="method-bar" id="coverage"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="self-healing">
+        <div class="section-head">
+          <div><h2>Source resilience</h2><p>Self-healing was tested against a controlled structural break.</p></div>
+        </div>
+        <div class="heal">
+          <div class="heal-head">
+            <div>
+              <h3>Bright Data self-healing validation</h3>
+              <p>ReTrace deliberately broke a controlled fixture's HTML structure, then used Bright Data's self-healing workflow to regenerate selectors and verify recovered extraction in live preview.</p>
+            </div>
+            <div class="heal-badge">REPAIR VERIFIED / PUBLISH BLOCKED</div>
+          </div>
+          <div class="timeline">
+            <div class="timeline-step"><strong>01 · Baseline</strong><span>Collector extracts fixture fields.</span></div>
+            <div class="timeline-step"><strong>02 · Break</strong><span>HTML tags, classes and nesting change.</span></div>
+            <div class="timeline-step"><strong>03 · Detect</strong><span>Extraction completes but fields become empty.</span></div>
+            <div class="timeline-step"><strong>04 · Heal</strong><span>New selectors generated and preview re-extracts data.</span></div>
+            <div class="timeline-step"><strong>05 · Promote</strong><span>Production publish hit a platform preview-server error.</span></div>
+          </div>
+          <div class="heal-limit"><b>Known limitation:</b> the final Accept changes / production promotion step could not be completed during testing. ReTrace does not claim a successful production version update; the repair-generation and preview-validation stages are the confirmed working portion.</div>
+        </div>
+      </section>
+
+      <section id="matrix">
+        <div class="section-head">
+          <div><h2>Literature matrix</h2><p id="matrix-topic">Searchable paper inventory for the current research space.</p></div>
+        </div>
+        <div class="toolbar">
+          <input id="search" type="search" placeholder="Search title, author, or artifact type..." />
+          <div class="count-pill" id="matrix-count">0 results</div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Research artifact</th><th>Type</th><th>Authors / owner</th><th>Published</th><th>Source</th></tr></thead>
+            <tbody id="matrix-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <footer>ReTrace · public research evidence · generated from the current database snapshot</footer>
+    </div>
+  </main>
+</div>
 
 <script src="dashboard-data.js"></script>
 <script>
-  const data = window.RETRACE_DATA || { sources: [], overview: {}, artifacts: [], totalArtifacts: 0 };
+  const data = window.RETRACE_DATA || {
+    sources: [], overview: {}, artifacts: [], relationships: [], totalArtifacts: 0, generatedAt: null, researchSpace: null
+  };
 
-  document.getElementById("subtitle").textContent =
-    (data.researchSpace ? data.researchSpace.topic : "Research topic") +
-    " — " + data.totalArtifacts + " artifacts — generated " + new Date(data.generatedAt).toLocaleString();
-  document.getElementById("topic-label").textContent = data.researchSpace ? data.researchSpace.topic : "";
+  const topic = data.researchSpace?.topic || 'Research topic';
+  document.getElementById('top-topic').textContent = topic;
+  document.getElementById('hero-topic').textContent = topic;
+  document.getElementById('side-topic').textContent = topic;
+  document.getElementById('matrix-topic').textContent = `Searchable artifact inventory for ${topic}.`;
+  document.getElementById('generated').textContent = data.generatedAt ? `snapshot: ${new Date(data.generatedAt).toLocaleString()}` : 'snapshot: —';
 
-  const sourcesEl = document.getElementById("sources");
-  data.sources.forEach((s) => {
-    const row = document.createElement("div");
-    row.className = "source-row";
-    row.innerHTML = `
-      <span class="dot ${s.status === "HEALTHY" ? "healthy" : "other"}"></span>
-      <span class="source-name">${s.name}</span>
-      <span class="source-meta">${s.collectorId}</span>
-      <span class="source-meta" style="margin-left:auto">${s.status}${s.lastSuccessAt ? " · last success " + new Date(s.lastSuccessAt).toLocaleString() : ""}</span>
-    `;
-    sourcesEl.appendChild(row);
+  const overviewCards = [
+    ['TOTAL', data.totalArtifacts || 0, 'all normalized artifacts'],
+    ['PAPERS', data.overview?.PAPER || 0, 'public research papers'],
+    ['IMPLEMENTATIONS', data.overview?.IMPLEMENTATION || 0, 'public repositories'],
+    ['RELATIONSHIPS', data.relationships?.length || 0, 'candidate paper → repo links']
+  ];
+  const overviewEl = document.getElementById('overview-cards');
+  overviewCards.forEach(([label, value, sub]) => {
+    const el = document.createElement('div');
+    el.className = 'stat';
+    el.innerHTML = `<div class="value">${value}</div><div class="label">${label}</div><div class="sub">${sub}</div>`;
+    overviewEl.appendChild(el);
   });
 
-  const overviewEl = document.getElementById("overview");
-  const cards = [["Total artifacts", data.totalArtifacts]].concat(Object.entries(data.overview));
-  cards.forEach(([label, num]) => {
-    const card = document.createElement("div");
-    card.className = "card";
-    card.innerHTML = `<div class="num">${num}</div><div class="label">${label}</div>`;
-    overviewEl.appendChild(card);
+  const sourceEl = document.getElementById('sources-grid');
+  (data.sources || []).forEach(s => {
+    const healthy = s.status === 'HEALTHY';
+    const el = document.createElement('div');
+    el.className = 'source-card';
+    el.innerHTML = `
+      <div class="source-top">
+        <div class="source-name">${escapeHtml(s.name)}</div>
+        <div class="status"><i class="dot ${healthy ? '' : 'warn'}"></i>${escapeHtml(s.status || 'UNKNOWN')}</div>
+      </div>
+      <div class="collector">${escapeHtml(s.collectorId || 'no collector id')}</div>
+      <div class="source-foot">${s.lastSuccessAt ? `last success · ${new Date(s.lastSuccessAt).toLocaleString()}` : 'no successful run recorded in this snapshot'}</div>`;
+    sourceEl.appendChild(el);
   });
 
-  const tbody = document.getElementById("matrix-body");
-  function renderRows(filter) {
-    tbody.innerHTML = "";
-    const q = (filter || "").toLowerCase();
-    data.artifacts
-      .filter((a) => !q || a.title.toLowerCase().includes(q) || (a.authors || []).join(" ").toLowerCase().includes(q))
-      .forEach((a) => {
-        const tr = document.createElement("tr");
-        const pub = a.publishedAt ? new Date(a.publishedAt).toLocaleDateString() : "—";
-        tr.innerHTML = `
-          <td class="title">${a.title}</td>
-          <td>${(a.authors || []).slice(0, 3).join(", ")}${a.authors && a.authors.length > 3 ? " et al." : ""}</td>
-          <td>${pub}</td>
-          <td><a href="${a.url}" target="_blank" rel="noopener">view</a></td>
-        `;
-        tbody.appendChild(tr);
-      });
+  const relationships = data.relationships || [];
+  document.getElementById('relationship-count').textContent = `${relationships.length} candidate relationships`;
+  const relEl = document.getElementById('relationships');
+  if (!relationships.length) relEl.innerHTML = '<div class="empty">No relationships in this snapshot.</div>';
+  relationships.slice(0, 8).forEach(r => {
+    const evidence = Array.isArray(r.evidence) ? r.evidence : [];
+    const el = document.createElement('div');
+    el.className = 'relationship';
+    el.innerHTML = `
+      <div class="relation-line">
+        <div class="artifact-box"><div class="artifact-type">PAPER</div><div class="artifact-title"><a href="${safeUrl(r.paperUrl)}" target="_blank" rel="noreferrer">${escapeHtml(r.paperTitle)}</a></div></div>
+        <div class="trace">↔</div>
+        <div class="artifact-box"><div class="artifact-type">IMPLEMENTATION</div><div class="artifact-title"><a href="${safeUrl(r.repoUrl)}" target="_blank" rel="noreferrer">${escapeHtml(r.repoTitle)}</a></div></div>
+      </div>
+      <div class="relation-meta"><span>IMPLEMENTED_BY</span><span class="confidence">confidence ${(Number(r.confidence || 0) * 100).toFixed(1)}%</span></div>
+      <div class="evidence">${evidence.length ? `Evidence: ${evidence.map(escapeHtml).join(' · ')}` : 'Evidence recorded in relationship metadata.'}</div>`;
+    relEl.appendChild(el);
+  });
+
+  const paperCount = data.overview?.PAPER || 0;
+  const implCount = data.overview?.IMPLEMENTATION || 0;
+  const coverage = paperCount ? (implCount / paperCount * 100) : 0;
+  const insightsEl = document.getElementById('insights');
+  const insightData = [
+    ['Public implementation coverage', `${coverage.toFixed(1)}%`, `${implCount} implementation artifacts observed against ${paperCount} papers.`],
+    ['Candidate connections', `${relationships.length}`, 'Paper → repository relationships surfaced by deterministic matching; inspect evidence before treating them as confirmed.'],
+    ['Observed collection', `${data.totalArtifacts || 0}`, 'Artifacts in the current exported database snapshot, not a claim about the size of the entire research field.']
+  ];
+  insightData.forEach(([title, value, text]) => {
+    const el = document.createElement('div');
+    el.className = 'insight';
+    el.innerHTML = `<strong>${escapeHtml(title)} · ${escapeHtml(value)}</strong><p>${escapeHtml(text)}</p>`;
+    insightsEl.appendChild(el);
+  });
+
+  const coverageEl = document.getElementById('coverage');
+  coverageEl.innerHTML = `<div class="bar-row"><span>papers</span><div class="bar"><i style="width:100%"></i></div><span>${paperCount}</span></div><div class="bar-row"><span>repos</span><div class="bar"><i style="width:${Math.min(100, coverage * 5)}%"></i></div><span>${implCount}</span></div>`;
+
+  const tbody = document.getElementById('matrix-body');
+  const countEl = document.getElementById('matrix-count');
+  const search = document.getElementById('search');
+  function renderMatrix(query = '') {
+    const q = query.trim().toLowerCase();
+    const filtered = (data.artifacts || []).filter(a => {
+      const haystack = [a.title, a.type, a.url, ...(a.authors || [])].join(' ').toLowerCase();
+      return !q || haystack.includes(q);
+    });
+    countEl.textContent = `${filtered.length} results`;
+    tbody.innerHTML = '';
+    if (!filtered.length) {
+      tbody.innerHTML = '<tr><td colspan="5" class="empty">No artifacts match this search.</td></tr>';
+      return;
+    }
+    filtered.forEach(a => {
+      const tr = document.createElement('tr');
+      const date = a.publishedAt ? new Date(a.publishedAt).toLocaleDateString(undefined, {year:'numeric', month:'short', day:'numeric'}) : '—';
+      const authors = (a.authors || []).join(', ') || '—';
+      tr.innerHTML = `
+        <td class="title"><a href="${safeUrl(a.url)}" target="_blank" rel="noreferrer">${escapeHtml(a.title || 'Untitled artifact')}</a></td>
+        <td><span class="tag">${escapeHtml(a.type || 'UNKNOWN')}</span></td>
+        <td>${escapeHtml(authors)}</td>
+        <td class="mono">${escapeHtml(date)}</td>
+        <td>${escapeHtml(a.source || inferSource(a.url))}</td>`;
+      tbody.appendChild(tr);
+    });
   }
-  renderRows("");
-  document.getElementById("search").addEventListener("input", (e) => renderRows(e.target.value));
+  search.addEventListener('input', e => renderMatrix(e.target.value));
+  renderMatrix();
+
+  function inferSource(url = '') {
+    if (url.includes('arxiv.org')) return 'arXiv';
+    if (url.includes('github.com')) return 'GitHub';
+    return 'public web';
+  }
+  function safeUrl(url = '') {
+    try {
+      const u = new URL(url, window.location.href);
+      if (u.protocol === 'http:' || u.protocol === 'https:') return u.href;
+    } catch (_) {}
+    return '#';
+  }
+  function escapeHtml(value = '') {
+    return String(value).replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+  }
 </script>
 </body>
 </html>

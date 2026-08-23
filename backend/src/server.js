@@ -47,6 +47,15 @@ async function ensureSeeded() {
         },
       });
       console.log(`Created Source: ${cfg.name}`);
+    } else if (cfg.collectorId && existing.collectorId !== cfg.collectorId) {
+      // A collector ID can change (e.g. regenerated after a stale-selector break),
+      // and .env is the source of truth — sync it rather than leaving a stale ID
+      // sitting in the DB from whenever this Source row was first created.
+      await prisma.source.update({
+        where: { id: existing.id },
+        data: { collectorId: cfg.collectorId, baseUrl: cfg.urlTemplate },
+      });
+      console.log(`Synced Source "${cfg.name}" collectorId: ${existing.collectorId} -> ${cfg.collectorId}`);
     }
   }
 

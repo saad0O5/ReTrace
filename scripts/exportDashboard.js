@@ -14,10 +14,25 @@ const { PrismaClient } = require(path.join(__dirname, "..", "backend", "node_mod
 
 const prisma = new PrismaClient();
 
+function parseEvidence(value) {
+  try {
+    return JSON.parse(value || "[]");
+  } catch (_) {
+    return [];
+  }
+}
+
 async function main() {
   const space = await prisma.researchSpace.findFirst();
   const sources = await prisma.source.findMany();
   const artifacts = await prisma.artifact.findMany({ orderBy: { publishedAt: "desc" } });
+  const relationships = await prisma.relationship.findMany({
+    include: {
+      sourceArtifact: true,
+      targetArtifact: true,
+    },
+    orderBy: { confidence: "desc" },
+  });
 
   const overview = {};
   for (const a of artifacts) {
@@ -36,6 +51,15 @@ async function main() {
     })),
     overview,
     totalArtifacts: artifacts.length,
+    relationships: relationships.map((r) => ({
+      paperTitle: r.sourceArtifact.title,
+      paperUrl: r.sourceArtifact.url,
+      repoTitle: r.targetArtifact.title,
+      repoUrl: r.targetArtifact.url,
+      relationshipType: r.relationshipType,
+      confidence: r.confidence,
+      evidence: parseEvidence(r.evidence),
+    })),
     artifacts: artifacts.map((a) => {
       const meta = JSON.parse(a.metadata || "{}");
       return {
@@ -54,6 +78,7 @@ async function main() {
   fs.writeFileSync(outPath, `window.RETRACE_DATA = ${JSON.stringify(data, null, 2)};\n`);
 
   console.log(`Exported ${artifacts.length} artifacts to ${outPath}`);
+  console.log(`Exported ${relationships.length} relationships`);
   console.log(`Overview: ${JSON.stringify(overview)}`);
 
   await prisma.$disconnect();
