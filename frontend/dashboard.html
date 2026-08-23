@@ -401,7 +401,7 @@
   const coverage = paperCount ? (implCount / paperCount * 100) : 0;
   const insightsEl = document.getElementById('insights');
   const insightData = [
-    ['Public implementation coverage', `${coverage.toFixed(1)}%`, `${implCount} implementation artifacts observed against ${paperCount} papers.`],
+    ['Observed implementation-to-paper ratio', `${coverage.toFixed(1)}%`, `${implCount} implementation artifacts observed against ${paperCount} collected papers in this snapshot. This is an observation from the current ReTrace collection, not a claim about the entire research field.`],
     ['Candidate connections', `${relationships.length}`, 'Paper → repository relationships surfaced by deterministic matching; inspect evidence before treating them as confirmed.'],
     ['Observed collection', `${data.totalArtifacts || 0}`, 'Artifacts in the current exported database snapshot, not a claim about the size of the entire research field.']
   ];

@@ -8,7 +8,7 @@ window.RETRACE_DATA = {
     {
       "name": "arxiv",
       "collectorId": "c_mt4ot19f1crygiarf6",
-      "status": "HEALTHY",
+      "status": "CONFIGURED",
       "lastRun": null,
       "lastSuccessAt": null
     },
@@ -22,7 +22,7 @@ window.RETRACE_DATA = {
     {
       "name": "fixture",
       "collectorId": "c_mt5c4xao29ue6pvc89",
-      "status": "HEALTHY",
+      "status": "TEST SOURCE",
       "lastRun": null,
       "lastSuccessAt": null
     }
