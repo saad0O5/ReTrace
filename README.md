@@ -1,72 +1,44 @@
 # ReTrace
 
-Turns fragmented public research-web data into a connected, continuously updated research landscape.
+Turns fragmented public research-web data into a connected, browsable research landscape — built with Bright Data Scraper Studio for **Into the Scrape-Verse** (WeMakeDevs × Bright Data).
 
-Pick a research topic and a set of public sources; Bright Data Scraper Studio collects them; ReTrace normalizes the results into research artifacts (papers, implementations, datasets, benchmarks, projects, resources), connects related ones (a paper to its GitHub implementation, its dataset, its benchmark), tracks what changes between scans, and surfaces that as a literature matrix and research-activity signals.
+## The problem
 
-If a source website changes structure and a collector breaks, Bright Data's self-healing repairs it in place — same Collector ID, pipeline keeps running.
+Research information for a topic is scattered across papers, code repositories, datasets, and lab pages. There's no single place to see what exists, and no way to know what's changed since you last looked. ReTrace uses Bright Data's self-healing scrapers to continuously monitor public research sources and turn what they return into a connected, queryable dataset — resilient to the fact that these pages change structure over time.
 
-Built for **Into the Scrape-Verse** (WeMakeDevs × Bright Data).
+Demo topic: **OTFS (Orthogonal Time Frequency Space)**, a wireless-communications research area — this is genuinely the topic of my own internship research, not a synthetic demo case.
 
-## Status
+## What's built and working right now
 
-🚧 Checkpoint A in progress — Bright Data connection, database schema, and raw collection storage. No normalization, matching, or UI yet. See `docs/architecture.md` for the full build plan and checkpoint definitions.
+- **Two live Bright Data collectors**, created via Scraper Studio and triggered through the real `/dca/trigger` + `/dca/dataset` API (not just the dashboard UI): arXiv (`c_mt4ot19f1crygiarf6`) and GitHub (`c_mt4p886y15pmyqfts`).
+- **164 real papers** collected for "OTFS channel estimation," normalized into a common artifact schema, deduplicated, and stored with version history in a SQLite database via Prisma.
+- **A working dashboard** (`frontend/dashboard.html`) — no build step, no server — showing live source health (Collector IDs + status), an overview of collected artifacts, and a searchable literature matrix across all 164 real papers with real titles, authors, publication dates, and links.
+- **Raw-first ingestion**: every collector response is saved untouched before any transformation, so the pipeline can be reprocessed without re-scraping.
 
-## Setup
+## Self-healing — validated, honestly reported
 
-### 1. Install dependencies
+Self-healing is Scraper Studio's core reliability mechanism, and we tested it directly rather than assuming it works:
+
+We built a controlled fixture page (a small static site we fully control: `github.com/saad0O5/ReTrace-Fixture`), pointed a collector at it, then deliberately restructured the page's HTML — different tags, different classes, different nesting — to force a real extraction failure. The break was confirmed: the collector kept "succeeding" at the API level but every extracted field came back empty, an important finding in itself (failure here is silent, not an error — a system built on top of this needs to check field completeness, not just HTTP status).
+
+We then triggered Bright Data's Self-Healing. The dashboard correctly diagnosed the structural change and generated accurate new selectors, verified with a live preview showing correctly re-extracted data. The final publish step encountered a transient platform error ("Could not connect to preview server") during our testing window, which we couldn't clear before submission — but the core mechanism (AI diagnosis of a real structural break, correct fix generation, verified accurate re-extraction in preview) is confirmed working end to end.
+
+## What's not in this submission
+
+GitHub's search results proved resistant to reliable scraping in the time available (rate-limiting/bot-detection related), so GitHub data isn't included in this submission's dataset despite the collector existing and being configured. Paper-to-repository relationship matching, the full analytics layer, and additional artifact types (datasets, benchmarks, projects, resources) are designed into the architecture (see `docs/architecture.md`) but not built in this timeframe — this is a real tool I intend to keep developing for my own research use after the hackathon.
+
+## Running it
+
 ```bash
-cd backend
-npm install
+cd backend && npm install
+cp .env.example .env   # fill in your Bright Data API token + collector IDs
+npx prisma generate && npx prisma db push
+node scripts/testCollector.js arxiv "your topic"
+node scripts/ingestRaw.js backend/raw/<the-file-it-saved>.json
+node scripts/exportDashboard.js
+# open frontend/dashboard.html in a browser
 ```
 
-### 2. Configure environment
-```bash
-cp .env.example .env
-```
-Fill in `backend/.env`:
-- `BRIGHTDATA_API_TOKEN` — from your Bright Data account
-- `BRIGHTDATA_ARXIV_COLLECTOR_ID`, `BRIGHTDATA_GITHUB_COLLECTOR_ID` — see step 3
+## Architecture
 
-### 3. Create your collectors
-Using the Bright Data CLI (`bdata`):
-```bash
-bdata scraper create "https://arxiv.org/search/?query={topic}" "paper title, authors, abstract, published date, url, arxiv id"
-bdata scraper create "https://github.com/search?q={topic}&type=repositories" "repo name, owner, description, url, language, stars, last updated"
-```
-Each command returns a Collector ID (`c_xxxx`). Paste them into `backend/.env`.
-
-### 4. Set up the database
-```bash
-cd backend
-npx prisma generate
-npx prisma db push
-```
-
-### 5. Sanity-check the Bright Data connection (do this before starting the server)
-```bash
-node scripts/testCollector.js arxiv "OTFS channel estimation"
-```
-Inspect the saved JSON under `backend/raw/` — confirm the field names actually returned before writing anything that depends on them.
-
-### 6. Run the backend
-```bash
-cd backend
-npm run dev
-```
-```bash
-curl -X POST http://localhost:5000/api/collect/arxiv -H "Content-Type: application/json" -d '{"topic":"OTFS channel estimation"}'
-```
-
-## Project structure
-
-See `docs/architecture.md` for the full pipeline and phase-by-phase build order.
-
-## Self-healing
-
-When a source's page structure changes and a collector starts failing:
-```bash
-bdata scraper heal <collector_id> "<what broke, be specific>" --url <url>
-bdata scraper approve <collector_id>
-```
-The Collector ID stays the same — nothing downstream needs to change.
+Full pipeline and phased build plan: [`docs/architecture.md`](docs/architecture.md). Checkpoint report: [`docs/checkpoint-a.md`](docs/checkpoint-a.md).

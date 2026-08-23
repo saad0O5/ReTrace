@@ -22,6 +22,15 @@ const sources = {
     collectorId: process.env.BRIGHTDATA_GITHUB_COLLECTOR_ID || "",
     artifactTypes: ["IMPLEMENTATION"],
   },
+  // Controlled fixture for testing bdata scraper heal deterministically.
+  // Fixed URL, no {topic} placeholder - resolveSourceInput's .replace() is a
+  // harmless no-op here since there's nothing to substitute.
+  fixture: {
+    name: "fixture",
+    urlTemplate: "https://saad0o5.github.io/ReTrace-Fixture/",
+    collectorId: process.env.BRIGHTDATA_FIXTURE_COLLECTOR_ID || "",
+    artifactTypes: ["PAPER"],
+  },
 };
 
 /**

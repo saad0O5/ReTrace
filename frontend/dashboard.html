@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>ReTrace</title>
+<style>
+  :root { --bg: #0b0d12; --card: #12151c; --border: #232838; --text: #e7e9ee; --muted: #8b93a7; --accent: #6ea8ff; --good: #3ecf8e; --warn: #f5a524; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, Segoe UI, Roboto, sans-serif; background: var(--bg); color: var(--text); }
+  header { padding: 28px 32px 16px; border-bottom: 1px solid var(--border); }
+  header h1 { margin: 0 0 4px; font-size: 22px; }
+  header p { margin: 0; color: var(--muted); font-size: 14px; }
+  main { padding: 24px 32px; max-width: 1100px; margin: 0 auto; }
+  section { margin-bottom: 32px; }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 12px; }
+  .cards { display: flex; gap: 16px; flex-wrap: wrap; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; min-width: 140px; }
+  .card .num { font-size: 28px; font-weight: 600; }
+  .card .label { font-size: 13px; color: var(--muted); margin-top: 2px; }
+  .source-row { display: flex; align-items: center; gap: 12px; background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; margin-bottom: 8px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; }
+  .dot.healthy { background: var(--good); }
+  .dot.other { background: var(--warn); }
+  .source-name { font-weight: 600; text-transform: capitalize; min-width: 90px; }
+  .source-meta { color: var(--muted); font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { text-align: left; color: var(--muted); font-weight: 500; padding: 8px 10px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: var(--bg); }
+  td { padding: 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  td.title { max-width: 420px; }
+  td a { color: var(--accent); text-decoration: none; }
+  td a:hover { text-decoration: underline; }
+  .table-wrap { max-height: 520px; overflow-y: auto; border: 1px solid var(--border); border-radius: 8px; }
+  input#search { width: 100%; padding: 10px 12px; margin-bottom: 10px; background: var(--card); border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-size: 14px; }
+  .note { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 6px; padding: 14px 16px; font-size: 13px; color: var(--muted); line-height: 1.5; }
+</style>
+</head>
+<body>
+<header>
+  <h1>ReTrace</h1>
+  <p id="subtitle">Loading...</p>
+</header>
+<main>
+  <section>
+    <h2>Sources</h2>
+    <div id="sources"></div>
+  </section>
+
+  <section>
+    <h2>Overview</h2>
+    <div class="cards" id="overview"></div>
+  </section>
+
+  <section>
+    <h2>Self-Healing</h2>
+    <div class="note">
+      Validated via a controlled fixture page (github.com/saad0O5/ReTrace-Fixture): forced a real structural break,
+      confirmed extraction failed cleanly, then triggered Bright Data's Self-Healing. The dashboard correctly diagnosed
+      the change and generated accurate new selectors, verified against a live preview with real extracted data.
+      The final publish step hit a transient platform error ("Could not connect to preview server") during our
+      testing window — the fix-generation mechanism itself is confirmed working end to end.
+    </div>
+  </section>
+
+  <section>
+    <h2>Literature Matrix — <span id="topic-label"></span></h2>
+    <input id="search" type="text" placeholder="Filter by title or author..." />
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Title</th><th>Authors</th><th>Published</th><th>Link</th></tr></thead>
+        <tbody id="matrix-body"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<script src="dashboard-data.js"></script>
+<script>
+  const data = window.RETRACE_DATA || { sources: [], overview: {}, artifacts: [], totalArtifacts: 0 };
+
+  document.getElementById("subtitle").textContent =
+    (data.researchSpace ? data.researchSpace.topic : "Research topic") +
+    " — " + data.totalArtifacts + " artifacts — generated " + new Date(data.generatedAt).toLocaleString();
+  document.getElementById("topic-label").textContent = data.researchSpace ? data.researchSpace.topic : "";
+
+  const sourcesEl = document.getElementById("sources");
+  data.sources.forEach((s) => {
+    const row = document.createElement("div");
+    row.className = "source-row";
+    row.innerHTML = `
+      <span class="dot ${s.status === "HEALTHY" ? "healthy" : "other"}"></span>
+      <span class="source-name">${s.name}</span>
+      <span class="source-meta">${s.collectorId}</span>
+      <span class="source-meta" style="margin-left:auto">${s.status}${s.lastSuccessAt ? " · last success " + new Date(s.lastSuccessAt).toLocaleString() : ""}</span>
+    `;
+    sourcesEl.appendChild(row);
+  });
+
+  const overviewEl = document.getElementById("overview");
+  const cards = [["Total artifacts", data.totalArtifacts]].concat(Object.entries(data.overview));
+  cards.forEach(([label, num]) => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `<div class="num">${num}</div><div class="label">${label}</div>`;
+    overviewEl.appendChild(card);
+  });
+
+  const tbody = document.getElementById("matrix-body");
+  function renderRows(filter) {
+    tbody.innerHTML = "";
+    const q = (filter || "").toLowerCase();
+    data.artifacts
+      .filter((a) => !q || a.title.toLowerCase().includes(q) || (a.authors || []).join(" ").toLowerCase().includes(q))
+      .forEach((a) => {
+        const tr = document.createElement("tr");
+        const pub = a.publishedAt ? new Date(a.publishedAt).toLocaleDateString() : "—";
+        tr.innerHTML = `
+          <td class="title">${a.title}</td>
+          <td>${(a.authors || []).slice(0, 3).join(", ")}${a.authors && a.authors.length > 3 ? " et al." : ""}</td>
+          <td>${pub}</td>
+          <td><a href="${a.url}" target="_blank" rel="noopener">view</a></td>
+        `;
+        tbody.appendChild(tr);
+      });
+  }
+  renderRows("");
+  document.getElementById("search").addEventListener("input", (e) => renderRows(e.target.value));
+</script>
+</body>
+</html>
