@@ -5,6 +5,7 @@ const express = require("express");
 const cors = require("cors");
 
 const { prisma } = require("./database/client");
+const { getSourcesWithHealth } = require("./database/sourceHealth");
 const { runCollector } = require("./collectors/brightdata");
 const { sources, resolveSourceInput } = require("./collectors/sources.config");
 
@@ -67,8 +68,12 @@ app.get("/health", (req, res) => {
 });
 
 app.get("/api/sources", async (req, res) => {
-  const rows = await prisma.source.findMany();
-  res.json(rows);
+  try {
+    const rows = await getSourcesWithHealth(prisma);
+    res.json(rows);
+  } catch (err) {
+    res.status(500).json({ error: String(err.message || err) });
+  }
 });
 
 /**

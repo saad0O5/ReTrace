@@ -123,6 +123,8 @@
   .status { display: inline-flex; align-items: center; gap: 6px; color: var(--green); font: 500 10px 'JetBrains Mono', monospace; }
   .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 10px rgba(70,209,138,.45); }
   .dot.warn { background: var(--accent); box-shadow: 0 0 10px rgba(240,180,41,.4); }
+  .dot.error { background: var(--red); box-shadow: 0 0 10px rgba(240,107,107,.4); }
+  .dot.info { background: var(--blue); box-shadow: 0 0 10px rgba(116,169,255,.4); }
   .collector { margin-top: 14px; padding: 9px 10px; background: #0a1017; border: 1px solid var(--border-soft); border-radius: 7px; color: #93a2b5; font: 10px 'JetBrains Mono', monospace; overflow: auto; white-space: nowrap; }
   .source-foot { margin-top: 10px; color: var(--faint); font-size: 10px; }
 
@@ -132,7 +134,7 @@
   .panel-title h3 { margin: 0; font-size: 13px; }
   .panel-title span { color: var(--faint); font: 10px 'JetBrains Mono', monospace; }
 
-  .relationship-list { display: grid; gap: 10px; }
+  .relationship-list { display: grid; gap: 10px; max-height: 560px; overflow-y: auto; padding-right: 6px; }
   .relationship {
     padding: 13px; border: 1px solid var(--border-soft); border-radius: 9px; background: rgba(8,12,18,.42);
   }
@@ -364,16 +366,37 @@
 
   const sourceEl = document.getElementById('sources-grid');
   (data.sources || []).forEach(s => {
-    const healthy = s.status === 'HEALTHY';
+    const status = s.status || 'UNKNOWN';
+    let dotClass = '';
+    let statusColor = 'var(--green)';
+    if (status === 'HEALTHY') {
+      dotClass = '';
+      statusColor = 'var(--green)';
+    } else if (status === 'EXTRACTION_FAILED') {
+      dotClass = 'error';
+      statusColor = 'var(--red)';
+    } else if (status === 'TEST SOURCE') {
+      dotClass = 'info';
+      statusColor = 'var(--blue)';
+    } else {
+      dotClass = 'warn';
+      statusColor = 'var(--accent)';
+    }
+
     const el = document.createElement('div');
     el.className = 'source-card';
+    const recText = s.recordCount > 0 ? ` · ${s.recordCount} records` : '';
+    const footText = s.lastSuccessAt
+      ? `last success · ${new Date(s.lastSuccessAt).toLocaleString()}${recText}`
+      : (s.lastRun ? `last run · ${new Date(s.lastRun).toLocaleString()}` : 'no collection runs recorded in this snapshot');
+
     el.innerHTML = `
       <div class="source-top">
         <div class="source-name">${escapeHtml(s.name)}</div>
-        <div class="status"><i class="dot ${healthy ? '' : 'warn'}"></i>${escapeHtml(s.status || 'UNKNOWN')}</div>
+        <div class="status" style="color:${statusColor}"><i class="dot ${dotClass}"></i>${escapeHtml(status)}</div>
       </div>
       <div class="collector">${escapeHtml(s.collectorId || 'no collector id')}</div>
-      <div class="source-foot">${s.lastSuccessAt ? `last success · ${new Date(s.lastSuccessAt).toLocaleString()}` : 'no successful run recorded in this snapshot'}</div>`;
+      <div class="source-foot">${escapeHtml(footText)}</div>`;
     sourceEl.appendChild(el);
   });
 
@@ -381,7 +404,7 @@
   document.getElementById('relationship-count').textContent = `${relationships.length} candidate relationships`;
   const relEl = document.getElementById('relationships');
   if (!relationships.length) relEl.innerHTML = '<div class="empty">No relationships in this snapshot.</div>';
-  relationships.slice(0, 8).forEach(r => {
+  relationships.forEach(r => {
     const evidence = Array.isArray(r.evidence) ? r.evidence : [];
     const el = document.createElement('div');
     el.className = 'relationship';
@@ -391,7 +414,7 @@
         <div class="trace">↔</div>
         <div class="artifact-box"><div class="artifact-type">IMPLEMENTATION</div><div class="artifact-title"><a href="${safeUrl(r.repoUrl)}" target="_blank" rel="noreferrer">${escapeHtml(r.repoTitle)}</a></div></div>
       </div>
-      <div class="relation-meta"><span>IMPLEMENTED_BY</span><span class="confidence">confidence ${(Number(r.confidence || 0) * 100).toFixed(1)}%</span></div>
+      <div class="relation-meta"><span>${escapeHtml(r.relationshipType || 'IMPLEMENTED_BY')}</span><span class="confidence">confidence ${(Number(r.confidence || 0) * 100).toFixed(1)}%</span></div>
       <div class="evidence">${evidence.length ? `Evidence: ${evidence.map(escapeHtml).join(' · ')}` : 'Evidence recorded in relationship metadata.'}</div>`;
     relEl.appendChild(el);
   });

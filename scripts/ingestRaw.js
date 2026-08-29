@@ -20,6 +20,8 @@ require(path.join(__dirname, "..", "backend", "node_modules", "dotenv")).config(
 const fs = require("fs");
 const { PrismaClient } = require(path.join(__dirname, "..", "backend", "node_modules", "@prisma", "client"));
 const { normalizeArxivRecord, normalizeGithubRecord } = require("../backend/src/ingestion/normalizer");
+const { buildSnapshotPayload, computeContentHash } = require("../backend/src/ingestion/snapshot");
+const { normalizeUrl } = require("../backend/src/ingestion/urlNormalizer");
 
 const prisma = new PrismaClient();
 
@@ -92,32 +94,78 @@ async function main() {
   }
 
   let created = 0;
-  let alreadySeen = 0;
+  let updatedVersions = 0;
+  let unchanged = 0;
 
   for (const artifact of normalized) {
+    const canonicalUrl = normalizeUrl(artifact.url) || artifact.url;
     const existing = await prisma.artifact.findFirst({
-      where: { researchSpaceId: space.id, url: artifact.url },
+      where: { researchSpaceId: space.id, url: canonicalUrl },
     });
+
+    const snapshotPayload = buildSnapshotPayload(artifact);
+    const contentHash = computeContentHash(snapshotPayload);
 
     if (existing) {
-      // Same artifact seen before - update lastSeen, don't duplicate the row.
-      await prisma.artifact.update({ where: { id: existing.id }, data: { lastSeen: new Date() } });
-      alreadySeen++;
-      continue;
+      // Find latest version snapshot for this artifact
+      const latestVersion = await prisma.artifactVersion.findFirst({
+        where: { artifactId: existing.id },
+        orderBy: { observedAt: "desc" },
+      });
+
+      if (!latestVersion || latestVersion.contentHash !== contentHash) {
+        // Content has changed: create a new snapshot version
+        await prisma.artifactVersion.create({
+          data: {
+            artifactId: existing.id,
+            collectionId: collection.id,
+            contentHash,
+            metadata: JSON.stringify(snapshotPayload),
+          },
+        });
+
+        // Update artifact mutable fields and lastSeen
+        await prisma.artifact.update({
+          where: { id: existing.id },
+          data: {
+            title: artifact.title,
+            description: artifact.description,
+            publishedAt: artifact.publishedAt,
+            metadata: artifact.metadata,
+            lastSeen: new Date(),
+            updatedAt: new Date(),
+          },
+        });
+        updatedVersions++;
+      } else {
+        // Content is identical: only bump lastSeen, do not create duplicate version
+        await prisma.artifact.update({
+          where: { id: existing.id },
+          data: { lastSeen: new Date() },
+        });
+        unchanged++;
+      }
+    } else {
+      // First observation: create Artifact and initial ArtifactVersion #1
+      const saved = await prisma.artifact.create({
+        data: {
+          ...artifact,
+          url: canonicalUrl,
+          researchSpaceId: space.id,
+        },
+      });
+
+      await prisma.artifactVersion.create({
+        data: {
+          artifactId: saved.id,
+          collectionId: collection.id,
+          contentHash,
+          metadata: JSON.stringify(snapshotPayload),
+        },
+      });
+
+      created++;
     }
-
-    const saved = await prisma.artifact.create({ data: { ...artifact, researchSpaceId: space.id } });
-
-    await prisma.artifactVersion.create({
-      data: {
-        artifactId: saved.id,
-        collectionId: collection.id,
-        contentHash: Buffer.from(artifact.title + (artifact.description || "")).toString("base64").slice(0, 32),
-        metadata: artifact.metadata,
-      },
-    });
-
-    created++;
   }
 
   await prisma.collection.update({
@@ -130,7 +178,9 @@ async function main() {
     data: { lastRun: new Date(), lastSuccessAt: new Date() },
   });
 
-  console.log(`Ingested: ${created} new artifacts, ${alreadySeen} already existed (lastSeen updated).`);
+  console.log(
+    `Ingested: ${created} new artifacts, ${updatedVersions} changed (new version created), ${unchanged} identical (lastSeen updated).`
+  );
 
   if (sourceName === "arxiv") {
     const missingDate = normalized.filter((a) => !a.publishedAt).length;

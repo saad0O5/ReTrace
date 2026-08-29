@@ -12,6 +12,8 @@ require(path.join(__dirname, "..", "backend", "node_modules", "dotenv")).config(
 const fs = require("fs");
 const { PrismaClient } = require(path.join(__dirname, "..", "backend", "node_modules", "@prisma", "client"));
 
+const { getSourcesWithHealth } = require("../backend/src/database/sourceHealth");
+
 const prisma = new PrismaClient();
 
 function parseEvidence(value) {
@@ -24,8 +26,13 @@ function parseEvidence(value) {
 
 async function main() {
   const space = await prisma.researchSpace.findFirst();
-  const sources = await prisma.source.findMany();
-  const artifacts = await prisma.artifact.findMany({ orderBy: { publishedAt: "desc" } });
+  const sources = await getSourcesWithHealth(prisma);
+  const artifacts = await prisma.artifact.findMany({
+    include: {
+      versions: true,
+    },
+    orderBy: { publishedAt: "desc" },
+  });
   const relationships = await prisma.relationship.findMany({
     include: {
       sourceArtifact: true,
@@ -48,9 +55,12 @@ async function main() {
       status: s.status,
       lastRun: s.lastRun,
       lastSuccessAt: s.lastSuccessAt,
+      recordCount: s.recordCount,
+      errorMessage: s.errorMessage,
     })),
     overview,
     totalArtifacts: artifacts.length,
+    totalVersions: artifacts.reduce((sum, a) => sum + (a.versions?.length || 1), 0),
     relationships: relationships.map((r) => ({
       paperTitle: r.sourceArtifact.title,
       paperUrl: r.sourceArtifact.url,
@@ -61,12 +71,22 @@ async function main() {
       evidence: parseEvidence(r.evidence),
     })),
     artifacts: artifacts.map((a) => {
-      const meta = JSON.parse(a.metadata || "{}");
+      let meta = {};
+      try {
+        meta = JSON.parse(a.metadata || "{}");
+      } catch (_) {
+        meta = {};
+      }
       return {
         title: a.title,
         type: a.type,
         url: a.url,
+        rawUrl: meta.rawUrl || a.url,
+        source: a.source,
         publishedAt: a.publishedAt,
+        firstSeen: a.firstSeen,
+        lastSeen: a.lastSeen,
+        versionsCount: a.versions ? a.versions.length : 1,
         authors: meta.authors || [],
       };
     }),

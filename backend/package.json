@@ -11,7 +11,8 @@
     "prisma:push": "prisma db push",
     "prisma:studio": "prisma studio",
     "collect:arxiv": "node ../scripts/testCollector.js arxiv",
-    "collect:github": "node ../scripts/testCollector.js github"
+    "collect:github": "node ../scripts/testCollector.js github",
+    "test": "node tests/phase0.test.js"
   },
   "dependencies": {
     "@prisma/client": "^5.20.0",

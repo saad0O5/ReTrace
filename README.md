@@ -113,12 +113,13 @@ RESOURCE
 ```
 The current live demonstration populates **PAPER** and **IMPLEMENTATION** artifacts.
 
-### 3.4 Deduplicate and version
-Artifacts are retained as persistent entities rather than treating every scrape as a new record.
+### 3.4 Data hygiene, identity normalization, and version snapshots (Phase 0)
+Artifacts are retained as persistent entities rather than treating every scrape as an isolated, duplicate record.
 
-Each observation can produce an `ArtifactVersion`, allowing ReTrace to preserve historical state rather than overwriting the previous observation.
-
-This is the foundation for future "since last scan" analysis.
+- **Identity & URL normalization:** A centralized, deterministic `normalizeUrl()` function normalizes whitespace, protocol/host casing, standard ports, URL fragments, and trailing slashes, while stripping harmless tracking parameters and sorting query parameters deterministically.
+- **Provenance preservation:** Every artifact retains its original source URL in metadata and is strictly traceable through its relational chain: `Artifact` → `ArtifactVersion` → `Collection` → `Source` → `Bright Data Collector ID`.
+- **Deterministic snapshotting:** Each observation computes a canonical snapshot payload and SHA-256 content hash. Identical re-observations only update `lastSeen` without polluting history with duplicate versions; genuine content changes create a new `ArtifactVersion` snapshot.
+- **Dynamic source health:** Source status (`HEALTHY`, `CONFIGURED`, `EXTRACTION_FAILED`, `TEST SOURCE`) is derived from actual collection run history rather than hardcoded configuration.
 
 ### 3.5 Connect research artifacts
 ReTrace currently implements:

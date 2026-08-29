@@ -11,6 +11,8 @@
 //   2. arxiv_id is a messy compound string: "2511.08504 arXiv:2511.08504v2"
 //      — not a clean ID by itself. The URL is the reliable source of the ID.
 
+const { normalizeUrl } = require("./urlNormalizer");
+
 function parseArxivId(rawArxivId, url) {
   // Prefer the URL - it's clean and present on every record.
   const fromUrl = url && url.match(/\/abs\/([^/?#]+)/);
@@ -27,12 +29,15 @@ function parseVersion(rawArxivId) {
 }
 
 function normalizeArxivRecord(raw) {
-  const arxivId = parseArxivId(raw.arxiv_id, raw.url);
+  const rawUrl = raw.url || null;
+  const canonicalUrl = normalizeUrl(rawUrl);
+  const arxivId = parseArxivId(raw.arxiv_id, canonicalUrl || rawUrl);
+
   return {
     type: "PAPER",
     title: raw.paper_title || "(untitled)",
     description: raw.abstract || null,
-    url: raw.url,
+    url: canonicalUrl || rawUrl,
     source: "arxiv",
     // Deliberately nullable - do not default this to "now" or drop the record.
     // A missing published_date is real data about this record, not an error.
@@ -41,6 +46,7 @@ function normalizeArxivRecord(raw) {
       authors: raw.authors || [],
       arxivId,
       rawArxivId: raw.arxiv_id || null,
+      rawUrl,
       version: parseVersion(raw.arxiv_id),
     }),
   };
@@ -76,13 +82,15 @@ function normalizeGithubRecord(raw) {
     );
   }
 
-  const url = raw.url || `https://github.com/${raw.owner}/${raw.repo_name}`;
+  const rawUrl = raw.url || null;
+  const constructedUrl = raw.url || `https://github.com/${raw.owner}/${raw.repo_name}`;
+  const canonicalUrl = normalizeUrl(constructedUrl);
 
   return {
     type: "IMPLEMENTATION",
     title: raw.repo_name,
     description: raw.description || null,
-    url,
+    url: canonicalUrl || constructedUrl,
     source: "github",
     // Neither field is returned by this collector — see header note. Left null
     // deliberately rather than guessed, same discipline as arXiv's publishedAt.
@@ -90,7 +98,8 @@ function normalizeGithubRecord(raw) {
     updatedAt: null,
     metadata: JSON.stringify({
       owner: raw.owner,
-      repository: url,
+      repository: canonicalUrl || constructedUrl,
+      rawUrl,
       language: null,
       stars: typeof raw.stars === "number" ? raw.stars : null,
       lastUpdated: null,
@@ -98,4 +107,4 @@ function normalizeGithubRecord(raw) {
   };
 }
 
-module.exports = { normalizeArxivRecord, normalizeGithubRecord, parseArxivId };
+module.exports = { normalizeArxivRecord, normalizeGithubRecord, parseArxivId, normalizeUrl };
