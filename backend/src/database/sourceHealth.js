@@ -30,15 +30,22 @@ function deriveSourceHealth(source, collections = []) {
   }
 
   const latest = collections[0];
-  const lastSuccessful = collections.find((c) => c.status === "SUCCESS");
+  const lastSuccessful = collections.filter((c) => c.status === "SUCCESS" && (c.recordCount ?? 0) > 0).sort((a, b) => new Date(b.completedAt || b.startedAt) - new Date(a.completedAt || a.startedAt))[0];
 
   let status;
+  let errorMessage = null;
   if (isFixture) {
     status = "TEST SOURCE";
   } else if (latest.status === "SUCCESS") {
-    status = "HEALTHY";
+    if ((latest.recordCount ?? 0) <= 0) {
+      status = "DRIFTING";
+      errorMessage = "Latest collection succeeded but returned zero records; source may have drifted or extraction may be stale.";
+    } else {
+      status = "HEALTHY";
+    }
   } else if (latest.status === "FAILED") {
     status = "EXTRACTION_FAILED";
+    errorMessage = latest.errorMessage || null;
   } else if (latest.status === "RUNNING" || latest.status === "PENDING") {
     status = latest.status;
   } else {
@@ -58,7 +65,7 @@ function deriveSourceHealth(source, collections = []) {
       ? lastSuccessful.completedAt || lastSuccessful.startedAt
       : source.lastSuccessAt || null,
     recordCount: latest.recordCount ?? 0,
-    errorMessage: latest.status === "FAILED" ? latest.errorMessage : null,
+    errorMessage,
     totalCollections: collections.length,
   };
 }

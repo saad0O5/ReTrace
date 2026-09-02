@@ -36,7 +36,7 @@ model Source {
   name            String // "arxiv" | "github" | ...
   baseUrl         String
   collectorId     String // Bright Data c_xxxx
-  // status: "HEALTHY" | "DRIFTING" | "EXTRACTION_FAILED" | "HEALING"
+  // status: "HEALTHY" | "DRIFTING" | "EXTRACTION_FAILED" | "HEALING" | "CONFIGURED" | "UNSET" | "TEST SOURCE"
   status          String    @default("HEALTHY")
   artifactTypes   String // comma-separated: PAPER, IMPLEMENTATION, DATASET, BENCHMARK, PROJECT, RESOURCE
   queryTemplate   String    @default("{topic}")

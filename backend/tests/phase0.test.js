@@ -298,6 +298,33 @@ test("Source with failed collection is EXTRACTION_FAILED with error message", ()
   assert.strictEqual(health.errorMessage, "Rate limit exceeded / scraper selector changed");
 });
 
+test("Successful collection with zero records is not treated as healthy", () => {
+  const source = {
+    id: "src-2b",
+    name: "github",
+    collectorId: "c_mt5yn9lvrgrgdp5vm",
+    baseUrl: "https://github.com",
+    artifactTypes: "IMPLEMENTATION",
+  };
+
+  const collections = [
+    {
+      id: "col-2b",
+      sourceId: "src-2b",
+      status: "SUCCESS",
+      recordCount: 0,
+      startedAt: new Date("2026-08-23T17:18:00Z"),
+      completedAt: new Date("2026-08-23T17:18:07Z"),
+      errorMessage: null,
+    },
+  ];
+
+  const health = deriveSourceHealth(source, collections);
+  assert.notStrictEqual(health.status, "HEALTHY");
+  assert.strictEqual(health.status, "DRIFTING");
+  assert.strictEqual(health.recordCount, 0);
+});
+
 test("Configured source that has never run is CONFIGURED, not falsely HEALTHY", () => {
   const source = {
     id: "src-3",
@@ -337,20 +364,25 @@ console.log("\n--- 5. Database & Exporter Integrity ---");
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
-asyncTest("Database contains all 174 artifacts (164 papers, 10 repos) and 19 relationships", async () => {
+asyncTest("Database contains the live Duke-augmented baseline: arXiv/GitHub preserved, Duke papers ingested", async () => {
   const totalArtifacts = await prisma.artifact.count();
   const papers = await prisma.artifact.count({ where: { type: "PAPER" } });
   const repos = await prisma.artifact.count({ where: { type: "IMPLEMENTATION" } });
   const totalVersions = await prisma.artifactVersion.count();
   const relationships = await prisma.relationship.count();
   const sources = await prisma.source.count();
+  const dukeSource = await prisma.source.findFirst({ where: { name: "duke-calderbank" } });
+  const dukeArtifacts = await prisma.artifact.count({ where: { source: "duke-calderbank" } });
 
-  assert.strictEqual(totalArtifacts, 174, `Expected 174 artifacts, got ${totalArtifacts}`);
-  assert.strictEqual(papers, 164, `Expected 164 papers, got ${papers}`);
+  assert.strictEqual(totalArtifacts, 652, `Expected 652 artifacts, got ${totalArtifacts}`);
+  assert.strictEqual(papers, 642, `Expected 642 papers, got ${papers}`);
   assert.strictEqual(repos, 10, `Expected 10 implementations, got ${repos}`);
-  assert.strictEqual(totalVersions, 174, `Expected 174 versions, got ${totalVersions}`);
+  assert.strictEqual(totalVersions, 655, `Expected 655 versions, got ${totalVersions}`);
   assert.strictEqual(relationships, 19, `Expected 19 relationships, got ${relationships}`);
-  assert.strictEqual(sources, 3, `Expected 3 sources, got ${sources}`);
+  assert.strictEqual(sources, 7, `Expected 7 sources, got ${sources}`);
+  assert.strictEqual(dukeArtifacts > 0, true, "Duke source should have ingested real paper artifacts");
+  assert(dukeSource, "Duke source row should exist in the seeded baseline");
+  assert.strictEqual(dukeSource.collectorId, "c_mtisrrzwxyapkvgvt", "Duke collector ID should match the real configured collector");
 });
 
 asyncTest("Active Bright Data Collector IDs are preserved", async () => {

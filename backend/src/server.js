@@ -8,6 +8,8 @@ const { prisma } = require("./database/client");
 const { getSourcesWithHealth } = require("./database/sourceHealth");
 const { runCollector } = require("./collectors/brightdata");
 const { sources, resolveSourceInput } = require("./collectors/sources.config");
+const { getLatestSignals } = require("./analysis/signalService");
+const { buildResearchLandscapeReport } = require("./analysis/researchAnalytics");
 
 const app = express();
 app.use(cors());
@@ -76,6 +78,172 @@ app.get("/api/sources", async (req, res) => {
   }
 });
 
+async function getDashboardPayload() {
+  const space = await prisma.researchSpace.findFirst();
+  const sourcesRows = await getSourcesWithHealth(prisma);
+  const artifacts = await prisma.artifact.findMany({
+    include: { versions: true },
+    orderBy: { publishedAt: "desc" },
+  });
+  const relationships = await prisma.relationship.findMany({
+    include: {
+      sourceArtifact: true,
+      targetArtifact: true,
+    },
+    orderBy: { confidence: "desc" },
+  });
+  const signals = space ? await getLatestSignals(space.id, prisma, 50) : [];
+  const analytics = buildResearchLandscapeReport({ artifacts, relationships, sources: sourcesRows, signals });
+
+  const overview = {};
+  for (const artifact of artifacts) {
+    overview[artifact.type] = (overview[artifact.type] || 0) + 1;
+  }
+
+  return {
+    generatedAt: new Date().toISOString(),
+    researchSpace: space ? { name: space.name, topic: space.topic } : null,
+    sources: sourcesRows.map((source) => ({
+      id: source.id,
+      name: source.name,
+      collectorId: source.collectorId,
+      status: source.status,
+      lastRun: source.lastRun,
+      lastSuccessAt: source.lastSuccessAt,
+      recordCount: source.recordCount,
+      errorMessage: source.errorMessage,
+      artifactTypes: source.artifactTypes,
+    })),
+    overview,
+    totalArtifacts: artifacts.length,
+    totalVersions: artifacts.reduce((sum, artifact) => sum + (artifact.versions?.length || 1), 0),
+    changes: {
+      new: 0,
+      updated: 0,
+      removed: 0,
+      unchanged: 0,
+      hasComparison: false,
+      signalsCount: signals.length,
+    },
+    artifacts: artifacts.map((artifact) => {
+      let meta = {};
+      try {
+        meta = JSON.parse(artifact.metadata || "{}");
+      } catch (_) {
+        meta = {};
+      }
+      return {
+        id: artifact.id,
+        title: artifact.title,
+        type: artifact.type,
+        url: artifact.url,
+        source: artifact.source,
+        publishedAt: artifact.publishedAt,
+        firstSeen: artifact.firstSeen,
+        lastSeen: artifact.lastSeen,
+        description: artifact.description || meta.abstract || null,
+        authors: meta.authors || [],
+        metadata: meta,
+        versionsCount: artifact.versions ? artifact.versions.length : 1,
+        rawUrl: meta.rawUrl || artifact.url,
+      };
+    }),
+    relationships: relationships.map((relationship) => ({
+      id: relationship.id,
+      relationshipType: relationship.relationshipType,
+      confidence: relationship.confidence,
+      evidence: (() => {
+        try {
+          return JSON.parse(relationship.evidence || "[]");
+        } catch (_) {
+          return [];
+        }
+      })(),
+      sourceArtifactId: relationship.sourceArtifactId,
+      targetArtifactId: relationship.targetArtifactId,
+      sourceArtifact: relationship.sourceArtifact ? {
+        id: relationship.sourceArtifact.id,
+        title: relationship.sourceArtifact.title,
+        type: relationship.sourceArtifact.type,
+        url: relationship.sourceArtifact.url,
+      } : null,
+      targetArtifact: relationship.targetArtifact ? {
+        id: relationship.targetArtifact.id,
+        title: relationship.targetArtifact.title,
+        type: relationship.targetArtifact.type,
+        url: relationship.targetArtifact.url,
+      } : null,
+      paperTitle: relationship.sourceArtifact ? relationship.sourceArtifact.title : null,
+      repoTitle: relationship.targetArtifact ? relationship.targetArtifact.title : null,
+      paperUrl: relationship.sourceArtifact ? relationship.sourceArtifact.url : null,
+      repoUrl: relationship.targetArtifact ? relationship.targetArtifact.url : null,
+    })),
+    signals,
+    analytics,
+  };
+}
+
+app.get("/api/dashboard", async (req, res) => {
+  try {
+    const payload = await getDashboardPayload();
+    res.json(payload);
+  } catch (err) {
+    res.status(500).json({ error: String(err.message || err) });
+  }
+});
+
+app.get("/api/artifacts/:id", async (req, res) => {
+  try {
+    const artifact = await prisma.artifact.findUnique({
+      where: { id: req.params.id },
+      include: {
+        versions: {
+          include: { collection: { include: { source: true } } },
+          orderBy: { observedAt: "desc" },
+        },
+        relationshipsFrom: { include: { targetArtifact: true } },
+        relationshipsTo: { include: { sourceArtifact: true } },
+      },
+    });
+    if (!artifact) return res.status(404).json({ error: "Artifact not found" });
+
+    let meta = {};
+    try {
+      meta = JSON.parse(artifact.metadata || "{}");
+    } catch (_) {
+      meta = {};
+    }
+
+    res.json({
+      ...artifact,
+      metadata: meta,
+      description: artifact.description || meta.abstract || null,
+      relationshipsFrom: artifact.relationshipsFrom.map((relationship) => ({
+        ...relationship,
+        evidence: (() => {
+          try {
+            return JSON.parse(relationship.evidence || "[]");
+          } catch (_) {
+            return [];
+          }
+        })(),
+      })),
+      relationshipsTo: artifact.relationshipsTo.map((relationship) => ({
+        ...relationship,
+        evidence: (() => {
+          try {
+            return JSON.parse(relationship.evidence || "[]");
+          } catch (_) {
+            return [];
+          }
+        })(),
+      })),
+    });
+  } catch (err) {
+    res.status(500).json({ error: String(err.message || err) });
+  }
+});
+
 /**
  * POST /api/collect/:sourceName
  * body: { topic?: string }
@@ -122,12 +290,19 @@ app.post("/api/collect/:sourceName", async (req, res) => {
       },
     });
 
+    const recordCount = Array.isArray(records) ? records.length : 0;
+    const sourceStatus = recordCount > 0 ? "HEALTHY" : "DRIFTING";
+
     await prisma.source.update({
       where: { id: sourceRow.id },
-      data: { status: "HEALTHY", lastRun: new Date(), lastSuccessAt: new Date() },
+      data: {
+        status: sourceStatus,
+        lastRun: new Date(),
+        lastSuccessAt: recordCount > 0 ? new Date() : null,
+      },
     });
 
-    res.json({ collectionId: collection.id, recordCount: records.length, rawFilePath: filePath });
+    res.json({ collectionId: collection.id, recordCount, rawFilePath: filePath, sourceStatus });
   } catch (err) {
     await prisma.collection.update({
       where: { id: collection.id },
