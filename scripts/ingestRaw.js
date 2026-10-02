@@ -19,7 +19,7 @@ require(path.join(__dirname, "..", "backend", "node_modules", "dotenv")).config(
 });
 const fs = require("fs");
 const { PrismaClient } = require(path.join(__dirname, "..", "backend", "node_modules", "@prisma", "client"));
-const { normalizeArxivRecord, normalizeGithubRecord } = require("../backend/src/ingestion/normalizer");
+const { normalizeArxivRecord, normalizeGithubRecord, normalizeCalderbankRecord } = require("../backend/src/ingestion/normalizer");
 const { buildSnapshotPayload, computeContentHash } = require("../backend/src/ingestion/snapshot");
 const { normalizeUrl } = require("../backend/src/ingestion/urlNormalizer");
 
@@ -28,11 +28,12 @@ const prisma = new PrismaClient();
 const NORMALIZERS = {
   arxiv: normalizeArxivRecord,
   github: normalizeGithubRecord,
+  "duke-calderbank": normalizeCalderbankRecord,
 };
 
 function detectSourceFromFilename(filePath) {
   const base = path.basename(filePath);
-  const match = base.match(/^manual-(arxiv|github)-/);
+  const match = base.match(/^manual-(arxiv|github|duke-calderbank)-/);
   return match ? match[1] : null;
 }
 
@@ -49,8 +50,8 @@ async function main() {
   if (!sourceName || !NORMALIZERS[sourceName]) {
     console.error(
       `Could not determine source ("${sourceName}"). Expected filename like ` +
-      `manual-arxiv-*.json or manual-github-*.json, or pass an explicit source ` +
-      `as the second argument: node scripts/ingestRaw.js <path> <arxiv|github>`
+      `manual-arxiv-*.json, manual-github-*.json, or manual-duke-calderbank-*.json, or pass an explicit source ` +
+      `as the second argument: node scripts/ingestRaw.js <path> <arxiv|github|duke-calderbank>`
     );
     process.exit(1);
   }

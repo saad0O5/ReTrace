@@ -1,5 +1,5 @@
 window.RETRACE_DATA = {
-  "generatedAt": "2026-08-29T16:00:40.218Z",
+  "generatedAt": "2026-10-02T09:41:56.204Z",
   "researchSpace": {
     "name": "OTFS Channel Estimation",
     "topic": "OTFS channel estimation"
@@ -9,9 +9,9 @@ window.RETRACE_DATA = {
       "name": "arxiv",
       "collectorId": "c_mt4ot19f1crygiarf6",
       "status": "HEALTHY",
-      "lastRun": "2026-08-23T16:50:00.000Z",
-      "lastSuccessAt": "2026-08-23T16:55:00.000Z",
-      "recordCount": 164,
+      "lastRun": "2026-10-02T09:41:27.531Z",
+      "lastSuccessAt": "2026-10-02T09:41:30.736Z",
+      "recordCount": 172,
       "errorMessage": null
     },
     {
@@ -31,14 +31,1564 @@ window.RETRACE_DATA = {
       "lastSuccessAt": null,
       "recordCount": 0,
       "errorMessage": null
+    },
+    {
+      "name": "duke-calderbank",
+      "collectorId": "c_mtisrrzwxyapkvgvt",
+      "status": "HEALTHY",
+      "lastRun": "2026-09-01T16:12:27.858Z",
+      "lastSuccessAt": "2026-09-01T16:12:36.517Z",
+      "recordCount": 481,
+      "errorMessage": null
     }
   ],
   "overview": {
-    "PAPER": 164,
+    "PAPER": 256,
     "IMPLEMENTATION": 10
   },
-  "totalArtifacts": 174,
-  "totalVersions": 174,
+  "totalArtifacts": 266,
+  "totalVersions": 430,
+  "changes": {
+    "new": 8,
+    "updated": 164,
+    "removed": 0,
+    "unchanged": 0,
+    "hasComparison": true,
+    "signalsCount": 50
+  },
+  "sourceDeltas": {
+    "arxiv": {
+      "new": 8,
+      "updated": 164,
+      "removed": 0,
+      "unchanged": 0,
+      "totalCurrent": 172,
+      "totalPrevious": 164
+    },
+    "github": {
+      "new": 0,
+      "updated": 0,
+      "removed": 0,
+      "unchanged": 10,
+      "baselineOnly": true
+    },
+    "fixture": {
+      "new": 0,
+      "updated": 0,
+      "removed": 0,
+      "unchanged": 0,
+      "baselineOnly": true
+    },
+    "duke-calderbank": {
+      "new": 0,
+      "updated": 0,
+      "removed": 0,
+      "unchanged": 481,
+      "baselineOnly": true
+    }
+  },
+  "signals": [
+    {
+      "id": "cmuqrx8po009jbmepkl416zsu",
+      "type": "UPDATED",
+      "title": "Updated Paper: Interference Cancellation for OTFS-Based Over-the-Air Computation",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.340Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2403.11272",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdn2z0084zevdawt0i21e",
+        "url": "https://arxiv.org/abs/2403.11272",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "c9d34e30a589966f23fc430b20fb4f99",
+        "currentHash": "189ce6a44245b0f8342f62ccee4a1d0a",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8pg009hbmepr02p10d0",
+      "type": "UPDATED",
+      "title": "Updated Paper: Orthogonal Delay-Doppler Division Multiplexing Modulation with Hierarchical Mode-Based Index Modulation",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.332Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2501.08026",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmwx006kzevd2l42otjn",
+        "url": "https://arxiv.org/abs/2501.08026",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "8390c05c383c76cdba87dc9133dbaca2",
+        "currentHash": "c3059c9c6fc15a704c7b856bba85bc45",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8p8009fbmeposmkph62",
+      "type": "UPDATED",
+      "title": "Updated Paper: Low-Complexity Frequency Domain Equalization of Zak-OTFS in Doubly-Spread Channels",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.325Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2506.23045",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdo8k00h4zevdw2149urz",
+        "url": "https://arxiv.org/abs/2506.23045",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "1d4664ec7d612b5612ce8607800dbd7e",
+        "currentHash": "87d7bc965ba97878cec064299ff36a2e",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8p2009dbmep0l8nz6j6",
+      "type": "UPDATED",
+      "title": "Updated Paper: Reduced Overhead Channel Estimation for OTFS With Split Pilot",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.318Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2410.11739",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmxq006szevd8eym7pkz",
+        "url": "https://arxiv.org/abs/2410.11739",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "bf8dfc398df41442a78b308ccd0dcd47",
+        "currentHash": "7fc4a557b22119941622d66cf06c7192",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8ou009bbmepq0kypzur",
+      "type": "UPDATED",
+      "title": "Updated Paper: Pilot-Aided Joint Time Synchronization and Channel Estimation for OTFS",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.310Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2408.04192",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdob200hozevdfgp1mpo4",
+        "url": "https://arxiv.org/abs/2408.04192",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "177d9e830666a8bd7fd14e99ab940d14",
+        "currentHash": "6edf3644894a2d2fa4f7d4e80ba22ab9",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8on0099bmep8uott4j9",
+      "type": "UPDATED",
+      "title": "Updated Paper: OTFS-ISAC System with Sub-Nyquist ADC Sampling Rate",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.303Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2502.04663",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdoa800hgzevdlbjga76e",
+        "url": "https://arxiv.org/abs/2502.04663",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "7387f5b29b1a851c14d833e43c069e05",
+        "currentHash": "d6de569e07e2e7dc7c4252fe8ffa6101",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8of0097bmep908lrymi",
+      "type": "UPDATED",
+      "title": "Updated Paper: Time Frequency Localized Pulse for Delay Doppler Domain Data Transmission",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.296Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2501.18286",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmwg006gzevd7szuy1xe",
+        "url": "https://arxiv.org/abs/2501.18286",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "f1c45e75d5ac8490943957ccd4017971",
+        "currentHash": "4aaacd27d25a7b2cff6e410be59785a6",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8o90095bmept3fwgt5x",
+      "type": "UPDATED",
+      "title": "Updated Paper: Grid Evolution for Doubly Fractional Channel Estimation in OTFS Systems",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.290Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2409.17584",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmy6006wzevd9nonzlsa",
+        "url": "https://arxiv.org/abs/2409.17584",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "3d5c4af948859101162ae99c452ee8f6",
+        "currentHash": "d65bcd63efcadf93697ebb3f3af788ab",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8o20093bmep3c5hnb6z",
+      "type": "UPDATED",
+      "title": "Updated Paper: Time and Frequency Synchronization for Multiuser OTFS in Uplink",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.282Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2507.17966",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmrt0058zevdweb5sgq6",
+        "url": "https://arxiv.org/abs/2507.17966",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "5bb50a552091518904afb2a6085c271a",
+        "currentHash": "5985e4bbfb859e7ada7715f0d0013b20",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8nv0091bmep6ntiempu",
+      "type": "UPDATED",
+      "title": "Updated Paper: Joint Channel, Data, and Radar Parameter Estimation for AFDM Systems in Doubly-Dispersive Channels",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.276Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2405.16945",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdod000i8zevdejfrs4nu",
+        "url": "https://arxiv.org/abs/2405.16945",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "260a41e6a7efc241448c278d13575d37",
+        "currentHash": "242dd0e23a0a661f18395a6e2a0aa0d4",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8no008zbmepb0d6hl7q",
+      "type": "UPDATED",
+      "title": "Updated Paper: Two-Stage Prony-Based Estimation of Fractional Delay and Doppler Shifts in OTFS Modulation",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.269Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2506.17599",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmt3005kzevd2y6qnii6",
+        "url": "https://arxiv.org/abs/2506.17599",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "dadc3869e71878956feb3246de8367b8",
+        "currentHash": "988067216080559a694eabedf0541843",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8nf008xbmepswe9gckn",
+      "type": "UPDATED",
+      "title": "Updated Paper: Low-Complexity Channel Estimation in OTFS Systems with Fractional Effects",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.259Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2505.06248",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmtz005szevdpo8vkjwi",
+        "url": "https://arxiv.org/abs/2505.06248",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "5a2c75211b97344417ba75803525131d",
+        "currentHash": "110d2c96181a5f4b46eb1bd2450117e5",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8n8008vbmeph5nivj5n",
+      "type": "UPDATED",
+      "title": "Updated Paper: An hybrid framework OTFS OFDM based on mobile speed estimation",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.253Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2407.07721",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdn0a007gzevdupz3lni6",
+        "url": "https://arxiv.org/abs/2407.07721",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "9a2e0bd846b339296c7ebf899deed3b6",
+        "currentHash": "f5b30298b76ddcfbe15879746dfbe5f5",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8n1008tbmepdpcmo0ff",
+      "type": "UPDATED",
+      "title": "Updated Paper: Pilot design, channel estimation, and target detection for integrated sensing and communication with OTFS",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.245Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2509.25846",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmpg004szevdyv4dqrkl",
+        "url": "https://arxiv.org/abs/2509.25846",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "4fa9a3dfb832045d0de54835cf36c23b",
+        "currentHash": "b2faff50419f3d039c83b3e33505844a",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8mr008rbmep15980go2",
+      "type": "UPDATED",
+      "title": "Updated Paper: SDR-Empowered Environment Sensing Design and Experimental Validation Using OTFS-ISAC Signals",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.236Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2507.01427",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdms9005czevde6klvvs7",
+        "url": "https://arxiv.org/abs/2507.01427",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "b4df226cebdb1fa9f19a172b7262b35d",
+        "currentHash": "b83b8e533ac9f14a1fcc4d10c11863c0",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8mk008pbmepzmkfdru4",
+      "type": "UPDATED",
+      "title": "Updated Paper: On the Coexistence of OTFS Modulation with OFDM-based Communication Systems",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.228Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2406.18592",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdn0q007kzevdvd378pyl",
+        "url": "https://arxiv.org/abs/2406.18592",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "a154bbe1f29c9f751fb0575b4a1cca23",
+        "currentHash": "8bba131528a1473bcae18646fb8d3214",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8mc008nbmep1xalxf41",
+      "type": "UPDATED",
+      "title": "Updated Paper: Reduced-latency DL-based Fractional Channel Estimation in OTFS Receivers",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.221Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2503.08234",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmvm0068zevd5p9q0w68",
+        "url": "https://arxiv.org/abs/2503.08234",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "e56287871311807b6b1bb195870b0fa1",
+        "currentHash": "b9a60cca2687b438880f3c51a14923cf",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8m5008lbmep18rs9tdb",
+      "type": "UPDATED",
+      "title": "Updated Paper: Channel Estimation and Data Detection in DS-Spread Channels: A Unified Framework, Novel Algorithms, and Waveform Comparison",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.214Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2508.21373",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmqu0050zevd0vy7f4ph",
+        "url": "https://arxiv.org/abs/2508.21373",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "de7f5aba478093ec63a55b8399807deb",
+        "currentHash": "a956ae31ce35298c340bed2c1601f96a",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8ly008jbmepxmiit89q",
+      "type": "UPDATED",
+      "title": "Updated Paper: Blind Bistatic Radar Parameter Estimation for AFDM Systems in Doubly-Dispersive Channels",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.207Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2407.05328",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdo9s00hczevdmrt5k593",
+        "url": "https://arxiv.org/abs/2407.05328",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "1975bf9267ce0e99d93e833c1ca821cf",
+        "currentHash": "ba9603466a06bdc3009906026221c9f7",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8lr008hbmep3sv4glkg",
+      "type": "UPDATED",
+      "title": "Updated Paper: Joint Sparsity Pattern Learning Based Channel Estimation for Massive MIMO-OTFS Systems",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.200Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2403.03771",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdn3f0088zevdb91gpyrl",
+        "url": "https://arxiv.org/abs/2403.03771",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "498a2b4ec9a439e5b0bfb5570da9fe7a",
+        "currentHash": "e16f2e86a4d8866c1802bd71ee8d044c",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8lj008fbmep020kkn7o",
+      "type": "UPDATED",
+      "title": "Updated Paper: Channel Estimation in Uplink Multi-User Scenario using OTFS Modulation",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.192Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2404.11328",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdo6x00gszevd1kxfudth",
+        "url": "https://arxiv.org/abs/2404.11328",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "7a35224a705c22fc3d784d1021d3e21a",
+        "currentHash": "f8746d44e69c34481e365b6a5f6f69cb",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8lc008dbmep8q8y5c8z",
+      "type": "UPDATED",
+      "title": "Updated Paper: Deep Learning-based OTFS Channel Estimation and Symbol Detection with Plug-and-Play Framework",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.184Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2503.11102",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdods00igzevd5o5ini0j",
+        "url": "https://arxiv.org/abs/2503.11102",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "a577c7192c5e8b86ac1b02a391f9d58f",
+        "currentHash": "0836bb2aa3b4b73592f5b082d5d2826a",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8l4008bbmep4yly4z9x",
+      "type": "UPDATED",
+      "title": "Updated Paper: Zak-OTFS Based Coded Random Access for Uplink mMTC",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.176Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2507.22013",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmrd0054zevd6bmcw9ns",
+        "url": "https://arxiv.org/abs/2507.22013",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "c0641aceb141b1674131d144a728e9f3",
+        "currentHash": "50ab6dbccb8dc2b217c685c109f7f6ff",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8ky0089bmeprl5cwvql",
+      "type": "UPDATED",
+      "title": "Updated Paper: A Novel Massive Random Access in Cell-Free Massive MIMO Systems for High-Speed Mobility with OTFS Modulation",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.170Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2409.01111",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdoan00hkzevdet1bd5g5",
+        "url": "https://arxiv.org/abs/2409.01111",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "3f30b598410b7457e3335e312b3308d5",
+        "currentHash": "d8defed5883cdf4cd21583e4bbd5a372",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8kq0087bmep7gjnvkxq",
+      "type": "UPDATED",
+      "title": "Updated Paper: Channel Estimation and Hybrid Precoding for Massive MIMO-OTFS System With Doubly Squint",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.162Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2504.08569",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmut0060zevd8c9n3813",
+        "url": "https://arxiv.org/abs/2504.08569",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "39697399ba44550edbb5f6ea2dde7ddb",
+        "currentHash": "9a947e4a1756a3db1c10ef5303f0b871",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8kj0085bmepqti4ezma",
+      "type": "UPDATED",
+      "title": "Updated Paper: LEO Satellite-Enabled Random Access with Large Differential Delay and Doppler Shift",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.155Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2412.20806",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmxc006ozevd1gve06op",
+        "url": "https://arxiv.org/abs/2412.20806",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "1c90cc948f318c93f9c5ed1ee26ec6be",
+        "currentHash": "ac53cde73b0a048542f6e3214c8c9df6",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8kb0083bmep5rbm2adm",
+      "type": "UPDATED",
+      "title": "Updated Paper: Performance Analysis of BEM-based Channel Estimation for OTFS with Hardware Impairments",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.147Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2502.04003",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmw1006czevdno1gq06i",
+        "url": "https://arxiv.org/abs/2502.04003",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "d0dea304e9405b92a2e359b55d508e3e",
+        "currentHash": "8df2e1c483c53fb4e65ab5364bd5427b",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8k30081bmepq23z6vhc",
+      "type": "UPDATED",
+      "title": "Updated Paper: Advanced Channel Decomposition Techniques in OTFS: A GSVD Approach for Multi-User Downlink",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.140Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2504.18315",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmue005wzevdubcxwxfy",
+        "url": "https://arxiv.org/abs/2504.18315",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "36098d90754f6ffbb0898c81915596ad",
+        "currentHash": "cc31c89f294a7b69b969ef480bb61620",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8jv007zbmepz8xuj4hi",
+      "type": "UPDATED",
+      "title": "Updated Paper: Real time parameter estimation for adaptive OFDM/OTFS selection",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.132Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2408.03460",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmzf0078zevdtcif0x33",
+        "url": "https://arxiv.org/abs/2408.03460",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "5c4270149912cf3176febf6654bd0897",
+        "currentHash": "da1cb22ad557c8669144329692de93aa",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8jo007xbmepltyp4um4",
+      "type": "UPDATED",
+      "title": "Updated Paper: Zak-OTFS: Pulse Shaping and the Tradeoff between Time/Bandwidth Expansion and Predictability",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.124Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2405.02718",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdn15007ozevdgtn7522d",
+        "url": "https://arxiv.org/abs/2405.02718",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "cf4c81af07a59bb95581e99be7952c5a",
+        "currentHash": "f3437ff66003d59789ae9e9c92be560c",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8jh007vbmeph5nqz7bo",
+      "type": "UPDATED",
+      "title": "Updated Paper: A low-PAPR Pilot Design and Optimization for OTFS Modulation",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.118Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2503.15006",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmv70064zevd8uy1mxm2",
+        "url": "https://arxiv.org/abs/2503.15006",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "de5e7fcb709072ad8d0e87a276146159",
+        "currentHash": "d6a48a942f681ca988afe69d5dc0d873",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8j9007tbmeph11ly2rq",
+      "type": "UPDATED",
+      "title": "Updated Paper: Pre-equalization Design for ISAC-OTFS Air-Ground Transmission: A Deep Learning Approach",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.110Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2412.04751",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdobt00hwzevdvo8wxgc8",
+        "url": "https://arxiv.org/abs/2412.04751",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "e90cb5f58323c9151803eff3038bb6f8",
+        "currentHash": "c396a6fcb6eea57b639e5002ddce9e07",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8j2007rbmep7r8369q9",
+      "type": "UPDATED",
+      "title": "Updated Paper: Refined Metrics, Sensing Limits, and Resource Allocation in OTFS-RSMA LEO ISAC",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.103Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2506.02624",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmtj005ozevddwt548zk",
+        "url": "https://arxiv.org/abs/2506.02624",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "a953c2091981ec91d37727299b38310f",
+        "currentHash": "138b136e83f112783ce7e23818696ea0",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8iu007pbmepk68lnwnk",
+      "type": "UPDATED",
+      "title": "Updated Paper: Active Terminal Identification, Channel Estimation, and Signal Detection for Grant-Free NOMA-OTFS in LEO Satellite Internet-of-Things",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.095Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2201.02084",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdo2r00fwzevd7hny6l7a",
+        "url": "https://arxiv.org/abs/2201.02084",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "bd81ac18453c7652be0362ac4efbe2a6",
+        "currentHash": "068bed28162eb59839f1f5cf129eb150",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8io007nbmepdop7seag",
+      "type": "UPDATED",
+      "title": "Updated Paper: Superimposed Pilot-Based OTFS: Will It Work?",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.088Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2501.15935",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdo7g00gwzevdi0zxxg06",
+        "url": "https://arxiv.org/abs/2501.15935",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "f526b567472c2def7f4d9c5513060d15",
+        "currentHash": "90f090bd9c774abe5979c632582c5672",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8ih007lbmepiv8e1twb",
+      "type": "UPDATED",
+      "title": "Updated Paper: OTFS -- Predictability in the Delay-Doppler Domain and its Value to Communication and Radar Sensing",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.081Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2302.08705",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdo3900g0zevdac4sxau5",
+        "url": "https://arxiv.org/abs/2302.08705",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "688bd323db910dc8f6a1e2d32e2825eb",
+        "currentHash": "34114bc8233a0adf4b2aa599cbf2a013",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8ib007jbmepfjrmagev",
+      "type": "UPDATED",
+      "title": "Updated Paper: Relative Localization of UAV Swarms in GNSS-Denied Conditions",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.075Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2509.04412",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmq6004wzevdktbj2d7q",
+        "url": "https://arxiv.org/abs/2509.04412",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "6b342c78be30fe37ca48434213a358ed",
+        "currentHash": "8a7c6f35b19c15b8100515d272c25f2c",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8i4007hbmepsicj8q3t",
+      "type": "UPDATED",
+      "title": "Updated Paper: OTFS Channel Estimation and Detection for Channels with Very Large Delay Spread",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.069Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2404.08333",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdn1n007szevd5v9haaxm",
+        "url": "https://arxiv.org/abs/2404.08333",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "d83e7a64e082010c2c745b211257575c",
+        "currentHash": "2c534f90162361abf2a7ec7b47943fb2",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8hx007fbmepj5kgbnyx",
+      "type": "UPDATED",
+      "title": "Updated Paper: IRS-Assisted OTFS: Beamforming Design and Signal Detection",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.061Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2408.02219",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmz00074zevd5dwq3tpj",
+        "url": "https://arxiv.org/abs/2408.02219",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "19b068b6b833584a50a6db8e30e89857",
+        "currentHash": "9340d619a1897d5f05f5563550ce3060",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8hq007dbmept368sl0k",
+      "type": "UPDATED",
+      "title": "Updated Paper: Optimal Pilot Design for OTFS in Linear Time-Varying Channels",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.054Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2403.19379",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdo9000h8zevd0vqdvrx1",
+        "url": "https://arxiv.org/abs/2403.19379",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "d212e90a9ba71ba0ac9ce936eaa2987f",
+        "currentHash": "7e86e3245efa376b1a8387771f4497fa",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8hj007bbmep450x9dr4",
+      "type": "UPDATED",
+      "title": "Updated Paper: Convolutional Sparse Coding based Channel Estimation for OTFS-SCMA in Uplink",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.047Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2107.09893",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdnjt00bwzevdz1u39ne0",
+        "url": "https://arxiv.org/abs/2107.09893",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "84fd45a85d5ffb706966d60a106d173a",
+        "currentHash": "813d0e61922e2bbff2f3991ae11159a1",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8hb0079bmeprn5dyy12",
+      "type": "UPDATED",
+      "title": "Updated Paper: Basis Expansion Extrapolation based Long-Term Channel Prediction for Massive MIMO OTFS Systems",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.040Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2507.01445",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmso005gzevdsdy2wg4g",
+        "url": "https://arxiv.org/abs/2507.01445",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "e3c379aa6f0d0726af96ba196cdc5046",
+        "currentHash": "6cbb2471eb5b4ffec1857f6cde782a24",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8h40077bmep8j6cqs9o",
+      "type": "UPDATED",
+      "title": "Updated Paper: Graph-based Untrained Neural Network Detector for OTFS Systems",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.032Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2404.05191",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdn22007wzevd5l94sg5b",
+        "url": "https://arxiv.org/abs/2404.05191",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "123523a9c765e36b1a98cd15c2320937",
+        "currentHash": "5cae7dba4cf00407d931e948c6c4e4dc",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8gx0075bmeph38kq005",
+      "type": "UPDATED",
+      "title": "Updated Paper: Channel Estimation, Interpolation and Extrapolation in Doubly-dispersive Channels",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.026Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2408.09381",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmyl0070zevdwui1gtef",
+        "url": "https://arxiv.org/abs/2408.09381",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "3be5526a62d8e660105186bc62aaad9e",
+        "currentHash": "694a5841cc8d5f02acfbc5a3e743af18",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8gr0073bmepho5ac3cf",
+      "type": "UPDATED",
+      "title": "Updated Paper: Low-Complexity OTFS-Based Over-the-Air Computation Design for Time-Varying Channels",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.019Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2405.07040",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdoc800i0zevdlq0j9225",
+        "url": "https://arxiv.org/abs/2405.07040",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "5b067675c83317d4f0066686b420f652",
+        "currentHash": "c587bdff55ab6066afca842824cc923f",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8gk0071bmephnin74ab",
+      "type": "UPDATED",
+      "title": "Updated Paper: Synchronization for Multiuser Uplink OTFS",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.012Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2410.10740",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdocm00i4zevd3saiehmk",
+        "url": "https://arxiv.org/abs/2410.10740",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "0f817dd5d9f477314f2d00a155f6af50",
+        "currentHash": "5ddb12a5dcb5ec25391c1ab95b02626f",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8gd006zbmeptrya2to0",
+      "type": "UPDATED",
+      "title": "Updated Paper: Multi-Satellite MIMO Systems for Direct User-Satellite Communications: A Survey",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:41.005Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2407.00196",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdmzu007czevdkyqqkkpm",
+        "url": "https://arxiv.org/abs/2407.00196",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "e8e1cc082ae8790cfec58543817be037",
+        "currentHash": "d94404b66d472ca0f38b00a55c23a567",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8g5006xbmepzjs7hggf",
+      "type": "UPDATED",
+      "title": "Updated Paper: Delay-Doppler Domain Signal Processing Aided OFDM (DD-a-OFDM) for 6G and Beyond",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:40.998Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2508.04253",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdnwf00eczevdnh0b4o74",
+        "url": "https://arxiv.org/abs/2508.04253",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "ceaf54877369034f6c45741668bcf931",
+        "currentHash": "68a0a1034ef810919481f8f714a43f77",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8fz006vbmep1eaw160j",
+      "type": "UPDATED",
+      "title": "Updated Paper: Single-Carrier Delay-Doppler Domain Equalization",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:40.992Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2403.16453",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdn2i0080zevdrmkne5zd",
+        "url": "https://arxiv.org/abs/2403.16453",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "c72ba0b641b8481fcd09eb718c19c39f",
+        "currentHash": "5633abb4a1ab28d397c8b79ec1e1cdeb",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    },
+    {
+      "id": "cmuqrx8ft006tbmepgj8kbcn9",
+      "type": "UPDATED",
+      "title": "Updated Paper: Differential Communication in Channels with Mobility and Delay Spread using Zak-OTFS",
+      "description": "Observation changed on arxiv: Metadata fields updated",
+      "severity": "medium",
+      "createdAt": "2026-10-02T09:41:40.986Z",
+      "sourceName": "arxiv",
+      "url": "https://arxiv.org/abs/2507.12593",
+      "artifactType": "PAPER",
+      "relationship": null,
+      "changes": [
+        "Metadata fields updated"
+      ],
+      "evidence": {
+        "artifactId": "cmtekdnyf00eszevd1atu3jsz",
+        "url": "https://arxiv.org/abs/2507.12593",
+        "type": "PAPER",
+        "sourceId": "cmtekdm070002zevds7ugqrok",
+        "sourceName": "arxiv",
+        "currentCollectionId": "cmuqrwy230001f728pb627h56",
+        "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+        "previousHash": "c9d859d560664790a9efa612e01449ff",
+        "currentHash": "d10fd22ac9491a2c6474380a653e5705",
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "observedAt": "2026-10-02T09:41:30.736Z"
+      }
+    }
+  ],
   "relationships": [
     {
       "paperTitle": "Channel Estimation and Equalization for CP-OFDM-based OTFS in Fractional Doppler Channels",
@@ -50,6 +1600,17 @@ window.RETRACE_DATA = {
       "evidence": [
         "Paper title terms appear in repo description: equalization, ofdm, fractional, doppler, channels",
         "Shared terms between paper abstract and repo description: doppler, channels, fractional, equalization, simulation, ofdm"
+      ]
+    },
+    {
+      "paperTitle": "A survey of compressed sensing",
+      "paperUrl": "http://dx.doi.org/10.1007/978-3-319-16042-9_1",
+      "repoTitle": "Compressed_Sensing_OTFS_Channel_Estimation",
+      "repoUrl": "https://github.com/CanZheng0331/Compressed_Sensing_OTFS_Channel_Estimation",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.233,
+      "evidence": [
+        "Paper title and repo title share: compressed, sensing"
       ]
     },
     {
@@ -75,6 +1636,17 @@ window.RETRACE_DATA = {
         "Paper title and repo title share: compressed, sensing",
         "Paper title terms appear in repo description: compressed, sensing",
         "Shared terms between paper abstract and repo description: compressed, sensing"
+      ]
+    },
+    {
+      "paperTitle": "Compressed sensing with corrupted participants",
+      "paperUrl": "http://dx.doi.org/10.1109/ICASSP.2013.6638542",
+      "repoTitle": "Compressed_Sensing_OTFS_Channel_Estimation",
+      "repoUrl": "https://github.com/CanZheng0331/Compressed_Sensing_OTFS_Channel_Estimation",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.175,
+      "evidence": [
+        "Paper title and repo title share: compressed, sensing"
       ]
     },
     {
@@ -110,6 +1682,39 @@ window.RETRACE_DATA = {
       "confidence": 0.14,
       "evidence": [
         "Paper title and repo title share: sensing, aided"
+      ]
+    },
+    {
+      "paperTitle": "Sensitivity to basis mismatch in compressed sensing",
+      "paperUrl": "http://dx.doi.org/10.1109/ICASSP.2010.5495800",
+      "repoTitle": "Compressed_Sensing_OTFS_Channel_Estimation",
+      "repoUrl": "https://github.com/CanZheng0331/Compressed_Sensing_OTFS_Channel_Estimation",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.14,
+      "evidence": [
+        "Paper title and repo title share: compressed, sensing"
+      ]
+    },
+    {
+      "paperTitle": "The value of redundant measurement in compressed sensing",
+      "paperUrl": "http://dx.doi.org/10.1109/ICASSP.2011.5947143",
+      "repoTitle": "Compressed_Sensing_OTFS_Channel_Estimation",
+      "repoUrl": "https://github.com/CanZheng0331/Compressed_Sensing_OTFS_Channel_Estimation",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.14,
+      "evidence": [
+        "Paper title and repo title share: compressed, sensing"
+      ]
+    },
+    {
+      "paperTitle": "Sensitivity to basis mismatch in compressed sensing",
+      "paperUrl": "http://dx.doi.org/10.1109/TSP.2011.2112650",
+      "repoTitle": "Compressed_Sensing_OTFS_Channel_Estimation",
+      "repoUrl": "https://github.com/CanZheng0331/Compressed_Sensing_OTFS_Channel_Estimation",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.14,
+      "evidence": [
+        "Paper title and repo title share: compressed, sensing"
       ]
     },
     {
@@ -269,10 +1874,187 @@ window.RETRACE_DATA = {
         "Paper title terms appear in repo description: channels, fractional, doppler",
         "Shared terms between paper abstract and repo description: doppler, channels, fractional"
       ]
+    },
+    {
+      "paperTitle": "Beyond worst-case reconstruction in deterministic compressed sensing",
+      "paperUrl": "http://dx.doi.org/10.1109/ISIT.2012.6283601",
+      "repoTitle": "Compressed_Sensing_OTFS_Channel_Estimation",
+      "repoUrl": "https://github.com/CanZheng0331/Compressed_Sensing_OTFS_Channel_Estimation",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.1,
+      "evidence": [
+        "Paper title and repo title share: compressed, sensing"
+      ]
+    },
+    {
+      "paperTitle": "Enhanced CDMA communications using compressed-sensing reconstruction methods",
+      "paperUrl": "http://dx.doi.org/10.1109/ALLERTON.2009.5394537",
+      "repoTitle": "Compressed_Sensing_OTFS_Channel_Estimation",
+      "repoUrl": "https://github.com/CanZheng0331/Compressed_Sensing_OTFS_Channel_Estimation",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.1,
+      "evidence": [
+        "Paper title and repo title share: compressed, sensing"
+      ]
+    },
+    {
+      "paperTitle": "Efficient and robust compressed sensing using optimized expander graphs",
+      "paperUrl": "http://dx.doi.org/10.1109/TIT.2009.2025528",
+      "repoTitle": "Compressed_Sensing_OTFS_Channel_Estimation",
+      "repoUrl": "https://github.com/CanZheng0331/Compressed_Sensing_OTFS_Channel_Estimation",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.1,
+      "evidence": [
+        "Paper title and repo title share: compressed, sensing"
+      ]
+    },
+    {
+      "paperTitle": "Performance bounds for expander-based compressed sensing in poisson noise",
+      "paperUrl": "http://dx.doi.org/10.1109/TSP.2011.2157913",
+      "repoTitle": "Compressed_Sensing_OTFS_Channel_Estimation",
+      "repoUrl": "https://github.com/CanZheng0331/Compressed_Sensing_OTFS_Channel_Estimation",
+      "relationshipType": "IMPLEMENTED_BY",
+      "confidence": 0.1,
+      "evidence": [
+        "Paper title and repo title share: compressed, sensing"
+      ]
     }
   ],
   "artifacts": [
     {
+      "id": "cmuqrwyef001nf728inmwor7h",
+      "title": "Joint Channel Estimation, Detection, and Resource Allocation for OTFS-RSMA",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2609.24121",
+      "rawUrl": "https://arxiv.org/abs/2609.24121",
+      "source": "arxiv",
+      "publishedAt": "2026-09-21T00:00:00.000Z",
+      "firstSeen": "2026-10-02T09:41:27.975Z",
+      "lastSeen": "2026-10-02T09:41:27.975Z",
+      "versionsCount": 1,
+      "authors": [
+        "Chaedam Son",
+        "Si-Hyeon Lee"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation is well suited for high-mobility communications, but channel estimation and efficient multi-user transmission remain challenging. In this paper, we develop an OTFS-rate splitting multiple access (RSMA) framework that jointly considers pilot transmission, channel estimation, message detection, and resource allocation under imperfect channel state information (CSI). We consider guard-based and superimposed transmission for the common and private messages to account for the tradeoff between channel-estimation reliability and spectral efficiency (SE). We derive a linear minimum mean square error (LMMSE) channel estimator, error-aware message-passing detectors, and tractable surrogate rate expressions that account for channel-estimation errors. Based on these expressions, we formulate a joint resource-allocation problem and develop an SCA-based two-dimensional search algorithm together with a low-complexity alternative that exploits the analytical structure of the resource allocation. Numerical results demonstrate reliable channel-estimation and BER performance and show that configurations with guard-based common-message transmission achieve favorable sum-SE performance, while the preferred private-message structure depends on the operating regime. The low-complexity algorithm achieves near-SCA performance with substantially reduced computation time, and OTFS-RSMA remains competitive with OTFS-NOMA while requiring only a single SIC stage."
+    },
+    {
+      "id": "cmuqrwy4i0009f728h15k933e",
+      "title": "Data-Aided Bayesian Learning for CSI Estimation over Doubly-Selective DCO-OTFS MIMO VLC Channels with Affine-Precoded Superimposed Training Sequences",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2609.22312",
+      "rawUrl": "https://arxiv.org/abs/2609.22312",
+      "source": "arxiv",
+      "publishedAt": "2026-09-15T00:00:00.000Z",
+      "firstSeen": "2026-10-02T09:41:27.619Z",
+      "lastSeen": "2026-10-02T09:41:27.619Z",
+      "versionsCount": 1,
+      "authors": [
+        "Shubham Saxena",
+        "Suraj Srivastava",
+        "Aditya K. Jagannatham",
+        "Lajos Hanzo"
+      ],
+      "abstract": "An orthogonal affine-precoded superimposed training sequence (AP-STS)-based framework is conceived for cyclic prefix (CP)-assisted multiple-input multiple-output (MIMO) direct-current-biased orthogonal time frequency space (DCOOTFS) visible light communication (VLC) links using arbitrary transmit-receive pulse shaping for transmission over doubly selective channels. For each light-emitting diode (LED), the pilot and data matrices are jointly affine-precoded and overlaid in the delay-Doppler (DD)-domain. Then, a unified end-to-end DD-domain input-output relationship is derived. At each photodiode (PD), orthogonal precoders are utilized to separate the pilot and data components, thereby suppressing mutual interference. Building on this model, an expectation-maximization (EM)-driven DD-domain pilot-aided Bayesian learning (DD-PBL) scheme is developed to estimate the channel state information (CSI). A DD-domain data-aided Bayesian learning (DD-DBL) procedure is then proposed for jointly refining the CSI and detecting data by exploiting the detected symbols as virtual pilots in the spirit of decision-directed channel estimation. The linear minimum mean square error (LMMSE) detector harnessed explicitly accounts for CSI uncertainty due to realistic estimation errors. In addition, Bayesian Cramer-Rao lower bounds (BCRLBs) are derived for the MIMO DCO-OTFS VLC setting considered. Numerical results confirm improved normalized mean-square-error (NMSE), reduced pilot overhead, and mitigated symbol error-rate (SER) relative to recent benchmarks."
+    },
+    {
+      "id": "cmuqrwyeu001rf728ah65jgln",
+      "title": "Data-Aided Variational Bayesian Inference for CSI Estimation over Doubly-Selective DCO-OTFS MIMO VLC Systems with Affine-Precoded Superimposed Training Sequences",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2609.15420",
+      "rawUrl": "https://arxiv.org/abs/2609.15420",
+      "source": "arxiv",
+      "publishedAt": "2026-09-14T00:00:00.000Z",
+      "firstSeen": "2026-10-02T09:41:27.991Z",
+      "lastSeen": "2026-10-02T09:41:27.991Z",
+      "versionsCount": 1,
+      "authors": [
+        "Shubham Saxena",
+        "Suraj Srivastava",
+        "Aditya K. Jagannatham"
+      ],
+      "abstract": "An orthogonal affine-precoded superimposed training sequences (AP-STS)-based architecture is developed for the cyclic prefix (CP)-aided multiple input multiple output (MIMO) direct-current-biased orthogonal time frequency space (DCO-OTFS) visible light communication (VLC) systems relying on arbitrary transmitter-receiver pulse shaping. The data and pilot symbol matrices are affine-precoded (AP) and superimposed in the delay-Doppler (DD)-domain for each transmit light-emitting diode (LED), followed by the development of an end-to-end DD-domain relationship for the input-output symbols. At the receiver for each receiver photodiode (PD), the decoupled pilot and data symbol are extracted by employing orthogonal precoder matrices, which eliminates the mutual interference. Furthermore, a novel pilot-aided (PA) variational Bayesian inference (PA-VBI) technique is conceived for the channel state information (CSI) estimation of MIMO DCO-OTFS VLC systems based on the expectation-maximization (EM) technique. Subsequently, a data-aided (DA) variational Bayesian inference (DA-VBI)-based joint CSI estimation and data detection technique is proposed, which beneficially harnesses the estimated data symbols for improved CSI estimation. Moreover, the Bayesian Cramer-Rao lower bounds (BCRLBs) are also derived for MIMO DCO-OTFS VLC systems. Finally, simulation results demonstrate that the proposed method yields superior performance in terms of normalized mean-square-error (NMSE), pilot overhead, and symbol error-rate (SER)."
+    },
+    {
+      "id": "cmuqrwyjc002bf728gcuxldnx",
+      "title": "OTFS Channel Estimation Utilizing Sparse Bayesian Generative Modelling",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2609.01074",
+      "rawUrl": "https://arxiv.org/abs/2609.01074",
+      "source": "arxiv",
+      "publishedAt": "2026-09-01T00:00:00.000Z",
+      "firstSeen": "2026-10-02T09:41:28.153Z",
+      "lastSeen": "2026-10-02T09:41:28.153Z",
+      "versionsCount": 1,
+      "authors": [
+        "Louis Anseaume",
+        "Benedikt Böck",
+        "Franz Weißer",
+        "Wolfgang Utschick"
+      ],
+      "abstract": "One of the key challenges of future wireless communication systems is ensuring reliability in high-speed mobile scenarios, where accurate recovery of channel state information (CSI) is essential. Many recent studies have concluded that orthogonal time-frequency space (OTFS) modulation is a promising technology for addressing this challenge. Additionally, machine learning (ML)-based methods have the potential to improve channel estimation performance by leveraging ambient information more effectively than classical estimation techniques. This paper particularly addresses channel estimation for OTFS by employing a compressive sensing (CS)-based sparse Bayesian generative model (SBGM), namely the recently introduced compressive sensing Gaussian mixture model (CSGMM). We show that our proposed approach yields significant improvement in normalized mean squared error (NMSE) over the next-best-performing baseline. We additionally provide insights into the theoretical potential of the model to optimally approximate complex channel distributions with arbitrary precision within the Doppler-delay (DD) domain. To summarize, this work establishes the OTFS-CSGMM framework as a promising solution for high mobility wireless channel estimation."
+    },
+    {
+      "id": "cmuqrwyrw0035f728ub2czouu",
+      "title": "Exact Payload-Decoupling Conditions for Pilot-Only BEM Channel Estimation With Application to OTFS",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2609.00937",
+      "rawUrl": "https://arxiv.org/abs/2609.00937",
+      "source": "arxiv",
+      "publishedAt": "2026-09-01T00:00:00.000Z",
+      "firstSeen": "2026-10-02T09:41:28.460Z",
+      "lastSeen": "2026-10-02T09:41:28.460Z",
+      "versionsCount": 1,
+      "authors": [
+        "Gianmarco Romano",
+        "Francesco A.N. Palmieri",
+        "Stefano Buzzi",
+        "Giovanni Di Gennaro",
+        "Amedeo Buonanno"
+      ],
+      "abstract": "In high-mobility doubly dispersive links, basis expansion models (BEMs) reduce channel dimensionality, yet unknown payload symbols generally contaminate conventional matched-pilot channel estimates. This paper establishes the exact conditions under which such estimates become payload-independent and derives a pilot, guard, and data-placement rule that guarantees these conditions. We prove a necessary-and-sufficient zero pilot--data interference (ZPDI) condition under which the matched-pilot least-squares (LS) solution coincides with the maximum-likelihood (ML) estimator for the reduced pilot statistic. When ZPDI holds, estimation requires a single precomputed projection. When it does not, the estimate contains a deterministic, channel-scaled payload bias that persists at high signal-to-noise ratio. A disjoint-support rule, independent of the selected basis, realizes ZPDI through pilot, guard, and data placement. We then specialize the framework to orthogonal time--frequency space (OTFS) and examine its structural and performance consequences. With the generalized complex-exponential BEM (GCE-BEM), the ZPDI estimator remains within about $2$~dB of the perfect channel state information benchmark in bit error rate at speeds up to 500~km/h."
+    },
+    {
+      "id": "cmuqrwy9u000zf728s4a7hn01",
+      "title": "A Deep Iterative Refinement Receiver for OTFS Symbol Detection in Doubly-Dispersive Channels",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2609.00465",
+      "rawUrl": "https://arxiv.org/abs/2609.00465",
+      "source": "arxiv",
+      "publishedAt": "2026-08-31T00:00:00.000Z",
+      "firstSeen": "2026-10-02T09:41:27.810Z",
+      "lastSeen": "2026-10-02T09:41:27.810Z",
+      "versionsCount": 1,
+      "authors": [
+        "Efe Ispir",
+        "Ian P. Roberts"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation has emerged as a promising candidate for high-mobility wireless communication systems due to the diversity it offers across both time and frequency. Reliable OTFS detection, however, remains challenging under doubly-dispersive channels, where delay and Doppler dispersion induce structured interference between transmitted symbols and complicate symbol recovery. To address these challenges, we propose a two-stage iterative OTFS detector that integrates a physics-informed learned initializer with an iterative refinement network, enabling progressively more accurate symbol estimates in doubly-dispersive channels. The initializer incorporates the known delay-Doppler input-output relationship to produce a robust first-stage estimate, while the refinement stage iteratively suppresses residual symbol interference in the delay-Doppler domain. Simulation results demonstrate that the proposed detector achieves consistent performance gains over conventional and existing learning-based detectors across a variety of channel conditions. These results highlight the effectiveness of incorporating known channel structure into the detection process and using iterative refinement for improved and robust OTFS detection."
+    },
+    {
+      "id": "cmuqrwy8w000tf728lycv8vvn",
+      "title": "Dual-Orthogonality Waveforms for Integrated Communication and Imaging in Dynamic Multipath Channels",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2608.23294",
+      "rawUrl": "https://arxiv.org/abs/2608.23294",
+      "source": "arxiv",
+      "publishedAt": "2026-08-24T00:00:00.000Z",
+      "firstSeen": "2026-10-02T09:41:27.776Z",
+      "lastSeen": "2026-10-02T09:41:27.776Z",
+      "versionsCount": 1,
+      "authors": [
+        "Edoardo Talignani",
+        "Francesco Linsalata",
+        "Musa Furkan Keskin",
+        "Davide Scazzoli",
+        "Alireza Pourafzal",
+        "Mohammad Mahdi Mojahedian",
+        "Henk Wymeersch"
+      ],
+      "abstract": "Dual-Orthogonality waveforms are multi-antenna signaling schemes that enforce mutual orthogonality across transmit channels and over a prescribed set of delay shifts. By relaxing strict time orthogonality to the physically admissible propagation region, they preserve full-band operation per transmit antenna while embedding communication data and maintaining stream separability. This makes them attractive for Integrated Sensing and Communications (ISAC), where reliable data transmission, high-resolution sensing, and imaging must coexist under time-varying propagation. In dynamic multipath environments, delay-Doppler dispersion across multiple paths perturbs the transmit subspaces and partially breaks the relaxed orthogonality conditions. This paper analyzes this effect and develops a multipath-aware decoding framework based on structured parameter estimation, effective-subspace reconstruction, and low-complexity linear equalization. Numerical results show communication performance comparable to OFDM-based ISAC and MIMO-OTFS baselines while improving sensing and imaging through full-band per-transmit operation. The proposed approach achieves approximately 30 cm range resolution, more than 15 dB suppression of multipath imaging artifacts with coherent SAR processing, and a favorable sensing-communication trade-off. Over-the-air experiments at 60 GHz validate multi-stream communication, the designed zero-correlation region, and accurate radar ranging. A second campaign in a highly reflective indoor environment further demonstrates multipath-aware stream equalization under strong unsuppressed reflections."
+    },
+    {
+      "id": "cmtekdm1t000czevdxeb1ye53",
       "title": "Synchronization and Channel Estimation of OTFS with RF Impairments",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2608.20257",
@@ -280,16 +2062,18 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-08-20T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:31.745Z",
-      "lastSeen": "2026-08-29T15:57:31.745Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.728Z",
+      "versionsCount": 2,
       "authors": [
         "Sanoopkumar P. S.",
         "Mohsen Bayat",
         "Stephen McWade",
         "Arman Farhang"
-      ]
+      ],
+      "abstract": "Orthogonal Time Frequency Space (OTFS) modulation is a promising waveform for future wireless networks. However, its resilience to RF impairments remains relatively understudied. Low-cost RF front ends are crucial for next-generation wireless systems, yet their performance is often degraded by RF impairments such as transmit IQ imbalance (IQI), phase noise (PN), timing offset (TO), and carrier frequency offset (CFO). Hence, this paper addresses the estimation and compensation of these RF impairments in OTFS systems under high mobility. A unified system model is developed that incorporates TO, CFO, PN, IQI and other channel effects into an effective channel representation. Using the pilot with cyclic prefix (PCP), a low-peak to average power ratio (PAPR) pilot suitable for OTFS, we propose a pilot-aided synchronization and estimation framework. The dual periodicity of PCP is exploited in our proposed TO estimation technique. A maximum-likelihood-based technique is also proposed to jointly estimate the CFO and effective channel using a complex exponential basis expansion model (CE-BEM). Finally, a linear detection model is formulated in the delay-Doppler domain to mitigate residual interference caused by RF impairments. Our simulation results corroborate the efficacy of our proposed synchronization and channel estimation techniques."
     },
     {
+      "id": "cmtekdm2d000gzevdzj0ecapw",
       "title": "Channel Estimation for OTFS Systems With Overspread Doppler Shifts",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2608.12524",
@@ -297,15 +2081,17 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-08-12T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:31.765Z",
-      "lastSeen": "2026-08-29T15:57:31.765Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.292Z",
+      "versionsCount": 2,
       "authors": [
         "Preety Priya",
         "Yi Hong",
         "Emanuele Viterbo"
-      ]
+      ],
+      "abstract": "In this paper, we consider an orthogonal time frequency space (OTFS) system in time-varying channels with overspread Doppler shifts, typically found in non-terrestrial multi-satellite links. The overspread Doppler shifts with magnitude greater than half of the subcarrier spacing, result in aliased Doppler shifts in the delay-Doppler (DD) domain due to the OTFS modulo operation. This makes channel estimation very challenging and the traditional channel estimation methods become ineffective. To address this challenge, we propose a DD training frame and a two-stage channel estimation method. The training frame comprises a cosine pilot signal and a pilot symbol. In the first stage of the channel estimation, the pilot symbol in the DD domain is utilized to estimate the delays, aliased Doppler shifts, and channel gains of the propagation paths. In the second stage, the received time domain signal is converted into the frequency domain to detect the peaks of all the Doppler shifts using the cosine pilot signal. Then, we present a threshold-based method to pair the estimated actual Doppler shifts with their corresponding delays and channel gains. The complexity of the proposed channel estimation is also discussed. Finally, the performance of the proposed channel estimation is validated in terms of the normalized mean square error (NMSE) and bit error rate (BER) in various scenarios."
     },
     {
+      "id": "cmtekdm2s000kzevdu28ha57f",
       "title": "Prior-Aided Iterative Channel Reconstruction with Optimized Frame Structure for DSE Mitigation in CP-OTFS-Based LEO Satellite Systems",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2608.03293",
@@ -313,17 +2099,19 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-08-04T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:31.780Z",
-      "lastSeen": "2026-08-29T15:57:31.780Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.608Z",
+      "versionsCount": 2,
       "authors": [
         "Yiyan Cheng",
         "Tiejun Lv",
         "Yashuai Cao",
         "Xuehan Wang",
         "Mugen Peng"
-      ]
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation has emerged as a promising solution to mitigate the severe Doppler shift in low Earth orbit (LEO) satellite communications. However, the frequency-dependent Doppler shift induced by the high mobility of LEO satellites leads to the Doppler squint effect (DSE). This effect compromises the channel sparsity in the delay-Doppler (DD) domain, rendering existing channel estimation methods ineffective. To overcome this challenge, this paper proposes a DSE-resilient transmission scheme for cyclic prefix OTFS (CP-OTFS)-based LEO satellite systems. Specifically, we analyze the input-output relationship of the CPOTFS- based LEO satellite communication system and derive a DSE-aware representation of the satellite-terrestrial channel in the DD domain. To efficiently capture DSE-aware channel characteristics, we propose a novel OTFS frame structure that allows the energy distribution of the received signal to serve as prior information for channel estimation. Meanwhile, this frame structure strategically allocates pilot symbols to achieve uniform energy distribution and reduce the peak-to-average power ratio (PAPR), while imposing a time-domain waveform continuity constraint to suppress out-of-band emission (OOBE) caused by rectangular pulses. Based on the frame structure, we propose a prior-aided iterative channel reconstruction (PAICR) algorithm to mitigate the severe power leakage induced by DSE. The proposed algorithm iteratively extracts and removes dominant channel components using Doppler-domain received signal energy observations, with a convergence criterion ensuring reliable termination. Furthermore, a Cramer-Rao lower bound is derived to provide a theoretical benchmark for evaluating the algorithm's performance."
     },
     {
+      "id": "cmtekdm3h000ozevdkelg6bcx",
       "title": "Structured-Sparsity-Aware Joint User Activity Detection and Channel Estimation for OTFS-Based Grant-Free Random Access",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2608.03896",
@@ -331,8 +2119,8 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-08-04T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:31.806Z",
-      "lastSeen": "2026-08-29T15:57:31.806Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.242Z",
+      "versionsCount": 2,
       "authors": [
         "Yao Ge",
         "Yirui Luo",
@@ -341,9 +2129,11 @@ window.RETRACE_DATA = {
         "Yong Liang Guan",
         "David González G.",
         "Zhi Ding"
-      ]
+      ],
+      "abstract": "Grant-free random access (GFRA) is a promising solution for massive machine-type communications (mMTC) in future wireless networks. However, reliable user activity detection and channel estimation are critical challenges, particularly when orthogonal time-frequency space (OTFS) modulation is integrated with GFRA to address doubly selective channels induced by high mobility. In this paper, we propose an OTFS-based GFRA framework that exploits the inherent structured sparsity of delay-Doppler channels. By adopting a basis expansion model (BEM), we formulate joint user activity detection and channel estimation as a structured compressive sensing problem. A bi-level sparsity structure is identified, consisting of common sparsity across multiple receive antennas and activation sparsity across mMTC users. To effectively leverage this structure, we construct a two-layer factor graph and develop a structured sparsity expectation propagation (SS-EP) algorithm for efficient Bayesian inference. Simulation results demonstrate that the proposed scheme significantly outperforms existing benchmarks."
     },
     {
+      "id": "cmtekdm5k000szevdhmitsnq2",
       "title": "Achieving Rate-Concurrency Balance for Underwater Concurrent Random Access",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2608.01254",
@@ -351,8 +2141,8 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-08-02T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:31.880Z",
-      "lastSeen": "2026-08-29T15:57:31.880Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.382Z",
+      "versionsCount": 2,
       "authors": [
         "Enqi Zhang",
         "Yuxuan Guo",
@@ -362,9 +2152,11 @@ window.RETRACE_DATA = {
         "Deqing Wang",
         "Lizhao You",
         "Liqun Fu"
-      ]
+      ],
+      "abstract": "Underwater acoustic networks face a fundamental rate--concurrency tradeoff: high-rate waveforms (e.g., OFDM, OTFS) are designed for point-to-point links and rely on orthogonal MAC protocols (e.g., TDMA) to avoid collisions, sacrificing concurrency; conversely, collision-resilient waveforms (e.g., CDMA, ZCMod) support uncoordinated access but are inherently rate-limited by spreading or sparse index modulation. We present \\system, a cross-layer concurrent random-access system that combines two new components: (i) \\textbf{EZCDM}, an equidistant ZC division-multiplexing waveform that activates multiple cyclic shifts of a ZC root as parallel sub-channels with a tunable rate--robustness tradeoff, and an intra-symbol differential receiver that eliminates the shared multipath channel response without explicit CIR estimation; and (ii) a \\textbf{cross-layer link adaptation (LA) framework} featuring beacon-framed random access, user-specific closed-loop power control, and overlap- and CIR-aware common-MS selection. Channel-trace- and signal-trace-driven physical-layer experiments combined with PHY-in-the-loop network simulations demonstrate that \\system\\ achieves significant BER and throughput gains over conventional waveforms and MAC protocols by converting traditionally destructive collisions into decodable concurrent streams."
     },
     {
+      "id": "cmtekdm6c000wzevd8y0g0qwf",
       "title": "Joint Channel Estimation and Data Detection for Multi-LEO-Satellite Cell-Free OTFS Uplinks",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2607.25562",
@@ -372,8 +2164,8 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-07-28T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:31.908Z",
-      "lastSeen": "2026-08-29T15:57:31.908Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.061Z",
+      "versionsCount": 2,
       "authors": [
         "Gangle Sun",
         "Tianhao Liu",
@@ -384,25 +2176,11 @@ window.RETRACE_DATA = {
         "Wenjin Wang",
         "Shi Jin",
         "Guangjie Han"
-      ]
+      ],
+      "abstract": "Cell-free networks formed by multiple low Earth orbit (LEO) satellites offer a promising architecture for ubiquitous connectivity, but their cooperative reception is challenged by link-dependent residual delays and Doppler shifts. This paper investigates joint channel estimation and data detection (JCEDD) for multi-LEO-satellite cell-free orthogonal time frequency space (OTFS) uplinks. The JCEDD problem is formulated as a structured bilinear inference problem involving link-specific sparse beam--delay--Doppler channels and a multiuser data vector. We develop a low-complexity hierarchical JCEDD receiver in which all satellites first perform local JCEDD, and their observations and local estimates are then aggregated at a central satellite for cooperative refinement. Computational complexity is reduced by restricting channel estimation to coarse-information-aided local beam--delay--Doppler regions and evaluating the required forward and adjoint operations in a matrix-free manner. Simulation results validate the channel-estimation accuracy and data-detection reliability of the proposed JCEDD receiver."
     },
     {
-      "title": "Fundamental Limits of MIMO-OTFS and MIMO-OFDM in High-Dynamics ISAC: An Antenna Array Architecture Perspective",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2607.20200",
-      "rawUrl": "https://arxiv.org/abs/2607.20200",
-      "source": "arxiv",
-      "publishedAt": "2026-07-22T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:31.926Z",
-      "lastSeen": "2026-08-29T15:57:31.926Z",
-      "versionsCount": 1,
-      "authors": [
-        "Po-Chih Chen",
-        "Ming-Chun Lee",
-        "Yu-Chih Huang"
-      ]
-    },
-    {
+      "id": "cmtekdm7b0014zevd5u5vc48x",
       "title": "Off-grid Variational Bayesian Parameter Estimation for Fractional Delay-Doppler OTFS-ISAC",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2607.17001",
@@ -410,14 +2188,16 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-07-18T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:31.943Z",
-      "lastSeen": "2026-08-29T15:57:31.943Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.865Z",
+      "versionsCount": 2,
       "authors": [
         "Van-Chung Luu",
         "Duy H. N. Nguyen"
-      ]
+      ],
+      "abstract": "This letter proposes an off-grid variational Bayesian (OVB) method for fractional delay-Doppler (DD) estimation in OTFS-based integrated sensing and communication (ISAC) systems. To enable off-grid parameter estimation, the OTFS channel is reformulated using separable delay and Doppler steering vectors, and the corresponding phase variables are modeled by von Mises distributions. Closed-form variational updates provide posterior statistics for identifying significant paths and pruning redundant candidates, enabling automatic path-number estimation. Simulation results demonstrate that the proposed method achieves higher channel and parameter estimation accuracy than conventional fractional DD estimation approaches."
     },
     {
+      "id": "cmtekdm810018zevdf6c6uiq3",
       "title": "Inter-frame Channel Prediction for Zak-OTFS",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2607.09184",
@@ -425,14 +2205,16 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-07-10T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:31.969Z",
-      "lastSeen": "2026-08-29T15:57:31.969Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.015Z",
+      "versionsCount": 2,
       "authors": [
         "Muhammad Ubadah",
         "Saif Khan Mohammed"
-      ]
+      ],
+      "abstract": "Zak-Orthogonal Time Frequency Space (OTFS) modulation is known to be robust to Doppler spread in high mobility scenarios when compared to Orthogonal Frequency Division Multiplexing (OFDM). This is due to the fact that the channel response to a Zak-OTFS carrier within a frame can be accurately estimated from the channel response to another carrier within the same frame. However, an important open problem and question is whether inter-frame channel prediction is possible with Zak-OTFS, i.e., is it possible to accurately predict the channel response to a Zak-OTFS carrier in a frame based on knowledge of the channel response to some Zak-OTFS carrier in \\emph{another} frame (i.e., not the same frame). In this paper we show that indeed inter-frame channel prediction is possible. We show that the effective DD domain channel filter coefficients vary in a deterministic manner as we move from current to future frames in time and frequency. We also show that the subspace spanned by channel filter coefficients of consecutive frames in time/frequency is invariant to discrete shifts in time and frequency. We exploit the deterministic variation and subspace invariance to propose a novel deterministic ESPIRIT-type method which uses the effective DD domain channel filter taps/coefficients estimated in training frames (i.e., current/past frames in time and frequency having both pilot and data carriers) to predict the effective DD domain channel filter for frames which are several tens of frames in future and several tens of frames away in frequency."
     },
     {
+      "id": "cmtekdm8j001czevd4k04mdg5",
       "title": "Multiuser Zak-OTFS on the Uplink with Superimposed Spread-Pilots",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2607.08247",
@@ -440,14 +2222,16 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-07-09T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:31.987Z",
-      "lastSeen": "2026-08-29T15:57:31.987Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.143Z",
+      "versionsCount": 2,
       "authors": [
         "Sai Pradeep Muppaneni",
         "Ananthanarayanan Chockalingam"
-      ]
+      ],
+      "abstract": "In this paper, we consider the uplink of a multiuser Zak-OTFS system comprising users with heterogeneous delay-Doppler (DD) periods/frame sizes. Multiple access is achieved through time-frequency (TF) shifts that place the users in non-overlapping regions of the TF plane. Closed-form expressions for the effective DD domain channel between each user and the base station are derived for sinc and Gaussian pulse shaping filters. The inter-user interference (IUI) is shown to be negligible under the TF-shift-based multiple access, thereby decoupling the multiuser input-output relation (IOR) estimation problem into independent single-user estimation problems. For IOR estimation, a superimposed spread-pilot framework is employed. The spread-pilot sequence is obtained by applying FFT to a reshaped Zadoff-Chu sequence. To mitigate the pilot-data interference introduced by the superimposed spread-pilot, a DD dictionary-based IOR estimation scheme that iterates between IOR estimation and data detection is employed. Simulation results for a multiuser Zak-OTFS system demonstrate that the resulting IOR estimates achieve normalized mean-square error (NMSE) and bit error rate (BER) performances that closely match those of the corresponding single-user system. Furthermore, for sinc pulse shaping, the superimposed spread-pilot frame achieves higher spectral-efficiency compared to embedded pilot frame across a wide range of inter-user power ratios. For Gaussian pulse shaping, however, the embedded pilot frame achieves a higher spectral efficiency due to the combined effects of residual IUI and significant pilot-data interference in the case of superimposed spread-pilot. The robustness of the estimation framework to variations in channel power-delay profile and maximum Doppler shift is also demonstrated."
     },
     {
+      "id": "cmtekdm8z001gzevdsa1bj3s4",
       "title": "RSMA-Assisted OFDM-OTFS Hybrid Framework for Mixed-Mobility Multiuser Systems",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2607.08532",
@@ -455,15 +2239,35 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-07-09T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.003Z",
-      "lastSeen": "2026-08-29T15:57:32.003Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.078Z",
+      "versionsCount": 2,
       "authors": [
         "Wafa Hedhly",
         "Leila Musavian",
         "Nikolaos Thomos"
-      ]
+      ],
+      "abstract": "In future 6G vehicular networks, users employing orthogonal frequency division multiplexing (OFDM) and orthogonal time frequency space (OTFS) waveforms may coexist under diverse mobility conditions, where both can experience high-mobility and low-mobility profiles. Since OFDM users can suffer severe inter-carrier interference (ICI) and OTFS users occupy larger spectrum resources, rate-splitting multiple access (RSMA) is a flexible framework that can efficiently handle these heterogeneous aspects. In this work, we propose a novel RSMA-assisted system to provide downlink communication to multiple OFDM and OTFS users. A common stream comprising the common messages of OFDM users spans the whole bandwidth to help OFDM users manage the ICI induced by potential high Doppler effects. OTFS users do not participate in the common stream. The private streams of OFDM users and the streams of OTFS users are transmitted over disjoint frequency bands. During the SIC process implemented at all receivers, channel estimation errors are taken into account. The simulation results highlight the impact of the power allocation factors and channel estimation errors on the system performance, and demonstrate the superiority of the proposed framework over orthogonal multiplexing in terms of outage probability and rate performance."
     },
     {
+      "id": "cmtekdm6u0010zevdfhhexgh2",
+      "title": "Fundamental Limits of MIMO ISAC: An Antenna Array Architecture Perspective",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2607.20200",
+      "rawUrl": "https://arxiv.org/abs/2607.20200",
+      "source": "arxiv",
+      "publishedAt": "2026-07-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:31.926Z",
+      "lastSeen": "2026-10-02T09:41:27.898Z",
+      "versionsCount": 2,
+      "authors": [
+        "Po-Chih Chen",
+        "Ming-Chun Lee",
+        "Yu-Chih Huang"
+      ],
+      "abstract": "This paper investigates the fundamental limits of MIMO integrated sensing and communications (ISAC) systems, specifically comparing sparse arrays (SAs) against conventional uniform linear arrays (ULAs). A unified theoretical analysis of ergodic channel capacity and the Cramér$\\unicode{x2013}$Rao bound (CRB) for angle estimation is developed while accounting for the array geometry. Utilizing the framework of stochastic majorization, the study reveals that SAs consistently outperform ULAs by creating a more $\\unicode{x201C}$uniform$\\unicode{x201D}$ spatial eigenvalue distribution, which decorrelates the multipath environment and increases communication capacity. For sensing, the paper proves that the angle CRB is inversely proportional to the array's second-order central moment of antenna positions asymptotically, demonstrating that SAs achieve superior accuracy$\\unicode{x2014}$improving by up to the square of the number of antennas$\\unicode{x2014}$due to their increased physical aperture. These analyses and conclusions are demonstrated to be also valid for MIMO ISAC systems employed with the modern waveforms OTFS and OFDM, suggesting that spatial geometry, rather than waveform, is the primary driver of fundamental performance gains in the spatial dimension."
+    },
+    {
+      "id": "cmtekdm9d001kzevdrtb0aobf",
       "title": "MIMO Zak-OTFS: Channel Estimation, Detection, and Throughput Analysis",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2606.26420",
@@ -471,17 +2275,19 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-06-24T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.018Z",
-      "lastSeen": "2026-08-29T15:57:32.018Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.331Z",
+      "versionsCount": 2,
       "authors": [
         "Faraz Barati",
         "Rahul Kumar Jaiswal",
         "Saif Khan Mohammed",
         "Ronny Hadani",
         "Jeffrey G. Andrews"
-      ]
+      ],
+      "abstract": "Zak-Orthogonal Time Frequency Space (Zak-OTFS) modulation has demonstrated substantial performance gains over cyclic-prefix orthogonal frequency-division multiplexing (CP-OFDM) in highly time- and frequency-selective channels. In this paper, we extend Zak-OTFS to a multiple-input multiple-output (MIMO) framework. We first derive a complete system model for MIMO Zak-OTFS based directly on the physical multipath channel; ours is the first work to do so. We then propose an efficient channel estimation method using structured pilot placement in the delay-Doppler (DD) domain. The proposed approach is evaluated under the standardized CDL-C channel model, demonstrating that the advantages of Zak-OTFS observed in SISO scenarios extend to MIMO systems, particularly its robustness to Doppler and inter-carrier interference (ICI). We identify a fundamental crossover behavior: CP-OFDM performs slightly better at low SNR and low Doppler, while Zak-OTFS excels at higher SNR or under severe Doppler dispersion. Furthermore, we show that the crossover points for SNR and Doppler shift inversely to each other. We also observe that Zak-OTFS, particularly with MIMO, exhibits increased sensitivity to high values of pilot-to-data power ratio (PDR), but has a similar optimal PDR as CP-OFDM."
     },
     {
+      "id": "cmtekdm9t001ozevdbm0qsce3",
       "title": "Multi-Snapshot Deep Denoising for Channel Estimation in OTFS Modulated Systems",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2605.29777",
@@ -489,16 +2295,18 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-05-28T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.033Z",
-      "lastSeen": "2026-08-29T15:57:32.033Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.951Z",
+      "versionsCount": 2,
       "authors": [
         "Surbhi Gehlot",
         "Siddhi Shinde",
         "Suraj Srivastava",
         "Sandeep Kumar Yadav"
-      ]
+      ],
+      "abstract": "A deep denoising based channel estimation framework is proposed for orthogonal time frequency space (OTFS) modulated systems, wherein channel state information (CSI) recovery is formulated as an image restoration problem. A salient attribute of the approach is the exploitation of structural invariance in the delay Doppler (DD) domain channel over a geometric coherence time, allowing multiple OTFS frames captured during this period to serve as noisy snapshots of the approximately identical channel. These snapshots jointly enhance the effectiveness of the proposed lightweight denoiser based on nonlinear activation free network (NAFNet). The method exhibits low computational complexity, operates reliably even at low pilot signal-to-noise ratio (PSNR), and can accommodate both fractional delay and fractional Doppler effects. Simulation results demonstrate significant performance gains over the existing methods."
     },
     {
+      "id": "cmtekdma8001szevdo1an7119",
       "title": "Joint Phase Noise and Channel Estimation for OTFS",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2605.14720",
@@ -506,14 +2314,16 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-05-14T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.048Z",
-      "lastSeen": "2026-08-29T15:57:32.048Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.485Z",
+      "versionsCount": 2,
       "authors": [
         "Stephen McWade",
         "Arman Farhang"
-      ]
+      ],
+      "abstract": "This paper investigates the effect of oscillator phase noise in orthogonal time frequency space (OTFS) systems. The paper provides in-depth analysis of the interference due to phase noise in the delay-Doppler domain and derives expressions for SINR for three different oscillator types, namely free-running oscillators, continuous-time phase locked loops (PLLs) and discrete-time PLLs. The analysis demonstrates the OTFS is sensitive to phase noise and requires appropriate estimation and compensation. In particular, the analysis shows phase noise imposed inter-Doppler-interference (IDI) is severe and that existing phase noise estimation techniques which only consider the common-phase-error (CPE) can not compensate this IDI effectively. Additionally, the existing methods in the OTFS literature on phase noise assume the channel to be a known single tap channel. Hence, in this paper, we propose a method for joint channel and phase noise estimation using a Wiener filtering approach. Our proposed method exploits the statistical nature of both the phase noise and the Doppler spread channel. Our numerical results demonstrate the superior performance of our proposed technique, with gains of up to 8~dB in terms of bit error rate (BER) over existing methods in the literature."
     },
     {
+      "id": "cmtekdmao001wzevd621sjszj",
       "title": "Multiuser OTFS Channel Parameter Estimation Toward Grid-Independent Regime",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2605.04716",
@@ -521,15 +2331,17 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-05-06T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.065Z",
-      "lastSeen": "2026-08-29T15:57:32.065Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.765Z",
+      "versionsCount": 2,
       "authors": [
         "Hanning Wang",
         "Rong-Rong Chen",
         "Arman Farhang"
-      ]
+      ],
+      "abstract": "We study channel parameter estimation for multiuser orthogonal time frequency space (OTFS) systems in the delay-Doppler (DD) domain. To enable structured parametric estimation, we adopt a multi-user pilot cyclic prefix (MU-PCP) design, which multiplexes users along the Doppler dimension while preserving a separable exponential structure. This structure facilitates high-resolution estimation of fractional delay and Doppler parameters in the multiuser setting. Building on this framework, we extend weighted MUSIC (W-MUSIC) to multiuser OTFS, providing a computationally efficient approach with mild grid dependency, and develop a matrix pencil (MP)-based method that achieves fully grid-independent delay-Doppler parameter estimation. Numerical results demonstrate the effectiveness of the proposed methods and reveal a robustness-complexity tradeoff: W-MUSIC performs better at low SNR, while MP achieves higher estimation accuracy at moderate-to-high SNR with significantly lower computational complexity."
     },
     {
+      "id": "cmtekdmb50020zevdyh6d5mdk",
       "title": "DRL-Based Antenna Position Optimization For MA-Assisted OTFS System Under Imperfect CSI",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2604.23611",
@@ -537,8 +2349,8 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-04-26T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.081Z",
-      "lastSeen": "2026-08-29T15:57:32.081Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.399Z",
+      "versionsCount": 2,
       "authors": [
         "Maoyuan Wang",
         "Qian Zhang",
@@ -547,9 +2359,11 @@ window.RETRACE_DATA = {
         "Zheng Dong",
         "Deqiang Wang",
         "Yong Liang Guan"
-      ]
+      ],
+      "abstract": "In this paper, we introduce movable antenna (MA) technology into orthogonal time frequency space (OTFS) systems to enable wavelength-level antenna position optimization under imperfect channel state information (CSI), thereby mitigating deep fading. To accurately acquire CSI, we develop a sparse Bayesian learning method with variational inference (SBLVI) method. Based on estimated CSI, we formulate an MA position optimization problem with the objective of maximizing channel gain. Due to the highly non-convex character of the problem, we further develop a deep reinforcement learning (DRL) strategy to intelligently optimize MA positions. Simulation results show that the proposed SBLVI method significantly improves channel estimation accuracy over benchmark methods, and MA position optimization based on estimated CSI achieves substantially higher channel gains than the fixed-position antenna (FPA), demonstrating the effectiveness of the proposed MA-assisted OTFS system."
     },
     {
+      "id": "cmtekdmbk0024zevdmpboht1w",
       "title": "Enhancing 6G Wireless Intelligence: Do LLMs Work for CSI Prediction?",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2604.04028",
@@ -557,14 +2371,16 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-04-05T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.097Z",
-      "lastSeen": "2026-08-29T15:57:32.097Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.711Z",
+      "versionsCount": 2,
       "authors": [
         "Mohsen Kazemian",
         "Jürgen Jasperneite"
-      ]
+      ],
+      "abstract": "In high-mobility 6G scenarios, rapidly time-varying channels lead to very short coherence times, which makes conventional pilot-based channel state information (CSI) estimation approaches prone to outdated information or excessive pilot overhead. Therefore, channel prediction becomes essential in such dynamic wireless systems. To address this challenge, large language models (LLMs) are emerging learning frameworks that have recently attracted attention for CSI prediction due to their strong sequence modeling capability and ability to generalize across different environments. This paper proposes an LLM-based framework for channel prediction in high-mobility orthogonal time frequency space (OTFS) communication systems. In this work, we develop a physics-aware LLM-based predictor that learns the temporal evolution of OTFS channel coefficients from historical channel observations while incorporating mobility-related physical descriptors (e.g., maximum Doppler frequency) to achieve accurate prediction of future channel states in rapidly time-varying environments. The effectiveness of the proposed framework is evaluated through extensive simulations under user velocities ranging from 100 to 500 km/h. Numerical results show that the proposed method consistently achieves lower normalized mean square error (NMSE) compared with both classical deep learning predictors and LLM-based predictors without physical channel descriptors. These results demonstrate the advantage of integrating mobility-related channel knowledge with LLM-based sequence modeling for channel prediction in highly dynamic OTFS systems."
     },
     {
+      "id": "cmtekdmc10028zevdjybtwgtw",
       "title": "Gaussian Mixture Model Based Bayesian Learning for Sparse Channel Estimation in Orthogonal Time Frequency Space Modulated Systems",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2603.26902",
@@ -572,16 +2388,18 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-03-27T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.113Z",
-      "lastSeen": "2026-08-29T15:57:32.113Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.094Z",
+      "versionsCount": 2,
       "authors": [
         "Surbhi Gehlot",
         "Suraj Srivastava",
         "Sandeep Kumar Yadav",
         "Lajos Hanzo"
-      ]
+      ],
+      "abstract": "A novel Gaussian mixture model (GMM) aided sparse Bayesian learning (SBL) framework is proposed for channel state information (CSI) estimation in orthogonal time-frequency space (OTFS) modulated systems. The key attribute of the proposed algorithm lies in casting CSI recovery as an SBL inference problem, where posterior distributions are iteratively refined under a hierarchical GMM prior. Using this approach, the sparsity-inducing variances beneficially promote sparsity in the delay Doppler (DD) domain, while additionally augmenting the capability of SBL to exploit channel statistics more effectively. Moreover, to fully exploit the GMMs ability to approximate arbitrary probability density functions and model complex multipath fading scenarios, the channel statistics are represented using a complex Gaussian mixture. Simultaneously, the method leverages time-domain (TD) pilots without requiring wasteful DD domain guard intervals, thereby ensuring low pilot overhead and high spectral efficiency. The CSI recovered is subsequently applied in a linear minimum mean square error (MMSE) detector for reliable data detection. To benchmark performance, the Oracle-MMSE and the Bayesian Cramèr Rao lower bound (BCRLB) are also derived. Our simulation results demonstrate significant performance improvement over the state of the art sparse estimation methods."
     },
     {
+      "id": "cmtekdmcw002czevdorhay069",
       "title": "Cyclic Delay-Doppler Shift: A Simple Transmit Diversity Technique for Ultra-Reliable Communications in Doubly Selective Channels",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2603.14959",
@@ -589,8 +2407,8 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-03-16T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.145Z",
-      "lastSeen": "2026-08-29T15:57:32.145Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.441Z",
+      "versionsCount": 2,
       "authors": [
         "Haoran Yin",
         "Yu Zhou",
@@ -602,9 +2420,11 @@ window.RETRACE_DATA = {
         "Fan Liu",
         "Marwa Chafii",
         "Mérouane Debbah"
-      ]
+      ],
+      "abstract": "Affine frequency division multiplexing (AFDM) and orthogonal time frequency space (OTFS) are two promising advanced waveforms proposed for reliable communications in high-mobility scenarios. In this paper, we introduce a simple transmit diversity technique, termed cyclic delay-Doppler shift (CDDS), for these two advanced waveforms to achieve ultra-reliable communications in doubly selective channels (DSCs). Two simple CDDS schemes, named modulation-domain CDDS (MD-CDDS) and time-domain CDDS (TD-CDDS), are proposed, which perform CDDS in advance at the transmitter before and after the modulation, respectively. We demonstrate that both of the two proposed CDDS schemes can be implemented efficiently and flexibly by multiplying the transmit vector with a well-designed precoding matrix, which is nothing but a sparse phase-compensated permutation matrix. Moreover, we theoretically and numerically prove that CDDS can provide MIMO-AFDM and MIMO-OTFS with optimal transmit diversity gain when a proper CDDS step is adopted. Compared to the conventional transmit diversity techniques, the proposed CDDS scheme enjoys the advantages of lower channel estimation overhead, implementation complexity, and signal processing latency, making it particularly suitable for ultra-reliable communications in high-mobility scenarios."
     },
     {
+      "id": "cmtekdmdl002gzevd73tds5yb",
       "title": "Comparison of OTFS and OFDM for RIS-aided Systems in the Presence of Phase Noise",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2602.12804",
@@ -612,14 +2432,16 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-02-13T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.170Z",
-      "lastSeen": "2026-08-29T15:57:32.170Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.263Z",
+      "versionsCount": 2,
       "authors": [
         "Stephen McWade",
         "Arman Farhang"
-      ]
+      ],
+      "abstract": "In this paper, we investigate the performance of RIS-aided orthogonal time frequency space (OTFS) and orthogonal frequency division multiplexing (OFDM) systems in the presence of oscillator phase noise. OFDM is known to be sensitive to phase noise, which could limit the potential gains promised by RIS systems. OTFS, on the other hand, is a compelling potential waveform for RIS-aided systems in the presence of phase noise due to it's resilience to time-varying channels. However, the effect of phase noise on OTFS has not been fully analyzed in the literature as of yet. Additionally, no existing works in the literature consider the effect of phase noise on an RIS-aided OTFS system. Hence, we propose a joint RIS channel and phase noise estimation technique using a Wiener filtering approach. Our proposed method exploits the statistical nature of both the phase noise and the Doppler spread channel in a setup with RIS. Our numerical analysis demonstrates the significant gain of RIS-aided OTFS offers compared to RIS-aided OFDM in the presence in the presence of phase noise. Additionally, our results demonstrate the superiority of our proposed estimation technique, with gains of up to 3~dB in terms of bit error rate (BER), over existing methods in the literature."
     },
     {
+      "id": "cmtekdme3002kzevdbxf297uc",
       "title": "Nonparametric Variational Bayesian Learning for Channel Estimation with OTFS Modulation",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2602.10438",
@@ -627,17 +2449,19 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-02-11T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.187Z",
-      "lastSeen": "2026-08-29T15:57:32.187Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.832Z",
+      "versionsCount": 2,
       "authors": [
         "Chong Cao",
         "Zhuyu Liu",
         "Zheng Dong",
         "Yong Zhou",
         "He Chen"
-      ]
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation has demonstrated significant advantages in high-mobility scenarios in future 6G networks. However, existing channel estimation methods often overlook the structured sparsity and clustering characteristics inherent in realistic clustered delay line (CDL) channels, leading to degraded performance in practical systems. To address this issue, we propose a novel nonparametric Bayesian learning (NPBL) framework for OTFS channel estimation. Specifically, a stick-breaking process is introduced to automatically infer the number of multipath components and assign each path to its corresponding cluster. The channel coefficients within each cluster are modeled by a Gaussian mixture distribution to capture complex fading statistics. Furthermore, an effective pruning criterion is designed to eliminate spurious multipath components, thereby enhancing estimation accuracy and reducing computational complexity. Simulation results demonstrate that the proposed method achieves superior performance in terms of normalized mean squared error compared to existing methods."
     },
     {
+      "id": "cmtekdmek002ozevdocbiwh95",
       "title": "Pulse Shaping Filter Design for Zak-OTFS",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2602.07350",
@@ -645,15 +2469,17 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-02-07T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.204Z",
-      "lastSeen": "2026-08-29T15:57:32.204Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.675Z",
+      "versionsCount": 2,
       "authors": [
         "Kecheng Zhang",
         "Weijie Yuan",
         "Yonghui Li"
-      ]
+      ],
+      "abstract": "The Zak-transform-based Orthogonal Time Frequency Space (Zak-OTFS), offers a robust framework for high-mobility communications by simplifying the input-output (I/O) relation to a twisted convolution. While this structure theoretically enables accurate channel estimation by sampling the response from one pilot symbol, practical implementation is constrained by the spreading of effective channel response induced by pulse shaping filters. To address this, we first derive the I/O relationship for discrete-time oversampled Zak-OTFS, which closely approximates the continuous-time system and facilitates analysis and numerical simulation. We show that every delay-Doppler domain symbol undergoes the same effective channel response under the discrete oversampled Zak-OTFS. We then analyze the impact of window ambiguity functions, and reveal that high sidelobes lead to wide channel spreading and degrade estimation accuracy. Building on this insight, we propose a novel pulse shaping filter design that synthesizes Prolate Spheroidal Wave Functions (PSWFs) within the Isotropic Orthogonal Transform Algorithm (IOTA) framework. Numerical simulations confirm that the proposed design achieves superior channel estimation accuracy and bit error rate (BER) performance compared to conventional root-raised-cosine and rectangular windowing schemes in the high-SNR regime."
     },
     {
+      "id": "cmtekdmez002szevdfm303qwo",
       "title": "Superimposed-Pilot OTFS Under Fractional Doppler: Modular End-to-End Learning",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2601.22523",
@@ -661,17 +2487,19 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-01-30T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.220Z",
-      "lastSeen": "2026-08-29T15:57:32.220Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.641Z",
+      "versionsCount": 2,
       "authors": [
         "Yushi Lei",
         "Yusha Liu",
         "Guanghui Liu",
         "Lei Wan",
         "Kun Yang"
-      ]
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation has emerged as a promising candidate to overcome the performance degradation of orthogonal frequency division multiplexing (OFDM), which are commonly encountered in high-mobility wireless communication scenarios. However, conventional OTFS transceivers rely on multiple separately designed signal-processing modules, whose isolated optimization often limits global optimal performance. To overcome limitations, this paper proposes a modular deep learning (DL) based end-to-end OTFS transceiver framework that consists of trainable and interchangeable neural network (NN) modules, including constellation mapping/demapping, superimposed pilot placement, inverse Zak (IZak)/Zak transforms, and a U-Net-enhanced NN tailored for joint channel estimation and detection (JCED), while explicitly accounting for the impact of the cyclic prefix. This physics-informed modular architecture provides flexibility for integration with conventional OTFS systems and adaptability to different communication configurations. Simulations demonstrate that the proposed design significantly outperforms baseline methods in terms of both normalized mean squared error (NMSE) and detection reliability, maintaining robustness under integer and fractional Doppler conditions. The results highlight the potential of DL-based end-to-end optimization to enable practical and high-performance OTFS transceivers for next-generation high-mobility networks."
     },
     {
+      "id": "cmtekdmfe002wzevdis6dwfts",
       "title": "OTFS-based Integrated Positioning and Communication Systems with Low-Resolution ADCs",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2602.07001",
@@ -679,16 +2507,18 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-01-28T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.235Z",
-      "lastSeen": "2026-08-29T15:57:32.235Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.309Z",
+      "versionsCount": 2,
       "authors": [
         "Yueyi Yang",
         "Zeping Sui",
         "Zilong Liu",
         "Leila Musavian"
-      ]
+      ],
+      "abstract": "This paper proposes a two-phase orthogonal time frequency space (OTFS)-based integrated positioning and communication (IPAC) framework under realistic low-resolution analog-to-digital converters (ADCs). In the uplink phase, the positioning signal is used to estimate channel parameters, which are subsequently used to determine the user's position. The spatial smoothing-multiple signal classification algorithm is introduced to estimate the angle-of-arrival, whereas an iterative interference cancellation scheme is conceived for the remaining parameters' estimation. The corresponding Cramer-Rao lower bounds of channel parameters and user position are also derived. During the downlink communication phase, the estimated parameters are exploited to improve beamforming at the base station. Simulation results evaluate the impact of ADC quantizer resolutions. Specifically, it is shown that enhanced downlink bit error rate performance can be achieved with improved uplink positioning, while the use of low-resolution ADCs induces noticeable performance degradation in the OTFS-IPAC system."
     },
     {
+      "id": "cmtekdmfu0030zevdn5ex61nn",
       "title": "Low-Complexity Pilot-Aided Doppler Ambiguity Estimation for OTFS Parametric Channel Estimation",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2601.20827",
@@ -696,14 +2526,16 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-01-28T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.250Z",
-      "lastSeen": "2026-08-29T15:57:32.250Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.692Z",
+      "versionsCount": 2,
       "authors": [
         "Bo-Yuan Chen",
         "Hsuan-Jung Su"
-      ]
+      ],
+      "abstract": "Orthogonal Time Frequency Space (OTFS) modulation offers robust performance in high-mobility scenarios by transforming time-varying channels into the delay-Doppler (DD) domain. However, in high-mobility environment such as emerging 5G Non-Terrestrial Networks (NTN), the extreme orbital velocities of Low Earth Orbit (LEO) satellites frequently cause the physical Doppler shifts to exceed the fundamental grid range. This Doppler ambiguity induces severe model mismatch and renders traditional MLE channel estimators ineffective. To address this challenge, this paper proposes a novel low-complexity pilot-aided Doppler ambiguity detection and compensation framework. We first mathematically derive the OTFS input-output relationship in the presence of aliasing, revealing that Doppler ambiguity manifests itself as a distinct phase rotation along the delay dimension. Leveraging this insight, we developed a two-stage estimator that utilizes pairwise phase differences between pilot symbols to identify the integer ambiguity, followed by a refined Maximum Likelihood Estimation (MLE) for channel recovery. We investigate two pilot arrangements, Embedded Pilot with Guard Zone (EP-GZ) and Data-Surrounded Pilot (DSP), to analyze the trade-off between interference suppression and spectral efficiency. Simulation results demonstrate that the proposed scheme effectively eliminates the error floor caused by ambiguity, achieving Bit Error Rate (BER) and Normalized Mean Square Error (NMSE) performance comparable to the exhaustive search benchmark while maintaining a computational complexity similar to standard MLE."
     },
     {
+      "id": "cmtekdmgn0034zevd9lct9mcz",
       "title": "OTFS-IDMA: An Unsourced Multiple Access Scheme for Doubly-Dispersive Channels",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2601.13065",
@@ -711,15 +2543,17 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-01-19T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.279Z",
-      "lastSeen": "2026-08-29T15:57:32.279Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.660Z",
+      "versionsCount": 2,
       "authors": [
         "Davide Bergamasco",
         "Federico Clazzer",
         "Paolo Casari"
-      ]
+      ],
+      "abstract": "We present an unsourced multiple access (UMAC) scheme tailored to high-mobility wireless channels. The proposed construction is based on orthogonal time frequency space (OTFS) modulation and sparse interleaver division multiple access (IDMA) in the delay-Doppler (DD) domain. The receiver runs a compressive-sensing joint activity-detection and channel estimation process followed by a single-user decoder which harnesses multipath diversity via the maximal-ratio combining (MRC) principle. Numerical results show the potential of DD-based uncoordinated schemes in the presence of double selectivity, while remarking the design tradeoffs and remaining challenges introduced by the proposed design."
     },
     {
+      "id": "cmtekdmhg0038zevddrz5onyj",
       "title": "Delay-Doppler-Domain Channel Estimation and Reduced-Complexity Detection of Faster-than-Nyquist Signaling Aided OTFS",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2601.11869",
@@ -727,16 +2561,18 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-01-17T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.309Z",
-      "lastSeen": "2026-08-29T15:57:32.309Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.588Z",
+      "versionsCount": 2,
       "authors": [
         "Zekun Hong",
         "Shinya Sugiura",
         "Chao Xu",
         "Lajos Hanzo"
-      ]
+      ],
+      "abstract": "We conceive a novel channel estimation and data detection scheme for OTFS-modulated faster-than-Nyquist (FTN) transmission over doubly selective fading channels, aiming for enhancing the spectral efficiency and Doppler resilience. The delay-Doppler (DD) domain's input-output relationship of OTFS-FTN signaling is derived by employing a root-raised cosine (RRC) shaping filter. More specifically, we design our DD-domain channel estimator for FTN-based pilot transmission, where the pilot symbol interval is lower than that defined by the classic Nyquist criterion. Moreover, we propose a reduced-complexity linear minimum mean square error equalizer, supporting noise whitening, where the FTN-induced inter-symbol interference (ISI) matrix is approximated by a sparse one. Our performance results demonstrate that the proposed OTFS-FTN scheme is capable of enhancing the achievable information rate, while attaining a comparable BER performance to both that of its Nyquist-based OTFS counterpart and to other FTN transmission schemes, which employ the same RRC shaping filter."
     },
     {
+      "id": "cmtekdmhy003czevdqlwt4ods",
       "title": "Unique Word Channel Estimation for Oversampled OTFS",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2601.09364",
@@ -744,16 +2580,18 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-01-14T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.326Z",
-      "lastSeen": "2026-08-29T15:57:32.326Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.916Z",
+      "versionsCount": 2,
       "authors": [
         "Radim Zedka",
         "Roman Marsalek",
         "Marek Bobula",
         "Arman Farhang"
-      ]
+      ],
+      "abstract": "Practical aspects of orthogonal time frequency space (OTFS), such as channel estimation and its performance in fractional delay-Doppler (DD) channels, are a lively topic in the OTFS community. Oversampling and pulse shaping are also discussed in the existing literature, but not in the context of channel estimation. To the best of our knowledge, this paper is the first to address the problem of data-to-pilot and vice versa energy leakage caused by oversampling and pulse shaping in OTFS. Theoretical analysis is performed on an oversampled, pulse-shaped OTFS implementing the embedded pilot channel estimation technique, revealing a trade-off between the amount of energy leakage and excess bandwidth introduced by the pulse shape. Next, a novel variant of OTFS is introduced, called UW-OTFS, which is designed to overcome the leakage problem by placing the pilot in the oversampled time domain instead of the DD domain. The unique structure of UW-OTFS offers 36 percent higher spectral efficiency than the OTFS with embedded pilot. UW-OTFS also outperforms traditional OTFS in terms of bit error ratio and out-of-band emissions."
     },
     {
+      "id": "cmtekdmii003gzevdu5pctzbq",
       "title": "A Novel Deep Learning-Based Coarse-to-Fine Frame Synchronization Method for OTFS Systems",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2601.05920",
@@ -761,8 +2599,8 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-01-09T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.346Z",
-      "lastSeen": "2026-08-29T15:57:32.346Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.932Z",
+      "versionsCount": 2,
       "authors": [
         "Meiwen Men",
         "Tao Zhou",
@@ -771,9 +2609,11 @@ window.RETRACE_DATA = {
         "Yongning Qi",
         "Liu Liu",
         "Bo Ai"
-      ]
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation is a robust candidate waveform for future wireless systems, particularly in high-mobility scenarios, as it effectively mitigates the impact of rapidly time-varying channels by mapping symbols in the delay-Doppler (DD) domain. However, accurate frame synchronization in OTFS systems remains a challenge due to the performance limitations of conventional algorithms. To address this, we propose a low-complexity synchronization method based on a coarse-to-fine deep residual network (ResNet) architecture. Unlike traditional approaches relying on high-overhead preamble structures, our method exploits the intrinsic periodic features of OTFS pilots in the delay-time (DT) domain to formulate synchronization as a hierarchical classification problem. Specifically, the proposed architecture employs a two-stage strategy to first narrow the search space and then pinpoint the precise symbol timing offset (STO), thereby significantly reducing computational complexity while maintaining high estimation accuracy. We construct a comprehensive simulation dataset incorporating diverse channel models and randomized STO to validate the method. Extensive simulation results demonstrate that the proposed method achieves robust signal start detection and superior accuracy compared to conventional benchmarks, particularly in low signal-to-noise ratio (SNR) regimes and high-mobility scenarios."
     },
     {
+      "id": "cmtekdmj1003kzevdsgdf64n9",
       "title": "A Conditional Variational Framework for Channel Prediction in High-Mobility 6G OTFS Networks",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2601.03084",
@@ -781,14 +2621,34 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2026-01-06T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.365Z",
-      "lastSeen": "2026-08-29T15:57:32.365Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.422Z",
+      "versionsCount": 2,
       "authors": [
         "Mohsen Kazemian",
         "Jürgen Jasperneite"
-      ]
+      ],
+      "abstract": "This paper proposes a machine learning (ML) based method for channel prediction in high mobility orthogonal time frequency space (OTFS) channels. In these scenarios, rapid variations caused by Doppler spread and time varying multipath propagation lead to fast channel decorrelation, making conventional pilot based channel estimation methods prone to outdated channel state information (CSI) and excessive overhead. Therefore, reliable channel prediction methods become essential to support robust detection and decoding in OTFS systems. In this paper, we propose conditional variational autoencoder for channel prediction (CVAE4CP) method, which learns the conditional distribution of OTFS delay Doppler channel coefficients given physical system and mobility parameters. By incorporating these parameters as conditioning information, the proposed method enables the prediction of future channel coefficients before their actual realization, while accounting for inherent channel uncertainty through a low dimensional latent representation. The proposed framework is evaluated through extensive simulations under high mobility conditions. Numerical results demonstrate that CVAE4CP consistently outperforms a competing learning based baseline in terms of normalized mean squared error (NMSE), particularly at high Doppler frequencies and extended prediction horizons. These results confirm the effectiveness and robustness of the proposed approach for channel prediction in rapidly time varying OTFS systems."
     },
     {
+      "id": "cmtekdnxi00ekzevdbosxco0o",
+      "title": "Zak-OTFS ISAC with Bistatic Sensing via Semi-Blind Atomic Norm Denoising Scheme",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2601.03639",
+      "rawUrl": "https://arxiv.org/abs/2601.03639",
+      "source": "arxiv",
+      "publishedAt": "2026-01-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.182Z",
+      "lastSeen": "2026-10-02T09:41:28.191Z",
+      "versionsCount": 2,
+      "authors": [
+        "Kecheng Zhang",
+        "Weijie Yuan",
+        "Maria Sabrina Greco"
+      ],
+      "abstract": "Integrated sensing and communication (ISAC) through Zak-transform-based orthogonal time frequency space (Zak-OTFS) modulation is a promising solution for high-mobility scenarios. Realizing accurate bistatic sensing and robust communication necessitates precise channel estimation; however, this remains a formidable challenge in doubly dispersive environments, where fractional delay-Doppler shifts induce severe channel spreading. This paper proposes a semi-blind atomic norm denoising scheme for Zak-OTFS ISAC with bistatic sensing. We first derive the discrete-time input-output (I/O) relationship of Zak-OTFS under fractional delay-Doppler shifts and rectangular windowing. Based on this I/O relation, we formulate the joint channel parameter estimation and data detection task as an atomic norm denoising problem, utilizing the negative square penalty method to handle the non-convex discrete constellation constraints. To solve this problem efficiently, we develop an accelerated iterative algorithm that integrates majorization-minimization, accelerated projected gradient, and inexact accelerated proximal gradient methods. We provide a rigorous convergence proof for the proposed algorithm. Simulation results demonstrate that the proposed scheme achieves super-resolution sensing accuracy and communication performance approaching the perfect channel state information lower bound."
+    },
+    {
+      "id": "cmtekdmjw003ozevdz625xmvp",
       "title": "A Uniform Pilot and Data Payload Optimization Framework for OTFS-Based ISAC",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2512.24624",
@@ -796,16 +2656,18 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2025-12-31T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.396Z",
-      "lastSeen": "2026-08-29T15:57:32.396Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.111Z",
+      "versionsCount": 2,
       "authors": [
         "Borui Du",
         "Yumeng Zhang",
         "Christos Masouros",
         "Bruno Clerckx"
-      ]
+      ],
+      "abstract": "The orthogonal time frequency space (OTFS) signal is considered a promising solution for high-mobility wireless environments. It manages Doppler effects by utilizing delay-Doppler (DD) domain processing. However, the relatively long OTFS frame duration could introduce considerable sensing or communication latency when radar and communication are performed separately. By operating in a dual-functional radar and communication (DFRC) mode, the OTFS system performs sensing and data transmission simultaneously, thereby reducing the resulting latency. Nevertheless, the optimal OTFS DFRC signal strategy remains insufficiently explored. This paper investigates the optimal signal design for OTFS DFRC systems, focusing on pilot symbol design and data symbol power allocation. Specifically, we derive a channel capacity lower bound metric for communication that considers channel estimation errors in OTFS. For sensing, we derive an integrated sidelobe level (ISL), accounting for the randomness of the data symbols alongside the deterministic pilot symbols. Leveraging the above metrics, we formulate an optimization problem that balances radar and communication performance, and then solve it using an alternating optimization framework. We validate the proposed signal through numerical analysis and Monte Carlo simulations. Our analysis shows that OTFS DFRC enforces a deterministic pilot signal that is characterized by a concentrated peak in the DD domain, which furnishes a common structure in the DD domain facilitating sensing and channel estimation, with data multiplexed in other DD grids, thereby unifying sensing and communication within a single OTFS signal. Compared with conventional OTFS signals, the proposed OTFS DFRC signal expands the achievable sensing-communication performance region, delivering at least a 9.45 dB ISL suppression for sensing and a 4.82 dB SINR ratio gain for communication."
     },
     {
+      "id": "cmtekdmkf003szevdpiuun0y4",
       "title": "Hybrid Iterative Detection for OTFS: Interplay between Local L-MMSE and Global Message Passing",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2512.14116",
@@ -813,8 +2675,8 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2025-12-16T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.415Z",
-      "lastSeen": "2026-08-29T15:57:32.415Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.347Z",
+      "versionsCount": 2,
       "authors": [
         "Ruohai Yang",
         "Shuangyang Li",
@@ -822,9 +2684,11 @@ window.RETRACE_DATA = {
         "Zhiqiang Wei",
         "Kai Wan",
         "Giuseppe Caire"
-      ]
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation has emerged as a robust solution for high-mobility wireless communications. However, conventional detection algorithms, such as linear equalizers and message passing (MP) methods, either suffer from noise enhancement or fail under complex doubly-selective channels, especially in the presence of fractional delay and Doppler shifts. In this paper, we propose a hybrid low-complexity iterative detection framework that combines linear minimum mean square error (L-MMSE) estimation with MP-based probabilistic inference. The key idea is to apply a new delay-Doppler (DD) commutation precoder (DDCP) to the DD domain signal vector, such that the resulting effective channel matrix exhibits a structured form with several locally dense blocks that are sparsely inter-connected. This precoding structure enables a hybrid iterative detection strategy, where a low-dimensional L-MMSE estimation is applied to the dense blocks, while MP is utilized to exploit the sparse inter-block connections. Furthermore, we provide a detailed complexity analysis, which shows that the proposed scheme incurs lower computational cost compared to the full-size L-MMSE detection. The simulation results of convergence performance confirm that the proposed hybrid MP detection achieves fast and reliable convergence with controlled complexity. In terms of error performance, simulation results demonstrate that our scheme achieves significantly better bit error rate (BER) under various channel conditions. Particularly in multipath scenarios, the BER performance of the proposed method closely approaches the matched filter bound (MFB), indicating its near-optimal error performance."
     },
     {
+      "id": "cmtekdmkz003wzevdxqkt13qj",
       "title": "A Comprehensive Survey of Channel Estimation Techniques for OTFS in 6G and Beyond Wireless Networks",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2512.13032",
@@ -832,8 +2696,8 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2025-12-15T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.435Z",
-      "lastSeen": "2026-08-29T15:57:32.435Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.172Z",
+      "versionsCount": 2,
       "authors": [
         "Emir Aslandogan",
         "Haci Ilhan",
@@ -843,9 +2707,11 @@ window.RETRACE_DATA = {
         "Miaowen Wen",
         "Marco Di Renzo",
         "Vincent Poor"
-      ]
+      ],
+      "abstract": "Orthogonal time-frequency space (OTFS) modulation has emerged as a powerful wireless communication technology that is specifically designed to address the challenges of high-mobility scenarios and significant Doppler effects. Unlike conventional modulation schemes that operate in the time-frequency (TF) domain, OTFS projects signals to the delay-Doppler (DD) domain, where wireless channels exhibit sparse and quasi-static characteristics. This fundamental transformation enables superior channel estimation (CE) performance in challenging propagation environments characterized by high-mobility, severe multipath effects, and rapidly time-varying channel conditions. This article provides a systematic examination of CE techniques for OTFS systems, covering the extensive research landscape from foundational methods to cutting-edge approaches. We present a detailed analysis of DD and TF domain CE techniques presented in the literature, including separate pilot, embedded pilot, and superimposed pilot approaches. The article encompasses various algorithmic frameworks including Bayesian learning, matching pursuit-based techniques, message passing algorithms, deep learning (DL)-based methods, and recent CE approaches. Additionally, we explore joint CE and signal detection (SD) strategies, the integration of OTFS with next-generation wireless systems including massive multiple-input multiple-output (MIMO), millimeter wave (mmWave) communications, reconfigurable intelligent surfaces (RISs), and integrated sensing and communication (ISAC) systems. Critical implementation challenges are presented, including leakage suppression, inter-Doppler interference mitigation, impulsive noise handling, signaling overhead reduction, guard space requirements, peak-to-average power ratio (PAPR) management, beam squint effects, and hardware impairments."
     },
     {
+      "id": "cmtekdmlf0040zevdxr4ym1qy",
       "title": "Enhancing Channel Estimation for OTFS systems using Sparse Bayesian Learning with Adaptive Threshold",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2512.07704",
@@ -853,8 +2719,8 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2025-12-08T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.452Z",
-      "lastSeen": "2026-08-29T15:57:32.452Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.849Z",
+      "versionsCount": 2,
       "authors": [
         "Tengfei Qi",
         "Yifei Yang",
@@ -864,9 +2730,11 @@ window.RETRACE_DATA = {
         "Xihua Zou",
         "Wei Pan",
         "Lianshan Yan"
-      ]
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation is a two-dimensional modulation scheme designed in the delay-Doppler (DD) domain, exhibiting superior performance over orthogonal frequency division multiplexing (OFDM) modulation in environments with high Doppler frequency shifts. We investigated the channel estimation in the DD domain of OTFS systems, modeling it as a sparse signal recovery problem. Subsequently, within the existing sparse Bayesian learning framework, we proposed an adaptive Bayesian threshold-based active denoising mechanism. Combined with inverse-free sparse Bayesian learning, this effectively addresses the pseudo-peak issue in low signal-to-noise ratio (SNR) scenarios while maintaining low complexity. The simulation results demonstrate that this algorithm outperforms existing channel estimation algorithms in terms of anti-noise performance and complexity."
     },
     {
+      "id": "cmtekdmm90044zevd1mbundpt",
       "title": "A Cyclic Shift Embedded Pilot based Channel Estimation for Multi-User MIMO-OTFS systems with fractional delay and Doppler",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2512.02353",
@@ -874,17 +2742,36 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2025-12-02T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.481Z",
-      "lastSeen": "2026-08-29T15:57:32.481Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.225Z",
+      "versionsCount": 2,
       "authors": [
         "Ruizhe Wang",
         "Hong Ren",
         "Cunhua Pan",
         "Ruisong Weng",
         "Jiangzhou Wang"
-      ]
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation has been proposed to meet the demand for reliable communication in high-mobility scenarios for future wireless networks. However, in multi-user OTFS systems, conventional embedded pilot schemes require independent pilot allocation for each user, leading to linearly increasing pilot overhead. To address these issues, in this paper, we investigate the uplink channel estimation and pilot design for multi-user multiple-input multiple-output (MIMO)-OTFS systems. We propose a multi-dimensional decomposition-based channel estimation algorithm. Specifically, the proposed algorithm first estimates the angles of arrivals (AoAs) via subspace decomposition-based method. A spatial projection matrix, constructed from the estimated AOAs, decouples the received signal by propagation path subspace, effectively mitigating inter-path interference. The remaining fractional delay and Doppler can be obtained by a compressed sensing (CS)-based off-grid channel estimation method. Furthermore, to reduce the pilot overhead in multi-user OTFS systems, this paper proposes a novel cyclic shift embedded pilot (CSEP) structure, which can reuse users through cyclic shift-orthogonality of Zadoff-Chu (ZC) sequences. Compared with conventional embedded pilot structures, the CSEP structure can save over 30\\% of pilot overhead. Finally, an imporved channel estimation method based on the CSEP structure is proposed. Simulation results demonstrate that it achieves superior performance in channel estimation. Moreover, the proposed CSEP structure and channel estimation algorithm achieve a favorable balance between computational complexity, estimation accuracy, and bit error rate (BER) performance."
     },
     {
+      "id": "cmtekdnvy00e8zevdab4lxn2n",
+      "title": "Beyond the Delay-Doppler Domain: A Time-Frequency Framework for Low-Overhead, Scalable OTFS Channel Estimation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2511.08504",
+      "rawUrl": "https://arxiv.org/abs/2511.08504",
+      "source": "arxiv",
+      "publishedAt": "2025-11-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.127Z",
+      "lastSeen": "2026-10-02T09:41:28.033Z",
+      "versionsCount": 2,
+      "authors": [
+        "Kailong Wang",
+        "Athina Petropulu"
+      ],
+      "abstract": "Most works on pilot-aided orthogonal time frequency space (OTFS) channel estimation operate in the delay-Doppler (DD) domain, where embedded-pilot guard regions must cover the unknown maximum delay-Doppler spread, causing high overhead that worsens with antenna scaling: per-antenna guard regions increase overhead with the number of transmit antennas, while shared guard regions avoid this but introduce pilot contamination. Fractional Doppler further reduces DD-domain sparsity and increases estimation complexity. This paper shows that the time-frequency (TF) representation provides a low-overhead, scalable framework for OTFS channel estimation based on physical scatterer parameters (angle, delay, Doppler, and gain). We derive exact TF- and DD-domain input-output relationships under fractional Doppler. The TF expression decomposes the received signal into a desired component, identical in form for integer and fractional Doppler, and an explicitly characterized interference term; this Doppler-invariant structure enables scalable TF-domain estimation. This motivates a TF-domain pilot design using private TF bins protected by TF/DD guard bins, preserving cross-antenna pilot orthogonality with overhead that depends only on the number of pilots, not the array size. We then develop a low-complexity coarse-to-fine estimation method combining discrete Fourier transform (DFT)-based coarse estimation with dimensionality-reduced sparse recovery. The exact DD-domain expression provides the signal model for data-symbol recovery and explains why DD-domain estimation complexity grows substantially under fractional Doppler. Simulations show accurate channel state information (CSI) estimation under integer and fractional Doppler, robustness to pilot pollution, and scalability to large arrays with substantially lower overhead and complexity than existing schemes."
+    },
+    {
+      "id": "cmtekdmmw0048zevdl4vvgl5j",
       "title": "A Survey of OTFS-Based Index Modulation Techniques: Challenges, Benefits, and Future Directions for 6G and Beyond",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2510.20265",
@@ -892,8 +2779,8 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2025-10-23T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.504Z",
-      "lastSeen": "2026-08-29T15:57:32.504Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.745Z",
+      "versionsCount": 2,
       "authors": [
         "Burak Ahmet Ozden",
         "Erdogan Aydin",
@@ -903,9 +2790,11 @@ window.RETRACE_DATA = {
         "Miaowen Wen",
         "Marco Di Renzo",
         "Vincent Poor"
-      ]
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) is a two-dimensional modulation technique that uses the delay-Doppler (DD) domain and is a candidate for providing robust, high-capacity wireless communications for envisioned 6G and beyond networks. The OTFS technique maps data to the DD domain instead of the traditional time-frequency domain, enabling it to fully utilize channel diversity and transform fast time-varying channels into nearly static channels. Index modulation (IM) is a communication paradigm that conveys information not only through conventional modulation symbols but also by encoding data bits in the indices of the selected communication resources to improve error performance, spectral efficiency, and energy efficiency. In this survey, a comprehensive review of work on OTFS-based wireless communication systems is presented. In particular, the existing OTFS-IM schemes are reviewed and systematically categorized according to their system architectures, detection methods, and performance aspects such as capacity, peak-to-average power ratio, diversity, complexity, imperfect channel state information, spectral efficiency, and outage probability. Furthermore, the operating principles and system models of OTFS-IM variants-including OTFS-based space shift keying, OTFS-based spatial modulation, OTFS-based quadrature spatial modulation, OTFS-based media-based modulation, and OTFS-based code index modulation-are described, followed by a comparative performance analysis in terms of computational complexity, error performance, capacity, energy saving, spectral efficiency, and throughput. Finally, the challenges, benefits, and future directions for OTFS-IM systems are discussed, covering key aspects such as complexity, efficiency, latency, channel estimation, hardware constraints, synchronization, security, and potential integration with other advanced wireless communication techniques."
     },
     {
+      "id": "cmtekdmnc004czevdgbt39tcf",
       "title": "Signal Design for OTFS Dual-Functional Radar and Communications with Imperfect CSI",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2510.20112",
@@ -913,16 +2802,18 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2025-10-23T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.520Z",
-      "lastSeen": "2026-08-29T15:57:32.520Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.799Z",
+      "versionsCount": 2,
       "authors": [
         "Borui Du",
         "Yumeng Zhang",
         "Christos Masouros",
         "Bruno Clerckx"
-      ]
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) offers significant advantages in managing mobility for both wireless sensing and communication systems, making it a promising candidate for dual-functional radar-communication (DFRC). However, the optimal signal design that fully exploits OTFS's potential in DFRC has not been sufficiently explored. This paper addresses this gap by formulating an optimization problem for signal design in DFRC-OTFS, incorporating both pilot-symbol design for channel estimation and data-power allocation. Specifically, we employ the integrated sidelobe level (ISL) of the ambiguity function as a radar metric, accounting for the randomness of the data symbols alongside the deterministic pilot symbols. For communication, we derive a channel capacity lower bound metric that considers channel estimation errors in OTFS. We maximize the weighted sum of sensing and communication metrics and solve the optimization problem via an alternating optimization framework. Simulations indicate that the proposed signal significantly improves the sensing-communication performance region compared with conventional signal schemes, achieving at least a 9.44 dB gain in ISL suppression for sensing, and a 4.82 dB gain in the signal-to-interference-plus-noise ratio (SINR) for communication."
     },
     {
+      "id": "cmtekdmns004gzevda4995719",
       "title": "MIMO-Zak-OTFS with Superimposed Spread Pilots",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2510.20734",
@@ -930,14 +2821,16 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2025-10-23T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.536Z",
-      "lastSeen": "2026-08-29T15:57:32.536Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.561Z",
+      "versionsCount": 2,
       "authors": [
         "Abhishek Bairwa",
         "Ananthanarayanan Chockalingam"
-      ]
+      ],
+      "abstract": "In this paper, we consider the problem of spread pilot design and effective channel estimation in multiple-input multiple-output Zak-OTFS (MIMO-Zak-OTFS) with superimposed spread pilots, where data and spread pilot signals are superimposed in the same frame. To achieve good estimation performance in a MIMO setting, the spread pilots at different transmit antennas need to be effectively separated at the receiver. Towards this, we propose a spread pilot design that separates the pilot sequences in the cross-ambiguity domain and enables the estimation of the effective channel taps by a simple read-off operation. To further alleviate the effect of pilot-data interference on performance, we carry out turbo iterations between channel estimation and detection. Simulation results for $2\\times 2$ and $3\\times 3$ MIMO-Zak-OTFS with Gaussian-sinc pulse shaping filter for vehicular-A channel model show that the proposed pilot design and estimation scheme with three turbo iterations can achieve very good estimation/detection performance."
     },
     {
+      "id": "cmtekdmo7004kzevdq62ix13w",
       "title": "Delay-Doppler Pulse Shaping in Zak-OTFS Using Hermite Basis Functions",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2510.17466",
@@ -945,14 +2838,16 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2025-10-20T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.551Z",
-      "lastSeen": "2026-08-29T15:57:32.551Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:27.882Z",
+      "versionsCount": 2,
       "authors": [
         "Fathima Jesbin",
         "Ananthanarayanan Chockalingam"
-      ]
+      ],
+      "abstract": "The performance of Zak-OTFS modulation is critically dependent on the choice of the delay-Doppler (DD) domain pulse shaping filter. The design of pulses for $L^2(\\mathbb{R})$ is constrained by the Balian-Low Theorem, which imposes an inescapable trade-off between time-frequency localization and orthogonality for spectrally efficient systems. In Zak-OTFS, this trade-off requires balancing the need for localization for input/output (I/O) relation estimation with the need for orthogonality for reliable data detection when operating without time or bandwidth expansion. The well-known sinc and Gaussian pulse shapes represent the canonical extremes of this trade-off, while composite constructions such as the Gaussian-sinc (GS) pulse shape offer a good compromise. In this work, we propose a systematic DD pulse design framework for Zak-OTFS that expresses the pulse as a linear combination of Hermite basis functions. We obtain the optimal coefficients for the Hermite basis functions that minimize the inter-symbol interference (ISI) energy at the DD sampling points by solving a constrained optimization problem via singular value decomposition. For the proposed class of Hermite pulses, we derive closed-form expressions for the I/O relation and noise covariance in Zak-OTFS. Simulation results of Zak-OTFS with embedded pilot and model-free I/O relation estimation in Vehicular-A channels with fractional DDs demonstrate that the optimized pulse shape achieves a bit error rate performance that is significantly superior compared to those of the canonical sinc and Gaussian pulses and is on par with that of the state-of-the-art GS pulse, validating the proposed framework which provides greater design flexibility in terms of control of ISI and sidelobe energies."
     },
     {
+      "id": "cmtekdmom004ozevdweebaugr",
       "title": "A Hybrid I/O Relation Estimation Scheme for Zak-OTFS Receivers",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2510.09215",
@@ -960,15 +2855,55 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2025-10-10T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.567Z",
-      "lastSeen": "2026-08-29T15:57:32.567Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:29.759Z",
+      "versionsCount": 2,
       "authors": [
         "Sai Pradeep Muppaneni",
         "Vineetha Yogesh",
         "A. Chockalingam"
-      ]
+      ],
+      "abstract": "In this paper, we consider the problem of estimating the delay-Doppler (DD) domain input-output (I/O) relation in Zak-OTFS modulation, which is needed for signal detection. Two approaches, namely, model-dependent and model-free approaches, can be employed for this purpose. The model-dependent approach requires explicit estimation of the physical channel parameters (path delays, Dopplers, and gains) to obtain the I/O relation. Such an explicit estimation is not required in the model-free approach, where the I/O relation can be estimated by reading off the samples in the fundamental DD period of the received pilot frame. Model-free approach has the advantage of acquiring fractional DD channels with simplicity. However, the read-off in the model-free approach provides an estimate of the effective channel only over a limited region in the DD plane but it does not provide an estimate for the region outside, and this can affect the estimation performance depending on the pulse shaping characteristics of the DD pulse shaping filter used. A poorly localized DD pulse shape leads to an increased degradation in performance. Motivated by this, in this paper, we propose a novel, yet simple, I/O relation estimation scheme that alleviates the above issue in the model-free approach. We achieve this by obtaining a coarse estimate of the effective channel outside the model-free estimation region using a novel model-dependent scheme and using this estimate along with the model-free estimate to obtain an improved estimate of the overall I/O relation. We devise the proposed estimation scheme for both exclusive and embedded pilot frames. Our simulation results using Vehicular-A, TDL-A and TDL-C channel models with fractional DDs show that the proposed hybrid estimation approach achieves superior performance compared to the pure model-free approach."
     },
     {
+      "id": "cmtekdnwx00egzevdv6w3dbt8",
+      "title": "Pulse Shaping Filter Design for Integrated Sensing & Communication with Zak-OTFS",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2510.15195",
+      "rawUrl": "https://arxiv.org/abs/2510.15195",
+      "source": "arxiv",
+      "publishedAt": "2025-10-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.161Z",
+      "lastSeen": "2026-10-02T09:41:28.127Z",
+      "versionsCount": 2,
+      "authors": [
+        "Nishant Mehrotra",
+        "Sandesh Rao Mattu",
+        "Robert Calderbank"
+      ],
+      "abstract": "Zak-OTFS provides a framework for integrated sensing & communication (ISAC) in high delay and Doppler spread environments. Pulse shaping filter design enables joint optimization of sensing and communication performance. For sensing, a localized pulse shaping filter enables input-output (I/O) relation estimates close to the physical scattering channel. For communication, orthogonality of the pulse shape on the information lattice prevents inter-symbol interference, and no time and bandwidth expansion enables full spectral efficiency. A filter simultaneously meeting all three objectives is ideal for ISAC. Existing filter designs achieve two, but not all three objectives. In this work, we design pulse shaping filters meeting all three objectives via the Isotropic Orthogonal Transform Algorithm. The proposed filters have improved spectral efficiency, data detection and sensing performance over existing filter choices."
+    },
+    {
+      "id": "cmuqrwye0001jf728lsdpt12p",
+      "title": "An OTFS Waveform-Based Delay-Doppler Domain Channel Measurement Method for High-Mobility Scenarios",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2510.19402",
+      "rawUrl": "https://arxiv.org/abs/2510.19402",
+      "source": "arxiv",
+      "publishedAt": "2025-10-01T00:00:00.000Z",
+      "firstSeen": "2026-10-02T09:41:27.960Z",
+      "lastSeen": "2026-10-02T09:41:27.960Z",
+      "versionsCount": 1,
+      "authors": [
+        "Kaifeng Bao",
+        "Tao Zhou",
+        "Chaoyi Li",
+        "Liu Liu",
+        "Bo Ai"
+      ],
+      "abstract": "Channel measurements are the prerequisite for applying emerging transmission technologies and designing communication systems. Conventional time or frequency domain channel measurement methods cannot directly obtain Doppler information induced by high-mobility scenarios. The channel spreading function (CSF) simultaneously captures delay and Doppler information while naturally characterizing the propagation environment in the delay-Doppler (DD) domain. However, DD domain channel measurement methods remain underexplored. This paper presents an orthogonal time frequency space (OTFS) waveform-based DD domain channel measurement method for high-mobility scenarios. A native OTFS waveform, employed as the sounding signal, is designed for the first time, and its sounding capability is comprehensively analyzed. Next, we detail the methodology of DD domain channel measurement, including synchronization and CSF estimation. To enhance measurement precision, a joint fractional delay and Doppler shift estimation algorithm is proposed, and the overall performance of the proposed method is evaluated. Subsequently, a practical DD domain channel measurement system is established, followed by system calibration and verification. Finally, DD domain channel measurements are conducted in vehicle-to-infrastructure (V2I) and vehicle-to-vehicle (V2V) scenarios. Measurement results, including the CSF and other small-scale fading characteristics, confirm the effectiveness of the proposed method and offer valuable insights for advancing research on high-mobility communications."
+    },
+    {
+      "id": "cmtekdmpg004szevdyv4dqrkl",
       "title": "Pilot design, channel estimation, and target detection for integrated sensing and communication with OTFS",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2509.25846",
@@ -976,8 +2911,8 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2025-09-30T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.595Z",
-      "lastSeen": "2026-08-29T15:57:32.595Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:30.459Z",
+      "versionsCount": 2,
       "authors": [
         "Dazhuo Wang",
         "Yonghong Zeng",
@@ -985,9 +2920,11 @@ window.RETRACE_DATA = {
         "Francois Chin",
         "Yugang Ma",
         "Sumei Sun"
-      ]
+      ],
+      "abstract": "Recent studies shows that the orthogonal time frequency space (OTFS) waveform is a promising candidate for future communication. To meet users' potential demand for Integrated Sensing and Communication (ISAC) applications in 6G, the usage of OTFS for both radar sensing and wireless communication needs to be explored. In this paper, we propose a Fast Algorithm OTFS radar (FAOR) that can perform radar sensing in low complexity to detect the range and speed of the targets. It computes the 2D cyclic correlation of transmitted signal with the reordered delay Doppler (DD) domain received signals, and then generates the 2D range-Doppler map. It can be applied not only to monostatic radar but also to bistatic radar with a much lower computational complexity compared to state-of-the-art radar sensing technology. With the detected time delays and Doppler frequencies of the targets after the radar sensing, we propose a pilot-aided channel estimation method. The multifunction pilot symbol can serve the purpose of both bistatic radar sensing and channel estimation without any guard symbol added, while reducing the peak-to-average power ratio (PAPR) considerably compared to the conventional pilot design. The simulation results show that the proposed scheme outperforms the compared algorithms and gives decent performance in both radar sensing and channel estimation."
     },
     {
+      "id": "cmtekdmq6004wzevdktbj2d7q",
       "title": "Relative Localization of UAV Swarms in GNSS-Denied Conditions",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2509.04412",
@@ -995,17 +2932,19 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2025-09-04T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.623Z",
-      "lastSeen": "2026-08-29T15:57:32.623Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:30.057Z",
+      "versionsCount": 2,
       "authors": [
         "Guangyu Lei",
         "Yuqi Ping",
         "Tianhao Liang",
         "Huahao Ding",
         "Tingting Zhang"
-      ]
+      ],
+      "abstract": "Relative localization of unmanned aerial vehicle (UAV) swarms in global navigation satellite system (GNSS) denied environments is essential for emergency rescue and battlefield reconnaissance. Existing methods suffer from significant localization errors among UAVs due to packet loss and high computational complexity in large swarms. This paper proposes a clustering-based framework where the UAVs simultaneously use communication signals for channel estimation and ranging. Firstly, the spectral clustering is utilized to divide the UAV swarm into different sub-clusters, where matrix completion and multidimensional scaling yield high-precision relative coordinates. Subsequently, a global map is created by the inter-cluster anchor fusion. A case study of UAV integrated communication and sensing (ISAC) system is presented, where the Orthogonal Time Frequency Space (OTFS) is adopted for ranging and communication. Experimental results show that the proposed method reduces localization errors in large swarms and loss of range information. It also explores the impact of signal parameters on communication and localization, highlighting the interplay between communication and localization performance."
     },
     {
+      "id": "cmtekdmqu0050zevd0vy7f4ph",
       "title": "Channel Estimation and Data Detection in DS-Spread Channels: A Unified Framework, Novel Algorithms, and Waveform Comparison",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2508.21373",
@@ -1013,1440 +2952,25 @@ window.RETRACE_DATA = {
       "source": "arxiv",
       "publishedAt": "2025-08-29T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:32.646Z",
-      "lastSeen": "2026-08-29T15:57:32.646Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:30.388Z",
+      "versionsCount": 2,
       "authors": [
         "Niladri Halder",
         "Chandra R. Murthy"
-      ]
+      ],
+      "abstract": "We present a unified receiver processing framework for communication over delay-scale (DS)-spread channels that arise in underwater acoustic (UWA) communications that addresses both channel estimation (CE) and data detection for different modulation waveforms, namely OFDM, OTFS, OCDM, and ODSS, through a common input--output relation. Using this framework, we conduct a fair and comprehensive comparative study of these waveforms under DS-spread UWA channels and similar receiver complexities. We also develop a novel iterative variational Bayesian (VB) off-grid CE algorithm to estimate the delay and scale parameters of the channel paths, via two approaches: a first-order approximation scheme (FVB) and a second-order approximation scheme (SVB). We propose a low-complexity variational soft symbol detection (VSSD) algorithm that outputs soft symbols and log-likelihood ratios for the data bits, and a data-aided iterative CE and data detection (ICED) scheme that utilizes detected data symbols as \\emph{virtual} pilots to further improve the CE and data detection accuracy. Our numerical results reveal the efficacy of the proposed algorithms for CE and data detection. In terms of relative performance of different waveforms, in uncoded communications, (a) with a low-complexity subcarrier-by-subcarrier equalizer, ODSS offers the best performance, followed by OCDM and OTFS, while OFDM performs the worst, and (b) with the VSSD algorithm, OTFS, OCDM, and ODSS perform similarly, and they outperform OFDM. With coded communications, interestingly, all waveforms offer nearly the same BER when the VSSD receiver is employed. Hence, we conclude that when the receiver complexity is constrained, waveform choice matters, especially under harsh channel conditions, whereas with more sophisticated receiver algorithms, these differences disappear."
     },
     {
-      "title": "Zak-OTFS Based Coded Random Access for Uplink mMTC",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2507.22013",
-      "rawUrl": "https://arxiv.org/abs/2507.22013",
-      "source": "arxiv",
-      "publishedAt": "2025-07-29T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.665Z",
-      "lastSeen": "2026-08-29T15:57:32.665Z",
-      "versionsCount": 1,
-      "authors": [
-        "Alessandro Mirri",
-        "Venkatesh Khammammetti",
-        "Beyza Dabak",
-        "Enrico Paolini",
-        "Krishna Narayanan",
-        "Robert Calderbank"
-      ]
-    },
-    {
-      "title": "Time and Frequency Synchronization for Multiuser OTFS in Uplink",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2507.17966",
-      "rawUrl": "https://arxiv.org/abs/2507.17966",
-      "source": "arxiv",
-      "publishedAt": "2025-07-23T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.682Z",
-      "lastSeen": "2026-08-29T15:57:32.682Z",
-      "versionsCount": 1,
-      "authors": [
-        "Mohsen Bayat",
-        "Sanoopkumar P.S.",
-        "Arman Farhang"
-      ]
-    },
-    {
-      "title": "SDR-Empowered Environment Sensing Design and Experimental Validation Using OTFS-ISAC Signals",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2507.01427",
-      "rawUrl": "https://arxiv.org/abs/2507.01427",
-      "source": "arxiv",
-      "publishedAt": "2025-07-02T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.697Z",
-      "lastSeen": "2026-08-29T15:57:32.697Z",
-      "versionsCount": 1,
-      "authors": [
-        "Jun Wu",
-        "Yuye Shi",
-        "Weijie Yuan",
-        "Qingqing Cheng",
-        "Buyi Li",
-        "Xinyuan Wei"
-      ]
-    },
-    {
-      "title": "Basis Expansion Extrapolation based Long-Term Channel Prediction for Massive MIMO OTFS Systems",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2507.01445",
-      "rawUrl": "https://arxiv.org/abs/2507.01445",
-      "source": "arxiv",
-      "publishedAt": "2025-07-02T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.712Z",
-      "lastSeen": "2026-08-29T15:57:32.712Z",
-      "versionsCount": 1,
-      "authors": [
-        "Yanfeng Zhang",
-        "Xu Zhu",
-        "Yujie Liu",
-        "Yong Liang Guan",
-        "David González G.",
-        "Vincent K. N. Lau"
-      ]
-    },
-    {
-      "title": "Two-Stage Prony-Based Estimation of Fractional Delay and Doppler Shifts in OTFS Modulation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2506.17599",
-      "rawUrl": "https://arxiv.org/abs/2506.17599",
-      "source": "arxiv",
-      "publishedAt": "2025-06-21T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.728Z",
-      "lastSeen": "2026-08-29T15:57:32.728Z",
-      "versionsCount": 1,
-      "authors": [
-        "Yutaka Jitsumatsu",
-        "Liangchen Sun"
-      ]
-    },
-    {
-      "title": "Refined Metrics, Sensing Limits, and Resource Allocation in OTFS-RSMA LEO ISAC",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2506.02624",
-      "rawUrl": "https://arxiv.org/abs/2506.02624",
-      "source": "arxiv",
-      "publishedAt": "2025-06-03T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.743Z",
-      "lastSeen": "2026-08-29T15:57:32.743Z",
-      "versionsCount": 1,
-      "authors": [
-        "Bruno Felipe Costa",
-        "Taufik Abrão"
-      ]
-    },
-    {
-      "title": "Low-Complexity Channel Estimation in OTFS Systems with Fractional Effects",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2505.06248",
-      "rawUrl": "https://arxiv.org/abs/2505.06248",
-      "source": "arxiv",
-      "publishedAt": "2025-04-29T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.759Z",
-      "lastSeen": "2026-08-29T15:57:32.759Z",
-      "versionsCount": 1,
-      "authors": [
-        "Guangyu Lei",
-        "Yanduo Qiao",
-        "Tianhao Liang",
-        "Weijie Yuan",
-        "Tingting Zhang"
-      ]
-    },
-    {
-      "title": "Advanced Channel Decomposition Techniques in OTFS: A GSVD Approach for Multi-User Downlink",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2504.18315",
-      "rawUrl": "https://arxiv.org/abs/2504.18315",
-      "source": "arxiv",
-      "publishedAt": "2025-04-25T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.774Z",
-      "lastSeen": "2026-08-29T15:57:32.774Z",
-      "versionsCount": 1,
-      "authors": [
-        "Omid Abbassi Aghd",
-        "Oussama Ben Haj Belkacem",
-        "Dou Hu",
-        "João Guerreiro",
-        "Nuno Souto",
-        "Michal Szczachor",
-        "Rui Dinis"
-      ]
-    },
-    {
-      "title": "Channel Estimation and Hybrid Precoding for Massive MIMO-OTFS System With Doubly Squint",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2504.08569",
-      "rawUrl": "https://arxiv.org/abs/2504.08569",
-      "source": "arxiv",
-      "publishedAt": "2025-04-11T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.790Z",
-      "lastSeen": "2026-08-29T15:57:32.790Z",
-      "versionsCount": 1,
-      "authors": [
-        "Mingming Duan",
-        "Pengfei Zhang",
-        "Shun Zhang",
-        "Yao Ge",
-        "Octavia A. Dobre",
-        "Chau Yuen"
-      ]
-    },
-    {
-      "title": "A low-PAPR Pilot Design and Optimization for OTFS Modulation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2503.15006",
-      "rawUrl": "https://arxiv.org/abs/2503.15006",
-      "source": "arxiv",
-      "publishedAt": "2025-03-19T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.804Z",
-      "lastSeen": "2026-08-29T15:57:32.804Z",
-      "versionsCount": 1,
-      "authors": [
-        "Davide Bergamasco",
-        "Federico Clazzer",
-        "Andrea Munari",
-        "Paolo Casari"
-      ]
-    },
-    {
-      "title": "Reduced-latency DL-based Fractional Channel Estimation in OTFS Receivers",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2503.08234",
-      "rawUrl": "https://arxiv.org/abs/2503.08234",
-      "source": "arxiv",
-      "publishedAt": "2025-03-11T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.819Z",
-      "lastSeen": "2026-08-29T15:57:32.819Z",
-      "versionsCount": 1,
-      "authors": [
-        "Mauro Marchese",
-        "Henk Wymeersch",
-        "Paolo Spallaccini",
-        "Stefano Chinnici",
-        "Pietro Savazzi"
-      ]
-    },
-    {
-      "title": "Performance Analysis of BEM-based Channel Estimation for OTFS with Hardware Impairments",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2502.04003",
-      "rawUrl": "https://arxiv.org/abs/2502.04003",
-      "source": "arxiv",
-      "publishedAt": "2025-02-06T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.833Z",
-      "lastSeen": "2026-08-29T15:57:32.833Z",
-      "versionsCount": 1,
-      "authors": [
-        "Haowei Wu",
-        "Huanyu Chen",
-        "Qihao Peng",
-        "Qu Luo",
-        "Jinglan Ou"
-      ]
-    },
-    {
-      "title": "Time Frequency Localized Pulse for Delay Doppler Domain Data Transmission",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2501.18286",
-      "rawUrl": "https://arxiv.org/abs/2501.18286",
-      "source": "arxiv",
-      "publishedAt": "2025-01-30T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.849Z",
-      "lastSeen": "2026-08-29T15:57:32.849Z",
-      "versionsCount": 1,
-      "authors": [
-        "Sanoopkumar P. S",
-        "Muyiwa Balogun",
-        "Liam Barry",
-        "Arman Farhang"
-      ]
-    },
-    {
-      "title": "Orthogonal Delay-Doppler Division Multiplexing Modulation with Hierarchical Mode-Based Index Modulation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2501.08026",
-      "rawUrl": "https://arxiv.org/abs/2501.08026",
-      "source": "arxiv",
-      "publishedAt": "2025-01-14T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.865Z",
-      "lastSeen": "2026-08-29T15:57:32.865Z",
-      "versionsCount": 1,
-      "authors": [
-        "Kehan Huang",
-        "Min Qiu",
-        "Jinhong Yuan"
-      ]
-    },
-    {
-      "title": "LEO Satellite-Enabled Random Access with Large Differential Delay and Doppler Shift",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2412.20806",
-      "rawUrl": "https://arxiv.org/abs/2412.20806",
-      "source": "arxiv",
-      "publishedAt": "2024-12-30T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.880Z",
-      "lastSeen": "2026-08-29T15:57:32.880Z",
-      "versionsCount": 1,
-      "authors": [
-        "Boxiao Shen",
-        "Yongpeng Wu",
-        "Wenjun Zhang",
-        "Symeon Chatzinotas",
-        "Björn Ottersten"
-      ]
-    },
-    {
-      "title": "Reduced Overhead Channel Estimation for OTFS With Split Pilot",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2410.11739",
-      "rawUrl": "https://arxiv.org/abs/2410.11739",
-      "source": "arxiv",
-      "publishedAt": "2024-10-15T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.895Z",
-      "lastSeen": "2026-08-29T15:57:32.895Z",
-      "versionsCount": 1,
-      "authors": [
-        "Danilo Lelin Li",
-        "Sanoopkumar P. S.",
-        "Arman Farhang"
-      ]
-    },
-    {
-      "title": "Grid Evolution for Doubly Fractional Channel Estimation in OTFS Systems",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2409.17584",
-      "rawUrl": "https://arxiv.org/abs/2409.17584",
-      "source": "arxiv",
-      "publishedAt": "2024-09-26T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.910Z",
-      "lastSeen": "2026-08-29T15:57:32.910Z",
-      "versionsCount": 1,
-      "authors": [
-        "Xiangjun Li",
-        "Pingzhi Fan",
-        "Qianli Wang",
-        "Zilong Liu"
-      ]
-    },
-    {
-      "title": "Channel Estimation, Interpolation and Extrapolation in Doubly-dispersive Channels",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2408.09381",
-      "rawUrl": "https://arxiv.org/abs/2408.09381",
-      "source": "arxiv",
-      "publishedAt": "2024-08-18T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.925Z",
-      "lastSeen": "2026-08-29T15:57:32.925Z",
-      "versionsCount": 1,
-      "authors": [
-        "Zijun Gong",
-        "Fan Jiang",
-        "Yuhui Song",
-        "Cheng Li",
-        "Xiaofeng Tao"
-      ]
-    },
-    {
-      "title": "IRS-Assisted OTFS: Beamforming Design and Signal Detection",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2408.02219",
-      "rawUrl": "https://arxiv.org/abs/2408.02219",
-      "source": "arxiv",
-      "publishedAt": "2024-08-05T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.941Z",
-      "lastSeen": "2026-08-29T15:57:32.941Z",
-      "versionsCount": 1,
-      "authors": [
-        "Sushmita Singh",
-        "Kuntal Deka",
-        "Sanjeev Sharma",
-        "Neelakandan Rajamohan"
-      ]
-    },
-    {
-      "title": "Real time parameter estimation for adaptive OFDM/OTFS selection",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2408.03460",
-      "rawUrl": "https://arxiv.org/abs/2408.03460",
-      "source": "arxiv",
-      "publishedAt": "2024-07-27T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.956Z",
-      "lastSeen": "2026-08-29T15:57:32.956Z",
-      "versionsCount": 1,
-      "authors": [
-        "Amina Darghouthi",
-        "Abdelhakim Khlifi",
-        "Belgacem Chibani"
-      ]
-    },
-    {
-      "title": "Multi-Satellite MIMO Systems for Direct User-Satellite Communications: A Survey",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2407.00196",
-      "rawUrl": "https://arxiv.org/abs/2407.00196",
-      "source": "arxiv",
-      "publishedAt": "2024-06-28T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.970Z",
-      "lastSeen": "2026-08-29T15:57:32.970Z",
-      "versionsCount": 1,
-      "authors": [
-        "Zohre Mashayekh Bakhsh",
-        "Yasaman Omid",
-        "Gaojie Chen",
-        "Farbod Kayhan",
-        "Yi Ma",
-        "Rahim Tafazolli"
-      ]
-    },
-    {
-      "title": "An hybrid framework OTFS OFDM based on mobile speed estimation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2407.07721",
-      "rawUrl": "https://arxiv.org/abs/2407.07721",
-      "source": "arxiv",
-      "publishedAt": "2024-06-19T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:32.986Z",
-      "lastSeen": "2026-08-29T15:57:32.986Z",
-      "versionsCount": 1,
-      "authors": [
-        "Amina Darghouthi",
-        "Abdelhakim Khlifi",
-        "Hmaied Shaiek",
-        "Fatma Ben Salah",
-        "Belgacem Chibani"
-      ]
-    },
-    {
-      "title": "On the Coexistence of OTFS Modulation with OFDM-based Communication Systems",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2406.18592",
-      "rawUrl": "https://arxiv.org/abs/2406.18592",
-      "source": "arxiv",
-      "publishedAt": "2024-06-08T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.002Z",
-      "lastSeen": "2026-08-29T15:57:33.002Z",
-      "versionsCount": 1,
-      "authors": [
-        "Akram Shafie",
-        "Jinhong Yuan",
-        "Paul Fitzpatrick",
-        "Taka Sakurai",
-        "Yuting Fang"
-      ]
-    },
-    {
-      "title": "Zak-OTFS: Pulse Shaping and the Tradeoff between Time/Bandwidth Expansion and Predictability",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2405.02718",
-      "rawUrl": "https://arxiv.org/abs/2405.02718",
-      "source": "arxiv",
-      "publishedAt": "2024-05-04T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.017Z",
-      "lastSeen": "2026-08-29T15:57:33.017Z",
-      "versionsCount": 1,
-      "authors": [
-        "Jinu Jayachandran",
-        "Rahul Kumar Jaiswal",
-        "Saif Khan Mohammed",
-        "Ronny Hadani",
-        "Ananthanarayanan Chockalingam",
-        "Robert Calderbank"
-      ]
-    },
-    {
-      "title": "OTFS Channel Estimation and Detection for Channels with Very Large Delay Spread",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2404.08333",
-      "rawUrl": "https://arxiv.org/abs/2404.08333",
-      "source": "arxiv",
-      "publishedAt": "2024-04-12T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.035Z",
-      "lastSeen": "2026-08-29T15:57:33.035Z",
-      "versionsCount": 1,
-      "authors": [
-        "Preety Priya",
-        "Yi Hong",
-        "Emanuele Viterbo"
-      ]
-    },
-    {
-      "title": "Graph-based Untrained Neural Network Detector for OTFS Systems",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2404.05191",
-      "rawUrl": "https://arxiv.org/abs/2404.05191",
-      "source": "arxiv",
-      "publishedAt": "2024-04-08T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.051Z",
-      "lastSeen": "2026-08-29T15:57:33.051Z",
-      "versionsCount": 1,
-      "authors": [
-        "Hao Chang",
-        "Branka Vucetic",
-        "Wibowo Hardjawana"
-      ]
-    },
-    {
-      "title": "Single-Carrier Delay-Doppler Domain Equalization",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2403.16453",
-      "rawUrl": "https://arxiv.org/abs/2403.16453",
-      "source": "arxiv",
-      "publishedAt": "2024-03-25T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.066Z",
-      "lastSeen": "2026-08-29T15:57:33.066Z",
-      "versionsCount": 1,
-      "authors": [
-        "Yuto Hama",
-        "Hideki Ochiai"
-      ]
-    },
-    {
-      "title": "Interference Cancellation for OTFS-Based Over-the-Air Computation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2403.11272",
-      "rawUrl": "https://arxiv.org/abs/2403.11272",
-      "source": "arxiv",
-      "publishedAt": "2024-03-17T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.083Z",
-      "lastSeen": "2026-08-29T15:57:33.083Z",
-      "versionsCount": 1,
-      "authors": [
-        "Xinyu Huang",
-        "Henrik Hellstrom",
-        "Carlo Fischione"
-      ]
-    },
-    {
-      "title": "Joint Sparsity Pattern Learning Based Channel Estimation for Massive MIMO-OTFS Systems",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2403.03771",
-      "rawUrl": "https://arxiv.org/abs/2403.03771",
-      "source": "arxiv",
-      "publishedAt": "2024-03-06T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.099Z",
-      "lastSeen": "2026-08-29T15:57:33.099Z",
-      "versionsCount": 1,
-      "authors": [
-        "Kuo Meng",
-        "Shaoshi Yang",
-        "Xiao-Yang Wang",
-        "Yan Bu",
-        "Yurong Tang",
-        "Jianhua Zhang",
-        "Lajos Hanzo"
-      ]
-    },
-    {
-      "title": "Zak-OTFS and LDPC Codes",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2402.09551",
-      "rawUrl": "https://arxiv.org/abs/2402.09551",
-      "source": "arxiv",
-      "publishedAt": "2024-02-14T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.117Z",
-      "lastSeen": "2026-08-29T15:57:33.117Z",
-      "versionsCount": 1,
-      "authors": [
-        "Beyza Dabak",
-        "Venkatesh Khammammetti",
-        "Saif Khan Mohammed",
-        "Robert Calderbank"
-      ]
-    },
-    {
-      "title": "SC-FDMA as a Delay-Doppler Domain Modulation Technique",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2402.07751",
-      "rawUrl": "https://arxiv.org/abs/2402.07751",
-      "source": "arxiv",
-      "publishedAt": "2024-02-12T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.135Z",
-      "lastSeen": "2026-08-29T15:57:33.135Z",
-      "versionsCount": 1,
-      "authors": [
-        "Arman Farhang",
-        "Mohsen Bayat"
-      ]
-    },
-    {
-      "title": "Coexistence of OTFS Modulation With OFDM-based Communication Systems",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2311.06850",
-      "rawUrl": "https://arxiv.org/abs/2311.06850",
-      "source": "arxiv",
-      "publishedAt": "2023-11-12T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.152Z",
-      "lastSeen": "2026-08-29T15:57:33.152Z",
-      "versionsCount": 1,
-      "authors": [
-        "Akram Shafie",
-        "Jinhong Yuan",
-        "Yuting Fang",
-        "Paul Fitzpatrick",
-        "Taka Sakurai"
-      ]
-    },
-    {
-      "title": "Improving Channel Estimation Performance for Uplink OTFS Transmissions: Pilot Design based on A Posteriori Cramer-Rao Bound",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2310.18573",
-      "rawUrl": "https://arxiv.org/abs/2310.18573",
-      "source": "arxiv",
-      "publishedAt": "2023-10-28T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.168Z",
-      "lastSeen": "2026-08-29T15:57:33.168Z",
-      "versionsCount": 1,
-      "authors": [
-        "Mingcheng Nie",
-        "Shuangyang Li",
-        "Deepak Mishra"
-      ]
-    },
-    {
-      "title": "Robust NOMA-assisted OTFS-ISAC Network Design with 3D Motion Prediction Topology",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2310.13984",
-      "rawUrl": "https://arxiv.org/abs/2310.13984",
-      "source": "arxiv",
-      "publishedAt": "2023-10-21T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.183Z",
-      "lastSeen": "2026-08-29T15:57:33.183Z",
-      "versionsCount": 1,
-      "authors": [
-        "Luping Xiang",
-        "Ke Xu",
-        "Jie Hu",
-        "Christos Masouros",
-        "Kun Yang"
-      ]
-    },
-    {
-      "title": "Performance Analysis of a Low-Complexity OTFS Integrated Sensing and Communication System",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2310.10476",
-      "rawUrl": "https://arxiv.org/abs/2310.10476",
-      "source": "arxiv",
-      "publishedAt": "2023-10-16T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.201Z",
-      "lastSeen": "2026-08-29T15:57:33.201Z",
-      "versionsCount": 1,
-      "authors": [
-        "Tommaso Bacchielli",
-        "Lorenzo Pucci",
-        "Enrico Paolini",
-        "Andrea Giorgetti"
-      ]
-    },
-    {
-      "title": "Input-Output Relation and Low-Complexity Receiver Design for CP-OTFS Systems with Doppler Squint",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2310.07200",
-      "rawUrl": "https://arxiv.org/abs/2310.07200",
-      "source": "arxiv",
-      "publishedAt": "2023-10-11T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.226Z",
-      "lastSeen": "2026-08-29T15:57:33.226Z",
-      "versionsCount": 1,
-      "authors": [
-        "Xuehan Wang",
-        "Xu Shi",
-        "Jintao Wang",
-        "Jian Song"
-      ]
-    },
-    {
-      "title": "Joint Device Identification, Channel Estimation, and Signal Detection for LEO Satellite-Enabled Random Access",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2308.03556",
-      "rawUrl": "https://arxiv.org/abs/2308.03556",
-      "source": "arxiv",
-      "publishedAt": "2023-08-07T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.245Z",
-      "lastSeen": "2026-08-29T15:57:33.245Z",
-      "versionsCount": 1,
-      "authors": [
-        "Boxiao Shen",
-        "Yongpeng Wu",
-        "Wenjun Zhang",
-        "Symeon Chatzinotas",
-        "Björn Ottersten"
-      ]
-    },
-    {
-      "title": "Performance Analysis and Approximate Message Passing Detection of Orthogonal Time Sequency Multiplexing Modulation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2307.03028",
-      "rawUrl": "https://arxiv.org/abs/2307.03028",
-      "source": "arxiv",
-      "publishedAt": "2023-07-06T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.259Z",
-      "lastSeen": "2026-08-29T15:57:33.259Z",
-      "versionsCount": 1,
-      "authors": [
-        "Zeping Sui",
-        "Shefeng Yan",
-        "Hongming Zhang",
-        "Sumei Sun",
-        "Yonghong Zeng",
-        "Lie-Liang Yang",
-        "Lajos Hanzo"
-      ]
-    },
-    {
-      "title": "Integrated Sensing and Communications with MIMO-OTFS",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2306.06361",
-      "rawUrl": "https://arxiv.org/abs/2306.06361",
-      "source": "arxiv",
-      "publishedAt": "2023-06-10T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.275Z",
-      "lastSeen": "2026-08-29T15:57:33.275Z",
-      "versionsCount": 1,
-      "authors": [
-        "Musa Furkan Keskin",
-        "Carina Marcus",
-        "Olof Eriksson",
-        "Alex Alvarado",
-        "Joerg Widmer",
-        "Henk Wymeersch"
-      ]
-    },
-    {
-      "title": "Data-Aided CSI Estimation Using Affine-Precoded Superimposed Pilots in Orthogonal Time Frequency Space Modulated MIMO Systems",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2305.15855",
-      "rawUrl": "https://arxiv.org/abs/2305.15855",
-      "source": "arxiv",
-      "publishedAt": "2023-05-25T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.303Z",
-      "lastSeen": "2026-08-29T15:57:33.303Z",
-      "versionsCount": 1,
-      "authors": [
-        "Anand Mehrotra",
-        "Suraj Srivastava",
-        "Aditya K. Jagannatham",
-        "Lajos Hanzo"
-      ]
-    },
-    {
-      "title": "Truncated Turbo Equalizer with SIC for OTFS",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2305.14966",
-      "rawUrl": "https://arxiv.org/abs/2305.14966",
-      "source": "arxiv",
-      "publishedAt": "2023-05-24T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.328Z",
-      "lastSeen": "2026-08-29T15:57:33.328Z",
-      "versionsCount": 1,
-      "authors": [
-        "Sanoopkumar P. S.",
-        "Stephen McWade",
-        "Arman Farhang"
-      ]
-    },
-    {
-      "title": "Sensing Aided Uplink Transmission in OTFS ISAC with Joint Parameter Association, Channel Estimation and Signal Detection",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2305.11548",
-      "rawUrl": "https://arxiv.org/abs/2305.11548",
-      "source": "arxiv",
-      "publishedAt": "2023-05-19T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.342Z",
-      "lastSeen": "2026-08-29T15:57:33.342Z",
-      "versionsCount": 1,
-      "authors": [
-        "Xi Yang",
-        "Hang Li",
-        "Qinghua Guo",
-        "J. Andrew Zhang",
-        "Xiaojing Huang",
-        "Zhiqun Cheng"
-      ]
-    },
-    {
-      "title": "Low-Complexity Reliability-Based Equalization and Detection for OTFS-NOMA",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2304.13607",
-      "rawUrl": "https://arxiv.org/abs/2304.13607",
-      "source": "arxiv",
-      "publishedAt": "2023-04-26T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.357Z",
-      "lastSeen": "2026-08-29T15:57:33.357Z",
-      "versionsCount": 1,
-      "authors": [
-        "Stephen McWade",
-        "Arman Farhang",
-        "Mark F. Flanagan"
-      ]
-    },
-    {
-      "title": "Deep Learning-empowered Predictive Precoder Design for OTFS Transmission in URLLC",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2304.10723",
-      "rawUrl": "https://arxiv.org/abs/2304.10723",
-      "source": "arxiv",
-      "publishedAt": "2023-04-21T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.374Z",
-      "lastSeen": "2026-08-29T15:57:33.374Z",
-      "versionsCount": 1,
-      "authors": [
-        "Chang Liu",
-        "Shuangyang Li",
-        "Weijie Yuan",
-        "Xuemeng Liu",
-        "Derrick Wing Kwan Ng"
-      ]
-    },
-    {
-      "title": "On the Doppler Squint Effect in OTFS Systems over Doubly-Dispersive Channels: Modeling and Evaluation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2302.06156",
-      "rawUrl": "https://arxiv.org/abs/2302.06156",
-      "source": "arxiv",
-      "publishedAt": "2023-02-13T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.390Z",
-      "lastSeen": "2026-08-29T15:57:33.390Z",
-      "versionsCount": 1,
-      "authors": [
-        "Xuehan Wang",
-        "Xu Shi",
-        "Jintao Wang",
-        "Jian Song"
-      ]
-    },
-    {
-      "title": "Practical Synchronization for OTFS",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2301.10080",
-      "rawUrl": "https://arxiv.org/abs/2301.10080",
-      "source": "arxiv",
-      "publishedAt": "2023-01-24T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.405Z",
-      "lastSeen": "2026-08-29T15:57:33.405Z",
-      "versionsCount": 1,
-      "authors": [
-        "Mohsen Bayat",
-        "Sanoopkumar P. S.",
-        "Arman Farhang"
-      ]
-    },
-    {
-      "title": "Predictive Precoder Design for OTFS-Enabled URLLC: A Deep Learning Approach",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2212.13651",
-      "rawUrl": "https://arxiv.org/abs/2212.13651",
-      "source": "arxiv",
-      "publishedAt": "2022-12-28T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.419Z",
-      "lastSeen": "2026-08-29T15:57:33.419Z",
-      "versionsCount": 1,
-      "authors": [
-        "Chang Liu",
-        "Shuangyang Li",
-        "Weijie Yuan",
-        "Xuemeng Liu",
-        "Derrick Wing Kwan Ng"
-      ]
-    },
-    {
-      "title": "Superimposed Channel Estimation in OTFS Modulation Using Compressive Sensing",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2212.09280",
-      "rawUrl": "https://arxiv.org/abs/2212.09280",
-      "source": "arxiv",
-      "publishedAt": "2022-12-19T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.447Z",
-      "lastSeen": "2026-08-29T15:57:33.447Z",
-      "versionsCount": 1,
-      "authors": [
-        "Omid Abbassi Aghda",
-        "Mohammad Javad Omidi",
-        "Hamid Saeedi-Sourck"
-      ]
-    },
-    {
-      "title": "Estimation of Doubly-Dispersive Channels in Linearly Precoded Multicarrier Systems Using Smoothness Regularization",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2210.05233",
-      "rawUrl": "https://arxiv.org/abs/2210.05233",
-      "source": "arxiv",
-      "publishedAt": "2022-10-11T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.470Z",
-      "lastSeen": "2026-08-29T15:57:33.470Z",
-      "versionsCount": 1,
-      "authors": [
-        "Andreas Pfadler",
-        "Tom Szollmann",
-        "Peter Jung",
-        "Slawomir Stanczak"
-      ]
-    },
-    {
-      "title": "Sensing Aided OTFS Channel Estimation for Massive MIMO Systems",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2209.11321",
-      "rawUrl": "https://arxiv.org/abs/2209.11321",
-      "source": "arxiv",
-      "publishedAt": "2022-09-22T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.487Z",
-      "lastSeen": "2026-08-29T15:57:33.487Z",
-      "versionsCount": 1,
-      "authors": [
-        "Shuaifeng Jiang",
-        "Ahmed Alkhateeb"
-      ]
-    },
-    {
-      "title": "Orthogonal Time Frequency Space Modulation -- Part II: Transceiver Designs",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2209.05012",
-      "rawUrl": "https://arxiv.org/abs/2209.05012",
-      "source": "arxiv",
-      "publishedAt": "2022-09-12T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.502Z",
-      "lastSeen": "2026-08-29T15:57:33.502Z",
-      "versionsCount": 1,
-      "authors": [
-        "Shuangyang Li",
-        "Weijie Yuan",
-        "Zhiqiang Wei",
-        "Robert Schober",
-        "Giuseppe Caire"
-      ]
-    },
-    {
-      "title": "Joint Channel Estimation and Data Detection for Hybrid RIS aided Millimeter Wave OTFS Systems",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2208.06781",
-      "rawUrl": "https://arxiv.org/abs/2208.06781",
-      "source": "arxiv",
-      "publishedAt": "2022-08-14T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.517Z",
-      "lastSeen": "2026-08-29T15:57:33.517Z",
-      "versionsCount": 1,
-      "authors": [
-        "Muye Li",
-        "Shun Zhang",
-        "Yao Ge",
-        "Feifei Gao",
-        "Pingzhi Fan"
-      ]
-    },
-    {
-      "title": "LEO Satellite-Enabled Grant-Free Random Access with MIMO-OTFS",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2208.01828",
-      "rawUrl": "https://arxiv.org/abs/2208.01828",
-      "source": "arxiv",
-      "publishedAt": "2022-08-03T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.533Z",
-      "lastSeen": "2026-08-29T15:57:33.533Z",
-      "versionsCount": 1,
-      "authors": [
-        "Boxiao Shen",
-        "Yongpeng Wu",
-        "Wenjun Zhang",
-        "Geoffrey Ye Li",
-        "Jianping An",
-        "Chengwen Xing"
-      ]
-    },
-    {
-      "title": "Effect of Prefix/Suffix Configurations on OTFS Systems with Rectangular Waveforms",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2205.14872",
-      "rawUrl": "https://arxiv.org/abs/2205.14872",
-      "source": "arxiv",
-      "publishedAt": "2022-05-30T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.549Z",
-      "lastSeen": "2026-08-29T15:57:33.549Z",
-      "versionsCount": 1,
-      "authors": [
-        "Salah Eddine Zegrar",
-        "Hüseyin Arslan"
-      ]
-    },
-    {
-      "title": "When Cell-Free Massive MIMO Meets OTFS Modulation: The Downlink Case",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2203.07588",
-      "rawUrl": "https://arxiv.org/abs/2203.07588",
-      "source": "arxiv",
-      "publishedAt": "2022-03-15T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.564Z",
-      "lastSeen": "2026-08-29T15:57:33.564Z",
-      "versionsCount": 1,
-      "authors": [
-        "Mohammadali Mohammadi",
-        "Hien Quoc Ngo",
-        "Michail Matthaiou"
-      ]
-    },
-    {
-      "title": "Cell-Free Massive MIMO with OTFS Modulation: Power Control and Resource Allocation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2203.07549",
-      "rawUrl": "https://arxiv.org/abs/2203.07549",
-      "source": "arxiv",
-      "publishedAt": "2022-03-14T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.580Z",
-      "lastSeen": "2026-08-29T15:57:33.580Z",
-      "versionsCount": 1,
-      "authors": [
-        "Mohammadali Mohammadi",
-        "Hien Quoc Ngo",
-        "Michail Matthaiou"
-      ]
-    },
-    {
-      "title": "Unitary-Precoded Single-Carrier Waveforms for High Mobility: Detection and Channel Estimation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2201.10218",
-      "rawUrl": "https://arxiv.org/abs/2201.10218",
-      "source": "arxiv",
-      "publishedAt": "2022-01-25T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.595Z",
-      "lastSeen": "2026-08-29T15:57:33.595Z",
-      "versionsCount": 1,
-      "authors": [
-        "Tharaj Thaj",
-        "Emanuele Viterbo"
-      ]
-    },
-    {
-      "title": "Compressed Sensing Channel Estimation for OTFS Modulation in Non-Integer Delay-Doppler Domain",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2111.12382",
-      "rawUrl": "https://arxiv.org/abs/2111.12382",
-      "source": "arxiv",
-      "publishedAt": "2021-11-24T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.610Z",
-      "lastSeen": "2026-08-29T15:57:33.610Z",
-      "versionsCount": 1,
-      "authors": [
-        "Felipe Gómez-Cuba"
-      ]
-    },
-    {
-      "title": "Low Complexity Channel Estimation for OTFS Modulation with Fractional Delay and Doppler",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2111.06009",
-      "rawUrl": "https://arxiv.org/abs/2111.06009",
-      "source": "arxiv",
-      "publishedAt": "2021-11-11T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.633Z",
-      "lastSeen": "2026-08-29T15:57:33.633Z",
-      "versionsCount": 1,
-      "authors": [
-        "Imran Ali Khan",
-        "Saif Khan Mohammed"
-      ]
-    },
-    {
-      "title": "A Novel ISAC Transmission Framework based on Spatially-Spread Orthogonal Time Frequency Space Modulation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2109.00440",
-      "rawUrl": "https://arxiv.org/abs/2109.00440",
-      "source": "arxiv",
-      "publishedAt": "2021-09-01T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.652Z",
-      "lastSeen": "2026-08-29T15:57:33.652Z",
-      "versionsCount": 1,
-      "authors": [
-        "Shuangyang Li",
-        "Weijie Yuan",
-        "Chang Liu",
-        "Zhiqiang Wei",
-        "Jinhong Yuan",
-        "Baoming Bai",
-        "Derrick Wing Kwan Ng"
-      ]
-    },
-    {
-      "title": "Joint Active User Detection and Channel Estimation for Grant-Free NOMA-OTFS in LEO Constellation Internet-of-Things",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2108.01520",
-      "rawUrl": "https://arxiv.org/abs/2108.01520",
-      "source": "arxiv",
-      "publishedAt": "2021-08-03T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.673Z",
-      "lastSeen": "2026-08-29T15:57:33.673Z",
-      "versionsCount": 1,
-      "authors": [
-        "Xingyu Zhou",
-        "Zhen Gao"
-      ]
-    },
-    {
-      "title": "Convolutional Sparse Coding based Channel Estimation for OTFS-SCMA in Uplink",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2107.09893",
-      "rawUrl": "https://arxiv.org/abs/2107.09893",
-      "source": "arxiv",
-      "publishedAt": "2021-07-21T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.689Z",
-      "lastSeen": "2026-08-29T15:57:33.689Z",
-      "versionsCount": 1,
-      "authors": [
-        "Anna Thomas",
-        "Kuntal Deka",
-        "P. Raviteja",
-        "Sanjeev Sharma"
-      ]
-    },
-    {
-      "title": "A DNN-based OTFS Transceiver with Delay-Doppler Channel Training and IQI Compensation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2107.09376",
-      "rawUrl": "https://arxiv.org/abs/2107.09376",
-      "source": "arxiv",
-      "publishedAt": "2021-07-20T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.705Z",
-      "lastSeen": "2026-08-29T15:57:33.705Z",
-      "versionsCount": 1,
-      "authors": [
-        "Ashwitha Naikoti",
-        "A. Chockalingam"
-      ]
-    },
-    {
-      "title": "Deterministic Pilot Design and Channel Estimation for Downlink Massive MIMO-OTFS Systems in Presence of the Fractional Doppler",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2105.09628",
-      "rawUrl": "https://arxiv.org/abs/2105.09628",
-      "source": "arxiv",
-      "publishedAt": "2021-05-20T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.727Z",
-      "lastSeen": "2026-08-29T15:57:33.727Z",
-      "versionsCount": 1,
-      "authors": [
-        "Ding Shi",
-        "Wenjin Wang",
-        "Li You",
-        "Xiaohang Song",
-        "Yi Hong",
-        "Xiqi Gao",
-        "Gerhard Fettweis"
-      ]
-    },
-    {
-      "title": "Orthogonal Time Sequency Multiplexing Modulation: Analysis and Low-Complexity Receiver Design",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2104.05939",
-      "rawUrl": "https://arxiv.org/abs/2104.05939",
-      "source": "arxiv",
-      "publishedAt": "2021-04-13T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.743Z",
-      "lastSeen": "2026-08-29T15:57:33.743Z",
-      "versionsCount": 1,
-      "authors": [
-        "Tharaj Thaj",
-        "Emanuele Viterbo",
-        "Yi Hong"
-      ]
-    },
-    {
-      "title": "Channel Estimation for MIMO Space Time Coded OTFS under Doubly Selective Channels",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2104.01023",
-      "rawUrl": "https://arxiv.org/abs/2104.01023",
-      "source": "arxiv",
-      "publishedAt": "2021-04-02T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.761Z",
-      "lastSeen": "2026-08-29T15:57:33.761Z",
-      "versionsCount": 1,
-      "authors": [
-        "Roberto Bomfin",
-        "Marwa Chafii",
-        "Ahmad Nimr",
-        "Gerhard Fettweis"
-      ]
-    },
-    {
-      "title": "Performance Analysis and Window Design for Channel Estimation of OTFS Modulation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2101.11770",
-      "rawUrl": "https://arxiv.org/abs/2101.11770",
-      "source": "arxiv",
-      "publishedAt": "2021-01-28T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.781Z",
-      "lastSeen": "2026-08-29T15:57:33.781Z",
-      "versionsCount": 1,
-      "authors": [
-        "Zhiqiang Wei",
-        "Weijie Yuan",
-        "Shuangyang Li",
-        "Jinhong Yuan",
-        "Derrick Wing Kwan Ng"
-      ]
-    },
-    {
-      "title": "Off-grid Channel Estimation with Sparse Bayesian Learning for OTFS Systems",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2101.05629",
-      "rawUrl": "https://arxiv.org/abs/2101.05629",
-      "source": "arxiv",
-      "publishedAt": "2021-01-14T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.800Z",
-      "lastSeen": "2026-08-29T15:57:33.800Z",
-      "versionsCount": 1,
-      "authors": [
-        "Zhiqiang Wei",
-        "Weijie Yuan",
-        "Shuangyang Li",
-        "Jinhong Yuan",
-        "Derrick Wing Kwan Ng"
-      ]
-    },
-    {
-      "title": "Cross Domain Iterative Detection for Orthogonal Time Frequency Space Modulation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2101.03822",
-      "rawUrl": "https://arxiv.org/abs/2101.03822",
-      "source": "arxiv",
-      "publishedAt": "2021-01-11T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.818Z",
-      "lastSeen": "2026-08-29T15:57:33.818Z",
-      "versionsCount": 1,
-      "authors": [
-        "Shuangyang Li",
-        "Weijie Yuan",
-        "Zhiqiang Wei",
-        "Jinhong Yuan"
-      ]
-    },
-    {
-      "title": "OTFS Channel Estimation And Data Detection Designs With Superimposed Pilots",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2010.15066",
-      "rawUrl": "https://arxiv.org/abs/2010.15066",
-      "source": "arxiv",
-      "publishedAt": "2020-10-28T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.837Z",
-      "lastSeen": "2026-08-29T15:57:33.837Z",
-      "versionsCount": 1,
-      "authors": [
-        "Himanshu B. Mishra",
-        "Prem Singh",
-        "Abhishek K. Prasad",
-        "Rohit Budhiraja"
-      ]
-    },
-    {
-      "title": "OTFS Based Random Access Preamble Transmission For High Mobility Scenarios",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2010.12915",
-      "rawUrl": "https://arxiv.org/abs/2010.12915",
-      "source": "arxiv",
-      "publishedAt": "2020-10-24T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.853Z",
-      "lastSeen": "2026-08-29T15:57:33.853Z",
-      "versionsCount": 1,
-      "authors": [
-        "Alok Kumar Sinha",
-        "Saif Khan Mohammed",
-        "P. Raviteja",
-        "Yi Hong",
-        "Emanuele Viterbo"
-      ]
-    },
-    {
-      "title": "Transmitter and Receiver Window Designs for Orthogonal Time Frequency Space Modulation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2010.13005",
-      "rawUrl": "https://arxiv.org/abs/2010.13005",
-      "source": "arxiv",
-      "publishedAt": "2020-10-24T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.872Z",
-      "lastSeen": "2026-08-29T15:57:33.872Z",
-      "versionsCount": 1,
-      "authors": [
-        "Zhiqiang Wei",
-        "Weijie Yuan",
-        "Shuangyang Li",
-        "Jinhong Yuan",
-        "Derrick Wing Kwan Ng"
-      ]
-    },
-    {
-      "title": "Low-complexity and Low-overhead Receiver for OTFS via Large-scale Antenna Array",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2005.07910",
-      "rawUrl": "https://arxiv.org/abs/2005.07910",
-      "source": "arxiv",
-      "publishedAt": "2020-05-16T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.889Z",
-      "lastSeen": "2026-08-29T15:57:33.889Z",
-      "versionsCount": 1,
-      "authors": [
-        "Yaru Shan",
-        "Fanggang Wang"
-      ]
-    },
-    {
-      "title": "Joint Radar Target Detection and Parameter Estimation with MIMO OTFS",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2004.11035",
-      "rawUrl": "https://arxiv.org/abs/2004.11035",
-      "source": "arxiv",
-      "publishedAt": "2020-04-23T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.908Z",
-      "lastSeen": "2026-08-29T15:57:33.908Z",
-      "versionsCount": 1,
-      "authors": [
-        "Lorenzo Gaudio",
-        "Mari Kobayashi",
-        "Giuseppe Caire",
-        "Giulio Colavolpe"
-      ]
-    },
-    {
-      "title": "A New Path Division Multiple Access for the Massive MIMO-OTFS Networks",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2003.08228",
-      "rawUrl": "https://arxiv.org/abs/2003.08228",
-      "source": "arxiv",
-      "publishedAt": "2020-03-18T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.929Z",
-      "lastSeen": "2026-08-29T15:57:33.929Z",
-      "versionsCount": 1,
-      "authors": [
-        "Muye Li",
-        "Shun Zhang",
-        "Feifei Gao",
-        "Pingzhi Fan",
-        "Octavia A. Dobre"
-      ]
-    },
-    {
-      "title": "Uplink-aided High Mobility Downlink Channel Estimation over Massive MIMO-OTFS System",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2003.07045",
-      "rawUrl": "https://arxiv.org/abs/2003.07045",
-      "source": "arxiv",
-      "publishedAt": "2020-03-16T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.947Z",
-      "lastSeen": "2026-08-29T15:57:33.947Z",
-      "versionsCount": 1,
-      "authors": [
-        "Yushan Liu",
-        "Shun Zhang",
-        "Feifei Gao",
-        "Jianpeng Ma",
-        "Xianbin Wang"
-      ]
-    },
-    {
-      "title": "On the Effectiveness of OTFS for Joint Radar and Communication",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/1910.01896",
-      "rawUrl": "https://arxiv.org/abs/1910.01896",
-      "source": "arxiv",
-      "publishedAt": "2019-10-04T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.964Z",
-      "lastSeen": "2026-08-29T15:57:33.964Z",
-      "versionsCount": 1,
-      "authors": [
-        "Lorenzo Gaudio",
-        "Mari Kobayashi",
-        "Giuseppe Caire",
-        "Giulio Colavolpe"
-      ]
-    },
-    {
-      "title": "Channel Estimation for Orthogonal Time Frequency Space (OTFS) Massive MIMO",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/1903.09441",
-      "rawUrl": "https://arxiv.org/abs/1903.09441",
-      "source": "arxiv",
-      "publishedAt": "2019-03-22T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:33.981Z",
-      "lastSeen": "2026-08-29T15:57:33.981Z",
-      "versionsCount": 1,
-      "authors": [
-        "Wenqian Shen",
-        "Linglong Dai",
-        "Jianping An",
-        "Pingzhi Fan",
-        "Robert W. Heath Jr"
-      ]
-    },
-    {
-      "title": "Multiple Access in the Delay-Doppler Domain using OTFS modulation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/1902.03415",
-      "rawUrl": "https://arxiv.org/abs/1902.03415",
-      "source": "arxiv",
-      "publishedAt": "2019-02-09T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:34.001Z",
-      "lastSeen": "2026-08-29T15:57:34.001Z",
-      "versionsCount": 1,
-      "authors": [
-        "G. D. Surabhi",
-        "Rose Mary Augustine",
-        "A. Chockalingam"
-      ]
-    },
-    {
-      "title": "Embedded Pilot-Aided Channel Estimation for OTFS in Delay-Doppler Channels",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/1808.08360",
-      "rawUrl": "https://arxiv.org/abs/1808.08360",
-      "source": "arxiv",
-      "publishedAt": "2018-08-25T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:34.030Z",
-      "lastSeen": "2026-08-29T15:57:34.030Z",
-      "versionsCount": 1,
-      "authors": [
-        "P. Raviteja",
-        "Khoa T. Phan",
-        "Yi Hong"
-      ]
-    },
-    {
-      "title": "MIMO-OTFS in High-Doppler Fading Channels: Signal Detection and Channel Estimation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/1805.02209",
-      "rawUrl": "https://arxiv.org/abs/1805.02209",
-      "source": "arxiv",
-      "publishedAt": "2018-05-06T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:34.072Z",
-      "lastSeen": "2026-08-29T15:57:34.072Z",
-      "versionsCount": 1,
-      "authors": [
-        "M. Kollengode Ramachandran",
-        "A. Chockalingam"
-      ]
-    },
-    {
-      "title": "On OTFS Modulation for High-Doppler Fading Channels",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/1802.00929",
-      "rawUrl": "https://arxiv.org/abs/1802.00929",
-      "source": "arxiv",
-      "publishedAt": "2018-02-03T00:00:00.000Z",
-      "firstSeen": "2026-08-29T15:57:34.108Z",
-      "lastSeen": "2026-08-29T15:57:34.108Z",
-      "versionsCount": 1,
-      "authors": [
-        "K. R. Murali",
-        "A. Chockalingam"
-      ]
-    },
-    {
-      "title": "Low Overhead and Scalable Time-Frequency Pilots Design for MIMO OTFS Channel Estimation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2511.08504",
-      "rawUrl": "https://arxiv.org/abs/2511.08504",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.127Z",
-      "lastSeen": "2026-08-29T15:57:34.127Z",
-      "versionsCount": 1,
-      "authors": [
-        "Kailong Wang",
-        "Athina Petropulu"
-      ]
-    },
-    {
+      "id": "cmtekdnwf00eczevdnh0b4o74",
       "title": "Delay-Doppler Domain Signal Processing Aided OFDM (DD-a-OFDM) for 6G and Beyond",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2508.04253",
       "rawUrl": "https://arxiv.org/abs/2508.04253",
       "source": "arxiv",
-      "publishedAt": null,
+      "publishedAt": "2025-08-01T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:34.144Z",
-      "lastSeen": "2026-08-29T15:57:34.144Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:29.847Z",
+      "versionsCount": 2,
       "authors": [
         "Yiyan Ma",
         "Bo Ai",
@@ -2461,172 +2985,1288 @@ window.RETRACE_DATA = {
         "Yunlong Lu",
         "Mi Yang",
         "Zhangdui Zhong"
-      ]
+      ],
+      "abstract": "High-mobility scenarios will be a critical part of 6G systems. Since the widely deployed orthogonal frequency division multiplexing (OFDM) waveform suffers from subcarrier orthogonality loss under severe Doppler spread, delay-Doppler domain multi-carrier (DDMC) modulation systems, such as orthogonal time frequency space (OTFS), have been extensively studied. While OTFS can exploit time-frequency (TF) domain channel diversity, it faces challenges including high receiver complexity and inflexible TF resource allocation, making OFDM still the most promising waveform for 6G. In this article, we propose a DD domain signal processing-aided OFDM (DD-a-OFDM) scheme to enhance OFDM performance based on DDMC research insights. First, we design a DD-a-OFDM system structure, retaining the classical OFDM transceiver while incorporating DD domain channel estimation and TF domain equalization. Second, we detail DD domain channel estimation using discrete TF pilots and prove that TF domain inter-carrier interference (ICI) could be transformed into DD domain Gaussian interference. Third, we derive closed-form Cramér-Rao lower bounds (CRLBs) for DD domain channel estimation. Fourth, we develop maximum likelihood (ML) and peak detection-based channel estimators, along with a corresponding TF domain equalizer. Numerical results verify the proposed design, showing that DD-a-OFDM reduces the bit-error rate (BER) compared to classical OFDM and outperforms OTFS in channel estimation accuracy with lower pilot overhead."
     },
     {
-      "title": "Pulse Shaping Filter Design for Integrated Sensing & Communication with Zak-OTFS",
+      "id": "cmtekdmrd0054zevd6bmcw9ns",
+      "title": "Zak-OTFS Based Coded Random Access for Uplink mMTC",
       "type": "PAPER",
-      "url": "https://arxiv.org/abs/2510.15195",
-      "rawUrl": "https://arxiv.org/abs/2510.15195",
+      "url": "https://arxiv.org/abs/2507.22013",
+      "rawUrl": "https://arxiv.org/abs/2507.22013",
       "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.161Z",
-      "lastSeen": "2026-08-29T15:57:34.161Z",
-      "versionsCount": 1,
+      "publishedAt": "2025-07-29T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.665Z",
+      "lastSeen": "2026-10-02T09:41:30.283Z",
+      "versionsCount": 2,
       "authors": [
-        "Nishant Mehrotra",
-        "Sandesh Rao Mattu",
+        "Alessandro Mirri",
+        "Venkatesh Khammammetti",
+        "Beyza Dabak",
+        "Enrico Paolini",
+        "Krishna Narayanan",
         "Robert Calderbank"
-      ]
+      ],
+      "abstract": "This paper proposes a grant-free coded random access (CRA) scheme for uplink massive machine-type communications (mMTC), based on Zak-orthogonal time frequency space (Zak-OTFS) modulation in the delay-Doppler domain. The scheme is tailored for doubly selective wireless channels, where conventional orthogonal frequency-division multiplexing (OFDM)-based CRA suffers from unreliable inter-slot channel prediction due to time-frequency variability. By exploiting the predictable nature of Zak-OTFS, the proposed approach enables accurate channel estimation across slots, facilitating reliable successive interference cancellation across user packet replicas. A fair comparison with an OFDM-based CRA baseline shows that the proposed scheme achieves significantly lower packet loss rates under high mobility and user density. Extensive simulations over the standardized Veh-A channel confirm the robustness and scalability of Zak-OTFS-based CRA, supporting its applicability to future mMTC deployments."
     },
     {
-      "title": "Zak-OTFS ISAC with Bistatic Sensing via Semi-Blind Atomic Norm Denoising Scheme",
+      "id": "cmtekdmrt0058zevdweb5sgq6",
+      "title": "Time and Frequency Synchronization for Multiuser OTFS in Uplink",
       "type": "PAPER",
-      "url": "https://arxiv.org/abs/2601.03639",
-      "rawUrl": "https://arxiv.org/abs/2601.03639",
+      "url": "https://arxiv.org/abs/2507.17966",
+      "rawUrl": "https://arxiv.org/abs/2507.17966",
       "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.182Z",
-      "lastSeen": "2026-08-29T15:57:34.182Z",
-      "versionsCount": 1,
+      "publishedAt": "2025-07-23T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.682Z",
+      "lastSeen": "2026-10-02T09:41:30.565Z",
+      "versionsCount": 2,
       "authors": [
-        "Kecheng Zhang",
+        "Mohsen Bayat",
+        "Sanoopkumar P.S.",
+        "Arman Farhang"
+      ],
+      "abstract": "In this paper, we propose time and frequency synchronization techniques for uplink multiuser OTFS (MU-OTFS) systems in high-mobility scenarios. This work focuses on accurately estimating and correcting timing offsets (TOs) and carrier frequency offsets (CFOs). Specifically, TO estimation is essential for locating users' pilots on the delay-time plane, while CFO estimation enhances channel estimation accuracy. First, we propose a TO estimation technique for an existing multiuser pilot structure in MU-OTFS. We replace the impulse pilot (IMP) in this pilot structure with a more practical pilot with a cyclic prefix (PCP), referred to as single-user-inspired PCP (SU-PCP). This structure employs different Zadoff-Chu (ZC) sequences, which enables pilot separation via correlation at the receiver side. Consequently, we introduce a correlation-based TO estimation technique for uplink MU-OTFS using this pilot structure. Next, a spectrally efficient and practical pilot pattern is proposed, where each user transmits a PCP within a shared pilot region on the delay-Doppler plane, referred to as MU-PCP. At the receiver, the second TO estimation technique utilizes a bank of filters to separate different users' signals and accurately estimate their TOs. Then, we derive a mathematical threshold range to enhance TO estimation accuracy by finding the first major peak in the correlation function rather than relying solely on the highest peak. After locating the received users' pilot signals using one of the proposed TO estimation techniques, our proposed CFO estimation technique reduces the multi-dimensional maximum likelihood (ML) search problem into multiple one-dimensional search problems. In this technique, we apply the Chebyshev polynomials of the first kind basis expansion model (CPF-BEM) to effectively handle the time-variations of the channel in obtaining the CFO estimates for all the users."
+    },
+    {
+      "id": "cmtekdms9005czevde6klvvs7",
+      "title": "SDR-Empowered Environment Sensing Design and Experimental Validation Using OTFS-ISAC Signals",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2507.01427",
+      "rawUrl": "https://arxiv.org/abs/2507.01427",
+      "source": "arxiv",
+      "publishedAt": "2025-07-02T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.697Z",
+      "lastSeen": "2026-10-02T09:41:30.442Z",
+      "versionsCount": 2,
+      "authors": [
+        "Jun Wu",
+        "Yuye Shi",
         "Weijie Yuan",
-        "Maria Sabrina Greco"
-      ]
+        "Qingqing Cheng",
+        "Buyi Li",
+        "Xinyuan Wei"
+      ],
+      "abstract": "This paper investigates the system design and experimental validation of integrated sensing and communication (ISAC) for environmental sensing, which is expected to be a critical enabler for next-generation wireless networks. We advocate exploiting orthogonal time frequency space (OTFS) modulation for its inherent sparsity and stability in delay-Doppler (DD) domain channels, facilitating a low-overhead environment sensing design. Moreover, a comprehensive environmental sensing framework is developed, encompassing DD domain channel estimation, target localization, and experimental validation. In particular, we first explore the OTFS channel estimation in the presence of fractional delay and Doppler shifts. Given the estimated parameters, we propose a three-ellipse positioning algorithm to localize the target's position, followed by determining the mobile transmitter's velocity. Additionally, to evaluate the performance of our proposed design, we conduct extensive simulations and experiments using a software-defined radio (SDR)-based platform with universal software radio peripheral (USRP). The experimental validations demonstrate that our proposed approach outperforms the benchmarks in terms of localization accuracy and velocity estimation, confirming its effectiveness in practical environmental sensing applications."
     },
     {
-      "title": "OTFS: Interleaved OFDM with Block CP",
+      "id": "cmtekdmso005gzevdsdy2wg4g",
+      "title": "Basis Expansion Extrapolation based Long-Term Channel Prediction for Massive MIMO OTFS Systems",
       "type": "PAPER",
-      "url": "https://arxiv.org/abs/2001.02446",
-      "rawUrl": "https://arxiv.org/abs/2001.02446",
+      "url": "https://arxiv.org/abs/2507.01445",
+      "rawUrl": "https://arxiv.org/abs/2507.01445",
       "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.199Z",
-      "lastSeen": "2026-08-29T15:57:34.199Z",
-      "versionsCount": 1,
+      "publishedAt": "2025-07-02T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.712Z",
+      "lastSeen": "2026-10-02T09:41:29.955Z",
+      "versionsCount": 2,
       "authors": [
-        "Vivek Rangamgari",
-        "Shashank Tiwari",
-        "Suvra Sekhar Das",
-        "Subhas Chandra Mondal"
-      ]
+        "Yanfeng Zhang",
+        "Xu Zhu",
+        "Yujie Liu",
+        "Yong Liang Guan",
+        "David González G.",
+        "Vincent K. N. Lau"
+      ],
+      "abstract": "Massive multi-input multi-output (MIMO) combined with orthogonal time frequency space (OTFS) modulation has emerged as a promising technique for high-mobility scenarios. However, its performance could be severely degraded due to channel aging caused by user mobility and high processing latency. In this paper, an integrated scheme of uplink (UL) channel estimation and downlink (DL) channel prediction is proposed to alleviate channel aging in time division duplex (TDD) massive MIMO-OTFS systems. Specifically, first, an iterative basis expansion model (BEM) based UL channel estimation scheme is proposed to accurately estimate UL channels with the aid of carefully designed OTFS frame pattern. Then a set of Slepian sequences are used to model the estimated UL channels, and the dynamic Slepian coefficients are fitted by a set of orthogonal polynomials. A channel predictor is derived to predict DL channels by iteratively extrapolating the Slepian coefficients. Simulation results verify that the proposed UL channel estimation and DL channel prediction schemes outperform the existing schemes in terms of normalized mean square error of channel estimation/prediction and DL spectral efficiency, with less pilot overhead."
     },
     {
+      "id": "cmtekdnyf00eszevd1atu3jsz",
       "title": "Differential Communication in Channels with Mobility and Delay Spread using Zak-OTFS",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2507.12593",
       "rawUrl": "https://arxiv.org/abs/2507.12593",
       "source": "arxiv",
-      "publishedAt": null,
+      "publishedAt": "2025-07-01T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:34.216Z",
-      "lastSeen": "2026-08-29T15:57:34.216Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:29.809Z",
+      "versionsCount": 2,
       "authors": [
         "Sandesh Rao Mattu",
         "Nishant Mehrotra",
         "Robert Calderbank"
-      ]
+      ],
+      "abstract": "Zak-transform based orthogonal time frequency space (Zak-OTFS) is a delay-Doppler (DD) domain modulation scheme in which the signal processing is carried out in the DD domain. The channel when viewed in the DD domain is predictable. However, even with Zak-OTFS, pilots need to be sent periodically, albeit at a lower rate. In this paper, we propose a differential communication scheme for Zak-OTFS systems that alleviates the need for periodic pilot transmission. Towards this, we analytically show that the detected data can be used as a pilot and that the channel estimate obtained from the detected data can enable further detection enabling the \"differential\" aspect of the communication. Specifically, we leverage the prediction capability of the DD channel in Zak-OTFS to use the channel estimate (obtained from detected data symbols treated as pilots) in the previous instant to detect data in the next instant and propagate this forward. The advantages are two fold. First, it allows the data symbols to enjoy higher energy since the energy that would otherwise be required for pilot symbols can also be allocated to data symbols. Second, it allows for full spectral efficiency compared to point or embedded pilots. Comparison with the full spectral efficiency achieving spread pilot scheme shows that the proposed method achieves better bit-error rate at lower complexity."
     },
     {
-      "title": "Iterative Detection for Orthogonal Time Frequency Space Modulation with Unitary Approximate Message Passing",
+      "id": "cmtekdmt3005kzevd2y6qnii6",
+      "title": "Two-Stage Prony-Based Estimation of Fractional Delay and Doppler Shifts in OTFS Modulation",
       "type": "PAPER",
-      "url": "https://arxiv.org/abs/2008.06688",
-      "rawUrl": "https://arxiv.org/abs/2008.06688",
+      "url": "https://arxiv.org/abs/2506.17599",
+      "rawUrl": "https://arxiv.org/abs/2506.17599",
       "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.232Z",
-      "lastSeen": "2026-08-29T15:57:34.232Z",
-      "versionsCount": 1,
+      "publishedAt": "2025-06-21T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.728Z",
+      "lastSeen": "2026-10-02T09:41:30.525Z",
+      "versionsCount": 2,
       "authors": [
-        "Zhengdao Yuan",
-        "Fei Liu",
+        "Yutaka Jitsumatsu",
+        "Liangchen Sun"
+      ],
+      "abstract": "This paper addresses the estimation of fractional delay and Doppler shifts in multipath channels that cause doubly selective fading-an essential task for integrated sensing and communication (ISAC) systems in high-mobility environments. Orthogonal Time Frequency Space (OTFS) modulation enables simple and robust channel compensation under such conditions. However, fractional delay and Doppler components introduce inter-path interference, degrading estimation accuracy. We propose a two-stage estimation method based on Prony's technique using OTFS pilot signals with M subchannels and N pilot repetitions. In the first stage, Doppler frequencies are estimated by jointly solving M coupled Prony equations, exploiting the periodicity of the pilot signal. In the second stage, delays are estimated by applying the discrete Fourier transform (DFT) and Prony's method to each Doppler component obtained in the first stage. The proposed method can accurately estimate up to N-1 delay-Doppler parameters under noiseless conditions. In noisy environments, conventional information criteria such as AIC and BIC yield suboptimal performance; thus, a heuristic model order selection is adopted. Numerical simulations confirm that the proposed method achieves high estimation accuracy, highlighting its potential for future ISAC frameworks."
+    },
+    {
+      "id": "cmtekdmtj005ozevddwt548zk",
+      "title": "Refined Metrics, Sensing Limits, and Resource Allocation in OTFS-RSMA LEO ISAC",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2506.02624",
+      "rawUrl": "https://arxiv.org/abs/2506.02624",
+      "source": "arxiv",
+      "publishedAt": "2025-06-03T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.743Z",
+      "lastSeen": "2026-10-02T09:41:30.130Z",
+      "versionsCount": 2,
+      "authors": [
+        "Bruno Felipe Costa",
+        "Taufik Abrão"
+      ],
+      "abstract": "This paper develops an integrated OTFS-RSMA framework employing advanced SP techniques tailored for this demanding environment. We derive refined communication performance metrics, specifically SINR expressions capturing the practical effects of ICSI and ISIC. Moreover, fundamental sensing limits are established via CRB derivation incorporating parameter-dependent echo gain, linking waveform SP properties to estimation accuracy. The resource allocation is formulated as a non-convex optimization problem aiming for Max-Min Fairness under constraints derived from these SP metrics. Illustrative results, obtained via GA optimization, crucially demonstrate that the proposed RSMA scheme uniquely enables the simultaneous satisfaction of stringent communication and sensing constraints metrics, a capability not achieved by conventional SDMA. Such results {highlight the efficacy of the integrated OTFS-RSMA precoding and optimization approach for designing robust and feasible LEO-ISAC systems. Index Terms -- ISAC, LEO, OTFS, RSMA, Channel Modeling, CRB, SINR, ICSI, ISIC, Resource Allocation, Max-Min Fairness, Delay-Doppler (DD) Processing, Satellite Communications."
+    },
+    {
+      "id": "cmtekdo8k00h4zevdw2149urz",
+      "title": "Low-Complexity Frequency Domain Equalization of Zak-OTFS in Doubly-Spread Channels",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2506.23045",
+      "rawUrl": "https://arxiv.org/abs/2506.23045",
+      "source": "arxiv",
+      "publishedAt": "2025-06-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.580Z",
+      "lastSeen": "2026-10-02T09:41:30.692Z",
+      "versionsCount": 2,
+      "authors": [
+        "Saif Khan Mohammed",
+        "Sandesh Rao Mattu",
+        "Nishant Mehrotra",
+        "Venkatesh Khammammetti",
+        "Robert Calderbank"
+      ],
+      "abstract": "We communicate over wireless channels by first estimating and then equalizing the effective channel. In Zak-OTFS (orthogonal time frequency space) modulation the carrier waveform is a pulse in the delay-Doppler (DD) domain, formally a quasi-periodic localized function with specific periods along delay and Doppler. When the channel delay spread is less than the delay period, and the channel Doppler spread is less than the Doppler period, the response to a single Zak-OTFS carrier provides an image of the scattering environment and can be used to predict the effective channel at all other carriers. This makes DD domain channel estimation straightforward, and there is no loss in spectral efficiency since it is possible to design data and pilot signals that are mutually unbiased. However, equalization in the DD domain has high complexity ${\\mathcal O}(M^3N^3)$ where $M$, $N$ are respectively the number of delay and Doppler bins in an OTFS frame, and $MN$ is the number of information symbols. We demonstrate that equalization in the frequency domain (FD) reduces complexity to only ${\\mathcal O}(M^2 N^2)$ by taking advantage of the banded structure of the effective FD channel. We also derive a low-complexity method to reconstruct the effective FD channel from the estimated DD domain effective channel."
+    },
+    {
+      "id": "cmtekdmtz005szevdpo8vkjwi",
+      "title": "Low-Complexity Channel Estimation in OTFS Systems with Fractional Effects",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2505.06248",
+      "rawUrl": "https://arxiv.org/abs/2505.06248",
+      "source": "arxiv",
+      "publishedAt": "2025-04-29T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.759Z",
+      "lastSeen": "2026-10-02T09:41:30.508Z",
+      "versionsCount": 2,
+      "authors": [
+        "Guangyu Lei",
+        "Yanduo Qiao",
+        "Tianhao Liang",
         "Weijie Yuan",
-        "Qinghua Guo",
-        "Zhongyong Wang",
-        "Jinhong Yuan"
-      ]
+        "Tingting Zhang"
+      ],
+      "abstract": "Orthogonal Time Frequency Space (OTFS) modulation exploits the sparsity of Delay-Doppler domain channels, making it highly effective in high-mobility scenarios. Its accurate channel estimation supports integrated sensing and communication (ISAC) systems. The letter introduces a low-complexity technique for estimating delay and Doppler shifts under fractional effects, while addressing inter-path interference. The method employs a sequential estimation process combined with interference elimination based on energy leakage, ensuring accurate channel estimation. Furthermore, the estimated channel parameters can signifcantly improve ISAC system performance by enhancing sensing capabilities. Experimental results validate the effectiveness of this approach in achieving accurate channel estimation and facilitating sensing tasks for ISAC systems."
     },
     {
-      "title": "Cell-Free Massive MIMO Meets OTFS Modulation",
+      "id": "cmtekdmue005wzevdubcxwxfy",
+      "title": "Advanced Channel Decomposition Techniques in OTFS: A GSVD Approach for Multi-User Downlink",
       "type": "PAPER",
-      "url": "https://arxiv.org/abs/2112.10869",
-      "rawUrl": "https://arxiv.org/abs/2112.10869",
+      "url": "https://arxiv.org/abs/2504.18315",
+      "rawUrl": "https://arxiv.org/abs/2504.18315",
       "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.247Z",
-      "lastSeen": "2026-08-29T15:57:34.247Z",
+      "publishedAt": "2025-04-25T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.774Z",
+      "lastSeen": "2026-10-02T09:41:30.204Z",
+      "versionsCount": 2,
+      "authors": [
+        "Omid Abbassi Aghd",
+        "Oussama Ben Haj Belkacem",
+        "Dou Hu",
+        "João Guerreiro",
+        "Nuno Souto",
+        "Michal Szczachor",
+        "Rui Dinis"
+      ],
+      "abstract": "In this paper, we propose a multi-user downlink system for two users based on the orthogonal time frequency space (OTFS) modulation scheme. The design leverages the generalized singular value decomposition (GSVD) of the channels between the base station and the two users, applying precoding and detection matrices based on the right and left singular vectors, respectively. We derive the analytical expressions for three scenarios and present the corresponding simulation results. These results demonstrate that, in terms of bit error rate (BER), the proposed system outperforms the conventional multi-user OTFS system in two scenarios when using minimum mean square error (MMSE) equalizers or precoder, both for perfect channel state information and for a scenario with channel estimation errors. In the third scenario, the design is equivalent to zero-forcing (ZF) precoding at the transmitter."
+    },
+    {
+      "id": "cmtekdmut0060zevd8c9n3813",
+      "title": "Channel Estimation and Hybrid Precoding for Massive MIMO-OTFS System With Doubly Squint",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2504.08569",
+      "rawUrl": "https://arxiv.org/abs/2504.08569",
+      "source": "arxiv",
+      "publishedAt": "2025-04-11T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.790Z",
+      "lastSeen": "2026-10-02T09:41:30.252Z",
+      "versionsCount": 2,
+      "authors": [
+        "Mingming Duan",
+        "Pengfei Zhang",
+        "Shun Zhang",
+        "Yao Ge",
+        "Octavia A. Dobre",
+        "Chau Yuen"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation and massive multi-input multi-output (MIMO) are promising technologies for next generation wireless communication systems for their abilities to counteract the issue of high mobility with large Doppler spread and mitigate the channel path attenuation, respectively. The natural integration of massive MIMO with OTFS in millimeter-wave systems can improve communication data rate and enhance the spectral efficiency. However, when transmitting wideband signals with large-scale arrays, the beam squint effect may occur, causing discrepancies in beam directions across subcarriers in multi-carrier systems. Moreover, the high-mobility wideband millimeter wave communications can induce the Doppler squint effect, leading to different Doppler shifts among the subcarriers. Both beam squint effect and Doppler squint effect (denoted as doubly squint effect) can degrade communication performance significantly. In this paper, we present an efficient channel estimation and hybrid precoding scheme to address the doubly squint effect in massive MIMO-OTFS systems. We first characterize the wideband channel model and the input-output relationship for massive MIMO-OTFS transmission considering doubly squint effect. We then mathematically derive the impact of channel parameters on chirp pilots under the doubly squint effect. Additionally, we develop a peak-index-based channel estimation scheme. By leveraging the results from channel estimation, we propose a hybrid precoding method to mitigate the doubly squint effect in downlink transmission scenarios. Finally, simulation results validate the effectiveness of our proposed scheme and show its superiority over the existing schemes."
+    },
+    {
+      "id": "cmtekdo7z00h0zevdu27uk5th",
+      "title": "Exploiting Structural Sparsity and Delay-Doppler Decoupling for Low-Complexity OTFS-ISAC Receivers",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2504.20659",
+      "rawUrl": "https://arxiv.org/abs/2504.20659",
+      "source": "arxiv",
+      "publishedAt": "2025-04-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.560Z",
+      "lastSeen": "2026-10-02T09:41:29.776Z",
+      "versionsCount": 2,
+      "authors": [
+        "Mauro Marchese",
+        "Musa Furkan Keskin",
+        "Pietro Savazzi",
+        "Henk Wymeersch"
+      ],
+      "abstract": "In this work, the problems of channel estimation, radar sensing, and data detection are addressed for monostatic integrated sensing and communications (ISAC) applications within orthogonal time frequency space (OTFS) systems operating with a reduced cyclic prefix (RCP). Specifically, the delay-Doppler (DD) input-output relationship is formulated in a discrete representation that enables signal-independent disjoint parameter estimation by encapsulating fractional delay and Doppler effects through distinct, structurally sparse matrices. This exact algebraic separability is directly exploited to develop a low-complexity parameter estimation framework for the communication channel, which is seamlessly adapted for monostatic radar sensing on backscattered data frames. To enhance path detection robustly and safeguard estimation accuracy under low signal-to-noise ratio (SNR) regimes where traditional stopping criterionc(SC)-based methods fail, a deep learning (DL) architecture is integrated to perform model order selection via multi-class classification. Furthermore, a path-wise variant of the iterative Landweber method, designated as iterative matched filtering and combining (IMFC), is introduced for low-complexity data detection by leveraging the identical structural sparsity unlocked by the decoupled framework. Simulation results indicate the proposed estimation scheme achieves lower normalized mean squared error (NMSE) than conventional channel estimation algorithms and sensing performance close to the Cramer-Rao lower bound (CRLB). Finally, the IMFC equalizer is shown to deliver bit error rate (BER) performance comparable to the traditional linear minimum mean squared error (LMMSE) benchmark while dramatically reducing the computational load."
+    },
+    {
+      "id": "cmtekdmv70064zevd8uy1mxm2",
+      "title": "A low-PAPR Pilot Design and Optimization for OTFS Modulation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2503.15006",
+      "rawUrl": "https://arxiv.org/abs/2503.15006",
+      "source": "arxiv",
+      "publishedAt": "2025-03-19T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.804Z",
+      "lastSeen": "2026-10-02T09:41:30.159Z",
+      "versionsCount": 2,
+      "authors": [
+        "Davide Bergamasco",
+        "Federico Clazzer",
+        "Andrea Munari",
+        "Paolo Casari"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation has been proposed recently as a new waveform in the context of doubly-selective multi-path channels. This article proposes a novel pilot design that improves OTFS spectral efficiency (SE) while reducing its peak-to-average power ratio (PAPR). Instead of adopting an embedded data-orthogonal pilot for channel estimation, our scheme relies on Chu sequences superimposed to data symbols. We optimize the construction by investigating the best energy split between pilot and data symbols. Two equalizers, and an iterative channel estimation and equalization procedure are considered. We present extensive numerical results of relevant performance metrics, including the normalized mean squared error of the estimator, bit error rate, PAPR and SE. Our results show that, while the embedded pilot scheme estimates the channel more accurately, our approach yields a better tradeoff by achieving much higher spectral efficiency and lower PAPR."
+    },
+    {
+      "id": "cmtekdmvm0068zevd5p9q0w68",
+      "title": "Reduced-latency DL-based Fractional Channel Estimation in OTFS Receivers",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2503.08234",
+      "rawUrl": "https://arxiv.org/abs/2503.08234",
+      "source": "arxiv",
+      "publishedAt": "2025-03-11T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.819Z",
+      "lastSeen": "2026-10-02T09:41:30.409Z",
+      "versionsCount": 2,
+      "authors": [
+        "Mauro Marchese",
+        "Henk Wymeersch",
+        "Paolo Spallaccini",
+        "Stefano Chinnici",
+        "Pietro Savazzi"
+      ],
+      "abstract": "In this work, we propose a deep learning (DL)-based approach that integrates a state-of-the-art algorithm with a time-frequency (TF) learning framework to minimize overall latency. Meeting the stringent latency requirements of 6G orthogonal time-frequency space (OTFS) systems necessitates low-latency designs. The performance of the proposed approach is evaluated under challenging conditions: low delay and Doppler resolutions caused by limited time and frequency resources, and significant interpath interference (IPI) due to poor separability of propagation paths in the delay-Doppler (DD) domain. Simulation results demonstrate that the proposed method achieves high estimation accuracy while reducing latency by approximately 55\\% during the maximization process. However, a performance trade-off is observed, with a maximum loss of 3 dB at high pilot SNR values."
+    },
+    {
+      "id": "cmtekdods00igzevd5o5ini0j",
+      "title": "Deep Learning-based OTFS Channel Estimation and Symbol Detection with Plug-and-Play Framework",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2503.11102",
+      "rawUrl": "https://arxiv.org/abs/2503.11102",
+      "source": "arxiv",
+      "publishedAt": "2025-03-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.769Z",
+      "lastSeen": "2026-10-02T09:41:30.306Z",
+      "versionsCount": 2,
+      "authors": [
+        "Xiaoqi Zhang",
+        "Zhitong Ni",
+        "Weijie Yuan",
+        "J. Andrew Zhang",
+        "Tony Q. S. Quek"
+      ],
+      "abstract": "Orthogonal Time Frequency Space (OTFS) modulation has recently attracted significant interest due to its potential for enabling reliable communication in high-mobility environments. However, the effectiveness of OTFS receivers relies on the inherent characteristic of the Delay-Doppler (DD) domain channel, where the sparsity of the discretized channel varies across different communication scenarios. For instance, the fractional Doppler effect reduces the inherent channel sparsity, which consequently degrades channel estimation accuracy and increases the complexity of symbol detection. Traditional algorithms relying on fixed sparsity priors often require manual design, while purely data-driven deep learning (DL) methods typically struggle to generalize across diverse channel conditions. To address these challenges, we propose a novel unsupervised DL-based plug-and-play (PnP) framework that provides a flexible solution for OTFS receiver design. The proposed framework can be applied to both channel estimation and symbol detection, jointly leveraging the flexibility of optimization-based methods and the powerful generalization capability of data-driven models. Specifically, a lightweight encoder-decoder network (EDN) is incorporated as an implicit channel prior for channel estimation, enabling robust performance across varying levels of channel sparsity. Furthermore, for symbol detection, we realize the PnP framework with a time-domain matrix inversion for model-based equalization, followed by a small multi-layer perceptron (MLP) pre-trained for specific constellations, thereby achieving low complexity and enabling flexible adaptation to various modulation formats. Finally, numerical results demonstrate the effectiveness and robustness of the algorithm."
+    },
+    {
+      "id": "cmtekdmw1006czevdno1gq06i",
+      "title": "Performance Analysis of BEM-based Channel Estimation for OTFS with Hardware Impairments",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2502.04003",
+      "rawUrl": "https://arxiv.org/abs/2502.04003",
+      "source": "arxiv",
+      "publishedAt": "2025-02-06T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.833Z",
+      "lastSeen": "2026-10-02T09:41:30.219Z",
+      "versionsCount": 2,
+      "authors": [
+        "Haowei Wu",
+        "Huanyu Chen",
+        "Qihao Peng",
+        "Qu Luo",
+        "Jinglan Ou"
+      ],
+      "abstract": "This letter studies the low-complexity channel estimation for orthogonal time frequency space (OTFS) in the presence of hardware impairments. Firstly, to tackle the computational complexity of channel estimation, the basis expansion model (BEM) is utilized. Then, the mean square error (MSE) of the estimated channel is theoretically derived, revealing the effects of hardware impairments on channel estimation. Based on the estimated channel, the minimum mean square error (MMSE) detector is adopted to analyze the impacts of imperfect hardware on the bit error rate (BER). Finally, the numerical results validate the correctness of our theoretical analysis of the MSE for channel estimation and lower bound of the BER, and also demonstrate that even minor hardware impairments can significantly degrade the performance of the OTFS system."
+    },
+    {
+      "id": "cmtekdoa800hgzevdlbjga76e",
+      "title": "OTFS-ISAC System with Sub-Nyquist ADC Sampling Rate",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2502.04663",
+      "rawUrl": "https://arxiv.org/abs/2502.04663",
+      "source": "arxiv",
+      "publishedAt": "2025-02-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.641Z",
+      "lastSeen": "2026-10-02T09:41:30.620Z",
+      "versionsCount": 2,
+      "authors": [
+        "Henglin Pu",
+        "Xuefeng Wang",
+        "Ajay Kumar",
+        "Lu Su",
+        "Husheng Li"
+      ],
+      "abstract": "Integrated sensing and communication (ISAC) has emerged as a pivotal technology for next-generation wireless communication and radar systems, enabling high-resolution sensing and high-throughput communication with shared spectrum and hardware. However, achieving a fine radar resolution often requires high-rate analog-to-digital converters (ADCs) and substantial storage, making it both expensive and impractical for many commercial applications. To address these challenges, this paper proposes an orthogonal time frequency space (OTFS)-based ISAC architecture that operates at reduced ADC sampling rates, yet preserves accurate radar estimation and supports simultaneous communication. The proposed architecture introduces pilot symbols directly in the delay-Doppler (DD) domain to leverage the transformation mapping between the DD and time-frequency (TF) domains to keep selected subcarriers active while others are inactive, allowing the radar receiver to exploit under-sampling aliasing and recover the original DD signal at much lower sampling rates. To further enhance the radar accuracy, we develop an iterative interference estimation and cancellation algorithm that mitigates data symbol interference. We propose a code-based spreading technique that distributes data across the DD domain to preserve the maximum unambiguous radar sensing range. For communication, we implement a complete transceiver pipeline optimized for reduced sampling rate system, including synchronization, channel estimation, and iterative data detection. Experimental results from a software-defined radio (SDR)-based testbed confirm that our method substantially lowers the required sampling rate without sacrificing radar sensing performance and ensures reliable communication."
+    },
+    {
+      "id": "cmtekdmwg006gzevd7szuy1xe",
+      "title": "Time Frequency Localized Pulse for Delay Doppler Domain Data Transmission",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2501.18286",
+      "rawUrl": "https://arxiv.org/abs/2501.18286",
+      "source": "arxiv",
+      "publishedAt": "2025-01-30T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.849Z",
+      "lastSeen": "2026-10-02T09:41:30.604Z",
+      "versionsCount": 2,
+      "authors": [
+        "Sanoopkumar P. S",
+        "Muyiwa Balogun",
+        "Liam Barry",
+        "Arman Farhang"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) is a strong candidate waveform for sixth generation wireless communication networks (6G), which can effectively handle time varying wireless channels. In this paper, we analyze the effect of fractional delay in delay Doppler (DD) domain multiplexing techniques. We develop a vector-matrix input-output relationship for the DD domain data transmission system by incorporating the effective pulse shaping filter between the transmitter and receiver along with the channel. Using this input-output relationship, we analyze the effect of the pulse shaping filter on the channel estimation and BER performance in the presence of fractional delay and uncompensated fractional timing offset (TO). For the first time, we propose the use of time-frequency localized (TFL) pulse shaping for the OTFS waveform to overcome the interference due to fractional delays. We show that our proposed TFL-OTFS outperforms the widely used raised cosine pulse-shaped OTFS (RC-OTFS) in the presence of fractional delays. Additionally, TFL-OTFS also shows very high robustness against uncompensated fractional TO, compared to RC-OTFS."
+    },
+    {
+      "id": "cmtekdmwx006kzevd2l42otjn",
+      "title": "Orthogonal Delay-Doppler Division Multiplexing Modulation with Hierarchical Mode-Based Index Modulation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2501.08026",
+      "rawUrl": "https://arxiv.org/abs/2501.08026",
+      "source": "arxiv",
+      "publishedAt": "2025-01-14T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.865Z",
+      "lastSeen": "2026-10-02T09:41:30.713Z",
+      "versionsCount": 2,
+      "authors": [
+        "Kehan Huang",
+        "Min Qiu",
+        "Jinhong Yuan"
+      ],
+      "abstract": "The orthogonal time frequency space with index modulation (OTFS-IM) offers flexible tradeoffs between spectral efficiency (SE) and bit error rate (BER) in doubly selective fading channels. While OTFS-IM schemes demonstrated such potential, a persistent challenge lies in the detection complexity. To address this problem, we propose the hierarchical mode-based index modulation (HMIM). HMIM introduces a novel approach to modulate information bits by IM patterns, significantly simplifying the complexity of maximum a posteriori (MAP) estimation with Gaussian noise. Further, we incorporate HMIM with the recently proposed orthogonal delay-Doppler division multiplexing (ODDM) modulation, namely ODDM-HMIM, to exploit the full diversity of the delay-Doppler (DD) channel. The BER performance of ODDM-HMIM is analyzed considering a maximum likelihood (ML) detector. Our numerical results reveal that, with the same SE, HMIM can outperform conventional IM in terms of both BER and computational complexity. In addition, we propose a successive interference cancellation-based minimum mean square error (SIC-MMSE) detector for ODDM-HMIM, which enables low-complexity detection with large frame sizes."
+    },
+    {
+      "id": "cmtekdo7g00gwzevdi0zxxg06",
+      "title": "Superimposed Pilot-Based OTFS: Will It Work?",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2501.15935",
+      "rawUrl": "https://arxiv.org/abs/2501.15935",
+      "source": "arxiv",
+      "publishedAt": "2025-01-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.540Z",
+      "lastSeen": "2026-10-02T09:41:30.098Z",
+      "versionsCount": 2,
+      "authors": [
+        "Yuta Kanazawa",
+        "Hiroki Iimori",
+        "Chandan Pradhan",
+        "Szabolcs Malomsoky",
+        "Naoki Ishikawa"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation is a promising solution to handle doubly-selective fading, but its channel estimation is a nontrivial task in terms of maximizing spectral efficiency. Conventional pilot assignment approaches face challenges: the standard embedded pilot-based scheme suffers from low transmission rates, and the single superimposed pilot (SP)-based scheme experiences inevitable data-pilot interference, leading to coarse channel estimation. To cope with this issue, focusing on the SP-based OTFS system in channel coded scenarios, we propose a novel pilot assignment scheme and an iterative algorithm. The proposed scheme allocates multiple SPs per frame to estimate channel coefficients accurately. Furthermore, the proposed algorithm performs refined interference cancellation, utilizing a replica of data symbols generated from soft-decision outputs provided by a decoder. Assuming fair and unified conditions, we evaluate each pilot assignment scheme in terms of reliability, channel estimation accuracy, effective throughput, and computational complexity. Our numerical simulations demonstrate that the multiple SP-based scheme, which balances the transmission rate and the interference cancellation performance, has the best throughput at the expense of slightly increased complexity. In addition, we confirm that the multiple SP-based scheme achieves further improved throughput due to the proposed interference cancellation algorithm."
+    },
+    {
+      "id": "cmtiv8gib00mn6dvttvk3jigi",
+      "title": "Zak-OTFS With Spread Carrier Waveforms",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/LWC.2025.3590254",
+      "rawUrl": "http://dx.doi.org/10.1109/LWC.2025.3590254",
+      "source": "duke-calderbank",
+      "publishedAt": "2025-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:31.763Z",
+      "lastSeen": "2026-09-01T16:12:31.763Z",
       "versionsCount": 1,
       "authors": [
-        "Mohammadali Mohammadi",
-        "Hien Quoc Ngo",
-        "Michail Matthaiou"
-      ]
+        "Mehrotra, N",
+        "Mattu, SR",
+        "Calderbank, R"
+      ],
+      "abstract": null
     },
     {
-      "title": "Random Access with Massive MIMO-OTFS in LEO Satellite Communications",
+      "id": "cmtiv8j32017l6dvtsklp0z3r",
+      "title": "Zak-OTFS With Interleaved Pilots to Extend the Region of Predictable Operation",
       "type": "PAPER",
-      "url": "https://arxiv.org/abs/2202.13058",
-      "rawUrl": "https://arxiv.org/abs/2202.13058",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.263Z",
-      "lastSeen": "2026-08-29T15:57:34.263Z",
+      "url": "http://dx.doi.org/10.1109/TVT.2025.3579394",
+      "rawUrl": "http://dx.doi.org/10.1109/TVT.2025.3579394",
+      "source": "duke-calderbank",
+      "publishedAt": "2025-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:35.103Z",
+      "lastSeen": "2026-09-01T16:12:35.103Z",
       "versionsCount": 1,
+      "authors": [
+        "Jayachandran, J",
+        "Khan, IA",
+        "Mohammed, SK",
+        "Hadani, R",
+        "Chockalingam, A",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8jro01dv6dvt6xiq8wsw",
+      "title": "Differential Communication in Channels With Mobility and Delay Spread Using Zak-OTFS",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/LWC.2025.3600660",
+      "rawUrl": "http://dx.doi.org/10.1109/LWC.2025.3600660",
+      "source": "duke-calderbank",
+      "publishedAt": "2025-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:35.989Z",
+      "lastSeen": "2026-09-01T16:12:35.989Z",
+      "versionsCount": 1,
+      "authors": [
+        "Mattu, SR",
+        "Mehrotra, N",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8k6001h96dvt52hsixxa",
+      "title": "Key Generation and Secrecy Analysis Using OTFS for TDD Systems",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/TWC.2024.3508632",
+      "rawUrl": "http://dx.doi.org/10.1109/TWC.2024.3508632",
+      "source": "duke-calderbank",
+      "publishedAt": "2025-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:36.505Z",
+      "lastSeen": "2026-09-01T16:12:36.505Z",
+      "versionsCount": 1,
+      "authors": [
+        "Saeed, U",
+        "Calderbank, R",
+        "Zeng, K",
+        "Serena Bentley, E",
+        "Huie-Seversky, L",
+        "Said, K",
+        "Liu, L"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtekdmxc006ozevd1gve06op",
+      "title": "LEO Satellite-Enabled Random Access with Large Differential Delay and Doppler Shift",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2412.20806",
+      "rawUrl": "https://arxiv.org/abs/2412.20806",
+      "source": "arxiv",
+      "publishedAt": "2024-12-30T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.880Z",
+      "lastSeen": "2026-10-02T09:41:30.235Z",
+      "versionsCount": 2,
       "authors": [
         "Boxiao Shen",
         "Yongpeng Wu",
-        "Jianping An",
-        "Chengwen Xing",
-        "Lian Zhao",
-        "Wenjun Zhang"
-      ]
+        "Wenjun Zhang",
+        "Symeon Chatzinotas",
+        "Björn Ottersten"
+      ],
+      "abstract": "This paper investigates joint device identification, channel estimation, and symbol detection for LEO satellite-enabled grant-free random access systems, specifically targeting scenarios where remote Internet-of-Things (IoT) devices operate without global navigation satellite system (GNSS) assistance. Considering the constrained power consumption of these devices, the large differential delay and Doppler shift are handled at the satellite receiver. We firstly propose a spreading-based multi-frame transmission scheme with orthogonal time-frequency space (OTFS) modulation to mitigate the doubly dispersive effect in time and frequency, and then analyze the input-output relationship of the system. Next, we propose a receiver structure based on three modules: a linear module for identifying active devices that leverages the generalized approximate message passing algorithm to eliminate inter-user and inter-carrier interference; a non-linear module that employs the message passing algorithm to jointly estimate the channel and detect the transmitted symbols; and a third module that aims to exploit the three dimensional block channel sparsity in the delay-Doppler-angle domain. Soft information is exchanged among the three modules by careful message scheduling. Furthermore, the expectation-maximization algorithm is integrated to adjust phase rotation caused by the fractional Doppler and to learn the hyperparameters in the priors. Finally, the convolutional neural network is incorporated to enhance the symbol detection. Simulation results demonstrate that the proposed transmission scheme boosts the system performance, and the designed algorithms outperform the conventional methods significantly in terms of the device identification, channel estimation, and symbol detection."
     },
     {
+      "id": "cmtekdobt00hwzevdvo8wxgc8",
+      "title": "Pre-equalization Design for ISAC-OTFS Air-Ground Transmission: A Deep Learning Approach",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2412.04751",
+      "rawUrl": "https://arxiv.org/abs/2412.04751",
+      "source": "arxiv",
+      "publishedAt": "2024-12-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.698Z",
+      "lastSeen": "2026-10-02T09:41:30.145Z",
+      "versionsCount": 2,
+      "authors": [
+        "Weihao Wang",
+        "Jing Guo",
+        "Siqiang Wang",
+        "Xinyi Wang",
+        "Weijie Yuan",
+        "Zesong Fei"
+      ],
+      "abstract": "Despite the strong Doppler resilience capability, orthogonal time-frequency space (OTFS) modulation suffers from high channel estimation and equalization complexity at the receiver, hindering its applicability in air-ground transmission. In this paper, we propose a pre-equalization-based integrated sensing and communications-OTFS downlink transmission framework in which the terrestrial access point executes pre-equalization using the predicted channel state information (CSI), so that the unmanned aerial vehicle can perform direct symbol detection without channel equalization. In particular, the mean square error of OTFS symbol demodulation and Cramer-Rao lower bound of sensing parameter estimation are considered, with their weighted sum utilized as the metric for optimizing the pre-equalization matrix. To address the time-varying CSI, we develop a deep learning based framework composed of channel prediction and pre-equalization. In particular, a parameter-level channel prediction module is utilized to decouple OTFS channel parameters, and a low-dimensional prediction network is leveraged to correct outdated CSI, which is then used to initialize the input of the pre-equalization module. Finally, a dual-branch residual-structured deep neural network is cascaded to execute pre-equalization. Simulation results show that the proposed channel prediction-based pre-equalization framework significantly reduces receiver complexity and pilot overhead while achieving symbol detection performance close to minimum mean square error equalization with perfect CSI under high mobility, as well as substantially improving sensing accuracy."
+    },
+    {
+      "id": "cmtekdmxq006szevd8eym7pkz",
+      "title": "Reduced Overhead Channel Estimation for OTFS With Split Pilot",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2410.11739",
+      "rawUrl": "https://arxiv.org/abs/2410.11739",
+      "source": "arxiv",
+      "publishedAt": "2024-10-15T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.895Z",
+      "lastSeen": "2026-10-02T09:41:30.672Z",
+      "versionsCount": 2,
+      "authors": [
+        "Danilo Lelin Li",
+        "Sanoopkumar P. S.",
+        "Arman Farhang"
+      ],
+      "abstract": "Orthogonal time frequency space modulation (OTFS) is currently one of the most robust modulation techniques for high Doppler channels. However, to reap the benefits of OTFS, an accurate channel estimation is crucial. To this mean, the widely used embedded pilot structures use twice the channel length size as a delay guard to avoid interference between the pilot and data symbols. Hence, incurring a large spectral efficiency loss, especially in wideband systems where the channel length is large. To reduce the pilot overhead, we propose a novel split pilot structure with two impulse pilots. With two pilots, we can use one to cancel the other, thus, capable of removing the pilot interference over data. To remove the data interference from the pilot, we also propose an iterative joint channel estimation and detection technique tailored to the proposed split pilot structure. With the interference caused by the delay spread solved, we reduce the number of delay guards in our system by half, significantly improving the spectral efficiency. To corroborate our claims, we numerically demonstrate that our proposed method can achieve performance levels comparable to that of the full-guard method while using only half the delay guard. Additionally, we show that our proposed iterative channel estimating technique has a fast convergence speed, requiring only two iterations."
+    },
+    {
+      "id": "cmtekdocm00i4zevd3saiehmk",
+      "title": "Synchronization for Multiuser Uplink OTFS",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2410.10740",
+      "rawUrl": "https://arxiv.org/abs/2410.10740",
+      "source": "arxiv",
+      "publishedAt": "2024-10-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.727Z",
+      "lastSeen": "2026-10-02T09:41:29.883Z",
+      "versionsCount": 2,
+      "authors": [
+        "Mohsen Bayat",
+        "Sanoopkumar P.S.",
+        "Arman Farhang"
+      ],
+      "abstract": "In this paper, we propose time and frequency synchronization techniques for the uplink of multiuser orthogonal time frequency space (MU-OTFS) in high-mobility scenarios. We introduce a spectrally efficient and practical pilot pattern where each user utilizes a pilot with a cyclic prefix (PCP) within a shared pilot region on the delay-Doppler plane. At the receiver, a bank of filters is deployed to separate the users' signals and accurately estimate their timing offsets (TOs) and carrier frequency offsets (CFOs). Our technique employs a threshold-based approach that provides precise TO estimates. Our proposed CFO estimation technique reduces the multi-dimensional maximum likelihood (ML) search problem into multiple one-dimensional search problems. Furthermore, we apply the Chebyshev polynomials of the first kind basis expansion model (CPF-BEM) to effectively handle the time-variations of the channel in obtaining the CFO estimates for all the users. Finally, we numerically investigate the error performance of our proposed synchronization technique in high mobility scenarios for the MU-OTFS uplink. Our simulation results confirm the efficacy of the proposed technique in estimating the TOs and CFOs which also leads to an improved channel estimation performance."
+    },
+    {
+      "id": "cmtekdmy6006wzevd9nonzlsa",
+      "title": "Grid Evolution for Doubly Fractional Channel Estimation in OTFS Systems",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2409.17584",
+      "rawUrl": "https://arxiv.org/abs/2409.17584",
+      "source": "arxiv",
+      "publishedAt": "2024-09-26T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.910Z",
+      "lastSeen": "2026-10-02T09:41:30.587Z",
+      "versionsCount": 2,
+      "authors": [
+        "Xiangjun Li",
+        "Pingzhi Fan",
+        "Qianli Wang",
+        "Zilong Liu"
+      ],
+      "abstract": "In orthogonal time-frequency space communications, the performances of existing on-grid and off-grid channel estimation (CE) schemes are determined by the delay-Doppler (DD) grid density. In practice, multiple real-life DD channel responses might be co-located within a same DD grid interval, leading to performance degradation. A finer grid interval is needed to distinguish these responses, but this could result in a significantly higher CE complexity when traditional methods are this http URL address this issue, a grid evolution method for doubly fractional CE is proposed by evolving the initially uniform coarse DD grid into a non-uniform dense grid. Simulation results show that our proposed method leads to improved computational efficiency, and achieves a good trade-off between CE performance and complexity."
+    },
+    {
+      "id": "cmtekdoan00hkzevdet1bd5g5",
+      "title": "A Novel Massive Random Access in Cell-Free Massive MIMO Systems for High-Speed Mobility with OTFS Modulation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2409.01111",
+      "rawUrl": "https://arxiv.org/abs/2409.01111",
+      "source": "arxiv",
+      "publishedAt": "2024-09-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.656Z",
+      "lastSeen": "2026-10-02T09:41:30.266Z",
+      "versionsCount": 2,
+      "authors": [
+        "Yanfeng Hu",
+        "Dongming Wang",
+        "Xinjiang Xia",
+        "Jiamin Li",
+        "Pengcheng Zhu",
+        "Xiaohu You"
+      ],
+      "abstract": "In the research of next-generation wireless communication technologies, orthogonal time frequency space (OTFS) modulation is emerging as a promising technique for high-speed mobile environments due to its superior efficiency and robustness in doubly selective channels. Additionally, the cell-free architecture, which eliminates the issues associated with cell boundaries, offers broader coverage for radio access networks. By combining cell-free network architecture with OTFS modulation, the system may meet the demands of massive random access required by machine-type communication devices in high-speed scenarios. This paper explores a massive random access scheme based on OTFS modulation within a cell-free architecture. A transceiver model for uplink OTFS signals involving multiple access points (APs) is developed, where channel estimation with fractional channel parameters is approximated as a block sparse matrix recovery problem. Building on existing superimposed and embedded preamble schemes, a hybrid preamble scheme is proposed. This scheme leverages superimposed and embedded preambles to respectively achieve rough and accurate active user equipment (UEs) detection (AUD), as well as precise channel estimation, under the condition of supporting a large number of access UEs. Moreover, this study introduces a generalized approximate message passing and pattern coupling sparse Bayesian learning with Laplacian prior (GAMP-PCSBL-La) algorithm, which effectively captures block sparse features after discrete cosine transform (DCT), delivering precise estimation results with reduced computational complexity. Simulation results demonstrate that the proposed scheme is effective and provides superior performance compared to other existing schemes."
+    },
+    {
+      "id": "cmtekdmyl0070zevdwui1gtef",
+      "title": "Channel Estimation, Interpolation and Extrapolation in Doubly-dispersive Channels",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2408.09381",
+      "rawUrl": "https://arxiv.org/abs/2408.09381",
+      "source": "arxiv",
+      "publishedAt": "2024-08-18T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.925Z",
+      "lastSeen": "2026-10-02T09:41:29.916Z",
+      "versionsCount": 2,
+      "authors": [
+        "Zijun Gong",
+        "Fan Jiang",
+        "Yuhui Song",
+        "Cheng Li",
+        "Xiaofeng Tao"
+      ],
+      "abstract": "The OTFS (Orthogonal Time Frequency Space) is widely acknowledged for its ability to combat Doppler spread in time-varying channels. In this paper, another advantage of OTFS over OFDM (Orthogonal Frequency Division Multiplexing) will be demonstrated: much reduced channel training overhead. Specifically, the sparsity of the channel in delay-Doppler (D-D) domain implies strong correlation of channel gains in time-frequency (T-F) domain, which can be harnessed to reduce channel training overhead through interpolation. An immediate question is how much training overhead is needed in doubly-dispersive channels? A conventional belief is that the overhead is only dependent on the product of delay and Doppler spreads, but we will show that it's also dependent on the T-F window size. The finite T-F window leads to infinite spreading in D-D domain, and aliasing will be inevitable after sampling in T-F domain. Two direct consequences of the aliasing are increased channel training overhead and interference. Another factor contributing to channel estimation error is the inter-symbol-carrier-interference (ISCI), resulting from the uncertainty principle. Both aliasing and ISCI are considered in channel modelling, a low-complexity algorithm is proposed for channel estimation and interpolation through FFT. A large T-F window is necessary for reduced channel training overhead and aliasing, but increases processing delay. Fortunately, we show that the proposed algorithm can be implemented in a pipeline fashion. Further more, we showed that data-aided channel tracking is possible in D-D domain to further reduce the channel estimation frequency, i.e., channel extrapolation. The impacts of aliasing and ISCI on channel interpolation error are analyzed."
+    },
+    {
+      "id": "cmtekdmz00074zevd5dwq3tpj",
+      "title": "IRS-Assisted OTFS: Beamforming Design and Signal Detection",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2408.02219",
+      "rawUrl": "https://arxiv.org/abs/2408.02219",
+      "source": "arxiv",
+      "publishedAt": "2024-08-05T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.941Z",
+      "lastSeen": "2026-10-02T09:41:30.015Z",
+      "versionsCount": 2,
+      "authors": [
+        "Sushmita Singh",
+        "Kuntal Deka",
+        "Sanjeev Sharma",
+        "Neelakandan Rajamohan"
+      ],
+      "abstract": "Intelligent reflecting surface (IRS) technology has become a crucial enabler for creating cost effective, innovative, and adaptable wireless communication environments. This study investigates an IRS-assisted orthogonal time frequency space (OTFS) modulation that facilitates communication between users and the base station (BS). The users attainable downlink rate can be boosted by collaboratively improving the reflection coefficient (RC) matrix at the IRS and beamforming matrix at the BS. Then, in the IRS-aided OTFS network, the problem of cooperative precoding at BS and IRS to improve the network throughput is framed. The precoding design problem is non-convex and highly complicated; an alternate optimization (AO) approach is proposed to solve this. Specifically, an approach based on strongest tap maximization (STM) and fractional programming is proposed. It solves RC matrix (at IRS) and beamforming matrix (at BS) alternatively. Moreover, an efficient signal detector for IRS-aided OTFS communication systems using the alternating direction method of multipliers (ADMM) is proposed. Finally, to estimate the cascaded MIMO channel, using a parallel factor tensor model that separates the IRS-User and BS-IRS MIMO channels, respectively is suggested. Simulation results show that the proposed method significantly enhances the system capacity and bit error rate (BER) performance compared to conventional OTFS."
+    },
+    {
+      "id": "cmtekdo6400gozevdyuduszvl",
+      "title": "Fast Burst-Sparsity Learning Approach for Massive MIMO-OTFS Channel Estimation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2408.12239",
+      "rawUrl": "https://arxiv.org/abs/2408.12239",
+      "source": "arxiv",
+      "publishedAt": "2024-08-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.492Z",
+      "lastSeen": "2026-10-02T09:41:29.743Z",
+      "versionsCount": 2,
+      "authors": [
+        "Ming Ma",
+        "Jisheng Dai",
+        "Xue-Qin Jiang"
+      ],
+      "abstract": "Accurate channel estimation in orthogonal time frequency space (OTFS) systems with massive multiple-input multiple-output (MIMO) configurations is challenging due to high-dimensional sparse representation (SR). Existing methods often face performance degradation and/or high computational complexity. To address these issues and exploit intricate channel sparsity structure, this letter first leverages a novel hybrid burst-sparsity prior to capture the burst/common sparse structure in the angle/delay domain, and then utilizes an independent variational Bayesian inference (VBI) factorization technique to efficiently solve the high-dimensional SR problem. Additionally, an angle/Doppler refinement approach is incorporated into the proposed method to automatically mitigate off-grid mismatches."
+    },
+    {
+      "id": "cmtekdob200hozevdfgp1mpo4",
+      "title": "Pilot-Aided Joint Time Synchronization and Channel Estimation for OTFS",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2408.04192",
+      "rawUrl": "https://arxiv.org/abs/2408.04192",
+      "source": "arxiv",
+      "publishedAt": "2024-08-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.670Z",
+      "lastSeen": "2026-10-02T09:41:30.639Z",
+      "versionsCount": 2,
+      "authors": [
+        "Jiazheng Sun",
+        "Peng Yang",
+        "Xianbin Cao",
+        "Zehui Xiong",
+        "Haijun Zhang",
+        "Tony Q. S. Quek"
+      ],
+      "abstract": "This letter proposes a pilot-aided joint time synchronization and channel estimation (JTSCE) algorithm for orthogonal time frequency space (OTFS) systems. Unlike existing algorithms, JTSCE employs a maximum length sequence (MLS) rather than an isolated signal as the pilot. Distinctively, JTSCE explores MLS's autocorrelation properties to estimate timing offset and channel delay taps. After obtaining delay taps, closed-form expressions of Doppler and channel gain for each propagation path are derived. Simulation results indicate that, compared to its counterpart, JTSCE achieves better bit error rate performance, close to that with perfect time synchronization and channel state information."
+    },
+    {
+      "id": "cmtekdmzf0078zevdtcif0x33",
+      "title": "Real time parameter estimation for adaptive OFDM/OTFS selection",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2408.03460",
+      "rawUrl": "https://arxiv.org/abs/2408.03460",
+      "source": "arxiv",
+      "publishedAt": "2024-07-27T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.956Z",
+      "lastSeen": "2026-10-02T09:41:30.189Z",
+      "versionsCount": 2,
+      "authors": [
+        "Amina Darghouthi",
+        "Abdelhakim Khlifi",
+        "Belgacem Chibani"
+      ],
+      "abstract": "Future wireless communication systems must simultaneously address multiple challenges to ensure accurate data detection, deliver high Quality of Service (QoS), adding enable a high data transmission with low system design. Additionally, they need to reduce energy consumption and latency without increasing system complexity. Orthogonal Frequency Division Multiplexing (OFDM) is a commonly used waveform in 4G and 5G systems, it has limitations in handling significant delay and Doppler spread in high mobility scenarios. To overcome these weaknesses, a novel waveform named Orthogonal Time Frequency Space (OTFS) has been proposed, which aims to improve upon OFDM by closely matching signals to channel behavior. In this study, we propose a novel strategy that enables operators to dynamically select the best waveform based on estimated mobile user parameters. We use an Integrated Radar Sensing and Communication System (ISAC) to estimate delay and Doppler, as well as speed and range. This approach allows the base station to adapt to the mobile target, thereby enhancing the performance of wireless communication systems in high mobility and low complexity scenarios. Simulation results demonstrate the effectiveness of our proposed approach and show that it outperforms existing methods."
+    },
+    {
+      "id": "cmtekdo9s00hczevdmrt5k593",
+      "title": "Blind Bistatic Radar Parameter Estimation for AFDM Systems in Doubly-Dispersive Channels",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2407.05328",
+      "rawUrl": "https://arxiv.org/abs/2407.05328",
+      "source": "arxiv",
+      "publishedAt": "2024-07-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.624Z",
+      "lastSeen": "2026-10-02T09:41:30.355Z",
+      "versionsCount": 2,
+      "authors": [
+        "Kuranage Roche Rayan Ranasinghe",
+        "Kengo Ando",
+        "Hyeon Seok Rou",
+        "Giuseppe Thadeu Freitas de Abreu",
+        "Andreas Bathelt"
+      ],
+      "abstract": "We propose a novel method for blind bistatic radar parameter estimation (RPE), which enables integrated sensing and communications (ISAC) by allowing passive (receive) base stations (BSs) to extract radar parameters (ranges and velocities of targets), without requiring knowledge of the information sent by an active (transmit) BS to its users. The contributed method is formulated with basis on the covariance of received signals, and under a generalized doubly-dispersive channel model compatible with most of the waveforms typically considered for ISAC, such as orthogonal frequency division multiplexing (OFDM), orthogonal time frequency space (OTFS) and affine frequency division multiplexing (AFDM). The original non-convex problem, which includes an $\\ell_0$-norm regularization term in order to mitigate clutter, is solved not by relaxation to an $\\ell_1$-norm, but by introducing an arbitrarily-tight approximation then relaxed via fractional programming (FP). Simulation results show that the performance of the proposed method approaches that of an ideal system with perfect knowledge of the transmit signal covariance with an increasing number of transmit frames."
+    },
+    {
+      "id": "cmtekdmzu007czevdkyqqkkpm",
+      "title": "Multi-Satellite MIMO Systems for Direct User-Satellite Communications: A Survey",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2407.00196",
+      "rawUrl": "https://arxiv.org/abs/2407.00196",
+      "source": "arxiv",
+      "publishedAt": "2024-06-28T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.970Z",
+      "lastSeen": "2026-10-02T09:41:29.866Z",
+      "versionsCount": 2,
+      "authors": [
+        "Zohre Mashayekh Bakhsh",
+        "Yasaman Omid",
+        "Gaojie Chen",
+        "Farbod Kayhan",
+        "Yi Ma",
+        "Rahim Tafazolli"
+      ],
+      "abstract": "Advancements in satellite technology have made direct-to-device connectivity a viable solution for ensuring global access. This method is designed to provide internet connectivity to remote, rural, or underserved areas where traditional cellular or broadband networks are lacking or insufficient. This paper is a survey providing an in-depth review of multi-satellite Multiple Input Multiple Output (MIMO) systems as a potential solution for addressing the link budget challenge in direct user-satellite communication. Special attention is given to works considering multi-satellite MIMO systems, both with and without satellite collaboration. In this context, collaboration refers to sharing data between satellites to improve the performance of the system. This survey begins by explaining several fundamental aspects of satellite communications (SatComs), which are vital prerequisites before investigating the multi-satellite MIMO systems. These aspects encompass satellite orbits, the structure of satellite systems, SatCom links, including the inter-satellite links (ISL) which facilitate satellite cooperation, satellite frequency bands, satellite antenna design, and satellite channel models, which should be known or estimated for effective data transmission to and from multiple satellites. Furthermore, this survey distinguishes itself by providing more comprehensive insights in comparison to other surveys. It specifically delves into the Orthogonal Time Frequency Space (OTFS) within the channel model section. It goes into detail about ISL noise and channel models, and it extends the ISL section by thoroughly investigating hybrid FSO/RF ISLs. Furthermore, analytical comparisons of simulation results from these works are presented to highlight the advantages of employing multi-satellite MIMO systems."
+    },
+    {
+      "id": "cmtekdn0a007gzevdupz3lni6",
+      "title": "An hybrid framework OTFS OFDM based on mobile speed estimation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2407.07721",
+      "rawUrl": "https://arxiv.org/abs/2407.07721",
+      "source": "arxiv",
+      "publishedAt": "2024-06-19T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:32.986Z",
+      "lastSeen": "2026-10-02T09:41:30.491Z",
+      "versionsCount": 2,
+      "authors": [
+        "Amina Darghouthi",
+        "Abdelhakim Khlifi",
+        "Hmaied Shaiek",
+        "Fatma Ben Salah",
+        "Belgacem Chibani"
+      ],
+      "abstract": "The Future wireless communication systems face the challenging task of simultaneously providing high quality of service (QoS) and broadband data transmission, while also minimizing power consumption, latency, and system complexity. Although Orthogonal Frequency Division Multiplexing OFDM has been widely adopted in 4G and 5G systems, it struggles to cope with the significant delay and Doppler spread in high mobility scenarios. To address these challenges, a novel waveform called Orthogonal Time Frequency Space OTFS has emerged, aiming to outperform OFDM by closely aligning signals with the channel behaviour. In this paper, we propose a switching strategy that empowers operators to select the most appropriate waveform based on the estimated speed of the mobile user. This strategy enables the base station to dynamically choose the waveform that best suits the mobile users speed. Additionally, we suggest integrating an Integrated Sensing and Communication radar for accurate Doppler estimation, providing precise information to aid in waveform selection. By leveraging the switching strategy and harnessing the Doppler estimation capabilities of an ISAC radar, our proposed approach aims to enhance the performance of wireless communication systems in scenarios of high mobility. Considering the complexity of waveform processing, we introduce an optimized hybrid system that combines OTFS and OFDM, resulting in reduced complexity while still retaining performance benefits. This hybrid system presents a promising solution for improving the performance of wireless communication systems in scenarios with a high mobility. The simulation results validate the effectiveness of our approach, demonstrating its potential advantages for future wireless communication systems. The effectiveness of the proposed approach is validated by simulation results as it will be shown."
+    },
+    {
+      "id": "cmtekdn0q007kzevdvd378pyl",
+      "title": "On the Coexistence of OTFS Modulation with OFDM-based Communication Systems",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2406.18592",
+      "rawUrl": "https://arxiv.org/abs/2406.18592",
+      "source": "arxiv",
+      "publishedAt": "2024-06-08T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.002Z",
+      "lastSeen": "2026-10-02T09:41:30.426Z",
+      "versionsCount": 2,
+      "authors": [
+        "Akram Shafie",
+        "Jinhong Yuan",
+        "Paul Fitzpatrick",
+        "Taka Sakurai",
+        "Yuting Fang"
+      ],
+      "abstract": "We investigate the coexistence of orthogonal time-frequency space (OTFS) modulation with current fourth- and fifth-generation (4G/5G) communication systems that primarily use orthogonal frequency-division multiplexing (OFDM) waveforms. We first derive the input-output-relation of OTFS in the considered coexisting system. In this derivation, we consider (i) the inclusion of multiple cyclic prefixes (CPs) with unequal lengths to the OTFS signal and (ii) edge carrier unloading (ECU), to account for the impacts of CP length, frame structure, and subcarrier arrangement described in 3GPP standards for 4G/5G systems. Our analysis reveals that the inclusion of multiple CPs to the OTFS signal and ECU lead to the channel response exhibiting spreading effects/leakage along the Doppler and delay dimensions, respectively. Consequently, the effective sampled delay-Doppler (DD) domain channel model for OTFS in coexisting systems may exhibit reduced sparsity. We also show that the effective DD domain channel coefficients for OTFS in coexisting systems are influenced by the unequal lengths of CPs. Subsequently, we propose an interference cancellation-based channel estimation (CE) technique for OTFS in coexisting systems. Through numerical results, we validate our analysis, highlight the importance of not ignoring the unequal lengths of CPs during signal detection, and show the significance of the proposed CE technique."
+    },
+    {
+      "id": "cmtekdn15007ozevdgtn7522d",
+      "title": "Zak-OTFS: Pulse Shaping and the Tradeoff between Time/Bandwidth Expansion and Predictability",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2405.02718",
+      "rawUrl": "https://arxiv.org/abs/2405.02718",
+      "source": "arxiv",
+      "publishedAt": "2024-05-04T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.017Z",
+      "lastSeen": "2026-10-02T09:41:30.175Z",
+      "versionsCount": 2,
+      "authors": [
+        "Jinu Jayachandran",
+        "Rahul Kumar Jaiswal",
+        "Saif Khan Mohammed",
+        "Ronny Hadani",
+        "Ananthanarayanan Chockalingam",
+        "Robert Calderbank"
+      ],
+      "abstract": "The Zak-OTFS input/output (I/O) relation is predictable and non-fading when the delay and Doppler periods are greater than the effective channel delay and Doppler spreads, a condition which we refer to as the crystallization condition. When the crystallization condition is satisfied, we describe how to integrate sensing and communication within a single Zak-OTFS subframe by transmitting a pilot in the center of the subframe and surrounding the pilot with a pilot region and guard band to mitigate interference between data symbols and pilot. At the receiver we first read off the effective channel taps within the pilot region, and then use the estimated channel taps to recover the data from the symbols received outside the pilot region. We introduce a framework for filter design in the delay-Doppler (DD) domain where the symplectic Fourier transform connects aliasing in the DD domain (predictability of the I/O relation) with time/bandwidth expansion. The choice of pulse shaping filter determines the fraction of pilot energy that lies outside the pilot region and the degradation in BER performance that results from the interference to data symbols. We demonstrate that Gaussian filters in the DD domain provide significant improvements in BER performance over the sinc and root raised cosine filters considered in previous work. We also demonstrate that, by limiting DD domain aliasing, Gaussian filters extend the region where the crystallization condition is satisfied. The Gaussian filters considered in this paper are a particular case of factorizable pulse shaping filters in the DD domain, and this family of filters may be of independent interest."
+    },
+    {
+      "id": "cmtekdoc800i0zevdlq0j9225",
+      "title": "Low-Complexity OTFS-Based Over-the-Air Computation Design for Time-Varying Channels",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2405.07040",
+      "rawUrl": "https://arxiv.org/abs/2405.07040",
+      "source": "arxiv",
+      "publishedAt": "2024-05-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.712Z",
+      "lastSeen": "2026-10-02T09:41:29.900Z",
+      "versionsCount": 2,
+      "authors": [
+        "Xinyu Huang",
+        "Henrik Hellström",
+        "Carlo Fischione"
+      ],
+      "abstract": "This paper investigates over-the-air computation (AirComp) over multiple-access time-varying channels, where devices with high mobility transmit their sensing data to a fusion center (FC) for averaging. To combat the Doppler shift induced by time-varying channels, each device adopts orthogonal time frequency space (OTFS) modulation. Our objective is minimizing the mean squared error (MSE) for the target function estimation. Due to the multipath time-varying channels, the OTFS-based AirComp not only suffers from noise but also interference. Specifically, we propose three schemes, namely S1, S2, and S3, for the target function estimation. S1 directly estimates the target function under the impacts of noise and interference. S2 mitigates the interference by introducing a zero padding-assisted OTFS. In S3, we propose an iterative algorithm to estimate the function in a matrix form. In the numerical results, we evaluate the performance of S1, S2, and S3 from the perspectives of MSE and computational complexity, and compare them with benchmarks. Specifically, compared to benchmarks, S3 outperforms them with a significantly lower MSE but incurs a higher computational complexity. In contrast, S2 demonstrates a reduction in both MSE and computational complexity. Lastly, S1 shows superior error performance at small SNR and reduced computational complexity."
+    },
+    {
+      "id": "cmtekdod000i8zevdejfrs4nu",
+      "title": "Joint Channel, Data, and Radar Parameter Estimation for AFDM Systems in Doubly-Dispersive Channels",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2405.16945",
+      "rawUrl": "https://arxiv.org/abs/2405.16945",
+      "source": "arxiv",
+      "publishedAt": "2024-05-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.740Z",
+      "lastSeen": "2026-10-02T09:41:30.540Z",
+      "versionsCount": 2,
+      "authors": [
+        "Kuranage Roche Rayan Ranasinghe",
+        "Hyeon Seok Rou",
+        "Giuseppe Thadeu Freitas de Abreu",
+        "Takumi Takahashi",
+        "Kenta Ito"
+      ],
+      "abstract": "We propose new schemes for joint channel and data estimation (JCDE) and radar parameter estimation (RPE) in doubly-dispersive channels, such that integrated sensing and communications (ISAC) is enabled by user equipment (UE) independently performing JCDE, and base stations (BSs) performing RPE. The contributed JCDE and RPE schemes are designed for waveforms known to perform well in doubly-dispersive channels, under a unified model that captures the features of either legacy orthogonal frequency division multiplexing (OFDM), state-of-the-art (SotA) orthogonal time frequency space (OTFS), and next-generation affine frequency division multiplexing (AFDM) systems. The proposed JCDE algorithm is based on a Bayesian parametric bilinear Gaussian belief propagation (PBiGaBP) framework first proposed for OTFS and here shown to apply to all aforementioned waveforms, while the RPE scheme is based on a new probabilistic data association (PDA) approach incorporating a Bernoulli-Gaussian denoising, optimized via expectation maximization (EM). Simulation results demonstrate that JCDE in AFDM systems utilizing a single pilot per block significantly outperforms the SotA alternative even if the latter is granted a substantial power advantage. Similarly, the AFDM-based RPE scheme is found to outperform the OTFS-based approach, as well as the sparse Bayesian learning (SBL) technique, regardless of the waveform used."
+    },
+    {
+      "id": "cmtekdn1n007szevd5v9haaxm",
+      "title": "OTFS Channel Estimation and Detection for Channels with Very Large Delay Spread",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2404.08333",
+      "rawUrl": "https://arxiv.org/abs/2404.08333",
+      "source": "arxiv",
+      "publishedAt": "2024-04-12T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.035Z",
+      "lastSeen": "2026-10-02T09:41:30.038Z",
+      "versionsCount": 2,
+      "authors": [
+        "Preety Priya",
+        "Yi Hong",
+        "Emanuele Viterbo"
+      ],
+      "abstract": "In low latency applications and in general, for overspread channels, channel delay spread is a large percentage of the transmission frame duration. In this paper, we consider OTFS in an overspread channel exhibiting a delay spread that exceeds the block duration in a frame, where traditional channel estimation (CE) fails. We propose a two-stage CE method based on a delay-Doppler (DD) training frame, consisting of a dual chirp converted from time domain and a higher power pilot. The first stage employs a DD domain embedded pilot CE to estimate the aliased delays (due to modulo operation) and Doppler shifts, followed by identifying all the underspread paths not coinciding with any overspread path. The second stage utilizes time domain dual chirp correlation to estimate the actual delays and Doppler shifts of the remaining paths. This stage also resolves ambiguity in estimating delays and Doppler shifts for paths sharing same aliased delay. Furthermore, we present a modified low-complexity maximum ratio combining (MRC) detection algorithm for OTFS in overspread channels. Finally, we evaluate performance of OTFS using the proposed CE and the modified MRC detection in terms of normalized mean square error (NMSE) and bit error rate (BER)."
+    },
+    {
+      "id": "cmtekdn22007wzevd5l94sg5b",
+      "title": "Graph-based Untrained Neural Network Detector for OTFS Systems",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2404.05191",
+      "rawUrl": "https://arxiv.org/abs/2404.05191",
+      "source": "arxiv",
+      "publishedAt": "2024-04-08T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.051Z",
+      "lastSeen": "2026-10-02T09:41:29.936Z",
+      "versionsCount": 2,
+      "authors": [
+        "Hao Chang",
+        "Branka Vucetic",
+        "Wibowo Hardjawana"
+      ],
+      "abstract": "Inter-carrier interference (ICI) caused by mobile reflectors significantly degrades the conventional orthogonal frequency division multiplexing (OFDM) performance in high-mobility environments. The orthogonal time frequency space (OTFS) modulation system effectively represents ICI in the delay-Doppler domain, thus significantly outperforming OFDM. Existing iterative and neural network (NN) based OTFS detectors suffer from high complex matrix operations and performance degradation in untrained environments, where the real wireless channel does not match the one used in the training, which often happens in real wireless networks. In this paper, we propose to embed the prior knowledge of interference extracted from the estimated channel state information (CSI) as a directed graph into a decoder untrained neural network (DUNN), namely graph-based DUNN (GDUNN). We then combine it with Bayesian parallel interference cancellation (BPIC) for OTFS symbol detection, resulting in GDUNN-BPIC. Simulation results show that the proposed GDUNN-BPIC outperforms state-of-the-art OTFS detectors under imperfect CSI."
+    },
+    {
+      "id": "cmtekdo6x00gszevd1kxfudth",
+      "title": "Channel Estimation in Uplink Multi-User Scenario using OTFS Modulation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2404.11328",
+      "rawUrl": "https://arxiv.org/abs/2404.11328",
+      "source": "arxiv",
+      "publishedAt": "2024-04-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.521Z",
+      "lastSeen": "2026-10-02T09:41:30.322Z",
+      "versionsCount": 2,
+      "authors": [
+        "Yatish Pachigolla",
+        "Lorenzo Zaniboni",
+        "Mahdi Mahvari"
+      ],
+      "abstract": "Channel estimation techniques for orthogonal time frequency space (OTFS) modulation scheme are investigated. The orthogonal matching pursuit algorithm is investigated with and without side channel information, and an efficient data placement is proposed alongside the pilot in the multi-user scenario based on impulse pilot-based estimation. Finally, the performance of the estimation techniques across different multi-user scenarios is evaluated and compared, highlighting the strengths and weaknesses of each method"
+    },
+    {
+      "id": "cmtekdn2i0080zevdrmkne5zd",
+      "title": "Single-Carrier Delay-Doppler Domain Equalization",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2403.16453",
+      "rawUrl": "https://arxiv.org/abs/2403.16453",
+      "source": "arxiv",
+      "publishedAt": "2024-03-25T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.066Z",
+      "lastSeen": "2026-10-02T09:41:29.826Z",
+      "versionsCount": 2,
+      "authors": [
+        "Yuto Hama",
+        "Hideki Ochiai"
+      ],
+      "abstract": "For doubly-selective channels, delay-Doppler (DD) modulation, mostly known as orthogonal time frequency space (OTFS) modulation, enables simultaneous compensation of delay and Doppler shifts. However, OTFS modulated signal has high peak-to-average power ratio (PAPR) because of its precoding operation performed over the DD domain. In order to deal with this problem, we propose a single-carrier transmission with delay-Doppler domain equalization (SC-DDE). In this system, the discretized time-domain SC signal is converted to the DD domain by discrete Zak transform (DZT) at the receiver side, followed by delay-Doppler domain equalization (DDE). Since equalization is performed in the DD domain, the SC-DDE receiver should acquire the channel delay-Doppler response. To this end, we introduce an embedded pilot-aided channel estimation scheme designed for SC-DDE, which does not affect the peak power property of transmitted signals. Through computer simulation, distribution of PAPR and bit error rate (BER) performance of the proposed system are compared with those of the conventional OTFS and SC with frequency-domain equalization (SC-FDE). As a result, our proposed SC-DDE significantly outperforms SC-FDE in terms of BER at the expense of additional computational complexity at the receiver. Furthermore, SC-DDE shows much lower PAPR than OTFS even though they achieve comparable coded BER performance."
+    },
+    {
+      "id": "cmtekdn2z0084zevdawt0i21e",
+      "title": "Interference Cancellation for OTFS-Based Over-the-Air Computation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2403.11272",
+      "rawUrl": "https://arxiv.org/abs/2403.11272",
+      "source": "arxiv",
+      "publishedAt": "2024-03-17T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.083Z",
+      "lastSeen": "2026-10-02T09:41:30.730Z",
+      "versionsCount": 2,
+      "authors": [
+        "Xinyu Huang",
+        "Henrik Hellstrom",
+        "Carlo Fischione"
+      ],
+      "abstract": "This paper investigates over-the-air computation (AirComp) in the context of multiple-access time-varying multipath channels. We focus on a scenario where devices with high mobility transmit their sensing data to a fusion center (FC) for averaging. To combat the time-varying channel and Doppler effect, each device adopts orthogonal time frequency space (OTFS) modulation. After signals are received by the FC, the aggregated data undergoes demodulation and estimation within the delay-Doppler domain. We leverage the mean squared error (MSE) as a metric for the computational error of OTFS-based AirComp. We then derive the optimal transmit power at each device and signal scaling factor at FC for minimizing MSE. Notably, the performance of OTFS-based AirComp is not only affected by the noise but also by the inter-symbol interference and inter-link interference arising from the multipath channel. To counteract the interference-induced computational errors, we incorporate zero-padding (ZP)-assisted OTFS into AirComp and propose algorithms for interference cancellation. Numerical results underscore the enhanced performance of ZP-assisted OTFS-based AirComp over naive OTFS-based AirComp."
+    },
+    {
+      "id": "cmtekdn3f0088zevdb91gpyrl",
+      "title": "Joint Sparsity Pattern Learning Based Channel Estimation for Massive MIMO-OTFS Systems",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2403.03771",
+      "rawUrl": "https://arxiv.org/abs/2403.03771",
+      "source": "arxiv",
+      "publishedAt": "2024-03-06T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.099Z",
+      "lastSeen": "2026-10-02T09:41:30.338Z",
+      "versionsCount": 2,
+      "authors": [
+        "Kuo Meng",
+        "Shaoshi Yang",
+        "Xiao-Yang Wang",
+        "Yan Bu",
+        "Yurong Tang",
+        "Jianhua Zhang",
+        "Lajos Hanzo"
+      ],
+      "abstract": "We propose a channel estimation scheme based on joint sparsity pattern learning (JSPL) for massive multi-input multi-output (MIMO) orthogonal time-frequency-space (OTFS) modulation aided systems. By exploiting the potential joint sparsity of the delay-Doppler-angle (DDA) domain channel, the channel estimation problem is transformed into a sparse recovery problem. To solve it, we first apply the spike and slab prior model to iteratively estimate the support set of the channel matrix, and a higher-accuracy parameter update rule relying on the identified support set is introduced into the iteration. Then the specific values of the channel elements corresponding to the support set are estimated by the orthogonal matching pursuit (OMP) method. Both our simulation results and analysis demonstrate that the proposed JSPL channel estimation scheme achieves an improved performance over the representative state-of-the-art baseline schemes, despite its reduced pilot overhead."
+    },
+    {
+      "id": "cmtekdo9000h8zevd0vqdvrx1",
+      "title": "Optimal Pilot Design for OTFS in Linear Time-Varying Channels",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2403.19379",
+      "rawUrl": "https://arxiv.org/abs/2403.19379",
+      "source": "arxiv",
+      "publishedAt": "2024-03-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.596Z",
+      "lastSeen": "2026-10-02T09:41:29.997Z",
+      "versionsCount": 2,
+      "authors": [
+        "Ids van der Werf",
+        "Richard Heusdens",
+        "Richard C. Hendriks",
+        "Geert Leus"
+      ],
+      "abstract": "This paper investigates the positioning of the pilot symbols, as well as the power distribution between the pilot and the communication symbols in the orthogonal time frequency space (OTFS) modulation scheme. We analyze the pilot placements that minimize the mean squared error (MSE) in estimating the channel taps. This allows us to identify two new pilot allocations for OTFS. In addition, we optimize the average channel capacity by adjusting the power balance. We show that this leads to a significant increase in average capacity. The results provide valuable guidance for designing the OTFS parameters to achieve maximum capacity. Numerical simulations are performed to validate the findings."
+    },
+    {
+      "id": "cmtekdn3x008czevdp8jx7zdv",
+      "title": "Zak-OTFS and LDPC Codes",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2402.09551",
+      "rawUrl": "https://arxiv.org/abs/2402.09551",
+      "source": "arxiv",
+      "publishedAt": "2024-02-14T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.117Z",
+      "lastSeen": "2026-10-02T09:41:29.355Z",
+      "versionsCount": 2,
+      "authors": [
+        "Beyza Dabak",
+        "Venkatesh Khammammetti",
+        "Saif Khan Mohammed",
+        "Robert Calderbank"
+      ],
+      "abstract": "Orthogonal Time Frequency Space (OTFS) is a framework for communications and active sensing that processes signals in the delay-Doppler (DD) domain. It is informed by 6G propagation environments, where Doppler spreads measured in kHz make it more and more difficult to estimate channels, and the standard model-dependent approach to wireless communication is starting to break down. We consider Zak-OTFS where inverse Zak transform converts information symbols mounted on DD domain pulses to the time domain for transmission. Zak-OTFS modulation is parameterized by a delay period $\\tau_{p}$ and a Doppler period $\\nu_{p}$, where the product $\\tau_{p}\\nu_{p}=1$. When the channel spread is less than the delay period, and the Doppler spread is less than the Doppler period, the Zak-OTFS input-output relation can be predicted from the response to a single pilot symbol. The highly reliable channel estimates concentrate around the pilot location, and we configure low-density parity-check (LDPC) codes that take advantage of this prior information about reliability. It is advantageous to allocate information symbols to more reliable bins in the DD domain. We report simulation results for a Veh-A channel model where it is not possible to resolve all the paths, showing that LDPC coding extends the range of Doppler spreads for which reliable model-free communication is possible. We show that LDPC coding reduces sensitivity to the choice of transmit filter, making bandwidth expansion less necessary. Finally, we compare BER performance of Zak-OTFS to that of a multicarrier approximation (MC-OTFS), showing LDPC coding amplifies the gains previously reported for uncoded transmission."
+    },
+    {
+      "id": "cmtekdn4e008gzevdp9nz77cp",
+      "title": "SC-FDMA as a Delay-Doppler Domain Modulation Technique",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2402.07751",
+      "rawUrl": "https://arxiv.org/abs/2402.07751",
+      "source": "arxiv",
+      "publishedAt": "2024-02-12T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.135Z",
+      "lastSeen": "2026-10-02T09:41:29.373Z",
+      "versionsCount": 2,
+      "authors": [
+        "Arman Farhang",
+        "Mohsen Bayat"
+      ],
+      "abstract": "This paper compares orthogonal time frequency space (OTFS) modulation and single-carrier frequency division multiple access (SC-FDMA). It shows that these are equivalent except for a set of linear phase shifts, applied to the transmit/receive data symbols, which can be absorbed into the channel. Through mathematical and numerical analysis, it is confirmed that SC-FDMA is in fact a delay-Doppler domain multiplexing technique that can achieve the same performance gains as those of OTFS in time-varying wireless environments. This is a promising result as SC-FDMA is already a part of the current wireless standards. The derivations in this paper also shed light on the time-frequency resources used by the delay-Doppler domain data symbols with the fine granularity of delay and Doppler spacings. While comparing the detection performance of the two waveforms, a timing offset (TO) estimation technique with orders of magnitude higher accuracy than the existing solutions in the literature is proposed. From multiple access viewpoint, the underlying tile structures in the time-frequency domain for OTFS and SC-FDMA are discussed. Finally, multiuser input-output relationships for both waveforms in the uplink are derived."
+    },
+    {
+      "id": "cmtekdo5q00gkzevdwqho93ob",
+      "title": "From OTFS to AFDM: A Comparative Study of Next-Generation Waveforms for ISAC in Doubly-Dispersive Channels",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2401.07700",
+      "rawUrl": "https://arxiv.org/abs/2401.07700",
+      "source": "arxiv",
+      "publishedAt": "2024-01-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.478Z",
+      "lastSeen": "2026-10-02T09:41:29.015Z",
+      "versionsCount": 2,
+      "authors": [
+        "Hyeon Seok Rou",
+        "Giuseppe Thadeu Freitas de Abreu",
+        "Junil Choi",
+        "David González G.",
+        "Marios Kountouris",
+        "Yong Liang Guan",
+        "Osvaldo Gonsa"
+      ],
+      "abstract": "Next-generation wireless systems will offer integrated sensing and communications (ISAC) functionalities not only in order to enable new applications, but also as a means to mitigate challenges such as doubly-dispersive channels, which arise in high mobility scenarios and/or at millimeter-wave (mmWave) and Terahertz (THz) bands. An emerging approach to accomplish these goals is the design of new waveforms, which draw from the inherent relationship between the doubly-dispersive nature of time-variant (TV) channels and the environmental features of scatterers manifested in the form of multi-path delays and Doppler shifts. Examples of such waveforms are the delay-Doppler domain orthogonal time frequency space (OTFS) and the recently proposed chirp domain affine frequency division multiplexing (AFDM), both of which seek to simultaneously combat the detrimental effects of double selectivity and exploit them for the estimation (or sensing) of environmental information. This article aims to provide a consolidated and comprehensive overview of the signal processing techniques required to support reliable ISAC over doubly-dispersive channels in beyond fifth generation (B5G)/sixth generation (6G) systems, with an emphasis on OTFS and AFDM waveforms, as those, together with the traditional orthogonal frequency division multiplexing (OFDM) waveform, suffice to elaborate on the most relevant properties of the trend. The analysis shows that OTFS and AFDM indeed enable significantly improved robustness against inter-carrier interference (ICI) arising from Doppler shifts compared to OFDM. In addition, the inherent delay-Doppler domain orthogonality of the OTFS and AFDM effective channels is found to provide significant advantages for the design and the performance of integrated sensing functionalities."
+    },
+    {
+      "id": "cmtiv8dn7000z6dvtuvoxe2ap",
+      "title": "Zak-OTFS and LDPC Codes",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ICC51166.2024.10622586",
+      "rawUrl": "http://dx.doi.org/10.1109/ICC51166.2024.10622586",
+      "source": "duke-calderbank",
+      "publishedAt": "2024-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:28.051Z",
+      "lastSeen": "2026-09-01T16:12:28.051Z",
+      "versionsCount": 1,
+      "authors": [
+        "Dabak, B",
+        "Khammammetti, V",
+        "Mohammed, SK",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8h7u00sn6dvtrqnhfti8",
+      "title": "MIMO Precoding at the Speed of Wireless: Precoder Prediction for MIMO-OTFS Systems",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/VTC2024-Fall63153.2024.10757975",
+      "rawUrl": "http://dx.doi.org/10.1109/VTC2024-Fall63153.2024.10757975",
+      "source": "duke-calderbank",
+      "publishedAt": "2024-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:32.683Z",
+      "lastSeen": "2026-09-01T16:12:32.683Z",
+      "versionsCount": 1,
+      "authors": [
+        "Allen, E",
+        "Said, K",
+        "Calderbank, R",
+        "Liu, L"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtekdobf00hszevdfff9onp5",
+      "title": "A Low-Complexity Range Estimation with Adjusted Affine Frequency Division Multiplexing Waveform",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2312.11125",
+      "rawUrl": "https://arxiv.org/abs/2312.11125",
+      "source": "arxiv",
+      "publishedAt": "2023-12-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.684Z",
+      "lastSeen": "2026-10-02T09:41:29.675Z",
+      "versionsCount": 2,
+      "authors": [
+        "Jiajun Zhu",
+        "Yanqun Tang",
+        "Xizhang Wei",
+        "Haoran Yin",
+        "Jinming Du",
+        "Zhengpeng Wang",
+        "Yuqinng Liu"
+      ],
+      "abstract": "Affine frequency division multiplexing (AFDM) is a recently proposed communication waveform for time-varying channel scenarios. As a chirp-based multicarrier modulation technique it can not only satisfy the needs of multiple scenarios in future mobile communication networks but also achieve good performance in radar sensing by adjusting the built-in parameters, making it a promising air interface waveform in integrated sensing and communication (ISAC) applications. In this paper, we investigate an AFDM-based radar system and analyze the radar ambiguity function of AFDM with different built-in parameters, based on which we find an AFDM waveform with the specific parameter c2 owns the near-optimal time-domain ambiguity function. Then a low-complexity algorithm based on matched filtering for high-resolution target range estimation is proposed for this specific AFDM waveform. Through simulation and analysis, the specific AFDM waveform has near-optimal range estimation performance with the proposed low-complexity algorithm while having the same bit error rate (BER) performance as orthogonal time frequency space (OTFS) using simple linear minimum mean square error (LMMSE) equalizer."
+    },
+    {
+      "id": "cmtekdn4v008kzevd6mo1zsxh",
+      "title": "Coexistence of OTFS Modulation With OFDM-based Communication Systems",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2311.06850",
+      "rawUrl": "https://arxiv.org/abs/2311.06850",
+      "source": "arxiv",
+      "publishedAt": "2023-11-12T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.152Z",
+      "lastSeen": "2026-10-02T09:41:29.582Z",
+      "versionsCount": 2,
+      "authors": [
+        "Akram Shafie",
+        "Jinhong Yuan",
+        "Yuting Fang",
+        "Paul Fitzpatrick",
+        "Taka Sakurai"
+      ],
+      "abstract": "This study examines the coexistence of orthogonal time-frequency space (OTFS) modulation with current fourth- and fifth-generation (4G/5G) wireless communication systems that primarily use orthogonal frequency-division multiplexing (OFDM) waveforms. We first derive the input-output-relation (IOR) of OTFS when it coexists with an OFDM system while considering the impact of unequal lengths of the cyclic prefixes (CPs) in the OTFS signal. We show analytically that the inclusion of multiple CPs to the OTFS signal results in the effective sampled delay-Doppler (DD) domain channel response to be less sparse. We also show that the effective DD domain channel coefficients for OTFS in coexisting systems are influenced by the unequal lengths of the CPs. Subsequently, we propose an embedded pilot-aided channel estimation (CE) technique for OTFS in coexisting systems that leverages the derived IOR for accurate channel characterization. Using numerical results, we show that ignoring the impact of unequal lengths of the CPs during signal detection can degrade the bit error rate performance of OTFS in coexisting systems. We also show that the proposed CE technique for OTFS in coexisting systems outperforms the state-of-the-art threshold-based CE technique."
+    },
+    {
+      "id": "cmtekdode00iczevdewu1104p",
+      "title": "Joint Communication and Sensing in OTFS-based UAV Networks",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2311.17742",
+      "rawUrl": "https://arxiv.org/abs/2311.17742",
+      "source": "arxiv",
+      "publishedAt": "2023-11-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.755Z",
+      "lastSeen": "2026-10-02T09:41:29.213Z",
+      "versionsCount": 2,
+      "authors": [
+        "Alessandro Nordio",
+        "Carla Fabiana Chiasserini",
+        "Emanuele Viterbo"
+      ],
+      "abstract": "We consider the problem of accurately localizing $N$ unmanned aerial vehicles (UAV) in 3D space where the UAVs are part of a swarm and communicate with each other through orthogonal time-frequency space (OTFS) modulated signals. The OTFS communication system operates in the delay-Doppler domain and can simultaneously provide range and velocity information about the scatterers in the channels at no additional cost. Each receiving UAV estimates the multipath wireless channel on each link formed by the line-of-sight (LoS) transmission and by the single reflections from the remaining $N-2$ UAVs. The estimated channel delay profiles are communicated to an edge server to estimate the location and velocity of the UAVs from the relative echo delay (RED) measurements between the LoS and the non-LoS paths. To accurately obtain such estimations, we propose a solution called Turbo Iterative Positioning (TIP), initialized by a belief-propagation approach. Enabling a full cold start (no prior knowledge of initial positions), the belief propagation first provides a map associating each echo to a reflecting UAV. The localization of the $N$ UAVs is then derived by iteratively alternating a gradient descent optimization and a refinement of the association maps between UAVs and echos. Given that the OTFS receivers also acquire the Doppler shifts of each path, the UAV's velocities can be sensed jointly with communication. Our numerical results, obtained also using real-world traces, show how the multipath links are beneficial to achieving very accurate position and velocity for all UAVs, even with a limited delay-Doppler resolution. The robustness of our scheme is proven by its performance approaching the Cramer-Rao bound."
+    },
+    {
+      "id": "cmtekdn5c008ozevd3gziu5ux",
+      "title": "Improving Channel Estimation Performance for Uplink OTFS Transmissions: Pilot Design based on A Posteriori Cramer-Rao Bound",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2310.18573",
+      "rawUrl": "https://arxiv.org/abs/2310.18573",
+      "source": "arxiv",
+      "publishedAt": "2023-10-28T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.168Z",
+      "lastSeen": "2026-10-02T09:41:29.160Z",
+      "versionsCount": 2,
+      "authors": [
+        "Mingcheng Nie",
+        "Shuangyang Li",
+        "Deepak Mishra"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) has been widely acknowledged as a promising wireless technology for challenging transmission scenarios, including high-mobility channels. In this paper, we investigate the pilot design for the multi-user OTFS system based on the a priori statistical channel state information (CSI), where the practical threshold-based estimation scheme is adopted. Specifically, we first derive the a posteriori Cramer-Rao bound (PCRB) based on a priori channel information for each user. According to our derivation, the PCRB only relates to the user's pilot signal-to-noise ratio (SNR) and the range of delay and Doppler shifts under the practical power-delay and power-Doppler profiles. Then, a pilot scheme is proposed to minimize the average PCRB of different users, where a closed-form global optimal pilot power allocation is derived. Our numerical results verify the multi-user PCRB analysis. Also, we demonstrate an around 3 dB improvement in the average normalized-mean-square error (NMSE) by using the proposed pilot design in comparison to the conventional embedded pilot design under the same total pilot power."
+    },
+    {
+      "id": "cmtekdn5r008szevdf1wfchwk",
+      "title": "Robust NOMA-assisted OTFS-ISAC Network Design with 3D Motion Prediction Topology",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2310.13984",
+      "rawUrl": "https://arxiv.org/abs/2310.13984",
+      "source": "arxiv",
+      "publishedAt": "2023-10-21T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.183Z",
+      "lastSeen": "2026-10-02T09:41:29.138Z",
+      "versionsCount": 2,
+      "authors": [
+        "Luping Xiang",
+        "Ke Xu",
+        "Jie Hu",
+        "Christos Masouros",
+        "Kun Yang"
+      ],
+      "abstract": "This paper proposes a novel non-orthogonal multiple access (NOMA)-assisted orthogonal time-frequency space (OTFS)-integrated sensing and communication (ISAC) network, which uses unmanned aerial vehicles (UAVs) as air base stations to support multiple users. By employing ISAC, the UAV extracts position and velocity information from the user's echo signals, and non-orthogonal power allocation is conducted to achieve a superior achievable rate. A 3D motion prediction topology is used to guide the NOMA transmission for multiple users, and a robust power allocation solution is proposed under perfect and imperfect channel estimation for Maxi-min Fairness (MMF) and Maximum sum-Rate (SR) problems. Simulation results demonstrate the superiority of the proposed NOMA-assisted OTFS-ISAC system over other systems in terms of achievable rate under both perfect and imperfect channel conditions with the aid of 3D motion prediction topology."
+    },
+    {
+      "id": "cmtekdn69008wzevd5xkxp86q",
+      "title": "Performance Analysis of a Low-Complexity OTFS Integrated Sensing and Communication System",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2310.10476",
+      "rawUrl": "https://arxiv.org/abs/2310.10476",
+      "source": "arxiv",
+      "publishedAt": "2023-10-16T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.201Z",
+      "lastSeen": "2026-10-02T09:41:29.034Z",
+      "versionsCount": 2,
+      "authors": [
+        "Tommaso Bacchielli",
+        "Lorenzo Pucci",
+        "Enrico Paolini",
+        "Andrea Giorgetti"
+      ],
+      "abstract": "This work proposes a low-complexity estimation approach for an orthogonal time frequency space (OTFS)-based integrated sensing and communication (ISAC) system. In particular, we first define four low-dimensional matrices used to compute the channel matrix through simple algebraic manipulations. Secondly, we establish an analytical criterion, independent of system parameters, to identify the most informative elements within these derived matrices, leveraging the properties of the Dirichlet kernel. This allows the distilling of such matrices, keeping only those entries that are essential for detection, resulting in an efficient, low-complexity implementation of the sensing receiver. Numerical results, which refer to a vehicular scenario, demonstrate that the proposed approximation technique effectively preserves the sensing performance, evaluated in terms of root mean square error (RMSE) of the range and velocity estimation, while concurrently reducing the computational effort enormously."
+    },
+    {
+      "id": "cmtekdn6x0090zevd2u2tr7e3",
+      "title": "Input-Output Relation and Low-Complexity Receiver Design for CP-OTFS Systems with Doppler Squint",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2310.07200",
+      "rawUrl": "https://arxiv.org/abs/2310.07200",
+      "source": "arxiv",
+      "publishedAt": "2023-10-11T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.226Z",
+      "lastSeen": "2026-10-02T09:41:28.982Z",
+      "versionsCount": 2,
+      "authors": [
+        "Xuehan Wang",
+        "Xu Shi",
+        "Jintao Wang",
+        "Jian Song"
+      ],
+      "abstract": "In orthogonal time frequency space (OTFS) systems, the impact of frequency-dependent Doppler which is referred to as the Doppler squint effect (DSE) is accumulated through longer duration, whose negligence has prevented OTFS systems from exploiting the performance superiority. In this paper, practical OFDM system using cyclic prefix time guard interval (CP-OFDM)-based OTFS systems with DSE are adopted. Cyclic prefix (CP) length is analyzed while the input-output relation considering DSE is derived. By deploying two prefix OFDM symbols, the channel estimation can be easily divided into three parts as delay detection, Doppler extraction and gain estimation. The linear equalization scheme is adopted taking the block diagonal property of the channel matrix into account, which completes the low-complexity receiver design. Simulation results confirm the significance of DSE and the considerable performance of the proposed low-complexity receiver scheme considering DSE."
+    },
+    {
+      "id": "cmtekdo0700f8zevdayx23h2q",
       "title": "Message Passing-Based Joint Channel Estimation and Signal Detection for OTFS with Superimposed Pilots",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2309.08177",
       "rawUrl": "https://arxiv.org/abs/2309.08177",
       "source": "arxiv",
-      "publishedAt": null,
+      "publishedAt": "2023-09-01T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:34.279Z",
-      "lastSeen": "2026-08-29T15:57:34.279Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:29.323Z",
+      "versionsCount": 2,
       "authors": [
         "Fupeng Huang",
         "Qinghua Guo",
         "Youwen Zhang",
         "Yuriy Zakharov"
-      ]
+      ],
+      "abstract": "Receivers with joint channel estimation and signal detection using superimposed pilots (SP) can achieve high transmission efficiency in orthogonal time frequency space (OTFS) systems. However, existing receivers have high computational complexity, hindering their practical applications. In this work, with SP in the delay-Doppler (DD) domain and the generalized complex exponential (GCE) basis expansion modeling (BEM) for channels, a message passing-based SP-DD iterative receiver is proposed, which drastically reduces the computational complexity while with marginal performance loss, compared to existing ones. To facilitate channel estimation (CE) in the proposed receiver, we design pilot signal to achieve pilot power concentration in the frequency domain, thereby developing an SP-DD-D receiver that can effectively reduce the power of the pilot signal and almost no loss of CE accuracy. Extensive simulation results are provided to demonstrate the superiority of the proposed SP-DD-D receiver."
     },
     {
-      "title": "Integrated Sensing and Communication-assisted Orthogonal Time Frequency Space Transmission for Vehicular Networks",
+      "id": "cmtekdo3o00g4zevdlj10uznz",
+      "title": "AFDM vs OTFS: A Comparative Study of Promising Waveforms for ISAC in Doubly-Dispersive Channels",
       "type": "PAPER",
-      "url": "https://arxiv.org/abs/2105.03125",
-      "rawUrl": "https://arxiv.org/abs/2105.03125",
+      "url": "https://arxiv.org/abs/2309.04998",
+      "rawUrl": "https://arxiv.org/abs/2309.04998",
       "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.295Z",
-      "lastSeen": "2026-08-29T15:57:34.295Z",
-      "versionsCount": 1,
+      "publishedAt": "2023-09-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.405Z",
+      "lastSeen": "2026-10-02T09:41:29.252Z",
+      "versionsCount": 2,
       "authors": [
-        "Weijie Yuan",
-        "Zhiqiang Wei",
-        "Shuangyang Li",
-        "Jinhong Yuan",
-        "Derrick Wing Kwan Ng"
-      ]
+        "Hyeon Seok Rou",
+        "Giuseppe Thadeu Freitas de Abreu",
+        "Junil Choi",
+        "David González G.",
+        "Osvaldo Gonsa",
+        "Yong Liang Guan",
+        "Marios Kountouris"
+      ],
+      "abstract": "**PLEASE FIND THE FULL EXTENDED ARTICLE \"From OTFS to AFDM: A Comparative Study of Next-Generation Waveforms for ISAC in Doubly-Dispersive Channels\" (Accepted for publication at the IEEE Signal Processing Magazine - Special Issue on Signal Processing for the Integrated Sensing and Communications Revolution)** This white paper aims to briefly describe a proposed article that will provide a thorough comparative study of waveforms designed to exploit the features of doubly-dispersive channels arising in heterogeneous high-mobility scenarios as expected in the beyond fifth generation (B5G) and sixth generation (6G), in relation to their suitability to integrated sensing and communications (ISAC) systems. In particular, the full article will compare the well-established delay-Doppler domain-based orthognal time frequency space (OTFS) and the recently proposed chirp domain-based affine frequency division multiplexing (AFDM) waveforms. Both these waveforms are designed based on a full delay- Doppler representation of the time variant (TV) multipath channel, yielding not only robustness and orthogonality of information symbols in high-mobility scenarios, but also a beneficial implication for environment target detection through the inherent capability of estimating the path delay and Doppler shifts, which are standard radar parameters. These modulation schemes are distinct candidates for ISAC in B5G/6G systems, such that a thorough study of their advantages, shortcomings, implications to signal processing, and performance of communication and sensing functions are well in order. In light of the above, a sample of the intended contribution (Special Issue paper) is provided below."
     },
     {
+      "id": "cmtekdn7h0094zevdj8jprumi",
+      "title": "Joint Device Identification, Channel Estimation, and Signal Detection for LEO Satellite-Enabled Random Access",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2308.03556",
+      "rawUrl": "https://arxiv.org/abs/2308.03556",
+      "source": "arxiv",
+      "publishedAt": "2023-08-07T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.245Z",
+      "lastSeen": "2026-10-02T09:41:28.948Z",
+      "versionsCount": 2,
+      "authors": [
+        "Boxiao Shen",
+        "Yongpeng Wu",
+        "Wenjun Zhang",
+        "Symeon Chatzinotas",
+        "Björn Ottersten"
+      ],
+      "abstract": "This paper investigates joint device identification, channel estimation, and signal detection for LEO satellite-enabled grant-free random access, where a multiple-input multipleoutput (MIMO) system with orthogonal time-frequency space modulation (OTFS) is utilized to combat the dynamics of the terrestrial-satellite link (TSL). We divide the receiver structure into three modules: first, a linear module for identifying active devices, which leverages the generalized approximate message passing (GAMP) algorithm to eliminate inter-user interference in the delay-Doppler domain; second, a non-linear module adopting the message passing algorithm to jointly estimate channel and detect transmit signals; the third aided by Markov random field (MRF) aims to explore the three dimensional block sparsity of channel in the delay-Doppler-angle domain. The soft information is exchanged iteratively between these three modules by careful scheduling. Furthermore, the expectation-maximization algorithm is embedded to learn the hyperparameters in prior distributions. Simulation results demonstrate that the proposed scheme outperforms the conventional methods significantly in terms of activity error rate, channel estimation accuracy, and symbol error rate."
+    },
+    {
+      "id": "cmtekdn7v0098zevdohvbp5rk",
+      "title": "Performance Analysis and Approximate Message Passing Detection of Orthogonal Time Sequency Multiplexing Modulation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2307.03028",
+      "rawUrl": "https://arxiv.org/abs/2307.03028",
+      "source": "arxiv",
+      "publishedAt": "2023-07-06T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.259Z",
+      "lastSeen": "2026-10-02T09:41:29.233Z",
+      "versionsCount": 2,
+      "authors": [
+        "Zeping Sui",
+        "Shefeng Yan",
+        "Hongming Zhang",
+        "Sumei Sun",
+        "Yonghong Zeng",
+        "Lie-Liang Yang",
+        "Lajos Hanzo"
+      ],
+      "abstract": "In orthogonal time sequency multiplexing (OTSM) modulation, the information symbols are conveyed in the delay-sequency domain upon exploiting the inverse Walsh Hadamard transform (IWHT). It has been shown that OTSM is capable of attaining a bit error ratio (BER) similar to that of orthogonal time-frequency space (OTFS) modulation at a lower complexity, since the saving of multiplication operations in the IWHT. Hence we provide its BER performance analysis and characterize its detection complexity. We commence by deriving its generalized input-output relationship and its unconditional pairwise error probability (UPEP). Then, its BER upper bound is derived in closed form under both ideal and imperfect channel estimation conditions, which is shown to be tight at moderate to high signal-to-noise ratios (SNRs). Moreover, a novel approximate message passing (AMP) aided OTSM detection framework is proposed. Specifically, to circumvent the high residual BER of the conventional AMP detector, we proposed a vector AMP-based expectation-maximization (VAMP-EM) detector for performing joint data detection and noise variance estimation. The variance auto-tuning algorithm based on the EM algorithm is designed for the VAMP-EM detector to further improve the convergence performance. The simulation results illustrate that the VAMP-EM detector is capable of striking an attractive BER vs. complexity trade-off than the state-of-the-art schemes as well as providing a better convergence. Finally, we propose AMP and VAMP-EM turbo receivers for low-density parity-check (LDPC)-coded OTSM systems. It is demonstrated that our proposed VAMP-EM turbo receiver is capable of providing both BER and convergence performance improvements over the conventional AMP solution."
+    },
+    {
+      "id": "cmtekdo1100fgzevdggtuj139",
       "title": "OTFS-based Robust MMSE Precoding Design in Over-the-air Computation",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2307.01525",
       "rawUrl": "https://arxiv.org/abs/2307.01525",
       "source": "arxiv",
-      "publishedAt": null,
+      "publishedAt": "2023-07-01T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:34.310Z",
-      "lastSeen": "2026-08-29T15:57:34.310Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:29.291Z",
+      "versionsCount": 2,
       "authors": [
         "Dongkai Zhou",
         "Jing Guo",
@@ -2635,66 +4275,491 @@ window.RETRACE_DATA = {
         "Zesong Fei",
         "Weijie Yuan",
         "Xinyi Wang"
-      ]
+      ],
+      "abstract": "Over-the-air computation (AirComp), as a data aggregation method that can improve network efficiency by exploiting the superposition characteristics of wireless channels, has received much attention recently. Meanwhile, the orthogonal time frequency space (OTFS) modulation can provide a strong Doppler resilience and facilitate reliable transmission for high-mobility communications. Hence, in this work, we investigate an OTFS-based AirComp system in the presence of time-frequency dual-selective channels. In particular, we commence from the development of a novel transmission framework for the considered system, where the pilot signal is sent together with data, and the channel estimation is implemented according to the echo from the access point to the sensor, thereby reducing the overhead of channel state information (CSI) feedback. Hereafter, based on the CSI estimated from the previous frame, a robust precoding matrix aiming at minimizing mean square error in the current frame is designed, which takes into account the estimation error from the receiver noise and the outdated CSI. The simulation results demonstrate the effectiveness of the proposed robust precoding scheme by comparing it with the non-robust precoding. The performance gain is more obvious in a high signal-to-noise ratio in case of large channel estimation errors."
     },
     {
+      "id": "cmtekdn8b009czevdbqxjk8pb",
+      "title": "Integrated Sensing and Communications with MIMO-OTFS",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2306.06361",
+      "rawUrl": "https://arxiv.org/abs/2306.06361",
+      "source": "arxiv",
+      "publishedAt": "2023-06-10T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.275Z",
+      "lastSeen": "2026-10-02T09:41:29.090Z",
+      "versionsCount": 2,
+      "authors": [
+        "Musa Furkan Keskin",
+        "Carina Marcus",
+        "Olof Eriksson",
+        "Alex Alvarado",
+        "Joerg Widmer",
+        "Henk Wymeersch"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) is a promising alternative to orthogonal frequency division multiplexing (OFDM) for high-mobility communications. We propose a novel multiple-input multiple-output (MIMO) integrated sensing and communication (ISAC) system based on OTFS modulation. We begin by deriving new sensing and communication signal models for the proposed MIMO-OTFS ISAC system that explicitly capture inter-symbol interference (ISI) and inter-carrier interference (ICI) effects. We then develop a generalized likelihood ratio test (GLRT) based multi-target detection and delay-Doppler-angle estimation algorithm for MIMO-OTFS radar sensing that can simultaneously mitigate and exploit ISI/ICI effects, to prevent target masking and surpass standard unambiguous detection limits in range/velocity. Moreover, considering two operational modes (search/track), we propose an adaptive MIMO-OTFS ISAC transmission strategy. For the search mode, we introduce the concept of delay-Doppler (DD) multiplexing, enabling omnidirectional probing of the environment and large virtual array at the OTFS radar receiver. For the track mode, we pursue a directional transmission approach and design an OTFS ISAC optimization algorithm in spatial and DD domains, seeking the optimal trade-off between radar signal-to-noise ratio (SNR) and achievable rate. Simulation results verify the effectiveness of the proposed sensing algorithm and reveal valuable insights into OTFS ISAC trade-offs under varying communication channel characteristics."
+    },
+    {
+      "id": "cmtekdn93009gzevdlrmjaer4",
+      "title": "Data-Aided CSI Estimation Using Affine-Precoded Superimposed Pilots in Orthogonal Time Frequency Space Modulated MIMO Systems",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2305.15855",
+      "rawUrl": "https://arxiv.org/abs/2305.15855",
+      "source": "arxiv",
+      "publishedAt": "2023-05-25T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.303Z",
+      "lastSeen": "2026-10-02T09:41:29.498Z",
+      "versionsCount": 2,
+      "authors": [
+        "Anand Mehrotra",
+        "Suraj Srivastava",
+        "Aditya K. Jagannatham",
+        "Lajos Hanzo"
+      ],
+      "abstract": "An orthogonal affine-precoded superimposed pilot-based architecture is developed for the cyclic prefix (CP)-aided SISO and MIMO orthogonal time frequency space systems relying on arbitrary transmitter-receiver pulse shaping. The data and pilot symbol matrices are affine-precoded and superimposed in the delay Doppler-domain followed by the development of an end-to-end DD-domain relationship for the input-output symbols. At the receiver, the decoupled pilot and data symbol are extracted by employing orthogonal precoder matrices, which eliminates the mutual interference. Furthermore, a novel pilot-aided Bayesian learning (PA-BL) technique is conceived for the channel state information (CSI) estimation of SISO OTFS systems based on the expectation-maximization (EM) technique. Subsequently, a data-aided Bayesian learning (DA-BL)-based joint CSI estimation and data detection technique is proposed, which beneficially harnesses the estimated data symbols for improved CSI estimation. In this scenario our sophisticated data detection rule also integrates the CSI uncertainty of channel estimation into our the linear minimum mean square error (LMMSE) detectors. The AP-SIP framework is also extended to MIMO OTFS systems, wherein the DD-domain input matrix is affine-precoded for each transmit antenna (TA). Then an EM algorithm-based PA-BL scheme is derived for simultaneous row-group sparse CSI estimation for this system, followed also by our data-aided DA-BL scheme that performs joint CSI estimation and data detection. Moreover, the Bayesian Cramer-Rao bounds (BCRBs) are also derived for both SISO as well as MIMO OTFS systems. Finally, simulation results are presented for characterizing the performance of the proposed CSI estimation techniques in a range of typical settings along with their bit error rate (BER) performance in comparison to an ideal system having perfect CSI."
+    },
+    {
+      "id": "cmtekdn9s009kzevdcya8izrb",
+      "title": "Truncated Turbo Equalizer with SIC for OTFS",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2305.14966",
+      "rawUrl": "https://arxiv.org/abs/2305.14966",
+      "source": "arxiv",
+      "publishedAt": "2023-05-24T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.328Z",
+      "lastSeen": "2026-10-02T09:41:28.930Z",
+      "versionsCount": 2,
+      "authors": [
+        "Sanoopkumar P. S.",
+        "Stephen McWade",
+        "Arman Farhang"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) is a promising candidate waveform for the next generation wireless communication systems. OTFS places data in the delay-Doppler (DD) domain, which simplifies channel estimation in highmobility scenarios. However, due to the 2-D convolution effect of the time-varying channel in the DD domain, equalization is still a challenge for OTFS. Existing equalizers for OTFS are either highly complex or they do not consider intercarrier interference present in high-mobility scenarios. Hence, in this paper, we propose a novel two-stage detection technique for coded OTFS systems. Our proposed detector brings orders of magnitude computational complexity reduction compared to existing methods. At the first stage, it truncates the channel by considering only the significant coefficients along the Doppler dimension and performs turbo equalization. To reduce the computational load of the turbo equalizer, our proposed method deploys the modified LSQR (mLSQR) algorithm. At the second stage, with only two successive interference cancellation (SIC) iterations, our proposed detector removes the residual interference caused by channel truncation. To evaluate the performance of our proposed truncated turbo equalizer with SIC (TTE-SIC), we set the minimum mean squared error (MMSE) equalizer without channel truncation as a benchmark. Our simulation results show that the proposed TTE-SIC technique achieves about the same bit error rate (BER) performance as the benchmark."
+    },
+    {
+      "id": "cmtekdna6009ozevdgyr5tvf1",
+      "title": "Sensing Aided Uplink Transmission in OTFS ISAC with Joint Parameter Association, Channel Estimation and Signal Detection",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2305.11548",
+      "rawUrl": "https://arxiv.org/abs/2305.11548",
+      "source": "arxiv",
+      "publishedAt": "2023-05-19T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.342Z",
+      "lastSeen": "2026-10-02T09:41:29.792Z",
+      "versionsCount": 2,
+      "authors": [
+        "Xi Yang",
+        "Hang Li",
+        "Qinghua Guo",
+        "J. Andrew Zhang",
+        "Xiaojing Huang",
+        "Zhiqun Cheng"
+      ],
+      "abstract": "In this work, we study sensing-aided uplink transmission in an integrated sensing and communication (ISAC) vehicular network with the use of orthogonal time frequency space (OTFS) modulation. To exploit sensing parameters for improving uplink communications, the parameters must be first associated with the transmitters, which is a challenging task. We propose a scheme that jointly conducts parameter association, channel estimation and signal detection by formulating it as a constrained bilinear recovery problem. Then we develop a message passing algorithm to solve the problem, leveraging the bilinear unitary approximate message passing (Bi-UAMP) algorithm. Numerical results validate the proposed scheme, which show that relevant performance bounds can be closely approached."
+    },
+    {
+      "id": "cmtekdnal009szevdr286vb2u",
+      "title": "Low-Complexity Reliability-Based Equalization and Detection for OTFS-NOMA",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2304.13607",
+      "rawUrl": "https://arxiv.org/abs/2304.13607",
+      "source": "arxiv",
+      "publishedAt": "2023-04-26T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.357Z",
+      "lastSeen": "2026-10-02T09:41:28.843Z",
+      "versionsCount": 2,
+      "authors": [
+        "Stephen McWade",
+        "Arman Farhang",
+        "Mark F. Flanagan"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation has recently emerged as a potential 6G candidate waveform which provides improved performance in high-mobility scenarios. In this paper we investigate the combination of OTFS with non-orthogonal multiple access (NOMA). Existing equalization and detection methods for OTFS-NOMA, such as minimum-mean-squared error with successive interference cancellation (MMSE-SIC), suffer from poor performance. Additionally, existing iterative methods for single-user OTFS based on low-complexity iterative least-squares solvers are not directly applicable to the NOMA scenario due to the presence of multi-user interference (MUI). Motivated by this, in this paper we propose a low-complexity method for equalization and detection for OTFS-NOMA. The proposed method uses a novel reliability zone (RZ) detection scheme which estimates the reliable symbols of the users and then uses interference cancellation to remove MUI. The thresholds for the RZ detector are optimized in a greedy manner to further improve detection performance. In order to optimize these thresholds, we modify the least squares with QR-factorization (LSQR) algorithm used for channel equalization to compute the the post-equalization mean-squared error (MSE), and track the evolution of this MSE throughout the iterative detection process. Numerical results demonstrate the superiority of the proposed equalization and detection technique to the existing MMSE-SIC benchmark in terms of symbol error rate (SER)."
+    },
+    {
+      "id": "cmtekdnb1009wzevdfmbsvegf",
+      "title": "Deep Learning-empowered Predictive Precoder Design for OTFS Transmission in URLLC",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2304.10723",
+      "rawUrl": "https://arxiv.org/abs/2304.10723",
+      "source": "arxiv",
+      "publishedAt": "2023-04-21T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.374Z",
+      "lastSeen": "2026-10-02T09:41:28.811Z",
+      "versionsCount": 2,
+      "authors": [
+        "Chang Liu",
+        "Shuangyang Li",
+        "Weijie Yuan",
+        "Xuemeng Liu",
+        "Derrick Wing Kwan Ng"
+      ],
+      "abstract": "To guarantee excellent reliability performance in ultra-reliable low-latency communications (URLLC), pragmatic precoder design is an effective approach. However, an efficient precoder design highly depends on the accurate instantaneous channel state information at the transmitter (ICSIT), which however, is not always available in practice. To overcome this problem, in this paper, we focus on the orthogonal time frequency space (OTFS)-based URLLC system and adopt a deep learning (DL) approach to directly predict the precoder for the next time frame to minimize the frame error rate (FER) via implicitly exploiting the features from estimated historical channels in the delay-Doppler domain. By doing this, we can guarantee the system reliability even without the knowledge of ICSIT. To this end, a general precoder design problem is formulated where a closed-form theoretical FER expression is specifically derived to characterize the system reliability. Then, a delay-Doppler domain channels-aware convolutional long short-term memory (CLSTM) network (DDCL-Net) is proposed for predictive precoder design. In particular, both the convolutional neural network and LSTM modules are adopted in the proposed neural network to exploit the spatial-temporal features of wireless channels for improving the learning performance. Finally, simulation results demonstrated that the FER performance of the proposed method approaches that of the perfect ICSI-aided scheme."
+    },
+    {
+      "id": "cmtekdo1g00fkzevdmdfo02s9",
       "title": "Low-PAPR Joint Channel Estimation and Data Detection in ZP-OTFS System",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2304.01681",
       "rawUrl": "https://arxiv.org/abs/2304.01681",
       "source": "arxiv",
-      "publishedAt": null,
+      "publishedAt": "2023-04-01T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:34.325Z",
-      "lastSeen": "2026-08-29T15:57:34.325Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:29.403Z",
+      "versionsCount": 2,
       "authors": [
         "Omid Abbassi Aghda",
         "Mohammad Javad Omidi",
         "Hamid Saeedi-Sourck"
-      ]
+      ],
+      "abstract": "Orthogonal Time Frequency Space (OTFS) systems face significant challenges in channel estimation due to high pilot overhead and peak-to-average power ratio (PAPR). To address these issues, we propose a two-step channel estimation method for Zero-Pad OTFS (ZP-OTFS), a modified OTFS system characterized by multiple zero rows along the delay axis. This method strategically inserts pilot sequences into the zero bins of the ZP-OTFS system, effectively mitigating overhead and PAPR. Comprehensive simulation results validate the effectiveness of our proposed method, demonstrating its superior performance over traditional embedded pilot estimation in high Signal-to-Noise Ratio (SNR) scenarios. Specifically, our method achieves a lower normalized mean square error (NMSE) and better bit error rates (BER) at high SNRs."
     },
     {
+      "id": "cmtekdnbi00a0zevdc9n12mjl",
+      "title": "On the Doppler Squint Effect in OTFS Systems over Doubly-Dispersive Channels: Modeling and Evaluation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2302.06156",
+      "rawUrl": "https://arxiv.org/abs/2302.06156",
+      "source": "arxiv",
+      "publishedAt": "2023-02-13T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.390Z",
+      "lastSeen": "2026-10-02T09:41:29.469Z",
+      "versionsCount": 2,
+      "authors": [
+        "Xuehan Wang",
+        "Xu Shi",
+        "Jintao Wang",
+        "Jian Song"
+      ],
+      "abstract": "Extensive work has demonstrated the excellent performance of orthogonal time frequency space (OTFS) modulation in high-mobility scenarios. Time-variant wideband channel estimation serves as one of the key compositions of OTFS receivers since the data detection requires accurate channel state information (CSI). In practical wideband OTFS systems, the Doppler shift brought by the high mobility is frequency-dependent, which is referred to as the Doppler Squint Effect (DSE). Unfortunately, DSE was ignored in overall prior estimation schemes employed in OTFS systems, which leads to severe performance loss in channel estimation and the consequent data detection. In this paper, we investigate DSE of wideband time-variant channel in delay-Doppler domain and concentrate on the characterization of OTFS channel coefficients considering DSE. The formulation and evaluation of OTFS input-output relationship are provided for both ideal and rectangular waveforms considering DSE. The channel estimation is therefore formulated as a sparse signal recovery problem and an orthogonal matching pursuit (OMP)-based scheme is adopted to solve it. Simulation results confirm the significance of DSE and the performance superiority compared with traditional channel estimation approaches ignoring DSE."
+    },
+    {
+      "id": "cmtekdo3900g0zevdac4sxau5",
+      "title": "OTFS -- Predictability in the Delay-Doppler Domain and its Value to Communication and Radar Sensing",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2302.08705",
+      "rawUrl": "https://arxiv.org/abs/2302.08705",
+      "source": "arxiv",
+      "publishedAt": "2023-02-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.390Z",
+      "lastSeen": "2026-10-02T09:41:30.081Z",
+      "versionsCount": 2,
+      "authors": [
+        "Saif Khan Mohammed",
+        "Ronny Hadani",
+        "Ananthanarayanan Chockalingam",
+        "Robert Calderbank"
+      ],
+      "abstract": "In our first paper [2] we explained why the Zak-OTFS input-output (I/O) relation is predictable and non-fading when the delay and Doppler periods are greater than the effective channel delay and Doppler spreads, a condition which we refer to as the crystallization condition. We argued that a communication system should operate within the crystalline regime. It is well known that it is possible to identify a linear time varying (LTV) channel if and only if it is under-spread. The crystallization condition is more restrictive than the under-spread condition, so identification is always possible. In the crystalline regime, we show that Zak-OTFS pilot sequences minimize the complexity of identifying the effective DD domain channel filter. We demonstrate that the filter taps can simply be read off from the response to a single Zak-OTFS pilot. In general, we provide an explicit formula for reconstructing the Zak-OTFS I/O relation from a finite number of received pilot symbols in the delay-Doppler (DD) domain. This reconstruction formula makes it possible to study predictability of the Zak-OTFS I/O relation for a sampled system that operates under finite duration and bandwidth constraints. We analyze reconstruction accuracy for different choices of the delay and Doppler periods, and of the pulse shaping filter. Reconstruction accuracy is high when the crystallization condition is satisfied, implying that it is possible to learn directly the I/O relation without needing to estimate the underlying channel. This opens up the possibility of a model-free mode of operation, which is especially useful when a traditional model-dependent mode of operation (reliant on estimation of the underlying physical channel) is out of reach (for example, when the channel comprises of unresolvable paths, or exhibits a continuous delay-Doppler profile such as in presence of acceleration). Our study clarifies the"
+    },
+    {
+      "id": "cmtekdnbx00a4zevda7yah3k1",
+      "title": "Practical Synchronization for OTFS",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2301.10080",
+      "rawUrl": "https://arxiv.org/abs/2301.10080",
+      "source": "arxiv",
+      "publishedAt": "2023-01-24T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.405Z",
+      "lastSeen": "2026-10-02T09:41:29.193Z",
+      "versionsCount": 2,
+      "authors": [
+        "Mohsen Bayat",
+        "Sanoopkumar P. S.",
+        "Arman Farhang"
+      ],
+      "abstract": "In the existing literature on joint timing and frequency synchronization of orthogonal time frequency space modulation (OTFS), practically infeasible impulse pilot with large peak-to-average power ratio (PAPR) is deployed. Hence, in this paper, we propose a timing offset (TO) and carrier frequency offset (CFO) estimation for OTFS over a linear time-varying (LTV) channel, using a low PAPR pilot structure. The proposed technique utilizes the recently proposed practically feasible pilot structure with a cyclic prefix (PCP). We exploit the periodic properties of PCP in both delay and time domains to find the starting point of each OTFS block. Furthermore, we propose a two-stage CFO estimation technique with over an order of magnitude higher estimation accuracy than the existing estimator using the impulse pilot. In the first stage, a coarse CFO estimate is obtained which is refined in the second stage, through our proposed maximum likelihood (ML) based approach. The proposed ML-based approach deploys the generalized complex exponential basis expansion model (GCE-BEM) to capture the time variations of the channel, absorb them into the pilot and provide an accurate CFO estimate. Since our proposed synchronization technique utilizes the same pilot deployed for channel estimation, it does not require any additional overhead. Finally, we evaluate the performance of our proposed synchronization technique through simulations. We also compare and show the superior performance of our proposed technique to the only other existing joint TO and CFO estimation method in OTFS literature."
+    },
+    {
+      "id": "cmtekdncb00a8zevdjpphtneq",
+      "title": "Predictive Precoder Design for OTFS-Enabled URLLC: A Deep Learning Approach",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2212.13651",
+      "rawUrl": "https://arxiv.org/abs/2212.13651",
+      "source": "arxiv",
+      "publishedAt": "2022-12-28T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.419Z",
+      "lastSeen": "2026-10-02T09:41:29.598Z",
+      "versionsCount": 2,
+      "authors": [
+        "Chang Liu",
+        "Shuangyang Li",
+        "Weijie Yuan",
+        "Xuemeng Liu",
+        "Derrick Wing Kwan Ng"
+      ],
+      "abstract": "This paper investigates the orthogonal time frequency space (OTFS) transmission for enabling ultra-reliable low-latency communications (URLLC). To guarantee excellent reliability performance, pragmatic precoder design is an effective and indispensable solution. However, the design requires accurate instantaneous channel state information at the transmitter (ICSIT) which is not always available in practice. Motivated by this, we adopt a deep learning (DL) approach to exploit implicit features from estimated historical delay-Doppler domain channels (DDCs) to directly predict the precoder to be adopted in the next time frame for minimizing the frame error rate (FER), that can further improve the system reliability without the acquisition of ICSIT. To this end, we first establish a predictive transmission protocol and formulate a general problem for the precoder design where a closed-form theoretical FER expression is derived serving as the objective function to characterize the system reliability. Then, we propose a DL-based predictive precoder design framework which exploits an unsupervised learning mechanism to improve the practicability of the proposed scheme. As a realization of the proposed framework, we design a DDCs-aware convolutional long short-term memory (CLSTM) network for the precoder design, where both the convolutional neural network and LSTM modules are adopted to facilitate the spatial-temporal feature extraction from the estimated historical DDCs to further enhance the precoder performance. Simulation results demonstrate that the proposed scheme facilitates a flexible reliability-latency tradeoff and achieves an excellent FER performance that approaches the lower bound obtained by a genie-aided benchmark requiring perfect ICSI at both the transmitter and receiver."
+    },
+    {
+      "id": "cmtekdnd300aczevd7849wx5p",
+      "title": "Superimposed Channel Estimation in OTFS Modulation Using Compressive Sensing",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2212.09280",
+      "rawUrl": "https://arxiv.org/abs/2212.09280",
+      "source": "arxiv",
+      "publishedAt": "2022-12-19T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.447Z",
+      "lastSeen": "2026-10-02T09:41:29.655Z",
+      "versionsCount": 2,
+      "authors": [
+        "Omid Abbassi Aghda",
+        "Mohammad Javad Omidi",
+        "Hamid Saeedi-Sourck"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) technique is a two-dimensional modulation method that multiplexes information symbols in the delay-Doppler (DD) domain. OTFS combats high Doppler shift existing in high speed wireless communication. However, conventional channel estimation in OTFS suffers from high pilot overhead because guard symbols occupy a significant part of the DD domain grids. In this paper, a superimposed channel estimation is proposed which can completely estimate channel parameters without considering pilot overhead and performance degradation. As the channel state information (CSI) in the DD domain is sparse, a sparse recovery algorithm orthogonal matching pursuit (OMP) is used. Besides, our proposed method does not suffer from high peak to average power ratio (PAPR). To detect information symbols, a message passing (MP) detector, which exploits the sparsity of DD channel representation, is employed."
+    },
+    {
+      "id": "cmtekdndp00agzevd63ntsrzz",
+      "title": "Estimation of Doubly-Dispersive Channels in Linearly Precoded Multicarrier Systems Using Smoothness Regularization",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2210.05233",
+      "rawUrl": "https://arxiv.org/abs/2210.05233",
+      "source": "arxiv",
+      "publishedAt": "2022-10-11T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.470Z",
+      "lastSeen": "2026-10-02T09:41:29.056Z",
+      "versionsCount": 2,
+      "authors": [
+        "Andreas Pfadler",
+        "Tom Szollmann",
+        "Peter Jung",
+        "Slawomir Stanczak"
+      ],
+      "abstract": "In this paper, we propose a novel channel estimation scheme for pulse-shaped multicarrier systems using smoothness regularization for ultra-reliable low-latency communication (URLLC). It can be applied to any multicarrier system with or without linear precoding to estimate challenging doubly-dispersive channels. A recently proposed modulation scheme using orthogonal precoding is orthogonal time-frequency and space modulation (OTFS). In OTFS, pilot and data symbols are placed in delay-Doppler (DD) domain and are jointly precoded to the time-frequency (TF) domain. On the one hand, such orthogonal precoding increases the achievable channel estimation accuracy and enables high TF diversity at the receiver. On the other hand, it introduces leakage effects which requires extensive leakage suppression when the piloting is jointly precoded with the data. To avoid this, we propose to precode the data symbols only, place pilot symbols without precoding into the TF domain, and estimate the channel coefficients by interpolating smooth functions from the pilot samples. Furthermore, we present a piloting scheme enabling a smooth control of the number and position of the pilot symbols. Our numerical results suggest that the proposed scheme provides accurate channel estimation with reduced signaling overhead compared to standard estimators using Wiener filtering in the discrete DD domain."
+    },
+    {
+      "id": "cmtekdne600akzevdmwvda8mv",
+      "title": "Sensing Aided OTFS Channel Estimation for Massive MIMO Systems",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2209.11321",
+      "rawUrl": "https://arxiv.org/abs/2209.11321",
+      "source": "arxiv",
+      "publishedAt": "2022-09-22T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.487Z",
+      "lastSeen": "2026-10-02T09:41:29.566Z",
+      "versionsCount": 2,
+      "authors": [
+        "Shuaifeng Jiang",
+        "Ahmed Alkhateeb"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation has the potential to enable robust communications in highly-mobile scenarios. Estimating the channels for OTFS systems, however, is associated with high pilot signaling overhead that scales with the maximum delay and Doppler spreads. This becomes particularly challenging for massive MIMO systems where the overhead also scales with the number of antennas. An important observation however is that the delay, Doppler, and angle of departure/arrival information are directly related to the distance, velocity, and direction information of the mobile user and the various scatterers in the environment. With this motivation, we propose to leverage radar sensing to obtain this information about the mobile users and scatterers in the environment and leverage it to aid the OTFS channel estimation in massive MIMO systems. As one approach to realize our vision, this paper formulates the OTFS channel estimation problem in massive MIMO systems as a sparse recovery problem and utilizes the radar sensing information to determine the support (locations of the non-zero delay-Doppler taps). The proposed radar sensing aided sparse recovery algorithm is evaluated based on an accurate 3D ray-tracing framework with co-existing radar and communication data. The results show that the developed sensing-aided solution consistently outperforms the standard sparse recovery algorithms (that do not leverage radar sensing data) and leads to a significant reduction in the pilot overhead, which highlights a promising direction for OTFS based massive MIMO systems."
+    },
+    {
+      "id": "cmtekdnem00aozevdx2thdjsd",
+      "title": "Orthogonal Time Frequency Space Modulation -- Part II: Transceiver Designs",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2209.05012",
+      "rawUrl": "https://arxiv.org/abs/2209.05012",
+      "source": "arxiv",
+      "publishedAt": "2022-09-12T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.502Z",
+      "lastSeen": "2026-10-02T09:41:29.709Z",
+      "versionsCount": 2,
+      "authors": [
+        "Shuangyang Li",
+        "Weijie Yuan",
+        "Zhiqiang Wei",
+        "Robert Schober",
+        "Giuseppe Caire"
+      ],
+      "abstract": "The fundamental concepts and challenges of orthogonal time frequency space (OTFS) modulation have been reviewed in Part I of this three-part tutorial. In this second part, we provide an overview of the state-of-the-art transceiver designs for OTFS systems, with a particular focus on the cyclic prefix (CP) design, window design, pulse shaping, channel estimation, and signal detection. Furthermore, we analyze the performance of OTFS modulation, including the diversity gain and the achievable rate. Specifically, comparative simulations are presented to evaluate the error performance of different OTFS detection schemes, and the advantages of coded OTFS systems over coded orthogonal frequency-division multiplexing (OFDM) systems are investigated."
+    },
+    {
+      "id": "cmtekdnf100aszevdhkgyngxz",
+      "title": "Joint Channel Estimation and Data Detection for Hybrid RIS aided Millimeter Wave OTFS Systems",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2208.06781",
+      "rawUrl": "https://arxiv.org/abs/2208.06781",
+      "source": "arxiv",
+      "publishedAt": "2022-08-14T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.517Z",
+      "lastSeen": "2026-10-02T09:41:28.749Z",
+      "versionsCount": 2,
+      "authors": [
+        "Muye Li",
+        "Shun Zhang",
+        "Yao Ge",
+        "Feifei Gao",
+        "Pingzhi Fan"
+      ],
+      "abstract": "For high mobility communication scenario, the recently emerged orthogonal time frequency space (OTFS) modulation introduces a new delay-Doppler domain signal space, and can provide better communication performance than traditional orthogonal frequency division multiplexing system. This article focuses on the joint channel estimation and data detection (JCEDD) for hybrid reconfigurable intelligent surface (HRIS) aided millimeter wave (mmWave) OTFS systems. Firstly, a new transmission structure is designed. Within the pilot durations of the designed structure, partial HRIS elements are alternatively activated. The time domain channel model is then exhibited. Secondly, the received signal model for both the HRIS over time domain and the base station over delay-Doppler domain are studied. Thirdly, by utilizing channel parameters acquired at the HRIS, an HRIS beamforming design strategy is proposed. For the OTFS transmission, we propose a JCEDD scheme over delay-Doppler domain. In this scheme, message passing (MP) algorithm is designed to simultaneously obtain the equivalent channel gain and the data symbols. On the other hand, the channel parameters, i.e., the Doppler shift, the channel sparsity, and the channel variance, are updated through expectation-maximization (EM) algorithm. By iteratively executing the MP and EM algorithm, both the channel and the unknown data symbols can be accurately acquired. Finally, simulation results are provided to validate the effectiveness of our proposed JCEDD scheme."
+    },
+    {
+      "id": "cmtekdnfh00awzevdsqkwwce3",
+      "title": "LEO Satellite-Enabled Grant-Free Random Access with MIMO-OTFS",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2208.01828",
+      "rawUrl": "https://arxiv.org/abs/2208.01828",
+      "source": "arxiv",
+      "publishedAt": "2022-08-03T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.533Z",
+      "lastSeen": "2026-10-02T09:41:29.106Z",
+      "versionsCount": 2,
+      "authors": [
+        "Boxiao Shen",
+        "Yongpeng Wu",
+        "Wenjun Zhang",
+        "Geoffrey Ye Li",
+        "Jianping An",
+        "Chengwen Xing"
+      ],
+      "abstract": "This paper investigates joint channel estimation and device activity detection in the LEO satellite-enabled grant-free random access systems with large differential delay and Doppler shift. In addition, the multiple-input multiple-output (MIMO) with orthogonal time-frequency space modulation (OTFS) is utilized to combat the dynamics of the terrestrial-satellite link. To simplify the computation process, we estimate the channel tensor in parallel along the delay dimension. Then, the deep learning and expectation-maximization approach are integrated into the generalized approximate message passing with cross-correlation--based Gaussian prior to capture the channel sparsity in the delay-Doppler-angle domain and learn the hyperparameters. Finally, active devices are detected by computing energy of the estimated channel. Simulation results demonstrate that the proposed algorithms outperform conventional methods."
+    },
+    {
+      "id": "cmtekdo1w00fozevdzvi5g0qe",
       "title": "Doubly-Iterative Sparsified MMSE Turbo Equalization for OTFS Modulation",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2207.00866",
       "rawUrl": "https://arxiv.org/abs/2207.00866",
       "source": "arxiv",
-      "publishedAt": null,
+      "publishedAt": "2022-07-01T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:34.340Z",
-      "lastSeen": "2026-08-29T15:57:34.340Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:29.639Z",
+      "versionsCount": 2,
       "authors": [
         "Haotian Li",
         "Qiyue Yu"
-      ]
+      ],
+      "abstract": "Currently, orthogonal time frequency space (OTFS) modulation has drawn much attention to reliable communications in high-mobility scenarios. This paper proposes a doubly-iterative sparsified minimum mean square error (DI-S-MMSE) turbo equalizer, which iteratively exchanges the extrinsic information between a soft-input-soft-input (SISO) MMSE estimator and a SISO decoder. Our proposed equalizer does not suffer from short loops and approaches the performance of the near-optimal symbol-wise maximum a posteriori (MAP) algorithm. To exploit the inherent sparsity of OTFS system, we resort to graph theory to investigate the sparsity pattern of the channel matrix, and propose two sparsification guidelines to reduce the complexity of calculating the matrix inverse at the MMSE estimator. Then, we apply two iterative algorithms to MMSE estimation, i.e., the Generalized Minimal Residual (GMRES) and Factorized Sparse Approximate Inverse (FSPAI) algorithms. The former is used at the initial turbo iteration, whose global convergence is proven in our equalizer, while the latter is used at the subsequent turbo iterations with the help of our proposed guidelines. Simulation results demonstrate that our equalizer has a linear order of complexity while the performance loss incurred by the sparsification is only 0.2 dB at $10^{-4}$ bit error rate. Simulation codes are available to reproduce the results presented in this paper: this https URL ."
     },
     {
-      "title": "Channel Estimation and Equalization for CP-OFDM-based OTFS in Fractional Doppler Channels",
+      "id": "cmtekdo4500g8zevdx1ppd9zd",
+      "title": "Diagonally Reconstructed Channel Estimation for MIMO-AFDM with Inter-Doppler Interference in Doubly Selective Channels",
       "type": "PAPER",
-      "url": "https://arxiv.org/abs/2010.15396",
-      "rawUrl": "https://arxiv.org/abs/2010.15396",
+      "url": "https://arxiv.org/abs/2206.12822",
+      "rawUrl": "https://arxiv.org/abs/2206.12822",
       "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.355Z",
-      "lastSeen": "2026-08-29T15:57:34.355Z",
-      "versionsCount": 1,
+      "publishedAt": "2022-06-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.422Z",
+      "lastSeen": "2026-10-02T09:41:28.999Z",
+      "versionsCount": 2,
       "authors": [
-        "Noriyuki Hashimoto",
-        "Noboru Osawa",
-        "Kosuke Yamazaki",
-        "Shinsuke Ibi"
-      ]
+        "Haoran Yin",
+        "Xizhang Wei",
+        "Yanqun Tang",
+        "Kai Yang"
+      ],
+      "abstract": "On the heels of orthogonal time frequency space (OTFS) modulation, the recently discovered affine frequency division multiplexing (AFDM) is a promising waveform for the sixth-generation wireless network. In this paper, we study the widely-used embedded pilot-aided (EPA) channel estimation in multiple-input multiple-output AFDM (MIMO-AFDM) system with fractional Doppler shifts. We first formulate the vectorized input-output relationship of MIMO-AFDM, and theoretically prove that MIMO-AFDM can achieve full diversity in doubly selective channels. Then we illustrate the implementation of EPA channel estimation in MIMO-AFDM and unveil that serious inter-Doppler interference (IDoI) occurs if we try to estimate the channel gain, delay shift, and Doppler shift of each propagation path. To address this issue, the diagonal reconstructability of AFDM subchannel matrix is studied and a low-complexity embedded pilot-aided diagonal reconstruction (EPA-DR) channel estimation scheme is proposed. The EPA-DR scheme calculates the AFDM effective channel matrix directly without estimating the three channel parameters, eliminating the severe IDoI inherently. Since the effective channel matrix is necessary for MIMO-AFDM receive processing, we believe this is an important step to bring AFDM towards practical communication systems. Finally, we investigate the orthogonal resource allocation of affine frequency division multiple access (AFDMA) system. Simulation results validate the effectiveness of the proposed EPA-DR scheme."
     },
     {
+      "id": "cmtekdnfx00b0zevdd8zq3kh9",
+      "title": "Effect of Prefix/Suffix Configurations on OTFS Systems with Rectangular Waveforms",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2205.14872",
+      "rawUrl": "https://arxiv.org/abs/2205.14872",
+      "source": "arxiv",
+      "publishedAt": "2022-05-30T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.549Z",
+      "lastSeen": "2026-10-02T09:41:29.531Z",
+      "versionsCount": 2,
+      "authors": [
+        "Salah Eddine Zegrar",
+        "Hüseyin Arslan"
+      ],
+      "abstract": "Recently, orthogonal time-frequency-space (OTFS) modulation is used as a promising candidate waveform for high mobility communication scenarios. In practical transmission, OTFS with rectangular pulse shaping is implemented using different prefix/suffix configurations including reduced-cyclic prefix (RCP), full-CP (FCP), full-zero suffix (FZS), and reduced-zero padded (RZP). However, for each prefix/suffix type, different effective channel are seen at the receiver side resulting in dissimilar performance of the various OTFS configurations given a specific communication scenario. To fulfill this gap, in this paper, we study and model the effective channel in OTFS systems using various prefix/suffix configurations. Then, from the input-output relation analysis of the received signal, we show that the OTFS has a simple sparse structure for all prefix/suffix types, where the only difference is the phase term introduced when extending quasi-periodically in the delay-Doppler grid. We provide a comprehensive comparison between all OTFS types in terms of channel estimation/equalization complexity, symbol detection performance, power and spectral efficiencies, which helps in deciding the optimal prefix/suffix configuration for a specific scenario. Finally, we propose a novel OTFS structure namely reduced-FCP (RFCP) where the information of the CP block is decodable."
+    },
+    {
+      "id": "cmtekdngc00b4zevds3kr0jus",
+      "title": "When Cell-Free Massive MIMO Meets OTFS Modulation: The Downlink Case",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2203.07588",
+      "rawUrl": "https://arxiv.org/abs/2203.07588",
+      "source": "arxiv",
+      "publishedAt": "2022-03-15T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.564Z",
+      "lastSeen": "2026-10-02T09:41:29.306Z",
+      "versionsCount": 2,
+      "authors": [
+        "Mohammadali Mohammadi",
+        "Hien Quoc Ngo",
+        "Michail Matthaiou"
+      ],
+      "abstract": "We provide a performance evaluation of orthogonal time frequency space (OTFS) modulation in cell-free massive MIMO (multiple-input multiple-output) systems. By leveraging the inherent sparsity of the delay-Doppler (DD) representation of time-varying channels, we apply the embedded pilot-aided channel estimation method with reduced guard intervals and derive the minimum mean-square error estimate of the channel gains from received uplink pilots at the access points (APs). Each AP applies conjugate beamforming to transmit data to the users. We derive a closed-form expression for the individual user downlink throughput as a function of the numbers of APs, users and DD channel estimate parameters. We compare the OTFS performance with that of orthogonal frequency division multiplexing (OFDM) at high-mobility conditions. Our findings reveal that with uncorrelated shadowing, cell-free massive MIMO with OTFS modulation achieves up to 35% gain in 95%-likely per-user throughput, compared with the OFDM counterpart. Finally, the increase in the per user throughput is more pronounced at the median rates over the correlated shadowing scenarios."
+    },
+    {
+      "id": "cmtekdngr00b8zevd5oawnbpu",
+      "title": "Cell-Free Massive MIMO with OTFS Modulation: Power Control and Resource Allocation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2203.07549",
+      "rawUrl": "https://arxiv.org/abs/2203.07549",
+      "source": "arxiv",
+      "publishedAt": "2022-03-14T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.580Z",
+      "lastSeen": "2026-10-02T09:41:29.419Z",
+      "versionsCount": 2,
+      "authors": [
+        "Mohammadali Mohammadi",
+        "Hien Quoc Ngo",
+        "Michail Matthaiou"
+      ],
+      "abstract": "We consider the downlink of cell-free massive multiple-input multiple-output (MIMO) systems with orthogonal time frequency space (OTFS) modulation. Two pilot-based channel estimation schemes, namely superimposed pilot-based (SP-CHE) and embedded pilot-based channel estimation (EP-CHE), are applied to estimate the channels at the access points (APs). The SP-CHE scheme superimposes low power pilots onto the data symbols in the delay-Doppler domain to avoid the spectral efficiency (SE) loss due to null guard intervals used in the EP-CHE scheme. In the case of SP-CHE scheme, we consider a max-min fairness optimization problem to jointly optimize the peruser pilot/data power allocation coefficients and per-AP power control coefficients. The complicated non-convex problem is then iteratively solved through two decoupled sub-problems. Moreover, a max-min fairness problem is cast for the EP-CHE scheme, where the optimization variables are the per-AP power control coefficients. Numerical results show that the proposed resource allocation approaches provide at most 42 and 5-fold increase in the 95%-likely per-user SE for the SP-CHE and EP-CHE scheme, respectively, compared with the uniform power control and in correlated shadowing fading channels."
+    },
+    {
+      "id": "cmtekdnzr00f4zevd1e2qoysk",
+      "title": "Random Access with Massive MIMO-OTFS in LEO Satellite Communications",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2202.13058",
+      "rawUrl": "https://arxiv.org/abs/2202.13058",
+      "source": "arxiv",
+      "publishedAt": "2022-02-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.263Z",
+      "lastSeen": "2026-10-02T09:41:28.966Z",
+      "versionsCount": 2,
+      "authors": [
+        "Boxiao Shen",
+        "Yongpeng Wu",
+        "Jianping An",
+        "Chengwen Xing",
+        "Lian Zhao",
+        "Wenjun Zhang"
+      ],
+      "abstract": "This paper considers the joint channel estimation and device activity detection in the grant-free random access systems, where a large number of Internet-of-Things devices intend to communicate with a low-earth orbit satellite in a sporadic way. In addition, the massive multiple-input multiple-output (MIMO) with orthogonal time-frequency space (OTFS) modulation is adopted to combat the dynamics of the terrestrial-satellite link. We first analyze the input-output relationship of the single-input single-output OTFS when the large delay and Doppler shift both exist, and then extend it to the grant-free random access with massive MIMO-OTFS. Next, by exploring the sparsity of channel in the delay-Doppler-angle domain, a two-dimensional pattern coupled hierarchical prior with the sparse Bayesian learning and covariance-free method (TDSBL-CF) is developed for the channel estimation. Then, the active devices are detected by computing the energy of the estimated channel. Finally, the generalized approximate message passing algorithm combined with the sparse Bayesian learning and two-dimensional convolution (ConvSBL-GAMP) is proposed to decrease the computations of the TDSBL-CF algorithm. Simulation results demonstrate that the proposed algorithms outperform conventional methods."
+    },
+    {
+      "id": "cmtekdo5a00ggzevdgt4s5433",
+      "title": "DFT-Spread Orthogonal Time Frequency Space System with Superimposed Pilots for Terahertz Integrated Sensing and Communication",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2202.10035",
+      "rawUrl": "https://arxiv.org/abs/2202.10035",
+      "source": "arxiv",
+      "publishedAt": "2022-02-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.462Z",
+      "lastSeen": "2026-10-02T09:41:29.693Z",
+      "versionsCount": 2,
+      "authors": [
+        "Yongzhi Wu",
+        "Chong Han",
+        "Zhi Chen"
+      ],
+      "abstract": "Terahertz (THz) integrated sensing and communication (ISAC) is a promising interdisciplinary technology that realizes simultaneously transmitting Terabit-per-second (Tbps) and millimeter-level accurate environment or human activity sensing. However, both communication performance and sensing accuracy are influenced by the Doppler effects, which are especially severe in the THz band. Moreover, peak-to-average power ratio (PAPR) degrades the THz power amplifier (PA) efficiency. In this paper, a discrete Fourier transform spread orthogonal time frequency space (DFT-s-OTFS) system with superimposed pilots is proposed to improve the robustness to Doppler effects and reduce PAPR for THz ISAC. Then, a two-phase sensing parameter estimation algorithm is developed to integrate sensing functionality into the DFT-s-OTFS waveform. Meanwhile, a low-complexity iterative channel estimation and data detection method with a conjugate gradient based equalizer is proposed to recover the data symbols of DFT-s-OTFS. The proposed DFT-s-OTFS waveform can improve the PA efficiency by 10% on average compared to OTFS. Simulation results demonstrate that the proposed two-phase sensing estimation algorithm for THz DFT-s-OTFS systems is able to realize millimeter-level range estimation accuracy and decimeter-per-second-level velocity estimation accuracy. Moreover, the effectiveness of the iterative method for data detection aided by superimposed pilots in DFT-s-OTFS systems is validated by the simulations and the bit error rate performance is not degraded by the Doppler effects."
+    },
+    {
+      "id": "cmtekdnh700bczevd6c0faojj",
+      "title": "Unitary-Precoded Single-Carrier Waveforms for High Mobility: Detection and Channel Estimation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2201.10218",
+      "rawUrl": "https://arxiv.org/abs/2201.10218",
+      "source": "arxiv",
+      "publishedAt": "2022-01-25T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.595Z",
+      "lastSeen": "2026-10-02T09:41:29.448Z",
+      "versionsCount": 2,
+      "authors": [
+        "Tharaj Thaj",
+        "Emanuele Viterbo"
+      ],
+      "abstract": "This paper presents unitary-precoded single-carrier (USC) modulation as a family of waveforms based on multiplexing the information symbols on time domain unitary basis functions. The common property of these basis functions is that they span the entire time and frequency plane. The recently proposed orthogonal time frequency space (OTFS) and orthogonal time sequency multiplexing (OTSM) based on discrete Fourier transform (DFT) and Walsh Hadamard transform (WHT), respectively, fall in the general framework of USC waveforms. In this work, we present channel estimation and detection methods that work for any USC waveform and numerically show that any choice of unitary precoding results in the same error performance. Lastly, we implement some USC systems and compare their performance with OFDM in a real-time indoor setting using an SDR platform."
+    },
+    {
+      "id": "cmtekdo2r00fwzevd7hny6l7a",
       "title": "Active Terminal Identification, Channel Estimation, and Signal Detection for Grant-Free NOMA-OTFS in LEO Satellite Internet-of-Things",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2201.02084",
       "rawUrl": "https://arxiv.org/abs/2201.02084",
       "source": "arxiv",
-      "publishedAt": null,
+      "publishedAt": "2022-01-01T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:34.372Z",
-      "lastSeen": "2026-08-29T15:57:34.372Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:30.114Z",
+      "versionsCount": 2,
       "authors": [
         "Xingyu Zhou",
         "Keke Ying",
@@ -2704,416 +4769,1878 @@ window.RETRACE_DATA = {
         "Symeon Chatzinotas",
         "Jinhong Yuan",
         "Björn Ottersten"
-      ]
+      ],
+      "abstract": "This paper investigates the massive connectivity of low Earth orbit (LEO) satellite-based Internet-of-Things (IoT) for seamless global coverage. We propose to integrate the grant-free non-orthogonal multiple access (GF-NOMA) paradigm with the emerging orthogonal time frequency space (OTFS) modulation to accommodate the massive IoT access, and mitigate the long round-trip latency and severe Doppler effect of terrestrial-satellite links (TSLs). On this basis, we put forward a two-stage successive active terminal identification (ATI) and channel estimation (CE) scheme as well as a low-complexity multi-user signal detection (SD) method. Specifically, at the first stage, the proposed training sequence aided OTFS (TS-OTFS) data frame structure facilitates the joint ATI and coarse CE, whereby both the traffic sparsity of terrestrial IoT terminals and the sparse channel impulse response are leveraged for enhanced performance. Moreover, based on the single Doppler shift property for each TSL and sparsity of delay-Doppler domain channel, we develop a parametric approach to further refine the CE performance. Finally, a least square based parallel time domain SD method is developed to detect the OTFS signals with relatively low complexity. Simulation results demonstrate the superiority of the proposed methods over the state-of-the-art solutions in terms of ATI, CE, and SD performance confronted with the long round-trip latency and severe Doppler effect."
     },
     {
-      "title": "OTFS -- Predictability in the Delay-Doppler Domain and its Value to Communication and Radar Sensing",
+      "id": "cmtiv8i68010t6dvtdet584ex",
+      "title": "Low-Complexity Channel Matrix Calculation for OTFS Systems with Fractional Delay and Doppler",
       "type": "PAPER",
-      "url": "https://arxiv.org/abs/2302.08705",
-      "rawUrl": "https://arxiv.org/abs/2302.08705",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.390Z",
-      "lastSeen": "2026-08-29T15:57:34.390Z",
+      "url": "http://dx.doi.org/10.1109/MILCOM55135.2022.10017980",
+      "rawUrl": "http://dx.doi.org/10.1109/MILCOM55135.2022.10017980",
+      "source": "duke-calderbank",
+      "publishedAt": "2022-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:33.921Z",
+      "lastSeen": "2026-09-01T16:12:33.921Z",
       "versionsCount": 1,
       "authors": [
-        "Saif Khan Mohammed",
-        "Ronny Hadani",
-        "Ananthanarayanan Chockalingam",
-        "Robert Calderbank"
-      ]
+        "Wang, Z",
+        "Liu, L",
+        "Yi, Y",
+        "Calderbank, R",
+        "Zhang, J"
+      ],
+      "abstract": null
     },
     {
-      "title": "AFDM vs OTFS: A Comparative Study of Promising Waveforms for ISAC in Doubly-Dispersive Channels",
+      "id": "cmtiv8iww01696dvtq5ykapr9",
+      "title": "Securing Wireless Channels: Reliable Shared Secret Extraction through OTFS",
       "type": "PAPER",
-      "url": "https://arxiv.org/abs/2309.04998",
-      "rawUrl": "https://arxiv.org/abs/2309.04998",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.405Z",
-      "lastSeen": "2026-08-29T15:57:34.405Z",
+      "url": "http://dx.doi.org/10.1109/CNS56114.2022.9947239",
+      "rawUrl": "http://dx.doi.org/10.1109/CNS56114.2022.9947239",
+      "source": "duke-calderbank",
+      "publishedAt": "2022-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:34.879Z",
+      "lastSeen": "2026-09-01T16:12:34.879Z",
       "versionsCount": 1,
       "authors": [
-        "Hyeon Seok Rou",
-        "Giuseppe Thadeu Freitas de Abreu",
-        "Junil Choi",
-        "David González G.",
-        "Osvaldo Gonsa",
-        "Yong Liang Guan",
-        "Marios Kountouris"
-      ]
+        "Saeed, U",
+        "Liu, L",
+        "Zeng, K",
+        "Calderbank, R"
+      ],
+      "abstract": null
     },
     {
-      "title": "Diagonally Reconstructed Channel Estimation for MIMO-AFDM with Inter-Doppler Interference in Doubly Selective Channels",
+      "id": "cmtiv8jj601bj6dvt5b9vmv8r",
+      "title": "Learning to Equalize OTFS",
       "type": "PAPER",
-      "url": "https://arxiv.org/abs/2206.12822",
-      "rawUrl": "https://arxiv.org/abs/2206.12822",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.422Z",
-      "lastSeen": "2026-08-29T15:57:34.422Z",
+      "url": "http://dx.doi.org/10.1109/TWC.2022.3160600",
+      "rawUrl": "http://dx.doi.org/10.1109/TWC.2022.3160600",
+      "source": "duke-calderbank",
+      "publishedAt": "2022-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:35.683Z",
+      "lastSeen": "2026-09-01T16:12:35.683Z",
       "versionsCount": 1,
       "authors": [
-        "Haoran Yin",
-        "Xizhang Wei",
-        "Yanqun Tang",
-        "Kai Yang"
-      ]
+        "Zhou, Z",
+        "Liu, L",
+        "Xu, J",
+        "Calderbank, R"
+      ],
+      "abstract": null
     },
     {
+      "id": "cmtekdnzb00f0zevdo206i0jv",
+      "title": "Cell-Free Massive MIMO Meets OTFS Modulation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2112.10869",
+      "rawUrl": "https://arxiv.org/abs/2112.10869",
+      "source": "arxiv",
+      "publishedAt": "2021-12-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.247Z",
+      "lastSeen": "2026-10-02T09:41:29.434Z",
+      "versionsCount": 2,
+      "authors": [
+        "Mohammadali Mohammadi",
+        "Hien Quoc Ngo",
+        "Michail Matthaiou"
+      ],
+      "abstract": "We provide the first-ever performance evaluation of orthogonal time frequency space (OTFS) modulation in cell-free massive multiple-input multiple-output (MIMO) systems. To investigate trade-off between performance and overhead, we apply embedded pilot-aided and superimposed pilot-based channel estimation methods. We then derive a closed-form expression for the individual user downlink and uplink spectral efficiencies as a function of the numbers of APs, users and delay-Doppler domain channel estimate parameters. Based on these analytical results, we also present new scaling laws that the AP's and user's transmit power should satisfy, to sustain a desirable quality of service. It is found that when the number of APs, $M_a$, grows without bound, we can reduce the transmit power of each user and AP proportionally to $1/M_a$ and $1/M_a^2$, respectively, during the uplink and downlink phases. We compare the OTFS performance with that of orthogonal frequency division multiplexing (OFDM) at high-mobility conditions. Our findings reveal that with shadowing correlation, OTFS modulation with embedded pilot-based channel estimation provides $30$-folds gain over the OFDM counterpart in terms of $95\\%$-likely per-user downlink rate. Finally, with superimposed pilot-based channel estimation, the increase in the per-user throughput is more pronounced at the median rates over the correlated shadowing channels."
+    },
+    {
+      "id": "cmtekdnhm00bgzevdhzzk3yt7",
+      "title": "Compressed Sensing Channel Estimation for OTFS Modulation in Non-Integer Delay-Doppler Domain",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2111.12382",
+      "rawUrl": "https://arxiv.org/abs/2111.12382",
+      "source": "arxiv",
+      "publishedAt": "2021-11-24T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.610Z",
+      "lastSeen": "2026-10-02T09:41:29.072Z",
+      "versionsCount": 2,
+      "authors": [
+        "Felipe Gómez-Cuba"
+      ],
+      "abstract": "This paper introduces a Compressed Sensing (CS) estimation scheme for Orthogonal Time Frequency Space (OTFS) channels with sparse multipath. The OTFS waveform represents signals in a two dimensional Delay-Doppler (DD) orthonormal basis. The proposed model does not require the assumption that the delays are integer multiples of the sampling period. The analysis shows that non-integer delay and Doppler shifts in the channel cannot be accurately modelled by integer approximations. An Orthogonal Matching Pursuit with Binary-division Refinement (OMPBR) estimation algorithm is proposed. The proposed estimator finds the best channel approximation over a continuous DD dictionary without integer approximations. This results in a significant reduction of the estimation normalized mean squared error with reasonable computational complexity."
+    },
+    {
+      "id": "cmtekdni800bkzevdjou69k59",
+      "title": "Low Complexity Channel Estimation for OTFS Modulation with Fractional Delay and Doppler",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2111.06009",
+      "rawUrl": "https://arxiv.org/abs/2111.06009",
+      "source": "arxiv",
+      "publishedAt": "2021-11-11T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.633Z",
+      "lastSeen": "2026-10-02T09:41:28.668Z",
+      "versionsCount": 2,
+      "authors": [
+        "Imran Ali Khan",
+        "Saif Khan Mohammed"
+      ],
+      "abstract": "We consider the problem of accurate channel estimation for OTFS based systems with few transmit/receive antennas, where additional sparsity due to large number of antennas is not a possibility. For such systems the sparsity of the effective delay-Doppler (DD) domain channel is adversely affected in the presence of channel path delay and Doppler shifts which are non-integer multiples of the delay and Doppler domain resolution. The sparsity is also adversely affected when practical transmit and receive pulses are used. In this paper we propose a Modified Maximum Likelihood Channel Estimation (M-MLE) method for OTFS based systems which exploits the fine delay and Doppler domain resolution of the OTFS modulated signal to decouple the joint estimation of the channel parameters (i.e., channel gain, delay and Doppler shift) of all channel paths into separate estimation of the channel parameters for each path. We further observe that with fine delay and Doppler domain resolution, the received DD domain signal along a particular channel path can be written as a product of a delay domain term and a Doppler domain term where the delay domain term is primarily dependent on the delay of this path and the Doppler domain term is primarily dependent on the Doppler shift of this path. This allows us to propose another method termed as the two-step method (TSE), where the joint two-dimensional estimation of the delay and Doppler shift of a particular path in the M-MLE method is further decoupled into two separate one-dimensional estimation for the delay and for the Doppler shift of that path. Simulations reveal that the proposed methods (M-MLE and TSE) achieve better channel estimation accuracy at lower complexity when compared to other known methods for accurate OTFS channel estimation."
+    },
+    {
+      "id": "cmtekdnir00bozevd6a8vl7qb",
+      "title": "A Novel ISAC Transmission Framework based on Spatially-Spread Orthogonal Time Frequency Space Modulation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2109.00440",
+      "rawUrl": "https://arxiv.org/abs/2109.00440",
+      "source": "arxiv",
+      "publishedAt": "2021-09-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.652Z",
+      "lastSeen": "2026-10-02T09:41:29.122Z",
+      "versionsCount": 2,
+      "authors": [
+        "Shuangyang Li",
+        "Weijie Yuan",
+        "Chang Liu",
+        "Zhiqiang Wei",
+        "Jinhong Yuan",
+        "Baoming Bai",
+        "Derrick Wing Kwan Ng"
+      ],
+      "abstract": "In this paper, we propose a novel integrated sensing and communication (ISAC) transmission framework based on the spatially-spread orthogonal time frequency space (SS-OTFS) modulation by considering the fact that communication channel strengths cannot be directly obtained from radar sensing. We first propose the concept of SS-OTFS modulation, where the key novelty is the angular domain discretization enabled by the spatial-spreading/de-spreading. This discretization gives rise to simple and insightful effective models for both radar sensing and communication, which result in simplified designs for the related estimation and detection problems. In particular, we design simple beam tracking, angle estimation, and power allocation schemes for radar sensing, by utilizing the special structure of the effective radar sensing matrix. Meanwhile, we provide a detailed analysis on the pair-wise error probability (PEP) for communication, which unveils the key conditions for both precoding and power allocation designs. Based on those conditions, we design a symbol-wise precoding scheme for communication based only on the delay, Doppler, and angle estimates from radar sensing, without the a priori knowledge of the communication channel fading coefficients, and also introduce the power allocation for communication. Furthermore, we notice that radar sensing and communication requires different power allocations. Therefore, we discuss the performances of both the radar sensing and communication with different power allocations and show that the power allocation should be designed leaning towards radar sensing in practical scenarios. The effectiveness of the proposed ISAC transmission framework is verified by our numerical results, which also agree with our analysis and discussions."
+    },
+    {
+      "id": "cmtekdnjd00bszevdot5hzszc",
+      "title": "Joint Active User Detection and Channel Estimation for Grant-Free NOMA-OTFS in LEO Constellation Internet-of-Things",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2108.01520",
+      "rawUrl": "https://arxiv.org/abs/2108.01520",
+      "source": "arxiv",
+      "publishedAt": "2021-08-03T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.673Z",
+      "lastSeen": "2026-10-02T09:41:29.271Z",
+      "versionsCount": 2,
+      "authors": [
+        "Xingyu Zhou",
+        "Zhen Gao"
+      ],
+      "abstract": "The flourishing low-Earth orbit (LEO) constellation communication network provides a promising solution for seamless coverage services to Internet-of-Things (IoT) terminals. However, confronted with massive connectivity and rapid variation of terrestrial-satellite link (TSL), the traditional grant-free random-access schemes always fail to match this scenario. In this paper, a new non-orthogonal multiple-access (NOMA) transmission protocol that incorporates orthogonal time frequency space (OTFS) modulation is proposed to solve these problems. Furthermore, we propose a two-stages joint active user detection and channel estimation scheme based on the training sequences aided OTFS data frame structure. Specifically, in the first stage, with the aid of training sequences, we perform active user detection and coarse channel estimation by recovering the sparse sampled channel vectors. And then, we develop a parametric approach to facilitate more accurate result of channel estimation with the previously recovered sampled channel vectors according to the inherent characteristics of TSL channel. Simulation results demonstrate the superiority of the proposed method in this kind of high-mobility scenario in the end."
+    },
+    {
+      "id": "cmtekdnjt00bwzevdz1u39ne0",
+      "title": "Convolutional Sparse Coding based Channel Estimation for OTFS-SCMA in Uplink",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2107.09893",
+      "rawUrl": "https://arxiv.org/abs/2107.09893",
+      "source": "arxiv",
+      "publishedAt": "2021-07-21T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.689Z",
+      "lastSeen": "2026-10-02T09:41:29.979Z",
+      "versionsCount": 2,
+      "authors": [
+        "Anna Thomas",
+        "Kuntal Deka",
+        "P. Raviteja",
+        "Sanjeev Sharma"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) has emerged as the most sought-after modulation technique in a high mobility scenario. Sparse code multiple access (SCMA) is an attractive code-domain non-orthogonal multiple access (NOMA) technique. Recently a code-domain NOMA approach for OTFS, named OTFS-SCMA, is proposed. OTFS-SCMA is a promising framework that meets the demands of high mobility and massive connectivity. This paper presents a channel estimation technique based on the convolutional sparse coding (CSC) approach for OTFS-SCMA in the uplink. The channel estimation task is formulated as a CSC problem following a careful rearrangement of the OTFS input-output relation. We use an embedded pilot-aided sparse-pilot structure that enjoys the features of both OTFS and SCMA. The existing channel estimation techniques for OTFS in multi-user scenarios for uplink demand extremely high overhead for pilot and guard symbols, proportional to the number of users. The proposed method maintains a minimal overhead equivalent to a single user without compromising on the estimation error. The results show that the proposed channel estimation algorithm is very efficient in bit error rate (BER), normalized mean square error (NMSE), and spectral efficiency (SE)."
+    },
+    {
+      "id": "cmtekdnk900c0zevdee7zeonm",
+      "title": "A DNN-based OTFS Transceiver with Delay-Doppler Channel Training and IQI Compensation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2107.09376",
+      "rawUrl": "https://arxiv.org/abs/2107.09376",
+      "source": "arxiv",
+      "publishedAt": "2021-07-20T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.705Z",
+      "lastSeen": "2026-10-02T09:41:29.549Z",
+      "versionsCount": 2,
+      "authors": [
+        "Ashwitha Naikoti",
+        "A. Chockalingam"
+      ],
+      "abstract": "In this paper, we present a deep neural network (DNN) based transceiver architecture for delay-Doppler (DD) channel training and detection of orthogonal time frequency space (OTFS) modulation signals along with IQ imbalance (IQI) compensation. The proposed transceiver learns the DD channel over a spatial coherence interval and detects the information symbols using a single DNN trained for this purpose at the receiver. The proposed transceiver also learns the IQ imbalances present in the transmitter and receiver and effectively compensates them. The transmit IQI compensation is realized using a single DNN at the transmitter which learns and provides a compensating modulation alphabet (to pre-rotate the modulation symbols before sending through the transmitter) without explicitly estimating the transmit gain and phase imbalances. The receive IQI imbalance compensation is realized using two DNNs at the receiver, one DNN for explicit estimation of receive gain and phase imbalances and another DNN for compensation. Simulation results show that the proposed DNN-based architecture provides very good performance, making it as a promising approach for the design of practical OTFS transceivers."
+    },
+    {
+      "id": "cmtekdnkv00c4zevdsq01m8mc",
+      "title": "Deterministic Pilot Design and Channel Estimation for Downlink Massive MIMO-OTFS Systems in Presence of the Fractional Doppler",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2105.09628",
+      "rawUrl": "https://arxiv.org/abs/2105.09628",
+      "source": "arxiv",
+      "publishedAt": "2021-05-20T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.727Z",
+      "lastSeen": "2026-10-02T09:41:29.726Z",
+      "versionsCount": 2,
+      "authors": [
+        "Ding Shi",
+        "Wenjin Wang",
+        "Li You",
+        "Xiaohang Song",
+        "Yi Hong",
+        "Xiqi Gao",
+        "Gerhard Fettweis"
+      ],
+      "abstract": "Although the combination of the orthogonal time frequency space (OTFS) modulation and the massive multiple-input multiple-output (MIMO) technology can make communication systems perform better in high-mobility scenarios, there are still many challenges in downlink channel estimation owing to inaccurate modeling and high pilot overhead in practical systems. In this paper, we propose a channel state information (CSI) acquisition scheme for downlink massive MIMO-OTFS in presence of the fractional Doppler, including deterministic pilot design and channel estimation algorithm. First, we analyze the input-output relationship of the single-input single-output (SISO) OTFS based on the orthogonal frequency division multiplexing (OFDM) modem and extend it to massive MIMO-OTFS. Moreover, we formulate an accurate model for the practical system in which the fractional Doppler is considered and the influence of subpaths is revealed. A deterministic pilot design is then proposed based on the model and the structure of the pilot matrix to reduce pilot overhead and save memory consumption. Since channel geometry changes very slowly relative to the communication timescale, we put forward a modified sensing matrix based channel estimation (MSMCE) algorithm to acquire the downlink CSI. Simulation results demonstrate that the proposed downlink CSI acquisition scheme has significant advantages over traditional algorithms."
+    },
+    {
+      "id": "cmtekdo0n00fczevdz29x8hf9",
+      "title": "Integrated Sensing and Communication-assisted Orthogonal Time Frequency Space Transmission for Vehicular Networks",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2105.03125",
+      "rawUrl": "https://arxiv.org/abs/2105.03125",
+      "source": "arxiv",
+      "publishedAt": "2021-05-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.295Z",
+      "lastSeen": "2026-10-02T09:41:29.616Z",
+      "versionsCount": 2,
+      "authors": [
+        "Weijie Yuan",
+        "Zhiqiang Wei",
+        "Shuangyang Li",
+        "Jinhong Yuan",
+        "Derrick Wing Kwan Ng"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation is a promising candidate for supporting reliable information transmission in high-mobility vehicular networks. In this paper, we consider the employment of the integrated (radar) sensing and communication (ISAC) technique for assisting OTFS transmission in both uplink and downlink vehicular communication systems. Benefiting from the OTFS-ISAC signals, the roadside unit (RSU) is capable of simultaneously transmitting downlink information to the vehicles and estimating the sensing parameters of vehicles, e.g., locations and speeds, based on the reflected echoes. Then, relying on the estimated kinematic parameters of vehicles, the RSU can construct the topology of the vehicular network that enables the prediction of the vehicle states in the following time instant. Consequently, the RSU can effectively formulate the transmit downlink beamformers according to the predicted parameters to counteract the channel adversity such that the vehicles can directly detect the information without the need of performing channel estimation. As for the uplink transmission, the RSU can infer the delays and Dopplers associated with different channel paths based on the aforementioned dynamic topology of the vehicular network. Thus, inserting guard space as in conventional methods are not needed for uplink channel estimation which removes the required training overhead. Finally, an efficient uplink detector is proposed by taking into account the channel estimation uncertainty. Through numerical simulations, we demonstrate the benefits of the proposed ISAC-assisted OTFS transmission scheme."
+    },
+    {
+      "id": "cmtekdnlb00c8zevdk95i87w7",
+      "title": "Orthogonal Time Sequency Multiplexing Modulation: Analysis and Low-Complexity Receiver Design",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2104.05939",
+      "rawUrl": "https://arxiv.org/abs/2104.05939",
+      "source": "arxiv",
+      "publishedAt": "2021-04-13T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.743Z",
+      "lastSeen": "2026-10-02T09:41:28.620Z",
+      "versionsCount": 2,
+      "authors": [
+        "Tharaj Thaj",
+        "Emanuele Viterbo",
+        "Yi Hong"
+      ],
+      "abstract": "This paper proposes orthogonal time sequency multiplexing (OTSM), a novel single carrier modulation scheme that places information symbols in the delay-sequency domain followed by a cascade of time-division multiplexing (TDM) and Walsh-Hadamard sequence multiplexing. Thanks to the Walsh Hadamard transform (WHT), the modulation and demodulation do not require complex domain multiplications. For the proposed OTSM, we first derive the input-output relation in the delay-sequency domain and present a low complexity detection method taking advantage of zero-padding. We demonstrate via simulations that OTSM offers high performance gains over orthogonal frequency division multiplexing (OFDM) and similar performance to orthogonal time frequency space (OTFS), but at lower complexity owing to WHT. Then we propose a low complexity time-domain channel estimation method. Finally, we show how to include an outer error control code and a turbo decoder to improve error performance of the coded system."
+    },
+    {
+      "id": "cmtekdnlt00cczevdmam9u4lj",
+      "title": "Channel Estimation for MIMO Space Time Coded OTFS under Doubly Selective Channels",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2104.01023",
+      "rawUrl": "https://arxiv.org/abs/2104.01023",
+      "source": "arxiv",
+      "publishedAt": "2021-04-02T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.761Z",
+      "lastSeen": "2026-10-02T09:41:28.913Z",
+      "versionsCount": 2,
+      "authors": [
+        "Roberto Bomfin",
+        "Marwa Chafii",
+        "Ahmad Nimr",
+        "Gerhard Fettweis"
+      ],
+      "abstract": "In this paper, we present a unique word (UW)-based channel estimation approach for multiple-input multiple-output (MIMO) systems under doubly dispersive channels, which is applied to orthogonal time frequency space (OTFS) with space time coding (STC). The OTFS modulation has been recently proposed as a robust technique under time varying channels due to its property of spreading the data symbols over time and frequency. Yet another relevant aspect is the employment of multiple antennas at the transmitter and receiver. Therefore, we consider an STC MIMO system with cyclic delay diversity at the transmitter and maximum ratio combining at the receiver, where we develop a UW-based channel estimation scheme for multiple transmit antennas. We show a recently proposed frame optimization scheme for SISO is directly applicable to MIMO. In addition, we evaluate numerically the frame error rate (FER) of OTFS and OFDM with 2x2 and 4x4 MIMO, where the time varying channel is estimated using the UW-based approach. The FER results reveal that OTFS becomes more advantageous than OFDM for MIMO-STC systems with higher order modulation and code rate."
+    },
+    {
+      "id": "cmtekdnmd00cgzevdr8j8o5ct",
+      "title": "Performance Analysis and Window Design for Channel Estimation of OTFS Modulation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2101.11770",
+      "rawUrl": "https://arxiv.org/abs/2101.11770",
+      "source": "arxiv",
+      "publishedAt": "2021-01-28T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.781Z",
+      "lastSeen": "2026-10-02T09:41:28.574Z",
+      "versionsCount": 2,
+      "authors": [
+        "Zhiqiang Wei",
+        "Weijie Yuan",
+        "Shuangyang Li",
+        "Jinhong Yuan",
+        "Derrick Wing Kwan Ng"
+      ],
+      "abstract": "In this paper, we investigate the impacts of transmitter and receiver windows on orthogonal time-frequency space (OTFS) modulation and propose a window design to improve the OTFS channel estimation performance. Assuming ideal pulse shaping filters at the transceiver, we first identify the role of window in effective channel and the reduced channel sparsity with conventional rectangular window. Then, we characterize the impacts of windowing on the effective channel estimation performance for OTFS modulation. Based on the revealed insights, we propose to apply a Dolph-Chebyshev (DC) window at either the transmitter or the receiver to effectively enhance the sparsity of the effective channel. As such, the channel spread due to the fractional Doppler is significantly reduced, which leads to a lower error floor in channel estimation compared with that of the rectangular window. Simulation results verify the accuracy of the obtained analytical results and confirm the superiority of the proposed window designs in improving the channel estimation performance over the conventional rectangular or Sine windows."
+    },
+    {
+      "id": "cmtekdnmv00ckzevdos2u8h85",
+      "title": "Off-grid Channel Estimation with Sparse Bayesian Learning for OTFS Systems",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2101.05629",
+      "rawUrl": "https://arxiv.org/abs/2101.05629",
+      "source": "arxiv",
+      "publishedAt": "2021-01-14T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.800Z",
+      "lastSeen": "2026-10-02T09:41:28.521Z",
+      "versionsCount": 2,
+      "authors": [
+        "Zhiqiang Wei",
+        "Weijie Yuan",
+        "Shuangyang Li",
+        "Jinhong Yuan",
+        "Derrick Wing Kwan Ng"
+      ],
+      "abstract": "This paper proposes an off-grid channel estimation scheme for orthogonal time-frequency space (OTFS) systems adopting the sparse Bayesian learning (SBL) framework. To avoid channel spreading caused by the fractional delay and Doppler shifts and to fully exploit the channel sparsity in the delay-Doppler (DD) domain, we estimate the original DD domain channel response rather than the effective DD domain channel response as commonly adopted in the literature. OTFS channel estimation is first formulated as a one-dimensional (1D) off-grid sparse signal recovery (SSR) problem based on a virtual sampling grid defined in the DD space, where the on-grid and off-grid components of the delay and Doppler shifts are separated for estimation. In particular, the on-grid components of the delay and Doppler shifts are jointly determined by the entry indices with significant values in the recovered sparse vector. Then, the corresponding off-grid components are modeled as hyper-parameters in the proposed SBL framework, which can be estimated via the expectation-maximization method. To strike a balance between channel estimation performance and computational complexity, we further propose a two-dimensional (2D) off-grid SSR problem via decoupling the delay and Doppler shift estimations. In our developed 1D and 2D off-grid SBL-based channel estimation algorithms, the hyper-parameters are updated alternatively for computing the conditional posterior distribution of channels, which can be exploited to reconstruct the effective DD domain channel. Compared with the 1D method, the proposed 2D method enjoys a much lower computational complexity while only suffers slight performance degradation. Simulation results verify the superior performance of the proposed channel estimation schemes over state-of-the-art schemes."
+    },
+    {
+      "id": "cmtekdnne00cozevdmd18tcwd",
+      "title": "Cross Domain Iterative Detection for Orthogonal Time Frequency Space Modulation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2101.03822",
+      "rawUrl": "https://arxiv.org/abs/2101.03822",
+      "source": "arxiv",
+      "publishedAt": "2021-01-11T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.818Z",
+      "lastSeen": "2026-10-02T09:41:28.896Z",
+      "versionsCount": 2,
+      "authors": [
+        "Shuangyang Li",
+        "Weijie Yuan",
+        "Zhiqiang Wei",
+        "Jinhong Yuan"
+      ],
+      "abstract": "Recently proposed orthogonal time frequency space (OTFS) modulation has been considered as a promising candidate for accommodating various emerging communication and sensing applications in high-mobility environments. In this paper, we propose a novel cross domain iterative detection algorithm to enhance the error performance of OTFS modulation. Different from conventional OTFS detection methods, the proposed algorithm applies basic estimation/detection approaches to both the time domain and delay-Doppler (DD) domain and iteratively updates the extrinsic information from two domains with the unitary transformation. In doing so, the proposed algorithm exploits the time domain channel sparsity and the DD domain symbol constellation constraints. We evaluate the estimation/detection error variance in each domain for each iteration and derive the state evolution to investigate the detection error performance. We show that the performance gain due to iterations comes from the non-Gaussian constellation constraint in the DD domain. More importantly, we prove the proposed algorithm can indeed converge and, in the convergence, the proposed algorithm can achieve almost the same error performance as the maximum-likelihood sequence detection even in the presence of fractional Doppler shifts. Furthermore, the computational complexity associated with the domain transformation is low, thanks to the structure of the discrete Fourier transform (DFT) kernel. Simulation results are consistent with our analysis and demonstrate a significant performance improvement compared to conventional OTFS detection methods."
+    },
+    {
+      "id": "cmtekdo4q00gczevdolro70xi",
       "title": "Message Passing Based Structured Sparse Signal Recovery for Estimation of OTFS Channels with Fractional Doppler Shifts",
       "type": "PAPER",
       "url": "https://arxiv.org/abs/2011.14757",
       "rawUrl": "https://arxiv.org/abs/2011.14757",
       "source": "arxiv",
-      "publishedAt": null,
+      "publishedAt": "2020-11-01T00:00:00.000Z",
       "firstSeen": "2026-08-29T15:57:34.442Z",
-      "lastSeen": "2026-08-29T15:57:34.442Z",
-      "versionsCount": 1,
+      "lastSeen": "2026-10-02T09:41:28.859Z",
+      "versionsCount": 2,
       "authors": [
         "Fei Liu",
         "Zhengdao Yuan",
         "Qinghua Guo",
         "Zhongyong Wang",
         "Peng Sun"
-      ]
+      ],
+      "abstract": "The orthogonal time frequency space (OTFS) modulation has emerged as a promising modulation scheme for high mobility wireless communications. To enable efficient OTFS detection in the delay-Doppler (DD) domain, the DD domain channels need to be acquired accurately. To achieve the low latency requirement in future wireless communications, the time duration of the OTFS block should be small, therefore fractional Doppler shifts have to be considered to avoid significant modelling errors due to the assumption of integer Doppler shifts. However, there lack investigations on the estimation of OTFS channels with fractional Doppler shifts in the literature. In this work, we develop a high performing channel estimator for OTFS with the bi-orthogonal waveform or the rectangular waveform. Instead of estimating the DD domain channel directly, we estimate the channel gains and (fractional) Doppler shifts that parameterize the DD domain channel. The estimation is formulated as a structured signal recovery problem with a Bayesian treatment. Based on a factor graph representation of the problem, an efficient message passing algorithm is developed to recover the structured sparse signal (thereby the OTFS channel). The Cramer-Rao Lower Bound (CRLB) for the estimation is developed and the effectiveness of the algorithm is demonstrated through simulations."
     },
     {
-      "title": "DFT-Spread Orthogonal Time Frequency Space System with Superimposed Pilots for Terahertz Integrated Sensing and Communication",
+      "id": "cmtekdnnx00cszevdqt5zikyn",
+      "title": "OTFS Channel Estimation And Data Detection Designs With Superimposed Pilots",
       "type": "PAPER",
-      "url": "https://arxiv.org/abs/2202.10035",
-      "rawUrl": "https://arxiv.org/abs/2202.10035",
+      "url": "https://arxiv.org/abs/2010.15066",
+      "rawUrl": "https://arxiv.org/abs/2010.15066",
       "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.462Z",
-      "lastSeen": "2026-08-29T15:57:34.462Z",
-      "versionsCount": 1,
+      "publishedAt": "2020-10-28T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.837Z",
+      "lastSeen": "2026-10-02T09:41:28.605Z",
+      "versionsCount": 2,
       "authors": [
-        "Yongzhi Wu",
-        "Chong Han",
-        "Zhi Chen"
-      ]
+        "Himanshu B. Mishra",
+        "Prem Singh",
+        "Abhishek K. Prasad",
+        "Rohit Budhiraja"
+      ],
+      "abstract": "This work proposes a superimposed pilot (SP)-based channel estimation and data detection framework for orthogonal time-frequency space (OTFS) scheme, wherein low-powered pilots are superimposed on to data symbols in the delay-Doppler domain. We propose two channel estimation and data detection designs for SP-OTFS systems which, unlike the existing OTFS designs, do not designate any slots for pilots, which improves their spectral efficiency (SE). The first SP design estimates channel by treating data as interference, which degrades its performance at high signal to noise ratio. The second SP design alleviates this problem by iterating between channel estimation and data detection. Both these designs detect data using message passing algorithm which exploits OTFS channel sparsity, and consequently has low computational complexity. We also derive a lower bound on the signal-to-interference-plus-noise ratio of the proposed designs, and maximize it by optimally allocating power between data and pilot symbols. We numerically validate the derived analytical results, and show that the proposed designs have superior SE than the two state-of-the-art OTFS channel estimation and data detection designs."
     },
     {
-      "title": "From OTFS to AFDM: A Comparative Study of Next-Generation Waveforms for ISAC in Doubly-Dispersive Channels",
+      "id": "cmtekdnod00cwzevdf5geosz5",
+      "title": "OTFS Based Random Access Preamble Transmission For High Mobility Scenarios",
       "type": "PAPER",
-      "url": "https://arxiv.org/abs/2401.07700",
-      "rawUrl": "https://arxiv.org/abs/2401.07700",
+      "url": "https://arxiv.org/abs/2010.12915",
+      "rawUrl": "https://arxiv.org/abs/2010.12915",
       "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.478Z",
-      "lastSeen": "2026-08-29T15:57:34.478Z",
-      "versionsCount": 1,
+      "publishedAt": "2020-10-24T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.853Z",
+      "lastSeen": "2026-10-02T09:41:28.558Z",
+      "versionsCount": 2,
       "authors": [
-        "Hyeon Seok Rou",
-        "Giuseppe Thadeu Freitas de Abreu",
-        "Junil Choi",
-        "David González G.",
-        "Marios Kountouris",
-        "Yong Liang Guan",
-        "Osvaldo Gonsa"
-      ]
-    },
-    {
-      "title": "Fast Burst-Sparsity Learning Approach for Massive MIMO-OTFS Channel Estimation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2408.12239",
-      "rawUrl": "https://arxiv.org/abs/2408.12239",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.492Z",
-      "lastSeen": "2026-08-29T15:57:34.492Z",
-      "versionsCount": 1,
-      "authors": [
-        "Ming Ma",
-        "Jisheng Dai",
-        "Xue-Qin Jiang"
-      ]
-    },
-    {
-      "title": "Channel Estimation in Uplink Multi-User Scenario using OTFS Modulation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2404.11328",
-      "rawUrl": "https://arxiv.org/abs/2404.11328",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.521Z",
-      "lastSeen": "2026-08-29T15:57:34.521Z",
-      "versionsCount": 1,
-      "authors": [
-        "Yatish Pachigolla",
-        "Lorenzo Zaniboni",
-        "Mahdi Mahvari"
-      ]
-    },
-    {
-      "title": "Superimposed Pilot-Based OTFS: Will It Work?",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2501.15935",
-      "rawUrl": "https://arxiv.org/abs/2501.15935",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.540Z",
-      "lastSeen": "2026-08-29T15:57:34.540Z",
-      "versionsCount": 1,
-      "authors": [
-        "Yuta Kanazawa",
-        "Hiroki Iimori",
-        "Chandan Pradhan",
-        "Szabolcs Malomsoky",
-        "Naoki Ishikawa"
-      ]
-    },
-    {
-      "title": "Exploiting Structural Sparsity and Delay-Doppler Decoupling for Low-Complexity OTFS-ISAC Receivers",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2504.20659",
-      "rawUrl": "https://arxiv.org/abs/2504.20659",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.560Z",
-      "lastSeen": "2026-08-29T15:57:34.560Z",
-      "versionsCount": 1,
-      "authors": [
-        "Mauro Marchese",
-        "Musa Furkan Keskin",
-        "Pietro Savazzi",
-        "Henk Wymeersch"
-      ]
-    },
-    {
-      "title": "Low-Complexity Frequency Domain Equalization of Zak-OTFS in Doubly-Spread Channels",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2506.23045",
-      "rawUrl": "https://arxiv.org/abs/2506.23045",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.580Z",
-      "lastSeen": "2026-08-29T15:57:34.580Z",
-      "versionsCount": 1,
-      "authors": [
+        "Alok Kumar Sinha",
         "Saif Khan Mohammed",
-        "Sandesh Rao Mattu",
-        "Nishant Mehrotra",
-        "Venkatesh Khammammetti",
-        "Robert Calderbank"
-      ]
-    },
-    {
-      "title": "Optimal Pilot Design for OTFS in Linear Time-Varying Channels",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2403.19379",
-      "rawUrl": "https://arxiv.org/abs/2403.19379",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.596Z",
-      "lastSeen": "2026-08-29T15:57:34.596Z",
-      "versionsCount": 1,
-      "authors": [
-        "Ids van der Werf",
-        "Richard Heusdens",
-        "Richard C. Hendriks",
-        "Geert Leus"
-      ]
-    },
-    {
-      "title": "Blind Bistatic Radar Parameter Estimation for AFDM Systems in Doubly-Dispersive Channels",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2407.05328",
-      "rawUrl": "https://arxiv.org/abs/2407.05328",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.624Z",
-      "lastSeen": "2026-08-29T15:57:34.624Z",
-      "versionsCount": 1,
-      "authors": [
-        "Kuranage Roche Rayan Ranasinghe",
-        "Kengo Ando",
-        "Hyeon Seok Rou",
-        "Giuseppe Thadeu Freitas de Abreu",
-        "Andreas Bathelt"
-      ]
-    },
-    {
-      "title": "OTFS-ISAC System with Sub-Nyquist ADC Sampling Rate",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2502.04663",
-      "rawUrl": "https://arxiv.org/abs/2502.04663",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.641Z",
-      "lastSeen": "2026-08-29T15:57:34.641Z",
-      "versionsCount": 1,
-      "authors": [
-        "Henglin Pu",
-        "Xuefeng Wang",
-        "Ajay Kumar",
-        "Lu Su",
-        "Husheng Li"
-      ]
-    },
-    {
-      "title": "A Novel Massive Random Access in Cell-Free Massive MIMO Systems for High-Speed Mobility with OTFS Modulation",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2409.01111",
-      "rawUrl": "https://arxiv.org/abs/2409.01111",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.656Z",
-      "lastSeen": "2026-08-29T15:57:34.656Z",
-      "versionsCount": 1,
-      "authors": [
-        "Yanfeng Hu",
-        "Dongming Wang",
-        "Xinjiang Xia",
-        "Jiamin Li",
-        "Pengcheng Zhu",
-        "Xiaohu You"
-      ]
-    },
-    {
-      "title": "Pilot-Aided Joint Time Synchronization and Channel Estimation for OTFS",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2408.04192",
-      "rawUrl": "https://arxiv.org/abs/2408.04192",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.670Z",
-      "lastSeen": "2026-08-29T15:57:34.670Z",
-      "versionsCount": 1,
-      "authors": [
-        "Jiazheng Sun",
-        "Peng Yang",
-        "Xianbin Cao",
-        "Zehui Xiong",
-        "Haijun Zhang",
-        "Tony Q. S. Quek"
-      ]
-    },
-    {
-      "title": "A Low-Complexity Range Estimation with Adjusted Affine Frequency Division Multiplexing Waveform",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2312.11125",
-      "rawUrl": "https://arxiv.org/abs/2312.11125",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.684Z",
-      "lastSeen": "2026-08-29T15:57:34.684Z",
-      "versionsCount": 1,
-      "authors": [
-        "Jiajun Zhu",
-        "Yanqun Tang",
-        "Xizhang Wei",
-        "Haoran Yin",
-        "Jinming Du",
-        "Zhengpeng Wang",
-        "Yuqinng Liu"
-      ]
-    },
-    {
-      "title": "Pre-equalization Design for ISAC-OTFS Air-Ground Transmission: A Deep Learning Approach",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2412.04751",
-      "rawUrl": "https://arxiv.org/abs/2412.04751",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.698Z",
-      "lastSeen": "2026-08-29T15:57:34.698Z",
-      "versionsCount": 1,
-      "authors": [
-        "Weihao Wang",
-        "Jing Guo",
-        "Siqiang Wang",
-        "Xinyi Wang",
-        "Weijie Yuan",
-        "Zesong Fei"
-      ]
-    },
-    {
-      "title": "Low-Complexity OTFS-Based Over-the-Air Computation Design for Time-Varying Channels",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2405.07040",
-      "rawUrl": "https://arxiv.org/abs/2405.07040",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.712Z",
-      "lastSeen": "2026-08-29T15:57:34.712Z",
-      "versionsCount": 1,
-      "authors": [
-        "Xinyu Huang",
-        "Henrik Hellström",
-        "Carlo Fischione"
-      ]
-    },
-    {
-      "title": "Synchronization for Multiuser Uplink OTFS",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2410.10740",
-      "rawUrl": "https://arxiv.org/abs/2410.10740",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.727Z",
-      "lastSeen": "2026-08-29T15:57:34.727Z",
-      "versionsCount": 1,
-      "authors": [
-        "Mohsen Bayat",
-        "Sanoopkumar P.S.",
-        "Arman Farhang"
-      ]
-    },
-    {
-      "title": "Joint Channel, Data, and Radar Parameter Estimation for AFDM Systems in Doubly-Dispersive Channels",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2405.16945",
-      "rawUrl": "https://arxiv.org/abs/2405.16945",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.740Z",
-      "lastSeen": "2026-08-29T15:57:34.740Z",
-      "versionsCount": 1,
-      "authors": [
-        "Kuranage Roche Rayan Ranasinghe",
-        "Hyeon Seok Rou",
-        "Giuseppe Thadeu Freitas de Abreu",
-        "Takumi Takahashi",
-        "Kenta Ito"
-      ]
-    },
-    {
-      "title": "Joint Communication and Sensing in OTFS-based UAV Networks",
-      "type": "PAPER",
-      "url": "https://arxiv.org/abs/2311.17742",
-      "rawUrl": "https://arxiv.org/abs/2311.17742",
-      "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.755Z",
-      "lastSeen": "2026-08-29T15:57:34.755Z",
-      "versionsCount": 1,
-      "authors": [
-        "Alessandro Nordio",
-        "Carla Fabiana Chiasserini",
+        "P. Raviteja",
+        "Yi Hong",
         "Emanuele Viterbo"
-      ]
+      ],
+      "abstract": "We consider the problem of uplink timing synchronization for Orthogonal Time Frequency Space (OTFS) modulation based systems where information is embedded in the delay-Doppler (DD) domain. For this, we propose a novel Random Access (RA) preamble waveform based on OTFS modulation. We also propose a method to estimate the round-trip propagation delay between a user terminal (UT) and the base station (BS) based on the received RA preambles in the DD domain. This estimate (known as the timing advance estimate) is fed back to the respective UTs so that they can advance their uplink timing in order that the signal from all UTs in a cell is received at the BS in a time-synchronized manner. Through analysis and simulations we study the impact of OTFS modulation parameters of the RA preamble on the probability of timing error, which gives valuable insights on how to choose these parameters. Exhaustive numerical simulations of high mobility scenarios suggests that the timing error probability (TEP) performance of the proposed OTFS based RA is much more robust to channel induced multi-path Doppler shift when compared to the RA method in Fourth Generation (4G) systems."
     },
     {
-      "title": "Deep Learning-based OTFS Channel Estimation and Symbol Detection with Plug-and-Play Framework",
+      "id": "cmtekdnow00d0zevd82db9a4b",
+      "title": "Transmitter and Receiver Window Designs for Orthogonal Time Frequency Space Modulation",
       "type": "PAPER",
-      "url": "https://arxiv.org/abs/2503.11102",
-      "rawUrl": "https://arxiv.org/abs/2503.11102",
+      "url": "https://arxiv.org/abs/2010.13005",
+      "rawUrl": "https://arxiv.org/abs/2010.13005",
       "source": "arxiv",
-      "publishedAt": null,
-      "firstSeen": "2026-08-29T15:57:34.769Z",
-      "lastSeen": "2026-08-29T15:57:34.769Z",
+      "publishedAt": "2020-10-24T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.872Z",
+      "lastSeen": "2026-10-02T09:41:28.765Z",
+      "versionsCount": 2,
+      "authors": [
+        "Zhiqiang Wei",
+        "Weijie Yuan",
+        "Shuangyang Li",
+        "Jinhong Yuan",
+        "Derrick Wing Kwan Ng"
+      ],
+      "abstract": "In this paper, we investigate the impacts of transmitter and receiver windows on the performance of orthogonal time-frequency space (OTFS) modulation and propose window designs to improve the OTFS channel estimation and data detection performance. In particular, assuming ideal pulse shaping filters at the transceiver, we derive the impacts of windowing on the effective channel and its estimation performance in the delay-Doppler (DD) domain, the total average transmit power and the effective noise covariance matrix. When the channel state information (CSI) is available at the transceiver, we analyze the minimum squared error (MSE) of data detection and propose an optimal transmitter window to minimize the detection MSE. The proposed optimal transmitter window is interpreted as a mercury/water-filling power allocation scheme, where the mercury is firstly filled before pouring water to pre-equalize the TF domain channels. When the CSI is not available at the transmitter but can be estimated at the receiver, we propose to apply a Dolph-Chebyshev (DC) window at either the transmitter or the receiver, which can effectively enhance the sparsity of the effective channel in the DD domain. Thanks to the enhanced DD domain channel sparsity, the channel spread due to the fractional Doppler is significantly reduced, which leads to a lower error floor in both channel estimation and data detection compared with that of rectangular window. Simulation results verify the accuracy of the obtained analytical results and confirm the superiority of the proposed window designs in improving the channel estimation and data detection performance over the conventional rectangular window design."
+    },
+    {
+      "id": "cmtekdo2a00fszevddy62q77w",
+      "title": "Channel Estimation and Equalization for CP-OFDM-based OTFS in Fractional Doppler Channels",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2010.15396",
+      "rawUrl": "https://arxiv.org/abs/2010.15396",
+      "source": "arxiv",
+      "publishedAt": "2020-10-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.355Z",
+      "lastSeen": "2026-10-02T09:41:28.796Z",
+      "versionsCount": 2,
+      "authors": [
+        "Noriyuki Hashimoto",
+        "Noboru Osawa",
+        "Kosuke Yamazaki",
+        "Shinsuke Ibi"
+      ],
+      "abstract": "Orthogonal time frequency and space (OTFS) modulation is a promising technology that satisfies high Doppler requirements for future mobile systems. OTFS modulation encodes information symbols and pilot symbols into the two-dimensional (2D) delay-Doppler (DD) domain. The received symbols suffer from inter-Doppler interference (IDI) in the fading channels with fractional Doppler shifts that are sampled at noninteger indices in the DD domain. IDI has been treated as an unavoidable effect because the fractional Doppler shifts cannot be obtained directly from the received pilot symbols. In this paper, we provide a solution to channel estimation for fractional Doppler channels. The proposed estimation provides new insight into the OTFS input-output relation in the DD domain as a 2D circular convolution with a small approximation. According to the input-output relation, we also provide a low-complexity channel equalization method using the estimated channel information. We demonstrate the error performance of the proposed channel estimation and equalization in several channels by simulations. The simulation results show that in high-mobility environments, the total system utilizing the proposed methods outperforms orthogonal frequency division multiplexing (OFDM) with ideal channel estimation and a conventional channel estimation method using a pseudo sequence."
+    },
+    {
+      "id": "cmtekdnyw00ewzevdfkujie7n",
+      "title": "Iterative Detection for Orthogonal Time Frequency Space Modulation with Unitary Approximate Message Passing",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2008.06688",
+      "rawUrl": "https://arxiv.org/abs/2008.06688",
+      "source": "arxiv",
+      "publishedAt": "2020-08-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.232Z",
+      "lastSeen": "2026-10-02T09:41:28.542Z",
+      "versionsCount": 2,
+      "authors": [
+        "Zhengdao Yuan",
+        "Fei Liu",
+        "Weijie Yuan",
+        "Qinghua Guo",
+        "Zhongyong Wang",
+        "Jinhong Yuan"
+      ],
+      "abstract": "The orthogonal-time-frequency-space (OTFS) modulation has emerged as a promising modulation scheme for high mobility wireless communications. To harvest the time and frequency diversity promised by OTFS, some promising detectors, especially message passing based ones, have been developed by taking advantage of the sparsity of the channel in the delay-Doppler domain. However, when the number of channel paths is relatively large or fractional Doppler {shifts have} to be considered, the complexity of existing detectors is a concern, and the message passing based detectors may suffer from performance loss due to the short loops involved in message passing. In this work, we investigate the design of OTFS detectors based on the approximate message passing (AMP). In particular, {leveraging the unitary AMP (UAMP), we design new detectors that enjoy} the structure of the channel matrix and allow efficient implementation. In addition, the estimation of noise variance is incorporated into the UAMP-based detectors. Thanks to the robustness of UAMP relative to AMP, the UAMP-based detectors deliver superior performance, and outperform state-of-the-art detectors significantly. We also investigate iterative joint detection and decoding in a coded OTFS system, where the OTFS detectors are integrated into a powerful turbo receiver, leading to considerable performance gains."
+    },
+    {
+      "id": "cmtekdnpd00d4zevdil8e2nsg",
+      "title": "Low-complexity and Low-overhead Receiver for OTFS via Large-scale Antenna Array",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2005.07910",
+      "rawUrl": "https://arxiv.org/abs/2005.07910",
+      "source": "arxiv",
+      "publishedAt": "2020-05-16T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.889Z",
+      "lastSeen": "2026-10-02T09:41:28.733Z",
+      "versionsCount": 2,
+      "authors": [
+        "Yaru Shan",
+        "Fanggang Wang"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) is a modulation technique that is dedicated to the high-speed mobility scenario. However, its transmission involves a two-dimensional convolution of the symbols of interest and the multipath fading channel, and it complicates the equalization. In addition to the high-complexity issue, the existing pilot pattern to estimate the unknown channel accurately requires large overhead to avoid the pilot being contaminated, which is spectrally inefficient. In this paper, we propose a receiver approach by the marriage of the OTFS and a large-scale antenna array, which allows low-complexity detection and low-overhead pilot pattern design. First, the received signal from each path of the multipath fading channel is identified by a high-resolution receive beamformer facilitated by a large-scale antenna array. Then the identified signal from each angle in the delay-Doppler domain reduces to a flat-faded signal, which can be simply equalized using the channel information estimated by our pilot pattern. We further provide the estimator of the channel fading and the rotations of delay and Doppler. With these estimates, the symbols of interest can be recovered, and then, the signals from all angles of arrival are combined as different diversity versions. In addition, our pilot pattern with only around 25% overhead of the existing pilot pattern ensures the same protection of pilot pollution. Eventually, the efficiency, the reliability, and the low complexity of the proposed receiver approach are further validated by the numerical results."
+    },
+    {
+      "id": "cmtekdnpw00d8zevdww7piznc",
+      "title": "Joint Radar Target Detection and Parameter Estimation with MIMO OTFS",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2004.11035",
+      "rawUrl": "https://arxiv.org/abs/2004.11035",
+      "source": "arxiv",
+      "publishedAt": "2020-04-23T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.908Z",
+      "lastSeen": "2026-10-02T09:41:28.701Z",
+      "versionsCount": 2,
+      "authors": [
+        "Lorenzo Gaudio",
+        "Mari Kobayashi",
+        "Giuseppe Caire",
+        "Giulio Colavolpe"
+      ],
+      "abstract": "Motivated by future automotive applications, we study the joint target detection and parameter estimation problem using orthogonal time frequency space (OTFS), a digital modulation format robust to time-frequency selective channels. Assuming the transmitter is equipped with a mono-static MIMO radar, we propose an efficient maximum likelihood based approach to detect targets and estimate the corresponding delay, Doppler, and angle-of-arrival parameters. In order to reduce the computational complexity associated to the high-dimensional search, our scheme proceeds in two steps, i.e., target detection and coarse parameter estimation followed by refined parameter estimation. Interestingly, our numerical results demonstrate that the proposed scheme is able to identify multiple targets if they are separated in at least one domain out of three (delay, Doppler, and angle), while achieving the Cramér-Rao lower bound for the parameter estimation."
+    },
+    {
+      "id": "cmtekdnqg00dczevdq8iicm7v",
+      "title": "A New Path Division Multiple Access for the Massive MIMO-OTFS Networks",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2003.08228",
+      "rawUrl": "https://arxiv.org/abs/2003.08228",
+      "source": "arxiv",
+      "publishedAt": "2020-03-18T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.929Z",
+      "lastSeen": "2026-10-02T09:41:28.652Z",
+      "versionsCount": 2,
+      "authors": [
+        "Muye Li",
+        "Shun Zhang",
+        "Feifei Gao",
+        "Pingzhi Fan",
+        "Octavia A. Dobre"
+      ],
+      "abstract": "This paper focuses on a new path division multiple access (PDMA) for both uplink (UL) and downlink (DL) massive multiple-input multiple-output network over a high mobility scenario, where the orthogonal time frequency space (OTFS) is adopted. First, the 3D UL channel model and the received signal model in the angle-delay-Doppler domain are studied. Secondly, the 3D-Newtonized orthogonal matching pursuit algorithm is utilized for the extraction of the UL channel parameters, including channel gains, directions of arrival, delays, and Doppler frequencies, over the antenna-time-frequency domain. Thirdly, we carefully analyze energy dispersion and power leakage of the 3D angle-delay-Doppler channels. Then, along UL, we design a path scheduling algorithm to properly assign angle-domain resources at user sides and to assure that the observation regions for different users do not overlap over the 3D cubic area, i.e., angle-delay-Doppler domain. After scheduling, different users can map their respective data to the scheduled delay-Doppler domain grids, and simultaneously send the data to base station (BS) without inter-user interference in the same OTFS block. Correspondingly, the signals at desired grids within the 3D resource space of BS are separately collected to implement the 3D channel estimation and maximal ratio combining-based data detection over the angle-delay-Doppler domain. Then, we construct a low complexity beamforming scheme over the angle-delay-Domain domain to achieve inter-user interference free DL communication. Simulation results are provided to demonstrate the validity of our proposed unified UL/DL PDMA scheme."
+    },
+    {
+      "id": "cmtekdnqy00dgzevduh7s6zi5",
+      "title": "Uplink-aided High Mobility Downlink Channel Estimation over Massive MIMO-OTFS System",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2003.07045",
+      "rawUrl": "https://arxiv.org/abs/2003.07045",
+      "source": "arxiv",
+      "publishedAt": "2020-03-16T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.947Z",
+      "lastSeen": "2026-10-02T09:41:28.781Z",
+      "versionsCount": 2,
+      "authors": [
+        "Yushan Liu",
+        "Shun Zhang",
+        "Feifei Gao",
+        "Jianpeng Ma",
+        "Xianbin Wang"
+      ],
+      "abstract": "Although it is often used in the orthogonal frequency division multiplexing (OFDM) systems, application of massive multiple-input multiple-output (MIMO) over the orthogonal time frequency space (OTFS) modulation could suffer from enormous training overhead in high mobility scenarios. In this paper, we propose one uplink-aided high mobility downlink channel estimation scheme for the massive MIMO-OTFS networks. Specifically, we firstly formulate the time domain massive MIMO-OTFS signal model along the uplink and adopt the expectation maximization based variational Bayesian (EM-VB) framework to recover the uplink channel parameters including the angle, the delay, the Doppler frequency, and the channel gain for each physical scattering path. Correspondingly, with the help of the fast Bayesian inference, one low complex approach is constructed to overcome the bottleneck of the EM-VB. Then, we fully exploit the angle, delay and Doppler reciprocity between the uplink and the downlink and reconstruct the angles, the delays, and the Doppler frequencies for the downlink massive channels at the base station. Furthermore, we examine the downlink massive MIMO channel estimation over the delay-Doppler-angle domain. The channel dispersion of the OTFS over the delay-Doppler domain is carefully analyzed. Various numerical examples are presented to confirm the validity and robustness of the proposed scheme."
+    },
+    {
+      "id": "cmtekdnxz00eozevdm3inasrm",
+      "title": "OTFS: Interleaved OFDM with Block CP",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/2001.02446",
+      "rawUrl": "https://arxiv.org/abs/2001.02446",
+      "source": "arxiv",
+      "publishedAt": "2020-01-01T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.199Z",
+      "lastSeen": "2026-10-02T09:41:28.635Z",
+      "versionsCount": 2,
+      "authors": [
+        "Vivek Rangamgari",
+        "Shashank Tiwari",
+        "Suvra Sekhar Das",
+        "Subhas Chandra Mondal"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation is a recently proposed waveform for reliable communication in high-speed vehicular communication scenarios. It has better resilience to inter-carrier interference (ICI) than orthogonal frequency division multiplexing (OFDM). In this work, we describe OTFS as block-OFDM with a cyclic prefix and time interleaving. This interpretation helps one visualize OTFS in the light of OFDM as well as it also helps in analyzing the gain obtained by OTFS over OFDM. Further, we compare the performance of OTFS with its contender 5G new radio (NR)'s OFDM configuration of variable subcarrier bandwidth (VSB-OFDM) while considering practical forward error correction codes and 3GPP high-speed channel model. This provides realistic performance comparison, which is highly desired for technology realization. Considering practical channel estimation, we find that OTFS outperforms VSB-OFDM with 5G NR parameter by about 5dB. We also present results on peak to average power ratio (PAPR) due to specific pilot structure used in OTFS for channel estimation."
+    },
+    {
+      "id": "cmtekdnrf00dkzevdwbegpm2e",
+      "title": "On the Effectiveness of OTFS for Joint Radar and Communication",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/1910.01896",
+      "rawUrl": "https://arxiv.org/abs/1910.01896",
+      "source": "arxiv",
+      "publishedAt": "2019-10-04T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.964Z",
+      "lastSeen": "2026-10-02T09:41:28.718Z",
+      "versionsCount": 2,
+      "authors": [
+        "Lorenzo Gaudio",
+        "Mari Kobayashi",
+        "Giuseppe Caire",
+        "Giulio Colavolpe"
+      ],
+      "abstract": "We consider a joint radar estimation and communication system using orthogonal time frequency space (OTFS) modulation. The scenario is motivated by vehicular applications where a vehicle equipped with a mono-static radar wishes to communicate data to its target receiver, while estimating parameters of interest related to this receiver. In a point-to-point communication setting over multi-path time-frequency selective channels, we study the joint radar and communication system from two perspectives, i.e., the radar estimation at the transmitter as well as the symbol detection at the receiver. For the radar estimation part, we derive an efficient approximated Maximum Likelihood algorithm and the corresponding Cramér- Rao lower bound for range and velocity estimation. Numerical examples demonstrate that multi-carrier digital formats such as OTFS can achieve as accurate radar estimation as state-of-the-art radar waveforms such as frequency-modulated continuous wave (FMCW). For the data detection part, we focus on separate detection and decoding and consider a soft-output detector that exploits efficiently the channel sparsity in the Doppler-delay domain. We quantify the detector performance in terms of its pragmatic capacity, i.e. the achievable rate of the channel induced by the signal constellation and the detector soft output. Simulations show that the proposed scheme outperforms concurrent state-of-the-art solutions. Overall, our work shows that a suitable digitally modulated waveform enables to efficiently operate joint radar and communication by achieving full information rate of the modulation and near-optimal radar estimation performance. Furthermore, OTFS appears to be particularly suited to the scope."
+    },
+    {
+      "id": "cmtekdnrx00dozevduzpzwuyr",
+      "title": "Channel Estimation for Orthogonal Time Frequency Space (OTFS) Massive MIMO",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/1903.09441",
+      "rawUrl": "https://arxiv.org/abs/1903.09441",
+      "source": "arxiv",
+      "publishedAt": "2019-03-22T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:33.981Z",
+      "lastSeen": "2026-10-02T09:41:28.827Z",
+      "versionsCount": 2,
+      "authors": [
+        "Wenqian Shen",
+        "Linglong Dai",
+        "Jianping An",
+        "Pingzhi Fan",
+        "Robert W. Heath Jr"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation outperforms orthogonal frequency division multiplexing (OFDM) in high-mobility scenarios. One challenge for OTFS massive MIMO is downlink channel estimation due to the large number of base station antennas. In this paper, we propose a 3D structured orthogonal matching pursuit algorithm based channel estimation technique to solve this problem. First, we show that the OTFS MIMO channel exhibits 3D structured sparsity: normal sparsity along the delay dimension, block sparsity along the Doppler dimension, and burst sparsity along the angle dimension. Based on the 3D structured channel sparsity, we then formulate the downlink channel estimation problem as a sparse signal recovery problem. Simulation results show that the proposed algorithm can achieve accurate channel state information with low pilot overhead."
+    },
+    {
+      "id": "cmtekdnsh00dszevdk0lhysfn",
+      "title": "Multiple Access in the Delay-Doppler Domain using OTFS modulation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/1902.03415",
+      "rawUrl": "https://arxiv.org/abs/1902.03415",
+      "source": "arxiv",
+      "publishedAt": "2019-02-09T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.001Z",
+      "lastSeen": "2026-10-02T09:41:28.875Z",
+      "versionsCount": 2,
+      "authors": [
+        "G. D. Surabhi",
+        "Rose Mary Augustine",
+        "A. Chockalingam"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation is a recent modulation scheme designed in the delay-Doppler domain. It has been shown to achieve superior performance compared to conventional multicarrier modulation schemes designed in the time-frequency domain. In this paper, we consider OTFS based multiple access (OTFS-MA), where delay-Doppler bins serve as the resource blocks for multiple access. Different delay-Doppler resource blocks (DDRBs) in the delay-Doppler grid are allocated to different users for multiple access. We consider three different DDRB allocation schemes. While Scheme 1 multiplexes the users along the delay axis, Scheme 2 multiplexes them along the Doppler axis. In both these schemes, each user's signal spans the entire time-frequency plane. Scheme 3 allocates the DDRBs in such a way that each user's signal is limited to span only over a subset of the time-frequency plane. We study the performance of OTFS-MA in high mobility environments on the uplink and compare it with those of OFDMA and SC-FDMA. Our results show that OTFS-MA (with maximum-likelihood detection in small dimension systems and with a message passing based detection in large dimension systems) achieves better performance compared to OFDMA and SC-FDMA. We also present the performance of a multiuser channel estimation scheme using pilot symbols placed in the delay-Doppler grid."
+    },
+    {
+      "id": "cmtekdnt900dwzevdn8n3v9gt",
+      "title": "Embedded Pilot-Aided Channel Estimation for OTFS in Delay-Doppler Channels",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/1808.08360",
+      "rawUrl": "https://arxiv.org/abs/1808.08360",
+      "source": "arxiv",
+      "publishedAt": "2018-08-25T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.030Z",
+      "lastSeen": "2026-10-02T09:41:28.589Z",
+      "versionsCount": 2,
+      "authors": [
+        "P. Raviteja",
+        "Khoa T. Phan",
+        "Yi Hong"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation was shown to provide significant error performance advantages over orthogonal frequency division multiplexing (OFDM) in delay--Doppler channels. In order to detect OTFS modulated data, the channel impulse response needs to be known at the receiver. In this paper, we propose embedded pilot-aided channel estimation schemes for OTFS. In each OTFS frame, we arrange pilot, guard, and data symbols in the delay--Doppler plane to suitably avoid interference between pilot and data symbols at the receiver. We develop such symbol arrangements for OTFS over multipath channels with integer and fractional Doppler shifts, respectively. At the receiver, channel estimation is performed based on a threshold method and the estimated channel information is used for data detection via a message passing (MP) algorithm. Thanks to our specific embedded symbol arrangements, both channel estimation and data detection are performed within the same OTFS frame with a minimum overhead. We compare by simulations the error performance of OTFS using the proposed channel estimation and OTFS with ideally known channel information and observe only a marginal performance loss. We also demonstrate that the proposed channel estimation in OTFS significantly outperforms OFDM with known channel information. Finally, we present extensions of the proposed schemes to MIMO and multi-user uplink/downlink."
+    },
+    {
+      "id": "cmtekdnug00e0zevd0s7975nz",
+      "title": "MIMO-OTFS in High-Doppler Fading Channels: Signal Detection and Channel Estimation",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/1805.02209",
+      "rawUrl": "https://arxiv.org/abs/1805.02209",
+      "source": "arxiv",
+      "publishedAt": "2018-05-06T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.072Z",
+      "lastSeen": "2026-10-02T09:41:28.503Z",
+      "versionsCount": 2,
+      "authors": [
+        "M. Kollengode Ramachandran",
+        "A. Chockalingam"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation is a recently introduced multiplexing technique designed in the 2-dimensional (2D) delay-Doppler domain suited for high-Doppler fading channels. OTFS converts a doubly-dispersive channel into an almost non-fading channel in the delay-Doppler domain through a series of 2D transformations. In this paper, we focus on MIMO-OTFS which brings in the high spectral and energy efficiency benefits of MIMO and the robustness of OTFS in high-Doppler fading channels. The OTFS channel-symbol coupling and the sparse delay-Doppler channel impulse response enable efficient MIMO channel estimation in high Doppler environments. We present an iterative algorithm for signal detection based on message passing and a channel estimation scheme in the delay-Doppler domain suited for MIMO-OTFS. The proposed channel estimation scheme uses impulses in the delay-Doppler domain as pilots for estimation. We also compare the performance of MIMO-OTFS with that of MIMO-OFDM under high Doppler scenarios."
+    },
+    {
+      "id": "cmtekdnvg00e4zevd89wlgrnd",
+      "title": "On OTFS Modulation for High-Doppler Fading Channels",
+      "type": "PAPER",
+      "url": "https://arxiv.org/abs/1802.00929",
+      "rawUrl": "https://arxiv.org/abs/1802.00929",
+      "source": "arxiv",
+      "publishedAt": "2018-02-03T00:00:00.000Z",
+      "firstSeen": "2026-08-29T15:57:34.108Z",
+      "lastSeen": "2026-10-02T09:41:28.685Z",
+      "versionsCount": 2,
+      "authors": [
+        "K. R. Murali",
+        "A. Chockalingam"
+      ],
+      "abstract": "Orthogonal time frequency space (OTFS) modulation is a 2-dimensional (2D) modulation scheme designed in the delay-Doppler domain, unlike traditional modulation schemes which are designed in the time-frequency domain. Through a series of 2D transformations, OTFS converts a doubly-dispersive channel into an almost non-fading channel in the delay-Doppler domain. In this domain, each symbol in a frame experiences an almost constant fade, thus achieving significant performance gains over existing modulation schemes such as OFDM. The sparse delay-Doppler impulse response which reflects the actual physical geometry of the wireless channel enables efficient channel estimation, especially in high-Doppler fading channels. This paper investigates OTFS from a signal detection and channel estimation perspective, and proposes a Markov chain Monte-Carlo sampling based detection scheme and a pseudo-random noise (PN) pilot based channel estimation scheme in the delay-Doppler domain."
+    },
+    {
+      "id": "cmtiv8fpc00fv6dvta1tgsez9",
+      "title": "Compressed Neighbour Discovery using Sparse Kerdock Matrices",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ISIT.2018.8437324",
+      "rawUrl": "http://dx.doi.org/10.1109/ISIT.2018.8437324",
+      "source": "duke-calderbank",
+      "publishedAt": "2018-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:30.720Z",
+      "lastSeen": "2026-09-01T16:12:30.720Z",
       "versionsCount": 1,
       "authors": [
-        "Xiaoqi Zhang",
-        "Zhitong Ni",
-        "Weijie Yuan",
-        "J. Andrew Zhang",
-        "Tony Q. S. Quek"
-      ]
+        "Thompson, A",
+        "Calderbank, R"
+      ],
+      "abstract": null
     },
     {
+      "id": "cmtiv8je601ab6dvt5cms5h82",
+      "title": "Synthesis of Logical Clifford Operators via Symplectic Geometry",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ISIT.2018.8437652",
+      "rawUrl": "http://dx.doi.org/10.1109/ISIT.2018.8437652",
+      "source": "duke-calderbank",
+      "publishedAt": "2018-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:35.502Z",
+      "lastSeen": "2026-09-01T16:12:35.502Z",
+      "versionsCount": 1,
+      "authors": [
+        "Rengaswamy, N",
+        "Calderbank, R",
+        "Pfister, HD",
+        "Kadhe, S"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8ede00676dvtaodnzl0e",
+      "title": "Orthogonal Time Frequency Space (OTFS) modulation for millimeter-wave communications systems",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/MWSYM.2017.8058662",
+      "rawUrl": "http://dx.doi.org/10.1109/MWSYM.2017.8058662",
+      "source": "duke-calderbank",
+      "publishedAt": "2017-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:28.995Z",
+      "lastSeen": "2026-09-01T16:12:28.995Z",
+      "versionsCount": 1,
+      "authors": [
+        "Hadani, R",
+        "Rakib, S",
+        "Molisch, AF",
+        "Ibars, C",
+        "Monk, A",
+        "Tsatsanis, M",
+        "Delfeld, J",
+        "Goldsmith, A",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8gkq00nb6dvte2x9axdi",
+      "title": "Multi-scale spectrum sensing in small-cell mm-wave cognitive wireless networks",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ICC.2017.7996657",
+      "rawUrl": "http://dx.doi.org/10.1109/ICC.2017.7996657",
+      "source": "duke-calderbank",
+      "publishedAt": "2017-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:31.851Z",
+      "lastSeen": "2026-09-01T16:12:31.851Z",
+      "versionsCount": 1,
+      "authors": [
+        "Michelusi, N",
+        "Nokleby, M",
+        "Mitra, U",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8hdo00u36dvtggqygcn6",
+      "title": "Sparse near-equiangular tight frames with applications in full duplex wireless communication",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/GlobalSIP.2017.8309084",
+      "rawUrl": "http://dx.doi.org/10.1109/GlobalSIP.2017.8309084",
+      "source": "duke-calderbank",
+      "publishedAt": "2017-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:32.892Z",
+      "lastSeen": "2026-09-01T16:12:32.892Z",
+      "versionsCount": 1,
+      "authors": [
+        "Thompson, A",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8j8s018v6dvtgin5o3ew",
+      "title": "Orthogonal time frequency space modulation",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/WCNC.2017.7925924",
+      "rawUrl": "http://dx.doi.org/10.1109/WCNC.2017.7925924",
+      "source": "duke-calderbank",
+      "publishedAt": "2017-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:35.309Z",
+      "lastSeen": "2026-09-01T16:12:35.309Z",
+      "versionsCount": 1,
+      "authors": [
+        "Hadani, R",
+        "Rakib, S",
+        "Tsatsanis, M",
+        "Monk, A",
+        "Goldsmith, AJ",
+        "Molisch, AF",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8eyk009j6dvtuvrx712f",
+      "title": "Reed-muller codes achieve capacity on the quantum erasure channel",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ISIT.2016.7541599",
+      "rawUrl": "http://dx.doi.org/10.1109/ISIT.2016.7541599",
+      "source": "duke-calderbank",
+      "publishedAt": "2016-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:29.756Z",
+      "lastSeen": "2026-09-01T16:12:29.756Z",
+      "versionsCount": 1,
+      "authors": [
+        "Kumar, S",
+        "Calderbank, R",
+        "Pfister, HD"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8ifp01316dvtuslynkc1",
+      "title": "Impact of local delayed CSIT on the capacity region of the two-user interference channel",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ISIT.2015.7282890",
+      "rawUrl": "http://dx.doi.org/10.1109/ISIT.2015.7282890",
+      "source": "duke-calderbank",
+      "publishedAt": "2015-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:34.261Z",
+      "lastSeen": "2026-09-01T16:12:34.261Z",
+      "versionsCount": 1,
+      "authors": [
+        "Vahid, A",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8gsz00pb6dvty6zl0phs",
+      "title": "Information-theoretic criteria for the design of compressive subspace classifiers",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ICASSP.2014.6854164",
+      "rawUrl": "http://dx.doi.org/10.1109/ICASSP.2014.6854164",
+      "source": "duke-calderbank",
+      "publishedAt": "2014-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:32.148Z",
+      "lastSeen": "2026-09-01T16:12:32.148Z",
+      "versionsCount": 1,
+      "authors": [
+        "Nokleby, M",
+        "Rodrigues, M",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8ezs009v6dvtjmh88z0f",
+      "title": "Compressed sensing with corrupted participants",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ICASSP.2013.6638542",
+      "rawUrl": "http://dx.doi.org/10.1109/ICASSP.2013.6638542",
+      "source": "duke-calderbank",
+      "publishedAt": "2013-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:29.800Z",
+      "lastSeen": "2026-09-01T16:12:29.800Z",
+      "versionsCount": 1,
+      "authors": [
+        "Wang, M",
+        "Xu, W",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8idm012h6dvtxu62gna8",
+      "title": "PETRELS: Parallel subspace estimation and tracking by recursive least squares from partial observations",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/TSP.2013.2282910",
+      "rawUrl": "http://dx.doi.org/10.1109/TSP.2013.2282910",
+      "source": "duke-calderbank",
+      "publishedAt": "2013-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:34.186Z",
+      "lastSeen": "2026-09-01T16:12:34.186Z",
+      "versionsCount": 1,
+      "authors": [
+        "Chi, Y",
+        "Eldar, YC",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8k5301h16dvti3nb9o4g",
+      "title": "Compressive sensing for incoherent imaging systems with optical constraints",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ICASSP.2013.6638712",
+      "rawUrl": "http://dx.doi.org/10.1109/ICASSP.2013.6638712",
+      "source": "duke-calderbank",
+      "publishedAt": "2013-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:36.472Z",
+      "lastSeen": "2026-09-01T16:12:36.472Z",
+      "versionsCount": 1,
+      "authors": [
+        "Renna, F",
+        "Rodrigues, MRD",
+        "Chen, M",
+        "Calderbank, R",
+        "Carin, L"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8f6v00bj6dvtcnc1k7a7",
+      "title": "Communications-inspired projection design with application to compressive sensing",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1137/120878380",
+      "rawUrl": "http://dx.doi.org/10.1137/120878380",
+      "source": "duke-calderbank",
+      "publishedAt": "2012-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:30.055Z",
+      "lastSeen": "2026-09-01T16:12:30.055Z",
+      "versionsCount": 1,
+      "authors": [
+        "Carson, WR",
+        "Chen, M",
+        "Rodrigues, MRD",
+        "Calderbank, R",
+        "Carin, L"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8ftr00h36dvtcddupoxg",
+      "title": "A novel approach to Doppler compensation and estimation for multiple targets in MIMO radar with unitary waveform matrix scheduling",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ICASSP.2012.6288417",
+      "rawUrl": "http://dx.doi.org/10.1109/ICASSP.2012.6288417",
+      "source": "duke-calderbank",
+      "publishedAt": "2012-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:30.879Z",
+      "lastSeen": "2026-09-01T16:12:30.879Z",
+      "versionsCount": 1,
+      "authors": [
+        "Qureshi, TR",
+        "Zoltowski, MD",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8hby00tn6dvt0p4a2ag5",
+      "title": "Beyond worst-case reconstruction in deterministic compressed sensing",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ISIT.2012.6283601",
+      "rawUrl": "http://dx.doi.org/10.1109/ISIT.2012.6283601",
+      "source": "duke-calderbank",
+      "publishedAt": "2012-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:32.830Z",
+      "lastSeen": "2026-09-01T16:12:32.830Z",
+      "versionsCount": 1,
+      "authors": [
+        "Jafarpour, S",
+        "Duarte, MF",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8hvy00yh6dvt0wopqcpt",
+      "title": "Rapid sensing of underutilized, wideband spectrum using the Random Demodulator",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ACSSC.2012.6489377",
+      "rawUrl": "http://dx.doi.org/10.1109/ACSSC.2012.6489377",
+      "source": "duke-calderbank",
+      "publishedAt": "2012-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:33.550Z",
+      "lastSeen": "2026-09-01T16:12:33.550Z",
+      "versionsCount": 1,
+      "authors": [
+        "Harms, A",
+        "Bajwa, WU",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8igy013d6dvt0jhogtqy",
+      "title": "PETRELS: Subspace estimation and tracking from partial observations",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ICASSP.2012.6288621",
+      "rawUrl": "http://dx.doi.org/10.1109/ICASSP.2012.6288621",
+      "source": "duke-calderbank",
+      "publishedAt": "2012-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:34.306Z",
+      "lastSeen": "2026-09-01T16:12:34.306Z",
+      "versionsCount": 1,
+      "authors": [
+        "Chi, Y",
+        "Eldar, YC",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8dz900376dvt9e6brzwa",
+      "title": "On training signal design for multi-user MIMO-OFDM: Performance analysis and tradeoffs",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/VETECF.2011.6092844",
+      "rawUrl": "http://dx.doi.org/10.1109/VETECF.2011.6092844",
+      "source": "duke-calderbank",
+      "publishedAt": "2011-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:28.485Z",
+      "lastSeen": "2026-09-01T16:12:28.485Z",
+      "versionsCount": 1,
+      "authors": [
+        "Gomaa, A",
+        "Chi, Y",
+        "Al-Dhahir, N",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8e67004r6dvtdbq746aw",
+      "title": "The value of redundant measurement in compressed sensing",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ICASSP.2011.5947143",
+      "rawUrl": "http://dx.doi.org/10.1109/ICASSP.2011.5947143",
+      "source": "duke-calderbank",
+      "publishedAt": "2011-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:28.735Z",
+      "lastSeen": "2026-09-01T16:12:28.735Z",
+      "versionsCount": 1,
+      "authors": [
+        "Kostina, V",
+        "Duarte, MF",
+        "Jafarpour, S",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8f4j00az6dvtbcjxvzx9",
+      "title": "Frame coherence and sparse signal processing",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ISIT.2011.6034214",
+      "rawUrl": "http://dx.doi.org/10.1109/ISIT.2011.6034214",
+      "source": "duke-calderbank",
+      "publishedAt": "2011-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:29.972Z",
+      "lastSeen": "2026-09-01T16:12:29.972Z",
+      "versionsCount": 1,
+      "authors": [
+        "Mixon, DG",
+        "Bajwa, WU",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8g7w00k76dvt5xar9yw0",
+      "title": "Deterministic pilot sequences for sparse channel estimation in OFDM systems",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ICDSP.2011.6005024",
+      "rawUrl": "http://dx.doi.org/10.1109/ICDSP.2011.6005024",
+      "source": "duke-calderbank",
+      "publishedAt": "2011-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:31.388Z",
+      "lastSeen": "2026-09-01T16:12:31.388Z",
+      "versionsCount": 1,
+      "authors": [
+        "Applebaum, L",
+        "Bajwa, WU",
+        "Calderbank, AR",
+        "Haupt, J",
+        "Nowak, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8gcq00lb6dvtk5vss216",
+      "title": "Unitary design of radar waveform diversity sets",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1016/j.dsp.2010.09.006",
+      "rawUrl": "http://dx.doi.org/10.1016/j.dsp.2010.09.006",
+      "source": "duke-calderbank",
+      "publishedAt": "2011-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:31.563Z",
+      "lastSeen": "2026-09-01T16:12:31.563Z",
+      "versionsCount": 1,
+      "authors": [
+        "Qureshi, TR",
+        "Zoltowski, MD",
+        "Calderbank, R",
+        "Pezeshki, A"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8gdm00lj6dvtu3qnl9a8",
+      "title": "Training signal design and tradeoffs for spectrally-efficient multi-user MIMO-OFDM systems",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/TWC.2011.042211.101100",
+      "rawUrl": "http://dx.doi.org/10.1109/TWC.2011.042211.101100",
+      "source": "duke-calderbank",
+      "publishedAt": "2011-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:31.594Z",
+      "lastSeen": "2026-09-01T16:12:31.594Z",
+      "versionsCount": 1,
+      "authors": [
+        "Chi, Y",
+        "Gomaa, A",
+        "Al-Dhahir, N",
+        "Calderbank, AR"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8gjk00mz6dvtw59ni0fb",
+      "title": "Sensitivity to basis mismatch in compressed sensing",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/TSP.2011.2112650",
+      "rawUrl": "http://dx.doi.org/10.1109/TSP.2011.2112650",
+      "source": "duke-calderbank",
+      "publishedAt": "2011-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:31.809Z",
+      "lastSeen": "2026-09-01T16:12:31.809Z",
+      "versionsCount": 1,
+      "authors": [
+        "Chi, Y",
+        "Scharf, LL",
+        "Pezeshki, A",
+        "Calderbank, AR"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8hqo00x56dvt0dgtmrnu",
+      "title": "On optimal precoding in wireless multicast systems",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ICASSP.2011.5946306",
+      "rawUrl": "http://dx.doi.org/10.1109/ICASSP.2011.5946306",
+      "source": "duke-calderbank",
+      "publishedAt": "2011-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:33.360Z",
+      "lastSeen": "2026-09-01T16:12:33.360Z",
+      "versionsCount": 1,
+      "authors": [
+        "Wu, Y",
+        "Zheng, H",
+        "Calderbank, R",
+        "Kulkarni, S",
+        "Poor, HV"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8iei012p6dvtg8sf43js",
+      "title": "Performance bounds for expander-based compressed sensing in poisson noise",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/TSP.2011.2157913",
+      "rawUrl": "http://dx.doi.org/10.1109/TSP.2011.2157913",
+      "source": "duke-calderbank",
+      "publishedAt": "2011-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:34.219Z",
+      "lastSeen": "2026-09-01T16:12:34.219Z",
+      "versionsCount": 1,
+      "authors": [
+        "Raginsky, M",
+        "Jafarpour, S",
+        "Harmany, ZT",
+        "Marcia, RF",
+        "Willett, RM",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8e47004b6dvtsku8ugnq",
+      "title": "Sensitivity to basis mismatch in compressed sensing",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ICASSP.2010.5495800",
+      "rawUrl": "http://dx.doi.org/10.1109/ICASSP.2010.5495800",
+      "source": "duke-calderbank",
+      "publishedAt": "2010-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:28.664Z",
+      "lastSeen": "2026-09-01T16:12:28.664Z",
+      "versionsCount": 1,
+      "authors": [
+        "Chi, Y",
+        "Pezeshki, A",
+        "Scharf, L",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8fg000dn6dvtetvic2z0",
+      "title": "Target detection in mimo radar in the presence of doppler using complementary sequences",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ICASSP.2010.5496206",
+      "rawUrl": "http://dx.doi.org/10.1109/ICASSP.2010.5496206",
+      "source": "duke-calderbank",
+      "publishedAt": "2010-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:30.384Z",
+      "lastSeen": "2026-09-01T16:12:30.384Z",
+      "versionsCount": 1,
+      "authors": [
+        "Qureshi, TR",
+        "Zoltowski, MD",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8iql014h6dvtim6dp43q",
+      "title": "On the effect of feedback delay on limited-rate beamforming systems",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/GLOCOM.2010.5684288",
+      "rawUrl": "http://dx.doi.org/10.1109/GLOCOM.2010.5684288",
+      "source": "duke-calderbank",
+      "publishedAt": "2010-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:34.653Z",
+      "lastSeen": "2026-09-01T16:12:34.653Z",
+      "versionsCount": 1,
+      "authors": [
+        "Wu, Y",
+        "Achtzehn, A",
+        "Petrova, M",
+        "Mähönen, P",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8ebi005v6dvt3sficuil",
+      "title": "A MIMO-OFDM channel estimation scheme utilizing complementary sequences",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ICASSP.2009.4960174",
+      "rawUrl": "http://dx.doi.org/10.1109/ICASSP.2009.4960174",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:28.927Z",
+      "lastSeen": "2026-09-01T16:12:28.927Z",
+      "versionsCount": 1,
+      "authors": [
+        "Qureshi, TR",
+        "Zoltowski, MD",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8edx006b6dvt7xl75lav",
+      "title": "Sidelobe suppression in a desired range/Doppler interval",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/RADAR.2009.4977144",
+      "rawUrl": "http://dx.doi.org/10.1109/RADAR.2009.4977144",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:29.014Z",
+      "lastSeen": "2026-09-01T16:12:29.014Z",
+      "versionsCount": 1,
+      "authors": [
+        "Pezeshki, A",
+        "Calderbank, R",
+        "Scharf, LL"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8efk006n6dvtd14eh7cv",
+      "title": "Target detection in MIMO radar using Golay complementary sequences in the presence of doppler",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ALLERTON.2009.5394498",
+      "rawUrl": "http://dx.doi.org/10.1109/ALLERTON.2009.5394498",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:29.072Z",
+      "lastSeen": "2026-09-01T16:12:29.072Z",
+      "versionsCount": 1,
+      "authors": [
+        "Qureshi, TR",
+        "Zoltowski, MD",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8ekh007r6dvt31txbuxk",
+      "title": "On the capacity of the discrete-time channel with uniform output quantization",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ISIT.2009.5205826",
+      "rawUrl": "http://dx.doi.org/10.1109/ISIT.2009.5205826",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:29.249Z",
+      "lastSeen": "2026-09-01T16:12:29.249Z",
+      "versionsCount": 1,
+      "authors": [
+        "Wu, Y",
+        "Davis, LM",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8etw008r6dvtdomev4tn",
+      "title": "Waveform-agile sensing and processing",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/MSP.2008.930413",
+      "rawUrl": "http://dx.doi.org/10.1109/MSP.2008.930413",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:29.589Z",
+      "lastSeen": "2026-09-01T16:12:29.589Z",
+      "versionsCount": 1,
+      "authors": [
+        "Papandreou-Suppappola, A",
+        "Nehorai, A",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8f3100an6dvty83x4u2v",
+      "title": "Chirp sensing codes: Deterministic compressed sensing measurements for fast recovery",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1016/j.acha.2008.08.002",
+      "rawUrl": "http://dx.doi.org/10.1016/j.acha.2008.08.002",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:29.917Z",
+      "lastSeen": "2026-09-01T16:12:29.917Z",
+      "versionsCount": 1,
+      "authors": [
+        "Applebaum, L",
+        "Howard, SD",
+        "Searle, S",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8goh00o36dvt4dhwucv3",
+      "title": "Golay complementary waveforms for sparse delay-Doppler radar imaging",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/CAMSAP.2009.5413308",
+      "rawUrl": "http://dx.doi.org/10.1109/CAMSAP.2009.5413308",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:31.985Z",
+      "lastSeen": "2026-09-01T16:12:31.985Z",
+      "versionsCount": 1,
+      "authors": [
+        "Chi, Y",
+        "Calderbank, R",
+        "Pezeshki, A"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8gtf00pf6dvt2so4djk3",
+      "title": "MIMO-OFDM channel estimation using golay complementary sequences",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/WDDC.2009.4800355",
+      "rawUrl": "http://dx.doi.org/10.1109/WDDC.2009.4800355",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:32.163Z",
+      "lastSeen": "2026-09-01T16:12:32.163Z",
+      "versionsCount": 1,
+      "authors": [
+        "Qureshi, T",
+        "Zoltowski, M",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8htn00xx6dvtvzw1slag",
+      "title": "Enhanced CDMA communications using compressed-sensing reconstruction methods",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ALLERTON.2009.5394537",
+      "rawUrl": "http://dx.doi.org/10.1109/ALLERTON.2009.5394537",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:33.468Z",
+      "lastSeen": "2026-09-01T16:12:33.468Z",
+      "versionsCount": 1,
+      "authors": [
+        "Aggarwal, V",
+        "Applebaum, L",
+        "Bennatan, A",
+        "Calderbank, AR",
+        "Howard, SD",
+        "Searle, SJ"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8hv300y96dvt9v9ffiwe",
+      "title": "Waveform diversity in radar signal processing: A focus on the use and control of degrees of freedom",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/MSP.2008.930414",
+      "rawUrl": "http://dx.doi.org/10.1109/MSP.2008.930414",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:33.520Z",
+      "lastSeen": "2026-09-01T16:12:33.520Z",
+      "versionsCount": 1,
+      "authors": [
+        "Calderbank, R",
+        "Howard, SD",
+        "Moran, B"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8i1900zp6dvtrdaavsey",
+      "title": "Efficient and robust compressed sensing using optimized expander graphs",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/TIT.2009.2025528",
+      "rawUrl": "http://dx.doi.org/10.1109/TIT.2009.2025528",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:33.742Z",
+      "lastSeen": "2026-09-01T16:12:33.742Z",
+      "versionsCount": 1,
+      "authors": [
+        "Jafarpour, S",
+        "Xu, W",
+        "Hassibi, B",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8id5012d6dvt2hv8s4j1",
+      "title": "Integration of code diversity and long-range channel prediction in wireless communication",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ICEAA.2009.5297458",
+      "rawUrl": "http://dx.doi.org/10.1109/ICEAA.2009.5297458",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:34.169Z",
+      "lastSeen": "2026-09-01T16:12:34.169Z",
+      "versionsCount": 1,
+      "authors": [
+        "Wu, Y",
+        "Jia, T",
+        "Calderbank, R",
+        "Duel-Hallen, A",
+        "Hallen, H"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8ipf01456dvtcgeq6855",
+      "title": "Channel estimation for MIMO-OFDM using complementary codes",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/RWS.2009.4957309",
+      "rawUrl": "http://dx.doi.org/10.1109/RWS.2009.4957309",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:34.611Z",
+      "lastSeen": "2026-09-01T16:12:34.611Z",
+      "versionsCount": 1,
+      "authors": [
+        "Zoltowski, MD",
+        "Qureshi, TR",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8j0g01716dvtbvfnq7m9",
+      "title": "Code diversity in multiple antenna wireless communication",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/JSTSP.2009.2035861",
+      "rawUrl": "http://dx.doi.org/10.1109/JSTSP.2009.2035861",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:35.008Z",
+      "lastSeen": "2026-09-01T16:12:35.008Z",
+      "versionsCount": 1,
+      "authors": [
+        "Wu, Y",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8j8b018r6dvtq46ujt3h",
+      "title": "Spatio-temporal scheduling of complementary sequences with application to MIMO-OFDM",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ACSSC.2009.5469876",
+      "rawUrl": "http://dx.doi.org/10.1109/ACSSC.2009.5469876",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:35.291Z",
+      "lastSeen": "2026-09-01T16:12:35.291Z",
+      "versionsCount": 1,
+      "authors": [
+        "Lau, C",
+        "Zoltowski, M",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8ja201976dvtg623eiew",
+      "title": "Bounds and lattice-based transmission strategies for the phase-faded dirty-paper channel",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/TWC.2009.080569",
+      "rawUrl": "http://dx.doi.org/10.1109/TWC.2009.080569",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:35.355Z",
+      "lastSeen": "2026-09-01T16:12:35.355Z",
+      "versionsCount": 1,
+      "authors": [
+        "Bennatan, A",
+        "Aggarwal, V",
+        "Wu, Y",
+        "Calderbank, AR",
+        "Hoydis, J",
+        "Chindapol, A"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8jny01cv6dvt2qn1irf7",
+      "title": "Target detection in MIMO radar using golay complementary sequences in the presence of doppler",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ACSSC.2009.5470143",
+      "rawUrl": "http://dx.doi.org/10.1109/ACSSC.2009.5470143",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:35.855Z",
+      "lastSeen": "2026-09-01T16:12:35.855Z",
+      "versionsCount": 1,
+      "authors": [
+        "Qureshi, T",
+        "Zoltowski, M",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8jsi01e36dvt9riyyzm1",
+      "title": "Range sidelobe suppression in a desired Doppler interval",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/WDDC.2009.4800356",
+      "rawUrl": "http://dx.doi.org/10.1109/WDDC.2009.4800356",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:36.018Z",
+      "lastSeen": "2026-09-01T16:12:36.018Z",
+      "versionsCount": 1,
+      "authors": [
+        "Chi, Y",
+        "Pezeshki, A",
+        "Calderbank, R",
+        "Howard, S"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8jz301fr6dvt6lgm8l4l",
+      "title": "Performance bounds for expander-based compressed sensing in the presence of Poisson noise",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ACSSC.2009.5469879",
+      "rawUrl": "http://dx.doi.org/10.1109/ACSSC.2009.5469879",
+      "source": "duke-calderbank",
+      "publishedAt": "2009-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:36.255Z",
+      "lastSeen": "2026-09-01T16:12:36.255Z",
+      "versionsCount": 1,
+      "authors": [
+        "Jafarpour, S",
+        "Willett, R",
+        "Raginsky, M",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8fky00er6dvtjcseb2gy",
+      "title": "Code diversity in multiple antenna wireless communication",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ISIT.2008.4595153",
+      "rawUrl": "http://dx.doi.org/10.1109/ISIT.2008.4595153",
+      "source": "duke-calderbank",
+      "publishedAt": "2008-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:30.562Z",
+      "lastSeen": "2026-09-01T16:12:30.562Z",
+      "versionsCount": 1,
+      "authors": [
+        "Wu, Y",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8g1400iv6dvthfamy6fi",
+      "title": "Application of Doppler resilient complementary waveforms to target tracking",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ICASSP.2008.4517905",
+      "rawUrl": "http://dx.doi.org/10.1109/ICASSP.2008.4517905",
+      "source": "duke-calderbank",
+      "publishedAt": "2008-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:31.145Z",
+      "lastSeen": "2026-09-01T16:12:31.145Z",
+      "versionsCount": 1,
+      "authors": [
+        "Suvorova, S",
+        "Moron, B",
+        "Howard, S",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8h8c00sr6dvtjljapil0",
+      "title": "Unitary design of radar waveform diversity sets",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ACSSC.2008.5074353",
+      "rawUrl": "http://dx.doi.org/10.1109/ACSSC.2008.5074353",
+      "source": "duke-calderbank",
+      "publishedAt": "2008-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:32.700Z",
+      "lastSeen": "2026-09-01T16:12:32.700Z",
+      "versionsCount": 1,
+      "authors": [
+        "Zoltowski, MD",
+        "Qureshi, TR",
+        "Calderbank, R",
+        "Moran, W"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8i9i011l6dvtgdq756lf",
+      "title": "A fast reconstruction algorithm for deterministic compressive sensing using second order reed-muller codes",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/CISS.2008.4558486",
+      "rawUrl": "http://dx.doi.org/10.1109/CISS.2008.4558486",
+      "source": "duke-calderbank",
+      "publishedAt": "2008-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:34.039Z",
+      "lastSeen": "2026-09-01T16:12:34.039Z",
+      "versionsCount": 1,
+      "authors": [
+        "Howard, SD",
+        "Calderbank, AR",
+        "Searle, SJ"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8ie3012l6dvtezuz1jxo",
+      "title": "Doppler resilient Golay complementary waveforms",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/TIT.2008.928292",
+      "rawUrl": "http://dx.doi.org/10.1109/TIT.2008.928292",
+      "source": "duke-calderbank",
+      "publishedAt": "2008-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:34.204Z",
+      "lastSeen": "2026-09-01T16:12:34.204Z",
+      "versionsCount": 1,
+      "authors": [
+        "Pezeshki, A",
+        "Calderbank, AR",
+        "Moran, W",
+        "Howard, SD"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8js301dz6dvte25yhmtx",
+      "title": "Complementary codes based channel estimation for MIMO-OFDM systems",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ALLERTON.2008.4797546",
+      "rawUrl": "http://dx.doi.org/10.1109/ALLERTON.2008.4797546",
+      "source": "duke-calderbank",
+      "publishedAt": "2008-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:36.004Z",
+      "lastSeen": "2026-09-01T16:12:36.004Z",
+      "versionsCount": 1,
+      "authors": [
+        "Zoltowski, MD",
+        "Qureshi, TR",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8fmd00f36dvtw3ptjpnl",
+      "title": "Adaptive waveform design for improved detection of low-RCS targets in heavy sea clutter",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/JSTSP.2007.897048",
+      "rawUrl": "http://dx.doi.org/10.1109/JSTSP.2007.897048",
+      "source": "duke-calderbank",
+      "publishedAt": "2007-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:30.613Z",
+      "lastSeen": "2026-09-01T16:12:30.613Z",
+      "versionsCount": 1,
+      "authors": [
+        "Sira, SP",
+        "Cochran, D",
+        "Papandreou-Suppappola, A",
+        "Morrell, D",
+        "Moran, W",
+        "Howard, SD",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8hod00wn6dvtcvpoqe2d",
+      "title": "Doppler resilient golay complementary pairs for radar",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/SSP.2007.4301305",
+      "rawUrl": "http://dx.doi.org/10.1109/SSP.2007.4301305",
+      "source": "duke-calderbank",
+      "publishedAt": "2007-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:33.277Z",
+      "lastSeen": "2026-09-01T16:12:33.277Z",
+      "versionsCount": 1,
+      "authors": [
+        "Pezeshki, A",
+        "Calderbank, R",
+        "Howard, SD",
+        "Moran, W"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8ikj013h6dvt4rr1uzwm",
+      "title": "Pilot designs for consistent frequency-offset estimation in OFDM systems",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/TCOMM.2007.896105",
+      "rawUrl": "http://dx.doi.org/10.1109/TCOMM.2007.896105",
+      "source": "duke-calderbank",
+      "publishedAt": "2007-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:34.436Z",
+      "lastSeen": "2026-09-01T16:12:34.436Z",
+      "versionsCount": 1,
+      "authors": [
+        "Li, Y",
+        "Minn, H",
+        "Al-Dhahir, N",
+        "Calderbank, AR"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8jhl01b76dvtosemwit6",
+      "title": "Doppler resilience, reed-müller codes and complementary waveforms",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ACSSC.2007.4487553",
+      "rawUrl": "http://dx.doi.org/10.1109/ACSSC.2007.4487553",
+      "source": "duke-calderbank",
+      "publishedAt": "2007-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:35.625Z",
+      "lastSeen": "2026-09-01T16:12:35.625Z",
+      "versionsCount": 1,
+      "authors": [
+        "Suvorova, S",
+        "Howard, S",
+        "Moran, B",
+        "Calderbank, R",
+        "Pezeshki, A"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8hgy00uz6dvt8nkdtmle",
+      "title": "Pilot designs for consistent frequency offset estimation in OFDM systems",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ICC.2006.255359",
+      "rawUrl": "http://dx.doi.org/10.1109/ICC.2006.255359",
+      "source": "duke-calderbank",
+      "publishedAt": "2006-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:33.010Z",
+      "lastSeen": "2026-09-01T16:12:33.010Z",
+      "versionsCount": 1,
+      "authors": [
+        "Minn, H",
+        "Li, Y",
+        "Al-Dhahir, N",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8j2j017h6dvtbpfbak13",
+      "title": "Robust pilot design for consistent carrier frequency offset estimation",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/MILCOM.2006.302204",
+      "rawUrl": "http://dx.doi.org/10.1109/MILCOM.2006.302204",
+      "source": "duke-calderbank",
+      "publishedAt": "2006-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:35.083Z",
+      "lastSeen": "2026-09-01T16:12:35.083Z",
+      "versionsCount": 1,
+      "authors": [
+        "Li, Y",
+        "Minn, H",
+        "Al-Dhahir, N",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8k1r01gd6dvt9wgjtyxb",
+      "title": "The finite Heisenberg-Weyl groups in radar and communications",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1155/ASP/2006/85685",
+      "rawUrl": "http://dx.doi.org/10.1155/ASP/2006/85685",
+      "source": "duke-calderbank",
+      "publishedAt": "2006-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:36.351Z",
+      "lastSeen": "2026-09-01T16:12:36.351Z",
+      "versionsCount": 1,
+      "authors": [
+        "Howard, S",
+        "Calderbank, A",
+        "Moran, W"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8eol007z6dvtqyuk50or",
+      "title": "On achieving capacity on the wire tap channel using LDPC codes",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/ISIT.2005.1523593",
+      "rawUrl": "http://dx.doi.org/10.1109/ISIT.2005.1523593",
+      "source": "duke-calderbank",
+      "publishedAt": "2005-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:29.397Z",
+      "lastSeen": "2026-09-01T16:12:29.397Z",
+      "versionsCount": 1,
+      "authors": [
+        "Thangaraj, A",
+        "Dihidar, S",
+        "Calderbank, AR",
+        "McLaughlin, SW",
+        "Merolla, JM"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8fu500h76dvtuua5lg6v",
+      "title": "Finite-length MIMO decision feedback equalization for space-time block-coded signals over multipath-fading channels",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/25.938592",
+      "rawUrl": "http://dx.doi.org/10.1109/25.938592",
+      "source": "duke-calderbank",
+      "publishedAt": "2001-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:30.893Z",
+      "lastSeen": "2026-09-01T16:12:30.893Z",
+      "versionsCount": 1,
+      "authors": [
+        "Al-Dhahir, N",
+        "Naguib, AF",
+        "Calderbank, AR"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8ear005r6dvt75v1g158",
+      "title": "Distance spectrum computation for equalized MIMO multipath fading channels",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/WCNC.2000.904645",
+      "rawUrl": "http://dx.doi.org/10.1109/WCNC.2000.904645",
+      "source": "duke-calderbank",
+      "publishedAt": "2000-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:28.900Z",
+      "lastSeen": "2026-09-01T16:12:28.900Z",
+      "versionsCount": 1,
+      "authors": [
+        "Jana, R",
+        "Al-Dhahir, N",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8dtu002b6dvtygubxwfs",
+      "title": "Nonequiprobable Signaling on the Gaussian Channel",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1109/18.53734",
+      "rawUrl": "http://dx.doi.org/10.1109/18.53734",
+      "source": "duke-calderbank",
+      "publishedAt": "1990-01-01T00:00:00.000Z",
+      "firstSeen": "2026-09-01T16:12:28.290Z",
+      "lastSeen": "2026-09-01T16:12:28.290Z",
+      "versionsCount": 1,
+      "authors": [
+        "Calderbank, AR",
+        "Ozarow, LH"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtekdoe900ikzevdwk9sdrn8",
       "title": "DeepMIMO-OTFS-ChannelEstimation",
       "type": "IMPLEMENTATION",
       "url": "https://github.com/helomelo1/DeepMIMO-OTFS-ChannelEstimation",
@@ -3123,9 +6650,11 @@ window.RETRACE_DATA = {
       "firstSeen": "2026-08-29T15:57:34.785Z",
       "lastSeen": "2026-08-29T15:57:34.785Z",
       "versionsCount": 1,
-      "authors": []
+      "authors": [],
+      "abstract": null
     },
     {
+      "id": "cmtekdoen00iozevdo4rk4rgg",
       "title": "OTFS_CE",
       "type": "IMPLEMENTATION",
       "url": "https://github.com/anafreis/OTFS_CE",
@@ -3135,9 +6664,11 @@ window.RETRACE_DATA = {
       "firstSeen": "2026-08-29T15:57:34.799Z",
       "lastSeen": "2026-08-29T15:57:34.799Z",
       "versionsCount": 1,
-      "authors": []
+      "authors": [],
+      "abstract": null
     },
     {
+      "id": "cmtekdof100iszevdnhw2hbe9",
       "title": "JCEE_OTFS",
       "type": "IMPLEMENTATION",
       "url": "https://github.com/lfong000/JCEE_OTFS",
@@ -3147,9 +6678,11 @@ window.RETRACE_DATA = {
       "firstSeen": "2026-08-29T15:57:34.813Z",
       "lastSeen": "2026-08-29T15:57:34.813Z",
       "versionsCount": 1,
-      "authors": []
+      "authors": [],
+      "abstract": null
     },
     {
+      "id": "cmtekdofo00iwzevdows6q7lr",
       "title": "OTFS-channel-estimation",
       "type": "IMPLEMENTATION",
       "url": "https://github.com/gyL-communication/OTFS-channel-estimation",
@@ -3159,9 +6692,11 @@ window.RETRACE_DATA = {
       "firstSeen": "2026-08-29T15:57:34.836Z",
       "lastSeen": "2026-08-29T15:57:34.836Z",
       "versionsCount": 1,
-      "authors": []
+      "authors": [],
+      "abstract": null
     },
     {
+      "id": "cmtekdogg00j0zevd7j2oo2yd",
       "title": "otfs-chan-est-and-eq",
       "type": "IMPLEMENTATION",
       "url": "https://github.com/hassiweb/otfs-chan-est-and-eq",
@@ -3171,9 +6706,11 @@ window.RETRACE_DATA = {
       "firstSeen": "2026-08-29T15:57:34.864Z",
       "lastSeen": "2026-08-29T15:57:34.864Z",
       "versionsCount": 1,
-      "authors": []
+      "authors": [],
+      "abstract": null
     },
     {
+      "id": "cmtekdogv00j4zevdqpp4712e",
       "title": "Optimizing-Channel-Estimation-Overhead-for-OTFS-with-Prior-Channel-Statistics",
       "type": "IMPLEMENTATION",
       "url": "https://github.com/RunnanLIUSJTU/Optimizing-Channel-Estimation-Overhead-for-OTFS-with-Prior-Channel-Statistics",
@@ -3183,9 +6720,11 @@ window.RETRACE_DATA = {
       "firstSeen": "2026-08-29T15:57:34.880Z",
       "lastSeen": "2026-08-29T15:57:34.880Z",
       "versionsCount": 1,
-      "authors": []
+      "authors": [],
+      "abstract": null
     },
     {
+      "id": "cmtekdohh00j8zevdpxaqq6jt",
       "title": "EP_Channel_Estimation_OTFS",
       "type": "IMPLEMENTATION",
       "url": "https://github.com/CanZheng0331/EP_Channel_Estimation_OTFS",
@@ -3195,9 +6734,11 @@ window.RETRACE_DATA = {
       "firstSeen": "2026-08-29T15:57:34.902Z",
       "lastSeen": "2026-08-29T15:57:34.902Z",
       "versionsCount": 1,
-      "authors": []
+      "authors": [],
+      "abstract": null
     },
     {
+      "id": "cmtekdohz00jczevduicnrv4k",
       "title": "OTFS_channel_estimation",
       "type": "IMPLEMENTATION",
       "url": "https://github.com/Joe5992/OTFS_channel_estimation",
@@ -3207,9 +6748,11 @@ window.RETRACE_DATA = {
       "firstSeen": "2026-08-29T15:57:34.919Z",
       "lastSeen": "2026-08-29T15:57:34.919Z",
       "versionsCount": 1,
-      "authors": []
+      "authors": [],
+      "abstract": null
     },
     {
+      "id": "cmtekdoig00jgzevdpostyx54",
       "title": "sensing_aided_OTFS_channel_estimation_",
       "type": "IMPLEMENTATION",
       "url": "https://github.com/acyiobs/sensing_aided_OTFS_channel_estimation_",
@@ -3219,9 +6762,11 @@ window.RETRACE_DATA = {
       "firstSeen": "2026-08-29T15:57:34.937Z",
       "lastSeen": "2026-08-29T15:57:34.937Z",
       "versionsCount": 1,
-      "authors": []
+      "authors": [],
+      "abstract": null
     },
     {
+      "id": "cmtekdoiv00jkzevdua478htx",
       "title": "Compressed_Sensing_OTFS_Channel_Estimation",
       "type": "IMPLEMENTATION",
       "url": "https://github.com/CanZheng0331/Compressed_Sensing_OTFS_Channel_Estimation",
@@ -3231,7 +6776,8346 @@ window.RETRACE_DATA = {
       "firstSeen": "2026-08-29T15:57:34.951Z",
       "lastSeen": "2026-08-29T15:57:34.951Z",
       "versionsCount": 1,
-      "authors": []
+      "authors": [],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8e4q004f6dvto5763os0",
+      "title": "Channel coding for cochannel interference suppression in wireless communication systems",
+      "type": "PAPER",
+      "url": "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications/236038",
+      "rawUrl": "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications/236038",
+      "source": "duke-calderbank",
+      "publishedAt": null,
+      "firstSeen": "2026-09-01T16:12:28.683Z",
+      "lastSeen": "2026-09-01T16:12:28.683Z",
+      "versionsCount": 1,
+      "authors": [
+        "Seshadri, N",
+        "Calderbank, AR",
+        "Pottie, G"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8ei600776dvtg9k2m1vx",
+      "title": "MIMO wireless communications",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1017/CBO9780511618420",
+      "rawUrl": "http://dx.doi.org/10.1017/CBO9780511618420",
+      "source": "duke-calderbank",
+      "publishedAt": null,
+      "firstSeen": "2026-09-01T16:12:29.167Z",
+      "lastSeen": "2026-09-01T16:12:29.167Z",
+      "versionsCount": 1,
+      "authors": [
+        "Biglieri, E",
+        "Calderbank, R",
+        "Constantinides, A",
+        "Goldsmith, A",
+        "Paulraj, A",
+        "Poor, HV"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8gvo00pz6dvt1homg691",
+      "title": "A survey of compressed sensing",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1007/978-3-319-16042-9_1",
+      "rawUrl": "http://dx.doi.org/10.1007/978-3-319-16042-9_1",
+      "source": "duke-calderbank",
+      "publishedAt": null,
+      "firstSeen": "2026-09-01T16:12:32.244Z",
+      "lastSeen": "2026-09-01T16:12:32.244Z",
+      "versionsCount": 1,
+      "authors": [
+        "Boche, H",
+        "Calderbank, R",
+        "Kutyniok, G",
+        "Vybíral, J"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8h6t00sf6dvt44uqej8q",
+      "title": "Channel coding for co-channel interference suppression in wireless communications",
+      "type": "PAPER",
+      "url": "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications/236039",
+      "rawUrl": "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications/236039",
+      "source": "duke-calderbank",
+      "publishedAt": null,
+      "firstSeen": "2026-09-01T16:12:32.645Z",
+      "lastSeen": "2026-09-01T16:12:32.645Z",
+      "versionsCount": 1,
+      "authors": [
+        "Seshadri, N",
+        "Calderbank, AR",
+        "Pottie, GJ"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8hkp00vv6dvtpmcvs2ul",
+      "title": "MMSE-optimal training sequences for spectrally-efficient Multi-User MIMO-OFDM systems",
+      "type": "PAPER",
+      "url": "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications/235992",
+      "rawUrl": "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications/235992",
+      "source": "duke-calderbank",
+      "publishedAt": null,
+      "firstSeen": "2026-09-01T16:12:33.146Z",
+      "lastSeen": "2026-09-01T16:12:33.146Z",
+      "versionsCount": 1,
+      "authors": [
+        "Chi, Y",
+        "Gomaa, A",
+        "Al-Dhahir, N",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8i5i010l6dvtmtr54q0u",
+      "title": "Applications of space-time block codes and interference suppression for high capacity and high data rate wireless systems",
+      "type": "PAPER",
+      "url": "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications/236063",
+      "rawUrl": "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications/236063",
+      "source": "duke-calderbank",
+      "publishedAt": null,
+      "firstSeen": "2026-09-01T16:12:33.895Z",
+      "lastSeen": "2026-09-01T16:12:33.895Z",
+      "versionsCount": 1,
+      "authors": [
+        "Naguib, AF",
+        "Seshadri, N",
+        "Calderbank, AR"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8i7i01116dvth74fj59p",
+      "title": "Non-equiprobable signaling on the Gaussian channel",
+      "type": "PAPER",
+      "url": "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications/236029",
+      "rawUrl": "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications/236029",
+      "source": "duke-calderbank",
+      "publishedAt": null,
+      "firstSeen": "2026-09-01T16:12:33.967Z",
+      "lastSeen": "2026-09-01T16:12:33.967Z",
+      "versionsCount": 1,
+      "authors": [
+        "Calderbank, AR",
+        "Ozarow, LH"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8isf01516dvtecsjxl69",
+      "title": "Compressive classification: Where wireless communications meets machine learning",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1007/978-3-319-16042-9_15",
+      "rawUrl": "http://dx.doi.org/10.1007/978-3-319-16042-9_15",
+      "source": "duke-calderbank",
+      "publishedAt": null,
+      "firstSeen": "2026-09-01T16:12:34.720Z",
+      "lastSeen": "2026-09-01T16:12:34.720Z",
+      "versionsCount": 1,
+      "authors": [
+        "Rodrigues, M",
+        "Nokleby, M",
+        "Renna, F",
+        "Calderbank, R"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8ist01556dvtv0egup9c",
+      "title": "Space-time processing for MIMO-OFDM using DFT-based complementary sequences",
+      "type": "PAPER",
+      "url": "http://dx.doi.org/10.1117/12.851020",
+      "rawUrl": "http://dx.doi.org/10.1117/12.851020",
+      "source": "duke-calderbank",
+      "publishedAt": null,
+      "firstSeen": "2026-09-01T16:12:34.733Z",
+      "lastSeen": "2026-09-01T16:12:34.733Z",
+      "versionsCount": 1,
+      "authors": [
+        "Lau, CC",
+        "Calderbank, R",
+        "Zoltowski, MD"
+      ],
+      "abstract": null
+    },
+    {
+      "id": "cmtiv8jl801c36dvtb43kxvs3",
+      "title": "Signal design for co-channel interference suppression with applications to wireless communications",
+      "type": "PAPER",
+      "url": "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications/236050",
+      "rawUrl": "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications/236050",
+      "source": "duke-calderbank",
+      "publishedAt": null,
+      "firstSeen": "2026-09-01T16:12:35.757Z",
+      "lastSeen": "2026-09-01T16:12:35.757Z",
+      "versionsCount": 1,
+      "authors": [
+        "Calderbank, AR"
+      ],
+      "abstract": null
     }
-  ]
+  ],
+  "analytics": {
+    "overview": {
+      "totalArtifacts": 266,
+      "paperCount": 256,
+      "implementationCount": 10,
+      "totalRelationships": 28,
+      "totalSignals": 50,
+      "totalSources": 4
+    },
+    "artifactStats": {
+      "total": 266,
+      "papers": 256,
+      "implementations": 10,
+      "datasets": 0,
+      "resources": 0,
+      "projects": 0,
+      "byType": {
+        "PAPER": 256,
+        "IMPLEMENTATION": 10
+      },
+      "bySource": {
+        "arxiv": 172,
+        "duke-calderbank": 84,
+        "github": 10
+      }
+    },
+    "implementationCoverage": {
+      "totalPapers": 256,
+      "papersWithImplementation": 26,
+      "papersWithoutImplementation": 230,
+      "coveragePercent": 10.16,
+      "linkedPaperIds": [
+        "cmtekdo2a00fszevddy62q77w",
+        "cmtiv8gvo00pz6dvt1homg691",
+        "cmtekdnt900dwzevdn8n3v9gt",
+        "cmtekdnhm00bgzevdhzzk3yt7",
+        "cmtiv8ezs009v6dvtjmh88z0f",
+        "cmtekdn3f0088zevdb91gpyrl",
+        "cmtekdnne00cozevdmd18tcwd",
+        "cmtekdne600akzevdmwvda8mv",
+        "cmtiv8e47004b6dvtsku8ugnq",
+        "cmtiv8e67004r6dvtdbq746aw",
+        "cmtiv8gjk00mz6dvtw59ni0fb",
+        "cmtekdob200hozevdfgp1mpo4",
+        "cmtekdn8b009czevdbqxjk8pb",
+        "cmtekdnd300aczevd7849wx5p",
+        "cmtekdnem00aozevdx2thdjsd",
+        "cmtekdode00iczevdewu1104p",
+        "cmtekdmfu0030zevdn5ex61nn",
+        "cmtekdnow00d0zevd82db9a4b",
+        "cmtekdnzr00f4zevd1e2qoysk",
+        "cmtekdo6400gozevdyuduszvl",
+        "cmtekdmwg006gzevd7szuy1xe",
+        "cmtekdo4q00gczevdolro70xi",
+        "cmtiv8hby00tn6dvt0p4a2ag5",
+        "cmtiv8htn00xx6dvtvzw1slag",
+        "cmtiv8i1900zp6dvtrdaavsey",
+        "cmtiv8iei012p6dvtg8sf43js"
+      ],
+      "papersWithoutImplementationIds": [
+        "cmuqrwyef001nf728inmwor7h",
+        "cmuqrwy4i0009f728h15k933e",
+        "cmuqrwyeu001rf728ah65jgln",
+        "cmuqrwyjc002bf728gcuxldnx",
+        "cmuqrwyrw0035f728ub2czouu",
+        "cmuqrwy9u000zf728s4a7hn01",
+        "cmuqrwy8w000tf728lycv8vvn",
+        "cmtekdm1t000czevdxeb1ye53",
+        "cmtekdm2d000gzevdzj0ecapw",
+        "cmtekdm2s000kzevdu28ha57f",
+        "cmtekdm3h000ozevdkelg6bcx",
+        "cmtekdm5k000szevdhmitsnq2",
+        "cmtekdm6c000wzevd8y0g0qwf",
+        "cmtekdm7b0014zevd5u5vc48x",
+        "cmtekdm810018zevdf6c6uiq3",
+        "cmtekdm8j001czevd4k04mdg5",
+        "cmtekdm8z001gzevdsa1bj3s4",
+        "cmtekdm6u0010zevdfhhexgh2",
+        "cmtekdm9d001kzevdrtb0aobf",
+        "cmtekdm9t001ozevdbm0qsce3",
+        "cmtekdma8001szevdo1an7119",
+        "cmtekdmao001wzevd621sjszj",
+        "cmtekdmb50020zevdyh6d5mdk",
+        "cmtekdmbk0024zevdmpboht1w",
+        "cmtekdmc10028zevdjybtwgtw",
+        "cmtekdmcw002czevdorhay069",
+        "cmtekdmdl002gzevd73tds5yb",
+        "cmtekdme3002kzevdbxf297uc",
+        "cmtekdmek002ozevdocbiwh95",
+        "cmtekdmez002szevdfm303qwo",
+        "cmtekdmfe002wzevdis6dwfts",
+        "cmtekdmgn0034zevd9lct9mcz",
+        "cmtekdmhg0038zevddrz5onyj",
+        "cmtekdmhy003czevdqlwt4ods",
+        "cmtekdmii003gzevdu5pctzbq",
+        "cmtekdmj1003kzevdsgdf64n9",
+        "cmtekdnxi00ekzevdbosxco0o",
+        "cmtekdmjw003ozevdz625xmvp",
+        "cmtekdmkf003szevdpiuun0y4",
+        "cmtekdmkz003wzevdxqkt13qj",
+        "cmtekdmlf0040zevdxr4ym1qy",
+        "cmtekdmm90044zevd1mbundpt",
+        "cmtekdnvy00e8zevdab4lxn2n",
+        "cmtekdmmw0048zevdl4vvgl5j",
+        "cmtekdmnc004czevdgbt39tcf",
+        "cmtekdmns004gzevda4995719",
+        "cmtekdmo7004kzevdq62ix13w",
+        "cmtekdmom004ozevdweebaugr",
+        "cmtekdnwx00egzevdv6w3dbt8",
+        "cmuqrwye0001jf728lsdpt12p",
+        "cmtekdmpg004szevdyv4dqrkl",
+        "cmtekdmq6004wzevdktbj2d7q",
+        "cmtekdmqu0050zevd0vy7f4ph",
+        "cmtekdnwf00eczevdnh0b4o74",
+        "cmtekdmrd0054zevd6bmcw9ns",
+        "cmtekdmrt0058zevdweb5sgq6",
+        "cmtekdms9005czevde6klvvs7",
+        "cmtekdmso005gzevdsdy2wg4g",
+        "cmtekdnyf00eszevd1atu3jsz",
+        "cmtekdmt3005kzevd2y6qnii6",
+        "cmtekdmtj005ozevddwt548zk",
+        "cmtekdo8k00h4zevdw2149urz",
+        "cmtekdmtz005szevdpo8vkjwi",
+        "cmtekdmue005wzevdubcxwxfy",
+        "cmtekdmut0060zevd8c9n3813",
+        "cmtekdo7z00h0zevdu27uk5th",
+        "cmtekdmv70064zevd8uy1mxm2",
+        "cmtekdmvm0068zevd5p9q0w68",
+        "cmtekdods00igzevd5o5ini0j",
+        "cmtekdmw1006czevdno1gq06i",
+        "cmtekdoa800hgzevdlbjga76e",
+        "cmtekdmwx006kzevd2l42otjn",
+        "cmtekdo7g00gwzevdi0zxxg06",
+        "cmtiv8gib00mn6dvttvk3jigi",
+        "cmtiv8j32017l6dvtsklp0z3r",
+        "cmtiv8jro01dv6dvt6xiq8wsw",
+        "cmtiv8k6001h96dvt52hsixxa",
+        "cmtekdmxc006ozevd1gve06op",
+        "cmtekdobt00hwzevdvo8wxgc8",
+        "cmtekdmxq006szevd8eym7pkz",
+        "cmtekdocm00i4zevd3saiehmk",
+        "cmtekdmy6006wzevd9nonzlsa",
+        "cmtekdoan00hkzevdet1bd5g5",
+        "cmtekdmyl0070zevdwui1gtef",
+        "cmtekdmz00074zevd5dwq3tpj",
+        "cmtekdmzf0078zevdtcif0x33",
+        "cmtekdo9s00hczevdmrt5k593",
+        "cmtekdmzu007czevdkyqqkkpm",
+        "cmtekdn0a007gzevdupz3lni6",
+        "cmtekdn0q007kzevdvd378pyl",
+        "cmtekdn15007ozevdgtn7522d",
+        "cmtekdoc800i0zevdlq0j9225",
+        "cmtekdod000i8zevdejfrs4nu",
+        "cmtekdn1n007szevd5v9haaxm",
+        "cmtekdn22007wzevd5l94sg5b",
+        "cmtekdo6x00gszevd1kxfudth",
+        "cmtekdn2i0080zevdrmkne5zd",
+        "cmtekdn2z0084zevdawt0i21e",
+        "cmtekdo9000h8zevd0vqdvrx1",
+        "cmtekdn3x008czevdp8jx7zdv",
+        "cmtekdn4e008gzevdp9nz77cp",
+        "cmtekdo5q00gkzevdwqho93ob",
+        "cmtiv8dn7000z6dvtuvoxe2ap",
+        "cmtiv8h7u00sn6dvtrqnhfti8",
+        "cmtekdobf00hszevdfff9onp5",
+        "cmtekdn4v008kzevd6mo1zsxh",
+        "cmtekdn5c008ozevd3gziu5ux",
+        "cmtekdn5r008szevdf1wfchwk",
+        "cmtekdn69008wzevd5xkxp86q",
+        "cmtekdn6x0090zevd2u2tr7e3",
+        "cmtekdo0700f8zevdayx23h2q",
+        "cmtekdo3o00g4zevdlj10uznz",
+        "cmtekdn7h0094zevdj8jprumi",
+        "cmtekdn7v0098zevdohvbp5rk",
+        "cmtekdo1100fgzevdggtuj139",
+        "cmtekdn93009gzevdlrmjaer4",
+        "cmtekdn9s009kzevdcya8izrb",
+        "cmtekdna6009ozevdgyr5tvf1",
+        "cmtekdnal009szevdr286vb2u",
+        "cmtekdnb1009wzevdfmbsvegf",
+        "cmtekdo1g00fkzevdmdfo02s9",
+        "cmtekdnbi00a0zevdc9n12mjl",
+        "cmtekdo3900g0zevdac4sxau5",
+        "cmtekdnbx00a4zevda7yah3k1",
+        "cmtekdncb00a8zevdjpphtneq",
+        "cmtekdndp00agzevd63ntsrzz",
+        "cmtekdnf100aszevdhkgyngxz",
+        "cmtekdnfh00awzevdsqkwwce3",
+        "cmtekdo1w00fozevdzvi5g0qe",
+        "cmtekdo4500g8zevdx1ppd9zd",
+        "cmtekdnfx00b0zevdd8zq3kh9",
+        "cmtekdngc00b4zevds3kr0jus",
+        "cmtekdngr00b8zevd5oawnbpu",
+        "cmtekdo5a00ggzevdgt4s5433",
+        "cmtekdnh700bczevd6c0faojj",
+        "cmtekdo2r00fwzevd7hny6l7a",
+        "cmtiv8i68010t6dvtdet584ex",
+        "cmtiv8iww01696dvtq5ykapr9",
+        "cmtiv8jj601bj6dvt5b9vmv8r",
+        "cmtekdnzb00f0zevdo206i0jv",
+        "cmtekdni800bkzevdjou69k59",
+        "cmtekdnir00bozevd6a8vl7qb",
+        "cmtekdnjd00bszevdot5hzszc",
+        "cmtekdnjt00bwzevdz1u39ne0",
+        "cmtekdnk900c0zevdee7zeonm",
+        "cmtekdnkv00c4zevdsq01m8mc",
+        "cmtekdo0n00fczevdz29x8hf9",
+        "cmtekdnlb00c8zevdk95i87w7",
+        "cmtekdnlt00cczevdmam9u4lj",
+        "cmtekdnmd00cgzevdr8j8o5ct",
+        "cmtekdnmv00ckzevdos2u8h85",
+        "cmtekdnnx00cszevdqt5zikyn",
+        "cmtekdnod00cwzevdf5geosz5",
+        "cmtekdnyw00ewzevdfkujie7n",
+        "cmtekdnpd00d4zevdil8e2nsg",
+        "cmtekdnpw00d8zevdww7piznc",
+        "cmtekdnqg00dczevdq8iicm7v",
+        "cmtekdnqy00dgzevduh7s6zi5",
+        "cmtekdnxz00eozevdm3inasrm",
+        "cmtekdnrf00dkzevdwbegpm2e",
+        "cmtekdnrx00dozevduzpzwuyr",
+        "cmtekdnsh00dszevdk0lhysfn",
+        "cmtekdnug00e0zevd0s7975nz",
+        "cmtekdnvg00e4zevd89wlgrnd",
+        "cmtiv8fpc00fv6dvta1tgsez9",
+        "cmtiv8je601ab6dvt5cms5h82",
+        "cmtiv8ede00676dvtaodnzl0e",
+        "cmtiv8gkq00nb6dvte2x9axdi",
+        "cmtiv8hdo00u36dvtggqygcn6",
+        "cmtiv8j8s018v6dvtgin5o3ew",
+        "cmtiv8eyk009j6dvtuvrx712f",
+        "cmtiv8ifp01316dvtuslynkc1",
+        "cmtiv8gsz00pb6dvty6zl0phs",
+        "cmtiv8idm012h6dvtxu62gna8",
+        "cmtiv8k5301h16dvti3nb9o4g",
+        "cmtiv8f6v00bj6dvtcnc1k7a7",
+        "cmtiv8ftr00h36dvtcddupoxg",
+        "cmtiv8hvy00yh6dvt0wopqcpt",
+        "cmtiv8igy013d6dvt0jhogtqy",
+        "cmtiv8dz900376dvt9e6brzwa",
+        "cmtiv8f4j00az6dvtbcjxvzx9",
+        "cmtiv8g7w00k76dvt5xar9yw0",
+        "cmtiv8gcq00lb6dvtk5vss216",
+        "cmtiv8gdm00lj6dvtu3qnl9a8",
+        "cmtiv8hqo00x56dvt0dgtmrnu",
+        "cmtiv8fg000dn6dvtetvic2z0",
+        "cmtiv8iql014h6dvtim6dp43q",
+        "cmtiv8ebi005v6dvt3sficuil",
+        "cmtiv8edx006b6dvt7xl75lav",
+        "cmtiv8efk006n6dvtd14eh7cv",
+        "cmtiv8ekh007r6dvt31txbuxk",
+        "cmtiv8etw008r6dvtdomev4tn",
+        "cmtiv8f3100an6dvty83x4u2v",
+        "cmtiv8goh00o36dvt4dhwucv3",
+        "cmtiv8gtf00pf6dvt2so4djk3",
+        "cmtiv8hv300y96dvt9v9ffiwe",
+        "cmtiv8id5012d6dvt2hv8s4j1",
+        "cmtiv8ipf01456dvtcgeq6855",
+        "cmtiv8j0g01716dvtbvfnq7m9",
+        "cmtiv8j8b018r6dvtq46ujt3h",
+        "cmtiv8ja201976dvtg623eiew",
+        "cmtiv8jny01cv6dvt2qn1irf7",
+        "cmtiv8jsi01e36dvt9riyyzm1",
+        "cmtiv8jz301fr6dvt6lgm8l4l",
+        "cmtiv8fky00er6dvtjcseb2gy",
+        "cmtiv8g1400iv6dvthfamy6fi",
+        "cmtiv8h8c00sr6dvtjljapil0",
+        "cmtiv8i9i011l6dvtgdq756lf",
+        "cmtiv8ie3012l6dvtezuz1jxo",
+        "cmtiv8js301dz6dvte25yhmtx",
+        "cmtiv8fmd00f36dvtw3ptjpnl",
+        "cmtiv8hod00wn6dvtcvpoqe2d",
+        "cmtiv8ikj013h6dvt4rr1uzwm",
+        "cmtiv8jhl01b76dvtosemwit6",
+        "cmtiv8hgy00uz6dvt8nkdtmle",
+        "cmtiv8j2j017h6dvtbpfbak13",
+        "cmtiv8k1r01gd6dvt9wgjtyxb",
+        "cmtiv8eol007z6dvtqyuk50or",
+        "cmtiv8fu500h76dvtuua5lg6v",
+        "cmtiv8ear005r6dvt75v1g158",
+        "cmtiv8dtu002b6dvtygubxwfs",
+        "cmtiv8e4q004f6dvto5763os0",
+        "cmtiv8ei600776dvtg9k2m1vx",
+        "cmtiv8h6t00sf6dvt44uqej8q",
+        "cmtiv8hkp00vv6dvtpmcvs2ul",
+        "cmtiv8i5i010l6dvtmtr54q0u",
+        "cmtiv8i7i01116dvth74fj59p",
+        "cmtiv8isf01516dvtecsjxl69",
+        "cmtiv8ist01556dvtv0egup9c",
+        "cmtiv8jl801c36dvtb43kxvs3"
+      ]
+    },
+    "relationshipStats": {
+      "totalRelationships": 28,
+      "byType": {
+        "IMPLEMENTED_BY": 28
+      },
+      "averageConfidence": 0.137,
+      "highestConfidence": 0.335,
+      "lowestConfidence": 0.1,
+      "papersWithMultipleImplementations": 1,
+      "implementationsLinkedToMultiplePapers": 5,
+      "unlinkedPapers": 230,
+      "unlinkedImplementations": 4
+    },
+    "keywords": [
+      {
+        "term": "channel",
+        "count": 184,
+        "artifactIds": [
+          "cmuqrwyef001nf728inmwor7h",
+          "cmuqrwy4i0009f728h15k933e",
+          "cmuqrwyeu001rf728ah65jgln",
+          "cmuqrwyjc002bf728gcuxldnx",
+          "cmuqrwyrw0035f728ub2czouu",
+          "cmuqrwy9u000zf728s4a7hn01",
+          "cmtekdm1t000czevdxeb1ye53",
+          "cmtekdm2d000gzevdzj0ecapw",
+          "cmtekdm2s000kzevdu28ha57f",
+          "cmtekdm3h000ozevdkelg6bcx",
+          "cmtekdm5k000szevdhmitsnq2",
+          "cmtekdm6c000wzevd8y0g0qwf",
+          "cmtekdm7b0014zevd5u5vc48x",
+          "cmtekdm810018zevdf6c6uiq3",
+          "cmtekdm8j001czevd4k04mdg5",
+          "cmtekdm8z001gzevdsa1bj3s4",
+          "cmtekdm6u0010zevdfhhexgh2",
+          "cmtekdm9d001kzevdrtb0aobf",
+          "cmtekdm9t001ozevdbm0qsce3",
+          "cmtekdma8001szevdo1an7119",
+          "cmtekdmao001wzevd621sjszj",
+          "cmtekdmb50020zevdyh6d5mdk",
+          "cmtekdmbk0024zevdmpboht1w",
+          "cmtekdmc10028zevdjybtwgtw",
+          "cmtekdmcw002czevdorhay069",
+          "cmtekdmdl002gzevd73tds5yb",
+          "cmtekdme3002kzevdbxf297uc",
+          "cmtekdmek002ozevdocbiwh95",
+          "cmtekdmez002szevdfm303qwo",
+          "cmtekdmfe002wzevdis6dwfts",
+          "cmtekdmfu0030zevdn5ex61nn",
+          "cmtekdmgn0034zevd9lct9mcz",
+          "cmtekdmhg0038zevddrz5onyj",
+          "cmtekdmhy003czevdqlwt4ods",
+          "cmtekdmii003gzevdu5pctzbq",
+          "cmtekdmj1003kzevdsgdf64n9",
+          "cmtekdnxi00ekzevdbosxco0o",
+          "cmtekdmjw003ozevdz625xmvp",
+          "cmtekdmkf003szevdpiuun0y4",
+          "cmtekdmkz003wzevdxqkt13qj",
+          "cmtekdmlf0040zevdxr4ym1qy",
+          "cmtekdmm90044zevd1mbundpt",
+          "cmtekdnvy00e8zevdab4lxn2n",
+          "cmtekdmmw0048zevdl4vvgl5j",
+          "cmtekdmnc004czevdgbt39tcf",
+          "cmtekdmns004gzevda4995719",
+          "cmtekdmom004ozevdweebaugr",
+          "cmtekdnwx00egzevdv6w3dbt8",
+          "cmuqrwye0001jf728lsdpt12p",
+          "cmtekdmpg004szevdyv4dqrkl",
+          "cmtekdmq6004wzevdktbj2d7q",
+          "cmtekdmqu0050zevd0vy7f4ph",
+          "cmtekdnwf00eczevdnh0b4o74",
+          "cmtekdmrd0054zevd6bmcw9ns",
+          "cmtekdmrt0058zevdweb5sgq6",
+          "cmtekdms9005czevde6klvvs7",
+          "cmtekdmso005gzevdsdy2wg4g",
+          "cmtekdnyf00eszevd1atu3jsz",
+          "cmtekdmt3005kzevd2y6qnii6",
+          "cmtekdmtj005ozevddwt548zk",
+          "cmtekdo8k00h4zevdw2149urz",
+          "cmtekdmtz005szevdpo8vkjwi",
+          "cmtekdmue005wzevdubcxwxfy",
+          "cmtekdmut0060zevd8c9n3813",
+          "cmtekdo7z00h0zevdu27uk5th",
+          "cmtekdmv70064zevd8uy1mxm2",
+          "cmtekdmvm0068zevd5p9q0w68",
+          "cmtekdods00igzevd5o5ini0j",
+          "cmtekdmw1006czevdno1gq06i",
+          "cmtekdoa800hgzevdlbjga76e",
+          "cmtekdmwg006gzevd7szuy1xe",
+          "cmtekdmwx006kzevd2l42otjn",
+          "cmtekdo7g00gwzevdi0zxxg06",
+          "cmtekdmxc006ozevd1gve06op",
+          "cmtekdobt00hwzevdvo8wxgc8",
+          "cmtekdmxq006szevd8eym7pkz",
+          "cmtekdocm00i4zevd3saiehmk",
+          "cmtekdmy6006wzevd9nonzlsa",
+          "cmtekdoan00hkzevdet1bd5g5",
+          "cmtekdmyl0070zevdwui1gtef",
+          "cmtekdmz00074zevd5dwq3tpj",
+          "cmtekdo6400gozevdyuduszvl",
+          "cmtekdob200hozevdfgp1mpo4",
+          "cmtekdmzf0078zevdtcif0x33",
+          "cmtekdo9s00hczevdmrt5k593",
+          "cmtekdmzu007czevdkyqqkkpm",
+          "cmtekdn0a007gzevdupz3lni6",
+          "cmtekdn0q007kzevdvd378pyl",
+          "cmtekdn15007ozevdgtn7522d",
+          "cmtekdod000i8zevdejfrs4nu",
+          "cmtekdn1n007szevd5v9haaxm",
+          "cmtekdn22007wzevd5l94sg5b",
+          "cmtekdo6x00gszevd1kxfudth",
+          "cmtekdn2i0080zevdrmkne5zd",
+          "cmtekdn2z0084zevdawt0i21e",
+          "cmtekdn3f0088zevdb91gpyrl",
+          "cmtekdo9000h8zevd0vqdvrx1",
+          "cmtekdn3x008czevdp8jx7zdv",
+          "cmtekdn4e008gzevdp9nz77cp",
+          "cmtekdobf00hszevdfff9onp5",
+          "cmtekdn4v008kzevd6mo1zsxh",
+          "cmtekdode00iczevdewu1104p",
+          "cmtekdn5c008ozevd3gziu5ux",
+          "cmtekdn5r008szevdf1wfchwk",
+          "cmtekdn69008wzevd5xkxp86q",
+          "cmtekdn6x0090zevd2u2tr7e3",
+          "cmtekdo0700f8zevdayx23h2q",
+          "cmtekdo3o00g4zevdlj10uznz",
+          "cmtekdn7h0094zevdj8jprumi",
+          "cmtekdn7v0098zevdohvbp5rk",
+          "cmtekdo1100fgzevdggtuj139",
+          "cmtekdn8b009czevdbqxjk8pb",
+          "cmtekdn93009gzevdlrmjaer4",
+          "cmtekdn9s009kzevdcya8izrb",
+          "cmtekdna6009ozevdgyr5tvf1",
+          "cmtekdnal009szevdr286vb2u",
+          "cmtekdnb1009wzevdfmbsvegf",
+          "cmtekdo1g00fkzevdmdfo02s9",
+          "cmtekdnbi00a0zevdc9n12mjl",
+          "cmtekdo3900g0zevdac4sxau5",
+          "cmtekdnbx00a4zevda7yah3k1",
+          "cmtekdncb00a8zevdjpphtneq",
+          "cmtekdnd300aczevd7849wx5p",
+          "cmtekdndp00agzevd63ntsrzz",
+          "cmtekdne600akzevdmwvda8mv",
+          "cmtekdnem00aozevdx2thdjsd",
+          "cmtekdnf100aszevdhkgyngxz",
+          "cmtekdnfh00awzevdsqkwwce3",
+          "cmtekdo1w00fozevdzvi5g0qe",
+          "cmtekdo4500g8zevdx1ppd9zd",
+          "cmtekdnfx00b0zevdd8zq3kh9",
+          "cmtekdngc00b4zevds3kr0jus",
+          "cmtekdngr00b8zevd5oawnbpu",
+          "cmtekdnzr00f4zevd1e2qoysk",
+          "cmtekdo5a00ggzevdgt4s5433",
+          "cmtekdnh700bczevd6c0faojj",
+          "cmtekdo2r00fwzevd7hny6l7a",
+          "cmtiv8i68010t6dvtdet584ex",
+          "cmtekdnzb00f0zevdo206i0jv",
+          "cmtekdnhm00bgzevdhzzk3yt7",
+          "cmtekdni800bkzevdjou69k59",
+          "cmtekdnir00bozevd6a8vl7qb",
+          "cmtekdnjd00bszevdot5hzszc",
+          "cmtekdnjt00bwzevdz1u39ne0",
+          "cmtekdnk900c0zevdee7zeonm",
+          "cmtekdnkv00c4zevdsq01m8mc",
+          "cmtekdo0n00fczevdz29x8hf9",
+          "cmtekdnlb00c8zevdk95i87w7",
+          "cmtekdnlt00cczevdmam9u4lj",
+          "cmtekdnmd00cgzevdr8j8o5ct",
+          "cmtekdnmv00ckzevdos2u8h85",
+          "cmtekdnne00cozevdmd18tcwd",
+          "cmtekdo4q00gczevdolro70xi",
+          "cmtekdnnx00cszevdqt5zikyn",
+          "cmtekdnod00cwzevdf5geosz5",
+          "cmtekdnow00d0zevd82db9a4b",
+          "cmtekdo2a00fszevddy62q77w",
+          "cmtekdnyw00ewzevdfkujie7n",
+          "cmtekdnpd00d4zevdil8e2nsg",
+          "cmtekdnqg00dczevdq8iicm7v",
+          "cmtekdnqy00dgzevduh7s6zi5",
+          "cmtekdnxz00eozevdm3inasrm",
+          "cmtekdnrf00dkzevdwbegpm2e",
+          "cmtekdnrx00dozevduzpzwuyr",
+          "cmtekdnsh00dszevdk0lhysfn",
+          "cmtekdnt900dwzevdn8n3v9gt",
+          "cmtekdnug00e0zevd0s7975nz",
+          "cmtekdnvg00e4zevd89wlgrnd",
+          "cmtiv8eyk009j6dvtuvrx712f",
+          "cmtiv8ifp01316dvtuslynkc1",
+          "cmtiv8g7w00k76dvt5xar9yw0",
+          "cmtiv8ebi005v6dvt3sficuil",
+          "cmtiv8ekh007r6dvt31txbuxk",
+          "cmtiv8gtf00pf6dvt2so4djk3",
+          "cmtiv8id5012d6dvt2hv8s4j1",
+          "cmtiv8ipf01456dvtcgeq6855",
+          "cmtiv8ja201976dvtg623eiew",
+          "cmtiv8js301dz6dvte25yhmtx",
+          "cmtiv8eol007z6dvtqyuk50or",
+          "cmtiv8dtu002b6dvtygubxwfs",
+          "cmtiv8e4q004f6dvto5763os0",
+          "cmtiv8h6t00sf6dvt44uqej8q",
+          "cmtiv8i7i01116dvth74fj59p",
+          "cmtiv8jl801c36dvtb43kxvs3"
+        ]
+      },
+      {
+        "term": "otfs",
+        "count": 182,
+        "artifactIds": [
+          "cmuqrwyef001nf728inmwor7h",
+          "cmuqrwy4i0009f728h15k933e",
+          "cmuqrwyeu001rf728ah65jgln",
+          "cmuqrwyjc002bf728gcuxldnx",
+          "cmuqrwyrw0035f728ub2czouu",
+          "cmuqrwy9u000zf728s4a7hn01",
+          "cmuqrwy8w000tf728lycv8vvn",
+          "cmtekdm1t000czevdxeb1ye53",
+          "cmtekdm2d000gzevdzj0ecapw",
+          "cmtekdm2s000kzevdu28ha57f",
+          "cmtekdm3h000ozevdkelg6bcx",
+          "cmtekdm5k000szevdhmitsnq2",
+          "cmtekdm6c000wzevd8y0g0qwf",
+          "cmtekdm7b0014zevd5u5vc48x",
+          "cmtekdm810018zevdf6c6uiq3",
+          "cmtekdm8j001czevd4k04mdg5",
+          "cmtekdm8z001gzevdsa1bj3s4",
+          "cmtekdm6u0010zevdfhhexgh2",
+          "cmtekdm9d001kzevdrtb0aobf",
+          "cmtekdm9t001ozevdbm0qsce3",
+          "cmtekdma8001szevdo1an7119",
+          "cmtekdmao001wzevd621sjszj",
+          "cmtekdmb50020zevdyh6d5mdk",
+          "cmtekdmbk0024zevdmpboht1w",
+          "cmtekdmc10028zevdjybtwgtw",
+          "cmtekdmcw002czevdorhay069",
+          "cmtekdmdl002gzevd73tds5yb",
+          "cmtekdme3002kzevdbxf297uc",
+          "cmtekdmek002ozevdocbiwh95",
+          "cmtekdmez002szevdfm303qwo",
+          "cmtekdmfe002wzevdis6dwfts",
+          "cmtekdmfu0030zevdn5ex61nn",
+          "cmtekdmgn0034zevd9lct9mcz",
+          "cmtekdmhg0038zevddrz5onyj",
+          "cmtekdmhy003czevdqlwt4ods",
+          "cmtekdmii003gzevdu5pctzbq",
+          "cmtekdmj1003kzevdsgdf64n9",
+          "cmtekdnxi00ekzevdbosxco0o",
+          "cmtekdmjw003ozevdz625xmvp",
+          "cmtekdmkf003szevdpiuun0y4",
+          "cmtekdmkz003wzevdxqkt13qj",
+          "cmtekdmlf0040zevdxr4ym1qy",
+          "cmtekdmm90044zevd1mbundpt",
+          "cmtekdnvy00e8zevdab4lxn2n",
+          "cmtekdmmw0048zevdl4vvgl5j",
+          "cmtekdmnc004czevdgbt39tcf",
+          "cmtekdmns004gzevda4995719",
+          "cmtekdmo7004kzevdq62ix13w",
+          "cmtekdmom004ozevdweebaugr",
+          "cmtekdnwx00egzevdv6w3dbt8",
+          "cmuqrwye0001jf728lsdpt12p",
+          "cmtekdmpg004szevdyv4dqrkl",
+          "cmtekdmq6004wzevdktbj2d7q",
+          "cmtekdmqu0050zevd0vy7f4ph",
+          "cmtekdnwf00eczevdnh0b4o74",
+          "cmtekdmrd0054zevd6bmcw9ns",
+          "cmtekdmrt0058zevdweb5sgq6",
+          "cmtekdms9005czevde6klvvs7",
+          "cmtekdmso005gzevdsdy2wg4g",
+          "cmtekdnyf00eszevd1atu3jsz",
+          "cmtekdmt3005kzevd2y6qnii6",
+          "cmtekdmtj005ozevddwt548zk",
+          "cmtekdo8k00h4zevdw2149urz",
+          "cmtekdmtz005szevdpo8vkjwi",
+          "cmtekdmue005wzevdubcxwxfy",
+          "cmtekdmut0060zevd8c9n3813",
+          "cmtekdo7z00h0zevdu27uk5th",
+          "cmtekdmv70064zevd8uy1mxm2",
+          "cmtekdmvm0068zevd5p9q0w68",
+          "cmtekdods00igzevd5o5ini0j",
+          "cmtekdmw1006czevdno1gq06i",
+          "cmtekdoa800hgzevdlbjga76e",
+          "cmtekdmwg006gzevd7szuy1xe",
+          "cmtekdmwx006kzevd2l42otjn",
+          "cmtekdo7g00gwzevdi0zxxg06",
+          "cmtiv8gib00mn6dvttvk3jigi",
+          "cmtiv8j32017l6dvtsklp0z3r",
+          "cmtiv8jro01dv6dvt6xiq8wsw",
+          "cmtiv8k6001h96dvt52hsixxa",
+          "cmtekdmxc006ozevd1gve06op",
+          "cmtekdobt00hwzevdvo8wxgc8",
+          "cmtekdmxq006szevd8eym7pkz",
+          "cmtekdocm00i4zevd3saiehmk",
+          "cmtekdmy6006wzevd9nonzlsa",
+          "cmtekdoan00hkzevdet1bd5g5",
+          "cmtekdmyl0070zevdwui1gtef",
+          "cmtekdmz00074zevd5dwq3tpj",
+          "cmtekdo6400gozevdyuduszvl",
+          "cmtekdob200hozevdfgp1mpo4",
+          "cmtekdmzf0078zevdtcif0x33",
+          "cmtekdo9s00hczevdmrt5k593",
+          "cmtekdmzu007czevdkyqqkkpm",
+          "cmtekdn0a007gzevdupz3lni6",
+          "cmtekdn0q007kzevdvd378pyl",
+          "cmtekdn15007ozevdgtn7522d",
+          "cmtekdoc800i0zevdlq0j9225",
+          "cmtekdod000i8zevdejfrs4nu",
+          "cmtekdn1n007szevd5v9haaxm",
+          "cmtekdn22007wzevd5l94sg5b",
+          "cmtekdo6x00gszevd1kxfudth",
+          "cmtekdn2i0080zevdrmkne5zd",
+          "cmtekdn2z0084zevdawt0i21e",
+          "cmtekdn3f0088zevdb91gpyrl",
+          "cmtekdo9000h8zevd0vqdvrx1",
+          "cmtekdn3x008czevdp8jx7zdv",
+          "cmtekdn4e008gzevdp9nz77cp",
+          "cmtekdo5q00gkzevdwqho93ob",
+          "cmtiv8dn7000z6dvtuvoxe2ap",
+          "cmtiv8h7u00sn6dvtrqnhfti8",
+          "cmtekdobf00hszevdfff9onp5",
+          "cmtekdn4v008kzevd6mo1zsxh",
+          "cmtekdode00iczevdewu1104p",
+          "cmtekdn5c008ozevd3gziu5ux",
+          "cmtekdn5r008szevdf1wfchwk",
+          "cmtekdn69008wzevd5xkxp86q",
+          "cmtekdn6x0090zevd2u2tr7e3",
+          "cmtekdo0700f8zevdayx23h2q",
+          "cmtekdo3o00g4zevdlj10uznz",
+          "cmtekdn7h0094zevdj8jprumi",
+          "cmtekdn7v0098zevdohvbp5rk",
+          "cmtekdo1100fgzevdggtuj139",
+          "cmtekdn8b009czevdbqxjk8pb",
+          "cmtekdn93009gzevdlrmjaer4",
+          "cmtekdn9s009kzevdcya8izrb",
+          "cmtekdna6009ozevdgyr5tvf1",
+          "cmtekdnal009szevdr286vb2u",
+          "cmtekdnb1009wzevdfmbsvegf",
+          "cmtekdo1g00fkzevdmdfo02s9",
+          "cmtekdnbi00a0zevdc9n12mjl",
+          "cmtekdo3900g0zevdac4sxau5",
+          "cmtekdnbx00a4zevda7yah3k1",
+          "cmtekdncb00a8zevdjpphtneq",
+          "cmtekdnd300aczevd7849wx5p",
+          "cmtekdndp00agzevd63ntsrzz",
+          "cmtekdne600akzevdmwvda8mv",
+          "cmtekdnem00aozevdx2thdjsd",
+          "cmtekdnf100aszevdhkgyngxz",
+          "cmtekdnfh00awzevdsqkwwce3",
+          "cmtekdo1w00fozevdzvi5g0qe",
+          "cmtekdo4500g8zevdx1ppd9zd",
+          "cmtekdnfx00b0zevdd8zq3kh9",
+          "cmtekdngc00b4zevds3kr0jus",
+          "cmtekdngr00b8zevd5oawnbpu",
+          "cmtekdnzr00f4zevd1e2qoysk",
+          "cmtekdo5a00ggzevdgt4s5433",
+          "cmtekdnh700bczevd6c0faojj",
+          "cmtekdo2r00fwzevd7hny6l7a",
+          "cmtiv8i68010t6dvtdet584ex",
+          "cmtiv8iww01696dvtq5ykapr9",
+          "cmtiv8jj601bj6dvt5b9vmv8r",
+          "cmtekdnzb00f0zevdo206i0jv",
+          "cmtekdnhm00bgzevdhzzk3yt7",
+          "cmtekdni800bkzevdjou69k59",
+          "cmtekdnir00bozevd6a8vl7qb",
+          "cmtekdnjd00bszevdot5hzszc",
+          "cmtekdnjt00bwzevdz1u39ne0",
+          "cmtekdnk900c0zevdee7zeonm",
+          "cmtekdnkv00c4zevdsq01m8mc",
+          "cmtekdo0n00fczevdz29x8hf9",
+          "cmtekdnlb00c8zevdk95i87w7",
+          "cmtekdnlt00cczevdmam9u4lj",
+          "cmtekdnmd00cgzevdr8j8o5ct",
+          "cmtekdnmv00ckzevdos2u8h85",
+          "cmtekdnne00cozevdmd18tcwd",
+          "cmtekdo4q00gczevdolro70xi",
+          "cmtekdnnx00cszevdqt5zikyn",
+          "cmtekdnod00cwzevdf5geosz5",
+          "cmtekdnow00d0zevd82db9a4b",
+          "cmtekdo2a00fszevddy62q77w",
+          "cmtekdnyw00ewzevdfkujie7n",
+          "cmtekdnpd00d4zevdil8e2nsg",
+          "cmtekdnpw00d8zevdww7piznc",
+          "cmtekdnqg00dczevdq8iicm7v",
+          "cmtekdnqy00dgzevduh7s6zi5",
+          "cmtekdnxz00eozevdm3inasrm",
+          "cmtekdnrf00dkzevdwbegpm2e",
+          "cmtekdnrx00dozevduzpzwuyr",
+          "cmtekdnsh00dszevdk0lhysfn",
+          "cmtekdnt900dwzevdn8n3v9gt",
+          "cmtekdnug00e0zevd0s7975nz",
+          "cmtekdnvg00e4zevd89wlgrnd",
+          "cmtiv8ede00676dvtaodnzl0e"
+        ]
+      },
+      {
+        "term": "time",
+        "count": 169,
+        "artifactIds": [
+          "cmuqrwyef001nf728inmwor7h",
+          "cmuqrwy4i0009f728h15k933e",
+          "cmuqrwyeu001rf728ah65jgln",
+          "cmuqrwyjc002bf728gcuxldnx",
+          "cmuqrwyrw0035f728ub2czouu",
+          "cmuqrwy9u000zf728s4a7hn01",
+          "cmuqrwy8w000tf728lycv8vvn",
+          "cmtekdm1t000czevdxeb1ye53",
+          "cmtekdm2d000gzevdzj0ecapw",
+          "cmtekdm2s000kzevdu28ha57f",
+          "cmtekdm3h000ozevdkelg6bcx",
+          "cmtekdm6c000wzevd8y0g0qwf",
+          "cmtekdm810018zevdf6c6uiq3",
+          "cmtekdm8j001czevd4k04mdg5",
+          "cmtekdm8z001gzevdsa1bj3s4",
+          "cmtekdm9d001kzevdrtb0aobf",
+          "cmtekdm9t001ozevdbm0qsce3",
+          "cmtekdma8001szevdo1an7119",
+          "cmtekdmao001wzevd621sjszj",
+          "cmtekdmb50020zevdyh6d5mdk",
+          "cmtekdmbk0024zevdmpboht1w",
+          "cmtekdmc10028zevdjybtwgtw",
+          "cmtekdmcw002czevdorhay069",
+          "cmtekdmdl002gzevd73tds5yb",
+          "cmtekdme3002kzevdbxf297uc",
+          "cmtekdmek002ozevdocbiwh95",
+          "cmtekdmez002szevdfm303qwo",
+          "cmtekdmfe002wzevdis6dwfts",
+          "cmtekdmfu0030zevdn5ex61nn",
+          "cmtekdmgn0034zevd9lct9mcz",
+          "cmtekdmhy003czevdqlwt4ods",
+          "cmtekdmii003gzevdu5pctzbq",
+          "cmtekdmj1003kzevdsgdf64n9",
+          "cmtekdnxi00ekzevdbosxco0o",
+          "cmtekdmjw003ozevdz625xmvp",
+          "cmtekdmkf003szevdpiuun0y4",
+          "cmtekdmkz003wzevdxqkt13qj",
+          "cmtekdmlf0040zevdxr4ym1qy",
+          "cmtekdmm90044zevd1mbundpt",
+          "cmtekdnvy00e8zevdab4lxn2n",
+          "cmtekdmmw0048zevdl4vvgl5j",
+          "cmtekdmnc004czevdgbt39tcf",
+          "cmtekdmo7004kzevdq62ix13w",
+          "cmtekdnwx00egzevdv6w3dbt8",
+          "cmuqrwye0001jf728lsdpt12p",
+          "cmtekdmpg004szevdyv4dqrkl",
+          "cmtekdmq6004wzevdktbj2d7q",
+          "cmtekdnwf00eczevdnh0b4o74",
+          "cmtekdmrd0054zevd6bmcw9ns",
+          "cmtekdmrt0058zevdweb5sgq6",
+          "cmtekdms9005czevde6klvvs7",
+          "cmtekdmso005gzevdsdy2wg4g",
+          "cmtekdnyf00eszevd1atu3jsz",
+          "cmtekdmt3005kzevd2y6qnii6",
+          "cmtekdo8k00h4zevdw2149urz",
+          "cmtekdmtz005szevdpo8vkjwi",
+          "cmtekdmue005wzevdubcxwxfy",
+          "cmtekdmut0060zevd8c9n3813",
+          "cmtekdo7z00h0zevdu27uk5th",
+          "cmtekdmv70064zevd8uy1mxm2",
+          "cmtekdmvm0068zevd5p9q0w68",
+          "cmtekdods00igzevd5o5ini0j",
+          "cmtekdmw1006czevdno1gq06i",
+          "cmtekdoa800hgzevdlbjga76e",
+          "cmtekdmwg006gzevd7szuy1xe",
+          "cmtekdmwx006kzevd2l42otjn",
+          "cmtekdo7g00gwzevdi0zxxg06",
+          "cmtekdmxc006ozevd1gve06op",
+          "cmtekdobt00hwzevdvo8wxgc8",
+          "cmtekdmxq006szevd8eym7pkz",
+          "cmtekdocm00i4zevd3saiehmk",
+          "cmtekdmy6006wzevd9nonzlsa",
+          "cmtekdoan00hkzevdet1bd5g5",
+          "cmtekdmyl0070zevdwui1gtef",
+          "cmtekdmz00074zevd5dwq3tpj",
+          "cmtekdo6400gozevdyuduszvl",
+          "cmtekdob200hozevdfgp1mpo4",
+          "cmtekdmzf0078zevdtcif0x33",
+          "cmtekdo9s00hczevdmrt5k593",
+          "cmtekdmzu007czevdkyqqkkpm",
+          "cmtekdn0a007gzevdupz3lni6",
+          "cmtekdn0q007kzevdvd378pyl",
+          "cmtekdn15007ozevdgtn7522d",
+          "cmtekdoc800i0zevdlq0j9225",
+          "cmtekdod000i8zevdejfrs4nu",
+          "cmtekdn1n007szevd5v9haaxm",
+          "cmtekdn22007wzevd5l94sg5b",
+          "cmtekdo6x00gszevd1kxfudth",
+          "cmtekdn2i0080zevdrmkne5zd",
+          "cmtekdn2z0084zevdawt0i21e",
+          "cmtekdn3f0088zevdb91gpyrl",
+          "cmtekdo9000h8zevd0vqdvrx1",
+          "cmtekdn3x008czevdp8jx7zdv",
+          "cmtekdn4e008gzevdp9nz77cp",
+          "cmtekdo5q00gkzevdwqho93ob",
+          "cmtekdobf00hszevdfff9onp5",
+          "cmtekdn4v008kzevd6mo1zsxh",
+          "cmtekdode00iczevdewu1104p",
+          "cmtekdn5c008ozevd3gziu5ux",
+          "cmtekdn5r008szevdf1wfchwk",
+          "cmtekdn69008wzevd5xkxp86q",
+          "cmtekdn6x0090zevd2u2tr7e3",
+          "cmtekdo0700f8zevdayx23h2q",
+          "cmtekdo3o00g4zevdlj10uznz",
+          "cmtekdn7h0094zevdj8jprumi",
+          "cmtekdn7v0098zevdohvbp5rk",
+          "cmtekdo1100fgzevdggtuj139",
+          "cmtekdn8b009czevdbqxjk8pb",
+          "cmtekdn93009gzevdlrmjaer4",
+          "cmtekdn9s009kzevdcya8izrb",
+          "cmtekdna6009ozevdgyr5tvf1",
+          "cmtekdnal009szevdr286vb2u",
+          "cmtekdnb1009wzevdfmbsvegf",
+          "cmtekdo1g00fkzevdmdfo02s9",
+          "cmtekdnbi00a0zevdc9n12mjl",
+          "cmtekdo3900g0zevdac4sxau5",
+          "cmtekdnbx00a4zevda7yah3k1",
+          "cmtekdncb00a8zevdjpphtneq",
+          "cmtekdnd300aczevd7849wx5p",
+          "cmtekdndp00agzevd63ntsrzz",
+          "cmtekdne600akzevdmwvda8mv",
+          "cmtekdnem00aozevdx2thdjsd",
+          "cmtekdnf100aszevdhkgyngxz",
+          "cmtekdnfh00awzevdsqkwwce3",
+          "cmtekdo1w00fozevdzvi5g0qe",
+          "cmtekdo4500g8zevdx1ppd9zd",
+          "cmtekdnfx00b0zevdd8zq3kh9",
+          "cmtekdngc00b4zevds3kr0jus",
+          "cmtekdngr00b8zevd5oawnbpu",
+          "cmtekdnzr00f4zevd1e2qoysk",
+          "cmtekdo5a00ggzevdgt4s5433",
+          "cmtekdnh700bczevd6c0faojj",
+          "cmtekdo2r00fwzevd7hny6l7a",
+          "cmtekdnzb00f0zevdo206i0jv",
+          "cmtekdnhm00bgzevdhzzk3yt7",
+          "cmtekdnir00bozevd6a8vl7qb",
+          "cmtekdnjd00bszevdot5hzszc",
+          "cmtekdnjt00bwzevdz1u39ne0",
+          "cmtekdnk900c0zevdee7zeonm",
+          "cmtekdnkv00c4zevdsq01m8mc",
+          "cmtekdo0n00fczevdz29x8hf9",
+          "cmtekdnlb00c8zevdk95i87w7",
+          "cmtekdnlt00cczevdmam9u4lj",
+          "cmtekdnmd00cgzevdr8j8o5ct",
+          "cmtekdnmv00ckzevdos2u8h85",
+          "cmtekdnne00cozevdmd18tcwd",
+          "cmtekdo4q00gczevdolro70xi",
+          "cmtekdnnx00cszevdqt5zikyn",
+          "cmtekdnod00cwzevdf5geosz5",
+          "cmtekdnow00d0zevd82db9a4b",
+          "cmtekdo2a00fszevddy62q77w",
+          "cmtekdnyw00ewzevdfkujie7n",
+          "cmtekdnpd00d4zevdil8e2nsg",
+          "cmtekdnpw00d8zevdww7piznc",
+          "cmtekdnqg00dczevdq8iicm7v",
+          "cmtekdnqy00dgzevduh7s6zi5",
+          "cmtekdnxz00eozevdm3inasrm",
+          "cmtekdnrf00dkzevdwbegpm2e",
+          "cmtekdnrx00dozevduzpzwuyr",
+          "cmtekdnsh00dszevdk0lhysfn",
+          "cmtekdnt900dwzevdn8n3v9gt",
+          "cmtekdnug00e0zevd0s7975nz",
+          "cmtekdnvg00e4zevd89wlgrnd",
+          "cmtiv8ede00676dvtaodnzl0e",
+          "cmtiv8j8s018v6dvtgin5o3ew",
+          "cmtiv8ekh007r6dvt31txbuxk",
+          "cmtiv8fu500h76dvtuua5lg6v",
+          "cmtiv8i5i010l6dvtmtr54q0u",
+          "cmtiv8ist01556dvtv0egup9c"
+        ]
+      },
+      {
+        "term": "estimation",
+        "count": 166,
+        "artifactIds": [
+          "cmuqrwyef001nf728inmwor7h",
+          "cmuqrwy4i0009f728h15k933e",
+          "cmuqrwyeu001rf728ah65jgln",
+          "cmuqrwyjc002bf728gcuxldnx",
+          "cmuqrwyrw0035f728ub2czouu",
+          "cmuqrwy8w000tf728lycv8vvn",
+          "cmtekdm1t000czevdxeb1ye53",
+          "cmtekdm2d000gzevdzj0ecapw",
+          "cmtekdm2s000kzevdu28ha57f",
+          "cmtekdm3h000ozevdkelg6bcx",
+          "cmtekdm5k000szevdhmitsnq2",
+          "cmtekdm6c000wzevd8y0g0qwf",
+          "cmtekdm7b0014zevd5u5vc48x",
+          "cmtekdm8j001czevd4k04mdg5",
+          "cmtekdm8z001gzevdsa1bj3s4",
+          "cmtekdm6u0010zevdfhhexgh2",
+          "cmtekdm9d001kzevdrtb0aobf",
+          "cmtekdm9t001ozevdbm0qsce3",
+          "cmtekdma8001szevdo1an7119",
+          "cmtekdmao001wzevd621sjszj",
+          "cmtekdmb50020zevdyh6d5mdk",
+          "cmtekdmbk0024zevdmpboht1w",
+          "cmtekdmc10028zevdjybtwgtw",
+          "cmtekdmcw002czevdorhay069",
+          "cmtekdmdl002gzevd73tds5yb",
+          "cmtekdme3002kzevdbxf297uc",
+          "cmtekdmek002ozevdocbiwh95",
+          "cmtekdmez002szevdfm303qwo",
+          "cmtekdmfe002wzevdis6dwfts",
+          "cmtekdmfu0030zevdn5ex61nn",
+          "cmtekdmgn0034zevd9lct9mcz",
+          "cmtekdmhg0038zevddrz5onyj",
+          "cmtekdmhy003czevdqlwt4ods",
+          "cmtekdmii003gzevdu5pctzbq",
+          "cmtekdmj1003kzevdsgdf64n9",
+          "cmtekdnxi00ekzevdbosxco0o",
+          "cmtekdmjw003ozevdz625xmvp",
+          "cmtekdmkf003szevdpiuun0y4",
+          "cmtekdmkz003wzevdxqkt13qj",
+          "cmtekdmlf0040zevdxr4ym1qy",
+          "cmtekdmm90044zevd1mbundpt",
+          "cmtekdnvy00e8zevdab4lxn2n",
+          "cmtekdmmw0048zevdl4vvgl5j",
+          "cmtekdmnc004czevdgbt39tcf",
+          "cmtekdmns004gzevda4995719",
+          "cmtekdmo7004kzevdq62ix13w",
+          "cmtekdmom004ozevdweebaugr",
+          "cmuqrwye0001jf728lsdpt12p",
+          "cmtekdmpg004szevdyv4dqrkl",
+          "cmtekdmq6004wzevdktbj2d7q",
+          "cmtekdmqu0050zevd0vy7f4ph",
+          "cmtekdnwf00eczevdnh0b4o74",
+          "cmtekdmrd0054zevd6bmcw9ns",
+          "cmtekdmrt0058zevdweb5sgq6",
+          "cmtekdms9005czevde6klvvs7",
+          "cmtekdmso005gzevdsdy2wg4g",
+          "cmtekdmt3005kzevd2y6qnii6",
+          "cmtekdmtj005ozevddwt548zk",
+          "cmtekdo8k00h4zevdw2149urz",
+          "cmtekdmtz005szevdpo8vkjwi",
+          "cmtekdmue005wzevdubcxwxfy",
+          "cmtekdmut0060zevd8c9n3813",
+          "cmtekdo7z00h0zevdu27uk5th",
+          "cmtekdmv70064zevd8uy1mxm2",
+          "cmtekdmvm0068zevd5p9q0w68",
+          "cmtekdods00igzevd5o5ini0j",
+          "cmtekdmw1006czevdno1gq06i",
+          "cmtekdoa800hgzevdlbjga76e",
+          "cmtekdmwg006gzevd7szuy1xe",
+          "cmtekdmwx006kzevd2l42otjn",
+          "cmtekdo7g00gwzevdi0zxxg06",
+          "cmtekdmxc006ozevd1gve06op",
+          "cmtekdobt00hwzevdvo8wxgc8",
+          "cmtekdmxq006szevd8eym7pkz",
+          "cmtekdocm00i4zevd3saiehmk",
+          "cmtekdmy6006wzevd9nonzlsa",
+          "cmtekdoan00hkzevdet1bd5g5",
+          "cmtekdmyl0070zevdwui1gtef",
+          "cmtekdo6400gozevdyuduszvl",
+          "cmtekdob200hozevdfgp1mpo4",
+          "cmtekdmzf0078zevdtcif0x33",
+          "cmtekdo9s00hczevdmrt5k593",
+          "cmtekdn0a007gzevdupz3lni6",
+          "cmtekdn0q007kzevdvd378pyl",
+          "cmtekdoc800i0zevdlq0j9225",
+          "cmtekdod000i8zevdejfrs4nu",
+          "cmtekdn1n007szevd5v9haaxm",
+          "cmtekdo6x00gszevd1kxfudth",
+          "cmtekdn2i0080zevdrmkne5zd",
+          "cmtekdn2z0084zevdawt0i21e",
+          "cmtekdn3f0088zevdb91gpyrl",
+          "cmtekdn4e008gzevdp9nz77cp",
+          "cmtekdo5q00gkzevdwqho93ob",
+          "cmtekdobf00hszevdfff9onp5",
+          "cmtekdn4v008kzevd6mo1zsxh",
+          "cmtekdn5c008ozevd3gziu5ux",
+          "cmtekdn5r008szevdf1wfchwk",
+          "cmtekdn69008wzevd5xkxp86q",
+          "cmtekdn6x0090zevd2u2tr7e3",
+          "cmtekdo0700f8zevdayx23h2q",
+          "cmtekdn7h0094zevdj8jprumi",
+          "cmtekdn7v0098zevdohvbp5rk",
+          "cmtekdo1100fgzevdggtuj139",
+          "cmtekdn8b009czevdbqxjk8pb",
+          "cmtekdn93009gzevdlrmjaer4",
+          "cmtekdn9s009kzevdcya8izrb",
+          "cmtekdna6009ozevdgyr5tvf1",
+          "cmtekdo1g00fkzevdmdfo02s9",
+          "cmtekdnbi00a0zevdc9n12mjl",
+          "cmtekdo3900g0zevdac4sxau5",
+          "cmtekdnbx00a4zevda7yah3k1",
+          "cmtekdnd300aczevd7849wx5p",
+          "cmtekdndp00agzevd63ntsrzz",
+          "cmtekdne600akzevdmwvda8mv",
+          "cmtekdnem00aozevdx2thdjsd",
+          "cmtekdnf100aszevdhkgyngxz",
+          "cmtekdnfh00awzevdsqkwwce3",
+          "cmtekdo1w00fozevdzvi5g0qe",
+          "cmtekdo4500g8zevdx1ppd9zd",
+          "cmtekdnfx00b0zevdd8zq3kh9",
+          "cmtekdngc00b4zevds3kr0jus",
+          "cmtekdngr00b8zevd5oawnbpu",
+          "cmtekdnzr00f4zevd1e2qoysk",
+          "cmtekdo5a00ggzevdgt4s5433",
+          "cmtekdnh700bczevd6c0faojj",
+          "cmtekdo2r00fwzevd7hny6l7a",
+          "cmtekdnzb00f0zevdo206i0jv",
+          "cmtekdnhm00bgzevdhzzk3yt7",
+          "cmtekdni800bkzevdjou69k59",
+          "cmtekdnir00bozevd6a8vl7qb",
+          "cmtekdnjd00bszevdot5hzszc",
+          "cmtekdnjt00bwzevdz1u39ne0",
+          "cmtekdnk900c0zevdee7zeonm",
+          "cmtekdnkv00c4zevdsq01m8mc",
+          "cmtekdo0n00fczevdz29x8hf9",
+          "cmtekdnlb00c8zevdk95i87w7",
+          "cmtekdnlt00cczevdmam9u4lj",
+          "cmtekdnmd00cgzevdr8j8o5ct",
+          "cmtekdnmv00ckzevdos2u8h85",
+          "cmtekdnne00cozevdmd18tcwd",
+          "cmtekdo4q00gczevdolro70xi",
+          "cmtekdnnx00cszevdqt5zikyn",
+          "cmtekdnow00d0zevd82db9a4b",
+          "cmtekdo2a00fszevddy62q77w",
+          "cmtekdnyw00ewzevdfkujie7n",
+          "cmtekdnpw00d8zevdww7piznc",
+          "cmtekdnqg00dczevdq8iicm7v",
+          "cmtekdnqy00dgzevduh7s6zi5",
+          "cmtekdnxz00eozevdm3inasrm",
+          "cmtekdnrf00dkzevdwbegpm2e",
+          "cmtekdnrx00dozevduzpzwuyr",
+          "cmtekdnsh00dszevdk0lhysfn",
+          "cmtekdnt900dwzevdn8n3v9gt",
+          "cmtekdnug00e0zevd0s7975nz",
+          "cmtekdnvg00e4zevd89wlgrnd",
+          "cmtiv8idm012h6dvtxu62gna8",
+          "cmtiv8ftr00h36dvtcddupoxg",
+          "cmtiv8igy013d6dvt0jhogtqy",
+          "cmtiv8g7w00k76dvt5xar9yw0",
+          "cmtiv8ebi005v6dvt3sficuil",
+          "cmtiv8gtf00pf6dvt2so4djk3",
+          "cmtiv8ipf01456dvtcgeq6855",
+          "cmtiv8js301dz6dvte25yhmtx",
+          "cmtiv8ikj013h6dvt4rr1uzwm",
+          "cmtiv8hgy00uz6dvt8nkdtmle",
+          "cmtiv8j2j017h6dvtbpfbak13"
+        ]
+      },
+      {
+        "term": "frequency",
+        "count": 163,
+        "artifactIds": [
+          "cmuqrwyef001nf728inmwor7h",
+          "cmuqrwy4i0009f728h15k933e",
+          "cmuqrwyeu001rf728ah65jgln",
+          "cmuqrwyjc002bf728gcuxldnx",
+          "cmuqrwyrw0035f728ub2czouu",
+          "cmuqrwy9u000zf728s4a7hn01",
+          "cmtekdm1t000czevdxeb1ye53",
+          "cmtekdm2d000gzevdzj0ecapw",
+          "cmtekdm2s000kzevdu28ha57f",
+          "cmtekdm3h000ozevdkelg6bcx",
+          "cmtekdm6c000wzevd8y0g0qwf",
+          "cmtekdm810018zevdf6c6uiq3",
+          "cmtekdm8j001czevd4k04mdg5",
+          "cmtekdm8z001gzevdsa1bj3s4",
+          "cmtekdm9d001kzevdrtb0aobf",
+          "cmtekdm9t001ozevdbm0qsce3",
+          "cmtekdma8001szevdo1an7119",
+          "cmtekdmao001wzevd621sjszj",
+          "cmtekdmb50020zevdyh6d5mdk",
+          "cmtekdmbk0024zevdmpboht1w",
+          "cmtekdmc10028zevdjybtwgtw",
+          "cmtekdmcw002czevdorhay069",
+          "cmtekdmdl002gzevd73tds5yb",
+          "cmtekdme3002kzevdbxf297uc",
+          "cmtekdmek002ozevdocbiwh95",
+          "cmtekdmez002szevdfm303qwo",
+          "cmtekdmfe002wzevdis6dwfts",
+          "cmtekdmfu0030zevdn5ex61nn",
+          "cmtekdmgn0034zevd9lct9mcz",
+          "cmtekdmhy003czevdqlwt4ods",
+          "cmtekdmii003gzevdu5pctzbq",
+          "cmtekdmj1003kzevdsgdf64n9",
+          "cmtekdnxi00ekzevdbosxco0o",
+          "cmtekdmjw003ozevdz625xmvp",
+          "cmtekdmkf003szevdpiuun0y4",
+          "cmtekdmkz003wzevdxqkt13qj",
+          "cmtekdmlf0040zevdxr4ym1qy",
+          "cmtekdmm90044zevd1mbundpt",
+          "cmtekdnvy00e8zevdab4lxn2n",
+          "cmtekdmmw0048zevdl4vvgl5j",
+          "cmtekdmnc004czevdgbt39tcf",
+          "cmtekdmo7004kzevdq62ix13w",
+          "cmuqrwye0001jf728lsdpt12p",
+          "cmtekdmpg004szevdyv4dqrkl",
+          "cmtekdmq6004wzevdktbj2d7q",
+          "cmtekdnwf00eczevdnh0b4o74",
+          "cmtekdmrd0054zevd6bmcw9ns",
+          "cmtekdmrt0058zevdweb5sgq6",
+          "cmtekdms9005czevde6klvvs7",
+          "cmtekdmso005gzevdsdy2wg4g",
+          "cmtekdnyf00eszevd1atu3jsz",
+          "cmtekdmt3005kzevd2y6qnii6",
+          "cmtekdo8k00h4zevdw2149urz",
+          "cmtekdmtz005szevdpo8vkjwi",
+          "cmtekdmue005wzevdubcxwxfy",
+          "cmtekdmut0060zevd8c9n3813",
+          "cmtekdo7z00h0zevdu27uk5th",
+          "cmtekdmv70064zevd8uy1mxm2",
+          "cmtekdmvm0068zevd5p9q0w68",
+          "cmtekdods00igzevd5o5ini0j",
+          "cmtekdmw1006czevdno1gq06i",
+          "cmtekdoa800hgzevdlbjga76e",
+          "cmtekdmwg006gzevd7szuy1xe",
+          "cmtekdmwx006kzevd2l42otjn",
+          "cmtekdo7g00gwzevdi0zxxg06",
+          "cmtekdmxc006ozevd1gve06op",
+          "cmtekdobt00hwzevdvo8wxgc8",
+          "cmtekdmxq006szevd8eym7pkz",
+          "cmtekdocm00i4zevd3saiehmk",
+          "cmtekdmy6006wzevd9nonzlsa",
+          "cmtekdoan00hkzevdet1bd5g5",
+          "cmtekdmyl0070zevdwui1gtef",
+          "cmtekdmz00074zevd5dwq3tpj",
+          "cmtekdo6400gozevdyuduszvl",
+          "cmtekdob200hozevdfgp1mpo4",
+          "cmtekdmzf0078zevdtcif0x33",
+          "cmtekdo9s00hczevdmrt5k593",
+          "cmtekdmzu007czevdkyqqkkpm",
+          "cmtekdn0a007gzevdupz3lni6",
+          "cmtekdn0q007kzevdvd378pyl",
+          "cmtekdoc800i0zevdlq0j9225",
+          "cmtekdod000i8zevdejfrs4nu",
+          "cmtekdn22007wzevd5l94sg5b",
+          "cmtekdo6x00gszevd1kxfudth",
+          "cmtekdn2i0080zevdrmkne5zd",
+          "cmtekdn2z0084zevdawt0i21e",
+          "cmtekdn3f0088zevdb91gpyrl",
+          "cmtekdo9000h8zevd0vqdvrx1",
+          "cmtekdn3x008czevdp8jx7zdv",
+          "cmtekdn4e008gzevdp9nz77cp",
+          "cmtekdo5q00gkzevdwqho93ob",
+          "cmtekdobf00hszevdfff9onp5",
+          "cmtekdn4v008kzevd6mo1zsxh",
+          "cmtekdode00iczevdewu1104p",
+          "cmtekdn5c008ozevd3gziu5ux",
+          "cmtekdn5r008szevdf1wfchwk",
+          "cmtekdn69008wzevd5xkxp86q",
+          "cmtekdn6x0090zevd2u2tr7e3",
+          "cmtekdo0700f8zevdayx23h2q",
+          "cmtekdo3o00g4zevdlj10uznz",
+          "cmtekdn7h0094zevdj8jprumi",
+          "cmtekdn7v0098zevdohvbp5rk",
+          "cmtekdo1100fgzevdggtuj139",
+          "cmtekdn8b009czevdbqxjk8pb",
+          "cmtekdn93009gzevdlrmjaer4",
+          "cmtekdn9s009kzevdcya8izrb",
+          "cmtekdna6009ozevdgyr5tvf1",
+          "cmtekdnal009szevdr286vb2u",
+          "cmtekdnb1009wzevdfmbsvegf",
+          "cmtekdo1g00fkzevdmdfo02s9",
+          "cmtekdnbi00a0zevdc9n12mjl",
+          "cmtekdnbx00a4zevda7yah3k1",
+          "cmtekdncb00a8zevdjpphtneq",
+          "cmtekdnd300aczevd7849wx5p",
+          "cmtekdndp00agzevd63ntsrzz",
+          "cmtekdne600akzevdmwvda8mv",
+          "cmtekdnem00aozevdx2thdjsd",
+          "cmtekdnf100aszevdhkgyngxz",
+          "cmtekdnfh00awzevdsqkwwce3",
+          "cmtekdo1w00fozevdzvi5g0qe",
+          "cmtekdo4500g8zevdx1ppd9zd",
+          "cmtekdnfx00b0zevdd8zq3kh9",
+          "cmtekdngc00b4zevds3kr0jus",
+          "cmtekdngr00b8zevd5oawnbpu",
+          "cmtekdnzr00f4zevd1e2qoysk",
+          "cmtekdo5a00ggzevdgt4s5433",
+          "cmtekdnh700bczevd6c0faojj",
+          "cmtekdo2r00fwzevd7hny6l7a",
+          "cmtekdnzb00f0zevdo206i0jv",
+          "cmtekdnhm00bgzevdhzzk3yt7",
+          "cmtekdnir00bozevd6a8vl7qb",
+          "cmtekdnjd00bszevdot5hzszc",
+          "cmtekdnjt00bwzevdz1u39ne0",
+          "cmtekdnk900c0zevdee7zeonm",
+          "cmtekdnkv00c4zevdsq01m8mc",
+          "cmtekdo0n00fczevdz29x8hf9",
+          "cmtekdnlb00c8zevdk95i87w7",
+          "cmtekdnlt00cczevdmam9u4lj",
+          "cmtekdnmd00cgzevdr8j8o5ct",
+          "cmtekdnmv00ckzevdos2u8h85",
+          "cmtekdnne00cozevdmd18tcwd",
+          "cmtekdo4q00gczevdolro70xi",
+          "cmtekdnnx00cszevdqt5zikyn",
+          "cmtekdnod00cwzevdf5geosz5",
+          "cmtekdnow00d0zevd82db9a4b",
+          "cmtekdo2a00fszevddy62q77w",
+          "cmtekdnyw00ewzevdfkujie7n",
+          "cmtekdnpd00d4zevdil8e2nsg",
+          "cmtekdnpw00d8zevdww7piznc",
+          "cmtekdnqg00dczevdq8iicm7v",
+          "cmtekdnqy00dgzevduh7s6zi5",
+          "cmtekdnxz00eozevdm3inasrm",
+          "cmtekdnrf00dkzevdwbegpm2e",
+          "cmtekdnrx00dozevduzpzwuyr",
+          "cmtekdnsh00dszevdk0lhysfn",
+          "cmtekdnt900dwzevdn8n3v9gt",
+          "cmtekdnug00e0zevd0s7975nz",
+          "cmtekdnvg00e4zevd89wlgrnd",
+          "cmtiv8ede00676dvtaodnzl0e",
+          "cmtiv8j8s018v6dvtgin5o3ew",
+          "cmtiv8ikj013h6dvt4rr1uzwm",
+          "cmtiv8hgy00uz6dvt8nkdtmle",
+          "cmtiv8j2j017h6dvtbpfbak13"
+        ]
+      },
+      {
+        "term": "space",
+        "count": 160,
+        "artifactIds": [
+          "cmuqrwyef001nf728inmwor7h",
+          "cmuqrwy4i0009f728h15k933e",
+          "cmuqrwyeu001rf728ah65jgln",
+          "cmuqrwyjc002bf728gcuxldnx",
+          "cmuqrwyrw0035f728ub2czouu",
+          "cmuqrwy9u000zf728s4a7hn01",
+          "cmtekdm1t000czevdxeb1ye53",
+          "cmtekdm2d000gzevdzj0ecapw",
+          "cmtekdm2s000kzevdu28ha57f",
+          "cmtekdm3h000ozevdkelg6bcx",
+          "cmtekdm6c000wzevd8y0g0qwf",
+          "cmtekdm810018zevdf6c6uiq3",
+          "cmtekdm8z001gzevdsa1bj3s4",
+          "cmtekdm9d001kzevdrtb0aobf",
+          "cmtekdm9t001ozevdbm0qsce3",
+          "cmtekdma8001szevdo1an7119",
+          "cmtekdmao001wzevd621sjszj",
+          "cmtekdmb50020zevdyh6d5mdk",
+          "cmtekdmbk0024zevdmpboht1w",
+          "cmtekdmc10028zevdjybtwgtw",
+          "cmtekdmcw002czevdorhay069",
+          "cmtekdmdl002gzevd73tds5yb",
+          "cmtekdme3002kzevdbxf297uc",
+          "cmtekdmek002ozevdocbiwh95",
+          "cmtekdmez002szevdfm303qwo",
+          "cmtekdmfe002wzevdis6dwfts",
+          "cmtekdmfu0030zevdn5ex61nn",
+          "cmtekdmgn0034zevd9lct9mcz",
+          "cmtekdmhy003czevdqlwt4ods",
+          "cmtekdmii003gzevdu5pctzbq",
+          "cmtekdmj1003kzevdsgdf64n9",
+          "cmtekdnxi00ekzevdbosxco0o",
+          "cmtekdmjw003ozevdz625xmvp",
+          "cmtekdmkf003szevdpiuun0y4",
+          "cmtekdmkz003wzevdxqkt13qj",
+          "cmtekdmlf0040zevdxr4ym1qy",
+          "cmtekdmm90044zevd1mbundpt",
+          "cmtekdnvy00e8zevdab4lxn2n",
+          "cmtekdmmw0048zevdl4vvgl5j",
+          "cmtekdmnc004czevdgbt39tcf",
+          "cmuqrwye0001jf728lsdpt12p",
+          "cmtekdmpg004szevdyv4dqrkl",
+          "cmtekdmq6004wzevdktbj2d7q",
+          "cmtekdnwf00eczevdnh0b4o74",
+          "cmtekdmrd0054zevd6bmcw9ns",
+          "cmtekdms9005czevde6klvvs7",
+          "cmtekdmso005gzevdsdy2wg4g",
+          "cmtekdnyf00eszevd1atu3jsz",
+          "cmtekdmt3005kzevd2y6qnii6",
+          "cmtekdo8k00h4zevdw2149urz",
+          "cmtekdmtz005szevdpo8vkjwi",
+          "cmtekdmue005wzevdubcxwxfy",
+          "cmtekdmut0060zevd8c9n3813",
+          "cmtekdo7z00h0zevdu27uk5th",
+          "cmtekdmv70064zevd8uy1mxm2",
+          "cmtekdmvm0068zevd5p9q0w68",
+          "cmtekdods00igzevd5o5ini0j",
+          "cmtekdmw1006czevdno1gq06i",
+          "cmtekdoa800hgzevdlbjga76e",
+          "cmtekdmwg006gzevd7szuy1xe",
+          "cmtekdmwx006kzevd2l42otjn",
+          "cmtekdo7g00gwzevdi0zxxg06",
+          "cmtekdmxc006ozevd1gve06op",
+          "cmtekdobt00hwzevdvo8wxgc8",
+          "cmtekdmxq006szevd8eym7pkz",
+          "cmtekdocm00i4zevd3saiehmk",
+          "cmtekdmy6006wzevd9nonzlsa",
+          "cmtekdoan00hkzevdet1bd5g5",
+          "cmtekdmyl0070zevdwui1gtef",
+          "cmtekdmz00074zevd5dwq3tpj",
+          "cmtekdo6400gozevdyuduszvl",
+          "cmtekdob200hozevdfgp1mpo4",
+          "cmtekdmzf0078zevdtcif0x33",
+          "cmtekdo9s00hczevdmrt5k593",
+          "cmtekdmzu007czevdkyqqkkpm",
+          "cmtekdn0a007gzevdupz3lni6",
+          "cmtekdn0q007kzevdvd378pyl",
+          "cmtekdoc800i0zevdlq0j9225",
+          "cmtekdod000i8zevdejfrs4nu",
+          "cmtekdn22007wzevd5l94sg5b",
+          "cmtekdo6x00gszevd1kxfudth",
+          "cmtekdn2i0080zevdrmkne5zd",
+          "cmtekdn2z0084zevdawt0i21e",
+          "cmtekdn3f0088zevdb91gpyrl",
+          "cmtekdo9000h8zevd0vqdvrx1",
+          "cmtekdn3x008czevdp8jx7zdv",
+          "cmtekdn4e008gzevdp9nz77cp",
+          "cmtekdo5q00gkzevdwqho93ob",
+          "cmtekdobf00hszevdfff9onp5",
+          "cmtekdn4v008kzevd6mo1zsxh",
+          "cmtekdode00iczevdewu1104p",
+          "cmtekdn5c008ozevd3gziu5ux",
+          "cmtekdn5r008szevdf1wfchwk",
+          "cmtekdn69008wzevd5xkxp86q",
+          "cmtekdn6x0090zevd2u2tr7e3",
+          "cmtekdo0700f8zevdayx23h2q",
+          "cmtekdo3o00g4zevdlj10uznz",
+          "cmtekdn7h0094zevdj8jprumi",
+          "cmtekdn7v0098zevdohvbp5rk",
+          "cmtekdo1100fgzevdggtuj139",
+          "cmtekdn8b009czevdbqxjk8pb",
+          "cmtekdn93009gzevdlrmjaer4",
+          "cmtekdn9s009kzevdcya8izrb",
+          "cmtekdna6009ozevdgyr5tvf1",
+          "cmtekdnal009szevdr286vb2u",
+          "cmtekdnb1009wzevdfmbsvegf",
+          "cmtekdo1g00fkzevdmdfo02s9",
+          "cmtekdnbi00a0zevdc9n12mjl",
+          "cmtekdnbx00a4zevda7yah3k1",
+          "cmtekdncb00a8zevdjpphtneq",
+          "cmtekdnd300aczevd7849wx5p",
+          "cmtekdndp00agzevd63ntsrzz",
+          "cmtekdne600akzevdmwvda8mv",
+          "cmtekdnem00aozevdx2thdjsd",
+          "cmtekdnf100aszevdhkgyngxz",
+          "cmtekdnfh00awzevdsqkwwce3",
+          "cmtekdo1w00fozevdzvi5g0qe",
+          "cmtekdo4500g8zevdx1ppd9zd",
+          "cmtekdnfx00b0zevdd8zq3kh9",
+          "cmtekdngc00b4zevds3kr0jus",
+          "cmtekdngr00b8zevd5oawnbpu",
+          "cmtekdnzr00f4zevd1e2qoysk",
+          "cmtekdo5a00ggzevdgt4s5433",
+          "cmtekdnh700bczevd6c0faojj",
+          "cmtekdo2r00fwzevd7hny6l7a",
+          "cmtekdnzb00f0zevdo206i0jv",
+          "cmtekdnhm00bgzevdhzzk3yt7",
+          "cmtekdnir00bozevd6a8vl7qb",
+          "cmtekdnjd00bszevdot5hzszc",
+          "cmtekdnjt00bwzevdz1u39ne0",
+          "cmtekdnk900c0zevdee7zeonm",
+          "cmtekdnkv00c4zevdsq01m8mc",
+          "cmtekdo0n00fczevdz29x8hf9",
+          "cmtekdnlb00c8zevdk95i87w7",
+          "cmtekdnlt00cczevdmam9u4lj",
+          "cmtekdnmd00cgzevdr8j8o5ct",
+          "cmtekdnmv00ckzevdos2u8h85",
+          "cmtekdnne00cozevdmd18tcwd",
+          "cmtekdo4q00gczevdolro70xi",
+          "cmtekdnnx00cszevdqt5zikyn",
+          "cmtekdnod00cwzevdf5geosz5",
+          "cmtekdnow00d0zevd82db9a4b",
+          "cmtekdo2a00fszevddy62q77w",
+          "cmtekdnyw00ewzevdfkujie7n",
+          "cmtekdnpd00d4zevdil8e2nsg",
+          "cmtekdnpw00d8zevdww7piznc",
+          "cmtekdnqg00dczevdq8iicm7v",
+          "cmtekdnqy00dgzevduh7s6zi5",
+          "cmtekdnxz00eozevdm3inasrm",
+          "cmtekdnrf00dkzevdwbegpm2e",
+          "cmtekdnrx00dozevduzpzwuyr",
+          "cmtekdnsh00dszevdk0lhysfn",
+          "cmtekdnt900dwzevdn8n3v9gt",
+          "cmtekdnug00e0zevd0s7975nz",
+          "cmtekdnvg00e4zevd89wlgrnd",
+          "cmtiv8ede00676dvtaodnzl0e",
+          "cmtiv8j8s018v6dvtgin5o3ew",
+          "cmtiv8fu500h76dvtuua5lg6v",
+          "cmtiv8i5i010l6dvtmtr54q0u",
+          "cmtiv8ist01556dvtv0egup9c"
+        ]
+      },
+      {
+        "term": "orthogonal",
+        "count": 158,
+        "artifactIds": [
+          "cmuqrwyef001nf728inmwor7h",
+          "cmuqrwy4i0009f728h15k933e",
+          "cmuqrwyeu001rf728ah65jgln",
+          "cmuqrwyjc002bf728gcuxldnx",
+          "cmuqrwyrw0035f728ub2czouu",
+          "cmuqrwy9u000zf728s4a7hn01",
+          "cmtekdm1t000czevdxeb1ye53",
+          "cmtekdm2d000gzevdzj0ecapw",
+          "cmtekdm2s000kzevdu28ha57f",
+          "cmtekdm3h000ozevdkelg6bcx",
+          "cmtekdm5k000szevdhmitsnq2",
+          "cmtekdm6c000wzevd8y0g0qwf",
+          "cmtekdm810018zevdf6c6uiq3",
+          "cmtekdm8z001gzevdsa1bj3s4",
+          "cmtekdm9d001kzevdrtb0aobf",
+          "cmtekdm9t001ozevdbm0qsce3",
+          "cmtekdma8001szevdo1an7119",
+          "cmtekdmao001wzevd621sjszj",
+          "cmtekdmb50020zevdyh6d5mdk",
+          "cmtekdmbk0024zevdmpboht1w",
+          "cmtekdmc10028zevdjybtwgtw",
+          "cmtekdmcw002czevdorhay069",
+          "cmtekdmdl002gzevd73tds5yb",
+          "cmtekdme3002kzevdbxf297uc",
+          "cmtekdmek002ozevdocbiwh95",
+          "cmtekdmez002szevdfm303qwo",
+          "cmtekdmfe002wzevdis6dwfts",
+          "cmtekdmfu0030zevdn5ex61nn",
+          "cmtekdmgn0034zevd9lct9mcz",
+          "cmtekdmhy003czevdqlwt4ods",
+          "cmtekdmii003gzevdu5pctzbq",
+          "cmtekdmj1003kzevdsgdf64n9",
+          "cmtekdnxi00ekzevdbosxco0o",
+          "cmtekdmjw003ozevdz625xmvp",
+          "cmtekdmkf003szevdpiuun0y4",
+          "cmtekdmkz003wzevdxqkt13qj",
+          "cmtekdmlf0040zevdxr4ym1qy",
+          "cmtekdmm90044zevd1mbundpt",
+          "cmtekdnvy00e8zevdab4lxn2n",
+          "cmtekdmmw0048zevdl4vvgl5j",
+          "cmtekdmnc004czevdgbt39tcf",
+          "cmtekdnwx00egzevdv6w3dbt8",
+          "cmuqrwye0001jf728lsdpt12p",
+          "cmtekdmpg004szevdyv4dqrkl",
+          "cmtekdmq6004wzevdktbj2d7q",
+          "cmtekdnwf00eczevdnh0b4o74",
+          "cmtekdmrd0054zevd6bmcw9ns",
+          "cmtekdms9005czevde6klvvs7",
+          "cmtekdmso005gzevdsdy2wg4g",
+          "cmtekdnyf00eszevd1atu3jsz",
+          "cmtekdmt3005kzevd2y6qnii6",
+          "cmtekdo8k00h4zevdw2149urz",
+          "cmtekdmtz005szevdpo8vkjwi",
+          "cmtekdmue005wzevdubcxwxfy",
+          "cmtekdmut0060zevd8c9n3813",
+          "cmtekdo7z00h0zevdu27uk5th",
+          "cmtekdmv70064zevd8uy1mxm2",
+          "cmtekdmvm0068zevd5p9q0w68",
+          "cmtekdods00igzevd5o5ini0j",
+          "cmtekdmw1006czevdno1gq06i",
+          "cmtekdoa800hgzevdlbjga76e",
+          "cmtekdmwg006gzevd7szuy1xe",
+          "cmtekdmwx006kzevd2l42otjn",
+          "cmtekdo7g00gwzevdi0zxxg06",
+          "cmtekdmxc006ozevd1gve06op",
+          "cmtekdobt00hwzevdvo8wxgc8",
+          "cmtekdmxq006szevd8eym7pkz",
+          "cmtekdocm00i4zevd3saiehmk",
+          "cmtekdmy6006wzevd9nonzlsa",
+          "cmtekdoan00hkzevdet1bd5g5",
+          "cmtekdmyl0070zevdwui1gtef",
+          "cmtekdmz00074zevd5dwq3tpj",
+          "cmtekdo6400gozevdyuduszvl",
+          "cmtekdob200hozevdfgp1mpo4",
+          "cmtekdmzf0078zevdtcif0x33",
+          "cmtekdo9s00hczevdmrt5k593",
+          "cmtekdmzu007czevdkyqqkkpm",
+          "cmtekdn0a007gzevdupz3lni6",
+          "cmtekdn0q007kzevdvd378pyl",
+          "cmtekdoc800i0zevdlq0j9225",
+          "cmtekdod000i8zevdejfrs4nu",
+          "cmtekdn22007wzevd5l94sg5b",
+          "cmtekdo6x00gszevd1kxfudth",
+          "cmtekdn2i0080zevdrmkne5zd",
+          "cmtekdn2z0084zevdawt0i21e",
+          "cmtekdn3f0088zevdb91gpyrl",
+          "cmtekdo9000h8zevd0vqdvrx1",
+          "cmtekdn3x008czevdp8jx7zdv",
+          "cmtekdn4e008gzevdp9nz77cp",
+          "cmtekdo5q00gkzevdwqho93ob",
+          "cmtekdobf00hszevdfff9onp5",
+          "cmtekdn4v008kzevd6mo1zsxh",
+          "cmtekdode00iczevdewu1104p",
+          "cmtekdn5c008ozevd3gziu5ux",
+          "cmtekdn5r008szevdf1wfchwk",
+          "cmtekdn69008wzevd5xkxp86q",
+          "cmtekdn6x0090zevd2u2tr7e3",
+          "cmtekdo0700f8zevdayx23h2q",
+          "cmtekdn7h0094zevdj8jprumi",
+          "cmtekdn7v0098zevdohvbp5rk",
+          "cmtekdo1100fgzevdggtuj139",
+          "cmtekdn8b009czevdbqxjk8pb",
+          "cmtekdn93009gzevdlrmjaer4",
+          "cmtekdn9s009kzevdcya8izrb",
+          "cmtekdna6009ozevdgyr5tvf1",
+          "cmtekdnal009szevdr286vb2u",
+          "cmtekdnb1009wzevdfmbsvegf",
+          "cmtekdo1g00fkzevdmdfo02s9",
+          "cmtekdnbi00a0zevdc9n12mjl",
+          "cmtekdnbx00a4zevda7yah3k1",
+          "cmtekdncb00a8zevdjpphtneq",
+          "cmtekdnd300aczevd7849wx5p",
+          "cmtekdndp00agzevd63ntsrzz",
+          "cmtekdne600akzevdmwvda8mv",
+          "cmtekdnem00aozevdx2thdjsd",
+          "cmtekdnf100aszevdhkgyngxz",
+          "cmtekdnfh00awzevdsqkwwce3",
+          "cmtekdo1w00fozevdzvi5g0qe",
+          "cmtekdo4500g8zevdx1ppd9zd",
+          "cmtekdnfx00b0zevdd8zq3kh9",
+          "cmtekdngc00b4zevds3kr0jus",
+          "cmtekdngr00b8zevd5oawnbpu",
+          "cmtekdnzr00f4zevd1e2qoysk",
+          "cmtekdo5a00ggzevdgt4s5433",
+          "cmtekdnh700bczevd6c0faojj",
+          "cmtekdo2r00fwzevd7hny6l7a",
+          "cmtekdnzb00f0zevdo206i0jv",
+          "cmtekdnhm00bgzevdhzzk3yt7",
+          "cmtekdnir00bozevd6a8vl7qb",
+          "cmtekdnjd00bszevdot5hzszc",
+          "cmtekdnjt00bwzevdz1u39ne0",
+          "cmtekdnk900c0zevdee7zeonm",
+          "cmtekdnkv00c4zevdsq01m8mc",
+          "cmtekdo0n00fczevdz29x8hf9",
+          "cmtekdnlb00c8zevdk95i87w7",
+          "cmtekdnlt00cczevdmam9u4lj",
+          "cmtekdnmd00cgzevdr8j8o5ct",
+          "cmtekdnmv00ckzevdos2u8h85",
+          "cmtekdnne00cozevdmd18tcwd",
+          "cmtekdo4q00gczevdolro70xi",
+          "cmtekdnnx00cszevdqt5zikyn",
+          "cmtekdnod00cwzevdf5geosz5",
+          "cmtekdnow00d0zevd82db9a4b",
+          "cmtekdo2a00fszevddy62q77w",
+          "cmtekdnyw00ewzevdfkujie7n",
+          "cmtekdnpd00d4zevdil8e2nsg",
+          "cmtekdnpw00d8zevdww7piznc",
+          "cmtekdnqg00dczevdq8iicm7v",
+          "cmtekdnqy00dgzevduh7s6zi5",
+          "cmtekdnxz00eozevdm3inasrm",
+          "cmtekdnrf00dkzevdwbegpm2e",
+          "cmtekdnrx00dozevduzpzwuyr",
+          "cmtekdnsh00dszevdk0lhysfn",
+          "cmtekdnt900dwzevdn8n3v9gt",
+          "cmtekdnug00e0zevd0s7975nz",
+          "cmtekdnvg00e4zevd89wlgrnd",
+          "cmtiv8ede00676dvtaodnzl0e",
+          "cmtiv8j8s018v6dvtgin5o3ew"
+        ]
+      },
+      {
+        "term": "doppler",
+        "count": 144,
+        "artifactIds": [
+          "cmuqrwy4i0009f728h15k933e",
+          "cmuqrwyeu001rf728ah65jgln",
+          "cmuqrwyjc002bf728gcuxldnx",
+          "cmuqrwy9u000zf728s4a7hn01",
+          "cmuqrwy8w000tf728lycv8vvn",
+          "cmtekdm1t000czevdxeb1ye53",
+          "cmtekdm2d000gzevdzj0ecapw",
+          "cmtekdm2s000kzevdu28ha57f",
+          "cmtekdm3h000ozevdkelg6bcx",
+          "cmtekdm6c000wzevd8y0g0qwf",
+          "cmtekdm7b0014zevd5u5vc48x",
+          "cmtekdm810018zevdf6c6uiq3",
+          "cmtekdm8j001czevd4k04mdg5",
+          "cmtekdm8z001gzevdsa1bj3s4",
+          "cmtekdm9d001kzevdrtb0aobf",
+          "cmtekdm9t001ozevdbm0qsce3",
+          "cmtekdma8001szevdo1an7119",
+          "cmtekdmao001wzevd621sjszj",
+          "cmtekdmbk0024zevdmpboht1w",
+          "cmtekdmc10028zevdjybtwgtw",
+          "cmtekdmcw002czevdorhay069",
+          "cmtekdmdl002gzevd73tds5yb",
+          "cmtekdmek002ozevdocbiwh95",
+          "cmtekdmez002szevdfm303qwo",
+          "cmtekdmfu0030zevdn5ex61nn",
+          "cmtekdmgn0034zevd9lct9mcz",
+          "cmtekdmhg0038zevddrz5onyj",
+          "cmtekdmhy003czevdqlwt4ods",
+          "cmtekdmii003gzevdu5pctzbq",
+          "cmtekdmj1003kzevdsgdf64n9",
+          "cmtekdnxi00ekzevdbosxco0o",
+          "cmtekdmjw003ozevdz625xmvp",
+          "cmtekdmkf003szevdpiuun0y4",
+          "cmtekdmkz003wzevdxqkt13qj",
+          "cmtekdmlf0040zevdxr4ym1qy",
+          "cmtekdmm90044zevd1mbundpt",
+          "cmtekdnvy00e8zevdab4lxn2n",
+          "cmtekdmmw0048zevdl4vvgl5j",
+          "cmtekdmo7004kzevdq62ix13w",
+          "cmtekdmom004ozevdweebaugr",
+          "cmtekdnwx00egzevdv6w3dbt8",
+          "cmuqrwye0001jf728lsdpt12p",
+          "cmtekdmpg004szevdyv4dqrkl",
+          "cmtekdnwf00eczevdnh0b4o74",
+          "cmtekdmrd0054zevd6bmcw9ns",
+          "cmtekdmrt0058zevdweb5sgq6",
+          "cmtekdms9005czevde6klvvs7",
+          "cmtekdnyf00eszevd1atu3jsz",
+          "cmtekdmt3005kzevd2y6qnii6",
+          "cmtekdmtj005ozevddwt548zk",
+          "cmtekdo8k00h4zevdw2149urz",
+          "cmtekdmtz005szevdpo8vkjwi",
+          "cmtekdmut0060zevd8c9n3813",
+          "cmtekdo7z00h0zevdu27uk5th",
+          "cmtekdmvm0068zevd5p9q0w68",
+          "cmtekdods00igzevd5o5ini0j",
+          "cmtekdoa800hgzevdlbjga76e",
+          "cmtekdmwg006gzevd7szuy1xe",
+          "cmtekdmwx006kzevd2l42otjn",
+          "cmtekdmxc006ozevd1gve06op",
+          "cmtekdobt00hwzevdvo8wxgc8",
+          "cmtekdmxq006szevd8eym7pkz",
+          "cmtekdocm00i4zevd3saiehmk",
+          "cmtekdmy6006wzevd9nonzlsa",
+          "cmtekdmyl0070zevdwui1gtef",
+          "cmtekdo6400gozevdyuduszvl",
+          "cmtekdob200hozevdfgp1mpo4",
+          "cmtekdmzf0078zevdtcif0x33",
+          "cmtekdn0a007gzevdupz3lni6",
+          "cmtekdn0q007kzevdvd378pyl",
+          "cmtekdn15007ozevdgtn7522d",
+          "cmtekdoc800i0zevdlq0j9225",
+          "cmtekdn1n007szevd5v9haaxm",
+          "cmtekdn22007wzevd5l94sg5b",
+          "cmtekdn2i0080zevdrmkne5zd",
+          "cmtekdn2z0084zevdawt0i21e",
+          "cmtekdn3f0088zevdb91gpyrl",
+          "cmtekdn3x008czevdp8jx7zdv",
+          "cmtekdn4e008gzevdp9nz77cp",
+          "cmtekdo5q00gkzevdwqho93ob",
+          "cmtekdn4v008kzevd6mo1zsxh",
+          "cmtekdode00iczevdewu1104p",
+          "cmtekdn5c008ozevd3gziu5ux",
+          "cmtekdn6x0090zevd2u2tr7e3",
+          "cmtekdo0700f8zevdayx23h2q",
+          "cmtekdo3o00g4zevdlj10uznz",
+          "cmtekdn7h0094zevdj8jprumi",
+          "cmtekdo1100fgzevdggtuj139",
+          "cmtekdn8b009czevdbqxjk8pb",
+          "cmtekdn93009gzevdlrmjaer4",
+          "cmtekdn9s009kzevdcya8izrb",
+          "cmtekdnb1009wzevdfmbsvegf",
+          "cmtekdnbi00a0zevdc9n12mjl",
+          "cmtekdo3900g0zevdac4sxau5",
+          "cmtekdncb00a8zevdjpphtneq",
+          "cmtekdnd300aczevd7849wx5p",
+          "cmtekdndp00agzevd63ntsrzz",
+          "cmtekdne600akzevdmwvda8mv",
+          "cmtekdnf100aszevdhkgyngxz",
+          "cmtekdnfh00awzevdsqkwwce3",
+          "cmtekdo4500g8zevdx1ppd9zd",
+          "cmtekdnfx00b0zevdd8zq3kh9",
+          "cmtekdngc00b4zevds3kr0jus",
+          "cmtekdngr00b8zevd5oawnbpu",
+          "cmtekdnzr00f4zevd1e2qoysk",
+          "cmtekdo5a00ggzevdgt4s5433",
+          "cmtekdo2r00fwzevd7hny6l7a",
+          "cmtiv8i68010t6dvtdet584ex",
+          "cmtekdnzb00f0zevdo206i0jv",
+          "cmtekdnhm00bgzevdhzzk3yt7",
+          "cmtekdni800bkzevdjou69k59",
+          "cmtekdnir00bozevd6a8vl7qb",
+          "cmtekdnk900c0zevdee7zeonm",
+          "cmtekdnkv00c4zevdsq01m8mc",
+          "cmtekdnmd00cgzevdr8j8o5ct",
+          "cmtekdnmv00ckzevdos2u8h85",
+          "cmtekdnne00cozevdmd18tcwd",
+          "cmtekdo4q00gczevdolro70xi",
+          "cmtekdnnx00cszevdqt5zikyn",
+          "cmtekdnod00cwzevdf5geosz5",
+          "cmtekdnow00d0zevd82db9a4b",
+          "cmtekdo2a00fszevddy62q77w",
+          "cmtekdnyw00ewzevdfkujie7n",
+          "cmtekdnpd00d4zevdil8e2nsg",
+          "cmtekdnpw00d8zevdww7piznc",
+          "cmtekdnqg00dczevdq8iicm7v",
+          "cmtekdnqy00dgzevduh7s6zi5",
+          "cmtekdnrf00dkzevdwbegpm2e",
+          "cmtekdnrx00dozevduzpzwuyr",
+          "cmtekdnsh00dszevdk0lhysfn",
+          "cmtekdnt900dwzevdn8n3v9gt",
+          "cmtekdnug00e0zevd0s7975nz",
+          "cmtekdnvg00e4zevd89wlgrnd",
+          "cmtiv8ftr00h36dvtcddupoxg",
+          "cmtiv8fg000dn6dvtetvic2z0",
+          "cmtiv8edx006b6dvt7xl75lav",
+          "cmtiv8efk006n6dvtd14eh7cv",
+          "cmtiv8goh00o36dvt4dhwucv3",
+          "cmtiv8jny01cv6dvt2qn1irf7",
+          "cmtiv8jsi01e36dvt9riyyzm1",
+          "cmtiv8g1400iv6dvthfamy6fi",
+          "cmtiv8ie3012l6dvtezuz1jxo",
+          "cmtiv8hod00wn6dvtcvpoqe2d",
+          "cmtiv8jhl01b76dvtosemwit6"
+        ]
+      },
+      {
+        "term": "delay",
+        "count": 131,
+        "artifactIds": [
+          "cmuqrwy4i0009f728h15k933e",
+          "cmuqrwyeu001rf728ah65jgln",
+          "cmuqrwyjc002bf728gcuxldnx",
+          "cmuqrwy9u000zf728s4a7hn01",
+          "cmuqrwy8w000tf728lycv8vvn",
+          "cmtekdm1t000czevdxeb1ye53",
+          "cmtekdm2d000gzevdzj0ecapw",
+          "cmtekdm2s000kzevdu28ha57f",
+          "cmtekdm3h000ozevdkelg6bcx",
+          "cmtekdm6c000wzevd8y0g0qwf",
+          "cmtekdm7b0014zevd5u5vc48x",
+          "cmtekdm8j001czevd4k04mdg5",
+          "cmtekdm9d001kzevdrtb0aobf",
+          "cmtekdm9t001ozevdbm0qsce3",
+          "cmtekdma8001szevdo1an7119",
+          "cmtekdmao001wzevd621sjszj",
+          "cmtekdmc10028zevdjybtwgtw",
+          "cmtekdmcw002czevdorhay069",
+          "cmtekdme3002kzevdbxf297uc",
+          "cmtekdmek002ozevdocbiwh95",
+          "cmtekdmfu0030zevdn5ex61nn",
+          "cmtekdmgn0034zevd9lct9mcz",
+          "cmtekdmhg0038zevddrz5onyj",
+          "cmtekdmhy003czevdqlwt4ods",
+          "cmtekdmii003gzevdu5pctzbq",
+          "cmtekdmj1003kzevdsgdf64n9",
+          "cmtekdnxi00ekzevdbosxco0o",
+          "cmtekdmjw003ozevdz625xmvp",
+          "cmtekdmkf003szevdpiuun0y4",
+          "cmtekdmkz003wzevdxqkt13qj",
+          "cmtekdmlf0040zevdxr4ym1qy",
+          "cmtekdmm90044zevd1mbundpt",
+          "cmtekdnvy00e8zevdab4lxn2n",
+          "cmtekdmmw0048zevdl4vvgl5j",
+          "cmtekdmo7004kzevdq62ix13w",
+          "cmtekdmom004ozevdweebaugr",
+          "cmtekdnwx00egzevdv6w3dbt8",
+          "cmuqrwye0001jf728lsdpt12p",
+          "cmtekdmpg004szevdyv4dqrkl",
+          "cmtekdmqu0050zevd0vy7f4ph",
+          "cmtekdnwf00eczevdnh0b4o74",
+          "cmtekdmrd0054zevd6bmcw9ns",
+          "cmtekdmrt0058zevdweb5sgq6",
+          "cmtekdms9005czevde6klvvs7",
+          "cmtekdnyf00eszevd1atu3jsz",
+          "cmtekdmt3005kzevd2y6qnii6",
+          "cmtekdmtj005ozevddwt548zk",
+          "cmtekdo8k00h4zevdw2149urz",
+          "cmtekdmtz005szevdpo8vkjwi",
+          "cmtekdo7z00h0zevdu27uk5th",
+          "cmtekdmvm0068zevd5p9q0w68",
+          "cmtekdods00igzevd5o5ini0j",
+          "cmtekdoa800hgzevdlbjga76e",
+          "cmtekdmwg006gzevd7szuy1xe",
+          "cmtekdmwx006kzevd2l42otjn",
+          "cmtiv8jro01dv6dvt6xiq8wsw",
+          "cmtekdmxc006ozevd1gve06op",
+          "cmtekdmxq006szevd8eym7pkz",
+          "cmtekdocm00i4zevd3saiehmk",
+          "cmtekdmy6006wzevd9nonzlsa",
+          "cmtekdmyl0070zevdwui1gtef",
+          "cmtekdo6400gozevdyuduszvl",
+          "cmtekdob200hozevdfgp1mpo4",
+          "cmtekdmzf0078zevdtcif0x33",
+          "cmtekdn0a007gzevdupz3lni6",
+          "cmtekdn0q007kzevdvd378pyl",
+          "cmtekdn15007ozevdgtn7522d",
+          "cmtekdn1n007szevd5v9haaxm",
+          "cmtekdn22007wzevd5l94sg5b",
+          "cmtekdn2i0080zevdrmkne5zd",
+          "cmtekdn2z0084zevdawt0i21e",
+          "cmtekdn3f0088zevdb91gpyrl",
+          "cmtekdn3x008czevdp8jx7zdv",
+          "cmtekdn4e008gzevdp9nz77cp",
+          "cmtekdo5q00gkzevdwqho93ob",
+          "cmtekdn4v008kzevd6mo1zsxh",
+          "cmtekdode00iczevdewu1104p",
+          "cmtekdn5c008ozevd3gziu5ux",
+          "cmtekdn6x0090zevd2u2tr7e3",
+          "cmtekdo0700f8zevdayx23h2q",
+          "cmtekdo3o00g4zevdlj10uznz",
+          "cmtekdn7h0094zevdj8jprumi",
+          "cmtekdn7v0098zevdohvbp5rk",
+          "cmtekdn8b009czevdbqxjk8pb",
+          "cmtekdn93009gzevdlrmjaer4",
+          "cmtekdn9s009kzevdcya8izrb",
+          "cmtekdnb1009wzevdfmbsvegf",
+          "cmtekdo1g00fkzevdmdfo02s9",
+          "cmtekdnbi00a0zevdc9n12mjl",
+          "cmtekdo3900g0zevdac4sxau5",
+          "cmtekdnbx00a4zevda7yah3k1",
+          "cmtekdncb00a8zevdjpphtneq",
+          "cmtekdnd300aczevd7849wx5p",
+          "cmtekdndp00agzevd63ntsrzz",
+          "cmtekdne600akzevdmwvda8mv",
+          "cmtekdnf100aszevdhkgyngxz",
+          "cmtekdnfh00awzevdsqkwwce3",
+          "cmtekdo4500g8zevdx1ppd9zd",
+          "cmtekdnfx00b0zevdd8zq3kh9",
+          "cmtekdngc00b4zevds3kr0jus",
+          "cmtekdngr00b8zevd5oawnbpu",
+          "cmtekdnzr00f4zevd1e2qoysk",
+          "cmtekdo2r00fwzevd7hny6l7a",
+          "cmtiv8i68010t6dvtdet584ex",
+          "cmtekdnzb00f0zevdo206i0jv",
+          "cmtekdnhm00bgzevdhzzk3yt7",
+          "cmtekdni800bkzevdjou69k59",
+          "cmtekdnir00bozevd6a8vl7qb",
+          "cmtekdnk900c0zevdee7zeonm",
+          "cmtekdnlb00c8zevdk95i87w7",
+          "cmtekdnlt00cczevdmam9u4lj",
+          "cmtekdnmv00ckzevdos2u8h85",
+          "cmtekdnne00cozevdmd18tcwd",
+          "cmtekdo4q00gczevdolro70xi",
+          "cmtekdnnx00cszevdqt5zikyn",
+          "cmtekdnod00cwzevdf5geosz5",
+          "cmtekdnow00d0zevd82db9a4b",
+          "cmtekdo2a00fszevddy62q77w",
+          "cmtekdnyw00ewzevdfkujie7n",
+          "cmtekdnpd00d4zevdil8e2nsg",
+          "cmtekdnpw00d8zevdww7piznc",
+          "cmtekdnqg00dczevdq8iicm7v",
+          "cmtekdnqy00dgzevduh7s6zi5",
+          "cmtekdnrf00dkzevdwbegpm2e",
+          "cmtekdnrx00dozevduzpzwuyr",
+          "cmtekdnsh00dszevdk0lhysfn",
+          "cmtekdnt900dwzevdn8n3v9gt",
+          "cmtekdnug00e0zevd0s7975nz",
+          "cmtekdnvg00e4zevd89wlgrnd",
+          "cmtiv8iql014h6dvtim6dp43q",
+          "cmtiv8goh00o36dvt4dhwucv3"
+        ]
+      },
+      {
+        "term": "modulation",
+        "count": 108,
+        "artifactIds": [
+          "cmuqrwyef001nf728inmwor7h",
+          "cmuqrwyjc002bf728gcuxldnx",
+          "cmuqrwy9u000zf728s4a7hn01",
+          "cmtekdm1t000czevdxeb1ye53",
+          "cmtekdm2s000kzevdu28ha57f",
+          "cmtekdm3h000ozevdkelg6bcx",
+          "cmtekdm5k000szevdhmitsnq2",
+          "cmtekdm810018zevdf6c6uiq3",
+          "cmtekdm9d001kzevdrtb0aobf",
+          "cmtekdmcw002czevdorhay069",
+          "cmtekdme3002kzevdbxf297uc",
+          "cmtekdmez002szevdfm303qwo",
+          "cmtekdmfu0030zevdn5ex61nn",
+          "cmtekdmgn0034zevd9lct9mcz",
+          "cmtekdmii003gzevdu5pctzbq",
+          "cmtekdnxi00ekzevdbosxco0o",
+          "cmtekdmkf003szevdpiuun0y4",
+          "cmtekdmkz003wzevdxqkt13qj",
+          "cmtekdmlf0040zevdxr4ym1qy",
+          "cmtekdmm90044zevd1mbundpt",
+          "cmtekdmmw0048zevdl4vvgl5j",
+          "cmtekdmo7004kzevdq62ix13w",
+          "cmtekdmom004ozevdweebaugr",
+          "cmtekdmqu0050zevd0vy7f4ph",
+          "cmtekdnwf00eczevdnh0b4o74",
+          "cmtekdmrd0054zevd6bmcw9ns",
+          "cmtekdms9005czevde6klvvs7",
+          "cmtekdmso005gzevdsdy2wg4g",
+          "cmtekdnyf00eszevd1atu3jsz",
+          "cmtekdmt3005kzevd2y6qnii6",
+          "cmtekdo8k00h4zevdw2149urz",
+          "cmtekdmtz005szevdpo8vkjwi",
+          "cmtekdmue005wzevdubcxwxfy",
+          "cmtekdmut0060zevd8c9n3813",
+          "cmtekdmv70064zevd8uy1mxm2",
+          "cmtekdods00igzevd5o5ini0j",
+          "cmtekdmwx006kzevd2l42otjn",
+          "cmtekdo7g00gwzevdi0zxxg06",
+          "cmtekdmxc006ozevd1gve06op",
+          "cmtekdobt00hwzevdvo8wxgc8",
+          "cmtekdmxq006szevd8eym7pkz",
+          "cmtekdoan00hkzevdet1bd5g5",
+          "cmtekdmz00074zevd5dwq3tpj",
+          "cmtekdn0q007kzevdvd378pyl",
+          "cmtekdoc800i0zevdlq0j9225",
+          "cmtekdn22007wzevd5l94sg5b",
+          "cmtekdo6x00gszevd1kxfudth",
+          "cmtekdn2i0080zevdrmkne5zd",
+          "cmtekdn2z0084zevdawt0i21e",
+          "cmtekdn3f0088zevdb91gpyrl",
+          "cmtekdo9000h8zevd0vqdvrx1",
+          "cmtekdn3x008czevdp8jx7zdv",
+          "cmtekdn4e008gzevdp9nz77cp",
+          "cmtekdobf00hszevdfff9onp5",
+          "cmtekdn4v008kzevd6mo1zsxh",
+          "cmtekdo3o00g4zevdlj10uznz",
+          "cmtekdn7h0094zevdj8jprumi",
+          "cmtekdn7v0098zevdohvbp5rk",
+          "cmtekdo1100fgzevdggtuj139",
+          "cmtekdn8b009czevdbqxjk8pb",
+          "cmtekdna6009ozevdgyr5tvf1",
+          "cmtekdnal009szevdr286vb2u",
+          "cmtekdnbi00a0zevdc9n12mjl",
+          "cmtekdnbx00a4zevda7yah3k1",
+          "cmtekdnd300aczevd7849wx5p",
+          "cmtekdndp00agzevd63ntsrzz",
+          "cmtekdne600akzevdmwvda8mv",
+          "cmtekdnem00aozevdx2thdjsd",
+          "cmtekdnf100aszevdhkgyngxz",
+          "cmtekdnfh00awzevdsqkwwce3",
+          "cmtekdo1w00fozevdzvi5g0qe",
+          "cmtekdo4500g8zevdx1ppd9zd",
+          "cmtekdnfx00b0zevdd8zq3kh9",
+          "cmtekdngc00b4zevds3kr0jus",
+          "cmtekdngr00b8zevd5oawnbpu",
+          "cmtekdnzr00f4zevd1e2qoysk",
+          "cmtekdnh700bczevd6c0faojj",
+          "cmtekdo2r00fwzevd7hny6l7a",
+          "cmtekdnzb00f0zevdo206i0jv",
+          "cmtekdnhm00bgzevdhzzk3yt7",
+          "cmtekdni800bkzevdjou69k59",
+          "cmtekdnir00bozevd6a8vl7qb",
+          "cmtekdnjd00bszevdot5hzszc",
+          "cmtekdnjt00bwzevdz1u39ne0",
+          "cmtekdnk900c0zevdee7zeonm",
+          "cmtekdnkv00c4zevdsq01m8mc",
+          "cmtekdo0n00fczevdz29x8hf9",
+          "cmtekdnlb00c8zevdk95i87w7",
+          "cmtekdnlt00cczevdmam9u4lj",
+          "cmtekdnmd00cgzevdr8j8o5ct",
+          "cmtekdnne00cozevdmd18tcwd",
+          "cmtekdo4q00gczevdolro70xi",
+          "cmtekdnod00cwzevdf5geosz5",
+          "cmtekdnow00d0zevd82db9a4b",
+          "cmtekdo2a00fszevddy62q77w",
+          "cmtekdnyw00ewzevdfkujie7n",
+          "cmtekdnpd00d4zevdil8e2nsg",
+          "cmtekdnpw00d8zevdww7piznc",
+          "cmtekdnqy00dgzevduh7s6zi5",
+          "cmtekdnxz00eozevdm3inasrm",
+          "cmtekdnrf00dkzevdwbegpm2e",
+          "cmtekdnrx00dozevduzpzwuyr",
+          "cmtekdnsh00dszevdk0lhysfn",
+          "cmtekdnt900dwzevdn8n3v9gt",
+          "cmtekdnug00e0zevd0s7975nz",
+          "cmtekdnvg00e4zevd89wlgrnd",
+          "cmtiv8ede00676dvtaodnzl0e",
+          "cmtiv8j8s018v6dvtgin5o3ew"
+        ]
+      },
+      {
+        "term": "high",
+        "count": 100,
+        "artifactIds": [
+          "cmuqrwyef001nf728inmwor7h",
+          "cmuqrwyjc002bf728gcuxldnx",
+          "cmuqrwyrw0035f728ub2czouu",
+          "cmuqrwy9u000zf728s4a7hn01",
+          "cmuqrwy8w000tf728lycv8vvn",
+          "cmtekdm1t000czevdxeb1ye53",
+          "cmtekdm2s000kzevdu28ha57f",
+          "cmtekdm3h000ozevdkelg6bcx",
+          "cmtekdm5k000szevdhmitsnq2",
+          "cmtekdm810018zevdf6c6uiq3",
+          "cmtekdm8z001gzevdsa1bj3s4",
+          "cmtekdm9d001kzevdrtb0aobf",
+          "cmtekdmao001wzevd621sjszj",
+          "cmtekdmbk0024zevdmpboht1w",
+          "cmtekdmc10028zevdjybtwgtw",
+          "cmtekdmcw002czevdorhay069",
+          "cmtekdme3002kzevdbxf297uc",
+          "cmtekdmek002ozevdocbiwh95",
+          "cmtekdmez002szevdfm303qwo",
+          "cmtekdmfu0030zevdn5ex61nn",
+          "cmtekdmgn0034zevd9lct9mcz",
+          "cmtekdmii003gzevdu5pctzbq",
+          "cmtekdmj1003kzevdsgdf64n9",
+          "cmtekdnxi00ekzevdbosxco0o",
+          "cmtekdmjw003ozevdz625xmvp",
+          "cmtekdmkf003szevdpiuun0y4",
+          "cmtekdmkz003wzevdxqkt13qj",
+          "cmtekdmlf0040zevdxr4ym1qy",
+          "cmtekdmm90044zevd1mbundpt",
+          "cmtekdnvy00e8zevdab4lxn2n",
+          "cmtekdmmw0048zevdl4vvgl5j",
+          "cmtekdnwx00egzevdv6w3dbt8",
+          "cmuqrwye0001jf728lsdpt12p",
+          "cmtekdmq6004wzevdktbj2d7q",
+          "cmtekdnwf00eczevdnh0b4o74",
+          "cmtekdmrd0054zevd6bmcw9ns",
+          "cmtekdmrt0058zevdweb5sgq6",
+          "cmtekdmso005gzevdsdy2wg4g",
+          "cmtekdmt3005kzevd2y6qnii6",
+          "cmtekdo8k00h4zevdw2149urz",
+          "cmtekdmtz005szevdpo8vkjwi",
+          "cmtekdmut0060zevd8c9n3813",
+          "cmtekdmvm0068zevd5p9q0w68",
+          "cmtekdods00igzevd5o5ini0j",
+          "cmtekdoa800hgzevdlbjga76e",
+          "cmtekdmwg006gzevd7szuy1xe",
+          "cmtekdobt00hwzevdvo8wxgc8",
+          "cmtekdmxq006szevd8eym7pkz",
+          "cmtekdocm00i4zevd3saiehmk",
+          "cmtekdoan00hkzevdet1bd5g5",
+          "cmtekdo6400gozevdyuduszvl",
+          "cmtekdmzf0078zevdtcif0x33",
+          "cmtekdn0a007gzevdupz3lni6",
+          "cmtekdoc800i0zevdlq0j9225",
+          "cmtekdn22007wzevd5l94sg5b",
+          "cmtekdn2i0080zevdrmkne5zd",
+          "cmtekdn2z0084zevdawt0i21e",
+          "cmtekdo5q00gkzevdwqho93ob",
+          "cmtekdobf00hszevdfff9onp5",
+          "cmtekdn5c008ozevd3gziu5ux",
+          "cmtekdo0700f8zevdayx23h2q",
+          "cmtekdo3o00g4zevdlj10uznz",
+          "cmtekdn7v0098zevdohvbp5rk",
+          "cmtekdo1100fgzevdggtuj139",
+          "cmtekdn8b009czevdbqxjk8pb",
+          "cmtekdn9s009kzevdcya8izrb",
+          "cmtekdnal009szevdr286vb2u",
+          "cmtekdo1g00fkzevdmdfo02s9",
+          "cmtekdnbi00a0zevdc9n12mjl",
+          "cmtekdo3900g0zevdac4sxau5",
+          "cmtekdnd300aczevd7849wx5p",
+          "cmtekdndp00agzevd63ntsrzz",
+          "cmtekdne600akzevdmwvda8mv",
+          "cmtekdnf100aszevdhkgyngxz",
+          "cmtekdo1w00fozevdzvi5g0qe",
+          "cmtekdnfx00b0zevdd8zq3kh9",
+          "cmtekdngc00b4zevds3kr0jus",
+          "cmtekdnh700bczevd6c0faojj",
+          "cmtekdnzb00f0zevdo206i0jv",
+          "cmtekdnjd00bszevdot5hzszc",
+          "cmtekdnjt00bwzevdz1u39ne0",
+          "cmtekdnkv00c4zevdsq01m8mc",
+          "cmtekdo0n00fczevdz29x8hf9",
+          "cmtekdnlb00c8zevdk95i87w7",
+          "cmtekdnne00cozevdmd18tcwd",
+          "cmtekdo4q00gczevdolro70xi",
+          "cmtekdnnx00cszevdqt5zikyn",
+          "cmtekdnod00cwzevdf5geosz5",
+          "cmtekdo2a00fszevddy62q77w",
+          "cmtekdnyw00ewzevdfkujie7n",
+          "cmtekdnpd00d4zevdil8e2nsg",
+          "cmtekdnpw00d8zevdww7piznc",
+          "cmtekdnqg00dczevdq8iicm7v",
+          "cmtekdnqy00dgzevduh7s6zi5",
+          "cmtekdnxz00eozevdm3inasrm",
+          "cmtekdnrx00dozevduzpzwuyr",
+          "cmtekdnsh00dszevdk0lhysfn",
+          "cmtekdnug00e0zevd0s7975nz",
+          "cmtekdnvg00e4zevd89wlgrnd",
+          "cmtiv8i5i010l6dvtmtr54q0u"
+        ]
+      },
+      {
+        "term": "domain",
+        "count": 98,
+        "artifactIds": [
+          "cmuqrwy4i0009f728h15k933e",
+          "cmuqrwyeu001rf728ah65jgln",
+          "cmuqrwyjc002bf728gcuxldnx",
+          "cmuqrwy9u000zf728s4a7hn01",
+          "cmtekdm1t000czevdxeb1ye53",
+          "cmtekdm2d000gzevdzj0ecapw",
+          "cmtekdm2s000kzevdu28ha57f",
+          "cmtekdm810018zevdf6c6uiq3",
+          "cmtekdm8j001czevd4k04mdg5",
+          "cmtekdm9d001kzevdrtb0aobf",
+          "cmtekdm9t001ozevdbm0qsce3",
+          "cmtekdma8001szevdo1an7119",
+          "cmtekdmao001wzevd621sjszj",
+          "cmtekdmc10028zevdjybtwgtw",
+          "cmtekdmcw002czevdorhay069",
+          "cmtekdmek002ozevdocbiwh95",
+          "cmtekdmfu0030zevdn5ex61nn",
+          "cmtekdmgn0034zevd9lct9mcz",
+          "cmtekdmhg0038zevddrz5onyj",
+          "cmtekdmhy003czevdqlwt4ods",
+          "cmtekdmii003gzevdu5pctzbq",
+          "cmtekdmjw003ozevdz625xmvp",
+          "cmtekdmkf003szevdpiuun0y4",
+          "cmtekdmkz003wzevdxqkt13qj",
+          "cmtekdmlf0040zevdxr4ym1qy",
+          "cmtekdnvy00e8zevdab4lxn2n",
+          "cmtekdmmw0048zevdl4vvgl5j",
+          "cmtekdmns004gzevda4995719",
+          "cmtekdmo7004kzevdq62ix13w",
+          "cmtekdmom004ozevdweebaugr",
+          "cmuqrwye0001jf728lsdpt12p",
+          "cmtekdmpg004szevdyv4dqrkl",
+          "cmtekdnwf00eczevdnh0b4o74",
+          "cmtekdmrd0054zevd6bmcw9ns",
+          "cmtekdms9005czevde6klvvs7",
+          "cmtekdnyf00eszevd1atu3jsz",
+          "cmtekdo8k00h4zevdw2149urz",
+          "cmtekdmtz005szevdpo8vkjwi",
+          "cmtekdmvm0068zevd5p9q0w68",
+          "cmtekdods00igzevd5o5ini0j",
+          "cmtekdoa800hgzevdlbjga76e",
+          "cmtekdmwg006gzevd7szuy1xe",
+          "cmtekdmxc006ozevd1gve06op",
+          "cmtekdmyl0070zevdwui1gtef",
+          "cmtekdo6400gozevdyuduszvl",
+          "cmtekdn0q007kzevdvd378pyl",
+          "cmtekdn15007ozevdgtn7522d",
+          "cmtekdn1n007szevd5v9haaxm",
+          "cmtekdn22007wzevd5l94sg5b",
+          "cmtekdn2i0080zevdrmkne5zd",
+          "cmtekdn2z0084zevdawt0i21e",
+          "cmtekdn3f0088zevdb91gpyrl",
+          "cmtekdn3x008czevdp8jx7zdv",
+          "cmtekdn4e008gzevdp9nz77cp",
+          "cmtekdo5q00gkzevdwqho93ob",
+          "cmtekdobf00hszevdfff9onp5",
+          "cmtekdn4v008kzevd6mo1zsxh",
+          "cmtekdode00iczevdewu1104p",
+          "cmtekdo0700f8zevdayx23h2q",
+          "cmtekdo3o00g4zevdlj10uznz",
+          "cmtekdn7h0094zevdj8jprumi",
+          "cmtekdn7v0098zevdohvbp5rk",
+          "cmtekdn93009gzevdlrmjaer4",
+          "cmtekdn9s009kzevdcya8izrb",
+          "cmtekdnb1009wzevdfmbsvegf",
+          "cmtekdnbi00a0zevdc9n12mjl",
+          "cmtekdo3900g0zevdac4sxau5",
+          "cmtekdncb00a8zevdjpphtneq",
+          "cmtekdnd300aczevd7849wx5p",
+          "cmtekdndp00agzevd63ntsrzz",
+          "cmtekdnf100aszevdhkgyngxz",
+          "cmtekdnfh00awzevdsqkwwce3",
+          "cmtekdngr00b8zevd5oawnbpu",
+          "cmtekdnzr00f4zevd1e2qoysk",
+          "cmtekdnh700bczevd6c0faojj",
+          "cmtekdo2r00fwzevd7hny6l7a",
+          "cmtekdnzb00f0zevdo206i0jv",
+          "cmtekdnhm00bgzevdhzzk3yt7",
+          "cmtekdni800bkzevdjou69k59",
+          "cmtekdnir00bozevd6a8vl7qb",
+          "cmtekdnjt00bwzevdz1u39ne0",
+          "cmtekdnlb00c8zevdk95i87w7",
+          "cmtekdnmv00ckzevdos2u8h85",
+          "cmtekdnne00cozevdmd18tcwd",
+          "cmtekdo4q00gczevdolro70xi",
+          "cmtekdnnx00cszevdqt5zikyn",
+          "cmtekdnod00cwzevdf5geosz5",
+          "cmtekdnow00d0zevd82db9a4b",
+          "cmtekdo2a00fszevddy62q77w",
+          "cmtekdnyw00ewzevdfkujie7n",
+          "cmtekdnpd00d4zevdil8e2nsg",
+          "cmtekdnpw00d8zevdww7piznc",
+          "cmtekdnqg00dczevdq8iicm7v",
+          "cmtekdnqy00dgzevduh7s6zi5",
+          "cmtekdnrf00dkzevdwbegpm2e",
+          "cmtekdnsh00dszevdk0lhysfn",
+          "cmtekdnug00e0zevd0s7975nz",
+          "cmtekdnvg00e4zevd89wlgrnd"
+        ]
+      },
+      {
+        "term": "detection",
+        "count": 85,
+        "artifactIds": [
+          "cmuqrwyef001nf728inmwor7h",
+          "cmuqrwyeu001rf728ah65jgln",
+          "cmuqrwy9u000zf728s4a7hn01",
+          "cmtekdm1t000czevdxeb1ye53",
+          "cmtekdm3h000ozevdkelg6bcx",
+          "cmtekdm6c000wzevd8y0g0qwf",
+          "cmtekdm8j001czevd4k04mdg5",
+          "cmtekdm9d001kzevdrtb0aobf",
+          "cmtekdmc10028zevdjybtwgtw",
+          "cmtekdmez002szevdfm303qwo",
+          "cmtekdmfu0030zevdn5ex61nn",
+          "cmtekdmgn0034zevd9lct9mcz",
+          "cmtekdmhg0038zevddrz5onyj",
+          "cmtekdmii003gzevdu5pctzbq",
+          "cmtekdmj1003kzevdsgdf64n9",
+          "cmtekdnxi00ekzevdbosxco0o",
+          "cmtekdmkf003szevdpiuun0y4",
+          "cmtekdmkz003wzevdxqkt13qj",
+          "cmtekdmmw0048zevdl4vvgl5j",
+          "cmtekdmns004gzevda4995719",
+          "cmtekdmo7004kzevdq62ix13w",
+          "cmtekdmom004ozevdweebaugr",
+          "cmtekdnwx00egzevdv6w3dbt8",
+          "cmtekdmpg004szevdyv4dqrkl",
+          "cmtekdmqu0050zevd0vy7f4ph",
+          "cmtekdnwf00eczevdnh0b4o74",
+          "cmtekdnyf00eszevd1atu3jsz",
+          "cmtekdmue005wzevdubcxwxfy",
+          "cmtekdo7z00h0zevdu27uk5th",
+          "cmtekdods00igzevd5o5ini0j",
+          "cmtekdoa800hgzevdlbjga76e",
+          "cmtekdmwx006kzevd2l42otjn",
+          "cmtekdmxc006ozevd1gve06op",
+          "cmtekdobt00hwzevdvo8wxgc8",
+          "cmtekdmxq006szevd8eym7pkz",
+          "cmtekdoan00hkzevdet1bd5g5",
+          "cmtekdmz00074zevd5dwq3tpj",
+          "cmtekdmzf0078zevdtcif0x33",
+          "cmtekdn0q007kzevdvd378pyl",
+          "cmtekdn1n007szevd5v9haaxm",
+          "cmtekdn22007wzevd5l94sg5b",
+          "cmtekdn4e008gzevdp9nz77cp",
+          "cmtekdn4v008kzevd6mo1zsxh",
+          "cmtekdn69008wzevd5xkxp86q",
+          "cmtekdn6x0090zevd2u2tr7e3",
+          "cmtekdo0700f8zevdayx23h2q",
+          "cmtekdo3o00g4zevdlj10uznz",
+          "cmtekdn7h0094zevdj8jprumi",
+          "cmtekdn7v0098zevdohvbp5rk",
+          "cmtekdn8b009czevdbqxjk8pb",
+          "cmtekdn93009gzevdlrmjaer4",
+          "cmtekdn9s009kzevdcya8izrb",
+          "cmtekdna6009ozevdgyr5tvf1",
+          "cmtekdnal009szevdr286vb2u",
+          "cmtekdo1g00fkzevdmdfo02s9",
+          "cmtekdnbi00a0zevdc9n12mjl",
+          "cmtekdnem00aozevdx2thdjsd",
+          "cmtekdnf100aszevdhkgyngxz",
+          "cmtekdnfh00awzevdsqkwwce3",
+          "cmtekdnfx00b0zevdd8zq3kh9",
+          "cmtekdnzr00f4zevd1e2qoysk",
+          "cmtekdo5a00ggzevdgt4s5433",
+          "cmtekdnh700bczevd6c0faojj",
+          "cmtekdo2r00fwzevd7hny6l7a",
+          "cmtekdnir00bozevd6a8vl7qb",
+          "cmtekdnjd00bszevdot5hzszc",
+          "cmtekdnk900c0zevdee7zeonm",
+          "cmtekdnlb00c8zevdk95i87w7",
+          "cmtekdnne00cozevdmd18tcwd",
+          "cmtekdo4q00gczevdolro70xi",
+          "cmtekdnnx00cszevdqt5zikyn",
+          "cmtekdnow00d0zevd82db9a4b",
+          "cmtekdnyw00ewzevdfkujie7n",
+          "cmtekdnpd00d4zevdil8e2nsg",
+          "cmtekdnpw00d8zevdww7piznc",
+          "cmtekdnqg00dczevdq8iicm7v",
+          "cmtekdnrf00dkzevdwbegpm2e",
+          "cmtekdnsh00dszevdk0lhysfn",
+          "cmtekdnt900dwzevdn8n3v9gt",
+          "cmtekdnug00e0zevd0s7975nz",
+          "cmtekdnvg00e4zevd89wlgrnd",
+          "cmtiv8fg000dn6dvtetvic2z0",
+          "cmtiv8efk006n6dvtd14eh7cv",
+          "cmtiv8jny01cv6dvt2qn1irf7",
+          "cmtiv8fmd00f36dvtw3ptjpnl"
+        ]
+      },
+      {
+        "term": "propose",
+        "count": 82,
+        "artifactIds": [
+          "cmuqrwy9u000zf728s4a7hn01",
+          "cmtekdm1t000czevdxeb1ye53",
+          "cmtekdm2d000gzevdzj0ecapw",
+          "cmtekdm2s000kzevdu28ha57f",
+          "cmtekdm3h000ozevdkelg6bcx",
+          "cmtekdm810018zevdf6c6uiq3",
+          "cmtekdm8z001gzevdsa1bj3s4",
+          "cmtekdm9d001kzevdrtb0aobf",
+          "cmtekdma8001szevdo1an7119",
+          "cmtekdmdl002gzevd73tds5yb",
+          "cmtekdme3002kzevdbxf297uc",
+          "cmtekdmek002ozevdocbiwh95",
+          "cmtekdmhg0038zevddrz5onyj",
+          "cmtekdmii003gzevdu5pctzbq",
+          "cmtekdmj1003kzevdsgdf64n9",
+          "cmtekdmkf003szevdpiuun0y4",
+          "cmtekdmm90044zevd1mbundpt",
+          "cmtekdmns004gzevda4995719",
+          "cmtekdmo7004kzevdq62ix13w",
+          "cmtekdmom004ozevdweebaugr",
+          "cmtekdmpg004szevdyv4dqrkl",
+          "cmtekdmqu0050zevd0vy7f4ph",
+          "cmtekdnwf00eczevdnh0b4o74",
+          "cmtekdmrt0058zevdweb5sgq6",
+          "cmtekdms9005czevde6klvvs7",
+          "cmtekdnyf00eszevd1atu3jsz",
+          "cmtekdmt3005kzevd2y6qnii6",
+          "cmtekdmue005wzevdubcxwxfy",
+          "cmtekdmut0060zevd8c9n3813",
+          "cmtekdmvm0068zevd5p9q0w68",
+          "cmtekdods00igzevd5o5ini0j",
+          "cmtekdoa800hgzevdlbjga76e",
+          "cmtekdmwg006gzevd7szuy1xe",
+          "cmtekdmwx006kzevd2l42otjn",
+          "cmtekdo7g00gwzevdi0zxxg06",
+          "cmtekdmxc006ozevd1gve06op",
+          "cmtekdobt00hwzevdvo8wxgc8",
+          "cmtekdmxq006szevd8eym7pkz",
+          "cmtekdocm00i4zevd3saiehmk",
+          "cmtekdmzf0078zevdtcif0x33",
+          "cmtekdo9s00hczevdmrt5k593",
+          "cmtekdn0a007gzevdupz3lni6",
+          "cmtekdn0q007kzevdvd378pyl",
+          "cmtekdoc800i0zevdlq0j9225",
+          "cmtekdod000i8zevdejfrs4nu",
+          "cmtekdn1n007szevd5v9haaxm",
+          "cmtekdn22007wzevd5l94sg5b",
+          "cmtekdn2i0080zevdrmkne5zd",
+          "cmtekdn2z0084zevdawt0i21e",
+          "cmtekdn3f0088zevdb91gpyrl",
+          "cmtekdn4v008kzevd6mo1zsxh",
+          "cmtekdode00iczevdewu1104p",
+          "cmtekdn7v0098zevdohvbp5rk",
+          "cmtekdn8b009czevdbqxjk8pb",
+          "cmtekdn9s009kzevdcya8izrb",
+          "cmtekdna6009ozevdgyr5tvf1",
+          "cmtekdnal009szevdr286vb2u",
+          "cmtekdo1g00fkzevdmdfo02s9",
+          "cmtekdnbx00a4zevda7yah3k1",
+          "cmtekdncb00a8zevdjpphtneq",
+          "cmtekdndp00agzevd63ntsrzz",
+          "cmtekdne600akzevdmwvda8mv",
+          "cmtekdnf100aszevdhkgyngxz",
+          "cmtekdo1w00fozevdzvi5g0qe",
+          "cmtekdnfx00b0zevdd8zq3kh9",
+          "cmtekdo2r00fwzevd7hny6l7a",
+          "cmtekdni800bkzevdjou69k59",
+          "cmtekdnir00bozevd6a8vl7qb",
+          "cmtekdnjd00bszevdot5hzszc",
+          "cmtekdnkv00c4zevdsq01m8mc",
+          "cmtekdnlb00c8zevdk95i87w7",
+          "cmtekdnmd00cgzevdr8j8o5ct",
+          "cmtekdnmv00ckzevdos2u8h85",
+          "cmtekdnne00cozevdmd18tcwd",
+          "cmtekdnnx00cszevdqt5zikyn",
+          "cmtekdnod00cwzevdf5geosz5",
+          "cmtekdnow00d0zevd82db9a4b",
+          "cmtekdnpd00d4zevdil8e2nsg",
+          "cmtekdnpw00d8zevdww7piznc",
+          "cmtekdnqy00dgzevduh7s6zi5",
+          "cmtekdnrx00dozevduzpzwuyr",
+          "cmtekdnt900dwzevdn8n3v9gt"
+        ]
+      },
+      {
+        "term": "which",
+        "count": 82,
+        "artifactIds": [
+          "cmuqrwyeu001rf728ah65jgln",
+          "cmuqrwyrw0035f728ub2czouu",
+          "cmtekdm6c000wzevd8y0g0qwf",
+          "cmtekdm810018zevdf6c6uiq3",
+          "cmtekdm6u0010zevdfhhexgh2",
+          "cmtekdma8001szevdo1an7119",
+          "cmtekdmao001wzevd621sjszj",
+          "cmtekdmbk0024zevdmpboht1w",
+          "cmtekdmcw002czevdorhay069",
+          "cmtekdmdl002gzevd73tds5yb",
+          "cmtekdmek002ozevdocbiwh95",
+          "cmtekdmez002szevdfm303qwo",
+          "cmtekdmfe002wzevdis6dwfts",
+          "cmtekdmgn0034zevd9lct9mcz",
+          "cmtekdmhg0038zevddrz5onyj",
+          "cmtekdmhy003czevdqlwt4ods",
+          "cmtekdmj1003kzevdsgdf64n9",
+          "cmtekdmjw003ozevdz625xmvp",
+          "cmtekdmkf003szevdpiuun0y4",
+          "cmtekdmm90044zevd1mbundpt",
+          "cmtekdmo7004kzevdq62ix13w",
+          "cmtekdmom004ozevdweebaugr",
+          "cmtekdmrt0058zevdweb5sgq6",
+          "cmtekdms9005czevde6klvvs7",
+          "cmtekdnyf00eszevd1atu3jsz",
+          "cmtekdo7z00h0zevdu27uk5th",
+          "cmtekdods00igzevd5o5ini0j",
+          "cmtekdmwg006gzevd7szuy1xe",
+          "cmtekdmwx006kzevd2l42otjn",
+          "cmtekdo7g00gwzevdi0zxxg06",
+          "cmtekdobt00hwzevdvo8wxgc8",
+          "cmtekdocm00i4zevd3saiehmk",
+          "cmtekdoan00hkzevdet1bd5g5",
+          "cmtekdmyl0070zevdwui1gtef",
+          "cmtekdmzf0078zevdtcif0x33",
+          "cmtekdo9s00hczevdmrt5k593",
+          "cmtekdmzu007czevdkyqqkkpm",
+          "cmtekdn15007ozevdgtn7522d",
+          "cmtekdn22007wzevd5l94sg5b",
+          "cmtekdn2i0080zevdrmkne5zd",
+          "cmtekdn3x008czevdp8jx7zdv",
+          "cmtekdn4e008gzevdp9nz77cp",
+          "cmtekdo5q00gkzevdwqho93ob",
+          "cmtekdobf00hszevdfff9onp5",
+          "cmtekdn5r008szevdf1wfchwk",
+          "cmtekdn69008wzevd5xkxp86q",
+          "cmtekdn6x0090zevd2u2tr7e3",
+          "cmtekdo0700f8zevdayx23h2q",
+          "cmtekdo3o00g4zevdlj10uznz",
+          "cmtekdn7h0094zevdj8jprumi",
+          "cmtekdn7v0098zevdohvbp5rk",
+          "cmtekdo1100fgzevdggtuj139",
+          "cmtekdn93009gzevdlrmjaer4",
+          "cmtekdn9s009kzevdcya8izrb",
+          "cmtekdna6009ozevdgyr5tvf1",
+          "cmtekdnal009szevdr286vb2u",
+          "cmtekdnb1009wzevdfmbsvegf",
+          "cmtekdnbi00a0zevdc9n12mjl",
+          "cmtekdo3900g0zevdac4sxau5",
+          "cmtekdnbx00a4zevda7yah3k1",
+          "cmtekdncb00a8zevdjpphtneq",
+          "cmtekdnd300aczevd7849wx5p",
+          "cmtekdndp00agzevd63ntsrzz",
+          "cmtekdne600akzevdmwvda8mv",
+          "cmtekdo1w00fozevdzvi5g0qe",
+          "cmtekdnfx00b0zevdd8zq3kh9",
+          "cmtekdo5a00ggzevdgt4s5433",
+          "cmtekdni800bkzevdjou69k59",
+          "cmtekdnir00bozevd6a8vl7qb",
+          "cmtekdnk900c0zevdee7zeonm",
+          "cmtekdnkv00c4zevdsq01m8mc",
+          "cmtekdo0n00fczevdz29x8hf9",
+          "cmtekdnlt00cczevdmam9u4lj",
+          "cmtekdnmd00cgzevdr8j8o5ct",
+          "cmtekdnmv00ckzevdos2u8h85",
+          "cmtekdnnx00cszevdqt5zikyn",
+          "cmtekdnod00cwzevdf5geosz5",
+          "cmtekdnow00d0zevd82db9a4b",
+          "cmtekdnpd00d4zevdil8e2nsg",
+          "cmtekdnxz00eozevdm3inasrm",
+          "cmtekdnug00e0zevd0s7975nz",
+          "cmtekdnvg00e4zevd89wlgrnd"
+        ]
+      },
+      {
+        "term": "pilot",
+        "count": 81,
+        "artifactIds": [
+          "cmuqrwyef001nf728inmwor7h",
+          "cmuqrwy4i0009f728h15k933e",
+          "cmuqrwyeu001rf728ah65jgln",
+          "cmuqrwyrw0035f728ub2czouu",
+          "cmtekdm1t000czevdxeb1ye53",
+          "cmtekdm2d000gzevdzj0ecapw",
+          "cmtekdm2s000kzevdu28ha57f",
+          "cmtekdm810018zevdf6c6uiq3",
+          "cmtekdm8j001czevd4k04mdg5",
+          "cmtekdm9d001kzevdrtb0aobf",
+          "cmtekdm9t001ozevdbm0qsce3",
+          "cmtekdmao001wzevd621sjszj",
+          "cmtekdmbk0024zevdmpboht1w",
+          "cmtekdmc10028zevdjybtwgtw",
+          "cmtekdmek002ozevdocbiwh95",
+          "cmtekdmez002szevdfm303qwo",
+          "cmtekdmfu0030zevdn5ex61nn",
+          "cmtekdmhg0038zevddrz5onyj",
+          "cmtekdmhy003czevdqlwt4ods",
+          "cmtekdmj1003kzevdsgdf64n9",
+          "cmtekdmjw003ozevdz625xmvp",
+          "cmtekdmkz003wzevdxqkt13qj",
+          "cmtekdmm90044zevd1mbundpt",
+          "cmtekdnvy00e8zevdab4lxn2n",
+          "cmtekdmnc004czevdgbt39tcf",
+          "cmtekdmns004gzevda4995719",
+          "cmtekdmo7004kzevdq62ix13w",
+          "cmtekdmom004ozevdweebaugr",
+          "cmtekdmpg004szevdyv4dqrkl",
+          "cmtekdnwf00eczevdnh0b4o74",
+          "cmtekdmrt0058zevdweb5sgq6",
+          "cmtekdmso005gzevdsdy2wg4g",
+          "cmtekdnyf00eszevd1atu3jsz",
+          "cmtekdmt3005kzevd2y6qnii6",
+          "cmtekdo8k00h4zevdw2149urz",
+          "cmtekdmv70064zevd8uy1mxm2",
+          "cmtekdmvm0068zevd5p9q0w68",
+          "cmtekdoa800hgzevdlbjga76e",
+          "cmtekdo7g00gwzevdi0zxxg06",
+          "cmtekdobt00hwzevdvo8wxgc8",
+          "cmtekdmxq006szevd8eym7pkz",
+          "cmtekdocm00i4zevd3saiehmk",
+          "cmtekdob200hozevdfgp1mpo4",
+          "cmtekdn15007ozevdgtn7522d",
+          "cmtekdod000i8zevdejfrs4nu",
+          "cmtekdn1n007szevd5v9haaxm",
+          "cmtekdo6x00gszevd1kxfudth",
+          "cmtekdn2i0080zevdrmkne5zd",
+          "cmtekdn3f0088zevdb91gpyrl",
+          "cmtekdo9000h8zevd0vqdvrx1",
+          "cmtekdn3x008czevdp8jx7zdv",
+          "cmtekdn4v008kzevd6mo1zsxh",
+          "cmtekdn5c008ozevd3gziu5ux",
+          "cmtekdo0700f8zevdayx23h2q",
+          "cmtekdo1100fgzevdggtuj139",
+          "cmtekdn93009gzevdlrmjaer4",
+          "cmtekdo1g00fkzevdmdfo02s9",
+          "cmtekdo3900g0zevdac4sxau5",
+          "cmtekdnbx00a4zevda7yah3k1",
+          "cmtekdnd300aczevd7849wx5p",
+          "cmtekdndp00agzevd63ntsrzz",
+          "cmtekdne600akzevdmwvda8mv",
+          "cmtekdnf100aszevdhkgyngxz",
+          "cmtekdo4500g8zevdx1ppd9zd",
+          "cmtekdngc00b4zevds3kr0jus",
+          "cmtekdngr00b8zevd5oawnbpu",
+          "cmtekdnzb00f0zevdo206i0jv",
+          "cmtekdnjt00bwzevdz1u39ne0",
+          "cmtekdnkv00c4zevdsq01m8mc",
+          "cmtekdnnx00cszevdqt5zikyn",
+          "cmtekdo2a00fszevddy62q77w",
+          "cmtekdnpd00d4zevdil8e2nsg",
+          "cmtekdnxz00eozevdm3inasrm",
+          "cmtekdnrx00dozevduzpzwuyr",
+          "cmtekdnsh00dszevdk0lhysfn",
+          "cmtekdnt900dwzevdn8n3v9gt",
+          "cmtekdnvg00e4zevd89wlgrnd",
+          "cmtiv8g7w00k76dvt5xar9yw0",
+          "cmtiv8ikj013h6dvt4rr1uzwm",
+          "cmtiv8hgy00uz6dvt8nkdtmle",
+          "cmtiv8j2j017h6dvtbpfbak13"
+        ]
+      },
+      {
+        "term": "channels",
+        "count": 79,
+        "artifactIds": [
+          "cmuqrwy4i0009f728h15k933e",
+          "cmuqrwy9u000zf728s4a7hn01",
+          "cmuqrwy8w000tf728lycv8vvn",
+          "cmtekdm2d000gzevdzj0ecapw",
+          "cmtekdm3h000ozevdkelg6bcx",
+          "cmtekdm5k000szevdhmitsnq2",
+          "cmtekdm6c000wzevd8y0g0qwf",
+          "cmtekdm9d001kzevdrtb0aobf",
+          "cmtekdmbk0024zevdmpboht1w",
+          "cmtekdmcw002czevdorhay069",
+          "cmtekdmdl002gzevd73tds5yb",
+          "cmtekdme3002kzevdbxf297uc",
+          "cmtekdmfu0030zevdn5ex61nn",
+          "cmtekdmgn0034zevd9lct9mcz",
+          "cmtekdmhg0038zevddrz5onyj",
+          "cmtekdmhy003czevdqlwt4ods",
+          "cmtekdmii003gzevdu5pctzbq",
+          "cmtekdmj1003kzevdsgdf64n9",
+          "cmtekdmkf003szevdpiuun0y4",
+          "cmtekdmkz003wzevdxqkt13qj",
+          "cmtekdmmw0048zevdl4vvgl5j",
+          "cmtekdmo7004kzevdq62ix13w",
+          "cmtekdmom004ozevdweebaugr",
+          "cmtekdmqu0050zevd0vy7f4ph",
+          "cmtekdmrd0054zevd6bmcw9ns",
+          "cmtekdms9005czevde6klvvs7",
+          "cmtekdmso005gzevdsdy2wg4g",
+          "cmtekdnyf00eszevd1atu3jsz",
+          "cmtekdmt3005kzevd2y6qnii6",
+          "cmtekdo8k00h4zevdw2149urz",
+          "cmtekdmtz005szevdpo8vkjwi",
+          "cmtekdmue005wzevdubcxwxfy",
+          "cmtekdmv70064zevd8uy1mxm2",
+          "cmtekdmwg006gzevd7szuy1xe",
+          "cmtekdmwx006kzevd2l42otjn",
+          "cmtiv8jro01dv6dvt6xiq8wsw",
+          "cmtekdmxq006szevd8eym7pkz",
+          "cmtekdoan00hkzevdet1bd5g5",
+          "cmtekdmyl0070zevdwui1gtef",
+          "cmtekdmz00074zevd5dwq3tpj",
+          "cmtekdo9s00hczevdmrt5k593",
+          "cmtekdoc800i0zevdlq0j9225",
+          "cmtekdod000i8zevdejfrs4nu",
+          "cmtekdn1n007szevd5v9haaxm",
+          "cmtekdn2i0080zevdrmkne5zd",
+          "cmtekdn2z0084zevdawt0i21e",
+          "cmtekdo9000h8zevd0vqdvrx1",
+          "cmtekdn3x008czevdp8jx7zdv",
+          "cmtekdo5q00gkzevdwqho93ob",
+          "cmtekdode00iczevdewu1104p",
+          "cmtekdn5c008ozevd3gziu5ux",
+          "cmtekdo0700f8zevdayx23h2q",
+          "cmtekdo3o00g4zevdlj10uznz",
+          "cmtekdo1100fgzevdggtuj139",
+          "cmtekdnb1009wzevdfmbsvegf",
+          "cmtekdnbi00a0zevdc9n12mjl",
+          "cmtekdncb00a8zevdjpphtneq",
+          "cmtekdndp00agzevd63ntsrzz",
+          "cmtekdne600akzevdmwvda8mv",
+          "cmtekdo4500g8zevdx1ppd9zd",
+          "cmtekdngc00b4zevds3kr0jus",
+          "cmtekdngr00b8zevd5oawnbpu",
+          "cmtiv8iww01696dvtq5ykapr9",
+          "cmtekdnzb00f0zevdo206i0jv",
+          "cmtekdnhm00bgzevdhzzk3yt7",
+          "cmtekdnlt00cczevdmam9u4lj",
+          "cmtekdnmv00ckzevdos2u8h85",
+          "cmtekdo4q00gczevdolro70xi",
+          "cmtekdnow00d0zevd82db9a4b",
+          "cmtekdo2a00fszevddy62q77w",
+          "cmtekdnpw00d8zevdww7piznc",
+          "cmtekdnqg00dczevdq8iicm7v",
+          "cmtekdnqy00dgzevduh7s6zi5",
+          "cmtekdnrf00dkzevdwbegpm2e",
+          "cmtekdnt900dwzevdn8n3v9gt",
+          "cmtekdnug00e0zevd0s7975nz",
+          "cmtekdnvg00e4zevd89wlgrnd",
+          "cmtiv8fu500h76dvtuua5lg6v",
+          "cmtiv8ear005r6dvt75v1g158"
+        ]
+      },
+      {
+        "term": "simulation",
+        "count": 76,
+        "artifactIds": [
+          "cmuqrwyeu001rf728ah65jgln",
+          "cmuqrwy9u000zf728s4a7hn01",
+          "cmtekdm1t000czevdxeb1ye53",
+          "cmtekdm3h000ozevdkelg6bcx",
+          "cmtekdm6c000wzevd8y0g0qwf",
+          "cmtekdm7b0014zevd5u5vc48x",
+          "cmtekdm8j001czevd4k04mdg5",
+          "cmtekdm8z001gzevdsa1bj3s4",
+          "cmtekdm9t001ozevdbm0qsce3",
+          "cmtekdmb50020zevdyh6d5mdk",
+          "cmtekdmc10028zevdjybtwgtw",
+          "cmtekdme3002kzevdbxf297uc",
+          "cmtekdmek002ozevdocbiwh95",
+          "cmtekdmfe002wzevdis6dwfts",
+          "cmtekdmfu0030zevdn5ex61nn",
+          "cmtekdmii003gzevdu5pctzbq",
+          "cmtekdnxi00ekzevdbosxco0o",
+          "cmtekdmkf003szevdpiuun0y4",
+          "cmtekdmlf0040zevdxr4ym1qy",
+          "cmtekdmm90044zevd1mbundpt",
+          "cmtekdmns004gzevda4995719",
+          "cmtekdmo7004kzevdq62ix13w",
+          "cmtekdmom004ozevdweebaugr",
+          "cmtekdmpg004szevdyv4dqrkl",
+          "cmtekdmso005gzevdsdy2wg4g",
+          "cmtekdmue005wzevdubcxwxfy",
+          "cmtekdmut0060zevd8c9n3813",
+          "cmtekdo7z00h0zevdu27uk5th",
+          "cmtekdmvm0068zevd5p9q0w68",
+          "cmtekdmxc006ozevd1gve06op",
+          "cmtekdobt00hwzevdvo8wxgc8",
+          "cmtekdocm00i4zevd3saiehmk",
+          "cmtekdmy6006wzevd9nonzlsa",
+          "cmtekdoan00hkzevdet1bd5g5",
+          "cmtekdmz00074zevd5dwq3tpj",
+          "cmtekdob200hozevdfgp1mpo4",
+          "cmtekdmzf0078zevdtcif0x33",
+          "cmtekdo9s00hczevdmrt5k593",
+          "cmtekdmzu007czevdkyqqkkpm",
+          "cmtekdn0a007gzevdupz3lni6",
+          "cmtekdod000i8zevdejfrs4nu",
+          "cmtekdn22007wzevd5l94sg5b",
+          "cmtekdn2i0080zevdrmkne5zd",
+          "cmtekdn3f0088zevdb91gpyrl",
+          "cmtekdn3x008czevdp8jx7zdv",
+          "cmtekdobf00hszevdfff9onp5",
+          "cmtekdn5r008szevdf1wfchwk",
+          "cmtekdn6x0090zevd2u2tr7e3",
+          "cmtekdo0700f8zevdayx23h2q",
+          "cmtekdn7h0094zevdj8jprumi",
+          "cmtekdn7v0098zevdohvbp5rk",
+          "cmtekdo1100fgzevdggtuj139",
+          "cmtekdn8b009czevdbqxjk8pb",
+          "cmtekdn93009gzevdlrmjaer4",
+          "cmtekdn9s009kzevdcya8izrb",
+          "cmtekdnb1009wzevdfmbsvegf",
+          "cmtekdo1g00fkzevdmdfo02s9",
+          "cmtekdnbi00a0zevdc9n12mjl",
+          "cmtekdncb00a8zevdjpphtneq",
+          "cmtekdnf100aszevdhkgyngxz",
+          "cmtekdnfh00awzevdsqkwwce3",
+          "cmtekdo1w00fozevdzvi5g0qe",
+          "cmtekdo4500g8zevdx1ppd9zd",
+          "cmtekdnzr00f4zevd1e2qoysk",
+          "cmtekdo5a00ggzevdgt4s5433",
+          "cmtekdo2r00fwzevd7hny6l7a",
+          "cmtekdnjd00bszevdot5hzszc",
+          "cmtekdnk900c0zevdee7zeonm",
+          "cmtekdnkv00c4zevdsq01m8mc",
+          "cmtekdnmd00cgzevdr8j8o5ct",
+          "cmtekdnmv00ckzevdos2u8h85",
+          "cmtekdnne00cozevdmd18tcwd",
+          "cmtekdnow00d0zevd82db9a4b",
+          "cmtekdo2a00fszevddy62q77w",
+          "cmtekdnqg00dczevdq8iicm7v",
+          "cmtekdnrx00dozevduzpzwuyr"
+        ]
+      },
+      {
+        "term": "communication",
+        "count": 73,
+        "artifactIds": [
+          "cmuqrwy4i0009f728h15k933e",
+          "cmuqrwyeu001rf728ah65jgln",
+          "cmuqrwyjc002bf728gcuxldnx",
+          "cmuqrwy9u000zf728s4a7hn01",
+          "cmuqrwy8w000tf728lycv8vvn",
+          "cmtekdm2s000kzevdu28ha57f",
+          "cmtekdm7b0014zevd5u5vc48x",
+          "cmtekdm8z001gzevdsa1bj3s4",
+          "cmtekdm6u0010zevdfhhexgh2",
+          "cmtekdmbk0024zevdmpboht1w",
+          "cmtekdmez002szevdfm303qwo",
+          "cmtekdmfe002wzevdis6dwfts",
+          "cmtekdnxi00ekzevdbosxco0o",
+          "cmtekdmjw003ozevdz625xmvp",
+          "cmtekdmkz003wzevdxqkt13qj",
+          "cmtekdmm90044zevd1mbundpt",
+          "cmtekdmmw0048zevdl4vvgl5j",
+          "cmtekdmnc004czevdgbt39tcf",
+          "cmtekdnwx00egzevdv6w3dbt8",
+          "cmuqrwye0001jf728lsdpt12p",
+          "cmtekdmpg004szevdyv4dqrkl",
+          "cmtekdmq6004wzevdktbj2d7q",
+          "cmtekdmqu0050zevd0vy7f4ph",
+          "cmtekdms9005czevde6klvvs7",
+          "cmtekdnyf00eszevd1atu3jsz",
+          "cmtekdmt3005kzevd2y6qnii6",
+          "cmtekdmtj005ozevddwt548zk",
+          "cmtekdmtz005szevdpo8vkjwi",
+          "cmtekdmut0060zevd8c9n3813",
+          "cmtekdo7z00h0zevdu27uk5th",
+          "cmtekdods00igzevd5o5ini0j",
+          "cmtekdoa800hgzevdlbjga76e",
+          "cmtekdmwg006gzevd7szuy1xe",
+          "cmtiv8jro01dv6dvt6xiq8wsw",
+          "cmtekdoan00hkzevdet1bd5g5",
+          "cmtekdmz00074zevd5dwq3tpj",
+          "cmtekdmzf0078zevdtcif0x33",
+          "cmtekdmzu007czevdkyqqkkpm",
+          "cmtekdn0a007gzevdupz3lni6",
+          "cmtekdn0q007kzevdvd378pyl",
+          "cmtekdn15007ozevdgtn7522d",
+          "cmtekdo9000h8zevd0vqdvrx1",
+          "cmtekdn3x008czevdp8jx7zdv",
+          "cmtekdobf00hszevdfff9onp5",
+          "cmtekdn4v008kzevd6mo1zsxh",
+          "cmtekdode00iczevdewu1104p",
+          "cmtekdn5r008szevdf1wfchwk",
+          "cmtekdn69008wzevd5xkxp86q",
+          "cmtekdo3o00g4zevdlj10uznz",
+          "cmtekdn8b009czevdbqxjk8pb",
+          "cmtekdn9s009kzevdcya8izrb",
+          "cmtekdna6009ozevdgyr5tvf1",
+          "cmtekdo3900g0zevdac4sxau5",
+          "cmtekdnd300aczevd7849wx5p",
+          "cmtekdndp00agzevd63ntsrzz",
+          "cmtekdne600akzevdmwvda8mv",
+          "cmtekdnf100aszevdhkgyngxz",
+          "cmtekdo4500g8zevdx1ppd9zd",
+          "cmtekdnfx00b0zevdd8zq3kh9",
+          "cmtekdo5a00ggzevdgt4s5433",
+          "cmtekdnir00bozevd6a8vl7qb",
+          "cmtekdnjd00bszevdot5hzszc",
+          "cmtekdnkv00c4zevdsq01m8mc",
+          "cmtekdo0n00fczevdz29x8hf9",
+          "cmtekdnne00cozevdmd18tcwd",
+          "cmtekdnqg00dczevdq8iicm7v",
+          "cmtekdnxz00eozevdm3inasrm",
+          "cmtekdnrf00dkzevdwbegpm2e",
+          "cmtiv8hdo00u36dvtggqygcn6",
+          "cmtiv8id5012d6dvt2hv8s4j1",
+          "cmtiv8j0g01716dvtbvfnq7m9",
+          "cmtiv8fky00er6dvtjcseb2gy",
+          "cmtiv8e4q004f6dvto5763os0"
+        ]
+      },
+      {
+        "term": "error",
+        "count": 71,
+        "artifactIds": [
+          "cmuqrwyef001nf728inmwor7h",
+          "cmuqrwy4i0009f728h15k933e",
+          "cmuqrwyeu001rf728ah65jgln",
+          "cmuqrwyjc002bf728gcuxldnx",
+          "cmuqrwyrw0035f728ub2czouu",
+          "cmtekdm2d000gzevdzj0ecapw",
+          "cmtekdm8j001czevd4k04mdg5",
+          "cmtekdma8001szevdo1an7119",
+          "cmtekdmbk0024zevdmpboht1w",
+          "cmtekdmc10028zevdjybtwgtw",
+          "cmtekdmdl002gzevd73tds5yb",
+          "cmtekdme3002kzevdbxf297uc",
+          "cmtekdmek002ozevdocbiwh95",
+          "cmtekdmez002szevdfm303qwo",
+          "cmtekdmfe002wzevdis6dwfts",
+          "cmtekdmfu0030zevdn5ex61nn",
+          "cmtekdmhg0038zevddrz5onyj",
+          "cmtekdmhy003czevdqlwt4ods",
+          "cmtekdmj1003kzevdsgdf64n9",
+          "cmtekdmkf003szevdpiuun0y4",
+          "cmtekdmm90044zevd1mbundpt",
+          "cmtekdmmw0048zevdl4vvgl5j",
+          "cmtekdmo7004kzevdq62ix13w",
+          "cmtekdnwf00eczevdnh0b4o74",
+          "cmtekdmso005gzevdsdy2wg4g",
+          "cmtekdnyf00eszevd1atu3jsz",
+          "cmtekdmue005wzevdubcxwxfy",
+          "cmtekdo7z00h0zevdu27uk5th",
+          "cmtekdmv70064zevd8uy1mxm2",
+          "cmtekdmw1006czevdno1gq06i",
+          "cmtekdmwx006kzevd2l42otjn",
+          "cmtekdobt00hwzevdvo8wxgc8",
+          "cmtekdocm00i4zevd3saiehmk",
+          "cmtekdmyl0070zevdwui1gtef",
+          "cmtekdmz00074zevd5dwq3tpj",
+          "cmtekdob200hozevdfgp1mpo4",
+          "cmtekdoc800i0zevdlq0j9225",
+          "cmtekdn1n007szevd5v9haaxm",
+          "cmtekdn2i0080zevdrmkne5zd",
+          "cmtekdn2z0084zevdawt0i21e",
+          "cmtekdo9000h8zevd0vqdvrx1",
+          "cmtekdobf00hszevdfff9onp5",
+          "cmtekdn4v008kzevd6mo1zsxh",
+          "cmtekdn5c008ozevd3gziu5ux",
+          "cmtekdn69008wzevd5xkxp86q",
+          "cmtekdn7h0094zevdj8jprumi",
+          "cmtekdn7v0098zevdohvbp5rk",
+          "cmtekdo1100fgzevdggtuj139",
+          "cmtekdn93009gzevdlrmjaer4",
+          "cmtekdn9s009kzevdcya8izrb",
+          "cmtekdnal009szevdr286vb2u",
+          "cmtekdnb1009wzevdfmbsvegf",
+          "cmtekdo1g00fkzevdmdfo02s9",
+          "cmtekdncb00a8zevdjpphtneq",
+          "cmtekdnem00aozevdx2thdjsd",
+          "cmtekdo1w00fozevdzvi5g0qe",
+          "cmtekdngc00b4zevds3kr0jus",
+          "cmtekdo5a00ggzevdgt4s5433",
+          "cmtekdnh700bczevd6c0faojj",
+          "cmtekdnhm00bgzevdhzzk3yt7",
+          "cmtekdnir00bozevd6a8vl7qb",
+          "cmtekdnjt00bwzevdz1u39ne0",
+          "cmtekdnlb00c8zevdk95i87w7",
+          "cmtekdnlt00cczevdmam9u4lj",
+          "cmtekdnmd00cgzevdr8j8o5ct",
+          "cmtekdnne00cozevdmd18tcwd",
+          "cmtekdnod00cwzevdf5geosz5",
+          "cmtekdnow00d0zevd82db9a4b",
+          "cmtekdo2a00fszevddy62q77w",
+          "cmtekdnxz00eozevdm3inasrm",
+          "cmtekdnt900dwzevdn8n3v9gt"
+        ]
+      }
+    ],
+    "publicationTimeline": {
+      "byYear": [
+        {
+          "year": "1989",
+          "count": 1
+        },
+        {
+          "year": "1999",
+          "count": 1
+        },
+        {
+          "year": "2000",
+          "count": 1
+        },
+        {
+          "year": "2004",
+          "count": 1
+        },
+        {
+          "year": "2005",
+          "count": 3
+        },
+        {
+          "year": "2006",
+          "count": 4
+        },
+        {
+          "year": "2007",
+          "count": 6
+        },
+        {
+          "year": "2008",
+          "count": 19
+        },
+        {
+          "year": "2009",
+          "count": 3
+        },
+        {
+          "year": "2010",
+          "count": 9
+        },
+        {
+          "year": "2011",
+          "count": 5
+        },
+        {
+          "year": "2012",
+          "count": 3
+        },
+        {
+          "year": "2013",
+          "count": 1
+        },
+        {
+          "year": "2014",
+          "count": 1
+        },
+        {
+          "year": "2015",
+          "count": 1
+        },
+        {
+          "year": "2016",
+          "count": 4
+        },
+        {
+          "year": "2017",
+          "count": 2
+        },
+        {
+          "year": "2018",
+          "count": 3
+        },
+        {
+          "year": "2019",
+          "count": 4
+        },
+        {
+          "year": "2020",
+          "count": 10
+        },
+        {
+          "year": "2021",
+          "count": 18
+        },
+        {
+          "year": "2022",
+          "count": 15
+        },
+        {
+          "year": "2023",
+          "count": 25
+        },
+        {
+          "year": "2024",
+          "count": 32
+        },
+        {
+          "year": "2025",
+          "count": 37
+        },
+        {
+          "year": "2026",
+          "count": 37
+        }
+      ],
+      "byMonth": [
+        {
+          "month": "1989-12",
+          "count": 1
+        },
+        {
+          "month": "1999-12",
+          "count": 1
+        },
+        {
+          "month": "2000-12",
+          "count": 1
+        },
+        {
+          "month": "2004-12",
+          "count": 1
+        },
+        {
+          "month": "2005-12",
+          "count": 3
+        },
+        {
+          "month": "2006-12",
+          "count": 4
+        },
+        {
+          "month": "2007-12",
+          "count": 6
+        },
+        {
+          "month": "2008-12",
+          "count": 19
+        },
+        {
+          "month": "2009-12",
+          "count": 3
+        },
+        {
+          "month": "2010-12",
+          "count": 9
+        },
+        {
+          "month": "2011-12",
+          "count": 5
+        },
+        {
+          "month": "2012-12",
+          "count": 3
+        },
+        {
+          "month": "2013-12",
+          "count": 1
+        },
+        {
+          "month": "2014-12",
+          "count": 1
+        },
+        {
+          "month": "2015-12",
+          "count": 1
+        },
+        {
+          "month": "2016-12",
+          "count": 4
+        },
+        {
+          "month": "2017-12",
+          "count": 2
+        },
+        {
+          "month": "2018-02",
+          "count": 1
+        },
+        {
+          "month": "2018-05",
+          "count": 1
+        },
+        {
+          "month": "2018-08",
+          "count": 1
+        },
+        {
+          "month": "2019-02",
+          "count": 1
+        },
+        {
+          "month": "2019-03",
+          "count": 1
+        },
+        {
+          "month": "2019-10",
+          "count": 1
+        },
+        {
+          "month": "2019-12",
+          "count": 1
+        },
+        {
+          "month": "2020-03",
+          "count": 2
+        },
+        {
+          "month": "2020-04",
+          "count": 1
+        },
+        {
+          "month": "2020-05",
+          "count": 1
+        },
+        {
+          "month": "2020-07",
+          "count": 1
+        },
+        {
+          "month": "2020-09",
+          "count": 1
+        },
+        {
+          "month": "2020-10",
+          "count": 4
+        },
+        {
+          "month": "2021-01",
+          "count": 3
+        },
+        {
+          "month": "2021-04",
+          "count": 3
+        },
+        {
+          "month": "2021-05",
+          "count": 1
+        },
+        {
+          "month": "2021-07",
+          "count": 2
+        },
+        {
+          "month": "2021-08",
+          "count": 2
+        },
+        {
+          "month": "2021-11",
+          "count": 3
+        },
+        {
+          "month": "2021-12",
+          "count": 4
+        },
+        {
+          "month": "2022-01",
+          "count": 3
+        },
+        {
+          "month": "2022-03",
+          "count": 2
+        },
+        {
+          "month": "2022-05",
+          "count": 2
+        },
+        {
+          "month": "2022-06",
+          "count": 1
+        },
+        {
+          "month": "2022-08",
+          "count": 2
+        },
+        {
+          "month": "2022-09",
+          "count": 2
+        },
+        {
+          "month": "2022-10",
+          "count": 1
+        },
+        {
+          "month": "2022-12",
+          "count": 2
+        },
+        {
+          "month": "2023-01",
+          "count": 2
+        },
+        {
+          "month": "2023-02",
+          "count": 1
+        },
+        {
+          "month": "2023-03",
+          "count": 1
+        },
+        {
+          "month": "2023-04",
+          "count": 2
+        },
+        {
+          "month": "2023-05",
+          "count": 3
+        },
+        {
+          "month": "2023-06",
+          "count": 2
+        },
+        {
+          "month": "2023-07",
+          "count": 1
+        },
+        {
+          "month": "2023-08",
+          "count": 3
+        },
+        {
+          "month": "2023-10",
+          "count": 5
+        },
+        {
+          "month": "2023-11",
+          "count": 2
+        },
+        {
+          "month": "2023-12",
+          "count": 3
+        },
+        {
+          "month": "2024-02",
+          "count": 3
+        },
+        {
+          "month": "2024-03",
+          "count": 4
+        },
+        {
+          "month": "2024-04",
+          "count": 4
+        },
+        {
+          "month": "2024-05",
+          "count": 1
+        },
+        {
+          "month": "2024-06",
+          "count": 4
+        },
+        {
+          "month": "2024-07",
+          "count": 3
+        },
+        {
+          "month": "2024-08",
+          "count": 3
+        },
+        {
+          "month": "2024-09",
+          "count": 2
+        },
+        {
+          "month": "2024-10",
+          "count": 1
+        },
+        {
+          "month": "2024-11",
+          "count": 1
+        },
+        {
+          "month": "2024-12",
+          "count": 6
+        },
+        {
+          "month": "2025-01",
+          "count": 3
+        },
+        {
+          "month": "2025-02",
+          "count": 2
+        },
+        {
+          "month": "2025-03",
+          "count": 3
+        },
+        {
+          "month": "2025-04",
+          "count": 3
+        },
+        {
+          "month": "2025-05",
+          "count": 1
+        },
+        {
+          "month": "2025-06",
+          "count": 3
+        },
+        {
+          "month": "2025-07",
+          "count": 5
+        },
+        {
+          "month": "2025-08",
+          "count": 1
+        },
+        {
+          "month": "2025-09",
+          "count": 4
+        },
+        {
+          "month": "2025-10",
+          "count": 6
+        },
+        {
+          "month": "2025-12",
+          "count": 6
+        },
+        {
+          "month": "2026-01",
+          "count": 8
+        },
+        {
+          "month": "2026-02",
+          "count": 3
+        },
+        {
+          "month": "2026-03",
+          "count": 2
+        },
+        {
+          "month": "2026-04",
+          "count": 2
+        },
+        {
+          "month": "2026-05",
+          "count": 3
+        },
+        {
+          "month": "2026-06",
+          "count": 2
+        },
+        {
+          "month": "2026-07",
+          "count": 5
+        },
+        {
+          "month": "2026-08",
+          "count": 9
+        },
+        {
+          "month": "2026-09",
+          "count": 3
+        }
+      ],
+      "knownDates": 246,
+      "unknownDates": 10,
+      "newestPaper": "2026-09-21T00:00:00.000Z",
+      "oldestPaper": "1990-01-01T00:00:00.000Z",
+      "papersWithoutPublicationDate": 10
+    },
+    "sourceContribution": [
+      {
+        "name": "arxiv",
+        "collectorId": "c_mt4ot19f1crygiarf6",
+        "status": "HEALTHY",
+        "artifactCount": 172,
+        "artifactTypes": [
+          "PAPER"
+        ],
+        "lastRun": "2026-10-02T09:41:27.531Z",
+        "lastSuccessAt": "2026-10-02T09:41:30.736Z"
+      },
+      {
+        "name": "github",
+        "collectorId": "c_mt5yn9lvrgrgdp5vm",
+        "status": "HEALTHY",
+        "artifactCount": 10,
+        "artifactTypes": [
+          "IMPLEMENTATION"
+        ],
+        "lastRun": "2026-08-23T17:08:00.000Z",
+        "lastSuccessAt": "2026-08-23T17:08:14.604Z"
+      },
+      {
+        "name": "fixture",
+        "collectorId": "c_mt5c4xao29ue6pvc89",
+        "status": "TEST SOURCE",
+        "artifactCount": 0,
+        "artifactTypes": [
+          "PAPER"
+        ],
+        "lastRun": null,
+        "lastSuccessAt": null
+      },
+      {
+        "name": "duke-calderbank",
+        "collectorId": "c_mtisrrzwxyapkvgvt",
+        "status": "HEALTHY",
+        "artifactCount": 84,
+        "artifactTypes": [
+          "PAPER"
+        ],
+        "lastRun": "2026-09-01T16:12:27.858Z",
+        "lastSuccessAt": "2026-09-01T16:12:36.517Z"
+      }
+    ],
+    "recentResearchActivity": {
+      "last30Days": {
+        "windowDays": 30,
+        "papers": 3,
+        "implementations": 0,
+        "signals": 50
+      },
+      "last90Days": {
+        "windowDays": 90,
+        "papers": 17,
+        "implementations": 0,
+        "signals": 50
+      },
+      "last180Days": {
+        "windowDays": 180,
+        "papers": 23,
+        "implementations": 0,
+        "signals": 50
+      },
+      "last365Days": {
+        "windowDays": 365,
+        "papers": 49,
+        "implementations": 0,
+        "signals": 50
+      }
+    },
+    "dataCompleteness": {
+      "papers": {
+        "title": 100,
+        "abstract": 67.19,
+        "authors": 100,
+        "publicationDate": 96.09,
+        "url": 100
+      },
+      "implementations": {
+        "title": 100,
+        "description": 0,
+        "url": 100,
+        "owner": 100
+      },
+      "summary": {
+        "paperMetadataCoverage": 92.66,
+        "implementationMetadataCoverage": 75
+      }
+    },
+    "researchGaps": {
+      "gaps": [
+        {
+          "type": "implementationCoverage",
+          "label": "Papers without linked implementation",
+          "value": 230,
+          "description": "Papers observed in this research space without a linked implementation record detected by the relationship layer."
+        },
+        {
+          "type": "publicationDates",
+          "label": "Papers without publication date",
+          "value": 10,
+          "description": "Observed papers without a parsed publication date in the normalized record metadata."
+        },
+        {
+          "type": "abstractCoverage",
+          "label": "Papers without abstract/description",
+          "value": 84,
+          "description": "Papers with missing abstract or description text that reduces the signal available for keyword extraction."
+        },
+        {
+          "type": "implementationDescription",
+          "label": "Implementations without description",
+          "value": 10,
+          "description": "Repository records without descriptive text available for evidence-based matching."
+        },
+        {
+          "type": "implementationCoverage",
+          "label": "Implementations without detected paper link",
+          "value": 4,
+          "description": "Implementation artifacts that have not yet been connected to a paper in the current relationship layer."
+        }
+      ],
+      "totalGaps": 5
+    },
+    "attentionQueue": [
+      {
+        "artifactId": "cmtekdn3f0088zevdb91gpyrl",
+        "title": "Joint Sparsity Pattern Learning Based Channel Estimation for Massive MIMO-OTFS Systems",
+        "url": "https://arxiv.org/abs/2403.03771",
+        "source": "arxiv",
+        "publishedAt": "2024-03-06T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.147,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.929,
+        "reason": "linked implementation; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdob200hozevdfgp1mpo4",
+        "title": "Pilot-Aided Joint Time Synchronization and Channel Estimation for OTFS",
+        "url": "https://arxiv.org/abs/2408.04192",
+        "source": "arxiv",
+        "publishedAt": "2024-08-01T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.135,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.927,
+        "reason": "linked implementation; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmwg006gzevd7szuy1xe",
+        "title": "Time Frequency Localized Pulse for Delay Doppler Domain Data Transmission",
+        "url": "https://arxiv.org/abs/2501.18286",
+        "source": "arxiv",
+        "publishedAt": "2025-01-30T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.104,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.921,
+        "reason": "linked implementation; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdo2a00fszevddy62q77w",
+        "title": "Channel Estimation and Equalization for CP-OFDM-based OTFS in Fractional Doppler Channels",
+        "url": "https://arxiv.org/abs/2010.15396",
+        "source": "arxiv",
+        "publishedAt": "2020-10-01T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.335,
+        "recentChange": "NONE",
+        "attentionScore": 0.767,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnt900dwzevdn8n3v9gt",
+        "title": "Embedded Pilot-Aided Channel Estimation for OTFS in Delay-Doppler Channels",
+        "url": "https://arxiv.org/abs/1808.08360",
+        "source": "arxiv",
+        "publishedAt": "2018-08-25T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.202,
+        "recentChange": "NONE",
+        "attentionScore": 0.74,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnhm00bgzevdhzzk3yt7",
+        "title": "Compressed Sensing Channel Estimation for OTFS Modulation in Non-Integer Delay-Doppler Domain",
+        "url": "https://arxiv.org/abs/2111.12382",
+        "source": "arxiv",
+        "publishedAt": "2021-11-24T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.175,
+        "recentChange": "NONE",
+        "attentionScore": 0.735,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnne00cozevdmd18tcwd",
+        "title": "Cross Domain Iterative Detection for Orthogonal Time Frequency Space Modulation",
+        "url": "https://arxiv.org/abs/2101.03822",
+        "source": "arxiv",
+        "publishedAt": "2021-01-11T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.146,
+        "recentChange": "NONE",
+        "attentionScore": 0.729,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdne600akzevdmwvda8mv",
+        "title": "Sensing Aided OTFS Channel Estimation for Massive MIMO Systems",
+        "url": "https://arxiv.org/abs/2209.11321",
+        "source": "arxiv",
+        "publishedAt": "2022-09-22T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.14,
+        "recentChange": "NONE",
+        "attentionScore": 0.728,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdn8b009czevdbqxjk8pb",
+        "title": "Integrated Sensing and Communications with MIMO-OTFS",
+        "url": "https://arxiv.org/abs/2306.06361",
+        "source": "arxiv",
+        "publishedAt": "2023-06-10T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.128,
+        "recentChange": "NONE",
+        "attentionScore": 0.726,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnd300aczevd7849wx5p",
+        "title": "Superimposed Channel Estimation in OTFS Modulation Using Compressive Sensing",
+        "url": "https://arxiv.org/abs/2212.09280",
+        "source": "arxiv",
+        "publishedAt": "2022-12-19T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.126,
+        "recentChange": "NONE",
+        "attentionScore": 0.725,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnem00aozevdx2thdjsd",
+        "title": "Orthogonal Time Frequency Space Modulation -- Part II: Transceiver Designs",
+        "url": "https://arxiv.org/abs/2209.05012",
+        "source": "arxiv",
+        "publishedAt": "2022-09-12T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.114,
+        "recentChange": "NONE",
+        "attentionScore": 0.723,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdode00iczevdewu1104p",
+        "title": "Joint Communication and Sensing in OTFS-based UAV Networks",
+        "url": "https://arxiv.org/abs/2311.17742",
+        "source": "arxiv",
+        "publishedAt": "2023-11-01T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.108,
+        "recentChange": "NONE",
+        "attentionScore": 0.722,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdo6400gozevdyuduszvl",
+        "title": "Fast Burst-Sparsity Learning Approach for Massive MIMO-OTFS Channel Estimation",
+        "url": "https://arxiv.org/abs/2408.12239",
+        "source": "arxiv",
+        "publishedAt": "2024-08-01T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.104,
+        "recentChange": "NONE",
+        "attentionScore": 0.721,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmfu0030zevdn5ex61nn",
+        "title": "Low-Complexity Pilot-Aided Doppler Ambiguity Estimation for OTFS Parametric Channel Estimation",
+        "url": "https://arxiv.org/abs/2601.20827",
+        "source": "arxiv",
+        "publishedAt": "2026-01-28T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.104,
+        "recentChange": "NONE",
+        "attentionScore": 0.721,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdo4q00gczevdolro70xi",
+        "title": "Message Passing Based Structured Sparse Signal Recovery for Estimation of OTFS Channels with Fractional Doppler Shifts",
+        "url": "https://arxiv.org/abs/2011.14757",
+        "source": "arxiv",
+        "publishedAt": "2020-11-01T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.103,
+        "recentChange": "NONE",
+        "attentionScore": 0.721,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnzr00f4zevd1e2qoysk",
+        "title": "Random Access with Massive MIMO-OTFS in LEO Satellite Communications",
+        "url": "https://arxiv.org/abs/2202.13058",
+        "source": "arxiv",
+        "publishedAt": "2022-02-01T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.104,
+        "recentChange": "NONE",
+        "attentionScore": 0.721,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnow00d0zevd82db9a4b",
+        "title": "Transmitter and Receiver Window Designs for Orthogonal Time Frequency Space Modulation",
+        "url": "https://arxiv.org/abs/2010.13005",
+        "source": "arxiv",
+        "publishedAt": "2020-10-24T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.104,
+        "recentChange": "NONE",
+        "attentionScore": 0.721,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8ezs009v6dvtjmh88z0f",
+        "title": "Compressed sensing with corrupted participants",
+        "url": "http://dx.doi.org/10.1109/ICASSP.2013.6638542",
+        "source": "duke-calderbank",
+        "publishedAt": "2013-01-01T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.175,
+        "recentChange": "NONE",
+        "attentionScore": 0.702,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8gjk00mz6dvtw59ni0fb",
+        "title": "Sensitivity to basis mismatch in compressed sensing",
+        "url": "http://dx.doi.org/10.1109/TSP.2011.2112650",
+        "source": "duke-calderbank",
+        "publishedAt": "2011-01-01T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.14,
+        "recentChange": "NONE",
+        "attentionScore": 0.695,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8e47004b6dvtsku8ugnq",
+        "title": "Sensitivity to basis mismatch in compressed sensing",
+        "url": "http://dx.doi.org/10.1109/ICASSP.2010.5495800",
+        "source": "duke-calderbank",
+        "publishedAt": "2010-01-01T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.14,
+        "recentChange": "NONE",
+        "attentionScore": 0.695,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8e67004r6dvtdbq746aw",
+        "title": "The value of redundant measurement in compressed sensing",
+        "url": "http://dx.doi.org/10.1109/ICASSP.2011.5947143",
+        "source": "duke-calderbank",
+        "publishedAt": "2011-01-01T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.14,
+        "recentChange": "NONE",
+        "attentionScore": 0.695,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8hby00tn6dvt0p4a2ag5",
+        "title": "Beyond worst-case reconstruction in deterministic compressed sensing",
+        "url": "http://dx.doi.org/10.1109/ISIT.2012.6283601",
+        "source": "duke-calderbank",
+        "publishedAt": "2012-01-01T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.1,
+        "recentChange": "NONE",
+        "attentionScore": 0.687,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8i1900zp6dvtrdaavsey",
+        "title": "Efficient and robust compressed sensing using optimized expander graphs",
+        "url": "http://dx.doi.org/10.1109/TIT.2009.2025528",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.1,
+        "recentChange": "NONE",
+        "attentionScore": 0.687,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8htn00xx6dvtvzw1slag",
+        "title": "Enhanced CDMA communications using compressed-sensing reconstruction methods",
+        "url": "http://dx.doi.org/10.1109/ALLERTON.2009.5394537",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.1,
+        "recentChange": "NONE",
+        "attentionScore": 0.687,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8iei012p6dvtg8sf43js",
+        "title": "Performance bounds for expander-based compressed sensing in poisson noise",
+        "url": "http://dx.doi.org/10.1109/TSP.2011.2157913",
+        "source": "duke-calderbank",
+        "publishedAt": "2011-01-01T00:00:00.000Z",
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.1,
+        "recentChange": "NONE",
+        "attentionScore": 0.687,
+        "reason": "linked implementation; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmv70064zevd8uy1mxm2",
+        "title": "A low-PAPR Pilot Design and Optimization for OTFS Modulation",
+        "url": "https://arxiv.org/abs/2503.15006",
+        "source": "arxiv",
+        "publishedAt": "2025-03-19T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdoan00hkzevdet1bd5g5",
+        "title": "A Novel Massive Random Access in Cell-Free Massive MIMO Systems for High-Speed Mobility with OTFS Modulation",
+        "url": "https://arxiv.org/abs/2409.01111",
+        "source": "arxiv",
+        "publishedAt": "2024-09-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdo2r00fwzevd7hny6l7a",
+        "title": "Active Terminal Identification, Channel Estimation, and Signal Detection for Grant-Free NOMA-OTFS in LEO Satellite Internet-of-Things",
+        "url": "https://arxiv.org/abs/2201.02084",
+        "source": "arxiv",
+        "publishedAt": "2022-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmue005wzevdubcxwxfy",
+        "title": "Advanced Channel Decomposition Techniques in OTFS: A GSVD Approach for Multi-User Downlink",
+        "url": "https://arxiv.org/abs/2504.18315",
+        "source": "arxiv",
+        "publishedAt": "2025-04-25T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdn0a007gzevdupz3lni6",
+        "title": "An hybrid framework OTFS OFDM based on mobile speed estimation",
+        "url": "https://arxiv.org/abs/2407.07721",
+        "source": "arxiv",
+        "publishedAt": "2024-06-19T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmso005gzevdsdy2wg4g",
+        "title": "Basis Expansion Extrapolation based Long-Term Channel Prediction for Massive MIMO OTFS Systems",
+        "url": "https://arxiv.org/abs/2507.01445",
+        "source": "arxiv",
+        "publishedAt": "2025-07-02T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdo9s00hczevdmrt5k593",
+        "title": "Blind Bistatic Radar Parameter Estimation for AFDM Systems in Doubly-Dispersive Channels",
+        "url": "https://arxiv.org/abs/2407.05328",
+        "source": "arxiv",
+        "publishedAt": "2024-07-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmqu0050zevd0vy7f4ph",
+        "title": "Channel Estimation and Data Detection in DS-Spread Channels: A Unified Framework, Novel Algorithms, and Waveform Comparison",
+        "url": "https://arxiv.org/abs/2508.21373",
+        "source": "arxiv",
+        "publishedAt": "2025-08-29T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmut0060zevd8c9n3813",
+        "title": "Channel Estimation and Hybrid Precoding for Massive MIMO-OTFS System With Doubly Squint",
+        "url": "https://arxiv.org/abs/2504.08569",
+        "source": "arxiv",
+        "publishedAt": "2025-04-11T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdo6x00gszevd1kxfudth",
+        "title": "Channel Estimation in Uplink Multi-User Scenario using OTFS Modulation",
+        "url": "https://arxiv.org/abs/2404.11328",
+        "source": "arxiv",
+        "publishedAt": "2024-04-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmyl0070zevdwui1gtef",
+        "title": "Channel Estimation, Interpolation and Extrapolation in Doubly-dispersive Channels",
+        "url": "https://arxiv.org/abs/2408.09381",
+        "source": "arxiv",
+        "publishedAt": "2024-08-18T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdnjt00bwzevdz1u39ne0",
+        "title": "Convolutional Sparse Coding based Channel Estimation for OTFS-SCMA in Uplink",
+        "url": "https://arxiv.org/abs/2107.09893",
+        "source": "arxiv",
+        "publishedAt": "2021-07-21T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdods00igzevd5o5ini0j",
+        "title": "Deep Learning-based OTFS Channel Estimation and Symbol Detection with Plug-and-Play Framework",
+        "url": "https://arxiv.org/abs/2503.11102",
+        "source": "arxiv",
+        "publishedAt": "2025-03-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdnwf00eczevdnh0b4o74",
+        "title": "Delay-Doppler Domain Signal Processing Aided OFDM (DD-a-OFDM) for 6G and Beyond",
+        "url": "https://arxiv.org/abs/2508.04253",
+        "source": "arxiv",
+        "publishedAt": "2025-08-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdnyf00eszevd1atu3jsz",
+        "title": "Differential Communication in Channels with Mobility and Delay Spread using Zak-OTFS",
+        "url": "https://arxiv.org/abs/2507.12593",
+        "source": "arxiv",
+        "publishedAt": "2025-07-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdn22007wzevd5l94sg5b",
+        "title": "Graph-based Untrained Neural Network Detector for OTFS Systems",
+        "url": "https://arxiv.org/abs/2404.05191",
+        "source": "arxiv",
+        "publishedAt": "2024-04-08T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmy6006wzevd9nonzlsa",
+        "title": "Grid Evolution for Doubly Fractional Channel Estimation in OTFS Systems",
+        "url": "https://arxiv.org/abs/2409.17584",
+        "source": "arxiv",
+        "publishedAt": "2024-09-26T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdn2z0084zevdawt0i21e",
+        "title": "Interference Cancellation for OTFS-Based Over-the-Air Computation",
+        "url": "https://arxiv.org/abs/2403.11272",
+        "source": "arxiv",
+        "publishedAt": "2024-03-17T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmz00074zevd5dwq3tpj",
+        "title": "IRS-Assisted OTFS: Beamforming Design and Signal Detection",
+        "url": "https://arxiv.org/abs/2408.02219",
+        "source": "arxiv",
+        "publishedAt": "2024-08-05T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdod000i8zevdejfrs4nu",
+        "title": "Joint Channel, Data, and Radar Parameter Estimation for AFDM Systems in Doubly-Dispersive Channels",
+        "url": "https://arxiv.org/abs/2405.16945",
+        "source": "arxiv",
+        "publishedAt": "2024-05-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmxc006ozevd1gve06op",
+        "title": "LEO Satellite-Enabled Random Access with Large Differential Delay and Doppler Shift",
+        "url": "https://arxiv.org/abs/2412.20806",
+        "source": "arxiv",
+        "publishedAt": "2024-12-30T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmtz005szevdpo8vkjwi",
+        "title": "Low-Complexity Channel Estimation in OTFS Systems with Fractional Effects",
+        "url": "https://arxiv.org/abs/2505.06248",
+        "source": "arxiv",
+        "publishedAt": "2025-04-29T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdo8k00h4zevdw2149urz",
+        "title": "Low-Complexity Frequency Domain Equalization of Zak-OTFS in Doubly-Spread Channels",
+        "url": "https://arxiv.org/abs/2506.23045",
+        "source": "arxiv",
+        "publishedAt": "2025-06-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdoc800i0zevdlq0j9225",
+        "title": "Low-Complexity OTFS-Based Over-the-Air Computation Design for Time-Varying Channels",
+        "url": "https://arxiv.org/abs/2405.07040",
+        "source": "arxiv",
+        "publishedAt": "2024-05-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmzu007czevdkyqqkkpm",
+        "title": "Multi-Satellite MIMO Systems for Direct User-Satellite Communications: A Survey",
+        "url": "https://arxiv.org/abs/2407.00196",
+        "source": "arxiv",
+        "publishedAt": "2024-06-28T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdn0q007kzevdvd378pyl",
+        "title": "On the Coexistence of OTFS Modulation with OFDM-based Communication Systems",
+        "url": "https://arxiv.org/abs/2406.18592",
+        "source": "arxiv",
+        "publishedAt": "2024-06-08T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdo9000h8zevd0vqdvrx1",
+        "title": "Optimal Pilot Design for OTFS in Linear Time-Varying Channels",
+        "url": "https://arxiv.org/abs/2403.19379",
+        "source": "arxiv",
+        "publishedAt": "2024-03-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmwx006kzevd2l42otjn",
+        "title": "Orthogonal Delay-Doppler Division Multiplexing Modulation with Hierarchical Mode-Based Index Modulation",
+        "url": "https://arxiv.org/abs/2501.08026",
+        "source": "arxiv",
+        "publishedAt": "2025-01-14T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdo3900g0zevdac4sxau5",
+        "title": "OTFS -- Predictability in the Delay-Doppler Domain and its Value to Communication and Radar Sensing",
+        "url": "https://arxiv.org/abs/2302.08705",
+        "source": "arxiv",
+        "publishedAt": "2023-02-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdn1n007szevd5v9haaxm",
+        "title": "OTFS Channel Estimation and Detection for Channels with Very Large Delay Spread",
+        "url": "https://arxiv.org/abs/2404.08333",
+        "source": "arxiv",
+        "publishedAt": "2024-04-12T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdoa800hgzevdlbjga76e",
+        "title": "OTFS-ISAC System with Sub-Nyquist ADC Sampling Rate",
+        "url": "https://arxiv.org/abs/2502.04663",
+        "source": "arxiv",
+        "publishedAt": "2025-02-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmw1006czevdno1gq06i",
+        "title": "Performance Analysis of BEM-based Channel Estimation for OTFS with Hardware Impairments",
+        "url": "https://arxiv.org/abs/2502.04003",
+        "source": "arxiv",
+        "publishedAt": "2025-02-06T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmpg004szevdyv4dqrkl",
+        "title": "Pilot design, channel estimation, and target detection for integrated sensing and communication with OTFS",
+        "url": "https://arxiv.org/abs/2509.25846",
+        "source": "arxiv",
+        "publishedAt": "2025-09-30T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdobt00hwzevdvo8wxgc8",
+        "title": "Pre-equalization Design for ISAC-OTFS Air-Ground Transmission: A Deep Learning Approach",
+        "url": "https://arxiv.org/abs/2412.04751",
+        "source": "arxiv",
+        "publishedAt": "2024-12-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmzf0078zevdtcif0x33",
+        "title": "Real time parameter estimation for adaptive OFDM/OTFS selection",
+        "url": "https://arxiv.org/abs/2408.03460",
+        "source": "arxiv",
+        "publishedAt": "2024-07-27T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmxq006szevd8eym7pkz",
+        "title": "Reduced Overhead Channel Estimation for OTFS With Split Pilot",
+        "url": "https://arxiv.org/abs/2410.11739",
+        "source": "arxiv",
+        "publishedAt": "2024-10-15T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmvm0068zevd5p9q0w68",
+        "title": "Reduced-latency DL-based Fractional Channel Estimation in OTFS Receivers",
+        "url": "https://arxiv.org/abs/2503.08234",
+        "source": "arxiv",
+        "publishedAt": "2025-03-11T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmtj005ozevddwt548zk",
+        "title": "Refined Metrics, Sensing Limits, and Resource Allocation in OTFS-RSMA LEO ISAC",
+        "url": "https://arxiv.org/abs/2506.02624",
+        "source": "arxiv",
+        "publishedAt": "2025-06-03T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmq6004wzevdktbj2d7q",
+        "title": "Relative Localization of UAV Swarms in GNSS-Denied Conditions",
+        "url": "https://arxiv.org/abs/2509.04412",
+        "source": "arxiv",
+        "publishedAt": "2025-09-04T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdms9005czevde6klvvs7",
+        "title": "SDR-Empowered Environment Sensing Design and Experimental Validation Using OTFS-ISAC Signals",
+        "url": "https://arxiv.org/abs/2507.01427",
+        "source": "arxiv",
+        "publishedAt": "2025-07-02T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdn2i0080zevdrmkne5zd",
+        "title": "Single-Carrier Delay-Doppler Domain Equalization",
+        "url": "https://arxiv.org/abs/2403.16453",
+        "source": "arxiv",
+        "publishedAt": "2024-03-25T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdo7g00gwzevdi0zxxg06",
+        "title": "Superimposed Pilot-Based OTFS: Will It Work?",
+        "url": "https://arxiv.org/abs/2501.15935",
+        "source": "arxiv",
+        "publishedAt": "2025-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdocm00i4zevd3saiehmk",
+        "title": "Synchronization for Multiuser Uplink OTFS",
+        "url": "https://arxiv.org/abs/2410.10740",
+        "source": "arxiv",
+        "publishedAt": "2024-10-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmrt0058zevdweb5sgq6",
+        "title": "Time and Frequency Synchronization for Multiuser OTFS in Uplink",
+        "url": "https://arxiv.org/abs/2507.17966",
+        "source": "arxiv",
+        "publishedAt": "2025-07-23T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmt3005kzevd2y6qnii6",
+        "title": "Two-Stage Prony-Based Estimation of Fractional Delay and Doppler Shifts in OTFS Modulation",
+        "url": "https://arxiv.org/abs/2506.17599",
+        "source": "arxiv",
+        "publishedAt": "2025-06-21T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmrd0054zevd6bmcw9ns",
+        "title": "Zak-OTFS Based Coded Random Access for Uplink mMTC",
+        "url": "https://arxiv.org/abs/2507.22013",
+        "source": "arxiv",
+        "publishedAt": "2025-07-29T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdn15007ozevdgtn7522d",
+        "title": "Zak-OTFS: Pulse Shaping and the Tradeoff between Time/Bandwidth Expansion and Predictability",
+        "url": "https://arxiv.org/abs/2405.02718",
+        "source": "arxiv",
+        "publishedAt": "2024-05-04T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "UPDATED",
+        "attentionScore": 0.65,
+        "reason": "unlinked implementation status; recent publication evidence; recent updated signal"
+      },
+      {
+        "artifactId": "cmtekdmkz003wzevdxqkt13qj",
+        "title": "A Comprehensive Survey of Channel Estimation Techniques for OTFS in 6G and Beyond Wireless Networks",
+        "url": "https://arxiv.org/abs/2512.13032",
+        "source": "arxiv",
+        "publishedAt": "2025-12-15T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmj1003kzevdsgdf64n9",
+        "title": "A Conditional Variational Framework for Channel Prediction in High-Mobility 6G OTFS Networks",
+        "url": "https://arxiv.org/abs/2601.03084",
+        "source": "arxiv",
+        "publishedAt": "2026-01-06T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmm90044zevd1mbundpt",
+        "title": "A Cyclic Shift Embedded Pilot based Channel Estimation for Multi-User MIMO-OTFS systems with fractional delay and Doppler",
+        "url": "https://arxiv.org/abs/2512.02353",
+        "source": "arxiv",
+        "publishedAt": "2025-12-02T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmuqrwy9u000zf728s4a7hn01",
+        "title": "A Deep Iterative Refinement Receiver for OTFS Symbol Detection in Doubly-Dispersive Channels",
+        "url": "https://arxiv.org/abs/2609.00465",
+        "source": "arxiv",
+        "publishedAt": "2026-08-31T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnk900c0zevdee7zeonm",
+        "title": "A DNN-based OTFS Transceiver with Delay-Doppler Channel Training and IQI Compensation",
+        "url": "https://arxiv.org/abs/2107.09376",
+        "source": "arxiv",
+        "publishedAt": "2021-07-20T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmom004ozevdweebaugr",
+        "title": "A Hybrid I/O Relation Estimation Scheme for Zak-OTFS Receivers",
+        "url": "https://arxiv.org/abs/2510.09215",
+        "source": "arxiv",
+        "publishedAt": "2025-10-10T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdobf00hszevdfff9onp5",
+        "title": "A Low-Complexity Range Estimation with Adjusted Affine Frequency Division Multiplexing Waveform",
+        "url": "https://arxiv.org/abs/2312.11125",
+        "source": "arxiv",
+        "publishedAt": "2023-12-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnqg00dczevdq8iicm7v",
+        "title": "A New Path Division Multiple Access for the Massive MIMO-OTFS Networks",
+        "url": "https://arxiv.org/abs/2003.08228",
+        "source": "arxiv",
+        "publishedAt": "2020-03-18T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmii003gzevdu5pctzbq",
+        "title": "A Novel Deep Learning-Based Coarse-to-Fine Frame Synchronization Method for OTFS Systems",
+        "url": "https://arxiv.org/abs/2601.05920",
+        "source": "arxiv",
+        "publishedAt": "2026-01-09T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnir00bozevd6a8vl7qb",
+        "title": "A Novel ISAC Transmission Framework based on Spatially-Spread Orthogonal Time Frequency Space Modulation",
+        "url": "https://arxiv.org/abs/2109.00440",
+        "source": "arxiv",
+        "publishedAt": "2021-09-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmmw0048zevdl4vvgl5j",
+        "title": "A Survey of OTFS-Based Index Modulation Techniques: Challenges, Benefits, and Future Directions for 6G and Beyond",
+        "url": "https://arxiv.org/abs/2510.20265",
+        "source": "arxiv",
+        "publishedAt": "2025-10-23T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmjw003ozevdz625xmvp",
+        "title": "A Uniform Pilot and Data Payload Optimization Framework for OTFS-Based ISAC",
+        "url": "https://arxiv.org/abs/2512.24624",
+        "source": "arxiv",
+        "publishedAt": "2025-12-31T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdm5k000szevdhmitsnq2",
+        "title": "Achieving Rate-Concurrency Balance for Underwater Concurrent Random Access",
+        "url": "https://arxiv.org/abs/2608.01254",
+        "source": "arxiv",
+        "publishedAt": "2026-08-02T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdo3o00g4zevdlj10uznz",
+        "title": "AFDM vs OTFS: A Comparative Study of Promising Waveforms for ISAC in Doubly-Dispersive Channels",
+        "url": "https://arxiv.org/abs/2309.04998",
+        "source": "arxiv",
+        "publishedAt": "2023-09-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmuqrwye0001jf728lsdpt12p",
+        "title": "An OTFS Waveform-Based Delay-Doppler Domain Channel Measurement Method for High-Mobility Scenarios",
+        "url": "https://arxiv.org/abs/2510.19402",
+        "source": "arxiv",
+        "publishedAt": "2025-10-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnvy00e8zevdab4lxn2n",
+        "title": "Beyond the Delay-Doppler Domain: A Time-Frequency Framework for Low-Overhead, Scalable OTFS Channel Estimation",
+        "url": "https://arxiv.org/abs/2511.08504",
+        "source": "arxiv",
+        "publishedAt": "2025-11-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnzb00f0zevdo206i0jv",
+        "title": "Cell-Free Massive MIMO Meets OTFS Modulation",
+        "url": "https://arxiv.org/abs/2112.10869",
+        "source": "arxiv",
+        "publishedAt": "2021-12-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdngr00b8zevd5oawnbpu",
+        "title": "Cell-Free Massive MIMO with OTFS Modulation: Power Control and Resource Allocation",
+        "url": "https://arxiv.org/abs/2203.07549",
+        "source": "arxiv",
+        "publishedAt": "2022-03-14T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnlt00cczevdmam9u4lj",
+        "title": "Channel Estimation for MIMO Space Time Coded OTFS under Doubly Selective Channels",
+        "url": "https://arxiv.org/abs/2104.01023",
+        "source": "arxiv",
+        "publishedAt": "2021-04-02T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnrx00dozevduzpzwuyr",
+        "title": "Channel Estimation for Orthogonal Time Frequency Space (OTFS) Massive MIMO",
+        "url": "https://arxiv.org/abs/1903.09441",
+        "source": "arxiv",
+        "publishedAt": "2019-03-22T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdm2d000gzevdzj0ecapw",
+        "title": "Channel Estimation for OTFS Systems With Overspread Doppler Shifts",
+        "url": "https://arxiv.org/abs/2608.12524",
+        "source": "arxiv",
+        "publishedAt": "2026-08-12T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdn4v008kzevd6mo1zsxh",
+        "title": "Coexistence of OTFS Modulation With OFDM-based Communication Systems",
+        "url": "https://arxiv.org/abs/2311.06850",
+        "source": "arxiv",
+        "publishedAt": "2023-11-12T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmdl002gzevd73tds5yb",
+        "title": "Comparison of OTFS and OFDM for RIS-aided Systems in the Presence of Phase Noise",
+        "url": "https://arxiv.org/abs/2602.12804",
+        "source": "arxiv",
+        "publishedAt": "2026-02-13T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmcw002czevdorhay069",
+        "title": "Cyclic Delay-Doppler Shift: A Simple Transmit Diversity Technique for Ultra-Reliable Communications in Doubly Selective Channels",
+        "url": "https://arxiv.org/abs/2603.14959",
+        "source": "arxiv",
+        "publishedAt": "2026-03-16T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmuqrwy4i0009f728h15k933e",
+        "title": "Data-Aided Bayesian Learning for CSI Estimation over Doubly-Selective DCO-OTFS MIMO VLC Channels with Affine-Precoded Superimposed Training Sequences",
+        "url": "https://arxiv.org/abs/2609.22312",
+        "source": "arxiv",
+        "publishedAt": "2026-09-15T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdn93009gzevdlrmjaer4",
+        "title": "Data-Aided CSI Estimation Using Affine-Precoded Superimposed Pilots in Orthogonal Time Frequency Space Modulated MIMO Systems",
+        "url": "https://arxiv.org/abs/2305.15855",
+        "source": "arxiv",
+        "publishedAt": "2023-05-25T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmuqrwyeu001rf728ah65jgln",
+        "title": "Data-Aided Variational Bayesian Inference for CSI Estimation over Doubly-Selective DCO-OTFS MIMO VLC Systems with Affine-Precoded Superimposed Training Sequences",
+        "url": "https://arxiv.org/abs/2609.15420",
+        "source": "arxiv",
+        "publishedAt": "2026-09-14T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnb1009wzevdfmbsvegf",
+        "title": "Deep Learning-empowered Predictive Precoder Design for OTFS Transmission in URLLC",
+        "url": "https://arxiv.org/abs/2304.10723",
+        "source": "arxiv",
+        "publishedAt": "2023-04-21T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmo7004kzevdq62ix13w",
+        "title": "Delay-Doppler Pulse Shaping in Zak-OTFS Using Hermite Basis Functions",
+        "url": "https://arxiv.org/abs/2510.17466",
+        "source": "arxiv",
+        "publishedAt": "2025-10-20T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmhg0038zevddrz5onyj",
+        "title": "Delay-Doppler-Domain Channel Estimation and Reduced-Complexity Detection of Faster-than-Nyquist Signaling Aided OTFS",
+        "url": "https://arxiv.org/abs/2601.11869",
+        "source": "arxiv",
+        "publishedAt": "2026-01-17T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnkv00c4zevdsq01m8mc",
+        "title": "Deterministic Pilot Design and Channel Estimation for Downlink Massive MIMO-OTFS Systems in Presence of the Fractional Doppler",
+        "url": "https://arxiv.org/abs/2105.09628",
+        "source": "arxiv",
+        "publishedAt": "2021-05-20T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdo5a00ggzevdgt4s5433",
+        "title": "DFT-Spread Orthogonal Time Frequency Space System with Superimposed Pilots for Terahertz Integrated Sensing and Communication",
+        "url": "https://arxiv.org/abs/2202.10035",
+        "source": "arxiv",
+        "publishedAt": "2022-02-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdo4500g8zevdx1ppd9zd",
+        "title": "Diagonally Reconstructed Channel Estimation for MIMO-AFDM with Inter-Doppler Interference in Doubly Selective Channels",
+        "url": "https://arxiv.org/abs/2206.12822",
+        "source": "arxiv",
+        "publishedAt": "2022-06-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdo1w00fozevdzvi5g0qe",
+        "title": "Doubly-Iterative Sparsified MMSE Turbo Equalization for OTFS Modulation",
+        "url": "https://arxiv.org/abs/2207.00866",
+        "source": "arxiv",
+        "publishedAt": "2022-07-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmb50020zevdyh6d5mdk",
+        "title": "DRL-Based Antenna Position Optimization For MA-Assisted OTFS System Under Imperfect CSI",
+        "url": "https://arxiv.org/abs/2604.23611",
+        "source": "arxiv",
+        "publishedAt": "2026-04-26T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmuqrwy8w000tf728lycv8vvn",
+        "title": "Dual-Orthogonality Waveforms for Integrated Communication and Imaging in Dynamic Multipath Channels",
+        "url": "https://arxiv.org/abs/2608.23294",
+        "source": "arxiv",
+        "publishedAt": "2026-08-24T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnfx00b0zevdd8zq3kh9",
+        "title": "Effect of Prefix/Suffix Configurations on OTFS Systems with Rectangular Waveforms",
+        "url": "https://arxiv.org/abs/2205.14872",
+        "source": "arxiv",
+        "publishedAt": "2022-05-30T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmbk0024zevdmpboht1w",
+        "title": "Enhancing 6G Wireless Intelligence: Do LLMs Work for CSI Prediction?",
+        "url": "https://arxiv.org/abs/2604.04028",
+        "source": "arxiv",
+        "publishedAt": "2026-04-05T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmlf0040zevdxr4ym1qy",
+        "title": "Enhancing Channel Estimation for OTFS systems using Sparse Bayesian Learning with Adaptive Threshold",
+        "url": "https://arxiv.org/abs/2512.07704",
+        "source": "arxiv",
+        "publishedAt": "2025-12-08T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdndp00agzevd63ntsrzz",
+        "title": "Estimation of Doubly-Dispersive Channels in Linearly Precoded Multicarrier Systems Using Smoothness Regularization",
+        "url": "https://arxiv.org/abs/2210.05233",
+        "source": "arxiv",
+        "publishedAt": "2022-10-11T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmuqrwyrw0035f728ub2czouu",
+        "title": "Exact Payload-Decoupling Conditions for Pilot-Only BEM Channel Estimation With Application to OTFS",
+        "url": "https://arxiv.org/abs/2609.00937",
+        "source": "arxiv",
+        "publishedAt": "2026-09-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdo7z00h0zevdu27uk5th",
+        "title": "Exploiting Structural Sparsity and Delay-Doppler Decoupling for Low-Complexity OTFS-ISAC Receivers",
+        "url": "https://arxiv.org/abs/2504.20659",
+        "source": "arxiv",
+        "publishedAt": "2025-04-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdo5q00gkzevdwqho93ob",
+        "title": "From OTFS to AFDM: A Comparative Study of Next-Generation Waveforms for ISAC in Doubly-Dispersive Channels",
+        "url": "https://arxiv.org/abs/2401.07700",
+        "source": "arxiv",
+        "publishedAt": "2024-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdm6u0010zevdfhhexgh2",
+        "title": "Fundamental Limits of MIMO ISAC: An Antenna Array Architecture Perspective",
+        "url": "https://arxiv.org/abs/2607.20200",
+        "source": "arxiv",
+        "publishedAt": "2026-07-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmc10028zevdjybtwgtw",
+        "title": "Gaussian Mixture Model Based Bayesian Learning for Sparse Channel Estimation in Orthogonal Time Frequency Space Modulated Systems",
+        "url": "https://arxiv.org/abs/2603.26902",
+        "source": "arxiv",
+        "publishedAt": "2026-03-27T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmkf003szevdpiuun0y4",
+        "title": "Hybrid Iterative Detection for OTFS: Interplay between Local L-MMSE and Global Message Passing",
+        "url": "https://arxiv.org/abs/2512.14116",
+        "source": "arxiv",
+        "publishedAt": "2025-12-16T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdn5c008ozevd3gziu5ux",
+        "title": "Improving Channel Estimation Performance for Uplink OTFS Transmissions: Pilot Design based on A Posteriori Cramer-Rao Bound",
+        "url": "https://arxiv.org/abs/2310.18573",
+        "source": "arxiv",
+        "publishedAt": "2023-10-28T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdn6x0090zevd2u2tr7e3",
+        "title": "Input-Output Relation and Low-Complexity Receiver Design for CP-OTFS Systems with Doppler Squint",
+        "url": "https://arxiv.org/abs/2310.07200",
+        "source": "arxiv",
+        "publishedAt": "2023-10-11T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdo0n00fczevdz29x8hf9",
+        "title": "Integrated Sensing and Communication-assisted Orthogonal Time Frequency Space Transmission for Vehicular Networks",
+        "url": "https://arxiv.org/abs/2105.03125",
+        "source": "arxiv",
+        "publishedAt": "2021-05-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdm810018zevdf6c6uiq3",
+        "title": "Inter-frame Channel Prediction for Zak-OTFS",
+        "url": "https://arxiv.org/abs/2607.09184",
+        "source": "arxiv",
+        "publishedAt": "2026-07-10T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnyw00ewzevdfkujie7n",
+        "title": "Iterative Detection for Orthogonal Time Frequency Space Modulation with Unitary Approximate Message Passing",
+        "url": "https://arxiv.org/abs/2008.06688",
+        "source": "arxiv",
+        "publishedAt": "2020-08-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnjd00bszevdot5hzszc",
+        "title": "Joint Active User Detection and Channel Estimation for Grant-Free NOMA-OTFS in LEO Constellation Internet-of-Things",
+        "url": "https://arxiv.org/abs/2108.01520",
+        "source": "arxiv",
+        "publishedAt": "2021-08-03T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnf100aszevdhkgyngxz",
+        "title": "Joint Channel Estimation and Data Detection for Hybrid RIS aided Millimeter Wave OTFS Systems",
+        "url": "https://arxiv.org/abs/2208.06781",
+        "source": "arxiv",
+        "publishedAt": "2022-08-14T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdm6c000wzevd8y0g0qwf",
+        "title": "Joint Channel Estimation and Data Detection for Multi-LEO-Satellite Cell-Free OTFS Uplinks",
+        "url": "https://arxiv.org/abs/2607.25562",
+        "source": "arxiv",
+        "publishedAt": "2026-07-28T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmuqrwyef001nf728inmwor7h",
+        "title": "Joint Channel Estimation, Detection, and Resource Allocation for OTFS-RSMA",
+        "url": "https://arxiv.org/abs/2609.24121",
+        "source": "arxiv",
+        "publishedAt": "2026-09-21T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdn7h0094zevdj8jprumi",
+        "title": "Joint Device Identification, Channel Estimation, and Signal Detection for LEO Satellite-Enabled Random Access",
+        "url": "https://arxiv.org/abs/2308.03556",
+        "source": "arxiv",
+        "publishedAt": "2023-08-07T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdma8001szevdo1an7119",
+        "title": "Joint Phase Noise and Channel Estimation for OTFS",
+        "url": "https://arxiv.org/abs/2605.14720",
+        "source": "arxiv",
+        "publishedAt": "2026-05-14T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnpw00d8zevdww7piznc",
+        "title": "Joint Radar Target Detection and Parameter Estimation with MIMO OTFS",
+        "url": "https://arxiv.org/abs/2004.11035",
+        "source": "arxiv",
+        "publishedAt": "2020-04-23T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnfh00awzevdsqkwwce3",
+        "title": "LEO Satellite-Enabled Grant-Free Random Access with MIMO-OTFS",
+        "url": "https://arxiv.org/abs/2208.01828",
+        "source": "arxiv",
+        "publishedAt": "2022-08-03T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdni800bkzevdjou69k59",
+        "title": "Low Complexity Channel Estimation for OTFS Modulation with Fractional Delay and Doppler",
+        "url": "https://arxiv.org/abs/2111.06009",
+        "source": "arxiv",
+        "publishedAt": "2021-11-11T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnpd00d4zevdil8e2nsg",
+        "title": "Low-complexity and Low-overhead Receiver for OTFS via Large-scale Antenna Array",
+        "url": "https://arxiv.org/abs/2005.07910",
+        "source": "arxiv",
+        "publishedAt": "2020-05-16T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnal009szevdr286vb2u",
+        "title": "Low-Complexity Reliability-Based Equalization and Detection for OTFS-NOMA",
+        "url": "https://arxiv.org/abs/2304.13607",
+        "source": "arxiv",
+        "publishedAt": "2023-04-26T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdo1g00fkzevdmdfo02s9",
+        "title": "Low-PAPR Joint Channel Estimation and Data Detection in ZP-OTFS System",
+        "url": "https://arxiv.org/abs/2304.01681",
+        "source": "arxiv",
+        "publishedAt": "2023-04-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdo0700f8zevdayx23h2q",
+        "title": "Message Passing-Based Joint Channel Estimation and Signal Detection for OTFS with Superimposed Pilots",
+        "url": "https://arxiv.org/abs/2309.08177",
+        "source": "arxiv",
+        "publishedAt": "2023-09-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdm9d001kzevdrtb0aobf",
+        "title": "MIMO Zak-OTFS: Channel Estimation, Detection, and Throughput Analysis",
+        "url": "https://arxiv.org/abs/2606.26420",
+        "source": "arxiv",
+        "publishedAt": "2026-06-24T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnug00e0zevd0s7975nz",
+        "title": "MIMO-OTFS in High-Doppler Fading Channels: Signal Detection and Channel Estimation",
+        "url": "https://arxiv.org/abs/1805.02209",
+        "source": "arxiv",
+        "publishedAt": "2018-05-06T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmns004gzevda4995719",
+        "title": "MIMO-Zak-OTFS with Superimposed Spread Pilots",
+        "url": "https://arxiv.org/abs/2510.20734",
+        "source": "arxiv",
+        "publishedAt": "2025-10-23T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdm9t001ozevdbm0qsce3",
+        "title": "Multi-Snapshot Deep Denoising for Channel Estimation in OTFS Modulated Systems",
+        "url": "https://arxiv.org/abs/2605.29777",
+        "source": "arxiv",
+        "publishedAt": "2026-05-28T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnsh00dszevdk0lhysfn",
+        "title": "Multiple Access in the Delay-Doppler Domain using OTFS modulation",
+        "url": "https://arxiv.org/abs/1902.03415",
+        "source": "arxiv",
+        "publishedAt": "2019-02-09T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmao001wzevd621sjszj",
+        "title": "Multiuser OTFS Channel Parameter Estimation Toward Grid-Independent Regime",
+        "url": "https://arxiv.org/abs/2605.04716",
+        "source": "arxiv",
+        "publishedAt": "2026-05-06T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdm8j001czevd4k04mdg5",
+        "title": "Multiuser Zak-OTFS on the Uplink with Superimposed Spread-Pilots",
+        "url": "https://arxiv.org/abs/2607.08247",
+        "source": "arxiv",
+        "publishedAt": "2026-07-09T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdme3002kzevdbxf297uc",
+        "title": "Nonparametric Variational Bayesian Learning for Channel Estimation with OTFS Modulation",
+        "url": "https://arxiv.org/abs/2602.10438",
+        "source": "arxiv",
+        "publishedAt": "2026-02-11T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnmv00ckzevdos2u8h85",
+        "title": "Off-grid Channel Estimation with Sparse Bayesian Learning for OTFS Systems",
+        "url": "https://arxiv.org/abs/2101.05629",
+        "source": "arxiv",
+        "publishedAt": "2021-01-14T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdm7b0014zevd5u5vc48x",
+        "title": "Off-grid Variational Bayesian Parameter Estimation for Fractional Delay-Doppler OTFS-ISAC",
+        "url": "https://arxiv.org/abs/2607.17001",
+        "source": "arxiv",
+        "publishedAt": "2026-07-18T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnvg00e4zevd89wlgrnd",
+        "title": "On OTFS Modulation for High-Doppler Fading Channels",
+        "url": "https://arxiv.org/abs/1802.00929",
+        "source": "arxiv",
+        "publishedAt": "2018-02-03T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnbi00a0zevdc9n12mjl",
+        "title": "On the Doppler Squint Effect in OTFS Systems over Doubly-Dispersive Channels: Modeling and Evaluation",
+        "url": "https://arxiv.org/abs/2302.06156",
+        "source": "arxiv",
+        "publishedAt": "2023-02-13T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnrf00dkzevdwbegpm2e",
+        "title": "On the Effectiveness of OTFS for Joint Radar and Communication",
+        "url": "https://arxiv.org/abs/1910.01896",
+        "source": "arxiv",
+        "publishedAt": "2019-10-04T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnlb00c8zevdk95i87w7",
+        "title": "Orthogonal Time Sequency Multiplexing Modulation: Analysis and Low-Complexity Receiver Design",
+        "url": "https://arxiv.org/abs/2104.05939",
+        "source": "arxiv",
+        "publishedAt": "2021-04-13T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnod00cwzevdf5geosz5",
+        "title": "OTFS Based Random Access Preamble Transmission For High Mobility Scenarios",
+        "url": "https://arxiv.org/abs/2010.12915",
+        "source": "arxiv",
+        "publishedAt": "2020-10-24T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnnx00cszevdqt5zikyn",
+        "title": "OTFS Channel Estimation And Data Detection Designs With Superimposed Pilots",
+        "url": "https://arxiv.org/abs/2010.15066",
+        "source": "arxiv",
+        "publishedAt": "2020-10-28T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmuqrwyjc002bf728gcuxldnx",
+        "title": "OTFS Channel Estimation Utilizing Sparse Bayesian Generative Modelling",
+        "url": "https://arxiv.org/abs/2609.01074",
+        "source": "arxiv",
+        "publishedAt": "2026-09-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmfe002wzevdis6dwfts",
+        "title": "OTFS-based Integrated Positioning and Communication Systems with Low-Resolution ADCs",
+        "url": "https://arxiv.org/abs/2602.07001",
+        "source": "arxiv",
+        "publishedAt": "2026-01-28T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdo1100fgzevdggtuj139",
+        "title": "OTFS-based Robust MMSE Precoding Design in Over-the-air Computation",
+        "url": "https://arxiv.org/abs/2307.01525",
+        "source": "arxiv",
+        "publishedAt": "2023-07-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmgn0034zevd9lct9mcz",
+        "title": "OTFS-IDMA: An Unsourced Multiple Access Scheme for Doubly-Dispersive Channels",
+        "url": "https://arxiv.org/abs/2601.13065",
+        "source": "arxiv",
+        "publishedAt": "2026-01-19T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnxz00eozevdm3inasrm",
+        "title": "OTFS: Interleaved OFDM with Block CP",
+        "url": "https://arxiv.org/abs/2001.02446",
+        "source": "arxiv",
+        "publishedAt": "2020-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdn7v0098zevdohvbp5rk",
+        "title": "Performance Analysis and Approximate Message Passing Detection of Orthogonal Time Sequency Multiplexing Modulation",
+        "url": "https://arxiv.org/abs/2307.03028",
+        "source": "arxiv",
+        "publishedAt": "2023-07-06T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnmd00cgzevdr8j8o5ct",
+        "title": "Performance Analysis and Window Design for Channel Estimation of OTFS Modulation",
+        "url": "https://arxiv.org/abs/2101.11770",
+        "source": "arxiv",
+        "publishedAt": "2021-01-28T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdn69008wzevd5xkxp86q",
+        "title": "Performance Analysis of a Low-Complexity OTFS Integrated Sensing and Communication System",
+        "url": "https://arxiv.org/abs/2310.10476",
+        "source": "arxiv",
+        "publishedAt": "2023-10-16T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnbx00a4zevda7yah3k1",
+        "title": "Practical Synchronization for OTFS",
+        "url": "https://arxiv.org/abs/2301.10080",
+        "source": "arxiv",
+        "publishedAt": "2023-01-24T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdncb00a8zevdjpphtneq",
+        "title": "Predictive Precoder Design for OTFS-Enabled URLLC: A Deep Learning Approach",
+        "url": "https://arxiv.org/abs/2212.13651",
+        "source": "arxiv",
+        "publishedAt": "2022-12-28T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdm2s000kzevdu28ha57f",
+        "title": "Prior-Aided Iterative Channel Reconstruction with Optimized Frame Structure for DSE Mitigation in CP-OTFS-Based LEO Satellite Systems",
+        "url": "https://arxiv.org/abs/2608.03293",
+        "source": "arxiv",
+        "publishedAt": "2026-08-04T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnwx00egzevdv6w3dbt8",
+        "title": "Pulse Shaping Filter Design for Integrated Sensing & Communication with Zak-OTFS",
+        "url": "https://arxiv.org/abs/2510.15195",
+        "source": "arxiv",
+        "publishedAt": "2025-10-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmek002ozevdocbiwh95",
+        "title": "Pulse Shaping Filter Design for Zak-OTFS",
+        "url": "https://arxiv.org/abs/2602.07350",
+        "source": "arxiv",
+        "publishedAt": "2026-02-07T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdn5r008szevdf1wfchwk",
+        "title": "Robust NOMA-assisted OTFS-ISAC Network Design with 3D Motion Prediction Topology",
+        "url": "https://arxiv.org/abs/2310.13984",
+        "source": "arxiv",
+        "publishedAt": "2023-10-21T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdm8z001gzevdsa1bj3s4",
+        "title": "RSMA-Assisted OFDM-OTFS Hybrid Framework for Mixed-Mobility Multiuser Systems",
+        "url": "https://arxiv.org/abs/2607.08532",
+        "source": "arxiv",
+        "publishedAt": "2026-07-09T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdn4e008gzevdp9nz77cp",
+        "title": "SC-FDMA as a Delay-Doppler Domain Modulation Technique",
+        "url": "https://arxiv.org/abs/2402.07751",
+        "source": "arxiv",
+        "publishedAt": "2024-02-12T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdna6009ozevdgyr5tvf1",
+        "title": "Sensing Aided Uplink Transmission in OTFS ISAC with Joint Parameter Association, Channel Estimation and Signal Detection",
+        "url": "https://arxiv.org/abs/2305.11548",
+        "source": "arxiv",
+        "publishedAt": "2023-05-19T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmnc004czevdgbt39tcf",
+        "title": "Signal Design for OTFS Dual-Functional Radar and Communications with Imperfect CSI",
+        "url": "https://arxiv.org/abs/2510.20112",
+        "source": "arxiv",
+        "publishedAt": "2025-10-23T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdm3h000ozevdkelg6bcx",
+        "title": "Structured-Sparsity-Aware Joint User Activity Detection and Channel Estimation for OTFS-Based Grant-Free Random Access",
+        "url": "https://arxiv.org/abs/2608.03896",
+        "source": "arxiv",
+        "publishedAt": "2026-08-04T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmez002szevdfm303qwo",
+        "title": "Superimposed-Pilot OTFS Under Fractional Doppler: Modular End-to-End Learning",
+        "url": "https://arxiv.org/abs/2601.22523",
+        "source": "arxiv",
+        "publishedAt": "2026-01-30T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdm1t000czevdxeb1ye53",
+        "title": "Synchronization and Channel Estimation of OTFS with RF Impairments",
+        "url": "https://arxiv.org/abs/2608.20257",
+        "source": "arxiv",
+        "publishedAt": "2026-08-20T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdn9s009kzevdcya8izrb",
+        "title": "Truncated Turbo Equalizer with SIC for OTFS",
+        "url": "https://arxiv.org/abs/2305.14966",
+        "source": "arxiv",
+        "publishedAt": "2023-05-24T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdmhy003czevdqlwt4ods",
+        "title": "Unique Word Channel Estimation for Oversampled OTFS",
+        "url": "https://arxiv.org/abs/2601.09364",
+        "source": "arxiv",
+        "publishedAt": "2026-01-14T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnh700bczevd6c0faojj",
+        "title": "Unitary-Precoded Single-Carrier Waveforms for High Mobility: Detection and Channel Estimation",
+        "url": "https://arxiv.org/abs/2201.10218",
+        "source": "arxiv",
+        "publishedAt": "2022-01-25T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnqy00dgzevduh7s6zi5",
+        "title": "Uplink-aided High Mobility Downlink Channel Estimation over Massive MIMO-OTFS System",
+        "url": "https://arxiv.org/abs/2003.07045",
+        "source": "arxiv",
+        "publishedAt": "2020-03-16T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdngc00b4zevds3kr0jus",
+        "title": "When Cell-Free Massive MIMO Meets OTFS Modulation: The Downlink Case",
+        "url": "https://arxiv.org/abs/2203.07588",
+        "source": "arxiv",
+        "publishedAt": "2022-03-15T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdn3x008czevdp8jx7zdv",
+        "title": "Zak-OTFS and LDPC Codes",
+        "url": "https://arxiv.org/abs/2402.09551",
+        "source": "arxiv",
+        "publishedAt": "2024-02-14T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtekdnxi00ekzevdbosxco0o",
+        "title": "Zak-OTFS ISAC with Bistatic Sensing via Semi-Blind Atomic Norm Denoising Scheme",
+        "url": "https://arxiv.org/abs/2601.03639",
+        "source": "arxiv",
+        "publishedAt": "2026-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.45,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8i9i011l6dvtgdq756lf",
+        "title": "A fast reconstruction algorithm for deterministic compressive sensing using second order reed-muller codes",
+        "url": "http://dx.doi.org/10.1109/CISS.2008.4558486",
+        "source": "duke-calderbank",
+        "publishedAt": "2008-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8ebi005v6dvt3sficuil",
+        "title": "A MIMO-OFDM channel estimation scheme utilizing complementary sequences",
+        "url": "http://dx.doi.org/10.1109/ICASSP.2009.4960174",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8ftr00h36dvtcddupoxg",
+        "title": "A novel approach to Doppler compensation and estimation for multiple targets in MIMO radar with unitary waveform matrix scheduling",
+        "url": "http://dx.doi.org/10.1109/ICASSP.2012.6288417",
+        "source": "duke-calderbank",
+        "publishedAt": "2012-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8fmd00f36dvtw3ptjpnl",
+        "title": "Adaptive waveform design for improved detection of low-RCS targets in heavy sea clutter",
+        "url": "http://dx.doi.org/10.1109/JSTSP.2007.897048",
+        "source": "duke-calderbank",
+        "publishedAt": "2007-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8g1400iv6dvthfamy6fi",
+        "title": "Application of Doppler resilient complementary waveforms to target tracking",
+        "url": "http://dx.doi.org/10.1109/ICASSP.2008.4517905",
+        "source": "duke-calderbank",
+        "publishedAt": "2008-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8ja201976dvtg623eiew",
+        "title": "Bounds and lattice-based transmission strategies for the phase-faded dirty-paper channel",
+        "url": "http://dx.doi.org/10.1109/TWC.2009.080569",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8ipf01456dvtcgeq6855",
+        "title": "Channel estimation for MIMO-OFDM using complementary codes",
+        "url": "http://dx.doi.org/10.1109/RWS.2009.4957309",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8f3100an6dvty83x4u2v",
+        "title": "Chirp sensing codes: Deterministic compressed sensing measurements for fast recovery",
+        "url": "http://dx.doi.org/10.1016/j.acha.2008.08.002",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8j0g01716dvtbvfnq7m9",
+        "title": "Code diversity in multiple antenna wireless communication",
+        "url": "http://dx.doi.org/10.1109/JSTSP.2009.2035861",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8fky00er6dvtjcseb2gy",
+        "title": "Code diversity in multiple antenna wireless communication",
+        "url": "http://dx.doi.org/10.1109/ISIT.2008.4595153",
+        "source": "duke-calderbank",
+        "publishedAt": "2008-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8f6v00bj6dvtcnc1k7a7",
+        "title": "Communications-inspired projection design with application to compressive sensing",
+        "url": "http://dx.doi.org/10.1137/120878380",
+        "source": "duke-calderbank",
+        "publishedAt": "2012-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8js301dz6dvte25yhmtx",
+        "title": "Complementary codes based channel estimation for MIMO-OFDM systems",
+        "url": "http://dx.doi.org/10.1109/ALLERTON.2008.4797546",
+        "source": "duke-calderbank",
+        "publishedAt": "2008-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8fpc00fv6dvta1tgsez9",
+        "title": "Compressed Neighbour Discovery using Sparse Kerdock Matrices",
+        "url": "http://dx.doi.org/10.1109/ISIT.2018.8437324",
+        "source": "duke-calderbank",
+        "publishedAt": "2018-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8k5301h16dvti3nb9o4g",
+        "title": "Compressive sensing for incoherent imaging systems with optical constraints",
+        "url": "http://dx.doi.org/10.1109/ICASSP.2013.6638712",
+        "source": "duke-calderbank",
+        "publishedAt": "2013-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8g7w00k76dvt5xar9yw0",
+        "title": "Deterministic pilot sequences for sparse channel estimation in OFDM systems",
+        "url": "http://dx.doi.org/10.1109/ICDSP.2011.6005024",
+        "source": "duke-calderbank",
+        "publishedAt": "2011-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8jro01dv6dvt6xiq8wsw",
+        "title": "Differential Communication in Channels With Mobility and Delay Spread Using Zak-OTFS",
+        "url": "http://dx.doi.org/10.1109/LWC.2025.3600660",
+        "source": "duke-calderbank",
+        "publishedAt": "2025-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8ear005r6dvt75v1g158",
+        "title": "Distance spectrum computation for equalized MIMO multipath fading channels",
+        "url": "http://dx.doi.org/10.1109/WCNC.2000.904645",
+        "source": "duke-calderbank",
+        "publishedAt": "2000-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8jhl01b76dvtosemwit6",
+        "title": "Doppler resilience, reed-müller codes and complementary waveforms",
+        "url": "http://dx.doi.org/10.1109/ACSSC.2007.4487553",
+        "source": "duke-calderbank",
+        "publishedAt": "2007-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8hod00wn6dvtcvpoqe2d",
+        "title": "Doppler resilient golay complementary pairs for radar",
+        "url": "http://dx.doi.org/10.1109/SSP.2007.4301305",
+        "source": "duke-calderbank",
+        "publishedAt": "2007-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8ie3012l6dvtezuz1jxo",
+        "title": "Doppler resilient Golay complementary waveforms",
+        "url": "http://dx.doi.org/10.1109/TIT.2008.928292",
+        "source": "duke-calderbank",
+        "publishedAt": "2008-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8fu500h76dvtuua5lg6v",
+        "title": "Finite-length MIMO decision feedback equalization for space-time block-coded signals over multipath-fading channels",
+        "url": "http://dx.doi.org/10.1109/25.938592",
+        "source": "duke-calderbank",
+        "publishedAt": "2001-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8f4j00az6dvtbcjxvzx9",
+        "title": "Frame coherence and sparse signal processing",
+        "url": "http://dx.doi.org/10.1109/ISIT.2011.6034214",
+        "source": "duke-calderbank",
+        "publishedAt": "2011-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8goh00o36dvt4dhwucv3",
+        "title": "Golay complementary waveforms for sparse delay-Doppler radar imaging",
+        "url": "http://dx.doi.org/10.1109/CAMSAP.2009.5413308",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8ifp01316dvtuslynkc1",
+        "title": "Impact of local delayed CSIT on the capacity region of the two-user interference channel",
+        "url": "http://dx.doi.org/10.1109/ISIT.2015.7282890",
+        "source": "duke-calderbank",
+        "publishedAt": "2015-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8gsz00pb6dvty6zl0phs",
+        "title": "Information-theoretic criteria for the design of compressive subspace classifiers",
+        "url": "http://dx.doi.org/10.1109/ICASSP.2014.6854164",
+        "source": "duke-calderbank",
+        "publishedAt": "2014-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8id5012d6dvt2hv8s4j1",
+        "title": "Integration of code diversity and long-range channel prediction in wireless communication",
+        "url": "http://dx.doi.org/10.1109/ICEAA.2009.5297458",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8k6001h96dvt52hsixxa",
+        "title": "Key Generation and Secrecy Analysis Using OTFS for TDD Systems",
+        "url": "http://dx.doi.org/10.1109/TWC.2024.3508632",
+        "source": "duke-calderbank",
+        "publishedAt": "2025-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8jj601bj6dvt5b9vmv8r",
+        "title": "Learning to Equalize OTFS",
+        "url": "http://dx.doi.org/10.1109/TWC.2022.3160600",
+        "source": "duke-calderbank",
+        "publishedAt": "2022-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8i68010t6dvtdet584ex",
+        "title": "Low-Complexity Channel Matrix Calculation for OTFS Systems with Fractional Delay and Doppler",
+        "url": "http://dx.doi.org/10.1109/MILCOM55135.2022.10017980",
+        "source": "duke-calderbank",
+        "publishedAt": "2022-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8h7u00sn6dvtrqnhfti8",
+        "title": "MIMO Precoding at the Speed of Wireless: Precoder Prediction for MIMO-OTFS Systems",
+        "url": "http://dx.doi.org/10.1109/VTC2024-Fall63153.2024.10757975",
+        "source": "duke-calderbank",
+        "publishedAt": "2024-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8gtf00pf6dvt2so4djk3",
+        "title": "MIMO-OFDM channel estimation using golay complementary sequences",
+        "url": "http://dx.doi.org/10.1109/WDDC.2009.4800355",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8gkq00nb6dvte2x9axdi",
+        "title": "Multi-scale spectrum sensing in small-cell mm-wave cognitive wireless networks",
+        "url": "http://dx.doi.org/10.1109/ICC.2017.7996657",
+        "source": "duke-calderbank",
+        "publishedAt": "2017-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8dtu002b6dvtygubxwfs",
+        "title": "Nonequiprobable Signaling on the Gaussian Channel",
+        "url": "http://dx.doi.org/10.1109/18.53734",
+        "source": "duke-calderbank",
+        "publishedAt": "1990-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8eol007z6dvtqyuk50or",
+        "title": "On achieving capacity on the wire tap channel using LDPC codes",
+        "url": "http://dx.doi.org/10.1109/ISIT.2005.1523593",
+        "source": "duke-calderbank",
+        "publishedAt": "2005-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8hqo00x56dvt0dgtmrnu",
+        "title": "On optimal precoding in wireless multicast systems",
+        "url": "http://dx.doi.org/10.1109/ICASSP.2011.5946306",
+        "source": "duke-calderbank",
+        "publishedAt": "2011-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8ekh007r6dvt31txbuxk",
+        "title": "On the capacity of the discrete-time channel with uniform output quantization",
+        "url": "http://dx.doi.org/10.1109/ISIT.2009.5205826",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8iql014h6dvtim6dp43q",
+        "title": "On the effect of feedback delay on limited-rate beamforming systems",
+        "url": "http://dx.doi.org/10.1109/GLOCOM.2010.5684288",
+        "source": "duke-calderbank",
+        "publishedAt": "2010-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8dz900376dvt9e6brzwa",
+        "title": "On training signal design for multi-user MIMO-OFDM: Performance analysis and tradeoffs",
+        "url": "http://dx.doi.org/10.1109/VETECF.2011.6092844",
+        "source": "duke-calderbank",
+        "publishedAt": "2011-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8ede00676dvtaodnzl0e",
+        "title": "Orthogonal Time Frequency Space (OTFS) modulation for millimeter-wave communications systems",
+        "url": "http://dx.doi.org/10.1109/MWSYM.2017.8058662",
+        "source": "duke-calderbank",
+        "publishedAt": "2017-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8j8s018v6dvtgin5o3ew",
+        "title": "Orthogonal time frequency space modulation",
+        "url": "http://dx.doi.org/10.1109/WCNC.2017.7925924",
+        "source": "duke-calderbank",
+        "publishedAt": "2017-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8jz301fr6dvt6lgm8l4l",
+        "title": "Performance bounds for expander-based compressed sensing in the presence of Poisson noise",
+        "url": "http://dx.doi.org/10.1109/ACSSC.2009.5469879",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8idm012h6dvtxu62gna8",
+        "title": "PETRELS: Parallel subspace estimation and tracking by recursive least squares from partial observations",
+        "url": "http://dx.doi.org/10.1109/TSP.2013.2282910",
+        "source": "duke-calderbank",
+        "publishedAt": "2013-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8igy013d6dvt0jhogtqy",
+        "title": "PETRELS: Subspace estimation and tracking from partial observations",
+        "url": "http://dx.doi.org/10.1109/ICASSP.2012.6288621",
+        "source": "duke-calderbank",
+        "publishedAt": "2012-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8hgy00uz6dvt8nkdtmle",
+        "title": "Pilot designs for consistent frequency offset estimation in OFDM systems",
+        "url": "http://dx.doi.org/10.1109/ICC.2006.255359",
+        "source": "duke-calderbank",
+        "publishedAt": "2006-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8ikj013h6dvt4rr1uzwm",
+        "title": "Pilot designs for consistent frequency-offset estimation in OFDM systems",
+        "url": "http://dx.doi.org/10.1109/TCOMM.2007.896105",
+        "source": "duke-calderbank",
+        "publishedAt": "2007-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8jsi01e36dvt9riyyzm1",
+        "title": "Range sidelobe suppression in a desired Doppler interval",
+        "url": "http://dx.doi.org/10.1109/WDDC.2009.4800356",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8hvy00yh6dvt0wopqcpt",
+        "title": "Rapid sensing of underutilized, wideband spectrum using the Random Demodulator",
+        "url": "http://dx.doi.org/10.1109/ACSSC.2012.6489377",
+        "source": "duke-calderbank",
+        "publishedAt": "2012-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8eyk009j6dvtuvrx712f",
+        "title": "Reed-muller codes achieve capacity on the quantum erasure channel",
+        "url": "http://dx.doi.org/10.1109/ISIT.2016.7541599",
+        "source": "duke-calderbank",
+        "publishedAt": "2016-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8j2j017h6dvtbpfbak13",
+        "title": "Robust pilot design for consistent carrier frequency offset estimation",
+        "url": "http://dx.doi.org/10.1109/MILCOM.2006.302204",
+        "source": "duke-calderbank",
+        "publishedAt": "2006-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8iww01696dvtq5ykapr9",
+        "title": "Securing Wireless Channels: Reliable Shared Secret Extraction through OTFS",
+        "url": "http://dx.doi.org/10.1109/CNS56114.2022.9947239",
+        "source": "duke-calderbank",
+        "publishedAt": "2022-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8edx006b6dvt7xl75lav",
+        "title": "Sidelobe suppression in a desired range/Doppler interval",
+        "url": "http://dx.doi.org/10.1109/RADAR.2009.4977144",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8hdo00u36dvtggqygcn6",
+        "title": "Sparse near-equiangular tight frames with applications in full duplex wireless communication",
+        "url": "http://dx.doi.org/10.1109/GlobalSIP.2017.8309084",
+        "source": "duke-calderbank",
+        "publishedAt": "2017-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8j8b018r6dvtq46ujt3h",
+        "title": "Spatio-temporal scheduling of complementary sequences with application to MIMO-OFDM",
+        "url": "http://dx.doi.org/10.1109/ACSSC.2009.5469876",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8je601ab6dvt5cms5h82",
+        "title": "Synthesis of Logical Clifford Operators via Symplectic Geometry",
+        "url": "http://dx.doi.org/10.1109/ISIT.2018.8437652",
+        "source": "duke-calderbank",
+        "publishedAt": "2018-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8fg000dn6dvtetvic2z0",
+        "title": "Target detection in mimo radar in the presence of doppler using complementary sequences",
+        "url": "http://dx.doi.org/10.1109/ICASSP.2010.5496206",
+        "source": "duke-calderbank",
+        "publishedAt": "2010-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8jny01cv6dvt2qn1irf7",
+        "title": "Target detection in MIMO radar using golay complementary sequences in the presence of doppler",
+        "url": "http://dx.doi.org/10.1109/ACSSC.2009.5470143",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8efk006n6dvtd14eh7cv",
+        "title": "Target detection in MIMO radar using Golay complementary sequences in the presence of doppler",
+        "url": "http://dx.doi.org/10.1109/ALLERTON.2009.5394498",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8k1r01gd6dvt9wgjtyxb",
+        "title": "The finite Heisenberg-Weyl groups in radar and communications",
+        "url": "http://dx.doi.org/10.1155/ASP/2006/85685",
+        "source": "duke-calderbank",
+        "publishedAt": "2006-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8gdm00lj6dvtu3qnl9a8",
+        "title": "Training signal design and tradeoffs for spectrally-efficient multi-user MIMO-OFDM systems",
+        "url": "http://dx.doi.org/10.1109/TWC.2011.042211.101100",
+        "source": "duke-calderbank",
+        "publishedAt": "2011-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8gcq00lb6dvtk5vss216",
+        "title": "Unitary design of radar waveform diversity sets",
+        "url": "http://dx.doi.org/10.1016/j.dsp.2010.09.006",
+        "source": "duke-calderbank",
+        "publishedAt": "2011-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8h8c00sr6dvtjljapil0",
+        "title": "Unitary design of radar waveform diversity sets",
+        "url": "http://dx.doi.org/10.1109/ACSSC.2008.5074353",
+        "source": "duke-calderbank",
+        "publishedAt": "2008-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8hv300y96dvt9v9ffiwe",
+        "title": "Waveform diversity in radar signal processing: A focus on the use and control of degrees of freedom",
+        "url": "http://dx.doi.org/10.1109/MSP.2008.930414",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8etw008r6dvtdomev4tn",
+        "title": "Waveform-agile sensing and processing",
+        "url": "http://dx.doi.org/10.1109/MSP.2008.930413",
+        "source": "duke-calderbank",
+        "publishedAt": "2009-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8dn7000z6dvtuvoxe2ap",
+        "title": "Zak-OTFS and LDPC Codes",
+        "url": "http://dx.doi.org/10.1109/ICC51166.2024.10622586",
+        "source": "duke-calderbank",
+        "publishedAt": "2024-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8j32017l6dvtsklp0z3r",
+        "title": "Zak-OTFS With Interleaved Pilots to Extend the Region of Predictable Operation",
+        "url": "http://dx.doi.org/10.1109/TVT.2025.3579394",
+        "source": "duke-calderbank",
+        "publishedAt": "2025-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8gib00mn6dvttvk3jigi",
+        "title": "Zak-OTFS With Spread Carrier Waveforms",
+        "url": "http://dx.doi.org/10.1109/LWC.2025.3590254",
+        "source": "duke-calderbank",
+        "publishedAt": "2025-01-01T00:00:00.000Z",
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.417,
+        "reason": "unlinked implementation status; recent publication evidence; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8gvo00pz6dvt1homg691",
+        "title": "A survey of compressed sensing",
+        "url": "http://dx.doi.org/10.1007/978-3-319-16042-9_1",
+        "source": "duke-calderbank",
+        "publishedAt": null,
+        "implementationStatus": "Linked",
+        "relationshipConfidence": 0.233,
+        "recentChange": "NONE",
+        "attentionScore": 0.363,
+        "reason": "linked implementation; publication date unavailable; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8i5i010l6dvtmtr54q0u",
+        "title": "Applications of space-time block codes and interference suppression for high capacity and high data rate wireless systems",
+        "url": "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications/236063",
+        "source": "duke-calderbank",
+        "publishedAt": null,
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.067,
+        "reason": "unlinked implementation status; publication date unavailable; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8h6t00sf6dvt44uqej8q",
+        "title": "Channel coding for co-channel interference suppression in wireless communications",
+        "url": "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications/236039",
+        "source": "duke-calderbank",
+        "publishedAt": null,
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.067,
+        "reason": "unlinked implementation status; publication date unavailable; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8e4q004f6dvto5763os0",
+        "title": "Channel coding for cochannel interference suppression in wireless communication systems",
+        "url": "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications/236038",
+        "source": "duke-calderbank",
+        "publishedAt": null,
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.067,
+        "reason": "unlinked implementation status; publication date unavailable; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8isf01516dvtecsjxl69",
+        "title": "Compressive classification: Where wireless communications meets machine learning",
+        "url": "http://dx.doi.org/10.1007/978-3-319-16042-9_15",
+        "source": "duke-calderbank",
+        "publishedAt": null,
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.067,
+        "reason": "unlinked implementation status; publication date unavailable; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8ei600776dvtg9k2m1vx",
+        "title": "MIMO wireless communications",
+        "url": "http://dx.doi.org/10.1017/CBO9780511618420",
+        "source": "duke-calderbank",
+        "publishedAt": null,
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.067,
+        "reason": "unlinked implementation status; publication date unavailable; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8hkp00vv6dvtpmcvs2ul",
+        "title": "MMSE-optimal training sequences for spectrally-efficient Multi-User MIMO-OFDM systems",
+        "url": "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications/235992",
+        "source": "duke-calderbank",
+        "publishedAt": null,
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.067,
+        "reason": "unlinked implementation status; publication date unavailable; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8i7i01116dvth74fj59p",
+        "title": "Non-equiprobable signaling on the Gaussian channel",
+        "url": "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications/236029",
+        "source": "duke-calderbank",
+        "publishedAt": null,
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.067,
+        "reason": "unlinked implementation status; publication date unavailable; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8jl801c36dvtb43kxvs3",
+        "title": "Signal design for co-channel interference suppression with applications to wireless communications",
+        "url": "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications/236050",
+        "source": "duke-calderbank",
+        "publishedAt": null,
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.067,
+        "reason": "unlinked implementation status; publication date unavailable; no recent change signal"
+      },
+      {
+        "artifactId": "cmtiv8ist01556dvtv0egup9c",
+        "title": "Space-time processing for MIMO-OFDM using DFT-based complementary sequences",
+        "url": "http://dx.doi.org/10.1117/12.851020",
+        "source": "duke-calderbank",
+        "publishedAt": null,
+        "implementationStatus": "No linked implementation detected",
+        "relationshipConfidence": 0,
+        "recentChange": "NONE",
+        "attentionScore": 0.067,
+        "reason": "unlinked implementation status; publication date unavailable; no recent change signal"
+      }
+    ],
+    "enrichedSignals": [
+      {
+        "id": "cmuqrx8po009jbmepkl416zsu",
+        "type": "UPDATED",
+        "title": "Updated Paper: Interference Cancellation for OTFS-Based Over-the-Air Computation",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.340Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2403.11272",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdn2z0084zevdawt0i21e",
+          "url": "https://arxiv.org/abs/2403.11272",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "c9d34e30a589966f23fc430b20fb4f99",
+          "currentHash": "189ce6a44245b0f8342f62ccee4a1d0a",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Interference Cancellation for OTFS-Based Over-the-Air Computation"
+      },
+      {
+        "id": "cmuqrx8pg009hbmepr02p10d0",
+        "type": "UPDATED",
+        "title": "Updated Paper: Orthogonal Delay-Doppler Division Multiplexing Modulation with Hierarchical Mode-Based Index Modulation",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.332Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2501.08026",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmwx006kzevd2l42otjn",
+          "url": "https://arxiv.org/abs/2501.08026",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "8390c05c383c76cdba87dc9133dbaca2",
+          "currentHash": "c3059c9c6fc15a704c7b856bba85bc45",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Orthogonal Delay-Doppler Division Multiplexing Modulation with Hierarchical Mode-Based Index Modulation"
+      },
+      {
+        "id": "cmuqrx8p8009fbmeposmkph62",
+        "type": "UPDATED",
+        "title": "Updated Paper: Low-Complexity Frequency Domain Equalization of Zak-OTFS in Doubly-Spread Channels",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.325Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2506.23045",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdo8k00h4zevdw2149urz",
+          "url": "https://arxiv.org/abs/2506.23045",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "1d4664ec7d612b5612ce8607800dbd7e",
+          "currentHash": "87d7bc965ba97878cec064299ff36a2e",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Low-Complexity Frequency Domain Equalization of Zak-OTFS in Doubly-Spread Channels"
+      },
+      {
+        "id": "cmuqrx8p2009dbmep0l8nz6j6",
+        "type": "UPDATED",
+        "title": "Updated Paper: Reduced Overhead Channel Estimation for OTFS With Split Pilot",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.318Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2410.11739",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmxq006szevd8eym7pkz",
+          "url": "https://arxiv.org/abs/2410.11739",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "bf8dfc398df41442a78b308ccd0dcd47",
+          "currentHash": "7fc4a557b22119941622d66cf06c7192",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Reduced Overhead Channel Estimation for OTFS With Split Pilot"
+      },
+      {
+        "id": "cmuqrx8ou009bbmepq0kypzur",
+        "type": "UPDATED",
+        "title": "Updated Paper: Pilot-Aided Joint Time Synchronization and Channel Estimation for OTFS",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.310Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2408.04192",
+        "artifactType": "PAPER",
+        "relationship": {
+          "id": "cmtekdokz00k0zevdthybiitp",
+          "sourceArtifactId": "cmtekdob200hozevdfgp1mpo4",
+          "targetArtifactId": "cmtekdohh00j8zevdpxaqq6jt",
+          "relationshipType": "IMPLEMENTED_BY",
+          "confidence": 0.135,
+          "evidence": "[\"Paper title terms appear in repo description: pilot, aided\",\"Shared terms between paper abstract and repo description: pilot, aided\"]",
+          "createdAt": "2026-08-29T15:57:35.027Z",
+          "sourceArtifact": {
+            "id": "cmtekdob200hozevdfgp1mpo4",
+            "researchSpaceId": "cmtekdlzw0000zevd5oa81ooi",
+            "type": "PAPER",
+            "title": "Pilot-Aided Joint Time Synchronization and Channel Estimation for OTFS",
+            "description": "This letter proposes a pilot-aided joint time synchronization and channel estimation (JTSCE) algorithm for orthogonal time frequency space (OTFS) systems. Unlike existing algorithms, JTSCE employs a maximum length sequence (MLS) rather than an isolated signal as the pilot. Distinctively, JTSCE explores MLS's autocorrelation properties to estimate timing offset and channel delay taps. After obtaining delay taps, closed-form expressions of Doppler and channel gain for each propagation path are derived. Simulation results indicate that, compared to its counterpart, JTSCE achieves better bit error rate performance, close to that with perfect time synchronization and channel state information.",
+            "url": "https://arxiv.org/abs/2408.04192",
+            "source": "arxiv",
+            "publishedAt": "2024-08-01T00:00:00.000Z",
+            "updatedAt": "2026-10-02T09:41:30.639Z",
+            "firstSeen": "2026-08-29T15:57:34.670Z",
+            "lastSeen": "2026-10-02T09:41:30.639Z",
+            "metadata": "{\"authors\":[\"Jiazheng Sun\",\"Peng Yang\",\"Xianbin Cao\",\"Zehui Xiong\",\"Haijun Zhang\",\"Tony Q. S. Quek\"],\"arxivId\":\"2408.04192\",\"rawArxivId\":\"2408.04192 arXiv:2408.04192v2\",\"rawUrl\":\"https://arxiv.org/abs/2408.04192\",\"version\":2}",
+            "notes": null,
+            "reviewedAt": null
+          },
+          "targetArtifact": {
+            "id": "cmtekdohh00j8zevdpxaqq6jt",
+            "researchSpaceId": "cmtekdlzw0000zevd5oa81ooi",
+            "type": "IMPLEMENTATION",
+            "title": "EP_Channel_Estimation_OTFS",
+            "description": null,
+            "url": "https://github.com/CanZheng0331/EP_Channel_Estimation_OTFS",
+            "source": "github",
+            "publishedAt": null,
+            "updatedAt": null,
+            "firstSeen": "2026-08-29T15:57:34.902Z",
+            "lastSeen": "2026-08-29T15:57:34.902Z",
+            "metadata": "{\"owner\":\"CanZheng0331\",\"repository\":\"https://github.com/CanZheng0331/EP_Channel_Estimation_OTFS\",\"rawUrl\":\"https://github.com/CanZheng0331/EP_Channel_Estimation_OTFS\",\"language\":null,\"stars\":null,\"lastUpdated\":null}",
+            "notes": null,
+            "reviewedAt": null
+          }
+        },
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdob200hozevdfgp1mpo4",
+          "url": "https://arxiv.org/abs/2408.04192",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "177d9e830666a8bd7fd14e99ab940d14",
+          "currentHash": "6edf3644894a2d2fa4f7d4e80ba22ab9",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Pilot-Aided Joint Time Synchronization and Channel Estimation for OTFS"
+      },
+      {
+        "id": "cmuqrx8on0099bmep8uott4j9",
+        "type": "UPDATED",
+        "title": "Updated Paper: OTFS-ISAC System with Sub-Nyquist ADC Sampling Rate",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.303Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2502.04663",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdoa800hgzevdlbjga76e",
+          "url": "https://arxiv.org/abs/2502.04663",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "7387f5b29b1a851c14d833e43c069e05",
+          "currentHash": "d6de569e07e2e7dc7c4252fe8ffa6101",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "OTFS-ISAC System with Sub-Nyquist ADC Sampling Rate"
+      },
+      {
+        "id": "cmuqrx8of0097bmep908lrymi",
+        "type": "UPDATED",
+        "title": "Updated Paper: Time Frequency Localized Pulse for Delay Doppler Domain Data Transmission",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.296Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2501.18286",
+        "artifactType": "PAPER",
+        "relationship": {
+          "id": "cmtekdond00kmzevd70ncolsy",
+          "sourceArtifactId": "cmtekdmwg006gzevd7szuy1xe",
+          "targetArtifactId": "cmtekdoen00iozevdo4rk4rgg",
+          "relationshipType": "IMPLEMENTED_BY",
+          "confidence": 0.104,
+          "evidence": "[\"Paper title terms appear in repo description: time, frequency, domain\",\"Shared terms between paper abstract and repo description: time, frequency, domain\"]",
+          "createdAt": "2026-08-29T15:57:35.113Z",
+          "sourceArtifact": {
+            "id": "cmtekdmwg006gzevd7szuy1xe",
+            "researchSpaceId": "cmtekdlzw0000zevd5oa81ooi",
+            "type": "PAPER",
+            "title": "Time Frequency Localized Pulse for Delay Doppler Domain Data Transmission",
+            "description": "Orthogonal time frequency space (OTFS) is a strong candidate waveform for sixth generation wireless communication networks (6G), which can effectively handle time varying wireless channels. In this paper, we analyze the effect of fractional delay in delay Doppler (DD) domain multiplexing techniques. We develop a vector-matrix input-output relationship for the DD domain data transmission system by incorporating the effective pulse shaping filter between the transmitter and receiver along with the channel. Using this input-output relationship, we analyze the effect of the pulse shaping filter on the channel estimation and BER performance in the presence of fractional delay and uncompensated fractional timing offset (TO). For the first time, we propose the use of time-frequency localized (TFL) pulse shaping for the OTFS waveform to overcome the interference due to fractional delays. We show that our proposed TFL-OTFS outperforms the widely used raised cosine pulse-shaped OTFS (RC-OTFS) in the presence of fractional delays. Additionally, TFL-OTFS also shows very high robustness against uncompensated fractional TO, compared to RC-OTFS.",
+            "url": "https://arxiv.org/abs/2501.18286",
+            "source": "arxiv",
+            "publishedAt": "2025-01-30T00:00:00.000Z",
+            "updatedAt": "2026-10-02T09:41:30.604Z",
+            "firstSeen": "2026-08-29T15:57:32.849Z",
+            "lastSeen": "2026-10-02T09:41:30.604Z",
+            "metadata": "{\"authors\":[\"Sanoopkumar P. S\",\"Muyiwa Balogun\",\"Liam Barry\",\"Arman Farhang\"],\"arxivId\":\"2501.18286\",\"rawArxivId\":\"2501.18286 arXiv:2501.18286v1\",\"rawUrl\":\"https://arxiv.org/abs/2501.18286\",\"version\":1}",
+            "notes": null,
+            "reviewedAt": null
+          },
+          "targetArtifact": {
+            "id": "cmtekdoen00iozevdo4rk4rgg",
+            "researchSpaceId": "cmtekdlzw0000zevd5oa81ooi",
+            "type": "IMPLEMENTATION",
+            "title": "OTFS_CE",
+            "description": null,
+            "url": "https://github.com/anafreis/OTFS_CE",
+            "source": "github",
+            "publishedAt": null,
+            "updatedAt": null,
+            "firstSeen": "2026-08-29T15:57:34.799Z",
+            "lastSeen": "2026-08-29T15:57:34.799Z",
+            "metadata": "{\"owner\":\"anafreis\",\"repository\":\"https://github.com/anafreis/OTFS_CE\",\"rawUrl\":\"https://github.com/anafreis/OTFS_CE\",\"language\":null,\"stars\":null,\"lastUpdated\":null}",
+            "notes": null,
+            "reviewedAt": null
+          }
+        },
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmwg006gzevd7szuy1xe",
+          "url": "https://arxiv.org/abs/2501.18286",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "f1c45e75d5ac8490943957ccd4017971",
+          "currentHash": "4aaacd27d25a7b2cff6e410be59785a6",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Time Frequency Localized Pulse for Delay Doppler Domain Data Transmission"
+      },
+      {
+        "id": "cmuqrx8o90095bmept3fwgt5x",
+        "type": "UPDATED",
+        "title": "Updated Paper: Grid Evolution for Doubly Fractional Channel Estimation in OTFS Systems",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.290Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2409.17584",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmy6006wzevd9nonzlsa",
+          "url": "https://arxiv.org/abs/2409.17584",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "3d5c4af948859101162ae99c452ee8f6",
+          "currentHash": "d65bcd63efcadf93697ebb3f3af788ab",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Grid Evolution for Doubly Fractional Channel Estimation in OTFS Systems"
+      },
+      {
+        "id": "cmuqrx8o20093bmep3c5hnb6z",
+        "type": "UPDATED",
+        "title": "Updated Paper: Time and Frequency Synchronization for Multiuser OTFS in Uplink",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.282Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2507.17966",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmrt0058zevdweb5sgq6",
+          "url": "https://arxiv.org/abs/2507.17966",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "5bb50a552091518904afb2a6085c271a",
+          "currentHash": "5985e4bbfb859e7ada7715f0d0013b20",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Time and Frequency Synchronization for Multiuser OTFS in Uplink"
+      },
+      {
+        "id": "cmuqrx8nv0091bmep6ntiempu",
+        "type": "UPDATED",
+        "title": "Updated Paper: Joint Channel, Data, and Radar Parameter Estimation for AFDM Systems in Doubly-Dispersive Channels",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.276Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2405.16945",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdod000i8zevdejfrs4nu",
+          "url": "https://arxiv.org/abs/2405.16945",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "260a41e6a7efc241448c278d13575d37",
+          "currentHash": "242dd0e23a0a661f18395a6e2a0aa0d4",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Joint Channel, Data, and Radar Parameter Estimation for AFDM Systems in Doubly-Dispersive Channels"
+      },
+      {
+        "id": "cmuqrx8no008zbmepb0d6hl7q",
+        "type": "UPDATED",
+        "title": "Updated Paper: Two-Stage Prony-Based Estimation of Fractional Delay and Doppler Shifts in OTFS Modulation",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.269Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2506.17599",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmt3005kzevd2y6qnii6",
+          "url": "https://arxiv.org/abs/2506.17599",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "dadc3869e71878956feb3246de8367b8",
+          "currentHash": "988067216080559a694eabedf0541843",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Two-Stage Prony-Based Estimation of Fractional Delay and Doppler Shifts in OTFS Modulation"
+      },
+      {
+        "id": "cmuqrx8nf008xbmepswe9gckn",
+        "type": "UPDATED",
+        "title": "Updated Paper: Low-Complexity Channel Estimation in OTFS Systems with Fractional Effects",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.259Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2505.06248",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmtz005szevdpo8vkjwi",
+          "url": "https://arxiv.org/abs/2505.06248",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "5a2c75211b97344417ba75803525131d",
+          "currentHash": "110d2c96181a5f4b46eb1bd2450117e5",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Low-Complexity Channel Estimation in OTFS Systems with Fractional Effects"
+      },
+      {
+        "id": "cmuqrx8n8008vbmeph5nivj5n",
+        "type": "UPDATED",
+        "title": "Updated Paper: An hybrid framework OTFS OFDM based on mobile speed estimation",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.253Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2407.07721",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdn0a007gzevdupz3lni6",
+          "url": "https://arxiv.org/abs/2407.07721",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "9a2e0bd846b339296c7ebf899deed3b6",
+          "currentHash": "f5b30298b76ddcfbe15879746dfbe5f5",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "An hybrid framework OTFS OFDM based on mobile speed estimation"
+      },
+      {
+        "id": "cmuqrx8n1008tbmepdpcmo0ff",
+        "type": "UPDATED",
+        "title": "Updated Paper: Pilot design, channel estimation, and target detection for integrated sensing and communication with OTFS",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.245Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2509.25846",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmpg004szevdyv4dqrkl",
+          "url": "https://arxiv.org/abs/2509.25846",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "4fa9a3dfb832045d0de54835cf36c23b",
+          "currentHash": "b2faff50419f3d039c83b3e33505844a",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Pilot design, channel estimation, and target detection for integrated sensing and communication with OTFS"
+      },
+      {
+        "id": "cmuqrx8mr008rbmep15980go2",
+        "type": "UPDATED",
+        "title": "Updated Paper: SDR-Empowered Environment Sensing Design and Experimental Validation Using OTFS-ISAC Signals",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.236Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2507.01427",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdms9005czevde6klvvs7",
+          "url": "https://arxiv.org/abs/2507.01427",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "b4df226cebdb1fa9f19a172b7262b35d",
+          "currentHash": "b83b8e533ac9f14a1fcc4d10c11863c0",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "SDR-Empowered Environment Sensing Design and Experimental Validation Using OTFS-ISAC Signals"
+      },
+      {
+        "id": "cmuqrx8mk008pbmepzmkfdru4",
+        "type": "UPDATED",
+        "title": "Updated Paper: On the Coexistence of OTFS Modulation with OFDM-based Communication Systems",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.228Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2406.18592",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdn0q007kzevdvd378pyl",
+          "url": "https://arxiv.org/abs/2406.18592",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "a154bbe1f29c9f751fb0575b4a1cca23",
+          "currentHash": "8bba131528a1473bcae18646fb8d3214",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "On the Coexistence of OTFS Modulation with OFDM-based Communication Systems"
+      },
+      {
+        "id": "cmuqrx8mc008nbmep1xalxf41",
+        "type": "UPDATED",
+        "title": "Updated Paper: Reduced-latency DL-based Fractional Channel Estimation in OTFS Receivers",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.221Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2503.08234",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmvm0068zevd5p9q0w68",
+          "url": "https://arxiv.org/abs/2503.08234",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "e56287871311807b6b1bb195870b0fa1",
+          "currentHash": "b9a60cca2687b438880f3c51a14923cf",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Reduced-latency DL-based Fractional Channel Estimation in OTFS Receivers"
+      },
+      {
+        "id": "cmuqrx8m5008lbmep18rs9tdb",
+        "type": "UPDATED",
+        "title": "Updated Paper: Channel Estimation and Data Detection in DS-Spread Channels: A Unified Framework, Novel Algorithms, and Waveform Comparison",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.214Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2508.21373",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmqu0050zevd0vy7f4ph",
+          "url": "https://arxiv.org/abs/2508.21373",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "de7f5aba478093ec63a55b8399807deb",
+          "currentHash": "a956ae31ce35298c340bed2c1601f96a",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Channel Estimation and Data Detection in DS-Spread Channels: A Unified Framework, Novel Algorithms, and Waveform Comparison"
+      },
+      {
+        "id": "cmuqrx8ly008jbmepxmiit89q",
+        "type": "UPDATED",
+        "title": "Updated Paper: Blind Bistatic Radar Parameter Estimation for AFDM Systems in Doubly-Dispersive Channels",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.207Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2407.05328",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdo9s00hczevdmrt5k593",
+          "url": "https://arxiv.org/abs/2407.05328",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "1975bf9267ce0e99d93e833c1ca821cf",
+          "currentHash": "ba9603466a06bdc3009906026221c9f7",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Blind Bistatic Radar Parameter Estimation for AFDM Systems in Doubly-Dispersive Channels"
+      },
+      {
+        "id": "cmuqrx8lr008hbmep3sv4glkg",
+        "type": "UPDATED",
+        "title": "Updated Paper: Joint Sparsity Pattern Learning Based Channel Estimation for Massive MIMO-OTFS Systems",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.200Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2403.03771",
+        "artifactType": "PAPER",
+        "relationship": {
+          "id": "cmtekdok700juzevdyvry8jco",
+          "sourceArtifactId": "cmtekdn3f0088zevdb91gpyrl",
+          "targetArtifactId": "cmtekdoe900ikzevdwk9sdrn8",
+          "relationshipType": "IMPLEMENTED_BY",
+          "confidence": 0.147,
+          "evidence": "[\"Paper title terms appear in repo description: learning, massive, mimo, systems\",\"Shared terms between paper abstract and repo description: learning, massive, mimo, systems\"]",
+          "createdAt": "2026-08-29T15:57:34.999Z",
+          "sourceArtifact": {
+            "id": "cmtekdn3f0088zevdb91gpyrl",
+            "researchSpaceId": "cmtekdlzw0000zevd5oa81ooi",
+            "type": "PAPER",
+            "title": "Joint Sparsity Pattern Learning Based Channel Estimation for Massive MIMO-OTFS Systems",
+            "description": "We propose a channel estimation scheme based on joint sparsity pattern learning (JSPL) for massive multi-input multi-output (MIMO) orthogonal time-frequency-space (OTFS) modulation aided systems. By exploiting the potential joint sparsity of the delay-Doppler-angle (DDA) domain channel, the channel estimation problem is transformed into a sparse recovery problem. To solve it, we first apply the spike and slab prior model to iteratively estimate the support set of the channel matrix, and a higher-accuracy parameter update rule relying on the identified support set is introduced into the iteration. Then the specific values of the channel elements corresponding to the support set are estimated by the orthogonal matching pursuit (OMP) method. Both our simulation results and analysis demonstrate that the proposed JSPL channel estimation scheme achieves an improved performance over the representative state-of-the-art baseline schemes, despite its reduced pilot overhead.",
+            "url": "https://arxiv.org/abs/2403.03771",
+            "source": "arxiv",
+            "publishedAt": "2024-03-06T00:00:00.000Z",
+            "updatedAt": "2026-10-02T09:41:30.338Z",
+            "firstSeen": "2026-08-29T15:57:33.099Z",
+            "lastSeen": "2026-10-02T09:41:30.338Z",
+            "metadata": "{\"authors\":[\"Kuo Meng\",\"Shaoshi Yang\",\"Xiao-Yang Wang\",\"Yan Bu\",\"Yurong Tang\",\"Jianhua Zhang\",\"Lajos Hanzo\"],\"arxivId\":\"2403.03771\",\"rawArxivId\":\"2403.03771 arXiv:2403.03771v1\",\"rawUrl\":\"https://arxiv.org/abs/2403.03771\",\"version\":1}",
+            "notes": null,
+            "reviewedAt": null
+          },
+          "targetArtifact": {
+            "id": "cmtekdoe900ikzevdwk9sdrn8",
+            "researchSpaceId": "cmtekdlzw0000zevd5oa81ooi",
+            "type": "IMPLEMENTATION",
+            "title": "DeepMIMO-OTFS-ChannelEstimation",
+            "description": null,
+            "url": "https://github.com/helomelo1/DeepMIMO-OTFS-ChannelEstimation",
+            "source": "github",
+            "publishedAt": null,
+            "updatedAt": null,
+            "firstSeen": "2026-08-29T15:57:34.785Z",
+            "lastSeen": "2026-08-29T15:57:34.785Z",
+            "metadata": "{\"owner\":\"helomelo1\",\"repository\":\"https://github.com/helomelo1/DeepMIMO-OTFS-ChannelEstimation\",\"rawUrl\":\"https://github.com/helomelo1/DeepMIMO-OTFS-ChannelEstimation\",\"language\":null,\"stars\":null,\"lastUpdated\":null}",
+            "notes": null,
+            "reviewedAt": null
+          }
+        },
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdn3f0088zevdb91gpyrl",
+          "url": "https://arxiv.org/abs/2403.03771",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "498a2b4ec9a439e5b0bfb5570da9fe7a",
+          "currentHash": "e16f2e86a4d8866c1802bd71ee8d044c",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Joint Sparsity Pattern Learning Based Channel Estimation for Massive MIMO-OTFS Systems"
+      },
+      {
+        "id": "cmuqrx8lj008fbmep020kkn7o",
+        "type": "UPDATED",
+        "title": "Updated Paper: Channel Estimation in Uplink Multi-User Scenario using OTFS Modulation",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.192Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2404.11328",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdo6x00gszevd1kxfudth",
+          "url": "https://arxiv.org/abs/2404.11328",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "7a35224a705c22fc3d784d1021d3e21a",
+          "currentHash": "f8746d44e69c34481e365b6a5f6f69cb",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Channel Estimation in Uplink Multi-User Scenario using OTFS Modulation"
+      },
+      {
+        "id": "cmuqrx8lc008dbmep8q8y5c8z",
+        "type": "UPDATED",
+        "title": "Updated Paper: Deep Learning-based OTFS Channel Estimation and Symbol Detection with Plug-and-Play Framework",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.184Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2503.11102",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdods00igzevd5o5ini0j",
+          "url": "https://arxiv.org/abs/2503.11102",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "a577c7192c5e8b86ac1b02a391f9d58f",
+          "currentHash": "0836bb2aa3b4b73592f5b082d5d2826a",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Deep Learning-based OTFS Channel Estimation and Symbol Detection with Plug-and-Play Framework"
+      },
+      {
+        "id": "cmuqrx8l4008bbmep4yly4z9x",
+        "type": "UPDATED",
+        "title": "Updated Paper: Zak-OTFS Based Coded Random Access for Uplink mMTC",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.176Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2507.22013",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmrd0054zevd6bmcw9ns",
+          "url": "https://arxiv.org/abs/2507.22013",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "c0641aceb141b1674131d144a728e9f3",
+          "currentHash": "50ab6dbccb8dc2b217c685c109f7f6ff",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Zak-OTFS Based Coded Random Access for Uplink mMTC"
+      },
+      {
+        "id": "cmuqrx8ky0089bmeprl5cwvql",
+        "type": "UPDATED",
+        "title": "Updated Paper: A Novel Massive Random Access in Cell-Free Massive MIMO Systems for High-Speed Mobility with OTFS Modulation",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.170Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2409.01111",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdoan00hkzevdet1bd5g5",
+          "url": "https://arxiv.org/abs/2409.01111",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "3f30b598410b7457e3335e312b3308d5",
+          "currentHash": "d8defed5883cdf4cd21583e4bbd5a372",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "A Novel Massive Random Access in Cell-Free Massive MIMO Systems for High-Speed Mobility with OTFS Modulation"
+      },
+      {
+        "id": "cmuqrx8kq0087bmep7gjnvkxq",
+        "type": "UPDATED",
+        "title": "Updated Paper: Channel Estimation and Hybrid Precoding for Massive MIMO-OTFS System With Doubly Squint",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.162Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2504.08569",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmut0060zevd8c9n3813",
+          "url": "https://arxiv.org/abs/2504.08569",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "39697399ba44550edbb5f6ea2dde7ddb",
+          "currentHash": "9a947e4a1756a3db1c10ef5303f0b871",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Channel Estimation and Hybrid Precoding for Massive MIMO-OTFS System With Doubly Squint"
+      },
+      {
+        "id": "cmuqrx8kj0085bmepqti4ezma",
+        "type": "UPDATED",
+        "title": "Updated Paper: LEO Satellite-Enabled Random Access with Large Differential Delay and Doppler Shift",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.155Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2412.20806",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmxc006ozevd1gve06op",
+          "url": "https://arxiv.org/abs/2412.20806",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "1c90cc948f318c93f9c5ed1ee26ec6be",
+          "currentHash": "ac53cde73b0a048542f6e3214c8c9df6",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "LEO Satellite-Enabled Random Access with Large Differential Delay and Doppler Shift"
+      },
+      {
+        "id": "cmuqrx8kb0083bmep5rbm2adm",
+        "type": "UPDATED",
+        "title": "Updated Paper: Performance Analysis of BEM-based Channel Estimation for OTFS with Hardware Impairments",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.147Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2502.04003",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmw1006czevdno1gq06i",
+          "url": "https://arxiv.org/abs/2502.04003",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "d0dea304e9405b92a2e359b55d508e3e",
+          "currentHash": "8df2e1c483c53fb4e65ab5364bd5427b",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Performance Analysis of BEM-based Channel Estimation for OTFS with Hardware Impairments"
+      },
+      {
+        "id": "cmuqrx8k30081bmepq23z6vhc",
+        "type": "UPDATED",
+        "title": "Updated Paper: Advanced Channel Decomposition Techniques in OTFS: A GSVD Approach for Multi-User Downlink",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.140Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2504.18315",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmue005wzevdubcxwxfy",
+          "url": "https://arxiv.org/abs/2504.18315",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "36098d90754f6ffbb0898c81915596ad",
+          "currentHash": "cc31c89f294a7b69b969ef480bb61620",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Advanced Channel Decomposition Techniques in OTFS: A GSVD Approach for Multi-User Downlink"
+      },
+      {
+        "id": "cmuqrx8jv007zbmepz8xuj4hi",
+        "type": "UPDATED",
+        "title": "Updated Paper: Real time parameter estimation for adaptive OFDM/OTFS selection",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.132Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2408.03460",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmzf0078zevdtcif0x33",
+          "url": "https://arxiv.org/abs/2408.03460",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "5c4270149912cf3176febf6654bd0897",
+          "currentHash": "da1cb22ad557c8669144329692de93aa",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Real time parameter estimation for adaptive OFDM/OTFS selection"
+      },
+      {
+        "id": "cmuqrx8jo007xbmepltyp4um4",
+        "type": "UPDATED",
+        "title": "Updated Paper: Zak-OTFS: Pulse Shaping and the Tradeoff between Time/Bandwidth Expansion and Predictability",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.124Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2405.02718",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdn15007ozevdgtn7522d",
+          "url": "https://arxiv.org/abs/2405.02718",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "cf4c81af07a59bb95581e99be7952c5a",
+          "currentHash": "f3437ff66003d59789ae9e9c92be560c",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Zak-OTFS: Pulse Shaping and the Tradeoff between Time/Bandwidth Expansion and Predictability"
+      },
+      {
+        "id": "cmuqrx8jh007vbmeph5nqz7bo",
+        "type": "UPDATED",
+        "title": "Updated Paper: A low-PAPR Pilot Design and Optimization for OTFS Modulation",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.118Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2503.15006",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmv70064zevd8uy1mxm2",
+          "url": "https://arxiv.org/abs/2503.15006",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "de5e7fcb709072ad8d0e87a276146159",
+          "currentHash": "d6a48a942f681ca988afe69d5dc0d873",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "A low-PAPR Pilot Design and Optimization for OTFS Modulation"
+      },
+      {
+        "id": "cmuqrx8j9007tbmeph11ly2rq",
+        "type": "UPDATED",
+        "title": "Updated Paper: Pre-equalization Design for ISAC-OTFS Air-Ground Transmission: A Deep Learning Approach",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.110Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2412.04751",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdobt00hwzevdvo8wxgc8",
+          "url": "https://arxiv.org/abs/2412.04751",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "e90cb5f58323c9151803eff3038bb6f8",
+          "currentHash": "c396a6fcb6eea57b639e5002ddce9e07",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Pre-equalization Design for ISAC-OTFS Air-Ground Transmission: A Deep Learning Approach"
+      },
+      {
+        "id": "cmuqrx8j2007rbmep7r8369q9",
+        "type": "UPDATED",
+        "title": "Updated Paper: Refined Metrics, Sensing Limits, and Resource Allocation in OTFS-RSMA LEO ISAC",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.103Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2506.02624",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmtj005ozevddwt548zk",
+          "url": "https://arxiv.org/abs/2506.02624",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "a953c2091981ec91d37727299b38310f",
+          "currentHash": "138b136e83f112783ce7e23818696ea0",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Refined Metrics, Sensing Limits, and Resource Allocation in OTFS-RSMA LEO ISAC"
+      },
+      {
+        "id": "cmuqrx8iu007pbmepk68lnwnk",
+        "type": "UPDATED",
+        "title": "Updated Paper: Active Terminal Identification, Channel Estimation, and Signal Detection for Grant-Free NOMA-OTFS in LEO Satellite Internet-of-Things",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.095Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2201.02084",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdo2r00fwzevd7hny6l7a",
+          "url": "https://arxiv.org/abs/2201.02084",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "bd81ac18453c7652be0362ac4efbe2a6",
+          "currentHash": "068bed28162eb59839f1f5cf129eb150",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Active Terminal Identification, Channel Estimation, and Signal Detection for Grant-Free NOMA-OTFS in LEO Satellite Internet-of-Things"
+      },
+      {
+        "id": "cmuqrx8io007nbmepdop7seag",
+        "type": "UPDATED",
+        "title": "Updated Paper: Superimposed Pilot-Based OTFS: Will It Work?",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.088Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2501.15935",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdo7g00gwzevdi0zxxg06",
+          "url": "https://arxiv.org/abs/2501.15935",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "f526b567472c2def7f4d9c5513060d15",
+          "currentHash": "90f090bd9c774abe5979c632582c5672",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Superimposed Pilot-Based OTFS: Will It Work?"
+      },
+      {
+        "id": "cmuqrx8ih007lbmepiv8e1twb",
+        "type": "UPDATED",
+        "title": "Updated Paper: OTFS -- Predictability in the Delay-Doppler Domain and its Value to Communication and Radar Sensing",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.081Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2302.08705",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdo3900g0zevdac4sxau5",
+          "url": "https://arxiv.org/abs/2302.08705",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "688bd323db910dc8f6a1e2d32e2825eb",
+          "currentHash": "34114bc8233a0adf4b2aa599cbf2a013",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "OTFS -- Predictability in the Delay-Doppler Domain and its Value to Communication and Radar Sensing"
+      },
+      {
+        "id": "cmuqrx8ib007jbmepfjrmagev",
+        "type": "UPDATED",
+        "title": "Updated Paper: Relative Localization of UAV Swarms in GNSS-Denied Conditions",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.075Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2509.04412",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmq6004wzevdktbj2d7q",
+          "url": "https://arxiv.org/abs/2509.04412",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "6b342c78be30fe37ca48434213a358ed",
+          "currentHash": "8a7c6f35b19c15b8100515d272c25f2c",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Relative Localization of UAV Swarms in GNSS-Denied Conditions"
+      },
+      {
+        "id": "cmuqrx8i4007hbmepsicj8q3t",
+        "type": "UPDATED",
+        "title": "Updated Paper: OTFS Channel Estimation and Detection for Channels with Very Large Delay Spread",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.069Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2404.08333",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdn1n007szevd5v9haaxm",
+          "url": "https://arxiv.org/abs/2404.08333",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "d83e7a64e082010c2c745b211257575c",
+          "currentHash": "2c534f90162361abf2a7ec7b47943fb2",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "OTFS Channel Estimation and Detection for Channels with Very Large Delay Spread"
+      },
+      {
+        "id": "cmuqrx8hx007fbmepj5kgbnyx",
+        "type": "UPDATED",
+        "title": "Updated Paper: IRS-Assisted OTFS: Beamforming Design and Signal Detection",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.061Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2408.02219",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmz00074zevd5dwq3tpj",
+          "url": "https://arxiv.org/abs/2408.02219",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "19b068b6b833584a50a6db8e30e89857",
+          "currentHash": "9340d619a1897d5f05f5563550ce3060",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "IRS-Assisted OTFS: Beamforming Design and Signal Detection"
+      },
+      {
+        "id": "cmuqrx8hq007dbmept368sl0k",
+        "type": "UPDATED",
+        "title": "Updated Paper: Optimal Pilot Design for OTFS in Linear Time-Varying Channels",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.054Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2403.19379",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdo9000h8zevd0vqdvrx1",
+          "url": "https://arxiv.org/abs/2403.19379",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "d212e90a9ba71ba0ac9ce936eaa2987f",
+          "currentHash": "7e86e3245efa376b1a8387771f4497fa",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Optimal Pilot Design for OTFS in Linear Time-Varying Channels"
+      },
+      {
+        "id": "cmuqrx8hj007bbmep450x9dr4",
+        "type": "UPDATED",
+        "title": "Updated Paper: Convolutional Sparse Coding based Channel Estimation for OTFS-SCMA in Uplink",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.047Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2107.09893",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdnjt00bwzevdz1u39ne0",
+          "url": "https://arxiv.org/abs/2107.09893",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "84fd45a85d5ffb706966d60a106d173a",
+          "currentHash": "813d0e61922e2bbff2f3991ae11159a1",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Convolutional Sparse Coding based Channel Estimation for OTFS-SCMA in Uplink"
+      },
+      {
+        "id": "cmuqrx8hb0079bmeprn5dyy12",
+        "type": "UPDATED",
+        "title": "Updated Paper: Basis Expansion Extrapolation based Long-Term Channel Prediction for Massive MIMO OTFS Systems",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.040Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2507.01445",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmso005gzevdsdy2wg4g",
+          "url": "https://arxiv.org/abs/2507.01445",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "e3c379aa6f0d0726af96ba196cdc5046",
+          "currentHash": "6cbb2471eb5b4ffec1857f6cde782a24",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Basis Expansion Extrapolation based Long-Term Channel Prediction for Massive MIMO OTFS Systems"
+      },
+      {
+        "id": "cmuqrx8h40077bmep8j6cqs9o",
+        "type": "UPDATED",
+        "title": "Updated Paper: Graph-based Untrained Neural Network Detector for OTFS Systems",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.032Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2404.05191",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdn22007wzevd5l94sg5b",
+          "url": "https://arxiv.org/abs/2404.05191",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "123523a9c765e36b1a98cd15c2320937",
+          "currentHash": "5cae7dba4cf00407d931e948c6c4e4dc",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Graph-based Untrained Neural Network Detector for OTFS Systems"
+      },
+      {
+        "id": "cmuqrx8gx0075bmeph38kq005",
+        "type": "UPDATED",
+        "title": "Updated Paper: Channel Estimation, Interpolation and Extrapolation in Doubly-dispersive Channels",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.026Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2408.09381",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmyl0070zevdwui1gtef",
+          "url": "https://arxiv.org/abs/2408.09381",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "3be5526a62d8e660105186bc62aaad9e",
+          "currentHash": "694a5841cc8d5f02acfbc5a3e743af18",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Channel Estimation, Interpolation and Extrapolation in Doubly-dispersive Channels"
+      },
+      {
+        "id": "cmuqrx8gr0073bmepho5ac3cf",
+        "type": "UPDATED",
+        "title": "Updated Paper: Low-Complexity OTFS-Based Over-the-Air Computation Design for Time-Varying Channels",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.019Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2405.07040",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdoc800i0zevdlq0j9225",
+          "url": "https://arxiv.org/abs/2405.07040",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "5b067675c83317d4f0066686b420f652",
+          "currentHash": "c587bdff55ab6066afca842824cc923f",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Low-Complexity OTFS-Based Over-the-Air Computation Design for Time-Varying Channels"
+      },
+      {
+        "id": "cmuqrx8gk0071bmephnin74ab",
+        "type": "UPDATED",
+        "title": "Updated Paper: Synchronization for Multiuser Uplink OTFS",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.012Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2410.10740",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdocm00i4zevd3saiehmk",
+          "url": "https://arxiv.org/abs/2410.10740",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "0f817dd5d9f477314f2d00a155f6af50",
+          "currentHash": "5ddb12a5dcb5ec25391c1ab95b02626f",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Synchronization for Multiuser Uplink OTFS"
+      },
+      {
+        "id": "cmuqrx8gd006zbmeptrya2to0",
+        "type": "UPDATED",
+        "title": "Updated Paper: Multi-Satellite MIMO Systems for Direct User-Satellite Communications: A Survey",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:41.005Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2407.00196",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdmzu007czevdkyqqkkpm",
+          "url": "https://arxiv.org/abs/2407.00196",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "e8e1cc082ae8790cfec58543817be037",
+          "currentHash": "d94404b66d472ca0f38b00a55c23a567",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Multi-Satellite MIMO Systems for Direct User-Satellite Communications: A Survey"
+      },
+      {
+        "id": "cmuqrx8g5006xbmepzjs7hggf",
+        "type": "UPDATED",
+        "title": "Updated Paper: Delay-Doppler Domain Signal Processing Aided OFDM (DD-a-OFDM) for 6G and Beyond",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:40.998Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2508.04253",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdnwf00eczevdnh0b4o74",
+          "url": "https://arxiv.org/abs/2508.04253",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "ceaf54877369034f6c45741668bcf931",
+          "currentHash": "68a0a1034ef810919481f8f714a43f77",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Delay-Doppler Domain Signal Processing Aided OFDM (DD-a-OFDM) for 6G and Beyond"
+      },
+      {
+        "id": "cmuqrx8fz006vbmep1eaw160j",
+        "type": "UPDATED",
+        "title": "Updated Paper: Single-Carrier Delay-Doppler Domain Equalization",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:40.992Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2403.16453",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdn2i0080zevdrmkne5zd",
+          "url": "https://arxiv.org/abs/2403.16453",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "c72ba0b641b8481fcd09eb718c19c39f",
+          "currentHash": "5633abb4a1ab28d397c8b79ec1e1cdeb",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Single-Carrier Delay-Doppler Domain Equalization"
+      },
+      {
+        "id": "cmuqrx8ft006tbmepgj8kbcn9",
+        "type": "UPDATED",
+        "title": "Updated Paper: Differential Communication in Channels with Mobility and Delay Spread using Zak-OTFS",
+        "description": "Observation changed on arxiv: Metadata fields updated",
+        "severity": "medium",
+        "createdAt": "2026-10-02T09:41:40.986Z",
+        "sourceName": "arxiv",
+        "url": "https://arxiv.org/abs/2507.12593",
+        "artifactType": "PAPER",
+        "relationship": null,
+        "changes": [
+          "Metadata fields updated"
+        ],
+        "evidence": {
+          "artifactId": "cmtekdnyf00eszevd1atu3jsz",
+          "url": "https://arxiv.org/abs/2507.12593",
+          "type": "PAPER",
+          "sourceId": "cmtekdm070002zevds7ugqrok",
+          "sourceName": "arxiv",
+          "currentCollectionId": "cmuqrwy230001f728pb627h56",
+          "previousCollectionId": "cmtekdm1c0008zevdmo7bnwum",
+          "previousHash": "c9d859d560664790a9efa612e01449ff",
+          "currentHash": "d10fd22ac9491a2c6474380a653e5705",
+          "changes": [
+            "Metadata fields updated"
+          ],
+          "observedAt": "2026-10-02T09:41:30.736Z"
+        },
+        "artifactTitle": "Differential Communication in Channels with Mobility and Delay Spread using Zak-OTFS"
+      }
+    ]
+  }
 };

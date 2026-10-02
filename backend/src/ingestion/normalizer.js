@@ -28,10 +28,24 @@ function parseVersion(rawArxivId) {
   return match ? Number(match[1]) : null;
 }
 
+function inferArxivDateFromId(arxivId) {
+  if (!arxivId) return null;
+  const match = String(arxivId).match(/^(\d{2})(\d{2})\.(\d{4,5})(?:v\d+)?$/i);
+  if (!match) return null;
+  const [, yearPrefix, monthPrefix] = match;
+  const yy = Number(yearPrefix);
+  const yearNumber = yy >= 90 ? 1900 + yy : 2000 + yy;
+  if (!Number.isInteger(yearNumber) || yearNumber < 1990) return null;
+  return new Date(Date.UTC(yearNumber, Number(monthPrefix) - 1, 1));
+}
+
 function normalizeArxivRecord(raw) {
   const rawUrl = raw.url || null;
   const canonicalUrl = normalizeUrl(rawUrl);
   const arxivId = parseArxivId(raw.arxiv_id, canonicalUrl || rawUrl);
+  const publishedAt = raw.published_date
+    ? new Date(raw.published_date)
+    : inferArxivDateFromId(arxivId);
 
   return {
     type: "PAPER",
@@ -39,9 +53,10 @@ function normalizeArxivRecord(raw) {
     description: raw.abstract || null,
     url: canonicalUrl || rawUrl,
     source: "arxiv",
-    // Deliberately nullable - do not default this to "now" or drop the record.
-    // A missing published_date is real data about this record, not an error.
-    publishedAt: raw.published_date ? new Date(raw.published_date) : null,
+    // Use the real published date when the collector provides it; otherwise infer
+    // it from the arXiv ID. This is a safe, deterministic fallback and avoids
+    // dropping records simply because the source omitted `published_date`.
+    publishedAt,
     metadata: JSON.stringify({
       authors: raw.authors || [],
       arxivId,
@@ -107,4 +122,139 @@ function normalizeGithubRecord(raw) {
   };
 }
 
-module.exports = { normalizeArxivRecord, normalizeGithubRecord, parseArxivId, normalizeUrl };
+function normalizeCalderbankRecord(raw) {
+  if (!raw || !raw.title) {
+    throw new Error(`normalizeCalderbankRecord: missing required title field: ${JSON.stringify(raw)}`);
+  }
+
+  const sourcePageUrl = raw.product_page_url || raw.sourcePageUrl || raw.pageUrl || raw.input?.url || null;
+  const publicationUrl = raw.publication_url || raw.publicationUrl || raw.url || raw.link || null;
+  const rawUrl = raw.url || publicationUrl || sourcePageUrl || raw.sourcePageUrl || raw.product_page_url || raw.input?.url || null;
+  const canonicalUrl = normalizeUrl(publicationUrl || rawUrl || sourcePageUrl || null);
+
+  const authors = Array.isArray(raw.authors)
+    ? raw.authors
+        .map((a) => String(a || "").trim())
+        .filter(Boolean)
+    : typeof raw.authors === "string"
+    ? raw.authors
+        .split(";")
+        .map((a) => a.trim())
+        .filter(Boolean)
+    : [];
+
+  const yearInput = raw.year || raw.publication_year || raw.date || raw.published_year || raw.publication_date || raw.publicationDate || null;
+  const yearNumber = Number(String(yearInput || "").match(/\d{4}/)?.[0]);
+  const publishedAt = yearNumber ? new Date(Date.UTC(yearNumber, 0, 1)) : null;
+
+  return {
+    type: "PAPER",
+    title: String(raw.title).trim(),
+    description: raw.description || raw.abstract || null,
+    url: canonicalUrl || rawUrl || sourcePageUrl || null,
+    source: "duke-calderbank",
+    publishedAt,
+    metadata: JSON.stringify({
+      authors,
+      year: yearNumber || null,
+      venue: raw.venue || raw.journal || raw.conference || raw.publication_venue || raw.publicationVenue || null,
+      doi: raw.doi || raw.DOI || null,
+      rawUrl,
+      sourcePageUrl: sourcePageUrl,
+      publicationUrl,
+      inputUrl: raw.input?.url || null,
+      rawRecord: raw,
+    }),
+  };
+}
+
+function normalizeDatasetRecord(raw) {
+  if (!raw || !raw.url) {
+    throw new Error(`normalizeDatasetRecord: missing required URL field: ${JSON.stringify(raw)}`);
+  }
+
+  const rawUrl = raw.url || raw.homepage || raw.dataset_url || raw.download_url || null;
+  const canonicalUrl = normalizeUrl(rawUrl);
+  const title = raw.dataset_name || raw.name || raw.title || "(untitled dataset)";
+  const metadata = {
+    rawUrl,
+    owner: raw.owner || raw.organization || null,
+    organization: raw.organization || raw.owner || null,
+    datasetName: raw.dataset_name || raw.name || null,
+    size: raw.size || raw.dataset_size || raw.bytes || null,
+    format: raw.format || raw.file_format || raw.dataset_format || null,
+    license: raw.license || null,
+    updatedAt: raw.updated_date || raw.updatedAt || null,
+    homepage: raw.homepage || null,
+    downloadUrl: raw.download_url || raw.downloadUrl || null,
+    tags: Array.isArray(raw.tags) ? raw.tags : [],
+    sourceMetadata: raw,
+  };
+
+  return {
+    type: "DATASET",
+    title: String(title).trim() || "(untitled dataset)",
+    description: raw.description || raw.abstract || raw.summary || null,
+    url: canonicalUrl || rawUrl,
+    source: "dataset",
+    publishedAt: raw.updated_date || raw.updatedAt ? new Date(raw.updated_date || raw.updatedAt) : null,
+    metadata: JSON.stringify(metadata),
+  };
+}
+
+function normalizeResourceRecord(raw) {
+  if (!raw || !raw.url) {
+    throw new Error(`normalizeResourceRecord: missing required URL field: ${JSON.stringify(raw)}`);
+  }
+
+  const rawUrl = raw.url;
+  const canonicalUrl = normalizeUrl(rawUrl);
+  const title = raw.title || raw.name || raw.resource_name || "(untitled resource)";
+  const metadata = {
+    rawUrl,
+    owner: raw.owner || raw.organization || null,
+    resourceType: raw.resource_type || raw.type || raw.resourceType || null,
+    author: raw.author || raw.authors || null,
+    date: raw.date || raw.updated_at || raw.updatedAt || null,
+    sourceMetadata: raw,
+  };
+
+  return {
+    type: "RESOURCE",
+    title: String(title).trim() || "(untitled resource)",
+    description: raw.description || raw.summary || null,
+    url: canonicalUrl || rawUrl,
+    source: "resource",
+    publishedAt: raw.updated_at || raw.updatedAt ? new Date(raw.updated_at || raw.updatedAt) : null,
+    metadata: JSON.stringify(metadata),
+  };
+}
+
+function normalizeProjectRecord(raw) {
+  if (!raw || !raw.url) {
+    throw new Error(`normalizeProjectRecord: missing required URL field: ${JSON.stringify(raw)}`);
+  }
+
+  const rawUrl = raw.url;
+  const canonicalUrl = normalizeUrl(rawUrl);
+  const title = raw.project_name || raw.name || raw.title || "(untitled project)";
+  const metadata = {
+    rawUrl,
+    owner: raw.owner || raw.organization || raw.affiliation || null,
+    affiliation: raw.affiliation || raw.organization || null,
+    lab: raw.lab || null,
+    sourceMetadata: raw,
+  };
+
+  return {
+    type: "PROJECT",
+    title: String(title).trim() || "(untitled project)",
+    description: raw.description || raw.summary || null,
+    url: canonicalUrl || rawUrl,
+    source: "project",
+    publishedAt: raw.updated_at || raw.updatedAt ? new Date(raw.updated_at || raw.updatedAt) : null,
+    metadata: JSON.stringify(metadata),
+  };
+}
+
+module.exports = { normalizeArxivRecord, normalizeGithubRecord, normalizeCalderbankRecord, normalizeDatasetRecord, normalizeResourceRecord, normalizeProjectRecord, parseArxivId, normalizeUrl };

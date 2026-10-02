@@ -1,0 +1,32 @@
+# ReTrace — Docker Compose
+# Usage:
+#   docker compose up --build
+#   Open http://localhost:5000
+
+services:
+  retrace:
+    build: .
+    container_name: retrace
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+      - DATABASE_URL=file:./dev.db
+      # Bright Data collector IDs — paste from .env or set as build args
+      # - BRIGHTDATA_ARXIV_COLLECTOR_ID=c_mt4ot19f1crygiarf6
+      # - BRIGHTDATA_GITHUB_COLLECTOR_ID=c_mt5yn9lvrgrgdp5vm
+      # - BRIGHTDATA_DUKE_CALDERBANK_COLLECTOR_ID=c_mtisrrzwxyapkvgvt
+      # - BRIGHTDATA_FIXTURE_COLLECTOR_ID=c_mt5c4xao29ue6pvc89
+      - RETRACE_SPACE_NAME=OTFS Channel Estimation
+      - RETRACE_TOPIC=OTFS channel estimation
+    volumes:
+      # Persist SQLite database across restarts
+      - retrace-data:/app/backend/prisma
+      # Persist raw collection files
+      - retrace-raw:/app/backend/raw
+    restart: unless-stopped
+
+volumes:
+  retrace-data:
+  retrace-raw:

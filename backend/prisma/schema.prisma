@@ -76,6 +76,8 @@ model Artifact {
   firstSeen       DateTime  @default(now())
   lastSeen        DateTime  @default(now())
   metadata        String // JSON-encoded type-specific fields (authors, repo owner, license, etc.)
+  notes           String?   // user-added research notes
+  reviewedAt      DateTime? // when the user last marked this as reviewed/dismissed
 
   researchSpace     ResearchSpace     @relation(fields: [researchSpaceId], references: [id])
   versions          ArtifactVersion[]
@@ -125,3 +127,4 @@ model ResearchSignal {
 
   researchSpace ResearchSpace @relation(fields: [researchSpaceId], references: [id])
 }
+

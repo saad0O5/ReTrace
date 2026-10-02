@@ -12,7 +12,8 @@
     "prisma:studio": "prisma studio",
     "collect:arxiv": "node ../scripts/testCollector.js arxiv",
     "collect:github": "node ../scripts/testCollector.js github",
-    "test": "node tests/phase0.test.js"
+    "detect:changes": "node ../scripts/detectChanges.js",
+    "test": "node tests/runAll.js"
   },
   "dependencies": {
     "@prisma/client": "^5.20.0",

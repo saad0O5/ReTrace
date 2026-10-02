@@ -1,0 +1,87 @@
+name: Scheduled Research Collection
+
+# Runs the collect → ingest → detect changes → export pipeline weekly.
+# Calls the existing CLI scripts — no new collection logic added here.
+#
+# This is the authoritative scheduled run. The in-process scheduler in
+# server.js (RETRACE_SCHEDULE_ENABLED) is a backup for deployed instances.
+# This Action creates real Collection rows in the live DB via the API.
+
+on:
+  schedule:
+    # Every Sunday at 02:00 UTC
+    - cron: '0 2 * * 0'
+  workflow_dispatch:
+    inputs:
+      source:
+        description: 'Source to collect (arxiv, github, duke-calderbank, or all)'
+        required: false
+        default: 'arxiv'
+
+jobs:
+  collect-and-detect:
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: backend/package-lock.json
+
+      - name: Install backend dependencies
+        working-directory: backend
+        run: npm ci
+
+      - name: Generate Prisma client
+        working-directory: backend
+        run: npx prisma generate
+
+      - name: Collect — arXiv
+        if: ${{ github.event.inputs.source == 'arxiv' || github.event.inputs.source == 'all' || github.event_name == 'schedule' }}
+        env:
+          BRIGHTDATA_API_TOKEN: ${{ secrets.BRIGHTDATA_API_TOKEN }}
+          BRIGHTDATA_ARXIV_COLLECTOR_ID: ${{ secrets.BRIGHTDATA_ARXIV_COLLECTOR_ID }}
+          BRIGHTDATA_GITHUB_COLLECTOR_ID: ${{ secrets.BRIGHTDATA_GITHUB_COLLECTOR_ID }}
+          BRIGHTDATA_DUKE_CALDERBANK_COLLECTOR_ID: ${{ secrets.BRIGHTDATA_DUKE_CALDERBANK_COLLECTOR_ID }}
+          BRIGHTDATA_FIXTURE_COLLECTOR_ID: ${{ secrets.BRIGHTDATA_FIXTURE_COLLECTOR_ID }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          node scripts/testCollector.js arxiv "OTFS channel estimation"
+          # testCollector.js saves raw JSON to backend/raw/ — ingestRaw.js reads it from there
+          LATEST=$(ls -t backend/raw/manual-arxiv-*.json | head -1)
+          echo "Ingesting $LATEST"
+          node scripts/ingestRaw.js "$LATEST" arxiv
+
+      - name: Detect changes and generate signals
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          node scripts/detectChanges.js || echo "No previous baseline for comparison yet"
+
+      - name: Export dashboard data
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: node scripts/exportDashboard.js
+
+      - name: Report results
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          node -e "
+          const { PrismaClient } = require('./backend/node_modules/@prisma/client');
+          const p = new PrismaClient();
+          Promise.all([
+            p.collection.count(),
+            p.artifact.count(),
+            p.researchSignal.count(),
+          ]).then(([cols, arts, sigs]) => {
+            console.log('Collections:', cols, '| Artifacts:', arts, '| Signals:', sigs);
+            return p.\$disconnect();
+          });
+          "

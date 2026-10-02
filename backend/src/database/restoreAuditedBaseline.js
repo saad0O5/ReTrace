@@ -66,6 +66,15 @@ async function restore() {
       lastSuccessAt: new Date("2026-08-23T17:08:14.604Z"),
     },
     {
+      name: "duke-calderbank",
+      baseUrl: "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications",
+      collectorId: "c_mtisrrzwxyapkvgvt",
+      status: "CONFIGURED",
+      artifactTypes: "PAPER",
+      lastRun: null,
+      lastSuccessAt: null,
+    },
+    {
       name: "fixture",
       baseUrl: "https://saad0o5.github.io/ReTrace-Fixture/",
       collectorId: "c_mt5c4xao29ue6pvc89",

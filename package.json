@@ -8,6 +8,7 @@
     "dev:backend": "npm run dev --prefix backend",
     "dev:frontend": "npm run dev --prefix frontend",
     "test": "npm run test --prefix backend",
+    "detect:changes": "node scripts/detectChanges.js",
     "export:dashboard": "node scripts/exportDashboard.js"
   }
 }

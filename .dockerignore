@@ -1,0 +1,9 @@
+node_modules
+.git
+.github
+docs
+scratch
+*.md
+frontend/dist
+backend/raw/*.json
+backend/prisma/dev.db

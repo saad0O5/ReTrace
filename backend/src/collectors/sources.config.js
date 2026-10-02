@@ -14,22 +14,45 @@ const sources = {
     name: "arxiv",
     urlTemplate: "https://arxiv.org/search/?query={topic}",
     collectorId: process.env.BRIGHTDATA_ARXIV_COLLECTOR_ID || "",
+    collectorType: "scraper",
     artifactTypes: ["PAPER"],
+    type: "PAPER",
+    enabled: true,
+    description: "Academic paper discovery and metadata collection for the research topic.",
+    expectedRecordShape: "paper_title, authors[], abstract, url, arxiv_id, published_date",
   },
   github: {
     name: "github",
     urlTemplate: "https://github.com/search?q={topic}&type=repositories",
     collectorId: process.env.BRIGHTDATA_GITHUB_COLLECTOR_ID || "",
+    collectorType: "scraper",
     artifactTypes: ["IMPLEMENTATION"],
+    type: "IMPLEMENTATION",
+    enabled: true,
+    description: "Public implementation repositories and code resources associated with the topic.",
+    expectedRecordShape: "repo_name, owner, description, url, language, stars, last_updated",
   },
-  // Controlled fixture for testing bdata scraper heal deterministically.
-  // Fixed URL, no {topic} placeholder - resolveSourceInput's .replace() is a
-  // harmless no-op here since there's nothing to substitute.
+  "duke-calderbank": {
+    name: "duke-calderbank",
+    urlTemplate: "https://fds.duke.edu/db/aas/math/faculty/robert.calderbank/publications",
+    collectorId: process.env.BRIGHTDATA_DUKE_CALDERBANK_COLLECTOR_ID || "",
+    collectorType: "scraper",
+    artifactTypes: ["PAPER"],
+    type: "PAPER",
+    enabled: true,
+    description: "Public faculty publication page for a real long-tail academic source.",
+    expectedRecordShape: "title, authors, description, publication URL, year, venue",
+  },
   fixture: {
     name: "fixture",
     urlTemplate: "https://saad0o5.github.io/ReTrace-Fixture/",
     collectorId: process.env.BRIGHTDATA_FIXTURE_COLLECTOR_ID || "",
+    collectorType: "scraper",
     artifactTypes: ["PAPER"],
+    type: "PAPER",
+    enabled: true,
+    description: "Deterministic test fixture for source-health and self-healing validation.",
+    expectedRecordShape: "fixed fixture record set for selector recovery testing",
   },
 };
 

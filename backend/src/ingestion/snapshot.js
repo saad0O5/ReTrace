@@ -31,6 +31,9 @@ function buildSnapshotPayload(artifact) {
       arxivId: meta.arxivId || null,
       authors: authors.sort(),
       publishedAt: artifact.publishedAt ? new Date(artifact.publishedAt).toISOString() : null,
+      venue: meta.venue || null,
+      doi: meta.doi || null,
+      year: meta.year || null,
     };
   }
 
@@ -47,7 +50,48 @@ function buildSnapshotPayload(artifact) {
     };
   }
 
-  // Generic fallback for any future artifact types
+  if (type === "DATASET") {
+    return {
+      type: "DATASET",
+      title: String(artifact.title || "").trim(),
+      description: artifact.description ? String(artifact.description).trim() : null,
+      url: canonicalUrl,
+      owner: meta.owner || meta.organization || null,
+      organization: meta.organization || meta.owner || null,
+      size: meta.size || null,
+      format: meta.format || null,
+      license: meta.license || null,
+      updatedAt: meta.updatedAt || null,
+      homepage: meta.homepage || null,
+      downloadUrl: meta.downloadUrl || null,
+    };
+  }
+
+  if (type === "RESOURCE") {
+    return {
+      type: "RESOURCE",
+      title: String(artifact.title || "").trim(),
+      description: artifact.description ? String(artifact.description).trim() : null,
+      url: canonicalUrl,
+      owner: meta.owner || null,
+      resourceType: meta.resourceType || null,
+      author: Array.isArray(meta.author) ? meta.author : meta.author || null,
+      date: meta.date || null,
+    };
+  }
+
+  if (type === "PROJECT") {
+    return {
+      type: "PROJECT",
+      title: String(artifact.title || "").trim(),
+      description: artifact.description ? String(artifact.description).trim() : null,
+      url: canonicalUrl,
+      owner: meta.owner || null,
+      affiliation: meta.affiliation || null,
+      lab: meta.lab || null,
+    };
+  }
+
   return {
     type: artifact.type,
     title: String(artifact.title || "").trim(),

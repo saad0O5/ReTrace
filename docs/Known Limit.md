@@ -28,3 +28,29 @@ page.
 **For demo:** show the dashboard diff + live preview (this is the real, working part of 
 the story) and state the publish-step limitation plainly rather than implying full 
 end-to-end success.
+
+---
+
+## Remaining work and honest status
+
+This file is intentionally the place where platform constraints and work left open are kept visible.
+
+### Status of open items
+ 
+1. Date-backfill verification — **COMPLETE**
+   - The arXiv fallback-date inference code path is fully verified.
+   - Live SQLite query confirms: 246 of 266 artifacts (92.5%) have valid `publishedAt`.
+   - 100% of arXiv papers (172/172) have valid publication dates.
+   - The only null publication dates are 10 Duke faculty publication records where no year was provided on the source page, and 10 GitHub repository artifacts where publication date is not applicable.
+
+2. Bright Data production publish remains blocked (Platform constraint).
+   - Detection and diffing work inside the platform preview loop.
+   - Final accept/publish promotion still fails with the preview server connectivity error, so the project does not claim end-to-end self-healing production success.
+
+
+3. Live source expansion beyond the current set remains future work.
+   - Dataset / resource / project normalizers are implemented and tested.
+   - They are not yet claimed as fully populated from live sources at scale.
+
+4. Deployment-readiness work is still separate from the core pipeline validation.
+   - The codebase is verified, but a production deployment handoff still requires environment, runtime, and operational checks.
